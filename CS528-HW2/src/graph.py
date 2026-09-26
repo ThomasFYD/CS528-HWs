@@ -1,6 +1,11 @@
 from html.parser import HTMLParser
 from pathlib import PurePosixPath
 
+from google.cloud.storage.retry import DEFAULT_RETRY
+
+
+STORAGE_RETRY = DEFAULT_RETRY.with_timeout(600.0)
+
 
 class LinkParser(HTMLParser):
     def __init__(self):
@@ -37,11 +42,16 @@ def build_graph(blobs):
 
     for index, blob in enumerate(blobs, start=1):
         source = PurePosixPath(blob.name).name
-        html_text = blob.download_as_text(encoding="utf-8")
+
+        html_text = blob.download_as_text(
+            encoding="utf-8",
+            timeout=(10, 120),
+            retry=STORAGE_RETRY,
+        )
+
         targets = parse_links(html_text)
 
         for target in targets:
-            # Ignore links whose target is not part of the dataset.
             if target in node_names:
                 outgoing[source].append(target)
                 incoming[target].append(source)
