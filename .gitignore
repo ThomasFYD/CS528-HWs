@@ -1,8 +1,7 @@
-.venv/
-data/
-__pycache__/
-*.pyc
-.pytest_cache/
+**/.venv/
+**/data/
+**/__pycache__/
+**/*.pyc
+**/.pytest_cache/
 .DS_Store
-
-results/graph_cache.pkl
+**/results/graph_cache.pkl
