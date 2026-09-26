@@ -12,12 +12,14 @@ from src.degree_stats import (
 )
 from src.graph import build_graph
 from src.pagerank import calculate_pagerank
+from google.cloud.storage.retry import DEFAULT_RETRY
 
 
 BUCKET_NAME = "cs528-hw2-yf-2026"
 PREFIX = "data/"
 EXPECTED_FILE_COUNT = 12000
 CACHE_PATH = Path("results/graph_cache.pkl")
+STORAGE_RETRY = DEFAULT_RETRY.with_timeout(600.0)
 
 
 def read_graph_from_bucket():
@@ -31,6 +33,9 @@ def read_graph_from_bucket():
     for blob in client.list_blobs(
         BUCKET_NAME,
         prefix=PREFIX,
+        page_size=1000,
+        timeout=(10, 120),
+        retry=STORAGE_RETRY,
     ):
         if blob.name.endswith(".html"):
             blobs.append(blob)
