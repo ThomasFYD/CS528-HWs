@@ -1,0 +1,46 @@
+Loading graph cache: results/graph_cache.pkl
+Cache loading time: 0.06 seconds
+
+Nodes: 12000
+Links: 1946934
+
+Outgoing-link statistics
+Average: 162.2445
+Median: 162.0
+Minimum: 0
+Maximum: 323
+Quintiles:
+  0%: 0.0
+  20%: 65.0
+  40%: 130.0
+  60%: 195.0
+  80%: 260.0
+  100%: 323.0
+
+Incoming-link statistics
+Average: 162.2445
+Median: 162.0
+Minimum: 115
+Maximum: 233
+Quintiles:
+  0%: 115.0
+  20%: 152.0
+  40%: 159.0
+  60%: 165.0
+  80%: 173.0
+  100%: 233.0
+
+Statistics time: 0.02 seconds
+
+PageRank results
+Iterations: 3
+Final total change: 0.0011577820
+Sum of PageRank scores: 1.0000000000
+Top 5 pages:
+  1. 5207.html: 0.0001955251
+  2. 7443.html: 0.0001828610
+  3. 7400.html: 0.0001796367
+  4. 950.html: 0.0001744095
+  5. 369.html: 0.0001733209
+PageRank time: 0.31 seconds
+Total time: 0.38 seconds

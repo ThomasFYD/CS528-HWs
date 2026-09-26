@@ -1,0 +1,61 @@
+Reading bucket: cs528-hw2-yf-2026
+Prefix: data/
+HTML files found: 12000
+Processed 500/12000 files
+Processed 1000/12000 files
+Processed 1500/12000 files
+Processed 2000/12000 files
+Processed 2500/12000 files
+Processed 3000/12000 files
+Processed 3500/12000 files
+Processed 4000/12000 files
+Processed 4500/12000 files
+Processed 5000/12000 files
+Processed 5500/12000 files
+Processed 6000/12000 files
+Processed 6500/12000 files
+Processed 7000/12000 files
+Processed 7500/12000 files
+Processed 8000/12000 files
+Processed 8500/12000 files
+Processed 9000/12000 files
+Processed 9500/12000 files
+Processed 10000/12000 files
+Processed 10500/12000 files
+Processed 11000/12000 files
+Processed 11500/12000 files
+Processed 12000/12000 files
+Graph construction time: 1079.01 seconds
+Graph cache saved to: results/graph_cache.pkl
+
+Nodes: 12000
+Links: 1946934
+
+Outgoing-link statistics
+Average: 162.2445
+Median: 162.0
+Minimum: 0
+Maximum: 323
+Quintiles:
+  0%: 0.0
+  20%: 65.0
+  40%: 130.0
+  60%: 195.0
+  80%: 260.0
+  100%: 323.0
+
+Incoming-link statistics
+Average: 162.2445
+Median: 162.0
+Minimum: 115
+Maximum: 233
+Quintiles:
+  0%: 115.0
+  20%: 152.0
+  40%: 159.0
+  60%: 165.0
+  80%: 173.0
+  100%: 233.0
+
+Statistics time: 0.02 seconds
+Total time: 1079.12 seconds
