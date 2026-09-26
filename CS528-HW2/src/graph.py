@@ -55,7 +55,8 @@ def download_html(blob):
 
         try:
             fresh_blob = client.bucket(blob.bucket.name).blob(
-                blob.name
+                blob.name,
+                generation=blob.generation,
             )
 
             return fresh_blob.download_as_text(
