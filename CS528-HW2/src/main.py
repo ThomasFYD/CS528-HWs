@@ -26,11 +26,19 @@ def read_graph_from_bucket():
     print(f"Reading bucket: {BUCKET_NAME}")
     print(f"Prefix: {PREFIX}")
 
-    blobs = [
-        blob
-        for blob in client.list_blobs(BUCKET_NAME, prefix=PREFIX)
-        if blob.name.endswith(".html")
-    ]
+    blobs = []
+
+    for blob in client.list_blobs(
+        BUCKET_NAME,
+        prefix=PREFIX,
+    ):
+        if blob.name.endswith(".html"):
+            blobs.append(blob)
+
+            if len(blobs) % 1000 == 0:
+                print(
+                    f"Listed {len(blobs)} HTML files"
+                )
 
     print(f"HTML files found: {len(blobs)}")
 
