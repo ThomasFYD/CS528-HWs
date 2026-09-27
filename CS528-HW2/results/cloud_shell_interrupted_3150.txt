@@ -1,0 +1,646 @@
+Reading bucket: cs528-hw2-yf-2026
+Prefix: data/
+Listed 1000 HTML files
+Listed 2000 HTML files
+Listed 3000 HTML files
+Listed 4000 HTML files
+Listed 5000 HTML files
+Listed 6000 HTML files
+Listed 7000 HTML files
+Listed 8000 HTML files
+Listed 9000 HTML files
+Listed 10000 HTML files
+Listed 11000 HTML files
+Listed 12000 HTML files
+HTML files found: 12000
+Downloading 1/12000: data/0.html
+Processed 10/12000 files (0.1%), elapsed: 10.7s
+Downloading 11/12000: data/10005.html
+Processed 20/12000 files (0.2%), elapsed: 21.8s
+Downloading 21/12000: data/10014.html
+Processed 30/12000 files (0.2%), elapsed: 38.6s
+Downloading 31/12000: data/10023.html
+Processed 40/12000 files (0.3%), elapsed: 52.0s
+Downloading 41/12000: data/10032.html
+Processed 50/12000 files (0.4%), elapsed: 63.3s
+Downloading 51/12000: data/10041.html
+Processed 60/12000 files (0.5%), elapsed: 72.1s
+Downloading 61/12000: data/10050.html
+Processed 70/12000 files (0.6%), elapsed: 82.6s
+Downloading 71/12000: data/1006.html
+Processed 80/12000 files (0.7%), elapsed: 93.9s
+Downloading 81/12000: data/10069.html
+Processed 90/12000 files (0.8%), elapsed: 101.7s
+Downloading 91/12000: data/10078.html
+Processed 100/12000 files (0.8%), elapsed: 115.1s
+Downloading 101/12000: data/10087.html
+Processed 110/12000 files (0.9%), elapsed: 124.4s
+Downloading 111/12000: data/10096.html
+Processed 120/12000 files (1.0%), elapsed: 134.0s
+Downloading 121/12000: data/10104.html
+Processed 130/12000 files (1.1%), elapsed: 146.2s
+Downloading 131/12000: data/10113.html
+Processed 140/12000 files (1.2%), elapsed: 159.5s
+Downloading 141/12000: data/10122.html
+Processed 150/12000 files (1.2%), elapsed: 171.1s
+Downloading 151/12000: data/10131.html
+Processed 160/12000 files (1.3%), elapsed: 179.5s
+Downloading 161/12000: data/10140.html
+Processed 170/12000 files (1.4%), elapsed: 186.3s
+Downloading 171/12000: data/1015.html
+Processed 180/12000 files (1.5%), elapsed: 194.5s
+Downloading 181/12000: data/10159.html
+Processed 190/12000 files (1.6%), elapsed: 202.4s
+Downloading 191/12000: data/10168.html
+Processed 200/12000 files (1.7%), elapsed: 212.9s
+Downloading 201/12000: data/10177.html
+Processed 210/12000 files (1.8%), elapsed: 221.9s
+Downloading 211/12000: data/10186.html
+Processed 220/12000 files (1.8%), elapsed: 234.9s
+Downloading 221/12000: data/10195.html
+Processed 230/12000 files (1.9%), elapsed: 244.9s
+Downloading 231/12000: data/10203.html
+Processed 240/12000 files (2.0%), elapsed: 255.3s
+Downloading 241/12000: data/10212.html
+Processed 250/12000 files (2.1%), elapsed: 263.4s
+Downloading 251/12000: data/10221.html
+Processed 260/12000 files (2.2%), elapsed: 275.2s
+Downloading 261/12000: data/10230.html
+Processed 270/12000 files (2.2%), elapsed: 289.7s
+Downloading 271/12000: data/1024.html
+Processed 280/12000 files (2.3%), elapsed: 299.7s
+Downloading 281/12000: data/10249.html
+Processed 290/12000 files (2.4%), elapsed: 313.7s
+Downloading 291/12000: data/10258.html
+Processed 300/12000 files (2.5%), elapsed: 320.8s
+Downloading 301/12000: data/10267.html
+Processed 310/12000 files (2.6%), elapsed: 333.4s
+Downloading 311/12000: data/10276.html
+Processed 320/12000 files (2.7%), elapsed: 347.3s
+Downloading 321/12000: data/10285.html
+Processed 330/12000 files (2.8%), elapsed: 357.5s
+Downloading 331/12000: data/10294.html
+Processed 340/12000 files (2.8%), elapsed: 365.6s
+Downloading 341/12000: data/10302.html
+Processed 350/12000 files (2.9%), elapsed: 374.5s
+Downloading 351/12000: data/10311.html
+Processed 360/12000 files (3.0%), elapsed: 383.3s
+Downloading 361/12000: data/10320.html
+Processed 370/12000 files (3.1%), elapsed: 398.4s
+Downloading 371/12000: data/1033.html
+Processed 380/12000 files (3.2%), elapsed: 409.6s
+Downloading 381/12000: data/10339.html
+Processed 390/12000 files (3.2%), elapsed: 422.5s
+Downloading 391/12000: data/10348.html
+Processed 400/12000 files (3.3%), elapsed: 435.2s
+Downloading 401/12000: data/10357.html
+Processed 410/12000 files (3.4%), elapsed: 445.7s
+Downloading 411/12000: data/10366.html
+Processed 420/12000 files (3.5%), elapsed: 458.8s
+Downloading 421/12000: data/10375.html
+Processed 430/12000 files (3.6%), elapsed: 471.1s
+Downloading 431/12000: data/10384.html
+Processed 440/12000 files (3.7%), elapsed: 482.4s
+Downloading 441/12000: data/10393.html
+Processed 450/12000 files (3.8%), elapsed: 492.5s
+Downloading 451/12000: data/10401.html
+Processed 460/12000 files (3.8%), elapsed: 504.4s
+Downloading 461/12000: data/10410.html
+Processed 470/12000 files (3.9%), elapsed: 515.2s
+Downloading 471/12000: data/1042.html
+Processed 480/12000 files (4.0%), elapsed: 523.7s
+Downloading 481/12000: data/10429.html
+Processed 490/12000 files (4.1%), elapsed: 534.9s
+Downloading 491/12000: data/10438.html
+Processed 500/12000 files (4.2%), elapsed: 546.3s
+Downloading 501/12000: data/10447.html
+Processed 510/12000 files (4.2%), elapsed: 557.1s
+Downloading 511/12000: data/10456.html
+Processed 520/12000 files (4.3%), elapsed: 564.1s
+Downloading 521/12000: data/10465.html
+Processed 530/12000 files (4.4%), elapsed: 572.6s
+Downloading 531/12000: data/10474.html
+Processed 540/12000 files (4.5%), elapsed: 580.0s
+Downloading 541/12000: data/10483.html
+Processed 550/12000 files (4.6%), elapsed: 594.9s
+Downloading 551/12000: data/10492.html
+Processed 560/12000 files (4.7%), elapsed: 606.3s
+Downloading 561/12000: data/10500.html
+Processed 570/12000 files (4.8%), elapsed: 622.5s
+Downloading 571/12000: data/1051.html
+Processed 580/12000 files (4.8%), elapsed: 632.7s
+Downloading 581/12000: data/10519.html
+Processed 590/12000 files (4.9%), elapsed: 647.8s
+Downloading 591/12000: data/10528.html
+Processed 600/12000 files (5.0%), elapsed: 657.5s
+Downloading 601/12000: data/10537.html
+Processed 610/12000 files (5.1%), elapsed: 669.9s
+Downloading 611/12000: data/10546.html
+Processed 620/12000 files (5.2%), elapsed: 684.3s
+Downloading 621/12000: data/10555.html
+Processed 630/12000 files (5.2%), elapsed: 698.4s
+Downloading 631/12000: data/10564.html
+Processed 640/12000 files (5.3%), elapsed: 708.8s
+Downloading 641/12000: data/10573.html
+Processed 650/12000 files (5.4%), elapsed: 725.8s
+Downloading 651/12000: data/10582.html
+Processed 660/12000 files (5.5%), elapsed: 735.2s
+Downloading 661/12000: data/10591.html
+Processed 670/12000 files (5.6%), elapsed: 749.5s
+Downloading 671/12000: data/1060.html
+Processed 680/12000 files (5.7%), elapsed: 763.9s
+Downloading 681/12000: data/10609.html
+Processed 690/12000 files (5.8%), elapsed: 778.1s
+Downloading 691/12000: data/10618.html
+Processed 700/12000 files (5.8%), elapsed: 790.6s
+Downloading 701/12000: data/10627.html
+Processed 710/12000 files (5.9%), elapsed: 801.8s
+Downloading 711/12000: data/10636.html
+Processed 720/12000 files (6.0%), elapsed: 810.8s
+Downloading 721/12000: data/10645.html
+Processed 730/12000 files (6.1%), elapsed: 824.5s
+Downloading 731/12000: data/10654.html
+Processed 740/12000 files (6.2%), elapsed: 834.5s
+Downloading 741/12000: data/10663.html
+Processed 750/12000 files (6.2%), elapsed: 846.3s
+Downloading 751/12000: data/10672.html
+Processed 760/12000 files (6.3%), elapsed: 859.8s
+Downloading 761/12000: data/10681.html
+Processed 770/12000 files (6.4%), elapsed: 869.1s
+Downloading 771/12000: data/10690.html
+Processed 780/12000 files (6.5%), elapsed: 878.2s
+Downloading 781/12000: data/107.html
+Processed 790/12000 files (6.6%), elapsed: 886.7s
+Downloading 791/12000: data/10708.html
+Processed 800/12000 files (6.7%), elapsed: 893.5s
+Downloading 801/12000: data/10717.html
+Processed 810/12000 files (6.8%), elapsed: 901.6s
+Downloading 811/12000: data/10726.html
+Processed 820/12000 files (6.8%), elapsed: 909.9s
+Downloading 821/12000: data/10735.html
+Processed 830/12000 files (6.9%), elapsed: 920.0s
+Downloading 831/12000: data/10744.html
+Processed 840/12000 files (7.0%), elapsed: 929.8s
+Downloading 841/12000: data/10753.html
+Processed 850/12000 files (7.1%), elapsed: 938.9s
+Downloading 851/12000: data/10762.html
+Processed 860/12000 files (7.2%), elapsed: 950.2s
+Downloading 861/12000: data/10771.html
+Processed 870/12000 files (7.2%), elapsed: 960.2s
+Downloading 871/12000: data/10780.html
+Processed 880/12000 files (7.3%), elapsed: 968.2s
+Downloading 881/12000: data/1079.html
+Processed 890/12000 files (7.4%), elapsed: 982.1s
+Downloading 891/12000: data/10799.html
+Processed 900/12000 files (7.5%), elapsed: 991.1s
+Downloading 901/12000: data/10807.html
+Processed 910/12000 files (7.6%), elapsed: 1003.7s
+Downloading 911/12000: data/10816.html
+Processed 920/12000 files (7.7%), elapsed: 1012.3s
+Downloading 921/12000: data/10825.html
+Processed 930/12000 files (7.8%), elapsed: 1026.1s
+Downloading 931/12000: data/10834.html
+Processed 940/12000 files (7.8%), elapsed: 1037.1s
+Downloading 941/12000: data/10843.html
+Processed 950/12000 files (7.9%), elapsed: 1051.1s
+Downloading 951/12000: data/10852.html
+Processed 960/12000 files (8.0%), elapsed: 1063.3s
+Downloading 961/12000: data/10861.html
+Processed 970/12000 files (8.1%), elapsed: 1077.1s
+Downloading 971/12000: data/10870.html
+Processed 980/12000 files (8.2%), elapsed: 1097.7s
+Downloading 981/12000: data/1088.html
+Processed 990/12000 files (8.2%), elapsed: 1111.2s
+Downloading 991/12000: data/10889.html
+Processed 1000/12000 files (8.3%), elapsed: 1129.0s
+Downloading 1001/12000: data/10898.html
+Processed 1010/12000 files (8.4%), elapsed: 1138.8s
+Downloading 1011/12000: data/10906.html
+Processed 1020/12000 files (8.5%), elapsed: 1153.9s
+Downloading 1021/12000: data/10915.html
+Processed 1030/12000 files (8.6%), elapsed: 1161.7s
+Downloading 1031/12000: data/10924.html
+Processed 1040/12000 files (8.7%), elapsed: 1178.2s
+Downloading 1041/12000: data/10933.html
+Processed 1050/12000 files (8.8%), elapsed: 1189.7s
+Downloading 1051/12000: data/10942.html
+Processed 1060/12000 files (8.8%), elapsed: 1203.5s
+Downloading 1061/12000: data/10951.html
+Processed 1070/12000 files (8.9%), elapsed: 1221.0s
+Downloading 1071/12000: data/10960.html
+Processed 1080/12000 files (9.0%), elapsed: 1236.3s
+Downloading 1081/12000: data/1097.html
+Processed 1090/12000 files (9.1%), elapsed: 1250.3s
+Downloading 1091/12000: data/10979.html
+Processed 1100/12000 files (9.2%), elapsed: 1258.8s
+Downloading 1101/12000: data/10988.html
+Processed 1110/12000 files (9.2%), elapsed: 1270.0s
+Downloading 1111/12000: data/10997.html
+Processed 1120/12000 files (9.3%), elapsed: 1280.2s
+Downloading 1121/12000: data/11004.html
+Processed 1130/12000 files (9.4%), elapsed: 1301.2s
+Downloading 1131/12000: data/11013.html
+Processed 1140/12000 files (9.5%), elapsed: 1318.8s
+Downloading 1141/12000: data/11022.html
+Processed 1150/12000 files (9.6%), elapsed: 1332.3s
+Downloading 1151/12000: data/11031.html
+Processed 1160/12000 files (9.7%), elapsed: 1343.1s
+Downloading 1161/12000: data/11040.html
+Processed 1170/12000 files (9.8%), elapsed: 1354.0s
+Downloading 1171/12000: data/1105.html
+Processed 1180/12000 files (9.8%), elapsed: 1366.6s
+Downloading 1181/12000: data/11059.html
+Processed 1190/12000 files (9.9%), elapsed: 1375.4s
+Downloading 1191/12000: data/11068.html
+Processed 1200/12000 files (10.0%), elapsed: 1387.4s
+Downloading 1201/12000: data/11077.html
+Processed 1210/12000 files (10.1%), elapsed: 1399.1s
+Downloading 1211/12000: data/11086.html
+Processed 1220/12000 files (10.2%), elapsed: 1408.6s
+Downloading 1221/12000: data/11095.html
+Processed 1230/12000 files (10.2%), elapsed: 1419.9s
+Downloading 1231/12000: data/11103.html
+Processed 1240/12000 files (10.3%), elapsed: 1433.0s
+Downloading 1241/12000: data/11112.html
+Processed 1250/12000 files (10.4%), elapsed: 1446.4s
+Downloading 1251/12000: data/11121.html
+Processed 1260/12000 files (10.5%), elapsed: 1461.9s
+Downloading 1261/12000: data/11130.html
+Processed 1270/12000 files (10.6%), elapsed: 1473.7s
+Downloading 1271/12000: data/1114.html
+Processed 1280/12000 files (10.7%), elapsed: 1486.8s
+Downloading 1281/12000: data/11149.html
+Processed 1290/12000 files (10.8%), elapsed: 1498.4s
+Downloading 1291/12000: data/11158.html
+Processed 1300/12000 files (10.8%), elapsed: 1511.3s
+Downloading 1301/12000: data/11167.html
+Processed 1310/12000 files (10.9%), elapsed: 1522.8s
+Downloading 1311/12000: data/11176.html
+Processed 1320/12000 files (11.0%), elapsed: 1531.9s
+Downloading 1321/12000: data/11185.html
+Processed 1330/12000 files (11.1%), elapsed: 1544.3s
+Downloading 1331/12000: data/11194.html
+Processed 1340/12000 files (11.2%), elapsed: 1556.6s
+Downloading 1341/12000: data/11202.html
+Processed 1350/12000 files (11.2%), elapsed: 1570.1s
+Downloading 1351/12000: data/11211.html
+Processed 1360/12000 files (11.3%), elapsed: 1580.7s
+Downloading 1361/12000: data/11220.html
+Processed 1370/12000 files (11.4%), elapsed: 1590.2s
+Downloading 1371/12000: data/1123.html
+Processed 1380/12000 files (11.5%), elapsed: 1605.0s
+Downloading 1381/12000: data/11239.html
+Processed 1390/12000 files (11.6%), elapsed: 1615.0s
+Downloading 1391/12000: data/11248.html
+Processed 1400/12000 files (11.7%), elapsed: 1628.9s
+Downloading 1401/12000: data/11257.html
+Processed 1410/12000 files (11.8%), elapsed: 1641.5s
+Downloading 1411/12000: data/11266.html
+Processed 1420/12000 files (11.8%), elapsed: 1649.5s
+Downloading 1421/12000: data/11275.html
+Processed 1430/12000 files (11.9%), elapsed: 1661.7s
+Downloading 1431/12000: data/11284.html
+Processed 1440/12000 files (12.0%), elapsed: 1673.5s
+Downloading 1441/12000: data/11293.html
+Processed 1450/12000 files (12.1%), elapsed: 1681.3s
+Downloading 1451/12000: data/11301.html
+Processed 1460/12000 files (12.2%), elapsed: 1691.7s
+Downloading 1461/12000: data/11310.html
+Processed 1470/12000 files (12.2%), elapsed: 1710.7s
+Downloading 1471/12000: data/1132.html
+Processed 1480/12000 files (12.3%), elapsed: 1725.1s
+Downloading 1481/12000: data/11329.html
+Processed 1490/12000 files (12.4%), elapsed: 1734.9s
+Downloading 1491/12000: data/11338.html
+Processed 1500/12000 files (12.5%), elapsed: 1748.0s
+Downloading 1501/12000: data/11347.html
+Processed 1510/12000 files (12.6%), elapsed: 1757.3s
+Downloading 1511/12000: data/11356.html
+Processed 1520/12000 files (12.7%), elapsed: 1774.0s
+Downloading 1521/12000: data/11365.html
+Processed 1530/12000 files (12.8%), elapsed: 1786.9s
+Downloading 1531/12000: data/11374.html
+Processed 1540/12000 files (12.8%), elapsed: 1804.7s
+Downloading 1541/12000: data/11383.html
+Processed 1550/12000 files (12.9%), elapsed: 1815.1s
+Downloading 1551/12000: data/11392.html
+Processed 1560/12000 files (13.0%), elapsed: 1826.7s
+Downloading 1561/12000: data/11400.html
+Processed 1570/12000 files (13.1%), elapsed: 1844.1s
+Downloading 1571/12000: data/1141.html
+Processed 1580/12000 files (13.2%), elapsed: 1866.7s
+Downloading 1581/12000: data/11419.html
+Processed 1590/12000 files (13.2%), elapsed: 1879.6s
+Downloading 1591/12000: data/11428.html
+Processed 1600/12000 files (13.3%), elapsed: 1890.1s
+Downloading 1601/12000: data/11437.html
+Processed 1610/12000 files (13.4%), elapsed: 1903.0s
+Downloading 1611/12000: data/11446.html
+Processed 1620/12000 files (13.5%), elapsed: 1915.5s
+Downloading 1621/12000: data/11455.html
+Processed 1630/12000 files (13.6%), elapsed: 1926.5s
+Downloading 1631/12000: data/11464.html
+Processed 1640/12000 files (13.7%), elapsed: 1937.0s
+Downloading 1641/12000: data/11473.html
+Processed 1650/12000 files (13.8%), elapsed: 1947.2s
+Downloading 1651/12000: data/11482.html
+Processed 1660/12000 files (13.8%), elapsed: 1956.9s
+Downloading 1661/12000: data/11491.html
+Processed 1670/12000 files (13.9%), elapsed: 1967.1s
+Downloading 1671/12000: data/1150.html
+Processed 1680/12000 files (14.0%), elapsed: 1982.7s
+Downloading 1681/12000: data/11509.html
+Processed 1690/12000 files (14.1%), elapsed: 2002.4s
+Downloading 1691/12000: data/11518.html
+Processed 1700/12000 files (14.2%), elapsed: 2017.0s
+Downloading 1701/12000: data/11527.html
+Processed 1710/12000 files (14.2%), elapsed: 2028.3s
+Downloading 1711/12000: data/11536.html
+Processed 1720/12000 files (14.3%), elapsed: 2039.6s
+Downloading 1721/12000: data/11545.html
+Processed 1730/12000 files (14.4%), elapsed: 2050.0s
+Downloading 1731/12000: data/11554.html
+Processed 1740/12000 files (14.5%), elapsed: 2060.1s
+Downloading 1741/12000: data/11563.html
+Processed 1750/12000 files (14.6%), elapsed: 2071.3s
+Downloading 1751/12000: data/11572.html
+Processed 1760/12000 files (14.7%), elapsed: 2081.4s
+Downloading 1761/12000: data/11581.html
+Processed 1770/12000 files (14.8%), elapsed: 2092.1s
+Downloading 1771/12000: data/11590.html
+Processed 1780/12000 files (14.8%), elapsed: 2099.9s
+Downloading 1781/12000: data/116.html
+Processed 1790/12000 files (14.9%), elapsed: 2111.7s
+Downloading 1791/12000: data/11608.html
+Processed 1800/12000 files (15.0%), elapsed: 2123.0s
+Downloading 1801/12000: data/11617.html
+Processed 1810/12000 files (15.1%), elapsed: 2132.6s
+Downloading 1811/12000: data/11626.html
+Processed 1820/12000 files (15.2%), elapsed: 2148.1s
+Downloading 1821/12000: data/11635.html
+Processed 1830/12000 files (15.2%), elapsed: 2165.7s
+Downloading 1831/12000: data/11644.html
+Processed 1840/12000 files (15.3%), elapsed: 2178.5s
+Downloading 1841/12000: data/11653.html
+Processed 1850/12000 files (15.4%), elapsed: 2191.1s
+Downloading 1851/12000: data/11662.html
+Processed 1860/12000 files (15.5%), elapsed: 2207.0s
+Downloading 1861/12000: data/11671.html
+Processed 1870/12000 files (15.6%), elapsed: 2222.4s
+Downloading 1871/12000: data/11680.html
+Processed 1880/12000 files (15.7%), elapsed: 2237.9s
+Downloading 1881/12000: data/1169.html
+Processed 1890/12000 files (15.8%), elapsed: 2247.9s
+Downloading 1891/12000: data/11699.html
+Processed 1900/12000 files (15.8%), elapsed: 2275.4s
+Downloading 1901/12000: data/11707.html
+Processed 1910/12000 files (15.9%), elapsed: 2286.7s
+Downloading 1911/12000: data/11716.html
+Processed 1920/12000 files (16.0%), elapsed: 2299.3s
+Downloading 1921/12000: data/11725.html
+Processed 1930/12000 files (16.1%), elapsed: 2313.9s
+Downloading 1931/12000: data/11734.html
+Processed 1940/12000 files (16.2%), elapsed: 2322.4s
+Downloading 1941/12000: data/11743.html
+Processed 1950/12000 files (16.2%), elapsed: 2335.4s
+Downloading 1951/12000: data/11752.html
+Processed 1960/12000 files (16.3%), elapsed: 2348.2s
+Downloading 1961/12000: data/11761.html
+Processed 1970/12000 files (16.4%), elapsed: 2362.1s
+Downloading 1971/12000: data/11770.html
+Processed 1980/12000 files (16.5%), elapsed: 2373.0s
+Downloading 1981/12000: data/1178.html
+Processed 1990/12000 files (16.6%), elapsed: 2383.2s
+Downloading 1991/12000: data/11789.html
+Processed 2000/12000 files (16.7%), elapsed: 2393.7s
+Downloading 2001/12000: data/11798.html
+Processed 2010/12000 files (16.8%), elapsed: 2402.5s
+Downloading 2011/12000: data/11806.html
+Processed 2020/12000 files (16.8%), elapsed: 2418.1s
+Downloading 2021/12000: data/11815.html
+Processed 2030/12000 files (16.9%), elapsed: 2429.5s
+Downloading 2031/12000: data/11824.html
+Processed 2040/12000 files (17.0%), elapsed: 2443.6s
+Downloading 2041/12000: data/11833.html
+Processed 2050/12000 files (17.1%), elapsed: 2458.5s
+Downloading 2051/12000: data/11842.html
+Processed 2060/12000 files (17.2%), elapsed: 2469.2s
+Downloading 2061/12000: data/11851.html
+Processed 2070/12000 files (17.2%), elapsed: 2478.4s
+Downloading 2071/12000: data/11860.html
+Processed 2080/12000 files (17.3%), elapsed: 2490.1s
+Downloading 2081/12000: data/1187.html
+Processed 2090/12000 files (17.4%), elapsed: 2506.9s
+Downloading 2091/12000: data/11879.html
+Processed 2100/12000 files (17.5%), elapsed: 2516.3s
+Downloading 2101/12000: data/11888.html
+Processed 2110/12000 files (17.6%), elapsed: 2530.6s
+Downloading 2111/12000: data/11897.html
+Processed 2120/12000 files (17.7%), elapsed: 2542.6s
+Downloading 2121/12000: data/11905.html
+Processed 2130/12000 files (17.8%), elapsed: 2551.8s
+Downloading 2131/12000: data/11914.html
+Processed 2140/12000 files (17.8%), elapsed: 2562.7s
+Downloading 2141/12000: data/11923.html
+Processed 2150/12000 files (17.9%), elapsed: 2583.2s
+Downloading 2151/12000: data/11932.html
+Processed 2160/12000 files (18.0%), elapsed: 2594.0s
+Downloading 2161/12000: data/11941.html
+Processed 2170/12000 files (18.1%), elapsed: 2605.9s
+Downloading 2171/12000: data/11950.html
+Processed 2180/12000 files (18.2%), elapsed: 2618.3s
+Downloading 2181/12000: data/1196.html
+Processed 2190/12000 files (18.2%), elapsed: 2634.1s
+Downloading 2191/12000: data/11969.html
+Processed 2200/12000 files (18.3%), elapsed: 2642.5s
+Downloading 2201/12000: data/11978.html
+Processed 2210/12000 files (18.4%), elapsed: 2653.8s
+Downloading 2211/12000: data/11987.html
+Processed 2220/12000 files (18.5%), elapsed: 2664.7s
+Downloading 2221/12000: data/11996.html
+Processed 2230/12000 files (18.6%), elapsed: 2674.2s
+Downloading 2231/12000: data/1204.html
+Processed 2240/12000 files (18.7%), elapsed: 2687.6s
+Downloading 2241/12000: data/1213.html
+Processed 2250/12000 files (18.8%), elapsed: 2698.7s
+Downloading 2251/12000: data/1222.html
+Processed 2260/12000 files (18.8%), elapsed: 2717.1s
+Downloading 2261/12000: data/1231.html
+Processed 2270/12000 files (18.9%), elapsed: 2726.0s
+Downloading 2271/12000: data/1240.html
+Processed 2280/12000 files (19.0%), elapsed: 2741.0s
+Downloading 2281/12000: data/125.html
+Processed 2290/12000 files (19.1%), elapsed: 2753.3s
+Downloading 2291/12000: data/1259.html
+Processed 2300/12000 files (19.2%), elapsed: 2762.3s
+Downloading 2301/12000: data/1268.html
+Processed 2310/12000 files (19.2%), elapsed: 2771.8s
+Downloading 2311/12000: data/1277.html
+Processed 2320/12000 files (19.3%), elapsed: 2783.9s
+Downloading 2321/12000: data/1286.html
+Processed 2330/12000 files (19.4%), elapsed: 2794.3s
+Downloading 2331/12000: data/1295.html
+Processed 2340/12000 files (19.5%), elapsed: 2807.4s
+Downloading 2341/12000: data/1303.html
+Processed 2350/12000 files (19.6%), elapsed: 2819.5s
+Downloading 2351/12000: data/1312.html
+Processed 2360/12000 files (19.7%), elapsed: 2830.8s
+Downloading 2361/12000: data/1321.html
+Processed 2370/12000 files (19.8%), elapsed: 2845.4s
+Downloading 2371/12000: data/1330.html
+Processed 2380/12000 files (19.8%), elapsed: 2857.4s
+Downloading 2381/12000: data/134.html
+Processed 2390/12000 files (19.9%), elapsed: 2866.8s
+Downloading 2391/12000: data/1349.html
+Processed 2400/12000 files (20.0%), elapsed: 2879.7s
+Downloading 2401/12000: data/1358.html
+Processed 2410/12000 files (20.1%), elapsed: 2893.7s
+Downloading 2411/12000: data/1367.html
+Processed 2420/12000 files (20.2%), elapsed: 2900.8s
+Downloading 2421/12000: data/1376.html
+Processed 2430/12000 files (20.2%), elapsed: 2908.6s
+Downloading 2431/12000: data/1385.html
+Processed 2440/12000 files (20.3%), elapsed: 2919.4s
+Downloading 2441/12000: data/1394.html
+Processed 2450/12000 files (20.4%), elapsed: 2932.1s
+Downloading 2451/12000: data/1402.html
+Processed 2460/12000 files (20.5%), elapsed: 2941.3s
+Downloading 2461/12000: data/1411.html
+Processed 2470/12000 files (20.6%), elapsed: 2952.6s
+Downloading 2471/12000: data/1420.html
+Processed 2480/12000 files (20.7%), elapsed: 2964.5s
+Downloading 2481/12000: data/143.html
+Processed 2490/12000 files (20.8%), elapsed: 2975.5s
+Downloading 2491/12000: data/1439.html
+Processed 2500/12000 files (20.8%), elapsed: 2983.6s
+Downloading 2501/12000: data/1448.html
+Processed 2510/12000 files (20.9%), elapsed: 2990.5s
+Downloading 2511/12000: data/1457.html
+Processed 2520/12000 files (21.0%), elapsed: 3004.2s
+Downloading 2521/12000: data/1466.html
+Processed 2530/12000 files (21.1%), elapsed: 3013.2s
+Downloading 2531/12000: data/1475.html
+Processed 2540/12000 files (21.2%), elapsed: 3019.9s
+Downloading 2541/12000: data/1484.html
+Processed 2550/12000 files (21.2%), elapsed: 3033.3s
+Downloading 2551/12000: data/1493.html
+Processed 2560/12000 files (21.3%), elapsed: 3046.1s
+Downloading 2561/12000: data/1501.html
+Processed 2570/12000 files (21.4%), elapsed: 3059.7s
+Downloading 2571/12000: data/1510.html
+Processed 2580/12000 files (21.5%), elapsed: 3079.5s
+Downloading 2581/12000: data/152.html
+Processed 2590/12000 files (21.6%), elapsed: 3096.0s
+Downloading 2591/12000: data/1529.html
+Processed 2600/12000 files (21.7%), elapsed: 3107.5s
+Downloading 2601/12000: data/1538.html
+Processed 2610/12000 files (21.8%), elapsed: 3115.3s
+Downloading 2611/12000: data/1547.html
+Processed 2620/12000 files (21.8%), elapsed: 3123.1s
+Downloading 2621/12000: data/1556.html
+Processed 2630/12000 files (21.9%), elapsed: 3135.0s
+Downloading 2631/12000: data/1565.html
+Processed 2640/12000 files (22.0%), elapsed: 3143.0s
+Downloading 2641/12000: data/1574.html
+Processed 2650/12000 files (22.1%), elapsed: 3158.4s
+Downloading 2651/12000: data/1583.html
+Processed 2660/12000 files (22.2%), elapsed: 3167.8s
+Downloading 2661/12000: data/1592.html
+Processed 2670/12000 files (22.2%), elapsed: 3180.9s
+Downloading 2671/12000: data/1600.html
+Processed 2680/12000 files (22.3%), elapsed: 3193.6s
+Downloading 2681/12000: data/161.html
+Processed 2690/12000 files (22.4%), elapsed: 3201.0s
+Downloading 2691/12000: data/1619.html
+Processed 2700/12000 files (22.5%), elapsed: 3211.1s
+Downloading 2701/12000: data/1628.html
+Processed 2710/12000 files (22.6%), elapsed: 3225.9s
+Downloading 2711/12000: data/1637.html
+Processed 2720/12000 files (22.7%), elapsed: 3233.8s
+Downloading 2721/12000: data/1646.html
+Processed 2730/12000 files (22.8%), elapsed: 3244.4s
+Downloading 2731/12000: data/1655.html
+Processed 2740/12000 files (22.8%), elapsed: 3256.5s
+Downloading 2741/12000: data/1664.html
+Processed 2750/12000 files (22.9%), elapsed: 3268.3s
+Downloading 2751/12000: data/1673.html
+Processed 2760/12000 files (23.0%), elapsed: 3282.7s
+Downloading 2761/12000: data/1682.html
+Processed 2770/12000 files (23.1%), elapsed: 3292.6s
+Downloading 2771/12000: data/1691.html
+Processed 2780/12000 files (23.2%), elapsed: 3301.7s
+Downloading 2781/12000: data/170.html
+Processed 2790/12000 files (23.2%), elapsed: 3311.2s
+Downloading 2791/12000: data/1709.html
+Processed 2800/12000 files (23.3%), elapsed: 3326.1s
+Downloading 2801/12000: data/1718.html
+Processed 2810/12000 files (23.4%), elapsed: 3339.1s
+Downloading 2811/12000: data/1727.html
+Processed 2820/12000 files (23.5%), elapsed: 3353.4s
+Downloading 2821/12000: data/1736.html
+Processed 2830/12000 files (23.6%), elapsed: 3363.1s
+Downloading 2831/12000: data/1745.html
+Processed 2840/12000 files (23.7%), elapsed: 3372.6s
+Downloading 2841/12000: data/1754.html
+Processed 2850/12000 files (23.8%), elapsed: 3383.2s
+Downloading 2851/12000: data/1763.html
+Processed 2860/12000 files (23.8%), elapsed: 3391.7s
+Downloading 2861/12000: data/1772.html
+Processed 2870/12000 files (23.9%), elapsed: 3412.7s
+Downloading 2871/12000: data/1781.html
+Processed 2880/12000 files (24.0%), elapsed: 3425.7s
+Downloading 2881/12000: data/1790.html
+Processed 2890/12000 files (24.1%), elapsed: 3441.1s
+Downloading 2891/12000: data/18.html
+Processed 2900/12000 files (24.2%), elapsed: 3455.8s
+Downloading 2901/12000: data/1808.html
+Processed 2910/12000 files (24.2%), elapsed: 3467.0s
+Downloading 2911/12000: data/1817.html
+Processed 2920/12000 files (24.3%), elapsed: 3481.4s
+Downloading 2921/12000: data/1826.html
+Processed 2930/12000 files (24.4%), elapsed: 3494.4s
+Downloading 2931/12000: data/1835.html
+Processed 2940/12000 files (24.5%), elapsed: 3507.3s
+Downloading 2941/12000: data/1844.html
+Processed 2950/12000 files (24.6%), elapsed: 3525.8s
+Downloading 2951/12000: data/1853.html
+Processed 2960/12000 files (24.7%), elapsed: 3538.2s
+Downloading 2961/12000: data/1862.html
+Processed 2970/12000 files (24.8%), elapsed: 3548.2s
+Downloading 2971/12000: data/1871.html
+Processed 2980/12000 files (24.8%), elapsed: 3564.0s
+Downloading 2981/12000: data/1880.html
+Processed 2990/12000 files (24.9%), elapsed: 3575.3s
+Downloading 2991/12000: data/189.html
+Processed 3000/12000 files (25.0%), elapsed: 3588.4s
+Downloading 3001/12000: data/1899.html
+Processed 3010/12000 files (25.1%), elapsed: 3610.4s
+Downloading 3011/12000: data/1907.html
+Processed 3020/12000 files (25.2%), elapsed: 3620.1s
+Downloading 3021/12000: data/1916.html
+Processed 3030/12000 files (25.2%), elapsed: 3630.0s
+Downloading 3031/12000: data/1925.html
+Processed 3040/12000 files (25.3%), elapsed: 3640.9s
+Downloading 3041/12000: data/1934.html
+Processed 3050/12000 files (25.4%), elapsed: 3652.3s
+Downloading 3051/12000: data/1943.html
+Processed 3060/12000 files (25.5%), elapsed: 3668.3s
+Downloading 3061/12000: data/1952.html
+Processed 3070/12000 files (25.6%), elapsed: 3680.0s
+Downloading 3071/12000: data/1961.html
+Processed 3080/12000 files (25.7%), elapsed: 3692.2s
+Downloading 3081/12000: data/1970.html
+Processed 3090/12000 files (25.8%), elapsed: 3703.2s
+Downloading 3091/12000: data/198.html
+Processed 3100/12000 files (25.8%), elapsed: 3708.6s
+Downloading 3101/12000: data/1989.html
+Processed 3110/12000 files (25.9%), elapsed: 3722.0s
+Downloading 3111/12000: data/1998.html
+Processed 3120/12000 files (26.0%), elapsed: 3731.9s
+Downloading 3121/12000: data/2005.html
+Processed 3130/12000 files (26.1%), elapsed: 3742.9s
+Downloading 3131/12000: data/2014.html
+Processed 3140/12000 files (26.2%), elapsed: 3756.1s
+Downloading 3141/12000: data/2023.html
+Processed 3150/12000 files (26.2%), elapsed: 3767.2s
+Downloading 3151/12000: data/2032.html

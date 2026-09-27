@@ -1,0 +1,1154 @@
+Run started (UTC): 2026-09-26T08:30:18.003392+00:00
+Mode: checkpoint recovery
+Timing covers this invocation only, not any previous sessions.
+Reading bucket: cs528-hw2-yf-2026
+Prefix: data/
+Listed 1000 HTML files
+Listed 2000 HTML files
+Listed 3000 HTML files
+Listed 4000 HTML files
+Listed 5000 HTML files
+Run started (UTC): 2026-09-26T08:42:51.896209+00:00
+Mode: checkpoint recovery
+Timing covers this invocation only, not any previous sessions.
+Reading bucket: cs528-hw2-yf-2026
+Prefix: data/
+Listed 1000 HTML files
+Listed 2000 HTML files
+Listed 3000 HTML files
+Listed 4000 HTML files
+Listed 5000 HTML files
+Listed 6000 HTML files
+Listed 7000 HTML files
+Listed 8000 HTML files
+Listed 9000 HTML files
+Listed 10000 HTML files
+Listed 11000 HTML files
+Listed 12000 HTML files
+HTML files found: 12000
+No checkpoint found. Starting from the beginning.
+Downloading 1/12000: data/0.html
+Checkpoint saved: 25/12000 (0.2%), this session: 23.1s
+Downloading 26/12000: data/10019.html
+Checkpoint saved: 50/12000 (0.4%), this session: 50.8s
+Downloading 51/12000: data/10041.html
+Checkpoint saved: 75/12000 (0.6%), this session: 79.2s
+Downloading 76/12000: data/10064.html
+Checkpoint saved: 100/12000 (0.8%), this session: 110.8s
+Downloading 101/12000: data/10087.html
+Checkpoint saved: 125/12000 (1.0%), this session: 138.3s
+Downloading 126/12000: data/10109.html
+Checkpoint saved: 150/12000 (1.2%), this session: 176.0s
+Downloading 151/12000: data/10131.html
+Checkpoint saved: 175/12000 (1.5%), this session: 204.1s
+Downloading 176/12000: data/10154.html
+Checkpoint saved: 200/12000 (1.7%), this session: 250.4s
+Downloading 201/12000: data/10177.html
+Checkpoint saved: 225/12000 (1.9%), this session: 278.7s
+Downloading 226/12000: data/102.html
+Checkpoint saved: 250/12000 (2.1%), this session: 315.2s
+Downloading 251/12000: data/10221.html
+Checkpoint saved: 275/12000 (2.3%), this session: 351.5s
+Downloading 276/12000: data/10244.html
+Checkpoint saved: 300/12000 (2.5%), this session: 387.7s
+Downloading 301/12000: data/10267.html
+Checkpoint saved: 325/12000 (2.7%), this session: 438.9s
+Downloading 326/12000: data/1029.html
+Checkpoint saved: 350/12000 (2.9%), this session: 481.7s
+Downloading 351/12000: data/10311.html
+Checkpoint saved: 375/12000 (3.1%), this session: 517.0s
+Downloading 376/12000: data/10334.html
+Checkpoint saved: 400/12000 (3.3%), this session: 550.2s
+Downloading 401/12000: data/10357.html
+Checkpoint saved: 425/12000 (3.5%), this session: 585.2s
+Downloading 426/12000: data/1038.html
+Checkpoint saved: 450/12000 (3.8%), this session: 616.5s
+Downloading 451/12000: data/10401.html
+Checkpoint saved: 475/12000 (4.0%), this session: 646.7s
+Downloading 476/12000: data/10424.html
+Checkpoint saved: 500/12000 (4.2%), this session: 672.5s
+Downloading 501/12000: data/10447.html
+Checkpoint saved: 525/12000 (4.4%), this session: 700.4s
+Downloading 526/12000: data/1047.html
+Checkpoint saved: 550/12000 (4.6%), this session: 732.1s
+Downloading 551/12000: data/10492.html
+Checkpoint saved: 575/12000 (4.8%), this session: 765.6s
+Downloading 576/12000: data/10514.html
+Checkpoint saved: 600/12000 (5.0%), this session: 792.8s
+Downloading 601/12000: data/10537.html
+Checkpoint saved: 625/12000 (5.2%), this session: 837.8s
+Downloading 626/12000: data/1056.html
+Checkpoint saved: 650/12000 (5.4%), this session: 873.1s
+Downloading 651/12000: data/10582.html
+Checkpoint saved: 675/12000 (5.6%), this session: 906.6s
+Downloading 676/12000: data/10604.html
+Checkpoint saved: 700/12000 (5.8%), this session: 938.9s
+Downloading 701/12000: data/10627.html
+Checkpoint saved: 725/12000 (6.0%), this session: 966.4s
+Downloading 726/12000: data/1065.html
+Checkpoint saved: 750/12000 (6.2%), this session: 999.3s
+Downloading 751/12000: data/10672.html
+Checkpoint saved: 775/12000 (6.5%), this session: 1030.6s
+Downloading 776/12000: data/10695.html
+Checkpoint saved: 800/12000 (6.7%), this session: 1062.5s
+Downloading 801/12000: data/10717.html
+Checkpoint saved: 825/12000 (6.9%), this session: 1092.9s
+Downloading 826/12000: data/1074.html
+Checkpoint saved: 850/12000 (7.1%), this session: 1125.0s
+Downloading 851/12000: data/10762.html
+Checkpoint saved: 875/12000 (7.3%), this session: 1157.2s
+Downloading 876/12000: data/10785.html
+Checkpoint saved: 900/12000 (7.5%), this session: 1195.7s
+Downloading 901/12000: data/10807.html
+Checkpoint saved: 925/12000 (7.7%), this session: 1227.5s
+Downloading 926/12000: data/1083.html
+Checkpoint saved: 950/12000 (7.9%), this session: 1283.9s
+Downloading 951/12000: data/10852.html
+Checkpoint saved: 975/12000 (8.1%), this session: 1312.7s
+Downloading 976/12000: data/10875.html
+Checkpoint saved: 1000/12000 (8.3%), this session: 1366.6s
+Downloading 1001/12000: data/10898.html
+Checkpoint saved: 1025/12000 (8.5%), this session: 1393.0s
+Downloading 1026/12000: data/1092.html
+Checkpoint saved: 1050/12000 (8.8%), this session: 1434.0s
+Downloading 1051/12000: data/10942.html
+Checkpoint saved: 1075/12000 (9.0%), this session: 1475.0s
+Downloading 1076/12000: data/10965.html
+Checkpoint saved: 1100/12000 (9.2%), this session: 1513.6s
+Downloading 1101/12000: data/10988.html
+Checkpoint saved: 1125/12000 (9.4%), this session: 1557.1s
+Downloading 1126/12000: data/11009.html
+Checkpoint saved: 1150/12000 (9.6%), this session: 1594.7s
+Downloading 1151/12000: data/11031.html
+Checkpoint saved: 1175/12000 (9.8%), this session: 1627.0s
+Downloading 1176/12000: data/11054.html
+Checkpoint saved: 1200/12000 (10.0%), this session: 1661.9s
+Downloading 1201/12000: data/11077.html
+Checkpoint saved: 1225/12000 (10.2%), this session: 1699.5s
+Downloading 1226/12000: data/111.html
+Checkpoint saved: 1250/12000 (10.4%), this session: 1735.5s
+Downloading 1251/12000: data/11121.html
+Checkpoint saved: 1275/12000 (10.6%), this session: 1769.0s
+Downloading 1276/12000: data/11144.html
+Checkpoint saved: 1300/12000 (10.8%), this session: 1807.8s
+Downloading 1301/12000: data/11167.html
+Checkpoint saved: 1325/12000 (11.0%), this session: 1835.8s
+Downloading 1326/12000: data/1119.html
+Checkpoint saved: 1350/12000 (11.2%), this session: 1871.3s
+Downloading 1351/12000: data/11211.html
+Checkpoint saved: 1375/12000 (11.5%), this session: 1907.1s
+Downloading 1376/12000: data/11234.html
+Checkpoint saved: 1400/12000 (11.7%), this session: 1941.8s
+Downloading 1401/12000: data/11257.html
+Checkpoint saved: 1425/12000 (11.9%), this session: 1971.4s
+Downloading 1426/12000: data/1128.html
+Checkpoint saved: 1450/12000 (12.1%), this session: 2009.0s
+Downloading 1451/12000: data/11301.html
+Checkpoint saved: 1475/12000 (12.3%), this session: 2050.3s
+Downloading 1476/12000: data/11324.html
+Checkpoint saved: 1500/12000 (12.5%), this session: 2083.1s
+Downloading 1501/12000: data/11347.html
+Checkpoint saved: 1525/12000 (12.7%), this session: 2122.6s
+Downloading 1526/12000: data/1137.html
+Checkpoint saved: 1550/12000 (12.9%), this session: 2159.0s
+Downloading 1551/12000: data/11392.html
+Checkpoint saved: 1575/12000 (13.1%), this session: 2199.4s
+Downloading 1576/12000: data/11414.html
+Checkpoint saved: 1600/12000 (13.3%), this session: 2237.6s
+Downloading 1601/12000: data/11437.html
+Checkpoint saved: 1625/12000 (13.5%), this session: 2275.5s
+Downloading 1626/12000: data/1146.html
+Checkpoint saved: 1650/12000 (13.8%), this session: 2313.0s
+Downloading 1651/12000: data/11482.html
+Checkpoint saved: 1675/12000 (14.0%), this session: 2341.3s
+Downloading 1676/12000: data/11504.html
+Checkpoint saved: 1700/12000 (14.2%), this session: 2368.8s
+Downloading 1701/12000: data/11527.html
+Run started (UTC): 2026-09-26T17:58:52.698577+00:00
+Mode: checkpoint recovery
+Timing covers this invocation only, not any previous sessions.
+Reading bucket: cs528-hw2-yf-2026
+Prefix: data/
+Listed 1000 HTML files
+Listed 2000 HTML files
+Listed 3000 HTML files
+Listed 4000 HTML files
+Listed 5000 HTML files
+Listed 6000 HTML files
+Listed 7000 HTML files
+Listed 8000 HTML files
+Listed 9000 HTML files
+Listed 10000 HTML files
+Listed 11000 HTML files
+Listed 12000 HTML files
+HTML files found: 12000
+Resuming from 1700/12000 files
+Downloading 1701/12000: data/11527.html
+Checkpoint saved: 1725/12000 (14.4%), this session: 28.6s
+Downloading 1726/12000: data/1155.html
+Checkpoint saved: 1750/12000 (14.6%), this session: 64.6s
+Downloading 1751/12000: data/11572.html
+Checkpoint saved: 1775/12000 (14.8%), this session: 92.6s
+Downloading 1776/12000: data/11595.html
+Checkpoint saved: 1800/12000 (15.0%), this session: 125.7s
+Downloading 1801/12000: data/11617.html
+Checkpoint saved: 1825/12000 (15.2%), this session: 167.3s
+Downloading 1826/12000: data/1164.html
+Checkpoint saved: 1850/12000 (15.4%), this session: 199.1s
+Downloading 1851/12000: data/11662.html
+Checkpoint saved: 1875/12000 (15.6%), this session: 232.9s
+Downloading 1876/12000: data/11685.html
+Checkpoint saved: 1900/12000 (15.8%), this session: 260.8s
+Downloading 1901/12000: data/11707.html
+Checkpoint saved: 1925/12000 (16.0%), this session: 284.2s
+Downloading 1926/12000: data/1173.html
+Checkpoint saved: 1950/12000 (16.2%), this session: 318.8s
+Downloading 1951/12000: data/11752.html
+Checkpoint saved: 1975/12000 (16.5%), this session: 348.1s
+Downloading 1976/12000: data/11775.html
+Checkpoint saved: 2000/12000 (16.7%), this session: 379.9s
+Downloading 2001/12000: data/11798.html
+Checkpoint saved: 2025/12000 (16.9%), this session: 409.2s
+Downloading 2026/12000: data/1182.html
+Checkpoint saved: 2050/12000 (17.1%), this session: 445.9s
+Downloading 2051/12000: data/11842.html
+Checkpoint saved: 2075/12000 (17.3%), this session: 476.9s
+Downloading 2076/12000: data/11865.html
+Checkpoint saved: 2100/12000 (17.5%), this session: 515.2s
+Downloading 2101/12000: data/11888.html
+Checkpoint saved: 2125/12000 (17.7%), this session: 539.8s
+Downloading 2126/12000: data/1191.html
+Checkpoint saved: 2150/12000 (17.9%), this session: 563.6s
+Downloading 2151/12000: data/11932.html
+Checkpoint saved: 2175/12000 (18.1%), this session: 594.7s
+Downloading 2176/12000: data/11955.html
+Checkpoint saved: 2200/12000 (18.3%), this session: 628.1s
+Downloading 2201/12000: data/11978.html
+Checkpoint saved: 2225/12000 (18.5%), this session: 655.0s
+Downloading 2226/12000: data/120.html
+Checkpoint saved: 2250/12000 (18.8%), this session: 681.3s
+Downloading 2251/12000: data/1222.html
+Checkpoint saved: 2275/12000 (19.0%), this session: 710.7s
+Downloading 2276/12000: data/1245.html
+Checkpoint saved: 2300/12000 (19.2%), this session: 741.4s
+Downloading 2301/12000: data/1268.html
+Checkpoint saved: 2325/12000 (19.4%), this session: 766.4s
+Downloading 2326/12000: data/1290.html
+Checkpoint saved: 2350/12000 (19.6%), this session: 800.7s
+Downloading 2351/12000: data/1312.html
+Checkpoint saved: 2375/12000 (19.8%), this session: 833.9s
+Downloading 2376/12000: data/1335.html
+Checkpoint saved: 2400/12000 (20.0%), this session: 861.8s
+Downloading 2401/12000: data/1358.html
+Checkpoint saved: 2425/12000 (20.2%), this session: 899.2s
+Downloading 2426/12000: data/1380.html
+Checkpoint saved: 2450/12000 (20.4%), this session: 928.1s
+Downloading 2451/12000: data/1402.html
+Checkpoint saved: 2475/12000 (20.6%), this session: 965.4s
+Downloading 2476/12000: data/1425.html
+Checkpoint saved: 2500/12000 (20.8%), this session: 995.6s
+Downloading 2501/12000: data/1448.html
+Checkpoint saved: 2525/12000 (21.0%), this session: 1027.8s
+Downloading 2526/12000: data/1470.html
+Checkpoint saved: 2550/12000 (21.2%), this session: 1054.2s
+Downloading 2551/12000: data/1493.html
+Checkpoint saved: 2575/12000 (21.5%), this session: 1083.7s
+Downloading 2576/12000: data/1515.html
+Checkpoint saved: 2600/12000 (21.7%), this session: 1110.9s
+Downloading 2601/12000: data/1538.html
+Checkpoint saved: 2625/12000 (21.9%), this session: 1142.1s
+Downloading 2626/12000: data/1560.html
+Checkpoint saved: 2650/12000 (22.1%), this session: 1168.2s
+Downloading 2651/12000: data/1583.html
+Checkpoint saved: 2675/12000 (22.3%), this session: 1198.9s
+Downloading 2676/12000: data/1605.html
+Checkpoint saved: 2700/12000 (22.5%), this session: 1224.6s
+Downloading 2701/12000: data/1628.html
+Checkpoint saved: 2725/12000 (22.7%), this session: 1260.4s
+Downloading 2726/12000: data/1650.html
+Checkpoint saved: 2750/12000 (22.9%), this session: 1294.0s
+Downloading 2751/12000: data/1673.html
+Checkpoint saved: 2775/12000 (23.1%), this session: 1320.4s
+Downloading 2776/12000: data/1696.html
+Checkpoint saved: 2800/12000 (23.3%), this session: 1345.4s
+Downloading 2801/12000: data/1718.html
+Checkpoint saved: 2825/12000 (23.5%), this session: 1374.6s
+Downloading 2826/12000: data/1740.html
+Checkpoint saved: 2850/12000 (23.8%), this session: 1409.3s
+Downloading 2851/12000: data/1763.html
+Checkpoint saved: 2875/12000 (24.0%), this session: 1433.3s
+Downloading 2876/12000: data/1786.html
+Checkpoint saved: 2900/12000 (24.2%), this session: 1467.7s
+Downloading 2901/12000: data/1808.html
+Checkpoint saved: 2925/12000 (24.4%), this session: 1504.8s
+Downloading 2926/12000: data/1830.html
+Checkpoint saved: 2950/12000 (24.6%), this session: 1538.9s
+Downloading 2951/12000: data/1853.html
+Checkpoint saved: 2975/12000 (24.8%), this session: 1591.3s
+Downloading 2976/12000: data/1876.html
+Checkpoint saved: 3000/12000 (25.0%), this session: 1633.7s
+Downloading 3001/12000: data/1899.html
+Checkpoint saved: 3025/12000 (25.2%), this session: 1665.0s
+Downloading 3026/12000: data/1920.html
+Checkpoint saved: 3050/12000 (25.4%), this session: 1691.9s
+Downloading 3051/12000: data/1943.html
+Checkpoint saved: 3075/12000 (25.6%), this session: 1723.1s
+Downloading 3076/12000: data/1966.html
+Checkpoint saved: 3100/12000 (25.8%), this session: 1755.5s
+Downloading 3101/12000: data/1989.html
+Checkpoint saved: 3125/12000 (26.0%), this session: 1783.5s
+Downloading 3126/12000: data/201.html
+Checkpoint saved: 3150/12000 (26.2%), this session: 1806.9s
+Downloading 3151/12000: data/2032.html
+Checkpoint saved: 3175/12000 (26.5%), this session: 1838.7s
+Downloading 3176/12000: data/2055.html
+Checkpoint saved: 3200/12000 (26.7%), this session: 1867.9s
+Downloading 3201/12000: data/2078.html
+Checkpoint saved: 3225/12000 (26.9%), this session: 1892.9s
+Downloading 3226/12000: data/210.html
+Checkpoint saved: 3250/12000 (27.1%), this session: 1928.5s
+Downloading 3251/12000: data/2122.html
+Checkpoint saved: 3275/12000 (27.3%), this session: 1954.2s
+Downloading 3276/12000: data/2145.html
+Checkpoint saved: 3300/12000 (27.5%), this session: 1983.2s
+Downloading 3301/12000: data/2168.html
+Checkpoint saved: 3325/12000 (27.7%), this session: 2013.9s
+Downloading 3326/12000: data/2190.html
+Checkpoint saved: 3350/12000 (27.9%), this session: 2058.7s
+Downloading 3351/12000: data/2212.html
+Checkpoint saved: 3375/12000 (28.1%), this session: 2091.6s
+Downloading 3376/12000: data/2235.html
+Checkpoint saved: 3400/12000 (28.3%), this session: 2119.1s
+Downloading 3401/12000: data/2258.html
+Checkpoint saved: 3425/12000 (28.5%), this session: 2153.8s
+Downloading 3426/12000: data/2280.html
+Checkpoint saved: 3450/12000 (28.8%), this session: 2179.1s
+Downloading 3451/12000: data/2302.html
+Checkpoint saved: 3475/12000 (29.0%), this session: 2210.4s
+Downloading 3476/12000: data/2325.html
+Checkpoint saved: 3500/12000 (29.2%), this session: 2245.9s
+Downloading 3501/12000: data/2348.html
+Checkpoint saved: 3525/12000 (29.4%), this session: 2275.7s
+Downloading 3526/12000: data/2370.html
+Checkpoint saved: 3550/12000 (29.6%), this session: 2305.0s
+Downloading 3551/12000: data/2393.html
+Checkpoint saved: 3575/12000 (29.8%), this session: 2337.6s
+Downloading 3576/12000: data/2415.html
+Checkpoint saved: 3600/12000 (30.0%), this session: 2370.0s
+Downloading 3601/12000: data/2438.html
+Run started (UTC): 2026-09-26T19:38:21.052956+00:00
+Mode: checkpoint recovery
+Timing covers this invocation only, not any previous sessions.
+Reading bucket: cs528-hw2-yf-2026
+Prefix: data/
+Listed 1000 HTML files
+Listed 2000 HTML files
+Listed 3000 HTML files
+Listed 4000 HTML files
+Listed 5000 HTML files
+Listed 6000 HTML files
+Listed 7000 HTML files
+Listed 8000 HTML files
+Listed 9000 HTML files
+Listed 10000 HTML files
+Listed 11000 HTML files
+Listed 12000 HTML files
+HTML files found: 12000
+Resuming from 3600/12000 files
+Downloading 3601/12000: data/2438.html
+Checkpoint saved: 3625/12000 (30.2%), this session: 26.5s
+Downloading 3626/12000: data/2460.html
+Checkpoint saved: 3650/12000 (30.4%), this session: 54.1s
+Downloading 3651/12000: data/2483.html
+Checkpoint saved: 3675/12000 (30.6%), this session: 83.3s
+Downloading 3676/12000: data/2505.html
+Checkpoint saved: 3700/12000 (30.8%), this session: 113.3s
+Downloading 3701/12000: data/2528.html
+Checkpoint saved: 3725/12000 (31.0%), this session: 138.1s
+Downloading 3726/12000: data/2550.html
+Checkpoint saved: 3750/12000 (31.2%), this session: 167.8s
+Downloading 3751/12000: data/2573.html
+Checkpoint saved: 3775/12000 (31.5%), this session: 195.5s
+Downloading 3776/12000: data/2596.html
+Checkpoint saved: 3800/12000 (31.7%), this session: 217.6s
+Downloading 3801/12000: data/2618.html
+Checkpoint saved: 3825/12000 (31.9%), this session: 249.6s
+Downloading 3826/12000: data/2640.html
+Checkpoint saved: 3850/12000 (32.1%), this session: 300.5s
+Downloading 3851/12000: data/2663.html
+Checkpoint saved: 3875/12000 (32.3%), this session: 328.3s
+Downloading 3876/12000: data/2686.html
+Checkpoint saved: 3900/12000 (32.5%), this session: 359.0s
+Downloading 3901/12000: data/2708.html
+Checkpoint saved: 3925/12000 (32.7%), this session: 394.0s
+Downloading 3926/12000: data/2730.html
+Checkpoint saved: 3950/12000 (32.9%), this session: 420.8s
+Downloading 3951/12000: data/2753.html
+Checkpoint saved: 3975/12000 (33.1%), this session: 447.0s
+Downloading 3976/12000: data/2776.html
+Checkpoint saved: 4000/12000 (33.3%), this session: 469.2s
+Downloading 4001/12000: data/2799.html
+Checkpoint saved: 4025/12000 (33.5%), this session: 502.0s
+Downloading 4026/12000: data/2820.html
+Checkpoint saved: 4050/12000 (33.8%), this session: 526.2s
+Downloading 4051/12000: data/2843.html
+Checkpoint saved: 4075/12000 (34.0%), this session: 562.6s
+Downloading 4076/12000: data/2866.html
+Checkpoint saved: 4100/12000 (34.2%), this session: 597.8s
+Downloading 4101/12000: data/2889.html
+Checkpoint saved: 4125/12000 (34.4%), this session: 626.2s
+Downloading 4126/12000: data/2910.html
+Checkpoint saved: 4150/12000 (34.6%), this session: 650.1s
+Downloading 4151/12000: data/2933.html
+Checkpoint saved: 4175/12000 (34.8%), this session: 679.5s
+Downloading 4176/12000: data/2956.html
+Checkpoint saved: 4200/12000 (35.0%), this session: 711.3s
+Downloading 4201/12000: data/2979.html
+Checkpoint saved: 4225/12000 (35.2%), this session: 746.8s
+Downloading 4226/12000: data/300.html
+Checkpoint saved: 4250/12000 (35.4%), this session: 778.1s
+Downloading 4251/12000: data/3022.html
+Checkpoint saved: 4275/12000 (35.6%), this session: 797.6s
+Downloading 4276/12000: data/3045.html
+Checkpoint saved: 4300/12000 (35.8%), this session: 820.2s
+Downloading 4301/12000: data/3068.html
+Checkpoint saved: 4325/12000 (36.0%), this session: 853.1s
+Downloading 4326/12000: data/3090.html
+Checkpoint saved: 4350/12000 (36.2%), this session: 884.1s
+Downloading 4351/12000: data/3112.html
+Checkpoint saved: 4375/12000 (36.5%), this session: 909.6s
+Downloading 4376/12000: data/3135.html
+Checkpoint saved: 4400/12000 (36.7%), this session: 936.8s
+Downloading 4401/12000: data/3158.html
+Checkpoint saved: 4425/12000 (36.9%), this session: 964.6s
+Downloading 4426/12000: data/3180.html
+Checkpoint saved: 4450/12000 (37.1%), this session: 994.8s
+Downloading 4451/12000: data/3202.html
+Checkpoint saved: 4475/12000 (37.3%), this session: 1031.2s
+Downloading 4476/12000: data/3225.html
+Checkpoint saved: 4500/12000 (37.5%), this session: 1058.9s
+Downloading 4501/12000: data/3248.html
+Checkpoint saved: 4525/12000 (37.7%), this session: 1078.6s
+Downloading 4526/12000: data/3270.html
+Checkpoint saved: 4550/12000 (37.9%), this session: 1108.6s
+Downloading 4551/12000: data/3293.html
+Checkpoint saved: 4575/12000 (38.1%), this session: 1147.8s
+Downloading 4576/12000: data/3315.html
+Checkpoint saved: 4600/12000 (38.3%), this session: 1177.7s
+Downloading 4601/12000: data/3338.html
+Checkpoint saved: 4625/12000 (38.5%), this session: 1210.1s
+Downloading 4626/12000: data/3360.html
+Checkpoint saved: 4650/12000 (38.8%), this session: 1255.1s
+Downloading 4651/12000: data/3383.html
+Checkpoint saved: 4675/12000 (39.0%), this session: 1290.4s
+Downloading 4676/12000: data/3405.html
+Checkpoint saved: 4700/12000 (39.2%), this session: 1318.4s
+Downloading 4701/12000: data/3428.html
+Checkpoint saved: 4725/12000 (39.4%), this session: 1351.8s
+Downloading 4726/12000: data/3450.html
+Checkpoint saved: 4750/12000 (39.6%), this session: 1387.9s
+Downloading 4751/12000: data/3473.html
+Checkpoint saved: 4775/12000 (39.8%), this session: 1427.6s
+Downloading 4776/12000: data/3496.html
+Checkpoint saved: 4800/12000 (40.0%), this session: 1463.8s
+Downloading 4801/12000: data/3518.html
+Checkpoint saved: 4825/12000 (40.2%), this session: 1489.7s
+Downloading 4826/12000: data/3540.html
+Checkpoint saved: 4850/12000 (40.4%), this session: 1514.1s
+Downloading 4851/12000: data/3563.html
+Checkpoint saved: 4875/12000 (40.6%), this session: 1540.4s
+Downloading 4876/12000: data/3586.html
+Checkpoint saved: 4900/12000 (40.8%), this session: 1577.8s
+Downloading 4901/12000: data/3608.html
+Checkpoint saved: 4925/12000 (41.0%), this session: 1600.6s
+Downloading 4926/12000: data/3630.html
+Checkpoint saved: 4950/12000 (41.2%), this session: 1626.8s
+Downloading 4951/12000: data/3653.html
+Checkpoint saved: 4975/12000 (41.5%), this session: 1660.4s
+Downloading 4976/12000: data/3676.html
+Checkpoint saved: 5000/12000 (41.7%), this session: 1684.7s
+Downloading 5001/12000: data/3699.html
+Checkpoint saved: 5025/12000 (41.9%), this session: 1718.2s
+Downloading 5026/12000: data/3720.html
+Checkpoint saved: 5050/12000 (42.1%), this session: 1744.4s
+Downloading 5051/12000: data/3743.html
+Checkpoint saved: 5075/12000 (42.3%), this session: 1764.2s
+Downloading 5076/12000: data/3766.html
+Checkpoint saved: 5100/12000 (42.5%), this session: 1801.5s
+Downloading 5101/12000: data/3789.html
+Checkpoint saved: 5125/12000 (42.7%), this session: 1823.0s
+Downloading 5126/12000: data/3810.html
+Checkpoint saved: 5150/12000 (42.9%), this session: 1848.6s
+Downloading 5151/12000: data/3833.html
+Checkpoint saved: 5175/12000 (43.1%), this session: 1875.9s
+Downloading 5176/12000: data/3856.html
+Checkpoint saved: 5200/12000 (43.3%), this session: 1906.0s
+Downloading 5201/12000: data/3879.html
+Checkpoint saved: 5225/12000 (43.5%), this session: 1940.9s
+Downloading 5226/12000: data/3900.html
+Checkpoint saved: 5250/12000 (43.8%), this session: 1968.5s
+Downloading 5251/12000: data/3923.html
+Checkpoint saved: 5275/12000 (44.0%), this session: 1992.1s
+Downloading 5276/12000: data/3946.html
+Checkpoint saved: 5300/12000 (44.2%), this session: 2017.3s
+Downloading 5301/12000: data/3969.html
+Checkpoint saved: 5325/12000 (44.4%), this session: 2056.6s
+Downloading 5326/12000: data/3991.html
+Checkpoint saved: 5350/12000 (44.6%), this session: 2086.0s
+Downloading 5351/12000: data/4012.html
+Checkpoint saved: 5375/12000 (44.8%), this session: 2125.6s
+Downloading 5376/12000: data/4035.html
+Checkpoint saved: 5400/12000 (45.0%), this session: 2150.2s
+Downloading 5401/12000: data/4058.html
+Checkpoint saved: 5425/12000 (45.2%), this session: 2178.7s
+Downloading 5426/12000: data/4080.html
+Checkpoint saved: 5450/12000 (45.4%), this session: 2200.6s
+Downloading 5451/12000: data/4102.html
+Checkpoint saved: 5475/12000 (45.6%), this session: 2234.1s
+Downloading 5476/12000: data/4125.html
+Checkpoint saved: 5500/12000 (45.8%), this session: 2272.2s
+Downloading 5501/12000: data/4148.html
+Checkpoint saved: 5525/12000 (46.0%), this session: 2313.5s
+Downloading 5526/12000: data/4170.html
+Checkpoint saved: 5550/12000 (46.2%), this session: 2342.3s
+Downloading 5551/12000: data/4193.html
+Checkpoint saved: 5575/12000 (46.5%), this session: 2375.8s
+Downloading 5576/12000: data/4215.html
+Checkpoint saved: 5600/12000 (46.7%), this session: 2399.5s
+Downloading 5601/12000: data/4238.html
+Checkpoint saved: 5625/12000 (46.9%), this session: 2430.6s
+Downloading 5626/12000: data/4260.html
+Checkpoint saved: 5650/12000 (47.1%), this session: 2455.6s
+Downloading 5651/12000: data/4283.html
+Checkpoint saved: 5675/12000 (47.3%), this session: 2492.3s
+Downloading 5676/12000: data/4305.html
+Checkpoint saved: 5700/12000 (47.5%), this session: 2520.2s
+Downloading 5701/12000: data/4328.html
+Checkpoint saved: 5725/12000 (47.7%), this session: 2547.9s
+Downloading 5726/12000: data/4350.html
+Checkpoint saved: 5750/12000 (47.9%), this session: 2572.5s
+Downloading 5751/12000: data/4373.html
+Checkpoint saved: 5775/12000 (48.1%), this session: 2594.6s
+Downloading 5776/12000: data/4396.html
+Checkpoint saved: 5800/12000 (48.3%), this session: 2621.0s
+Downloading 5801/12000: data/4418.html
+Checkpoint saved: 5825/12000 (48.5%), this session: 2644.6s
+Downloading 5826/12000: data/4440.html
+Checkpoint saved: 5850/12000 (48.8%), this session: 2670.0s
+Downloading 5851/12000: data/4463.html
+Checkpoint saved: 5875/12000 (49.0%), this session: 2694.0s
+Downloading 5876/12000: data/4486.html
+Checkpoint saved: 5900/12000 (49.2%), this session: 2727.5s
+Downloading 5901/12000: data/4508.html
+Checkpoint saved: 5925/12000 (49.4%), this session: 2757.7s
+Downloading 5926/12000: data/4530.html
+Checkpoint saved: 5950/12000 (49.6%), this session: 2791.1s
+Downloading 5951/12000: data/4553.html
+Checkpoint saved: 5975/12000 (49.8%), this session: 2828.8s
+Downloading 5976/12000: data/4576.html
+Checkpoint saved: 6000/12000 (50.0%), this session: 2853.9s
+Downloading 6001/12000: data/4599.html
+Checkpoint saved: 6025/12000 (50.2%), this session: 2892.3s
+Downloading 6026/12000: data/4620.html
+Checkpoint saved: 6050/12000 (50.4%), this session: 2930.6s
+Downloading 6051/12000: data/4643.html
+Checkpoint saved: 6075/12000 (50.6%), this session: 2960.8s
+Downloading 6076/12000: data/4666.html
+Checkpoint saved: 6100/12000 (50.8%), this session: 2985.5s
+Downloading 6101/12000: data/4689.html
+Checkpoint saved: 6125/12000 (51.0%), this session: 3014.2s
+Downloading 6126/12000: data/4710.html
+Checkpoint saved: 6150/12000 (51.2%), this session: 3045.3s
+Downloading 6151/12000: data/4733.html
+Checkpoint saved: 6175/12000 (51.5%), this session: 3067.6s
+Downloading 6176/12000: data/4756.html
+Checkpoint saved: 6200/12000 (51.7%), this session: 3102.9s
+Downloading 6201/12000: data/4779.html
+Checkpoint saved: 6225/12000 (51.9%), this session: 3133.4s
+Downloading 6226/12000: data/4800.html
+Checkpoint saved: 6250/12000 (52.1%), this session: 3168.9s
+Downloading 6251/12000: data/4823.html
+Checkpoint saved: 6275/12000 (52.3%), this session: 3201.1s
+Downloading 6276/12000: data/4846.html
+Checkpoint saved: 6300/12000 (52.5%), this session: 3233.2s
+Downloading 6301/12000: data/4869.html
+Checkpoint saved: 6325/12000 (52.7%), this session: 3256.3s
+Downloading 6326/12000: data/4891.html
+Checkpoint saved: 6350/12000 (52.9%), this session: 3285.7s
+Downloading 6351/12000: data/4913.html
+Checkpoint saved: 6375/12000 (53.1%), this session: 3325.0s
+Downloading 6376/12000: data/4936.html
+Checkpoint saved: 6400/12000 (53.3%), this session: 3355.9s
+Downloading 6401/12000: data/4959.html
+Checkpoint saved: 6425/12000 (53.5%), this session: 3387.2s
+Downloading 6426/12000: data/4981.html
+Checkpoint saved: 6450/12000 (53.8%), this session: 3414.4s
+Downloading 6451/12000: data/5002.html
+Checkpoint saved: 6475/12000 (54.0%), this session: 3440.0s
+Downloading 6476/12000: data/5025.html
+Checkpoint saved: 6500/12000 (54.2%), this session: 3462.9s
+Downloading 6501/12000: data/5048.html
+Checkpoint saved: 6525/12000 (54.4%), this session: 3493.1s
+Downloading 6526/12000: data/5070.html
+Checkpoint saved: 6550/12000 (54.6%), this session: 3526.7s
+Downloading 6551/12000: data/5093.html
+Checkpoint saved: 6575/12000 (54.8%), this session: 3553.0s
+Downloading 6576/12000: data/5115.html
+Checkpoint saved: 6600/12000 (55.0%), this session: 3583.1s
+Downloading 6601/12000: data/5138.html
+Checkpoint saved: 6625/12000 (55.2%), this session: 3609.0s
+Downloading 6626/12000: data/5160.html
+Checkpoint saved: 6650/12000 (55.4%), this session: 3634.4s
+Downloading 6651/12000: data/5183.html
+Checkpoint saved: 6675/12000 (55.6%), this session: 3665.0s
+Downloading 6676/12000: data/5205.html
+Checkpoint saved: 6700/12000 (55.8%), this session: 3698.0s
+Downloading 6701/12000: data/5228.html
+Checkpoint saved: 6725/12000 (56.0%), this session: 3726.7s
+Downloading 6726/12000: data/5250.html
+Checkpoint saved: 6750/12000 (56.2%), this session: 3755.3s
+Downloading 6751/12000: data/5273.html
+Checkpoint saved: 6775/12000 (56.5%), this session: 3784.8s
+Downloading 6776/12000: data/5296.html
+Checkpoint saved: 6800/12000 (56.7%), this session: 3826.9s
+Downloading 6801/12000: data/5318.html
+Checkpoint saved: 6825/12000 (56.9%), this session: 3858.5s
+Downloading 6826/12000: data/5340.html
+Checkpoint saved: 6850/12000 (57.1%), this session: 3885.8s
+Downloading 6851/12000: data/5363.html
+Checkpoint saved: 6875/12000 (57.3%), this session: 3918.3s
+Downloading 6876/12000: data/5386.html
+Checkpoint saved: 6900/12000 (57.5%), this session: 3950.1s
+Downloading 6901/12000: data/5408.html
+Checkpoint saved: 6925/12000 (57.7%), this session: 3979.3s
+Downloading 6926/12000: data/5430.html
+Checkpoint saved: 6950/12000 (57.9%), this session: 4013.1s
+Downloading 6951/12000: data/5453.html
+Checkpoint saved: 6975/12000 (58.1%), this session: 4044.2s
+Downloading 6976/12000: data/5476.html
+Checkpoint saved: 7000/12000 (58.3%), this session: 4083.9s
+Downloading 7001/12000: data/5499.html
+Checkpoint saved: 7025/12000 (58.5%), this session: 4111.7s
+Downloading 7026/12000: data/5520.html
+Checkpoint saved: 7050/12000 (58.8%), this session: 4140.1s
+Downloading 7051/12000: data/5543.html
+Checkpoint saved: 7075/12000 (59.0%), this session: 4166.6s
+Downloading 7076/12000: data/5566.html
+Checkpoint saved: 7100/12000 (59.2%), this session: 4203.5s
+Downloading 7101/12000: data/5589.html
+Checkpoint saved: 7125/12000 (59.4%), this session: 4245.8s
+Downloading 7126/12000: data/5610.html
+Checkpoint saved: 7150/12000 (59.6%), this session: 4281.3s
+Downloading 7151/12000: data/5633.html
+Checkpoint saved: 7175/12000 (59.8%), this session: 4308.7s
+Downloading 7176/12000: data/5656.html
+Checkpoint saved: 7200/12000 (60.0%), this session: 4347.6s
+Downloading 7201/12000: data/5679.html
+Checkpoint saved: 7225/12000 (60.2%), this session: 4386.0s
+Downloading 7226/12000: data/5700.html
+Checkpoint saved: 7250/12000 (60.4%), this session: 4412.5s
+Downloading 7251/12000: data/5723.html
+Checkpoint saved: 7275/12000 (60.6%), this session: 4455.5s
+Downloading 7276/12000: data/5746.html
+Checkpoint saved: 7300/12000 (60.8%), this session: 4488.4s
+Downloading 7301/12000: data/5769.html
+Checkpoint saved: 7325/12000 (61.0%), this session: 4508.2s
+Downloading 7326/12000: data/5791.html
+Checkpoint saved: 7350/12000 (61.2%), this session: 4538.2s
+Downloading 7351/12000: data/5813.html
+Checkpoint saved: 7375/12000 (61.5%), this session: 4572.0s
+Downloading 7376/12000: data/5836.html
+Checkpoint saved: 7400/12000 (61.7%), this session: 4600.8s
+Downloading 7401/12000: data/5859.html
+Checkpoint saved: 7425/12000 (61.9%), this session: 4629.1s
+Downloading 7426/12000: data/5881.html
+Checkpoint saved: 7450/12000 (62.1%), this session: 4661.0s
+Downloading 7451/12000: data/5903.html
+Checkpoint saved: 7475/12000 (62.3%), this session: 4694.2s
+Downloading 7476/12000: data/5926.html
+Checkpoint saved: 7500/12000 (62.5%), this session: 4725.9s
+Downloading 7501/12000: data/5949.html
+Checkpoint saved: 7525/12000 (62.7%), this session: 4766.7s
+Downloading 7526/12000: data/5971.html
+Checkpoint saved: 7550/12000 (62.9%), this session: 4798.0s
+Downloading 7551/12000: data/5994.html
+Checkpoint saved: 7575/12000 (63.1%), this session: 4831.0s
+Downloading 7576/12000: data/6015.html
+Checkpoint saved: 7600/12000 (63.3%), this session: 4867.1s
+Downloading 7601/12000: data/6038.html
+Checkpoint saved: 7625/12000 (63.5%), this session: 4893.7s
+Downloading 7626/12000: data/6060.html
+Checkpoint saved: 7650/12000 (63.8%), this session: 4917.2s
+Downloading 7651/12000: data/6083.html
+Checkpoint saved: 7675/12000 (64.0%), this session: 4946.3s
+Downloading 7676/12000: data/6105.html
+Checkpoint saved: 7700/12000 (64.2%), this session: 4969.9s
+Downloading 7701/12000: data/6128.html
+Checkpoint saved: 7725/12000 (64.4%), this session: 4999.6s
+Downloading 7726/12000: data/6150.html
+Checkpoint saved: 7750/12000 (64.6%), this session: 5023.5s
+Downloading 7751/12000: data/6173.html
+Checkpoint saved: 7775/12000 (64.8%), this session: 5059.3s
+Downloading 7776/12000: data/6196.html
+Checkpoint saved: 7800/12000 (65.0%), this session: 5092.0s
+Downloading 7801/12000: data/6218.html
+Checkpoint saved: 7825/12000 (65.2%), this session: 5129.2s
+Downloading 7826/12000: data/6240.html
+Checkpoint saved: 7850/12000 (65.4%), this session: 5151.9s
+Downloading 7851/12000: data/6263.html
+Checkpoint saved: 7875/12000 (65.6%), this session: 5174.7s
+Downloading 7876/12000: data/6286.html
+Checkpoint saved: 7900/12000 (65.8%), this session: 5202.1s
+Downloading 7901/12000: data/6308.html
+Checkpoint saved: 7925/12000 (66.0%), this session: 5229.1s
+Downloading 7926/12000: data/6330.html
+Checkpoint saved: 7950/12000 (66.2%), this session: 5252.4s
+Downloading 7951/12000: data/6353.html
+Checkpoint saved: 7975/12000 (66.5%), this session: 5283.0s
+Downloading 7976/12000: data/6376.html
+Checkpoint saved: 8000/12000 (66.7%), this session: 5312.4s
+Downloading 8001/12000: data/6399.html
+Checkpoint saved: 8025/12000 (66.9%), this session: 5335.8s
+Downloading 8026/12000: data/6420.html
+Checkpoint saved: 8050/12000 (67.1%), this session: 5372.8s
+Downloading 8051/12000: data/6443.html
+Checkpoint saved: 8075/12000 (67.3%), this session: 5394.1s
+Downloading 8076/12000: data/6466.html
+Checkpoint saved: 8100/12000 (67.5%), this session: 5422.2s
+Downloading 8101/12000: data/6489.html
+Checkpoint saved: 8125/12000 (67.7%), this session: 5454.8s
+Downloading 8126/12000: data/6510.html
+Checkpoint saved: 8150/12000 (67.9%), this session: 5483.7s
+Downloading 8151/12000: data/6533.html
+Checkpoint saved: 8175/12000 (68.1%), this session: 5521.9s
+Downloading 8176/12000: data/6556.html
+Checkpoint saved: 8200/12000 (68.3%), this session: 5547.8s
+Downloading 8201/12000: data/6579.html
+Checkpoint saved: 8225/12000 (68.5%), this session: 5579.5s
+Downloading 8226/12000: data/6600.html
+Checkpoint saved: 8250/12000 (68.8%), this session: 5607.0s
+Downloading 8251/12000: data/6623.html
+Checkpoint saved: 8275/12000 (69.0%), this session: 5633.9s
+Downloading 8276/12000: data/6646.html
+Checkpoint saved: 8300/12000 (69.2%), this session: 5667.6s
+Downloading 8301/12000: data/6669.html
+Checkpoint saved: 8325/12000 (69.4%), this session: 5693.2s
+Downloading 8326/12000: data/6691.html
+Checkpoint saved: 8350/12000 (69.6%), this session: 5717.6s
+Downloading 8351/12000: data/6713.html
+Checkpoint saved: 8375/12000 (69.8%), this session: 5742.2s
+Downloading 8376/12000: data/6736.html
+Checkpoint saved: 8400/12000 (70.0%), this session: 5767.9s
+Downloading 8401/12000: data/6759.html
+Checkpoint saved: 8425/12000 (70.2%), this session: 5795.9s
+Downloading 8426/12000: data/6781.html
+Checkpoint saved: 8450/12000 (70.4%), this session: 5820.7s
+Downloading 8451/12000: data/6803.html
+Checkpoint saved: 8475/12000 (70.6%), this session: 5848.9s
+Downloading 8476/12000: data/6826.html
+Checkpoint saved: 8500/12000 (70.8%), this session: 5881.6s
+Downloading 8501/12000: data/6849.html
+Checkpoint saved: 8525/12000 (71.0%), this session: 5906.1s
+Downloading 8526/12000: data/6871.html
+Checkpoint saved: 8550/12000 (71.2%), this session: 5933.0s
+Downloading 8551/12000: data/6894.html
+Checkpoint saved: 8575/12000 (71.5%), this session: 5954.9s
+Downloading 8576/12000: data/6916.html
+Checkpoint saved: 8600/12000 (71.7%), this session: 5977.7s
+Downloading 8601/12000: data/6939.html
+Checkpoint saved: 8625/12000 (71.9%), this session: 6007.1s
+Downloading 8626/12000: data/6961.html
+Checkpoint saved: 8650/12000 (72.1%), this session: 6039.3s
+Downloading 8651/12000: data/6984.html
+Checkpoint saved: 8675/12000 (72.3%), this session: 6080.0s
+Downloading 8676/12000: data/7005.html
+Checkpoint saved: 8700/12000 (72.5%), this session: 6112.0s
+Downloading 8701/12000: data/7028.html
+Checkpoint saved: 8725/12000 (72.7%), this session: 6150.1s
+Downloading 8726/12000: data/7050.html
+Checkpoint saved: 8750/12000 (72.9%), this session: 6172.5s
+Downloading 8751/12000: data/7073.html
+Checkpoint saved: 8775/12000 (73.1%), this session: 6202.1s
+Downloading 8776/12000: data/7096.html
+Checkpoint saved: 8800/12000 (73.3%), this session: 6226.5s
+Downloading 8801/12000: data/7118.html
+Checkpoint saved: 8825/12000 (73.5%), this session: 6244.7s
+Downloading 8826/12000: data/7140.html
+Checkpoint saved: 8850/12000 (73.8%), this session: 6266.7s
+Downloading 8851/12000: data/7163.html
+Run started (UTC): 2026-09-26T21:55:55.370171+00:00
+Mode: checkpoint recovery
+Timing covers this invocation only, not any previous sessions.
+Reading bucket: cs528-hw2-yf-2026
+Prefix: data/
+Listed 1000 HTML files
+Listed 2000 HTML files
+Listed 3000 HTML files
+Listed 4000 HTML files
+Run started (UTC): 2026-09-26T22:07:29.362851+00:00
+Mode: checkpoint recovery
+Timing covers this invocation only, not any previous sessions.
+Reading bucket: cs528-hw2-yf-2026
+Prefix: data/
+Listed 1000 HTML files
+Listed 2000 HTML files
+Listed 3000 HTML files
+Listed 4000 HTML files
+Listed 5000 HTML files
+Listed 6000 HTML files
+Listed 7000 HTML files
+Listed 8000 HTML files
+Listed 9000 HTML files
+Listed 10000 HTML files
+Listed 11000 HTML files
+Listed 12000 HTML files
+HTML files found: 12000
+Resuming from 8850/12000 files
+Downloading 8851/12000: data/7163.html
+Checkpoint saved: 8875/12000 (74.0%), this session: 25.1s
+Downloading 8876/12000: data/7186.html
+Checkpoint saved: 8900/12000 (74.2%), this session: 58.1s
+Downloading 8901/12000: data/7208.html
+Checkpoint saved: 8925/12000 (74.4%), this session: 89.4s
+Downloading 8926/12000: data/7230.html
+Checkpoint saved: 8950/12000 (74.6%), this session: 117.0s
+Downloading 8951/12000: data/7253.html
+Checkpoint saved: 8975/12000 (74.8%), this session: 145.2s
+Downloading 8976/12000: data/7276.html
+Checkpoint saved: 9000/12000 (75.0%), this session: 174.7s
+Downloading 9001/12000: data/7299.html
+Checkpoint saved: 9025/12000 (75.2%), this session: 205.3s
+Downloading 9026/12000: data/7320.html
+Checkpoint saved: 9050/12000 (75.4%), this session: 231.9s
+Downloading 9051/12000: data/7343.html
+Checkpoint saved: 9075/12000 (75.6%), this session: 277.0s
+Downloading 9076/12000: data/7366.html
+Checkpoint saved: 9100/12000 (75.8%), this session: 312.3s
+Downloading 9101/12000: data/7389.html
+Checkpoint saved: 9125/12000 (76.0%), this session: 347.1s
+Downloading 9126/12000: data/7410.html
+Checkpoint saved: 9150/12000 (76.2%), this session: 384.8s
+Downloading 9151/12000: data/7433.html
+Checkpoint saved: 9175/12000 (76.5%), this session: 416.0s
+Downloading 9176/12000: data/7456.html
+Checkpoint saved: 9200/12000 (76.7%), this session: 451.4s
+Downloading 9201/12000: data/7479.html
+Checkpoint saved: 9225/12000 (76.9%), this session: 488.5s
+Downloading 9226/12000: data/7500.html
+Checkpoint saved: 9250/12000 (77.1%), this session: 536.4s
+Downloading 9251/12000: data/7523.html
+Checkpoint saved: 9275/12000 (77.3%), this session: 571.4s
+Downloading 9276/12000: data/7546.html
+Checkpoint saved: 9300/12000 (77.5%), this session: 602.1s
+Downloading 9301/12000: data/7569.html
+Checkpoint saved: 9325/12000 (77.7%), this session: 650.8s
+Downloading 9326/12000: data/7591.html
+Checkpoint saved: 9350/12000 (77.9%), this session: 678.3s
+Downloading 9351/12000: data/7613.html
+Checkpoint saved: 9375/12000 (78.1%), this session: 702.7s
+Downloading 9376/12000: data/7636.html
+Checkpoint saved: 9400/12000 (78.3%), this session: 726.3s
+Downloading 9401/12000: data/7659.html
+Checkpoint saved: 9425/12000 (78.5%), this session: 768.5s
+Downloading 9426/12000: data/7681.html
+Checkpoint saved: 9450/12000 (78.8%), this session: 807.4s
+Downloading 9451/12000: data/7703.html
+Checkpoint saved: 9475/12000 (79.0%), this session: 836.8s
+Downloading 9476/12000: data/7726.html
+Checkpoint saved: 9500/12000 (79.2%), this session: 868.5s
+Downloading 9501/12000: data/7749.html
+Checkpoint saved: 9525/12000 (79.4%), this session: 893.9s
+Downloading 9526/12000: data/7771.html
+Checkpoint saved: 9550/12000 (79.6%), this session: 935.3s
+Downloading 9551/12000: data/7794.html
+Checkpoint saved: 9575/12000 (79.8%), this session: 970.0s
+Downloading 9576/12000: data/7816.html
+Checkpoint saved: 9600/12000 (80.0%), this session: 1006.0s
+Downloading 9601/12000: data/7839.html
+Checkpoint saved: 9625/12000 (80.2%), this session: 1036.8s
+Downloading 9626/12000: data/7861.html
+Checkpoint saved: 9650/12000 (80.4%), this session: 1063.1s
+Downloading 9651/12000: data/7884.html
+Checkpoint saved: 9675/12000 (80.6%), this session: 1095.8s
+Downloading 9676/12000: data/7906.html
+Checkpoint saved: 9700/12000 (80.8%), this session: 1143.0s
+Downloading 9701/12000: data/7929.html
+Checkpoint saved: 9725/12000 (81.0%), this session: 1179.4s
+Downloading 9726/12000: data/7951.html
+Checkpoint saved: 9750/12000 (81.2%), this session: 1209.6s
+Downloading 9751/12000: data/7974.html
+Checkpoint saved: 9775/12000 (81.5%), this session: 1245.5s
+Downloading 9776/12000: data/7997.html
+Checkpoint saved: 9800/12000 (81.7%), this session: 1289.2s
+Downloading 9801/12000: data/8018.html
+Checkpoint saved: 9825/12000 (81.9%), this session: 1329.1s
+Downloading 9826/12000: data/8040.html
+Checkpoint saved: 9850/12000 (82.1%), this session: 1357.4s
+Downloading 9851/12000: data/8063.html
+Checkpoint saved: 9875/12000 (82.3%), this session: 1384.6s
+Downloading 9876/12000: data/8086.html
+Checkpoint saved: 9900/12000 (82.5%), this session: 1415.1s
+Downloading 9901/12000: data/8108.html
+Checkpoint saved: 9925/12000 (82.7%), this session: 1446.7s
+Downloading 9926/12000: data/8130.html
+Checkpoint saved: 9950/12000 (82.9%), this session: 1481.3s
+Downloading 9951/12000: data/8153.html
+Checkpoint saved: 9975/12000 (83.1%), this session: 1516.6s
+Downloading 9976/12000: data/8176.html
+Checkpoint saved: 10000/12000 (83.3%), this session: 1549.0s
+Downloading 10001/12000: data/8199.html
+Checkpoint saved: 10025/12000 (83.5%), this session: 1575.6s
+Downloading 10026/12000: data/8220.html
+Checkpoint saved: 10050/12000 (83.8%), this session: 1597.2s
+Downloading 10051/12000: data/8243.html
+Checkpoint saved: 10075/12000 (84.0%), this session: 1634.5s
+Downloading 10076/12000: data/8266.html
+Checkpoint saved: 10100/12000 (84.2%), this session: 1660.2s
+Downloading 10101/12000: data/8289.html
+Checkpoint saved: 10125/12000 (84.4%), this session: 1689.4s
+Downloading 10126/12000: data/8310.html
+Checkpoint saved: 10150/12000 (84.6%), this session: 1725.5s
+Downloading 10151/12000: data/8333.html
+Checkpoint saved: 10175/12000 (84.8%), this session: 1752.8s
+Downloading 10176/12000: data/8356.html
+Checkpoint saved: 10200/12000 (85.0%), this session: 1797.3s
+Downloading 10201/12000: data/8379.html
+Checkpoint saved: 10225/12000 (85.2%), this session: 1829.3s
+Downloading 10226/12000: data/8400.html
+Checkpoint saved: 10250/12000 (85.4%), this session: 1869.3s
+Downloading 10251/12000: data/8423.html
+Checkpoint saved: 10275/12000 (85.6%), this session: 1895.2s
+Downloading 10276/12000: data/8446.html
+Checkpoint saved: 10300/12000 (85.8%), this session: 1923.9s
+Downloading 10301/12000: data/8469.html
+Checkpoint saved: 10325/12000 (86.0%), this session: 1955.4s
+Downloading 10326/12000: data/8491.html
+Checkpoint saved: 10350/12000 (86.2%), this session: 1983.9s
+Downloading 10351/12000: data/8513.html
+Checkpoint saved: 10375/12000 (86.5%), this session: 2018.4s
+Downloading 10376/12000: data/8536.html
+Run started (UTC): 2026-09-26T22:52:18.322192+00:00
+Mode: checkpoint recovery
+Timing covers this invocation only, not any previous sessions.
+Reading bucket: cs528-hw2-yf-2026
+Prefix: data/
+Listed 1000 HTML files
+Listed 2000 HTML files
+Listed 3000 HTML files
+Listed 4000 HTML files
+Listed 5000 HTML files
+Listed 6000 HTML files
+Listed 7000 HTML files
+Listed 8000 HTML files
+Listed 9000 HTML files
+Listed 10000 HTML files
+Listed 11000 HTML files
+Listed 12000 HTML files
+HTML files found: 12000
+Resuming from 10375/12000 files
+Downloading 10376/12000: data/8536.html
+Checkpoint saved: 10400/12000 (86.7%), this session: 28.3s
+Downloading 10401/12000: data/8559.html
+Checkpoint saved: 10425/12000 (86.9%), this session: 59.3s
+Downloading 10426/12000: data/8581.html
+Checkpoint saved: 10450/12000 (87.1%), this session: 91.4s
+Downloading 10451/12000: data/8603.html
+Checkpoint saved: 10475/12000 (87.3%), this session: 126.3s
+Downloading 10476/12000: data/8626.html
+Checkpoint saved: 10500/12000 (87.5%), this session: 154.4s
+Downloading 10501/12000: data/8649.html
+Checkpoint saved: 10525/12000 (87.7%), this session: 187.8s
+Downloading 10526/12000: data/8671.html
+Checkpoint saved: 10550/12000 (87.9%), this session: 216.3s
+Downloading 10551/12000: data/8694.html
+Checkpoint saved: 10575/12000 (88.1%), this session: 249.0s
+Downloading 10576/12000: data/8716.html
+Checkpoint saved: 10600/12000 (88.3%), this session: 288.4s
+Downloading 10601/12000: data/8739.html
+Checkpoint saved: 10625/12000 (88.5%), this session: 332.0s
+Downloading 10626/12000: data/8761.html
+Checkpoint saved: 10650/12000 (88.8%), this session: 359.4s
+Downloading 10651/12000: data/8784.html
+Checkpoint saved: 10675/12000 (89.0%), this session: 384.9s
+Downloading 10676/12000: data/8806.html
+Checkpoint saved: 10700/12000 (89.2%), this session: 421.0s
+Downloading 10701/12000: data/8829.html
+Checkpoint saved: 10725/12000 (89.4%), this session: 450.8s
+Downloading 10726/12000: data/8851.html
+Checkpoint saved: 10750/12000 (89.6%), this session: 495.2s
+Downloading 10751/12000: data/8874.html
+Checkpoint saved: 10775/12000 (89.8%), this session: 531.4s
+Downloading 10776/12000: data/8897.html
+Checkpoint saved: 10800/12000 (90.0%), this session: 574.0s
+Downloading 10801/12000: data/8919.html
+Checkpoint saved: 10825/12000 (90.2%), this session: 596.9s
+Downloading 10826/12000: data/8941.html
+Checkpoint saved: 10850/12000 (90.4%), this session: 628.0s
+Downloading 10851/12000: data/8964.html
+Checkpoint saved: 10875/12000 (90.6%), this session: 675.0s
+Downloading 10876/12000: data/8987.html
+Checkpoint saved: 10900/12000 (90.8%), this session: 707.3s
+Downloading 10901/12000: data/9008.html
+Checkpoint saved: 10925/12000 (91.0%), this session: 744.5s
+Downloading 10926/12000: data/9030.html
+Checkpoint saved: 10950/12000 (91.2%), this session: 776.5s
+Downloading 10951/12000: data/9053.html
+Checkpoint saved: 10975/12000 (91.5%), this session: 802.3s
+Downloading 10976/12000: data/9076.html
+Checkpoint saved: 11000/12000 (91.7%), this session: 831.5s
+Downloading 11001/12000: data/9099.html
+Checkpoint saved: 11025/12000 (91.9%), this session: 861.6s
+Downloading 11026/12000: data/9120.html
+Checkpoint saved: 11050/12000 (92.1%), this session: 887.1s
+Downloading 11051/12000: data/9143.html
+Checkpoint saved: 11075/12000 (92.3%), this session: 914.8s
+Downloading 11076/12000: data/9166.html
+Checkpoint saved: 11100/12000 (92.5%), this session: 941.4s
+Downloading 11101/12000: data/9189.html
+Checkpoint saved: 11125/12000 (92.7%), this session: 973.0s
+Downloading 11126/12000: data/9210.html
+Checkpoint saved: 11150/12000 (92.9%), this session: 1015.5s
+Downloading 11151/12000: data/9233.html
+Checkpoint saved: 11175/12000 (93.1%), this session: 1045.1s
+Downloading 11176/12000: data/9256.html
+Checkpoint saved: 11200/12000 (93.3%), this session: 1074.7s
+Downloading 11201/12000: data/9279.html
+Checkpoint saved: 11225/12000 (93.5%), this session: 1097.9s
+Downloading 11226/12000: data/9300.html
+Checkpoint saved: 11250/12000 (93.8%), this session: 1142.9s
+Downloading 11251/12000: data/9323.html
+Checkpoint saved: 11275/12000 (94.0%), this session: 1184.6s
+Downloading 11276/12000: data/9346.html
+Checkpoint saved: 11300/12000 (94.2%), this session: 1213.5s
+Downloading 11301/12000: data/9369.html
+Checkpoint saved: 11325/12000 (94.4%), this session: 1242.0s
+Downloading 11326/12000: data/9391.html
+Checkpoint saved: 11350/12000 (94.6%), this session: 1269.4s
+Downloading 11351/12000: data/9413.html
+Checkpoint saved: 11375/12000 (94.8%), this session: 1307.7s
+Downloading 11376/12000: data/9436.html
+Checkpoint saved: 11400/12000 (95.0%), this session: 1336.6s
+Downloading 11401/12000: data/9459.html
+Checkpoint saved: 11425/12000 (95.2%), this session: 1366.5s
+Downloading 11426/12000: data/9481.html
+Checkpoint saved: 11450/12000 (95.4%), this session: 1401.9s
+Downloading 11451/12000: data/9503.html
+Checkpoint saved: 11475/12000 (95.6%), this session: 1432.3s
+Downloading 11476/12000: data/9526.html
+Checkpoint saved: 11500/12000 (95.8%), this session: 1463.0s
+Downloading 11501/12000: data/9549.html
+Checkpoint saved: 11525/12000 (96.0%), this session: 1499.9s
+Downloading 11526/12000: data/9571.html
+Checkpoint saved: 11550/12000 (96.2%), this session: 1524.9s
+Downloading 11551/12000: data/9594.html
+Checkpoint saved: 11575/12000 (96.5%), this session: 1549.6s
+Downloading 11576/12000: data/9616.html
+Checkpoint saved: 11600/12000 (96.7%), this session: 1586.1s
+Downloading 11601/12000: data/9639.html
+Checkpoint saved: 11625/12000 (96.9%), this session: 1615.2s
+Downloading 11626/12000: data/9661.html
+Checkpoint saved: 11650/12000 (97.1%), this session: 1643.3s
+Downloading 11651/12000: data/9684.html
+Checkpoint saved: 11675/12000 (97.3%), this session: 1669.3s
+Downloading 11676/12000: data/9706.html
+Checkpoint saved: 11700/12000 (97.5%), this session: 1709.6s
+Downloading 11701/12000: data/9729.html
+Checkpoint saved: 11725/12000 (97.7%), this session: 1751.5s
+Downloading 11726/12000: data/9751.html
+Checkpoint saved: 11750/12000 (97.9%), this session: 1793.0s
+Downloading 11751/12000: data/9774.html
+Checkpoint saved: 11775/12000 (98.1%), this session: 1826.5s
+Downloading 11776/12000: data/9797.html
+Checkpoint saved: 11800/12000 (98.3%), this session: 1864.2s
+Downloading 11801/12000: data/9819.html
+Checkpoint saved: 11825/12000 (98.5%), this session: 1897.9s
+Downloading 11826/12000: data/9841.html
+Checkpoint saved: 11850/12000 (98.8%), this session: 1923.8s
+Downloading 11851/12000: data/9864.html
+Checkpoint saved: 11875/12000 (99.0%), this session: 1961.0s
+Downloading 11876/12000: data/9887.html
+Checkpoint saved: 11900/12000 (99.2%), this session: 1999.2s
+Downloading 11901/12000: data/9909.html
+Checkpoint saved: 11925/12000 (99.4%), this session: 2030.6s
+Downloading 11926/12000: data/9931.html
+Checkpoint saved: 11950/12000 (99.6%), this session: 2075.4s
+Downloading 11951/12000: data/9954.html
+Checkpoint saved: 11975/12000 (99.8%), this session: 2113.3s
+Downloading 11976/12000: data/9977.html
+Checkpoint saved: 12000/12000 (100.0%), this session: 2142.2s
+Graph preparation time (this invocation): 2165.93 seconds
+Graph cache saved to: results/graph_cache.pkl
+
+Nodes: 12000
+Links: 1946934
+
+Outgoing-link statistics
+Average: 162.2445
+Median: 162.0
+Minimum: 0
+Maximum: 323
+Quintiles:
+  0%: 0.0
+  20%: 65.0
+  40%: 130.0
+  60%: 195.0
+  80%: 260.0
+  100%: 323.0
+
+Incoming-link statistics
+Average: 162.2445
+Median: 162.0
+Minimum: 115
+Maximum: 233
+Quintiles:
+  0%: 115.0
+  20%: 152.0
+  40%: 159.0
+  60%: 165.0
+  80%: 173.0
+  100%: 233.0
+
+Statistics time: 0.04 seconds
+
+PageRank results
+Iterations: 3
+Final total change: 0.0011577820
+Sum of PageRank scores: 1.0000000000
+Top 5 pages:
+  1. 5207.html: 0.0001955251
+  2. 7443.html: 0.0001828610
+  3. 7400.html: 0.0001796367
+  4. 950.html: 0.0001744095
+  5. 369.html: 0.0001733209
+PageRank time: 1.10 seconds
+Closeness processed 500/12000 nodes
+Closeness processed 1000/12000 nodes
+Closeness processed 1500/12000 nodes
+Closeness processed 2000/12000 nodes
+Closeness processed 2500/12000 nodes
+Closeness processed 3000/12000 nodes
+Closeness processed 3500/12000 nodes
+Closeness processed 4000/12000 nodes
+Closeness processed 4500/12000 nodes
+Closeness processed 5000/12000 nodes
+Closeness processed 5500/12000 nodes
+Closeness processed 6000/12000 nodes
+Closeness processed 6500/12000 nodes
+Closeness processed 7000/12000 nodes
+Closeness processed 7500/12000 nodes
+Closeness processed 8000/12000 nodes
+Closeness processed 8500/12000 nodes
+Closeness processed 9000/12000 nodes
+Closeness processed 9500/12000 nodes
+Closeness processed 10000/12000 nodes
+Closeness processed 10500/12000 nodes
+Closeness processed 11000/12000 nodes
+Closeness processed 11500/12000 nodes
+Closeness processed 12000/12000 nodes
+
+Closeness centrality results
+Best node: 10376.html
+Score: 0.5046473483
+Closeness time: 65.13 seconds
+
+Total time (this invocation): 2232.43 seconds
