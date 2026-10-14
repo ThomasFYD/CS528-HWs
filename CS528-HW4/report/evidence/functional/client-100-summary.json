@@ -1,0 +1,10 @@
+{
+  "client_exit_code": 0,
+  "request_count": 100,
+  "response_count": 100,
+  "http_status_counts": {
+    "200": 97,
+    "400": 3
+  },
+  "country_denial_messages": 3
+}

@@ -1,0 +1,27 @@
+glibc 2.39
+usage: http-client [-h] [-d DOMAIN] [-b BUCKET] [-w WEBDIR] [-n NUM_REQUESTS]
+                   [-i INDEX] [-p PORT] [-f] [-s] [-v] [-r RANDOM]
+                   [-t TIMEOUT]
+
+options:
+  -h, --help            show this help message and exit
+  -d DOMAIN, --domain DOMAIN
+                        Domain to make requests to
+  -b BUCKET, --bucket BUCKET
+                        Cloud bucket containing your files. Use none if
+                        running local
+  -w WEBDIR, --webdir WEBDIR
+                        Directory containing your files. Use none if you did
+                        not make one
+  -n NUM_REQUESTS, --num_requests NUM_REQUESTS
+                        Number of requests to make
+  -i INDEX, --index INDEX
+                        Maximum existing file index
+  -p PORT, --port PORT  Server Port
+  -f, --follow          Follow Redirects
+  -s, --ssl             Use HTTPS
+  -v, --verbose         Print the responses from the server on stdout
+  -r RANDOM, --random RANDOM
+                        Initial random seed
+  -t TIMEOUT, --timeout TIMEOUT
+                        Timeout in seconds for requests

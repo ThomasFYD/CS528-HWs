@@ -1,0 +1,14 @@
+{
+  "evidence": "billing-2026-10-13.png",
+  "capture_time_from_filename": "2026-10-13 23:58:26 America/New_York",
+  "displayed_period_start": "2026-10-01",
+  "displayed_period_end": "2026-10-13",
+  "displayed_net_cost": "$0.00",
+  "displayed_savings": "-$0.04",
+  "currency_symbol": "$",
+  "currency_code_not_visible": true,
+  "attribution": "User confirmed that this month only HW4 was used.",
+  "status": "Point-in-time billing snapshot taken before final VM cleanup; later charges may not yet be reflected.",
+  "forecast_excluded": true,
+  "project_filter_not_visible_in_crop": true
+}

@@ -1,0 +1,10 @@
+North Korea: 400
+Iran: 400
+Cuba: 400
+Myanmar: 400
+Iraq: 400
+Libya: 400
+Sudan: 400
+Zimbabwe: 400
+Syria: 400
+United States: 200

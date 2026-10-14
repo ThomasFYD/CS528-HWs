@@ -1,0 +1,16 @@
+Wed Oct 14 04:05:37 UTC 2026
+enabled
+active
+● cs528-hw4-reporter.service - CS528 HW4 reporter service
+     Loaded: loaded (/etc/systemd/system/cs528-hw4-reporter.service; enabled; preset: enabled)
+     Active: active (running) since Wed 2026-10-14 02:16:40 UTC; 1h 48min ago
+   Main PID: 1678 (python)
+      Tasks: 7 (limit: 1071)
+     Memory: 45.2M
+        CPU: 8.891s
+     CGroup: /system.slice/cs528-hw4-reporter.service
+             └─1678 /opt/cs528-hw4/venv/bin/python -u /opt/cs528-hw4/reporter.py
+
+2026-10-14T02:16:40+0000 cs528-hw4-reporter google_metadata_script_runner[905]: Metadata key("startup-script"), command("/bin/bash"): Oct 14 02:16:40 cs528-hw4-reporter systemd[1]: Started cs528-hw4-reporter.service - CS528 HW4 reporter service.
+2026-10-14T02:16:40+0000 cs528-hw4-reporter systemd[1]: Started cs528-hw4-reporter.service - CS528 HW4 reporter service.
+2026-10-14T02:16:40+0000 cs528-hw4-reporter python[1678]: Listening on projects/dazzling-seat-508219-j3/subscriptions/cs528-hw4-forbidden-sub using VM service-account credentials

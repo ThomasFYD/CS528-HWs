@@ -1,0 +1,275 @@
+{
+  "rounds": [
+    {
+      "clients": 1,
+      "run_complete": true,
+      "measured_seconds": 180.08790348999992,
+      "issues": [],
+      "web": {
+        "sample_count": 181,
+        "coverage_seconds": 180.0869779586792,
+        "max_gap_seconds": 0.0,
+        "max_sample_interval_seconds": 1.0008470160000797,
+        "mean": {
+          "cpu_busy_pct": 3.9688003580477926,
+          "cpu_iowait_pct": 0.09398102843480662,
+          "cpu_steal_pct": 0.0,
+          "memory_used_mib": 358.69596765891174,
+          "memory_used_pct": 63.351984684421375,
+          "rx_mbps": 6.544835507963123,
+          "tx_mbps": 6.554716183532358
+        },
+        "peak": {
+          "cpu_busy_pct": 6.930693069306931,
+          "cpu_iowait_pct": 3.0303030303030303,
+          "cpu_steal_pct": 0.0,
+          "memory_used_mib": 359.01953125,
+          "memory_used_pct": 63.4091316766244,
+          "rx_mbps": 12.066014033767097,
+          "tx_mbps": 12.065150688177873
+        }
+      },
+      "client_vm": {
+        "sample_count": 179,
+        "coverage_seconds": 179.68557906150818,
+        "max_gap_seconds": 0.4013988971710205,
+        "max_sample_interval_seconds": 1.0049516660001245,
+        "mean": {
+          "cpu_busy_pct": 1.0095600328215457,
+          "cpu_iowait_pct": 0.0111864716386351,
+          "cpu_steal_pct": 0.03053693551549038,
+          "memory_used_mib": 393.79445812420727,
+          "memory_used_pct": 20.091073491505515,
+          "rx_mbps": 6.3963459447489015,
+          "tx_mbps": 0.0862685346351277
+        },
+        "peak": {
+          "cpu_busy_pct": 3.0150753768844223,
+          "cpu_iowait_pct": 0.5025125628140703,
+          "cpu_steal_pct": 0.5,
+          "memory_used_mib": 395.6328125,
+          "memory_used_pct": 20.184864839010547,
+          "rx_mbps": 10.64565282968052,
+          "tx_mbps": 0.12760185402070215
+        }
+      },
+      "cloud_log_counts": {
+        "expected_country_denials": 107
+      },
+      "client_timeout_messages": 0,
+      "other_client_output": [],
+      "server_journal_failure_lines": [],
+      "measurement_valid": true,
+      "observed_failures_need_review": false
+    },
+    {
+      "clients": 2,
+      "run_complete": true,
+      "measured_seconds": 180.096606607,
+      "issues": [],
+      "web": {
+        "sample_count": 181,
+        "coverage_seconds": 180.09582710266113,
+        "max_gap_seconds": 0.0,
+        "max_sample_interval_seconds": 1.000960479999776,
+        "mean": {
+          "cpu_busy_pct": 4.061793735429205,
+          "cpu_iowait_pct": 0.21788469877651723,
+          "cpu_steal_pct": 0.0,
+          "memory_used_mib": 358.8902877193152,
+          "memory_used_pct": 63.38630500748188,
+          "rx_mbps": 6.9267821145003,
+          "tx_mbps": 6.921250839827191
+        },
+        "peak": {
+          "cpu_busy_pct": 10.204081632653061,
+          "cpu_iowait_pct": 27.272727272727273,
+          "cpu_steal_pct": 0.0,
+          "memory_used_mib": 363.1796875,
+          "memory_used_pct": 64.14388806866005,
+          "rx_mbps": 11.31678707973396,
+          "tx_mbps": 11.298360296270692
+        }
+      },
+      "client_vm": {
+        "sample_count": 179,
+        "coverage_seconds": 179.6944239139557,
+        "max_gap_seconds": 0.40140318870544434,
+        "max_sample_interval_seconds": 1.0047238879997167,
+        "mean": {
+          "cpu_busy_pct": 1.010009477173695,
+          "cpu_iowait_pct": 0.036372900082763046,
+          "cpu_steal_pct": 0.039015024024196494,
+          "memory_used_mib": 424.2884045234956,
+          "memory_used_pct": 21.646849875643696,
+          "rx_mbps": 6.749416340079646,
+          "tx_mbps": 0.090183687774137
+        },
+        "peak": {
+          "cpu_busy_pct": 4.0,
+          "cpu_iowait_pct": 3.0,
+          "cpu_steal_pct": 0.5025125628140703,
+          "memory_used_mib": 424.83984375,
+          "memory_used_pct": 21.674983857210048,
+          "rx_mbps": 10.686829943583504,
+          "tx_mbps": 0.12681420894862086
+        }
+      },
+      "cloud_log_counts": {
+        "expected_country_denials": 79,
+        "other_warning_or_error_records": 4,
+        "status_404": 4
+      },
+      "client_timeout_messages": 0,
+      "other_client_output": [],
+      "server_journal_failure_lines": [
+        "Traceback (most recent call last):",
+        "ConnectionResetError: [Errno 104] Connection reset by peer"
+      ],
+      "measurement_valid": true,
+      "observed_failures_need_review": true
+    },
+    {
+      "clients": 3,
+      "run_complete": true,
+      "measured_seconds": 180.09948090200032,
+      "issues": [],
+      "web": {
+        "sample_count": 181,
+        "coverage_seconds": 180.09862399101257,
+        "max_gap_seconds": 0.0,
+        "max_sample_interval_seconds": 1.0009069859997908,
+        "mean": {
+          "cpu_busy_pct": 4.600310717744949,
+          "cpu_iowait_pct": 0.04375373916779487,
+          "cpu_steal_pct": 0.0,
+          "memory_used_mib": 360.2893781536896,
+          "memory_used_pct": 63.633408860778864,
+          "rx_mbps": 7.906552625497298,
+          "tx_mbps": 7.920990206887121
+        },
+        "peak": {
+          "cpu_busy_pct": 7.920792079207921,
+          "cpu_iowait_pct": 1.0101010101010102,
+          "cpu_steal_pct": 0.0,
+          "memory_used_mib": 362.90234375,
+          "memory_used_pct": 64.09490430919101,
+          "rx_mbps": 12.711141431497351,
+          "tx_mbps": 12.692322428277365
+        }
+      },
+      "client_vm": {
+        "sample_count": 179,
+        "coverage_seconds": 179.69712495803833,
+        "max_gap_seconds": 0.40149903297424316,
+        "max_sample_interval_seconds": 1.0048350130000472,
+        "mean": {
+          "cpu_busy_pct": 1.1052721973229507,
+          "cpu_iowait_pct": 0.07000619059974271,
+          "cpu_steal_pct": 0.0361508339645813,
+          "memory_used_mib": 419.7328349399001,
+          "memory_used_pct": 21.41442841462147,
+          "rx_mbps": 7.7252695032452205,
+          "tx_mbps": 0.10239364028922193
+        },
+        "peak": {
+          "cpu_busy_pct": 2.4752475247524752,
+          "cpu_iowait_pct": 9.045226130653266,
+          "cpu_steal_pct": 0.5,
+          "memory_used_mib": 420.12890625,
+          "memory_used_pct": 21.434635651251963,
+          "rx_mbps": 12.674217425429834,
+          "tx_mbps": 0.14380457334359503
+        }
+      },
+      "cloud_log_counts": {
+        "expected_country_denials": 97
+      },
+      "client_timeout_messages": 0,
+      "other_client_output": [],
+      "server_journal_failure_lines": [],
+      "measurement_valid": true,
+      "observed_failures_need_review": false
+    },
+    {
+      "clients": 4,
+      "run_complete": true,
+      "measured_seconds": 180.02354755299984,
+      "issues": [],
+      "web": {
+        "sample_count": 181,
+        "coverage_seconds": 180.0225338935852,
+        "max_gap_seconds": 0.0,
+        "max_sample_interval_seconds": 1.0009217419992638,
+        "mean": {
+          "cpu_busy_pct": 4.693896016773714,
+          "cpu_iowait_pct": 0.07266566247479113,
+          "cpu_steal_pct": 0.0,
+          "memory_used_mib": 362.7019491333503,
+          "memory_used_pct": 64.05951111319918,
+          "rx_mbps": 8.47270538464352,
+          "tx_mbps": 8.478824319227531
+        },
+        "peak": {
+          "cpu_busy_pct": 7.8431372549019605,
+          "cpu_iowait_pct": 5.05050505050505,
+          "cpu_steal_pct": 0.0,
+          "memory_used_mib": 363.3046875,
+          "memory_used_pct": 64.16596525602638,
+          "rx_mbps": 13.824489660790917,
+          "tx_mbps": 13.813145386128515
+        }
+      },
+      "client_vm": {
+        "sample_count": 179,
+        "coverage_seconds": 179.7213180065155,
+        "max_gap_seconds": 0.30121588706970215,
+        "max_sample_interval_seconds": 1.0153422099997442,
+        "mean": {
+          "cpu_busy_pct": 1.2096266958951691,
+          "cpu_iowait_pct": 0.2386289747385994,
+          "cpu_steal_pct": 0.044585992481565515,
+          "memory_used_mib": 440.2677248906373,
+          "memory_used_pct": 22.462101825530947,
+          "rx_mbps": 8.28146249845176,
+          "tx_mbps": 0.1096067408942239
+        },
+        "peak": {
+          "cpu_busy_pct": 3.5353535353535355,
+          "cpu_iowait_pct": 28.78787878787879,
+          "cpu_steal_pct": 0.5050505050505051,
+          "memory_used_mib": 440.60546875,
+          "memory_used_pct": 22.479333242986854,
+          "rx_mbps": 13.022480117961013,
+          "tx_mbps": 0.1499549187864578
+        }
+      },
+      "cloud_log_counts": {
+        "expected_country_denials": 90
+      },
+      "client_timeout_messages": 0,
+      "other_client_output": [],
+      "server_journal_failure_lines": [],
+      "measurement_valid": true,
+      "observed_failures_need_review": false
+    }
+  ],
+  "notes": [
+    "Metrics describe the whole web VM. Network RX/TX include GCS, HTTP, and API traffic.",
+    "Peaks are maxima of approximately one-second samples overlapping the measurement window.",
+    "CPU is guest logical-CPU busy percent, not the f1-micro CPU entitlement; steal and iowait are separate.",
+    "The instructor client's quiet mode provides no HTTP status counts or request throughput.",
+    "Cloud logs can arrive late. Re-collect after a delay before final reporting.",
+    "Intentional termination at a round deadline can leave an in-flight request unfinished."
+  ],
+  "web_metadata": {
+    "type": "metadata",
+    "timestamp": "2026-10-14T03:25:52.790585+00:00",
+    "hostname": "cs528-hw4-web",
+    "kernel": "6.1.0-53-cloud-amd64",
+    "logical_cpus": 1,
+    "clock_synchronized": "yes",
+    "sample_interval_seconds": 1,
+    "scope": "whole VM; CPU busy excludes idle, iowait and steal; memory=total-available"
+  }
+}

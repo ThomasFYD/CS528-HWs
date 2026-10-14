@@ -1,0 +1,3 @@
+2026-10-14T02:16:40+0000 cs528-hw4-reporter systemd[1]: Started cs528-hw4-reporter.service - CS528 HW4 reporter service.
+2026-10-14T02:16:40+0000 cs528-hw4-reporter python[1678]: Listening on projects/dazzling-seat-508219-j3/subscriptions/cs528-hw4-forbidden-sub using VM service-account credentials
+2026-10-14T02:22:26+0000 cs528-hw4-reporter python[1678]: FORBIDDEN {"event_id": "a779625a-032f-423b-ac13-20249c682b0f", "event": "forbidden_country", "timestamp": "2026-10-14T02:22:25.735086+00:00", "method": "GET", "path": "/data/0.html", "country": "Iran", "country_header": "Iran", "status": 400, "message": "Permission denied: request from Iran.", "pubsub_message_id": "22021644937616833", "received_at": "2026-10-14T02:22:26.645567+00:00"}

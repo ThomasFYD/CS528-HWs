@@ -1,0 +1,24 @@
+{
+  "clients": 3,
+  "requested_seconds": 180,
+  "warmup_seconds": 15,
+  "started_at": "2026-10-14T03:33:31.860730+00:00",
+  "complete": true,
+  "commands": [
+    "/home/thomasfang/http-client -d 136.64.82.14 -p 8080 -b /cs528-hw2-yf-2026 -w data -n 1000000000 -i 11999 -r 0 -t 30",
+    "/home/thomasfang/http-client -d 136.64.82.14 -p 8080 -b /cs528-hw2-yf-2026 -w data -n 1000000000 -i 11999 -r 1 -t 30",
+    "/home/thomasfang/http-client -d 136.64.82.14 -p 8080 -b /cs528-hw2-yf-2026 -w data -n 1000000000 -i 11999 -r 2 -t 30"
+  ],
+  "events": [],
+  "note": "Quiet mode has no HTTP status/throughput counts; stop at deadline is intentional.",
+  "measurement_start": "2026-10-14T03:33:47.005530+00:00",
+  "measurement_end": "2026-10-14T03:36:47.104154+00:00",
+  "measured_seconds": 180.09948090200032,
+  "load_stop_requested_at": "2026-10-14T03:36:47.104194+00:00",
+  "stopped_at": "2026-10-14T03:36:47.124004+00:00",
+  "process_exit_codes_after_stop": [
+    -15,
+    -15,
+    -15
+  ]
+}

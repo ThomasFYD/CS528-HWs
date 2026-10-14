@@ -1,0 +1,6 @@
+clients | seconds | peak CPU % | peak memory MiB | peak RX Mbps | peak TX Mbps | timeouts | valid
+1 | 180.1 | 6.93 | 359.02 | 12.07 | 12.07 | 0 | True
+2 | 180.1 | 10.20 | 363.18 | 11.32 | 11.30 | 0 | True
+  CHECK: observed errors need review; see summary.json and raw logs
+3 | 180.1 | 7.92 | 362.90 | 12.71 | 12.69 | 0 | True
+4 | 180.0 | 7.84 | 363.30 | 13.82 | 13.81 | 0 | True

@@ -1,0 +1,28 @@
+Starting 1 client(s): 15 s warmup, then 180 s measurement
+1 client(s): 0/180 seconds
+1 client(s): 30/180 seconds
+1 client(s): 60/180 seconds
+1 client(s): 90/180 seconds
+1 client(s): 120/180 seconds
+1 client(s): 150/180 seconds
+Starting 2 client(s): 15 s warmup, then 180 s measurement
+2 client(s): 0/180 seconds
+2 client(s): 30/180 seconds
+2 client(s): 60/180 seconds
+2 client(s): 90/180 seconds
+2 client(s): 120/180 seconds
+2 client(s): 150/180 seconds
+Starting 3 client(s): 15 s warmup, then 180 s measurement
+3 client(s): 0/180 seconds
+3 client(s): 30/180 seconds
+3 client(s): 60/180 seconds
+3 client(s): 90/180 seconds
+3 client(s): 120/180 seconds
+3 client(s): 150/180 seconds
+Starting 4 client(s): 15 s warmup, then 180 s measurement
+4 client(s): 0/180 seconds
+4 client(s): 30/180 seconds
+4 client(s): 60/180 seconds
+4 client(s): 90/180 seconds
+4 client(s): 120/180 seconds
+4 client(s): 150/180 seconds

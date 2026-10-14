@@ -1,0 +1,56 @@
+{
+  "action": "verify-cleanup",
+  "started_at": "2026-10-14T04:08:09.198923+00:00",
+  "project": "dazzling-seat-508219-j3",
+  "zone": "us-central1-a",
+  "region": "us-central1",
+  "complete": true,
+  "resources": [
+    {
+      "name": "cs528-hw4-web",
+      "present": false
+    },
+    {
+      "name": "cs528-hw4-web-boot",
+      "present": false
+    },
+    {
+      "name": "cs528-hw4-reporter",
+      "present": false
+    },
+    {
+      "name": "cs528-hw4-reporter-boot",
+      "present": false
+    },
+    {
+      "name": "cs528-hw4-client",
+      "present": false
+    },
+    {
+      "name": "cs528-hw4-client-boot",
+      "present": false
+    },
+    {
+      "name": "cs528-hw4-web-ip",
+      "present": false
+    },
+    {
+      "name": "cs528-hw4-http",
+      "present": false
+    },
+    {
+      "name": "cs528-hw4-ssh",
+      "present": false
+    },
+    {
+      "name": "cs528-hw4-subnet",
+      "present": false
+    },
+    {
+      "name": "cs528-hw4-network",
+      "present": false
+    }
+  ],
+  "finished_at": "2026-10-14T04:08:16.536187+00:00",
+  "files": {}
+}

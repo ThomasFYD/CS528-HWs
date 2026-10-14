@@ -1,0 +1,21 @@
+{
+  "exact_bytes_equal": true,
+  "source_object": "gs://cs528-hw2-yf-2026/data/0.html",
+  "files": [
+    {
+      "file": "gcs.html",
+      "bytes": 97586,
+      "sha256": "c3be7cacaad7e54bac9e5050419002b0545418e31094933b4239813e2a6f2b88"
+    },
+    {
+      "file": "get.html",
+      "bytes": 97586,
+      "sha256": "c3be7cacaad7e54bac9e5050419002b0545418e31094933b4239813e2a6f2b88"
+    },
+    {
+      "file": "post.html",
+      "bytes": 97586,
+      "sha256": "c3be7cacaad7e54bac9e5050419002b0545418e31094933b4239813e2a6f2b88"
+    }
+  ]
+}

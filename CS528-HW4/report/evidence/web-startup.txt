@@ -1,0 +1,15 @@
+Wed Oct 14 04:05:24 UTC 2026
+enabled
+active
+● cs528-hw4-web.service - CS528 HW4 web service
+     Loaded: loaded (/etc/systemd/system/cs528-hw4-web.service; enabled; preset: enabled)
+     Active: active (running) since Wed 2026-10-14 02:16:43 UTC; 1h 48min ago
+   Main PID: 1667 (python)
+      Tasks: 7 (limit: 586)
+     Memory: 64.9M
+        CPU: 36.389s
+     CGroup: /system.slice/cs528-hw4-web.service
+             └─1667 /opt/cs528-hw4/venv/bin/python -u /opt/cs528-hw4/web_server.py
+
+2026-10-14T02:16:43+0000 cs528-hw4-web systemd[1]: Started cs528-hw4-web.service - CS528 HW4 web service.
+2026-10-14T02:16:46+0000 cs528-hw4-web python[1667]: Listening on port 8080; single request worker; queue=5

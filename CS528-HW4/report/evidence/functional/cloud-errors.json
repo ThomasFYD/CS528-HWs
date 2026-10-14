@@ -1,0 +1,75 @@
+[
+  {
+    "insertId": "1yis5wvf795mbg",
+    "jsonPayload": {
+      "country": "Iran",
+      "country_header": "Iran",
+      "event": "forbidden_country",
+      "event_id": "a779625a-032f-423b-ac13-20249c682b0f",
+      "message": "Permission denied: request from Iran.",
+      "method": "GET",
+      "path": "/data/0.html",
+      "status": 400,
+      "timestamp": "2026-10-14T02:22:25.735086+00:00"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/cs528-hw4-web",
+    "receiveTimestamp": "2026-10-14T02:22:25.748164019Z",
+    "resource": {
+      "labels": {
+        "instance_id": "6024668474438277977",
+        "project_id": "dazzling-seat-508219-j3",
+        "zone": "projects/402897578975/zones/us-central1-a"
+      },
+      "type": "gce_instance"
+    },
+    "severity": "CRITICAL",
+    "timestamp": "2026-10-14T02:22:25.748164019Z"
+  },
+  {
+    "insertId": "mhrz8sfmdt5ep",
+    "jsonPayload": {
+      "event": "unsupported_method",
+      "message": "HTTP method not implemented.",
+      "method": "PUT",
+      "path": "/data/0.html",
+      "status": 501,
+      "timestamp": "2026-10-14T02:22:17.017169+00:00"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/cs528-hw4-web",
+    "receiveTimestamp": "2026-10-14T02:22:17.031324214Z",
+    "resource": {
+      "labels": {
+        "instance_id": "6024668474438277977",
+        "project_id": "dazzling-seat-508219-j3",
+        "zone": "projects/402897578975/zones/us-central1-a"
+      },
+      "type": "gce_instance"
+    },
+    "severity": "ERROR",
+    "timestamp": "2026-10-14T02:22:17.031324214Z"
+  },
+  {
+    "insertId": "n378spevk5qd",
+    "jsonPayload": {
+      "event": "file_not_found",
+      "message": "File not found.",
+      "method": "GET",
+      "object_name": "data/hw4-does-not-exist.html",
+      "path": "/data/hw4-does-not-exist.html",
+      "status": 404,
+      "timestamp": "2026-10-14T02:22:08.763892+00:00"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/cs528-hw4-web",
+    "receiveTimestamp": "2026-10-14T02:22:09.325716936Z",
+    "resource": {
+      "labels": {
+        "instance_id": "6024668474438277977",
+        "project_id": "dazzling-seat-508219-j3",
+        "zone": "projects/402897578975/zones/us-central1-a"
+      },
+      "type": "gce_instance"
+    },
+    "severity": "WARNING",
+    "timestamp": "2026-10-14T02:22:09.325716936Z"
+  }
+]

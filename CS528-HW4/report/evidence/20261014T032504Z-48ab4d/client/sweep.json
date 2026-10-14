@@ -1,0 +1,111 @@
+{
+  "type": "metadata",
+  "timestamp": "2026-10-14T03:26:01.446280+00:00",
+  "hostname": "cs528-hw4-client.c.dazzling-seat-508219-j3.internal",
+  "kernel": "7.0.0-1014-gcp",
+  "logical_cpus": 2,
+  "clock_synchronized": "yes",
+  "sample_interval_seconds": 1,
+  "scope": "whole VM; CPU busy excludes idle, iowait and steal; memory=total-available",
+  "binary_sha256": "1edc8e2bccc497ccfac2df1d1fe8e36efd9cadcbc2e47be204af6d47165fdfd1",
+  "domain": "136.64.82.14",
+  "bucket": "cs528-hw2-yf-2026",
+  "timeout_seconds": 30,
+  "rounds": [
+    {
+      "clients": 1,
+      "requested_seconds": 180,
+      "warmup_seconds": 15,
+      "started_at": "2026-10-14T03:26:01.459293+00:00",
+      "complete": true,
+      "commands": [
+        "/home/thomasfang/http-client -d 136.64.82.14 -p 8080 -b /cs528-hw2-yf-2026 -w data -n 1000000000 -i 11999 -r 0 -t 30"
+      ],
+      "events": [],
+      "note": "Quiet mode has no HTTP status/throughput counts; stop at deadline is intentional.",
+      "measurement_start": "2026-10-14T03:26:16.525858+00:00",
+      "measurement_end": "2026-10-14T03:29:16.612836+00:00",
+      "measured_seconds": 180.08790348999992,
+      "load_stop_requested_at": "2026-10-14T03:29:16.612861+00:00",
+      "stopped_at": "2026-10-14T03:29:16.620608+00:00",
+      "process_exit_codes_after_stop": [
+        -15
+      ]
+    },
+    {
+      "clients": 2,
+      "requested_seconds": 180,
+      "warmup_seconds": 15,
+      "started_at": "2026-10-14T03:29:46.621901+00:00",
+      "complete": true,
+      "commands": [
+        "/home/thomasfang/http-client -d 136.64.82.14 -p 8080 -b /cs528-hw2-yf-2026 -w data -n 1000000000 -i 11999 -r 0 -t 30",
+        "/home/thomasfang/http-client -d 136.64.82.14 -p 8080 -b /cs528-hw2-yf-2026 -w data -n 1000000000 -i 11999 -r 1 -t 30"
+      ],
+      "events": [],
+      "note": "Quiet mode has no HTTP status/throughput counts; stop at deadline is intentional.",
+      "measurement_start": "2026-10-14T03:30:01.750330+00:00",
+      "measurement_end": "2026-10-14T03:33:01.846157+00:00",
+      "measured_seconds": 180.096606607,
+      "load_stop_requested_at": "2026-10-14T03:33:01.846203+00:00",
+      "stopped_at": "2026-10-14T03:33:01.858864+00:00",
+      "process_exit_codes_after_stop": [
+        -15,
+        -15
+      ]
+    },
+    {
+      "clients": 3,
+      "requested_seconds": 180,
+      "warmup_seconds": 15,
+      "started_at": "2026-10-14T03:33:31.860730+00:00",
+      "complete": true,
+      "commands": [
+        "/home/thomasfang/http-client -d 136.64.82.14 -p 8080 -b /cs528-hw2-yf-2026 -w data -n 1000000000 -i 11999 -r 0 -t 30",
+        "/home/thomasfang/http-client -d 136.64.82.14 -p 8080 -b /cs528-hw2-yf-2026 -w data -n 1000000000 -i 11999 -r 1 -t 30",
+        "/home/thomasfang/http-client -d 136.64.82.14 -p 8080 -b /cs528-hw2-yf-2026 -w data -n 1000000000 -i 11999 -r 2 -t 30"
+      ],
+      "events": [],
+      "note": "Quiet mode has no HTTP status/throughput counts; stop at deadline is intentional.",
+      "measurement_start": "2026-10-14T03:33:47.005530+00:00",
+      "measurement_end": "2026-10-14T03:36:47.104154+00:00",
+      "measured_seconds": 180.09948090200032,
+      "load_stop_requested_at": "2026-10-14T03:36:47.104194+00:00",
+      "stopped_at": "2026-10-14T03:36:47.124004+00:00",
+      "process_exit_codes_after_stop": [
+        -15,
+        -15,
+        -15
+      ]
+    },
+    {
+      "clients": 4,
+      "requested_seconds": 180,
+      "warmup_seconds": 15,
+      "started_at": "2026-10-14T03:37:17.126092+00:00",
+      "complete": true,
+      "commands": [
+        "/home/thomasfang/http-client -d 136.64.82.14 -p 8080 -b /cs528-hw2-yf-2026 -w data -n 1000000000 -i 11999 -r 0 -t 30",
+        "/home/thomasfang/http-client -d 136.64.82.14 -p 8080 -b /cs528-hw2-yf-2026 -w data -n 1000000000 -i 11999 -r 1 -t 30",
+        "/home/thomasfang/http-client -d 136.64.82.14 -p 8080 -b /cs528-hw2-yf-2026 -w data -n 1000000000 -i 11999 -r 2 -t 30",
+        "/home/thomasfang/http-client -d 136.64.82.14 -p 8080 -b /cs528-hw2-yf-2026 -w data -n 1000000000 -i 11999 -r 3 -t 30"
+      ],
+      "events": [],
+      "note": "Quiet mode has no HTTP status/throughput counts; stop at deadline is intentional.",
+      "measurement_start": "2026-10-14T03:37:32.260509+00:00",
+      "measurement_end": "2026-10-14T03:40:32.283043+00:00",
+      "measured_seconds": 180.02354755299984,
+      "load_stop_requested_at": "2026-10-14T03:40:32.283093+00:00",
+      "stopped_at": "2026-10-14T03:40:32.322691+00:00",
+      "process_exit_codes_after_stop": [
+        -15,
+        -15,
+        -15,
+        -15
+      ]
+    }
+  ],
+  "complete": true,
+  "started_at": "2026-10-14T03:26:01.459008+00:00",
+  "finished_at": "2026-10-14T03:40:32.324167+00:00"
+}

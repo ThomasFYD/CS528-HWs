@@ -1,0 +1,116 @@
+{
+  "web": {
+    "name": "cs528-hw4-web",
+    "id": "6024668474438277977",
+    "creationTimestamp": "2026-10-13T19:15:19.246-07:00",
+    "status": "RUNNING",
+    "machineType": "https://www.googleapis.com/compute/v1/projects/dazzling-seat-508219-j3/zones/us-central1-a/machineTypes/f1-micro",
+    "networkInterfaces": [
+      {
+        "accessConfigs": [
+          {
+            "kind": "compute#accessConfig",
+            "name": "external-nat",
+            "natIP": "136.64.82.14",
+            "networkTier": "PREMIUM",
+            "type": "ONE_TO_ONE_NAT"
+          }
+        ],
+        "fingerprint": "fkXOjYcBEr0=",
+        "kind": "compute#networkInterface",
+        "name": "nic0",
+        "network": "https://www.googleapis.com/compute/v1/projects/dazzling-seat-508219-j3/global/networks/cs528-hw4-network",
+        "networkIP": "10.84.0.2",
+        "stackType": "IPV4_ONLY",
+        "subnetwork": "https://www.googleapis.com/compute/v1/projects/dazzling-seat-508219-j3/regions/us-central1/subnetworks/cs528-hw4-subnet"
+      }
+    ],
+    "serviceAccounts": [
+      {
+        "email": "cs528-hw4-web-sa@dazzling-seat-508219-j3.iam.gserviceaccount.com",
+        "scopes": [
+          "https://www.googleapis.com/auth/cloud-platform"
+        ]
+      }
+    ],
+    "labels": {
+      "course": "cs528",
+      "homework": "hw4",
+      "source": "fd70db7ccd9a44aa0e5bb91fa8a599ef"
+    }
+  },
+  "reporter": {
+    "name": "cs528-hw4-reporter",
+    "id": "8711485373548813091",
+    "creationTimestamp": "2026-10-13T19:15:41.298-07:00",
+    "status": "RUNNING",
+    "machineType": "https://www.googleapis.com/compute/v1/projects/dazzling-seat-508219-j3/zones/us-central1-a/machineTypes/e2-micro",
+    "networkInterfaces": [
+      {
+        "accessConfigs": [
+          {
+            "kind": "compute#accessConfig",
+            "name": "external-nat",
+            "natIP": "136.113.233.208",
+            "networkTier": "PREMIUM",
+            "type": "ONE_TO_ONE_NAT"
+          }
+        ],
+        "fingerprint": "JDMcBIm5WXs=",
+        "kind": "compute#networkInterface",
+        "name": "nic0",
+        "network": "https://www.googleapis.com/compute/v1/projects/dazzling-seat-508219-j3/global/networks/cs528-hw4-network",
+        "networkIP": "10.84.0.3",
+        "stackType": "IPV4_ONLY",
+        "subnetwork": "https://www.googleapis.com/compute/v1/projects/dazzling-seat-508219-j3/regions/us-central1/subnetworks/cs528-hw4-subnet"
+      }
+    ],
+    "serviceAccounts": [
+      {
+        "email": "cs528-hw4-reporter-sa@dazzling-seat-508219-j3.iam.gserviceaccount.com",
+        "scopes": [
+          "https://www.googleapis.com/auth/cloud-platform"
+        ]
+      }
+    ],
+    "labels": {
+      "course": "cs528",
+      "homework": "hw4",
+      "source": "322c2f0a8e29528fc3cd98ee1bbf4a61"
+    }
+  },
+  "client": {
+    "name": "cs528-hw4-client",
+    "id": "7711458021710451924",
+    "creationTimestamp": "2026-10-13T19:34:36.164-07:00",
+    "status": "RUNNING",
+    "machineType": "https://www.googleapis.com/compute/v1/projects/dazzling-seat-508219-j3/zones/us-central1-a/machineTypes/e2-small",
+    "networkInterfaces": [
+      {
+        "accessConfigs": [
+          {
+            "kind": "compute#accessConfig",
+            "name": "external-nat",
+            "natIP": "34.123.133.194",
+            "networkTier": "PREMIUM",
+            "type": "ONE_TO_ONE_NAT"
+          }
+        ],
+        "fingerprint": "cNi4lLOYsb0=",
+        "kind": "compute#networkInterface",
+        "name": "nic0",
+        "network": "https://www.googleapis.com/compute/v1/projects/dazzling-seat-508219-j3/global/networks/cs528-hw4-network",
+        "networkIP": "10.84.0.5",
+        "stackType": "IPV4_ONLY",
+        "subnetwork": "https://www.googleapis.com/compute/v1/projects/dazzling-seat-508219-j3/regions/us-central1/subnetworks/cs528-hw4-subnet"
+      }
+    ],
+    "serviceAccounts": null,
+    "labels": {
+      "course": "cs528",
+      "homework": "hw4",
+      "os-image": "ubuntu-2404-lts-amd64",
+      "source": "c49863e6637783f8eb5022f77a358db8"
+    }
+  }
+}

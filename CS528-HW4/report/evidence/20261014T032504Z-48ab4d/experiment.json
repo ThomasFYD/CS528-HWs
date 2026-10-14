@@ -1,0 +1,20 @@
+{
+  "run_id": "20261014T032504Z-48ab4d",
+  "started_at": "2026-10-14T03:25:04.361931+00:00",
+  "project": "dazzling-seat-508219-j3",
+  "account": "fangyd@bu.edu",
+  "zone": "us-central1-a",
+  "bucket": "cs528-hw2-yf-2026",
+  "measurement_seconds_per_group": 180,
+  "groups": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "domain": "136.64.82.14",
+  "ssh_exit_code": 0,
+  "sweep_command_finished_at": "2026-10-14T03:40:32.401481+00:00",
+  "collection_time": "2026-10-14T03:41:21.555653+00:00",
+  "collection_errors": []
+}

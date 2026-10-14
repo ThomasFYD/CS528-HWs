@@ -1,0 +1,78 @@
+{
+  "creationTimestamp": "2026-10-13T19:15:19.246-07:00",
+  "disks": [
+    {
+      "architecture": "X86_64",
+      "autoDelete": true,
+      "boot": true,
+      "deviceName": "persistent-disk-0",
+      "diskSizeGb": "10",
+      "guestOsFeatures": [
+        {
+          "type": "UEFI_COMPATIBLE"
+        },
+        {
+          "type": "VIRTIO_SCSI_MULTIQUEUE"
+        },
+        {
+          "type": "GVNIC"
+        },
+        {
+          "type": "SEV_CAPABLE"
+        },
+        {
+          "type": "SEV_LIVE_MIGRATABLE_V2"
+        },
+        {
+          "type": "SUSPEND_SAFE_FPR"
+        }
+      ],
+      "index": 0,
+      "interface": "SCSI",
+      "kind": "compute#attachedDisk",
+      "licenses": [
+        "https://www.googleapis.com/compute/v1/projects/debian-cloud/global/licenses/debian-12-bookworm"
+      ],
+      "mode": "READ_WRITE",
+      "source": "https://www.googleapis.com/compute/v1/projects/dazzling-seat-508219-j3/zones/us-central1-a/disks/cs528-hw4-web-boot",
+      "type": "PERSISTENT"
+    }
+  ],
+  "id": "6024668474438277977",
+  "labels": {
+    "course": "cs528",
+    "homework": "hw4",
+    "source": "fd70db7ccd9a44aa0e5bb91fa8a599ef"
+  },
+  "machineType": "https://www.googleapis.com/compute/v1/projects/dazzling-seat-508219-j3/zones/us-central1-a/machineTypes/f1-micro",
+  "name": "cs528-hw4-web",
+  "networkInterfaces": [
+    {
+      "accessConfigs": [
+        {
+          "kind": "compute#accessConfig",
+          "name": "external-nat",
+          "natIP": "136.64.82.14",
+          "networkTier": "PREMIUM",
+          "type": "ONE_TO_ONE_NAT"
+        }
+      ],
+      "fingerprint": "fkXOjYcBEr0=",
+      "kind": "compute#networkInterface",
+      "name": "nic0",
+      "network": "https://www.googleapis.com/compute/v1/projects/dazzling-seat-508219-j3/global/networks/cs528-hw4-network",
+      "networkIP": "10.84.0.2",
+      "stackType": "IPV4_ONLY",
+      "subnetwork": "https://www.googleapis.com/compute/v1/projects/dazzling-seat-508219-j3/regions/us-central1/subnetworks/cs528-hw4-subnet"
+    }
+  ],
+  "serviceAccounts": [
+    {
+      "email": "cs528-hw4-web-sa@dazzling-seat-508219-j3.iam.gserviceaccount.com",
+      "scopes": [
+        "https://www.googleapis.com/auth/cloud-platform"
+      ]
+    }
+  ],
+  "status": "RUNNING"
+}
