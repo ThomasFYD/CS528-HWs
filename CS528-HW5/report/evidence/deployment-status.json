@@ -1,0 +1,441 @@
+{
+  "project": "dazzling-seat-508219-j3",
+  "sql": {
+    "backendType": "SECOND_GEN",
+    "connectionName": "dazzling-seat-508219-j3:us-central1:cs528-hw5-mysql",
+    "createTime": "2026-10-21T03:22:03.756Z",
+    "databaseInstalledVersion": "MYSQL_8_4_11",
+    "databaseVersion": "MYSQL_8_4",
+    "etag": "5c8290297fb528fc152215cbe8c8d8c918a12127a8f726cb1313a7b33ab2f3b7",
+    "gceZone": "us-central1-a",
+    "geminiConfig": {
+      "activeQueryEnabled": false,
+      "entitled": false,
+      "flagRecommenderEnabled": true,
+      "indexAdvisorEnabled": false
+    },
+    "includeReplicasForMajorVersionUpgrade": false,
+    "instanceType": "CLOUD_SQL_INSTANCE",
+    "ipAddresses": [
+      {
+        "ipAddress": "34.60.151.30",
+        "type": "PRIMARY"
+      }
+    ],
+    "kind": "sql#instance",
+    "maintenanceVersion": "MYSQL_8_4_11.R20260726.00_28",
+    "name": "cs528-hw5-mysql",
+    "project": "dazzling-seat-508219-j3",
+    "region": "us-central1",
+    "satisfiesPzi": true,
+    "selfLink": "https://sqladmin.googleapis.com/sql/v1beta4/projects/dazzling-seat-508219-j3/instances/cs528-hw5-mysql",
+    "serverCaCert": {
+      "cert": "-----BEGIN CERTIFICATE-----\nMIIDcTCCAlmgAwIBAgIBADANBgkqhkiG9w0BAQsFADBwMS0wKwYDVQQuEyQwZjlk\nZDRjOC0zZDEyLTRiMDQtODVjOC1lNGU5ODRmOTk0MjQxHDAaBgNVBAMTE0Nsb3Vk\nIFNRTCBTZXJ2ZXIgQ0ExFDASBgNVBAoTC0dvb2dsZSwgSW5jMQswCQYDVQQGEwJV\nUzAeFw0yNjEwMjEwMzIyMzVaFw0zNjEwMTgwMzIzMzVaMHAxLTArBgNVBC4TJDBm\nOWRkNGM4LTNkMTItNGIwNC04NWM4LWU0ZTk4NGY5OTQyNDEcMBoGA1UEAxMTQ2xv\ndWQgU1FMIFNlcnZlciBDQTEUMBIGA1UEChMLR29vZ2xlLCBJbmMxCzAJBgNVBAYT\nAlVTMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxIYwr5B3r+ZU/yBW\nbl3unpf3LaFKAK4bChH60WilaNixl/a/BqzpspbdIClbHfpf7ZIcFNGaFxqCWdGi\nFDv8ONkRfXJkM46183srwwijmQg1BNLlk+dEQxHOnIrs2FVi21q35LPUn3DRCPwf\nBDowcmurjBhhV35/EMRZEb/1MarRfaE08C8j4qXphcKm6snjLzETBfD4rHxrSPAR\nv/UI5X4pDktCvp1H6bCDy4wqB8KTUcUoubPndDRgiSPUz6DFrJ5O3GubgkH/rBAi\nwOrF2RmDVS7ehszwjxYPm7B9qoZBwm6LUDOQ5ts07q46nKKpQxwoMJvbPOs05S+4\nEuHuRwIDAQABoxYwFDASBgNVHRMBAf8ECDAGAQH/AgEAMA0GCSqGSIb3DQEBCwUA\nA4IBAQASt7XfqVoegETb2PQYGDFZ8fYfBS/5kCSLgrLSx+kxEVEGjhEcUghP1AuK\nFwsUd1UeYcj0pRR81dbFxZstQflzlrb9MuHYyFUtDwkdlh9Efge5Mr6KTYvsjP/C\n3xTp8br5jVhr81KVFnM38dfymDMzzEDEWTPYrA5CSFjlP3yJiNPCHy+cxOHB1SzV\nnqOqqNSNxSgo3goXqSZSLuEnkaIsEEM2GN7yKjGTfCj3HROq74IdJzw2rmOMS0uZ\np7JopGFtp7HXlKtOv+Pbnles+WHHU3yP/9UwjqNr6hs2YnUh4+88a1ErXc4P8RcS\nbX3u+REOaWS9h7jbYAELZiYdqTG5\n-----END CERTIFICATE-----",
+      "certSerialNumber": "0",
+      "commonName": "C=US,O=Google\\, Inc,CN=Cloud SQL Server CA,dnQualifier=0f9dd4c8-3d12-4b04-85c8-e4e984f99424",
+      "createTime": "2026-10-21T03:22:35.944Z",
+      "expirationTime": "2036-10-18T03:23:35.944Z",
+      "instance": "cs528-hw5-mysql",
+      "kind": "sql#sslCert",
+      "sha1Fingerprint": "95f5eea78e31a6a4149ce3c3336afd88ec0bc7a5"
+    },
+    "serviceAccountEmailAddress": "p402897578975-odot85@gcp-sa-cloud-sql.iam.gserviceaccount.com",
+    "settings": {
+      "activationPolicy": "ALWAYS",
+      "availabilityType": "ZONAL",
+      "backupConfiguration": {
+        "backupRetentionSettings": {
+          "retainedBackups": 7,
+          "retentionUnit": "COUNT"
+        },
+        "backupTier": "STANDARD",
+        "enabled": false,
+        "kind": "sql#backupConfiguration",
+        "startTime": "00:00",
+        "transactionLogRetentionDays": 7,
+        "transactionalLogStorageState": "TRANSACTIONAL_LOG_STORAGE_STATE_UNSPECIFIED"
+      },
+      "connectorEnforcement": "NOT_REQUIRED",
+      "dataDiskSizeGb": "10",
+      "dataDiskType": "PD_SSD",
+      "deletionProtectionEnabled": true,
+      "edition": "ENTERPRISE",
+      "enableDataplexIntegration": true,
+      "ipConfiguration": {
+        "ipv4Enabled": true,
+        "message": "Configuring authorized network or using CloudSQL auth proxy or language connectors is a prerequisite for connecting to Public IP. Please refer to the documentation for more details https://cloud.google.com/sql/docs/mysql/authorize-networks.",
+        "requireSsl": false,
+        "serverCaMode": "GOOGLE_MANAGED_INTERNAL_CA",
+        "serverCertificateRotationMode": "SERVER_CERTIFICATE_ROTATION_MODE_UNSPECIFIED",
+        "sslMode": "ALLOW_UNENCRYPTED_AND_ENCRYPTED"
+      },
+      "kind": "sql#settings",
+      "locationPreference": {
+        "kind": "sql#locationPreference",
+        "zone": "us-central1-a"
+      },
+      "pricingPlan": "PER_USE",
+      "replicationLagMaxSeconds": 31536000,
+      "replicationType": "SYNCHRONOUS",
+      "settingsVersion": "1",
+      "storageAutoResize": false,
+      "storageAutoResizeLimit": "0",
+      "tier": "db-g1-small",
+      "userLabels": {
+        "course": "cs528",
+        "homework": "hw5"
+      }
+    },
+    "sqlNetworkArchitecture": "NEW_NETWORK_ARCHITECTURE",
+    "state": "RUNNABLE",
+    "upgradableDatabaseVersions": [
+      {
+        "displayName": "MySQL 9.7",
+        "majorVersion": "MYSQL_9_7",
+        "name": "MYSQL_9_7"
+      }
+    ]
+  },
+  "vms": {
+    "web": {
+      "canIpForward": false,
+      "cpuPlatform": "AMD Rome",
+      "creationTimestamp": "2026-10-20T20:27:30.542-07:00",
+      "deletionProtection": false,
+      "description": "Managed by CS528 HW5 (Yide Fang)",
+      "disks": [
+        {
+          "architecture": "X86_64",
+          "autoDelete": true,
+          "boot": true,
+          "deviceName": "persistent-disk-0",
+          "diskSizeGb": "10",
+          "guestOsFeatures": [
+            {
+              "type": "UEFI_COMPATIBLE"
+            },
+            {
+              "type": "VIRTIO_SCSI_MULTIQUEUE"
+            },
+            {
+              "type": "GVNIC"
+            },
+            {
+              "type": "SEV_CAPABLE"
+            },
+            {
+              "type": "SEV_LIVE_MIGRATABLE_V2"
+            },
+            {
+              "type": "SUSPEND_SAFE_FPR"
+            }
+          ],
+          "index": 0,
+          "interface": "SCSI",
+          "kind": "compute#attachedDisk",
+          "licenses": [
+            "https://www.googleapis.com/compute/v1/projects/debian-cloud/global/licenses/debian-12-bookworm"
+          ],
+          "mode": "READ_WRITE",
+          "source": "https://www.googleapis.com/compute/v1/projects/dazzling-seat-508219-j3/zones/us-central1-a/disks/cs528-hw5-web-boot",
+          "type": "PERSISTENT"
+        }
+      ],
+      "fingerprint": "6qxI-bS_y4w=",
+      "id": "4992852622239436749",
+      "kind": "compute#instance",
+      "labelFingerprint": "8KtgqhRCjnQ=",
+      "labels": {
+        "course": "cs528",
+        "homework": "hw5",
+        "source": "36e2b2004d6c4f3f4e28776391b68635"
+      },
+      "lastStartTimestamp": "2026-10-20T20:27:39.482-07:00",
+      "machineType": "https://www.googleapis.com/compute/v1/projects/dazzling-seat-508219-j3/zones/us-central1-a/machineTypes/e2-small",
+      "metadata": {
+        "fingerprint": "BOha14R_v3s=",
+        "items": [
+          {
+            "key": "hw5-artifact",
+            "value": "gs://dazzling-seat-508219-j3-hw5-deployment/source-36e2b2004d6c4f3f4e28776391b68635992480c8c4d0d02a536d9dea6a46b948.tar.gz"
+          },
+          {
+            "key": "hw5-project",
+            "value": "dazzling-seat-508219-j3"
+          },
+          {
+            "key": "hw5-role",
+            "value": "web"
+          },
+          {
+            "key": "hw5-source-sha256",
+            "value": "36e2b2004d6c4f3f4e28776391b68635992480c8c4d0d02a536d9dea6a46b948"
+          },
+          {
+            "key": "hw5-subscription",
+            "value": "cs528-hw5-forbidden-sub"
+          },
+          {
+            "key": "startup-script",
+            "value": "#!/bin/bash\n# All VM configuration occurs here, through --metadata-from-file=startup-script.\nset -euo pipefail\nexport DEBIAN_FRONTEND=noninteractive\nBASE=/opt/cs528-hw5\nMETA=http://metadata.google.internal/computeMetadata/v1/instance/attributes\nmeta() { curl --fail --silent --show-error -H Metadata-Flavor:Google \"$META/$1\"; }\nROLE=\"$(meta hw5-role)\"\nDIGEST=\"$(meta hw5-source-sha256)\"\ncase \"$ROLE\" in web|reporter) ;; *) echo 'Invalid HW5 VM role'; exit 1;; esac\n[[ \"$DIGEST\" =~ ^[0-9a-f]{64}$ ]] || exit 1\ninstall -d -m 755 \"$BASE\"\nif [ -f \"$BASE/.ready-$DIGEST\" ]; then\n  systemctl start \"cs528-hw5-$ROLE.service\"\n  echo 'HW5 already installed; service started without reinstalling packages.'\n  exit 0\nfi\nif [ ! -f \"$BASE/.os-packages-ready\" ]; then\n  apt-get -o Acquire::Retries=3 update\n  apt-get -o DPkg::Lock::Timeout=180 install -y python3 python3-venv ca-certificates curl\n  touch \"$BASE/.os-packages-ready\"\nfi\nif ! id hw5 >/dev/null 2>&1; then\n  useradd --system --home-dir \"$BASE\" --shell /usr/sbin/nologin hw5\nfi\n# Metadata tokens never appear in a command line or log. Verify the archive hash.\npython3 - \"$BASE\" \"$DIGEST\" <<'PY'\nimport hashlib, io, json, pathlib, sys, tarfile, urllib.request, urllib.parse\nbase, expected = pathlib.Path(sys.argv[1]), sys.argv[2]\nroot = 'http://metadata.google.internal/computeMetadata/v1/'\ndef metadata(name):\n    req = urllib.request.Request(root + name, headers={'Metadata-Flavor': 'Google'})\n    with urllib.request.urlopen(req, timeout=20) as r:\n        return r.read().decode()\nuri = metadata('instance/attributes/hw5-artifact')\nbucket, name = uri.removeprefix('gs://').split('/', 1)\ntoken = json.loads(metadata('instance/service-accounts/default/token'))['access_token']\nurl = 'https://storage.googleapis.com/storage/v1/b/' + bucket + '/o/' + urllib.parse.quote(name, safe='') + '?alt=media'\nreq = urllib.request.Request(url, headers={'Authorization': 'Bearer ' + token})\nwith urllib.request.urlopen(req, timeout=120) as r:\n    payload = r.read()\nif hashlib.sha256(payload).hexdigest() != expected:\n    raise SystemExit('Deployment archive checksum mismatch')\nwith tarfile.open(fileobj=io.BytesIO(payload), mode='r:gz') as archive:\n    for member in archive.getmembers():\n        target = (base / member.name).resolve()\n        if not target.is_relative_to(base.resolve()) or not member.isfile():\n            raise SystemExit('Unsafe archive member')\n    for member in archive.getmembers():\n        target = base / member.name\n        target.parent.mkdir(parents=True, exist_ok=True)\n        target.write_bytes(archive.extractfile(member).read())\n        target.chmod(0o644)\nPY\nREQ=requirements.txt\nif [ \"$ROLE\" = reporter ]; then REQ=requirements-reporter.txt; fi\nREQ_HASH=\"$(sha256sum \"$BASE/$REQ\" | cut -d ' ' -f 1)\"\nif [ ! -f \"$BASE/.deps-$ROLE-$REQ_HASH\" ]; then\n  python3 -m venv \"$BASE/venv\"\n  \"$BASE/venv/bin/python\" -m pip install --no-cache-dir -r \"$BASE/$REQ\"\n  \"$BASE/venv/bin/python\" -m pip freeze > \"$BASE/installed-requirements.txt\"\n  touch \"$BASE/.deps-$ROLE-$REQ_HASH\"\nfi\nPROJECT_ID=\"$(meta hw5-project)\"\nSUBSCRIPTION_ID=\"$(meta hw5-subscription)\"\n[[ \"$PROJECT_ID\" =~ ^[a-z0-9-]+$ ]] || exit 1\n[[ \"$SUBSCRIPTION_ID\" =~ ^[a-zA-Z0-9_.-]+$ ]] || exit 1\ncat > /etc/cs528-hw5.env <<EOF\nPROJECT_ID=$PROJECT_ID\nSUBSCRIPTION_ID=$SUBSCRIPTION_ID\nEOF\nMODULE=web_server.py\nif [ \"$ROLE\" = reporter ]; then MODULE=reporter.py; fi\nif [ \"$ROLE\" = web ]; then\n  # This is idempotent: existing tables and data are retained.\n  \"$BASE/venv/bin/python\" \"$BASE/setup_schema.py\"\nfi\ncat > \"/etc/systemd/system/cs528-hw5-$ROLE.service\" <<EOF\n[Unit]\nDescription=CS528 HW5 $ROLE\nWants=network-online.target\nAfter=network-online.target\nStartLimitIntervalSec=0\n\n[Service]\nType=simple\nUser=hw5\nGroup=hw5\nWorkingDirectory=$BASE\nEnvironmentFile=/etc/cs528-hw5.env\nEnvironment=PYTHONUNBUFFERED=1\nExecStart=$BASE/venv/bin/python -u $BASE/$MODULE\nRestart=on-failure\nRestartSec=5\nNoNewPrivileges=true\nPrivateTmp=true\nProtectHome=true\nProtectSystem=full\nStandardOutput=journal\nStandardError=journal\n\n[Install]\nWantedBy=multi-user.target\nEOF\nchmod 644 /etc/cs528-hw5.env\nsystemctl daemon-reload\nsystemctl enable \"cs528-hw5-$ROLE.service\"\nsystemctl restart \"cs528-hw5-$ROLE.service\"\nsystemctl is-active --quiet \"cs528-hw5-$ROLE.service\"\ntouch \"$BASE/.ready-$DIGEST\"\necho \"HW5 $ROLE startup completed.\"\n"
+          }
+        ],
+        "kind": "compute#metadata"
+      },
+      "name": "cs528-hw5-web",
+      "networkInterfaces": [
+        {
+          "accessConfigs": [
+            {
+              "kind": "compute#accessConfig",
+              "name": "external-nat",
+              "natIP": "35.193.157.51",
+              "networkTier": "PREMIUM",
+              "type": "ONE_TO_ONE_NAT"
+            }
+          ],
+          "fingerprint": "IDdrE9uWqFM=",
+          "kind": "compute#networkInterface",
+          "name": "nic0",
+          "network": "https://www.googleapis.com/compute/v1/projects/dazzling-seat-508219-j3/global/networks/cs528-hw5-network",
+          "networkIP": "10.85.0.2",
+          "stackType": "IPV4_ONLY",
+          "subnetwork": "https://www.googleapis.com/compute/v1/projects/dazzling-seat-508219-j3/regions/us-central1/subnetworks/cs528-hw5-subnet"
+        }
+      ],
+      "resourceStatus": {
+        "effectiveInstanceMetadata": {
+          "vmDnsSettingMetadataValue": "GlobalDefault"
+        }
+      },
+      "satisfiesPzi": true,
+      "scheduling": {
+        "automaticRestart": true,
+        "onHostMaintenance": "MIGRATE",
+        "preemptible": false,
+        "provisioningModel": "STANDARD"
+      },
+      "selfLink": "https://www.googleapis.com/compute/v1/projects/dazzling-seat-508219-j3/zones/us-central1-a/instances/cs528-hw5-web",
+      "serviceAccounts": [
+        {
+          "email": "cs528-hw5-web@dazzling-seat-508219-j3.iam.gserviceaccount.com",
+          "scopes": [
+            "https://www.googleapis.com/auth/cloud-platform"
+          ]
+        }
+      ],
+      "shieldedInstanceConfig": {
+        "enableIntegrityMonitoring": true,
+        "enableSecureBoot": false,
+        "enableVtpm": true
+      },
+      "shieldedInstanceIntegrityPolicy": {
+        "updateAutoLearnPolicy": true
+      },
+      "startRestricted": false,
+      "status": "RUNNING",
+      "tags": {
+        "fingerprint": "QRCfhccDGms=",
+        "items": [
+          "cs528-hw5-web"
+        ]
+      },
+      "zone": "https://www.googleapis.com/compute/v1/projects/dazzling-seat-508219-j3/zones/us-central1-a"
+    },
+    "reporter": {
+      "canIpForward": false,
+      "cpuPlatform": "Intel Broadwell",
+      "creationTimestamp": "2026-10-20T20:27:43.025-07:00",
+      "deletionProtection": false,
+      "description": "Managed by CS528 HW5 (Yide Fang)",
+      "disks": [
+        {
+          "architecture": "X86_64",
+          "autoDelete": true,
+          "boot": true,
+          "deviceName": "persistent-disk-0",
+          "diskSizeGb": "10",
+          "guestOsFeatures": [
+            {
+              "type": "UEFI_COMPATIBLE"
+            },
+            {
+              "type": "VIRTIO_SCSI_MULTIQUEUE"
+            },
+            {
+              "type": "GVNIC"
+            },
+            {
+              "type": "SEV_CAPABLE"
+            },
+            {
+              "type": "SEV_LIVE_MIGRATABLE_V2"
+            },
+            {
+              "type": "SUSPEND_SAFE_FPR"
+            }
+          ],
+          "index": 0,
+          "interface": "SCSI",
+          "kind": "compute#attachedDisk",
+          "licenses": [
+            "https://www.googleapis.com/compute/v1/projects/debian-cloud/global/licenses/debian-12-bookworm"
+          ],
+          "mode": "READ_WRITE",
+          "source": "https://www.googleapis.com/compute/v1/projects/dazzling-seat-508219-j3/zones/us-central1-a/disks/cs528-hw5-reporter-boot",
+          "type": "PERSISTENT"
+        }
+      ],
+      "fingerprint": "ABEea6oaPx0=",
+      "id": "1393380547395686337",
+      "kind": "compute#instance",
+      "labelFingerprint": "8KtgqhRCjnQ=",
+      "labels": {
+        "course": "cs528",
+        "homework": "hw5",
+        "source": "36e2b2004d6c4f3f4e28776391b68635"
+      },
+      "lastStartTimestamp": "2026-10-20T20:27:51.383-07:00",
+      "machineType": "https://www.googleapis.com/compute/v1/projects/dazzling-seat-508219-j3/zones/us-central1-a/machineTypes/e2-micro",
+      "metadata": {
+        "fingerprint": "Rwz9GyN-QUI=",
+        "items": [
+          {
+            "key": "hw5-artifact",
+            "value": "gs://dazzling-seat-508219-j3-hw5-deployment/source-36e2b2004d6c4f3f4e28776391b68635992480c8c4d0d02a536d9dea6a46b948.tar.gz"
+          },
+          {
+            "key": "hw5-project",
+            "value": "dazzling-seat-508219-j3"
+          },
+          {
+            "key": "hw5-role",
+            "value": "reporter"
+          },
+          {
+            "key": "hw5-source-sha256",
+            "value": "36e2b2004d6c4f3f4e28776391b68635992480c8c4d0d02a536d9dea6a46b948"
+          },
+          {
+            "key": "hw5-subscription",
+            "value": "cs528-hw5-forbidden-sub"
+          },
+          {
+            "key": "startup-script",
+            "value": "#!/bin/bash\n# All VM configuration occurs here, through --metadata-from-file=startup-script.\nset -euo pipefail\nexport DEBIAN_FRONTEND=noninteractive\nBASE=/opt/cs528-hw5\nMETA=http://metadata.google.internal/computeMetadata/v1/instance/attributes\nmeta() { curl --fail --silent --show-error -H Metadata-Flavor:Google \"$META/$1\"; }\nROLE=\"$(meta hw5-role)\"\nDIGEST=\"$(meta hw5-source-sha256)\"\ncase \"$ROLE\" in web|reporter) ;; *) echo 'Invalid HW5 VM role'; exit 1;; esac\n[[ \"$DIGEST\" =~ ^[0-9a-f]{64}$ ]] || exit 1\ninstall -d -m 755 \"$BASE\"\nif [ -f \"$BASE/.ready-$DIGEST\" ]; then\n  systemctl start \"cs528-hw5-$ROLE.service\"\n  echo 'HW5 already installed; service started without reinstalling packages.'\n  exit 0\nfi\nif [ ! -f \"$BASE/.os-packages-ready\" ]; then\n  apt-get -o Acquire::Retries=3 update\n  apt-get -o DPkg::Lock::Timeout=180 install -y python3 python3-venv ca-certificates curl\n  touch \"$BASE/.os-packages-ready\"\nfi\nif ! id hw5 >/dev/null 2>&1; then\n  useradd --system --home-dir \"$BASE\" --shell /usr/sbin/nologin hw5\nfi\n# Metadata tokens never appear in a command line or log. Verify the archive hash.\npython3 - \"$BASE\" \"$DIGEST\" <<'PY'\nimport hashlib, io, json, pathlib, sys, tarfile, urllib.request, urllib.parse\nbase, expected = pathlib.Path(sys.argv[1]), sys.argv[2]\nroot = 'http://metadata.google.internal/computeMetadata/v1/'\ndef metadata(name):\n    req = urllib.request.Request(root + name, headers={'Metadata-Flavor': 'Google'})\n    with urllib.request.urlopen(req, timeout=20) as r:\n        return r.read().decode()\nuri = metadata('instance/attributes/hw5-artifact')\nbucket, name = uri.removeprefix('gs://').split('/', 1)\ntoken = json.loads(metadata('instance/service-accounts/default/token'))['access_token']\nurl = 'https://storage.googleapis.com/storage/v1/b/' + bucket + '/o/' + urllib.parse.quote(name, safe='') + '?alt=media'\nreq = urllib.request.Request(url, headers={'Authorization': 'Bearer ' + token})\nwith urllib.request.urlopen(req, timeout=120) as r:\n    payload = r.read()\nif hashlib.sha256(payload).hexdigest() != expected:\n    raise SystemExit('Deployment archive checksum mismatch')\nwith tarfile.open(fileobj=io.BytesIO(payload), mode='r:gz') as archive:\n    for member in archive.getmembers():\n        target = (base / member.name).resolve()\n        if not target.is_relative_to(base.resolve()) or not member.isfile():\n            raise SystemExit('Unsafe archive member')\n    for member in archive.getmembers():\n        target = base / member.name\n        target.parent.mkdir(parents=True, exist_ok=True)\n        target.write_bytes(archive.extractfile(member).read())\n        target.chmod(0o644)\nPY\nREQ=requirements.txt\nif [ \"$ROLE\" = reporter ]; then REQ=requirements-reporter.txt; fi\nREQ_HASH=\"$(sha256sum \"$BASE/$REQ\" | cut -d ' ' -f 1)\"\nif [ ! -f \"$BASE/.deps-$ROLE-$REQ_HASH\" ]; then\n  python3 -m venv \"$BASE/venv\"\n  \"$BASE/venv/bin/python\" -m pip install --no-cache-dir -r \"$BASE/$REQ\"\n  \"$BASE/venv/bin/python\" -m pip freeze > \"$BASE/installed-requirements.txt\"\n  touch \"$BASE/.deps-$ROLE-$REQ_HASH\"\nfi\nPROJECT_ID=\"$(meta hw5-project)\"\nSUBSCRIPTION_ID=\"$(meta hw5-subscription)\"\n[[ \"$PROJECT_ID\" =~ ^[a-z0-9-]+$ ]] || exit 1\n[[ \"$SUBSCRIPTION_ID\" =~ ^[a-zA-Z0-9_.-]+$ ]] || exit 1\ncat > /etc/cs528-hw5.env <<EOF\nPROJECT_ID=$PROJECT_ID\nSUBSCRIPTION_ID=$SUBSCRIPTION_ID\nEOF\nMODULE=web_server.py\nif [ \"$ROLE\" = reporter ]; then MODULE=reporter.py; fi\nif [ \"$ROLE\" = web ]; then\n  # This is idempotent: existing tables and data are retained.\n  \"$BASE/venv/bin/python\" \"$BASE/setup_schema.py\"\nfi\ncat > \"/etc/systemd/system/cs528-hw5-$ROLE.service\" <<EOF\n[Unit]\nDescription=CS528 HW5 $ROLE\nWants=network-online.target\nAfter=network-online.target\nStartLimitIntervalSec=0\n\n[Service]\nType=simple\nUser=hw5\nGroup=hw5\nWorkingDirectory=$BASE\nEnvironmentFile=/etc/cs528-hw5.env\nEnvironment=PYTHONUNBUFFERED=1\nExecStart=$BASE/venv/bin/python -u $BASE/$MODULE\nRestart=on-failure\nRestartSec=5\nNoNewPrivileges=true\nPrivateTmp=true\nProtectHome=true\nProtectSystem=full\nStandardOutput=journal\nStandardError=journal\n\n[Install]\nWantedBy=multi-user.target\nEOF\nchmod 644 /etc/cs528-hw5.env\nsystemctl daemon-reload\nsystemctl enable \"cs528-hw5-$ROLE.service\"\nsystemctl restart \"cs528-hw5-$ROLE.service\"\nsystemctl is-active --quiet \"cs528-hw5-$ROLE.service\"\ntouch \"$BASE/.ready-$DIGEST\"\necho \"HW5 $ROLE startup completed.\"\n"
+          }
+        ],
+        "kind": "compute#metadata"
+      },
+      "name": "cs528-hw5-reporter",
+      "networkInterfaces": [
+        {
+          "accessConfigs": [
+            {
+              "kind": "compute#accessConfig",
+              "name": "external-nat",
+              "natIP": "34.171.233.19",
+              "networkTier": "PREMIUM",
+              "type": "ONE_TO_ONE_NAT"
+            }
+          ],
+          "fingerprint": "lhQ8rAO3AWs=",
+          "kind": "compute#networkInterface",
+          "name": "nic0",
+          "network": "https://www.googleapis.com/compute/v1/projects/dazzling-seat-508219-j3/global/networks/cs528-hw5-network",
+          "networkIP": "10.85.0.3",
+          "stackType": "IPV4_ONLY",
+          "subnetwork": "https://www.googleapis.com/compute/v1/projects/dazzling-seat-508219-j3/regions/us-central1/subnetworks/cs528-hw5-subnet"
+        }
+      ],
+      "resourceStatus": {
+        "effectiveInstanceMetadata": {
+          "vmDnsSettingMetadataValue": "GlobalDefault"
+        }
+      },
+      "satisfiesPzi": true,
+      "scheduling": {
+        "automaticRestart": true,
+        "onHostMaintenance": "MIGRATE",
+        "preemptible": false,
+        "provisioningModel": "STANDARD"
+      },
+      "selfLink": "https://www.googleapis.com/compute/v1/projects/dazzling-seat-508219-j3/zones/us-central1-a/instances/cs528-hw5-reporter",
+      "serviceAccounts": [
+        {
+          "email": "cs528-hw5-reporter@dazzling-seat-508219-j3.iam.gserviceaccount.com",
+          "scopes": [
+            "https://www.googleapis.com/auth/cloud-platform"
+          ]
+        }
+      ],
+      "shieldedInstanceConfig": {
+        "enableIntegrityMonitoring": true,
+        "enableSecureBoot": false,
+        "enableVtpm": true
+      },
+      "shieldedInstanceIntegrityPolicy": {
+        "updateAutoLearnPolicy": true
+      },
+      "startRestricted": false,
+      "status": "RUNNING",
+      "tags": {
+        "fingerprint": "2tVo9Qe0uvo=",
+        "items": [
+          "cs528-hw5-reporter"
+        ]
+      },
+      "zone": "https://www.googleapis.com/compute/v1/projects/dazzling-seat-508219-j3/zones/us-central1-a"
+    }
+  },
+  "address": {
+    "address": "35.193.157.51",
+    "addressType": "EXTERNAL",
+    "creationTimestamp": "2026-10-20T20:27:24.602-07:00",
+    "description": "Managed by CS528 HW5 (Yide Fang)",
+    "id": "27473727704109043",
+    "kind": "compute#address",
+    "labelFingerprint": "42WmSpB8rSM=",
+    "name": "cs528-hw5-web-ip",
+    "networkTier": "PREMIUM",
+    "region": "https://www.googleapis.com/compute/v1/projects/dazzling-seat-508219-j3/regions/us-central1",
+    "selfLink": "https://www.googleapis.com/compute/v1/projects/dazzling-seat-508219-j3/regions/us-central1/addresses/cs528-hw5-web-ip",
+    "status": "IN_USE",
+    "users": [
+      "https://www.googleapis.com/compute/v1/projects/dazzling-seat-508219-j3/zones/us-central1-a/instances/cs528-hw5-web"
+    ]
+  },
+  "guard": {
+    "attemptDeadline": "120s",
+    "description": "Managed by CS528 HW5 (Yide Fang)",
+    "httpTarget": {
+      "body": "e30=",
+      "headers": {
+        "Content-Type": "application/octet-stream",
+        "User-Agent": "Google-Cloud-Scheduler"
+      },
+      "httpMethod": "POST",
+      "oidcToken": {
+        "audience": "https://cs528-hw5-stop-sql-sw2da6eioq-uc.a.run.app",
+        "serviceAccountEmail": "cs528-hw5-scheduler@dazzling-seat-508219-j3.iam.gserviceaccount.com"
+      },
+      "uri": "https://cs528-hw5-stop-sql-sw2da6eioq-uc.a.run.app/"
+    },
+    "name": "projects/dazzling-seat-508219-j3/locations/us-central1/jobs/cs528-hw5-hourly-stop",
+    "retryConfig": {
+      "maxBackoffDuration": "3600s",
+      "maxDoublings": 5,
+      "maxRetryDuration": "0s",
+      "minBackoffDuration": "5s",
+      "retryCount": 3
+    },
+    "schedule": "5 * * * *",
+    "scheduleTime": "2026-10-21T04:05:00Z",
+    "state": "ENABLED",
+    "status": {
+      "code": -1
+    },
+    "timeZone": "Etc/UTC",
+    "userUpdateTime": "2026-10-21T03:28:51.521129Z"
+  }
+}

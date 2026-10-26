@@ -1,0 +1,10 @@
+{
+  "date_range": "2026-10-20 through 2026-10-22",
+  "captured_at_local": "2026-10-22 05:41:40 America/New_York (screenshot filename)",
+  "displayed_net_cost": "$0.00",
+  "displayed_savings": "-$1.61",
+  "currency": "Dollar sign as displayed; screenshot does not show an ISO currency code.",
+  "evidence": "report/evidence/billing/services-20261022-054140.png",
+  "scope": "Owner confirms no gcloud operations on other projects during this interval; service-grouped screenshot accepted for this report.",
+  "caveat": "Cost as displayed at capture time. Excludes forecast amounts. Retained SQL storage/secret and delayed charges can affect later billing."
+}

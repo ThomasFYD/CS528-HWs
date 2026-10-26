@@ -1,0 +1,53 @@
+{
+  "run_id": "load-20261021T072639Z-ceaf3ceb",
+  "expected_requests": 200,
+  "client_sha256": "10cb8c9f0fe29811c5201a25ba512e528d6e789ff576a94fd849d697ccb3a12a",
+  "commands": [
+    [
+      "/Users/thomasfang/CS528/CS528-HWs/CS528-HW5/client/http-client-mac",
+      "-d",
+      "35.193.157.51",
+      "-p",
+      "8080",
+      "-b",
+      "none",
+      "-w",
+      "__runs/load-20261021T072639Z-ceaf3ceb/data",
+      "-n",
+      "100",
+      "-i",
+      "11999",
+      "-r",
+      "528",
+      "-t",
+      "30"
+    ],
+    [
+      "/Users/thomasfang/CS528/CS528-HWs/CS528-HW5/client/http-client-mac",
+      "-d",
+      "35.193.157.51",
+      "-p",
+      "8080",
+      "-b",
+      "none",
+      "-w",
+      "__runs/load-20261021T072639Z-ceaf3ceb/data",
+      "-n",
+      "100",
+      "-i",
+      "11999",
+      "-r",
+      "528",
+      "-t",
+      "30"
+    ]
+  ],
+  "seed": 528,
+  "started_at": "2026-10-21T07:26:39.401853+00:00",
+  "complete": false,
+  "failure": "DeadlineExceeded: 504 Deadline Exceeded",
+  "finished_at": "2026-10-21T07:31:25.199676+00:00",
+  "elapsed_seconds": 285.79484520806,
+  "exit_codes": [],
+  "guard_resumed": true
+}

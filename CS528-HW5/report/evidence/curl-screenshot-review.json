@@ -1,0 +1,99 @@
+{
+  "run_id": "demo-8131a0d413fb4069",
+  "provenance": "User screenshots of local replay of saved real curl evidence; not contemporaneous live-run screenshots.",
+  "reviewed_on": "2026-10-22",
+  "complete": true,
+  "expected_screenshots": 9,
+  "verified_screenshots": [
+    {
+      "file": "success-before.png",
+      "page": 1,
+      "sha256": "bb80ad06572fc943359500f99c356cb52f925faa543e8eb3eb31784605e49a95",
+      "bytes": 289054
+    },
+    {
+      "file": "success-response.png",
+      "page": 2,
+      "sha256": "bc977ad28aa8bcd3e970b67b5f735dd5fe5df0504833e6643e5f42cdf5da51d4",
+      "bytes": 468802
+    },
+    {
+      "file": "success-after.png",
+      "page": 3,
+      "sha256": "98aa82d10f10518ba067d6023a821a45a6a0a25affcd362fde710e40d18fbcf8",
+      "bytes": 430656
+    },
+    {
+      "file": "missing-before.png",
+      "page": 4,
+      "sha256": "1fb49bce455db91e03b921783fdff1f56aebd90558eea227fa774c105ad7aa10",
+      "bytes": 430077
+    },
+    {
+      "file": "missing-response.png",
+      "page": 5,
+      "sha256": "d359760176b67f12cc540a3546f95238815793e93dbdda99c848cda1a6327869",
+      "bytes": 496346
+    },
+    {
+      "file": "missing-after.png",
+      "page": 6,
+      "sha256": "f22af014f23699542034328ff179b2981abab39d50ff7b25f7123cb86056c0da",
+      "bytes": 630440
+    },
+    {
+      "file": "banned-before.png",
+      "page": 7,
+      "sha256": "1ff31c6ad4a6d864a11206758ccb244c64439bc08dec7b8e7983bfbc213a6b7f",
+      "bytes": 629413
+    },
+    {
+      "file": "banned-response.png",
+      "page": 8,
+      "sha256": "6f4401bf4e0a2ec64c807af8e58195ab530f0ff491623935173a04b8d863e934",
+      "bytes": 488675
+    },
+    {
+      "file": "banned-after.png",
+      "page": 9,
+      "sha256": "9d37e45ccd90c85c9076751d6616cbc099fb4652b447ebf1f17b083fcc02a81e",
+      "bytes": 815168
+    }
+  ],
+  "case_table_counts": {
+    "success": {
+      "requests": [
+        1,
+        2
+      ],
+      "failed_requests": [
+        1,
+        1
+      ],
+      "http_status": 200
+    },
+    "missing": {
+      "requests": [
+        2,
+        3
+      ],
+      "failed_requests": [
+        1,
+        2
+      ],
+      "http_status": 404
+    },
+    "banned": {
+      "requests": [
+        3,
+        4
+      ],
+      "failed_requests": [
+        2,
+        3
+      ],
+      "http_status": 400
+    }
+  },
+  "caption_requirement": "Identify every image as a local replay of saved evidence from the real October 21, 2026 curl demonstration; do not describe it as a contemporaneous live terminal capture."
+}

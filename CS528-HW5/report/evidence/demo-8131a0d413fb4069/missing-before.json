@@ -1,0 +1,68 @@
+{
+  "run_id": null,
+  "requests": [
+    {
+      "request_id": "53b3df6f-3f4c-49f4-8a81-91d12b8fcce5",
+      "request_time": "2026-10-21 04:58:30.389453",
+      "run_id": null,
+      "method": "GET",
+      "requested_file": "",
+      "country": null,
+      "client_ip": "45.198.224.125",
+      "peer_ip": "45.198.224.125",
+      "gender": null,
+      "age": null,
+      "income": null,
+      "is_banned": false,
+      "client_time": null,
+      "time_of_day": null,
+      "http_status": 404
+    },
+    {
+      "request_id": "b492792f-3474-42f3-9662-0da1f5e2e784",
+      "request_time": "2026-10-21 06:44:23.565363",
+      "run_id": "demo-8131a0d413fb4069",
+      "method": "GET",
+      "requested_file": "data/0.html",
+      "country": "United States",
+      "client_ip": "192.0.2.25",
+      "peer_ip": "52.124.36.217",
+      "gender": "Female",
+      "age": "26-35",
+      "income": "40k-60k",
+      "is_banned": false,
+      "client_time": "2026-10-20 13:00:00",
+      "time_of_day": "13:00:00",
+      "http_status": 200
+    }
+  ],
+  "failed_requests": [
+    {
+      "request_time": "2026-10-21 04:58:30.389453",
+      "requested_file": "",
+      "error_code": 404
+    }
+  ],
+  "request_timings": [
+    {
+      "request_id": "53b3df6f-3f4c-49f4-8a81-91d12b8fcce5",
+      "extract_ns": 297426,
+      "storage_ns": 0,
+      "response_ns": 145478,
+      "database_ns": 13303201,
+      "total_ns": 160152325,
+      "storage_attempted": false,
+      "response_sent": true
+    },
+    {
+      "request_id": "b492792f-3474-42f3-9662-0da1f5e2e784",
+      "extract_ns": 53558739,
+      "storage_ns": 408447787,
+      "response_ns": 92660956,
+      "database_ns": 232732797,
+      "total_ns": 787647948,
+      "storage_attempted": true,
+      "response_sent": true
+    }
+  ]
+}

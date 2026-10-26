@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+*.pyc
+build/
+results/
+client/http-client*
+.DS_Store
+*.log
+!report/evidence/**/client-*.log

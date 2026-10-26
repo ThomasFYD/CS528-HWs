@@ -1,0 +1,105 @@
+{
+  "project": "dazzling-seat-508219-j3",
+  "sql": {
+    "backendType": "SECOND_GEN",
+    "connectionName": "dazzling-seat-508219-j3:us-central1:cs528-hw5-mysql",
+    "createTime": "2026-10-21T03:22:03.756Z",
+    "databaseInstalledVersion": "MYSQL_8_4_11",
+    "databaseVersion": "MYSQL_8_4",
+    "etag": "f80265ba7ce37cc40a570ee9eab3202f400ac965f70df0875759161092bb16d8",
+    "gceZone": "us-central1-a",
+    "geminiConfig": {
+      "activeQueryEnabled": false,
+      "entitled": false,
+      "flagRecommenderEnabled": true,
+      "indexAdvisorEnabled": false
+    },
+    "includeReplicasForMajorVersionUpgrade": false,
+    "instanceType": "CLOUD_SQL_INSTANCE",
+    "ipAddresses": [
+      {
+        "ipAddress": "34.60.151.30",
+        "type": "PRIMARY"
+      }
+    ],
+    "kind": "sql#instance",
+    "maintenanceVersion": "MYSQL_8_4_11.R20260726.00_28",
+    "name": "cs528-hw5-mysql",
+    "project": "dazzling-seat-508219-j3",
+    "region": "us-central1",
+    "satisfiesPzi": true,
+    "selfLink": "https://sqladmin.googleapis.com/sql/v1beta4/projects/dazzling-seat-508219-j3/instances/cs528-hw5-mysql",
+    "serverCaCert": {
+      "cert": "-----BEGIN CERTIFICATE-----\nMIIDcTCCAlmgAwIBAgIBADANBgkqhkiG9w0BAQsFADBwMS0wKwYDVQQuEyQwZjlk\nZDRjOC0zZDEyLTRiMDQtODVjOC1lNGU5ODRmOTk0MjQxHDAaBgNVBAMTE0Nsb3Vk\nIFNRTCBTZXJ2ZXIgQ0ExFDASBgNVBAoTC0dvb2dsZSwgSW5jMQswCQYDVQQGEwJV\nUzAeFw0yNjEwMjEwMzIyMzVaFw0zNjEwMTgwMzIzMzVaMHAxLTArBgNVBC4TJDBm\nOWRkNGM4LTNkMTItNGIwNC04NWM4LWU0ZTk4NGY5OTQyNDEcMBoGA1UEAxMTQ2xv\ndWQgU1FMIFNlcnZlciBDQTEUMBIGA1UEChMLR29vZ2xlLCBJbmMxCzAJBgNVBAYT\nAlVTMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxIYwr5B3r+ZU/yBW\nbl3unpf3LaFKAK4bChH60WilaNixl/a/BqzpspbdIClbHfpf7ZIcFNGaFxqCWdGi\nFDv8ONkRfXJkM46183srwwijmQg1BNLlk+dEQxHOnIrs2FVi21q35LPUn3DRCPwf\nBDowcmurjBhhV35/EMRZEb/1MarRfaE08C8j4qXphcKm6snjLzETBfD4rHxrSPAR\nv/UI5X4pDktCvp1H6bCDy4wqB8KTUcUoubPndDRgiSPUz6DFrJ5O3GubgkH/rBAi\nwOrF2RmDVS7ehszwjxYPm7B9qoZBwm6LUDOQ5ts07q46nKKpQxwoMJvbPOs05S+4\nEuHuRwIDAQABoxYwFDASBgNVHRMBAf8ECDAGAQH/AgEAMA0GCSqGSIb3DQEBCwUA\nA4IBAQASt7XfqVoegETb2PQYGDFZ8fYfBS/5kCSLgrLSx+kxEVEGjhEcUghP1AuK\nFwsUd1UeYcj0pRR81dbFxZstQflzlrb9MuHYyFUtDwkdlh9Efge5Mr6KTYvsjP/C\n3xTp8br5jVhr81KVFnM38dfymDMzzEDEWTPYrA5CSFjlP3yJiNPCHy+cxOHB1SzV\nnqOqqNSNxSgo3goXqSZSLuEnkaIsEEM2GN7yKjGTfCj3HROq74IdJzw2rmOMS0uZ\np7JopGFtp7HXlKtOv+Pbnles+WHHU3yP/9UwjqNr6hs2YnUh4+88a1ErXc4P8RcS\nbX3u+REOaWS9h7jbYAELZiYdqTG5\n-----END CERTIFICATE-----",
+      "certSerialNumber": "0",
+      "commonName": "C=US,O=Google\\, Inc,CN=Cloud SQL Server CA,dnQualifier=0f9dd4c8-3d12-4b04-85c8-e4e984f99424",
+      "createTime": "2026-10-21T03:22:35.944Z",
+      "expirationTime": "2036-10-18T03:23:35.944Z",
+      "instance": "cs528-hw5-mysql",
+      "kind": "sql#sslCert",
+      "sha1Fingerprint": "95f5eea78e31a6a4149ce3c3336afd88ec0bc7a5"
+    },
+    "serviceAccountEmailAddress": "p402897578975-odot85@gcp-sa-cloud-sql.iam.gserviceaccount.com",
+    "settings": {
+      "activationPolicy": "NEVER",
+      "availabilityType": "ZONAL",
+      "backupConfiguration": {
+        "backupRetentionSettings": {
+          "retainedBackups": 7,
+          "retentionUnit": "COUNT"
+        },
+        "backupTier": "STANDARD",
+        "enabled": false,
+        "kind": "sql#backupConfiguration",
+        "startTime": "00:00",
+        "transactionLogRetentionDays": 7,
+        "transactionalLogStorageState": "TRANSACTIONAL_LOG_STORAGE_STATE_UNSPECIFIED"
+      },
+      "connectorEnforcement": "NOT_REQUIRED",
+      "dataDiskSizeGb": "10",
+      "dataDiskType": "PD_SSD",
+      "deletionProtectionEnabled": true,
+      "edition": "ENTERPRISE",
+      "enableDataplexIntegration": true,
+      "ipConfiguration": {
+        "ipv4Enabled": true,
+        "message": "Configuring authorized network or using CloudSQL auth proxy or language connectors is a prerequisite for connecting to Public IP. Please refer to the documentation for more details https://cloud.google.com/sql/docs/mysql/authorize-networks.",
+        "requireSsl": false,
+        "serverCaMode": "GOOGLE_MANAGED_INTERNAL_CA",
+        "serverCertificateRotationMode": "SERVER_CERTIFICATE_ROTATION_MODE_UNSPECIFIED",
+        "sslMode": "ALLOW_UNENCRYPTED_AND_ENCRYPTED"
+      },
+      "kind": "sql#settings",
+      "locationPreference": {
+        "kind": "sql#locationPreference",
+        "zone": "us-central1-a"
+      },
+      "pricingPlan": "PER_USE",
+      "replicationLagMaxSeconds": 31536000,
+      "replicationType": "SYNCHRONOUS",
+      "settingsVersion": "23",
+      "storageAutoResize": false,
+      "storageAutoResizeLimit": "0",
+      "tier": "db-g1-small",
+      "userLabels": {
+        "course": "cs528",
+        "homework": "hw5"
+      }
+    },
+    "sqlNetworkArchitecture": "NEW_NETWORK_ARCHITECTURE",
+    "state": "STOPPED",
+    "upgradableDatabaseVersions": [
+      {
+        "displayName": "MySQL 9.7",
+        "majorVersion": "MYSQL_9_7",
+        "name": "MYSQL_9_7"
+      }
+    ]
+  },
+  "vms": {
+    "web": null,
+    "reporter": null
+  },
+  "address": null,
+  "guard": null
+}

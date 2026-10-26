@@ -1,0 +1,328 @@
+{
+  "client_sha256": "10cb8c9f0fe29811c5201a25ba512e528d6e789ff576a94fd849d697ccb3a12a",
+  "help": "usage: http-client-mac [-h] [-d DOMAIN] [-b BUCKET] [-w WEBDIR]\n                       [-n NUM_REQUESTS] [-i INDEX] [-p PORT] [-f] [-s] [-v]\n                       [-r RANDOM] [-t TIMEOUT]\n\noptions:\n  -h, --help            show this help message and exit\n  -d DOMAIN, --domain DOMAIN\n                        Domain to make requests to\n  -b BUCKET, --bucket BUCKET\n                        Cloud bucket containing your files. Use none if\n                        running local\n  -w WEBDIR, --webdir WEBDIR\n                        Directory containing your files. Use none if you did\n                        not make one\n  -n NUM_REQUESTS, --num_requests NUM_REQUESTS\n                        Number of requests to make\n  -i INDEX, --index INDEX\n                        Maximum existing file index\n  -p PORT, --port PORT  Server Port\n  -f, --follow          Follow Redirects\n  -s, --ssl             Use HTTPS\n  -v, --verbose         Print the responses from the server on stdout\n  -r RANDOM, --random RANDOM\n                        Initial random seed\n  -t TIMEOUT, --timeout TIMEOUT\n                        Timeout in seconds for requests\n",
+  "command": [
+    "/Users/thomasfang/CS528/CS528-HWs/CS528-HW5/client/http-client-mac",
+    "-d",
+    "127.0.0.1",
+    "-p",
+    "64604",
+    "-b",
+    "none",
+    "-w",
+    "data",
+    "-n",
+    "20",
+    "-i",
+    "100",
+    "-r",
+    "528",
+    "-t",
+    "5"
+  ],
+  "exit_code": 0,
+  "stdout": "",
+  "stderr": "",
+  "requests": [
+    {
+      "method": "GET",
+      "path": "/data/68.html",
+      "headers": {
+        "Host": "127.0.0.1:64604",
+        "Accept-Encoding": "identity",
+        "X-country": "Austria",
+        "X-client-IP": "175.241.56.50",
+        "X-gender": "Male",
+        "X-age": "76+",
+        "X-income": "250k+",
+        "X-time": "2026-10-20 01:00:00"
+      },
+      "body": ""
+    },
+    {
+      "method": "GET",
+      "path": "/data/74.html",
+      "headers": {
+        "Host": "127.0.0.1:64604",
+        "Accept-Encoding": "identity",
+        "X-country": "Sri Lanka",
+        "X-client-IP": "220.219.6.35",
+        "X-gender": "Female",
+        "X-age": "46-55",
+        "X-income": "40k-60k",
+        "X-time": "2026-10-20 10:00:00"
+      },
+      "body": ""
+    },
+    {
+      "method": "GET",
+      "path": "/data/4.html",
+      "headers": {
+        "Host": "127.0.0.1:64604",
+        "Accept-Encoding": "identity",
+        "X-country": "Fiji",
+        "X-client-IP": "85.246.220.107",
+        "X-gender": "Female",
+        "X-age": "56-65",
+        "X-income": "100k-150k",
+        "X-time": "2026-10-20 13:00:00"
+      },
+      "body": ""
+    },
+    {
+      "method": "GET",
+      "path": "/data/69.html",
+      "headers": {
+        "Host": "127.0.0.1:64604",
+        "Accept-Encoding": "identity",
+        "X-country": "Palestine",
+        "X-client-IP": "41.181.98.32",
+        "X-gender": "Male",
+        "X-age": "0-16",
+        "X-income": "250k+",
+        "X-time": "2026-10-20 16:00:00"
+      },
+      "body": ""
+    },
+    {
+      "method": "GET",
+      "path": "/data/91.html",
+      "headers": {
+        "Host": "127.0.0.1:64604",
+        "Accept-Encoding": "identity",
+        "X-country": "Oman",
+        "X-client-IP": "4.155.221.87",
+        "X-gender": "Male",
+        "X-age": "66-75",
+        "X-income": "250k+",
+        "X-time": "2026-10-20 04:00:00"
+      },
+      "body": ""
+    },
+    {
+      "method": "GET",
+      "path": "/data/54.html",
+      "headers": {
+        "Host": "127.0.0.1:64604",
+        "Accept-Encoding": "identity",
+        "X-country": "France",
+        "X-client-IP": "222.98.142.74",
+        "X-gender": "Female",
+        "X-age": "36-45",
+        "X-income": "40k-60k",
+        "X-time": "2026-10-20 11:00:00"
+      },
+      "body": ""
+    },
+    {
+      "method": "GET",
+      "path": "/data/91.html",
+      "headers": {
+        "Host": "127.0.0.1:64604",
+        "Accept-Encoding": "identity",
+        "X-country": "Saint Lucia",
+        "X-client-IP": "61.253.111.121",
+        "X-gender": "Male",
+        "X-age": "46-55",
+        "X-income": "40k-60k",
+        "X-time": "2026-10-20 12:00:00"
+      },
+      "body": ""
+    },
+    {
+      "method": "GET",
+      "path": "/data/65.html",
+      "headers": {
+        "Host": "127.0.0.1:64604",
+        "Accept-Encoding": "identity",
+        "X-country": "Brazil",
+        "X-client-IP": "215.42.87.65",
+        "X-gender": "Male",
+        "X-age": "46-55",
+        "X-income": "100k-150k",
+        "X-time": "2026-10-20 03:00:00"
+      },
+      "body": ""
+    },
+    {
+      "method": "GET",
+      "path": "/data/40.html",
+      "headers": {
+        "Host": "127.0.0.1:64604",
+        "Accept-Encoding": "identity",
+        "X-country": "Bolivia",
+        "X-client-IP": "195.58.109.127",
+        "X-gender": "Female",
+        "X-age": "17-25",
+        "X-income": "10k-20k",
+        "X-time": "2026-10-20 03:00:00"
+      },
+      "body": ""
+    },
+    {
+      "method": "GET",
+      "path": "/data/52.html",
+      "headers": {
+        "Host": "127.0.0.1:64604",
+        "Accept-Encoding": "identity",
+        "X-country": "Oman",
+        "X-client-IP": "86.214.18.140",
+        "X-gender": "Male",
+        "X-age": "36-45",
+        "X-income": "40k-60k",
+        "X-time": "2026-10-20 22:00:00"
+      },
+      "body": ""
+    },
+    {
+      "method": "GET",
+      "path": "/data/27.html",
+      "headers": {
+        "Host": "127.0.0.1:64604",
+        "Accept-Encoding": "identity",
+        "X-country": "United Arab Emirates (UAE)",
+        "X-client-IP": "245.112.190.103",
+        "X-gender": "Female",
+        "X-age": "0-16",
+        "X-income": "0-10k",
+        "X-time": "2026-10-20 09:00:00"
+      },
+      "body": ""
+    },
+    {
+      "method": "GET",
+      "path": "/data/27.html",
+      "headers": {
+        "Host": "127.0.0.1:64604",
+        "Accept-Encoding": "identity",
+        "X-country": "Barbados",
+        "X-client-IP": "87.122.71.230",
+        "X-gender": "Female",
+        "X-age": "17-25",
+        "X-income": "0-10k",
+        "X-time": "2026-10-20 12:00:00"
+      },
+      "body": ""
+    },
+    {
+      "method": "GET",
+      "path": "/data/68.html",
+      "headers": {
+        "Host": "127.0.0.1:64604",
+        "Accept-Encoding": "identity",
+        "X-country": "Hungary",
+        "X-client-IP": "103.179.13.88",
+        "X-gender": "Female",
+        "X-age": "56-65",
+        "X-income": "60k-100k",
+        "X-time": "2026-10-20 02:00:00"
+      },
+      "body": ""
+    },
+    {
+      "method": "GET",
+      "path": "/data/63.html",
+      "headers": {
+        "Host": "127.0.0.1:64604",
+        "Accept-Encoding": "identity",
+        "X-country": "Canada",
+        "X-client-IP": "161.54.238.115",
+        "X-gender": "Male",
+        "X-age": "46-55",
+        "X-income": "40k-60k",
+        "X-time": "2026-10-20 17:00:00"
+      },
+      "body": ""
+    },
+    {
+      "method": "GET",
+      "path": "/data/75.html",
+      "headers": {
+        "Host": "127.0.0.1:64604",
+        "Accept-Encoding": "identity",
+        "X-country": "Bhutan",
+        "X-client-IP": "42.211.166.224",
+        "X-gender": "Male",
+        "X-age": "26-35",
+        "X-income": "10k-20k",
+        "X-time": "2026-10-20 19:00:00"
+      },
+      "body": ""
+    },
+    {
+      "method": "GET",
+      "path": "/data/34.html",
+      "headers": {
+        "Host": "127.0.0.1:64604",
+        "Accept-Encoding": "identity",
+        "X-country": "Namibia",
+        "X-client-IP": "169.68.192.27",
+        "X-gender": "Female",
+        "X-age": "0-16",
+        "X-income": "250k+",
+        "X-time": "2026-10-20 13:00:00"
+      },
+      "body": ""
+    },
+    {
+      "method": "GET",
+      "path": "/data/83.html",
+      "headers": {
+        "Host": "127.0.0.1:64604",
+        "Accept-Encoding": "identity",
+        "X-country": "Pakistan",
+        "X-client-IP": "178.182.117.189",
+        "X-gender": "Male",
+        "X-age": "0-16",
+        "X-income": "250k+",
+        "X-time": "2026-10-20 11:00:00"
+      },
+      "body": ""
+    },
+    {
+      "method": "GET",
+      "path": "/data/23.html",
+      "headers": {
+        "Host": "127.0.0.1:64604",
+        "Accept-Encoding": "identity",
+        "X-country": "Denmark",
+        "X-client-IP": "207.162.230.206",
+        "X-gender": "Male",
+        "X-age": "0-16",
+        "X-income": "250k+",
+        "X-time": "2026-10-20 12:00:00"
+      },
+      "body": ""
+    },
+    {
+      "method": "GET",
+      "path": "/data/63.html",
+      "headers": {
+        "Host": "127.0.0.1:64604",
+        "Accept-Encoding": "identity",
+        "X-country": "Libya",
+        "X-client-IP": "75.48.228.95",
+        "X-gender": "Female",
+        "X-age": "46-55",
+        "X-income": "100k-150k",
+        "X-time": "2026-10-20 08:00:00"
+      },
+      "body": ""
+    },
+    {
+      "method": "GET",
+      "path": "/data/88.html",
+      "headers": {
+        "Host": "127.0.0.1:64604",
+        "Accept-Encoding": "identity",
+        "X-country": "Suriname",
+        "X-client-IP": "95.171.201.123",
+        "X-gender": "Female",
+        "X-age": "26-35",
+        "X-income": "20k-40k",
+        "X-time": "2026-10-20 23:00:00"
+      },
+      "body": ""
+    }
+  ]
+}

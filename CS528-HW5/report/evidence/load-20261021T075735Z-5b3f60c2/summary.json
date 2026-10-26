@@ -1,0 +1,133 @@
+{
+  "run_id": "load-20261021T075735Z-5b3f60c2",
+  "total_requests": 100000,
+  "successful_http_200": 95653,
+  "unsuccessful_http_non_200": 4347,
+  "http_status_counts": {
+    "200": 95653,
+    "400": 4347
+  },
+  "banned_country_requests": 4347,
+  "gender_counts": {
+    "Female": 50081,
+    "Male": 49919
+  },
+  "top_5_countries": [
+    {
+      "country": "Micronesia",
+      "requests": 579
+    },
+    {
+      "country": "Somalia",
+      "requests": 572
+    },
+    {
+      "country": "Philippines",
+      "requests": 566
+    },
+    {
+      "country": "Togo",
+      "requests": 566
+    },
+    {
+      "country": "South Korea",
+      "requests": 563
+    }
+  ],
+  "age_counts": {
+    "0-16": 12437,
+    "17-25": 12432,
+    "26-35": 12472,
+    "36-45": 12638,
+    "46-55": 12496,
+    "56-65": 12608,
+    "66-75": 12428,
+    "76+": 12489
+  },
+  "most_frequent_age_groups": [
+    {
+      "group": "36-45",
+      "requests": 12638
+    }
+  ],
+  "income_counts": {
+    "0-10k": 12210,
+    "100k-150k": 12554,
+    "10k-20k": 12440,
+    "150k-250k": 12693,
+    "20k-40k": 12784,
+    "250k+": 12582,
+    "40k-60k": 12357,
+    "60k-100k": 12380
+  },
+  "most_frequent_income_groups": [
+    {
+      "group": "20k-40k",
+      "requests": 12784
+    }
+  ],
+  "timing": {
+    "extract_ns": {
+      "count": 100000,
+      "mean_ms": 0.33555705438,
+      "p50_ms": 0.323775,
+      "p95_ms": 0.419734,
+      "max_ms": 3.07933
+    },
+    "storage_ns": {
+      "count": 100000,
+      "mean_ms": 48.96756344158,
+      "p50_ms": 37.029859,
+      "p95_ms": 103.702136,
+      "max_ms": 4821.151238
+    },
+    "response_ns": {
+      "count": 100000,
+      "mean_ms": 39.487487098399995,
+      "p50_ms": 66.870686,
+      "p95_ms": 72.105763,
+      "max_ms": 2134.559141
+    },
+    "database_ns": {
+      "count": 100000,
+      "mean_ms": 7.33561077608,
+      "p50_ms": 7.135867,
+      "p95_ms": 9.073666,
+      "max_ms": 247.941632
+    },
+    "total_ns": {
+      "count": 100000,
+      "mean_ms": 102.36957069334001,
+      "p50_ms": 106.444684,
+      "p95_ms": 174.890668,
+      "max_ms": 4828.32465
+    },
+    "storage_when_attempted_ns": {
+      "count": 95653,
+      "mean_ms": 51.192919659163856,
+      "p50_ms": 37.859784,
+      "p95_ms": 104.974253,
+      "max_ms": 4821.151238
+    }
+  },
+  "integrity": {
+    "expected_requests": 100000,
+    "observed_requests": 100000,
+    "expected_count_matches": true,
+    "unique_request_ids": true,
+    "error_rows_match_exactly": true,
+    "timing_rows_complete": true,
+    "response_send_failures": 0,
+    "requests_with_missing_metadata": 0,
+    "odd_metadata_multiplicities": 100000,
+    "complete": true
+  },
+  "notes": [
+    "Age/income groups are the original instructor-client labels, not inferred numeric bins.",
+    "X-time is client-simulated and has no supplied time zone. Receipt timestamps are UTC.",
+    "HTTP status counts and response-send failures are separate; a completed write is not proof of client receipt.",
+    "database_ns includes the metadata/error transaction; the later timing insert is excluded.",
+    "Storage averages over all requests include zero for denied/unsupported requests. The attempted-read subset is also reported.",
+    "Total time also includes policy checks, Cloud Logging and Pub/Sub waits; it need not equal the four reported stages."
+  ]
+}

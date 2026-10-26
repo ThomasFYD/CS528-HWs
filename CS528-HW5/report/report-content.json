@@ -1,0 +1,1440 @@
+{
+  "title": "CS528 Homework 5",
+  "author": "Yide Fang",
+  "date": "October 23, 2026",
+  "subtitle": "Cloud SQL Request Logging and Operation Timing",
+  "repository": "https://github.com/ThomasFYD/CS528-HWs",
+  "pages": [
+    {
+      "title": "Design and deployed resources",
+      "size": "portrait",
+      "items": [
+        {
+          "type": "paragraph",
+          "text": "CS528 Homework 5",
+          "style": "title"
+        },
+        {
+          "type": "paragraph",
+          "text": "Cloud SQL Request Logging and Operation Timing",
+          "style": "h1"
+        },
+        {
+          "type": "paragraph",
+          "text": "<b>Yide Fang</b> | Boston University | October 23, 2026",
+          "style": "body"
+        },
+        {
+          "type": "paragraph",
+          "text": "Code: <link href=\"https://github.com/ThomasFYD/CS528-HWs\">https://github.com/ThomasFYD/CS528-HWs</link><br/>Directory: <b>CS528-HW5</b>",
+          "style": "body"
+        },
+        {
+          "type": "paragraph",
+          "text": "1. Design and deployed resources",
+          "style": "h2"
+        },
+        {
+          "type": "paragraph",
+          "text": "I extended the HW4 file service to persist request metadata, unsuccessful responses and operation timings in Cloud SQL. Two instructor clients run concurrently on my Mac and send requests to a Web VM. Allowed requests read original files from the HW2 Cloud Storage bucket; forbidden-country requests publish to Pub/Sub for a separate Reporter VM.",
+          "style": "body"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Component",
+            "Actual configuration"
+          ],
+          "rows": [
+            [
+              "Project",
+              "dazzling-seat-508219-j3"
+            ],
+            [
+              "Region / zone",
+              "us-central1 / us-central1-a"
+            ],
+            [
+              "Web VM",
+              "e2-small; Debian 12; up to 8 request workers"
+            ],
+            [
+              "Reporter VM",
+              "e2-micro; Debian 12; unchanged HW4 reporter"
+            ],
+            [
+              "Cloud SQL",
+              "MySQL 8.4 Enterprise; db-g1-small; 10 GB SSD"
+            ],
+            [
+              "Database / instance",
+              "hw5 / cs528-hw5-mysql"
+            ],
+            [
+              "Storage / HTTP",
+              "cs528-hw2-yf-2026; data/0.html to data/11999.html; port 8080"
+            ],
+            [
+              "Guard",
+              "Authenticated generation-2 function; hourly at minute 5 UTC"
+            ]
+          ],
+          "widths": [
+            120,
+            384
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Application behavior and HW4 continuity",
+          "style": "h2"
+        },
+        {
+          "type": "paragraph",
+          "text": "GET and POST retain the HW4 file-serving behavior. Missing objects return 404, unsupported methods return 501, and the nine assignment countries return 400. The country check uses the simulated X-country header. No application object cache is used. Each handled request commits its metadata and any error row before the response is sent; a logging failure returns 503 and is recorded as an operational error.",
+          "style": "body"
+        },
+        {
+          "type": "paragraph",
+          "text": "The second application, reporter.py, is byte-for-byte unchanged from HW4. It pulls forbidden-country events, prints them and acknowledges them. The verified SHA-256 is:",
+          "style": "small"
+        },
+        {
+          "type": "code",
+          "text": "095e77c433957dd45185d4c0fce3efa3a948866308839bdabb9c22dbb93c87b0"
+        },
+        {
+          "type": "paragraph",
+          "text": "The completed formal experiment contains <b>100,000 requests</b>: 95,653 HTTP 200 and 4,347 expected forbidden-country HTTP 400 responses. Both clients exited normally. Cloud SQL was retained and stopped after the experiment; the temporary VMs and web address were removed.",
+          "style": "body"
+        }
+      ]
+    },
+    {
+      "title": "Configuration and execution",
+      "size": "portrait",
+      "items": [
+        {
+          "type": "paragraph",
+          "text": "2. Configuration and execution",
+          "style": "h1"
+        },
+        {
+          "type": "paragraph",
+          "text": "Run these commands from the homework directory on the Mac used for the experiment. Use an authorized Google Cloud identity and the updated macOS instructor client. config.py hardcodes dazzling-seat-508219-j3; cloud commands explicitly specify that project rather than reading the operator's default project.",
+          "style": "body"
+        },
+        {
+          "type": "code",
+          "text": "gcloud auth login fangyd@bu.edu --project=dazzling-seat-508219-j3\ngcloud components install beta --quiet\nmkdir -p client\ncp ~/Downloads/http-client-mac client/http-client-mac\nchmod u+x client/http-client-mac\nbash verify_local.sh\nbash setup.sh --plan\nbash setup.sh"
+        },
+        {
+          "type": "paragraph",
+          "text": "Local verification creates a virtual environment, checks syntax, runs offline tests and prints the resource plan. Setup creates or starts the owned SQL instance and provisions the HW5 deployment. It preserves existing data. Startup completion must be checked before requests are sent; the live Web and Reporter startup logs were verified in this deployment.",
+          "style": "body"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Principal",
+            "Runtime access"
+          ],
+          "rows": [
+            [
+              "Web service account",
+              "Cloud SQL Client; project log writer; this DB password secret; object-prefix read; forbidden-topic publish"
+            ],
+            [
+              "Reporter service account",
+              "Subscriber access to the forbidden-country subscription"
+            ],
+            [
+              "Guard service account",
+              "Custom role with cloudsql.instances.get and cloudsql.instances.update"
+            ],
+            [
+              "Scheduler service account",
+              "Authenticated invocation of the guard HTTP endpoint"
+            ]
+          ],
+          "widths": [
+            130,
+            374
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "VM initialization and database access",
+          "style": "h2"
+        },
+        {
+          "type": "paragraph",
+          "text": "All internal VM setup runs in startup.sh through --metadata-from-file. The startup script installs dependencies once, uses a source-hash marker, starts systemd services on later boots, and invokes setup_schema.py to create only missing tables. It does not use SSH to configure VMs. A mismatched deployed source is handled by the explicit infra.py refresh-vms operation.",
+          "style": "body"
+        },
+        {
+          "type": "paragraph",
+          "text": "The Cloud SQL Python Connector provides encrypted connections using the attached VM identity. The database password is generated into Secret Manager. No public authorized-network range is added. The dedicated MySQL account is a homework database owner account, not a fully restricted production DML account. The local tools use gcloud login without creating or revoking ADC credentials.",
+          "style": "body"
+        },
+        {
+          "type": "paragraph",
+          "text": "Run sequence",
+          "style": "h2"
+        },
+        {
+          "type": "code",
+          "text": ".venv/bin/python tools/curl_demo.py\ncaffeinate -i .venv/bin/python tools/run_experiment.py --requests 100\ncaffeinate -i .venv/bin/python tools/run_experiment.py --requests 50000"
+        },
+        {
+          "type": "paragraph",
+          "text": "The curl demonstration runs before the load tests so complete tables remain small. Each load command starts two clients. The runner pauses the SQL guard, starts SQL if needed, checks the schema, launches the clients, exports records and restores the guard. In a forced termination that bypasses cleanup, use python3 infra.py resume-guard.",
+          "style": "small"
+        }
+      ]
+    },
+    {
+      "title": "Database schema",
+      "size": "portrait",
+      "items": [
+        {
+          "type": "paragraph",
+          "text": "3. Database schema",
+          "style": "h1"
+        },
+        {
+          "type": "paragraph",
+          "text": "The updated client probe confirmed X-country, X-client-IP, X-gender, X-age, X-income and X-time. The main table has 15 columns; grouped rows below list columns that share a type. Missing descriptive fields remain NULL. When X-client-IP is absent, client_ip falls back to the actual peer address.",
+          "style": "body"
+        },
+        {
+          "type": "paragraph",
+          "text": "requests: one row per handled request",
+          "style": "h2"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Column(s)",
+            "Type",
+            "Purpose / constraint"
+          ],
+          "rows": [
+            [
+              "request_id",
+              "VARCHAR(36)",
+              "UUID primary key"
+            ],
+            [
+              "request_time",
+              "DATETIME(6)",
+              "Non-null; unique UTC receipt time"
+            ],
+            [
+              "run_id",
+              "VARCHAR(64)",
+              "Indexed experiment identifier"
+            ],
+            [
+              "method",
+              "VARCHAR(32)",
+              "Non-null HTTP method"
+            ],
+            [
+              "requested_file",
+              "VARCHAR(1024)",
+              "Non-null object path"
+            ],
+            [
+              "country",
+              "VARCHAR(128)",
+              "Original X-country label"
+            ],
+            [
+              "client_ip / peer_ip",
+              "VARCHAR(45), each",
+              "Simulated client IP / actual socket peer"
+            ],
+            [
+              "gender / age / income",
+              "VARCHAR(32), each",
+              "Original client labels; no inferred numeric bins"
+            ],
+            [
+              "is_banned",
+              "BOOLEAN",
+              "Non-null country-policy result"
+            ],
+            [
+              "client_time",
+              "VARCHAR(64)",
+              "Original X-time value"
+            ],
+            [
+              "time_of_day",
+              "VARCHAR(8)",
+              "Extracted HH:MM:SS"
+            ],
+            [
+              "http_status",
+              "INTEGER",
+              "Non-null HTTP status"
+            ]
+          ],
+          "widths": [
+            137,
+            104,
+            263
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "request_time is generated in UTC under a thread lock, with a one-microsecond tie adjustment and a database-seeded restart value. This uniqueness design assumes one server process. The repeating simulated X-time has no supplied time zone and is not used as a primary key.",
+          "style": "small"
+        },
+        {
+          "type": "paragraph",
+          "text": "failed_requests: exactly the three required columns",
+          "style": "h2"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Column",
+            "Type",
+            "Constraint"
+          ],
+          "rows": [
+            [
+              "request_time",
+              "DATETIME(6)",
+              "Primary key; foreign key to requests.request_time"
+            ],
+            [
+              "requested_file",
+              "VARCHAR(1024)",
+              "Non-null"
+            ],
+            [
+              "error_code",
+              "INTEGER",
+              "Non-null non-200 HTTP status"
+            ]
+          ],
+          "widths": [
+            137,
+            104,
+            263
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "The request row and its error row commit atomically in one SQL transaction. Successful requests have no failed_requests row. Parameterized SQLAlchemy statements are used.",
+          "style": "body"
+        },
+        {
+          "type": "paragraph",
+          "text": "request_timings: operation measurements",
+          "style": "h2"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Column(s)",
+            "Type",
+            "Purpose"
+          ],
+          "rows": [
+            [
+              "request_id",
+              "VARCHAR(36)",
+              "Primary key; foreign key to requests.request_id"
+            ],
+            [
+              "extract_ns, storage_ns, response_ns, database_ns, total_ns",
+              "BIGINT, each",
+              "Non-null integer nanosecond measurements"
+            ],
+            [
+              "storage_attempted, response_sent",
+              "BOOLEAN, each",
+              "Non-null flags for read attempts and completed writes"
+            ]
+          ],
+          "widths": [
+            211,
+            83,
+            210
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Timing rows are inserted after response handling. The timing-row insert itself is excluded from database_ns and total_ns. Schema setup creates missing tables and checks existing column layouts; it does not drop tables or erase previous experiments.",
+          "style": "small"
+        }
+      ]
+    },
+    {
+      "title": "Concurrent experiment and validation",
+      "size": "portrait",
+      "items": [
+        {
+          "type": "paragraph",
+          "text": "4. Concurrent experiment and validation",
+          "style": "h1"
+        },
+        {
+          "type": "paragraph",
+          "text": "Formal run: <b>load-20261021T075735Z-5b3f60c2</b>. Both supplied-client processes were launched before either was awaited. Their complete saved command arrays are identical. The historical invocation below is included as evidence; its released address must not be reused for a new deployment.",
+          "style": "body"
+        },
+        {
+          "type": "code",
+          "text": "client/http-client-mac -d 35.193.157.51 -p 8080 -b none \\\n  -w __runs/load-20261021T075735Z-5b3f60c2/data \\\n  -n 50000 -i 11999 -r 528 -t 30"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Measurement",
+            "Observed result"
+          ],
+          "rows": [
+            [
+              "Clients / requests",
+              "2 simultaneous clients; 50,000 requests each; seed 528"
+            ],
+            [
+              "Load start / finish, UTC",
+              "2026-10-21 07:57:43.556263 / 10:58:49.526978"
+            ],
+            [
+              "Load elapsed / throughput",
+              "10,866.021 s (3 h 1 min 6.021 s); 9.203 requests/s aggregate"
+            ],
+            [
+              "Client exit codes",
+              "0 and 0"
+            ],
+            [
+              "Requests / unique request IDs",
+              "100,000 / 100,000"
+            ],
+            [
+              "Unique receipt times / timing rows",
+              "100,000 / 100,000"
+            ],
+            [
+              "Matching non-200 error rows",
+              "4,347; exact match on receipt time, path and HTTP code"
+            ],
+            [
+              "Missing required metadata / send failures",
+              "0 / 0"
+            ]
+          ],
+          "widths": [
+            210,
+            294
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "The raw snapshot was independently recomputed and reconciled with the saved summary, including all six statistics and timing distributions. Run-specific routing separates these records from curl, smoke-test and unrelated public traffic. Both clients used the same seed argument, but the saved run has 100,000 distinct complete metadata tuples. I retain that observation without claiming identical generated sequences or assigning a cause.",
+          "style": "body"
+        },
+        {
+          "type": "paragraph",
+          "text": "Raw snapshot SHA-256 (10,514,300 compressed bytes):",
+          "style": "small"
+        },
+        {
+          "type": "code",
+          "text": "acfcd6cfb1d3fed0d05483197f138d6cefa74ca34f05bd35c4e6e5aa897877bc"
+        },
+        {
+          "type": "paragraph",
+          "text": "Real curl demonstration before the load run",
+          "style": "h2"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Case",
+            "HTTP",
+            "Request rows",
+            "Error rows"
+          ],
+          "rows": [
+            [
+              "Existing file, United States",
+              "200",
+              "1 -> 2",
+              "1 -> 1"
+            ],
+            [
+              "Missing file, United States",
+              "404",
+              "2 -> 3",
+              "1 -> 2"
+            ],
+            [
+              "Existing file, Iran",
+              "400",
+              "3 -> 4",
+              "2 -> 3"
+            ]
+          ],
+          "widths": [
+            226,
+            48,
+            115,
+            115
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "The initial row is an unrelated public GET that returned 404; it remains visible in every complete-table snapshot. Each curl call adds one request and only failures add an error row. Appendix A contains all nine screenshots: local replay of saved real October 21 evidence, captured by the user on October 22. These are not contemporaneous live terminal screenshots.",
+          "style": "small"
+        },
+        {
+          "type": "paragraph",
+          "text": "Before the formal run, the two-client smoke test completed 200 requests: 187 HTTP 200 and 13 expected HTTP 400, with complete matching database records.",
+          "style": "small"
+        }
+      ]
+    },
+    {
+      "title": "Operation timing",
+      "size": "portrait",
+      "items": [
+        {
+          "type": "paragraph",
+          "text": "5. Operation timing",
+          "style": "h1"
+        },
+        {
+          "type": "paragraph",
+          "text": "Each required operation is implemented in a separate function. time.perf_counter_ns() measures elapsed intervals at high resolution, and SQL stores integer nanoseconds. Extraction includes header parsing, request-body validation and metadata extraction; the other stages measure GCS reads, response sending and the request/error transaction.",
+          "style": "body"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Stage",
+            "Function / measurement boundary"
+          ],
+          "rows": [
+            [
+              "Extraction",
+              "parse_request() + extract_headers(); includes body validation"
+            ],
+            [
+              "GCS access",
+              "TimedBackend.read(); includes an attempted read returning 404"
+            ],
+            [
+              "Send response",
+              "FileHandler.send_result(); headers, body write and flush"
+            ],
+            [
+              "Database insert",
+              "Database.save_request(); atomic metadata/error transaction"
+            ]
+          ],
+          "widths": [
+            118,
+            386
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Observed durations in milliseconds",
+          "style": "h2"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Operation",
+            "N",
+            "Mean",
+            "p50",
+            "p95",
+            "Maximum"
+          ],
+          "rows": [
+            [
+              "Extraction",
+              "100,000",
+              "0.335557",
+              "0.323775",
+              "0.419734",
+              "3.079330"
+            ],
+            [
+              "GCS read, all requests",
+              "100,000",
+              "48.967563",
+              "37.029859",
+              "103.702136",
+              "4821.151238"
+            ],
+            [
+              "Response write / flush",
+              "100,000",
+              "39.487487",
+              "66.870686",
+              "72.105763",
+              "2134.559141"
+            ],
+            [
+              "SQL request/error insert",
+              "100,000",
+              "7.335611",
+              "7.135867",
+              "9.073666",
+              "247.941632"
+            ],
+            [
+              "Total measured work",
+              "100,000",
+              "102.369571",
+              "106.444684",
+              "174.890668",
+              "4828.324650"
+            ],
+            [
+              "GCS, attempted reads only",
+              "95,653",
+              "51.192920",
+              "37.859784",
+              "104.974253",
+              "4821.151238"
+            ]
+          ],
+          "widths": [
+            159,
+            55,
+            72,
+            72,
+            72,
+            74
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "The four required means are <b>0.335557 ms</b> for extraction, <b>48.967563 ms</b> for GCS access across all requests, <b>39.487487 ms</b> for response sending, and <b>7.335611 ms</b> for SQL insertion. The attempted-read GCS mean is <b>51.192920 ms</b>.",
+          "style": "body"
+        },
+        {
+          "type": "paragraph",
+          "text": "Interpretation and denominators",
+          "style": "h2"
+        },
+        {
+          "type": "paragraph",
+          "text": "The 4,347 forbidden requests skip GCS, contributing zero to the all-request storage mean. The attempted-read subset contains 95,653 operations. Percentiles use the nearest-rank definition. Maximum values preserve the observed long-tail operations; no outliers were removed.",
+          "style": "body"
+        },
+        {
+          "type": "paragraph",
+          "text": "The SQL interval covers the request/error transaction; the later timing-row insert is excluded from both database_ns and total_ns. Response timing covers server-side socket work, not round-trip latency or proof that the client received every byte. The recorded response_sent flag reports whether the server write completed.",
+          "style": "body"
+        },
+        {
+          "type": "paragraph",
+          "text": "Total server time also contains country-policy handling, Cloud Logging, Pub/Sub waits and other application work. It need not equal the sum of the four displayed stages. Experiment wall-clock time is measured independently and includes client/network pacing.",
+          "style": "body"
+        },
+        {
+          "type": "paragraph",
+          "text": "Reproducible analysis",
+          "style": "h2"
+        },
+        {
+          "type": "paragraph",
+          "text": "analysis.py summarizes the run-scoped SQL export; queries.sql contains equivalent statistical queries. The saved summary includes sample counts, mean, p50, p95 and maximum for each stage. Independent recomputation from the raw gzip snapshot matched every reported timing statistic.",
+          "style": "body"
+        }
+      ]
+    },
+    {
+      "title": "Required statistical answers",
+      "size": "portrait",
+      "items": [
+        {
+          "type": "paragraph",
+          "text": "6. Required statistical answers",
+          "style": "h1"
+        },
+        {
+          "type": "paragraph",
+          "text": "All answers use the 100,000 rows from the accepted formal run only. Successful and unsuccessful requests are included in the demographic counts. Original instructor-client labels are retained; numerical ages and incomes are not inferred from the ranges.",
+          "style": "body"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Question",
+            "Verified answer"
+          ],
+          "rows": [
+            [
+              "1. Successful versus unsuccessful",
+              "95,653 HTTP 200 (95.653%); 4,347 non-200 (4.347%). All non-200 responses were HTTP 400."
+            ],
+            [
+              "2. Banned-country requests",
+              "4,347; every one returned HTTP 400."
+            ],
+            [
+              "3. Male versus female",
+              "Male: 49,919. Female: 50,081."
+            ],
+            [
+              "5. Most frequent age group",
+              "36-45: 12,638 requests (12.638%); no tie."
+            ],
+            [
+              "6. Most frequent income group",
+              "20k-40k: 12,784 requests (12.784%); no tie."
+            ]
+          ],
+          "widths": [
+            182,
+            322
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "4. Top five countries",
+          "style": "h2"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Rank",
+            "Country",
+            "Requests"
+          ],
+          "rows": [
+            [
+              1,
+              "Micronesia",
+              "579"
+            ],
+            [
+              2,
+              "Somalia",
+              "572"
+            ],
+            [
+              3,
+              "Philippines",
+              "566"
+            ],
+            [
+              4,
+              "Togo",
+              "566"
+            ],
+            [
+              5,
+              "South Korea",
+              "563"
+            ]
+          ],
+          "widths": [
+            50,
+            334,
+            120
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Philippines and Togo tie at 566 and are displayed alphabetically. Mexico follows with 562, so there is no tie at the fifth-place boundary.",
+          "style": "small"
+        },
+        {
+          "type": "paragraph",
+          "text": "Complete age and income distributions",
+          "style": "h2"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Age group",
+            "Requests",
+            "Income group",
+            "Requests"
+          ],
+          "rows": [
+            [
+              "0-16",
+              "12,437",
+              "0-10k",
+              "12,210"
+            ],
+            [
+              "17-25",
+              "12,432",
+              "10k-20k",
+              "12,440"
+            ],
+            [
+              "26-35",
+              "12,472",
+              "20k-40k",
+              "12,784"
+            ],
+            [
+              "36-45",
+              "12,638",
+              "40k-60k",
+              "12,357"
+            ],
+            [
+              "46-55",
+              "12,496",
+              "60k-100k",
+              "12,380"
+            ],
+            [
+              "56-65",
+              "12,608",
+              "100k-150k",
+              "12,554"
+            ],
+            [
+              "66-75",
+              "12,428",
+              "150k-250k",
+              "12,693"
+            ],
+            [
+              "76+",
+              "12,489",
+              "250k+",
+              "12,582"
+            ]
+          ],
+          "widths": [
+            126,
+            126,
+            126,
+            126
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Each distribution sums to 100,000. Neither gender, age nor income is missing in this run. The 4,347 denied requests are expected policy outcomes, not evidence of server overload.",
+          "style": "small"
+        }
+      ]
+    },
+    {
+      "title": "Scheduled shutdown and cleanup",
+      "size": "portrait",
+      "items": [
+        {
+          "type": "paragraph",
+          "text": "7. Scheduled shutdown and cleanup",
+          "style": "h1"
+        },
+        {
+          "type": "paragraph",
+          "text": "The authenticated hourly function checks this SQL instance and its activation policy. It returns immediately when the policy is NEVER; for a running instance it requests activationPolicy=NEVER. Transitional states use a retryable response. The experiment runner paused the schedule during active work and recorded a successful resume after the formal run.",
+          "style": "body"
+        },
+        {
+          "type": "paragraph",
+          "text": "Observed automatic stop after the formal experiment",
+          "style": "h2"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Event on October 21, 2026",
+            "UTC time"
+          ],
+          "rows": [
+            [
+              "Initial Cloud Run invocation returned 500: no available instance",
+              "11:05:00.964124"
+            ],
+            [
+              "Retry submitted activationPolicy=NEVER",
+              "11:05:30.055253"
+            ],
+            [
+              "Scheduler received HTTP 200 for the retry",
+              "11:05:32.670792"
+            ],
+            [
+              "SQL STOP_INSTANCE completed with status OK",
+              "11:06:13.728159"
+            ]
+          ],
+          "widths": [
+            373,
+            131
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "The completed stop actor is the HW5 guard service account. Operation ID: 2c4be193-7882-407b-b333-130e00000032. The saved window contains 25 successful scheduler completions and one HTTP 500; no scheduled invocation appears during the formal load interval. Both the platform failure and the successful retry are retained.",
+          "style": "small"
+        },
+        {
+          "type": "paragraph",
+          "text": "Reporter subscription evidence",
+          "style": "h2"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Metric in saved query window",
+            "Observed value"
+          ],
+          "rows": [
+            [
+              "Sent-message DELTA samples, summed",
+              "4,347"
+            ],
+            [
+              "Acknowledgment DELTA samples, summed",
+              "4,343"
+            ],
+            [
+              "Latest sampled undelivered backlog",
+              "0 at 2026-10-22 07:58 UTC"
+            ]
+          ],
+          "widths": [
+            340,
+            164
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "These metrics establish subscription activity, but the four-count difference is unresolved. Individual Reporter stdout was not collected. I do not claim proof that all 4,347 individual messages were acknowledged, or assign the difference to a specific metric issue. The separate SQL export has all 100,000 requests and their matching error and timing records.",
+          "style": "small"
+        },
+        {
+          "type": "paragraph",
+          "text": "Verified final teardown",
+          "style": "h2"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Resource",
+            "Final verified state"
+          ],
+          "rows": [
+            [
+              "Cloud SQL cs528-hw5-mysql",
+              "STOPPED; activationPolicy NEVER; deletion protection enabled"
+            ],
+            [
+              "Web and Reporter VMs",
+              "Both absent"
+            ],
+            [
+              "Reserved static web address",
+              "Absent / released"
+            ],
+            [
+              "Hourly Scheduler job",
+              "Absent"
+            ]
+          ],
+          "widths": [
+            210,
+            294
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Cleanup stops SQL without deleting it. It retains the database, password secret, HW2 bucket and local evidence, while removing owned temporary resources. Source cleanup targets exact function-source object generations and retains the shared Google-managed bucket. The table lists independently checked resources; other cleanup actions are supported by successful command completion. Retained storage and secrets can still be billed.",
+          "style": "small"
+        }
+      ]
+    },
+    {
+      "title": "Billing and evidence record",
+      "size": "portrait",
+      "items": [
+        {
+          "type": "paragraph",
+          "text": "8. Billing and evidence record",
+          "style": "h1"
+        },
+        {
+          "type": "paragraph",
+          "text": "The service-grouped Cloud Billing snapshot covers <b>October 20-22, 2026</b> and was captured on October 22 at 05:41 local time. Its displayed total is <b>$0.00</b>, including <b>$1.61 in savings</b>. Appendix B preserves the full original screenshot.",
+          "style": "body"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Service",
+            "Usage cost",
+            "Other savings",
+            "Subtotal"
+          ],
+          "rows": [
+            [
+              "Cloud SQL",
+              "$0.35",
+              "-$0.30",
+              "$0.05"
+            ],
+            [
+              "Cloud Storage",
+              "$0.02",
+              "-$0.02",
+              "$0.00"
+            ],
+            [
+              "Cloud Run Functions",
+              "$0.01",
+              "-$0.01",
+              "$0.00"
+            ],
+            [
+              "Networking",
+              "$0.13",
+              "-$0.13",
+              "$0.00"
+            ],
+            [
+              "Compute Engine",
+              "$1.09",
+              "-$1.15",
+              "-$0.05"
+            ]
+          ],
+          "widths": [
+            240,
+            88,
+            88,
+            88
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Amounts and the dollar symbol are transcribed as displayed. The row values are rounded; use the console's $0.00 total rather than recomputing an exact gross total from visible cents. The negative Compute Engine subtotal is retained as shown.",
+          "style": "small"
+        },
+        {
+          "type": "paragraph",
+          "text": "I confirmed that I did not use gcloud to operate other projects during this date range. The screenshot is grouped by service; a project filter is not visible. This report uses the confirmed activity scope, without claiming a resource-by-resource allocation of shared storage or background charges.",
+          "style": "body"
+        },
+        {
+          "type": "paragraph",
+          "text": "This is the cost displayed at capture time, not a guarantee of a final zero bill. Forecast values are excluded. Later billing updates and retained SQL storage or secrets can change subsequent charges.",
+          "style": "body"
+        },
+        {
+          "type": "paragraph",
+          "text": "Lifecycle commands for reproduction",
+          "style": "h2"
+        },
+        {
+          "type": "code",
+          "text": "python3 infra.py finish          # temporary SQL/VM stop; retain deployment\nbash cleanup.sh --plan           # inspect teardown scope\nbash cleanup.sh                  # stop SQL; remove owned temporary resources"
+        },
+        {
+          "type": "paragraph",
+          "text": "Before teardown, tools/collect_cloud_evidence.py --run-id RUN_ID --stop collects audit/metric evidence for the completed run and stops SQL and the VMs. Substitute the actual completed run ID. SQL data must not be deleted to simplify screenshots.",
+          "style": "body"
+        },
+        {
+          "type": "paragraph",
+          "text": "Evidence and implementation references",
+          "style": "h2"
+        },
+        {
+          "type": "paragraph",
+          "text": "Saved curl commands, responses and complete table snapshots are in report/evidence/demo-8131a0d413fb4069/. Formal commands, exits and statistics are in report/evidence/load-20261021T075735Z-5b3f60c2/. The full gzip SQL export is retained locally under results/load-20261021T075735Z-5b3f60c2/ and excluded from routine Git staging; its hash appears on page 4.",
+          "style": "small"
+        },
+        {
+          "type": "paragraph",
+          "text": "Independent checks: formal-run-review.json, post-load-review.json and cleanup-verification.json in report/evidence/. Original screenshot hashes: report/screenshots/manifest.json. Billing image and owner scope: report/evidence/billing/ and billing-review.json.",
+          "style": "small"
+        },
+        {
+          "type": "paragraph",
+          "text": "Google Cloud: <link href=\"https://docs.cloud.google.com/sql/docs/mysql/samples/cloud-sql-mysql-sqlalchemy-connect-connector\">Cloud SQL Python Connector</link>; <link href=\"https://docs.cloud.google.com/sql/docs/mysql/start-stop-restart-instance\">start/stop Cloud SQL</link>; <link href=\"https://docs.cloud.google.com/scheduler/docs/http-target-auth\">authenticated Scheduler</link>; <link href=\"https://docs.cloud.google.com/pubsub/docs/monitoring\">Pub/Sub monitoring</link>; <link href=\"https://docs.cloud.google.com/billing/docs/how-to/reports\">billing reports</link>. Assignment: instructor-supplied CS528-HW_5.pdf.",
+          "style": "small"
+        }
+      ]
+    },
+    {
+      "title": "Appendix A1: HTTP 200: existing file",
+      "size": "portrait",
+      "items": [
+        {
+          "type": "paragraph",
+          "text": "Appendix A1. HTTP 200: existing file",
+          "style": "h1"
+        },
+        {
+          "type": "paragraph",
+          "text": "Figure 1. complete tables before the request.",
+          "style": "small"
+        },
+        {
+          "type": "paragraph",
+          "text": "Local replay of saved evidence from the real October 21 curl demonstration. Screenshot captured October 22; no new request was executed.",
+          "style": "caption"
+        },
+        {
+          "type": "image",
+          "path": "report/screenshots/success-before.png",
+          "max_height": 540
+        },
+        {
+          "type": "paragraph",
+          "text": "Initial state: 1 request row and 1 error row. The preexisting public 404 request is retained.",
+          "style": "caption"
+        }
+      ]
+    },
+    {
+      "title": "Appendix A2: HTTP 200: existing file",
+      "size": "portrait",
+      "items": [
+        {
+          "type": "paragraph",
+          "text": "Appendix A2. HTTP 200: existing file",
+          "style": "h1"
+        },
+        {
+          "type": "paragraph",
+          "text": "Figure 2. saved curl command and response.",
+          "style": "small"
+        },
+        {
+          "type": "paragraph",
+          "text": "Local replay of saved evidence from the real October 21 curl demonstration. Screenshot captured October 22; no new request was executed.",
+          "style": "caption"
+        },
+        {
+          "type": "image",
+          "path": "report/screenshots/success-response.png",
+          "max_height": 540
+        },
+        {
+          "type": "paragraph",
+          "text": "Real response: HTTP 200 OK; 97,586 bytes; +1 request and +0 error rows.",
+          "style": "caption"
+        }
+      ]
+    },
+    {
+      "title": "Appendix A3: HTTP 200: existing file",
+      "size": "portrait",
+      "items": [
+        {
+          "type": "paragraph",
+          "text": "Appendix A3. HTTP 200: existing file",
+          "style": "h1"
+        },
+        {
+          "type": "paragraph",
+          "text": "Figure 3. complete tables after the request.",
+          "style": "small"
+        },
+        {
+          "type": "paragraph",
+          "text": "Local replay of saved evidence from the real October 21 curl demonstration. Screenshot captured October 22; no new request was executed.",
+          "style": "caption"
+        },
+        {
+          "type": "image",
+          "path": "report/screenshots/success-after.png",
+          "max_height": 540
+        },
+        {
+          "type": "paragraph",
+          "text": "After success: 2 request rows and 1 error row. The new United States request has HTTP 200.",
+          "style": "caption"
+        }
+      ]
+    },
+    {
+      "title": "Appendix A4: HTTP 404: missing file",
+      "size": "portrait",
+      "items": [
+        {
+          "type": "paragraph",
+          "text": "Appendix A4. HTTP 404: missing file",
+          "style": "h1"
+        },
+        {
+          "type": "paragraph",
+          "text": "Figure 4. complete tables before the request.",
+          "style": "small"
+        },
+        {
+          "type": "paragraph",
+          "text": "Local replay of saved evidence from the real October 21 curl demonstration. Screenshot captured October 22; no new request was executed.",
+          "style": "caption"
+        },
+        {
+          "type": "image",
+          "path": "report/screenshots/missing-before.png",
+          "max_height": 540
+        },
+        {
+          "type": "paragraph",
+          "text": "Before the missing-file request: 2 request rows and 1 error row; identical to the prior after-snapshot.",
+          "style": "caption"
+        }
+      ]
+    },
+    {
+      "title": "Appendix A5: HTTP 404: missing file",
+      "size": "portrait",
+      "items": [
+        {
+          "type": "paragraph",
+          "text": "Appendix A5. HTTP 404: missing file",
+          "style": "h1"
+        },
+        {
+          "type": "paragraph",
+          "text": "Figure 5. saved curl command and response.",
+          "style": "small"
+        },
+        {
+          "type": "paragraph",
+          "text": "Local replay of saved evidence from the real October 21 curl demonstration. Screenshot captured October 22; no new request was executed.",
+          "style": "caption"
+        },
+        {
+          "type": "image",
+          "path": "report/screenshots/missing-response.png",
+          "max_height": 540
+        },
+        {
+          "type": "paragraph",
+          "text": "Real response: HTTP 404 Not Found; +1 request and +1 error row.",
+          "style": "caption"
+        }
+      ]
+    },
+    {
+      "title": "Appendix A6: HTTP 404: missing file",
+      "size": "portrait",
+      "items": [
+        {
+          "type": "paragraph",
+          "text": "Appendix A6. HTTP 404: missing file",
+          "style": "h1"
+        },
+        {
+          "type": "paragraph",
+          "text": "Figure 6. complete tables after the request.",
+          "style": "small"
+        },
+        {
+          "type": "paragraph",
+          "text": "Local replay of saved evidence from the real October 21 curl demonstration. Screenshot captured October 22; no new request was executed.",
+          "style": "caption"
+        },
+        {
+          "type": "image",
+          "path": "report/screenshots/missing-after.png",
+          "max_height": 540
+        },
+        {
+          "type": "paragraph",
+          "text": "After the missing-file request: 3 request rows and 2 error rows. The new 404 record matches by time and path.",
+          "style": "caption"
+        }
+      ]
+    },
+    {
+      "title": "Appendix A7: HTTP 400: forbidden country",
+      "size": "portrait",
+      "items": [
+        {
+          "type": "paragraph",
+          "text": "Appendix A7. HTTP 400: forbidden country",
+          "style": "h1"
+        },
+        {
+          "type": "paragraph",
+          "text": "Figure 7. complete tables before the request.",
+          "style": "small"
+        },
+        {
+          "type": "paragraph",
+          "text": "Local replay of saved evidence from the real October 21 curl demonstration. Screenshot captured October 22; no new request was executed.",
+          "style": "caption"
+        },
+        {
+          "type": "image",
+          "path": "report/screenshots/banned-before.png",
+          "max_height": 540
+        },
+        {
+          "type": "paragraph",
+          "text": "Before the Iran request: 3 request rows and 2 error rows; identical to the prior after-snapshot.",
+          "style": "caption"
+        }
+      ]
+    },
+    {
+      "title": "Appendix A8: HTTP 400: forbidden country",
+      "size": "portrait",
+      "items": [
+        {
+          "type": "paragraph",
+          "text": "Appendix A8. HTTP 400: forbidden country",
+          "style": "h1"
+        },
+        {
+          "type": "paragraph",
+          "text": "Figure 8. saved curl command and response.",
+          "style": "small"
+        },
+        {
+          "type": "paragraph",
+          "text": "Local replay of saved evidence from the real October 21 curl demonstration. Screenshot captured October 22; no new request was executed.",
+          "style": "caption"
+        },
+        {
+          "type": "image",
+          "path": "report/screenshots/banned-response.png",
+          "max_height": 540
+        },
+        {
+          "type": "paragraph",
+          "text": "Real response: HTTP 400 Bad Request; country Iran; +1 request and +1 error row.",
+          "style": "caption"
+        }
+      ]
+    },
+    {
+      "title": "Appendix A9: HTTP 400: forbidden country",
+      "size": "landscape",
+      "items": [
+        {
+          "type": "paragraph",
+          "text": "Appendix A9. HTTP 400: forbidden country",
+          "style": "h1"
+        },
+        {
+          "type": "paragraph",
+          "text": "Figure 9. complete tables after the request.",
+          "style": "small"
+        },
+        {
+          "type": "paragraph",
+          "text": "Local replay of saved evidence from the real October 21 curl demonstration. Screenshot captured October 22; no new request was executed.",
+          "style": "caption"
+        },
+        {
+          "type": "image",
+          "path": "report/screenshots/banned-after.png",
+          "max_height": 402
+        },
+        {
+          "type": "paragraph",
+          "text": "After the Iran request: 4 request rows and 3 error rows. is_banned=true and error_code=400 are recorded.",
+          "style": "caption"
+        }
+      ]
+    },
+    {
+      "title": "Appendix B: billing screenshot",
+      "size": "landscape",
+      "items": [
+        {
+          "type": "paragraph",
+          "text": "Appendix B. Billing snapshot: October 20-22, 2026",
+          "style": "h1"
+        },
+        {
+          "type": "paragraph",
+          "text": "Displayed total: <b>$0.00</b> | Savings: <b>$1.61</b> | Captured October 22, 05:41 local time. Forecast excluded.",
+          "style": "body"
+        },
+        {
+          "type": "image",
+          "path": "report/evidence/billing/services-20261022-054140.png",
+          "max_height": 300
+        },
+        {
+          "type": "paragraph",
+          "text": "Figure 10. Original service-grouped billing screenshot. An enlarged transcription of all service rows appears on page 8. The original image is embedded without resampling so details can be inspected by zooming.",
+          "style": "caption"
+        },
+        {
+          "type": "paragraph",
+          "text": "The owner confirmed no gcloud operations on other projects during the displayed interval. The project filter is not visible in the screenshot. Values describe the report at capture time and can change with delayed billing or continued retained-storage charges.",
+          "style": "small"
+        }
+      ]
+    }
+  ],
+  "checks": [
+    "95,653",
+    "4,347",
+    "100,000",
+    "0.335557",
+    "48.967563",
+    "39.487487",
+    "7.335611",
+    "$0.00",
+    "$1.61",
+    "Directory: CS528-HW5"
+  ],
+  "assets": [
+    {
+      "path": "report/screenshots/success-before.png",
+      "sha256": "bb80ad06572fc943359500f99c356cb52f925faa543e8eb3eb31784605e49a95"
+    },
+    {
+      "path": "report/screenshots/success-response.png",
+      "sha256": "bc977ad28aa8bcd3e970b67b5f735dd5fe5df0504833e6643e5f42cdf5da51d4"
+    },
+    {
+      "path": "report/screenshots/success-after.png",
+      "sha256": "98aa82d10f10518ba067d6023a821a45a6a0a25affcd362fde710e40d18fbcf8"
+    },
+    {
+      "path": "report/screenshots/missing-before.png",
+      "sha256": "1fb49bce455db91e03b921783fdff1f56aebd90558eea227fa774c105ad7aa10"
+    },
+    {
+      "path": "report/screenshots/missing-response.png",
+      "sha256": "d359760176b67f12cc540a3546f95238815793e93dbdda99c848cda1a6327869"
+    },
+    {
+      "path": "report/screenshots/missing-after.png",
+      "sha256": "f22af014f23699542034328ff179b2981abab39d50ff7b25f7123cb86056c0da"
+    },
+    {
+      "path": "report/screenshots/banned-before.png",
+      "sha256": "1ff31c6ad4a6d864a11206758ccb244c64439bc08dec7b8e7983bfbc213a6b7f"
+    },
+    {
+      "path": "report/screenshots/banned-response.png",
+      "sha256": "6f4401bf4e0a2ec64c807af8e58195ab530f0ff491623935173a04b8d863e934"
+    },
+    {
+      "path": "report/screenshots/banned-after.png",
+      "sha256": "9d37e45ccd90c85c9076751d6616cbc099fb4652b447ebf1f17b083fcc02a81e"
+    },
+    {
+      "path": "report/evidence/billing/services-20261022-054140.png",
+      "sha256": "4ddfb50a3dd51f5710d3276d162c3ca988000d63664cd008eb64daafc341938a"
+    }
+  ]
+}

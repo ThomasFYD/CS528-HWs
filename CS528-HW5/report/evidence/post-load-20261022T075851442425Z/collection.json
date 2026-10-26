@@ -1,0 +1,59 @@
+{
+  "run_id": "load-20261021T075735Z-5b3f60c2",
+  "project": "dazzling-seat-508219-j3",
+  "captured_at": "2026-10-22T07:58:51.442425Z",
+  "snapshot": "/Users/thomasfang/CS528/CS528-HWs/CS528-HW5/results/load-20261021T075735Z-5b3f60c2/database-snapshot.json.gz",
+  "snapshot_sha256": "acfcd6cfb1d3fed0d05483197f138d6cefa74ca34f05bd35c4e6e5aa897877bc",
+  "stop_requested": true,
+  "collected": {
+    "resources-before": "saved",
+    "scheduler-executions": 51,
+    "guard-function": 82,
+    "guard-sql-audit": 8,
+    "subscription-policy": "saved",
+    "subscription": "saved",
+    "pubsub-sent_message_count": "saved",
+    "pubsub-ack_message_count": "saved",
+    "pubsub-num_undelivered_messages": "saved",
+    "resources-after": "saved"
+  },
+  "errors": {},
+  "limitations": [
+    "Metrics are sampled and can be delayed; absent points are not proof of zero activity.",
+    "Subscription metrics show delivery/acknowledgment activity, not individual reporter stdout records.",
+    "The query interval includes a one-minute margin before the experiment and extends to collection time.",
+    "Logs and metrics require review; collection alone does not verify scheduled shutdown."
+  ],
+  "pubsub_metrics": {
+    "sent_message_count": {
+      "series": 1,
+      "points": 1440,
+      "sum_of_delta_samples": 4347
+    },
+    "ack_message_count": {
+      "series": 1,
+      "points": 186,
+      "sum_of_delta_samples": 4343
+    },
+    "num_undelivered_messages": {
+      "series": 1,
+      "points": 1441,
+      "latest_per_series": [
+        {
+          "labels": {},
+          "point": {
+            "interval": {
+              "startTime": "2026-10-22T07:58:00Z",
+              "endTime": "2026-10-22T07:58:00Z"
+            },
+            "value": {
+              "int64Value": "0"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "stop_command_completed": true,
+  "stopped_state_verified": true
+}

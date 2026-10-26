@@ -1,0 +1,16 @@
+{
+  "source": "User terminal output and read-only inspection of installed Google Cloud SDK source",
+  "prior_verification": {
+    "tests": 41,
+    "seconds": 10.653,
+    "result": "OK"
+  },
+  "deployment_result": "gcloud beta sql instances create rejected --no-backup with explicitly specified --no-enable-bin-log",
+  "cause": "SDK create.py checks IsSpecified(enable_bin_log), including the negative form, before sending an instance creation request",
+  "changes": [
+    "Omit the explicit bin-log flag when creating with --no-backup",
+    "Use lowercase always/never in gcloud activation-policy flags; preserve uppercase API fields",
+    "Add SQL creation and existing-instance reuse regression tests"
+  ],
+  "validation": "Source reviewed; new tests and deployment retry await user execution"
+}

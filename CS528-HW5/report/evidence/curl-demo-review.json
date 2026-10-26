@@ -1,0 +1,37 @@
+{
+  "run_id": "demo-8131a0d413fb4069",
+  "verification_source": "/Users/thomasfang/CS528/CS528-HWs/CS528-HW5/report/evidence/demo-8131a0d413fb4069/verification.json",
+  "captured_at": "2026-10-21T06:44:26.386498+00:00",
+  "reviewed_at": "2026-10-21T06:47:33.566Z",
+  "cases": [
+    {
+      "case": "success",
+      "status": 200,
+      "new_requests": 1,
+      "new_errors": 0
+    },
+    {
+      "case": "missing",
+      "status": 404,
+      "new_requests": 1,
+      "new_errors": 1
+    },
+    {
+      "case": "banned",
+      "status": 400,
+      "new_requests": 1,
+      "new_errors": 1
+    }
+  ],
+  "run_counts": {
+    "requests": 3,
+    "failed_requests": 2,
+    "request_timings": 3
+  },
+  "responses_sent": true,
+  "prior_unrelated_requests": 1,
+  "guard_resumed": "Confirmed by user-provided command output",
+  "screenshots": "Pending user-provided terminal screenshots",
+  "reporter_delivery": "Not yet verified",
+  "next_step": "Two concurrent clients, 100 requests each, seed 528"
+}

@@ -1,0 +1,20 @@
+{
+  "source": "/Users/thomasfang/.codex/attachments/595b1bda-87ac-42af-b706-3ec7a97100d2/已粘贴的文本.txt",
+  "verification_kind": "User-executed commands and pasted complete output",
+  "offline_tests": {
+    "count": 43,
+    "seconds": 10.56,
+    "result": "OK"
+  },
+  "resources": {
+    "sql": "MYSQL_8_4 / db-g1-small / RUNNABLE",
+    "web_vm": "e2-small / RUNNING",
+    "reporter_vm": "e2-micro / RUNNING",
+    "stop_function": "ACTIVE",
+    "hourly_scheduler": "ENABLED"
+  },
+  "sql_user_and_database": "Setup reported ready",
+  "application_readiness": "Pending VM startup-log and real HTTP/SQL verification",
+  "load_experiment": "Not run",
+  "status_snapshot_in_repository": "/Users/thomasfang/CS528/CS528-HWs/CS528-HW5/report/evidence/deployment-status.json"
+}

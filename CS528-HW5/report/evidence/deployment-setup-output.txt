@@ -1,0 +1,138 @@
+Ran 43 tests in 10.560s
+
+OK
+Running: gcloud services enable compute.googleapis.com storage.googleapis.com
+Operation "operations/acat.p2-402897578975-f3d30709-e573-4b71-96e9-e3bc4fb5d64c" finished successfully.
+Running: gcloud storage buckets update gs://dazzling-seat-508219-j3-hw5-deployment
+Updating gs://dazzling-seat-508219-j3-hw5-deployment/...
+......
+Prerequisites ready.
+Running: gcloud beta sql instances create
+NAME             DATABASE_VERSION  LOCATION       TIER         PRIMARY_ADDRESS  PRIVATE_ADDRESS  STATUS
+cs528-hw5-mysql  MYSQL_8_4         us-central1-a  db-g1-small  34.60.151.30     -                RUNNABLE
+Running: gcloud sql databases create hw5
+charset: utf8mb4
+collation: utf8mb4_unicode_ci
+instance: cs528-hw5-mysql
+name: hw5
+project: dazzling-seat-508219-j3
+Cloud SQL ready. startup.sh calls setup_schema.py to create only missing tables.
+Running: gcloud storage cp /Users/thomasfang/CS528/CS528-HWs/CS528-HW5/build/source-36e2b2004d6c4f3f4e28776391b68635992480c8c4d0d02a536d9dea6a46b948.tar.gz gs://dazzling-seat-508219-j3-hw5-deployment/source-36e2b2004d6c4f3f4e28776391b68635992480c8c4d0d02a536d9dea6a46b948.tar.gz
+Copying file:///Users/thomasfang/CS528/CS528-HWs/CS528-HW5/build/source-36e2b2004d6c4f3f4e28776391b68635992480c8c4d0d02a536d9dea6a46b948.tar.gz to gs://dazzling-seat-508219-j3-hw5-deployment/source-36e2b2004d6c4f3f4e28776391b68635992480c8c4d0d02a536d9dea6a46b948.tar.gz
+  
+.......
+Running: gcloud compute networks create cs528-hw5-network
+NAME               SUBNET_MODE  BGP_ROUTING_MODE  IPV4_RANGE  GATEWAY_IPV4  INTERNAL_IPV6_RANGE
+cs528-hw5-network  CUSTOM       REGIONAL
+Running: gcloud compute networks subnets create
+NAME              REGION       NETWORK            RANGE         STACK_TYPE  IPV6_ACCESS_TYPE  INTERNAL_IPV6_PREFIX  EXTERNAL_IPV6_PREFIX
+cs528-hw5-subnet  us-central1  cs528-hw5-network  10.85.0.0/24  IPV4_ONLY
+Running: gcloud compute firewall-rules create cs528-hw5-http
+NAME            NETWORK            DIRECTION  PRIORITY  ALLOW     DENY  DISABLED
+cs528-hw5-http  cs528-hw5-network  INGRESS    1000      tcp:8080        False
+Running: gcloud compute addresses create cs528-hw5-web-ip
+Created [https://www.googleapis.com/compute/v1/projects/dazzling-seat-508219-j3/regions/us-central1/addresses/cs528-hw5-web-ip].
+Running: gcloud compute instances create cs528-hw5-web
+NAME           ZONE           MACHINE_TYPE  PREEMPTIBLE  INTERNAL_IP  EXTERNAL_IP    STATUS
+cs528-hw5-web  us-central1-a  e2-small                   10.85.0.2    35.193.157.51  RUNNING
+Running: gcloud compute instances create cs528-hw5-reporter
+NAME                ZONE           MACHINE_TYPE  PREEMPTIBLE  INTERNAL_IP  EXTERNAL_IP    STATUS
+cs528-hw5-reporter  us-central1-a  e2-micro                   10.85.0.3    34.171.233.19  RUNNING
+Running: gcloud iam roles create cs528Hw5SqlStopper
+etag: BwZeUVUezH0=
+includedPermissions:
+- cloudsql.instances.get
+- cloudsql.instances.update
+name: projects/dazzling-seat-508219-j3/roles/cs528Hw5SqlStopper
+stage: GA
+title: CS528 HW5 SQL Stopper
+Running: gcloud artifacts repositories create cs528-hw5-functions
+Create request issued for: [cs528-hw5-functions]
+Waiting for operation [projects/dazzling-seat-508219-j3/locations/us-central1/operations/0a46bfe6-2ddf-448a-8504-eade38158771] to complete...
+.....done.
+Created repository [cs528-hw5-functions].
+Running: gcloud functions deploy cs528-hw5-stop-sql --gen2
+buildConfig:
+  automaticUpdatePolicy: {}
+  build: projects/402897578975/locations/us-central1/builds/6382c400-9471-45d0-956f-12cd30ceaf86
+  dockerRegistry: ARTIFACT_REGISTRY
+  dockerRepository: projects/dazzling-seat-508219-j3/locations/us-central1/repositories/cs528-hw5-functions
+  entryPoint: stop_database
+  runtime: python312
+  serviceAccount: projects/dazzling-seat-508219-j3/serviceAccounts/cs528-hw5-build@dazzling-seat-508219-j3.iam.gserviceaccount.com
+  source:
+    storageSource:
+      bucket: gcf-v2-sources-402897578975-us-central1
+      generation: '1792553282054617'
+      object: cs528-hw5-stop-sql/function-source.zip
+  sourceProvenance:
+    resolvedStorageSource:
+      bucket: gcf-v2-sources-402897578975-us-central1
+      generation: '1792553282054617'
+      object: cs528-hw5-stop-sql/function-source.zip
+createTime: '2026-10-21T03:28:02.424279724Z'
+environment: GEN_2
+labels:
+  course: cs528
+  deployment-tool: cli-gcloud
+  homework: hw5
+name: projects/dazzling-seat-508219-j3/locations/us-central1/functions/cs528-hw5-stop-sql
+satisfiesPzi: true
+serviceConfig:
+  allTrafficOnLatestRevision: true
+  availableCpu: '0.1666'
+  availableMemory: 256Mi
+  environmentVariables:
+    LOG_EXECUTION_ID: 'true'
+    PROJECT_ID: dazzling-seat-508219-j3
+    SQL_INSTANCE: cs528-hw5-mysql
+  ingressSettings: ALLOW_ALL
+  maxInstanceCount: 1
+  maxInstanceRequestConcurrency: 1
+  revision: cs528-hw5-stop-sql-00001-hib
+  service: projects/dazzling-seat-508219-j3/locations/us-central1/services/cs528-hw5-stop-sql
+  serviceAccountEmail: cs528-hw5-guard@dazzling-seat-508219-j3.iam.gserviceaccount.com
+  timeoutSeconds: 60
+  uri: https://cs528-hw5-stop-sql-sw2da6eioq-uc.a.run.app
+state: ACTIVE
+updateTime: '2026-10-21T03:28:39.782571269Z'
+url: https://us-central1-dazzling-seat-508219-j3.cloudfunctions.net/cs528-hw5-stop-sql
+Running: gcloud scheduler jobs create http
+attemptDeadline: 120s
+description: Managed by CS528 HW5 (Yide Fang)
+httpTarget:
+  body: e30=
+  headers:
+    Content-Type: application/octet-stream
+    User-Agent: Google-Cloud-Scheduler
+  httpMethod: POST
+  oidcToken:
+    audience: https://cs528-hw5-stop-sql-sw2da6eioq-uc.a.run.app
+    serviceAccountEmail: cs528-hw5-scheduler@dazzling-seat-508219-j3.iam.gserviceaccount.com
+  uri: https://cs528-hw5-stop-sql-sw2da6eioq-uc.a.run.app/
+name: projects/dazzling-seat-508219-j3/locations/us-central1/jobs/cs528-hw5-hourly-stop
+retryConfig:
+  maxBackoffDuration: 3600s
+  maxDoublings: 5
+  maxRetryDuration: 0s
+  minBackoffDuration: 5s
+  retryCount: 3
+schedule: 5 * * * *
+scheduleTime: '2026-10-21T04:05:00Z'
+state: ENABLED
+status:
+  code: -1
+timeZone: Etc/UTC
+userUpdateTime: '2026-10-21T03:28:51.521129Z'
+{
+  "project": "dazzling-seat-508219-j3",
+  "sql_policy": "ALWAYS",
+  "vms": {
+    "web": "RUNNING",
+    "reporter": "RUNNING"
+  },
+  "web_ip": "35.193.157.51",
+  "guard": "ENABLED",
+  "evidence": "/Users/thomasfang/CS528/CS528-HWs/CS528-HW5/report/evidence/deployment-status.json"
+}
+Startup installation may still be running. Follow README.md for verification.

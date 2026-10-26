@@ -1,0 +1,72 @@
+{
+  "file": "services-20261022-054140.png",
+  "source": "/var/folders/kb/v31qm6v96zx6h6xtz18vxxfw0000gn/T/TemporaryItems/NSIRD_screencaptureui_2w962S/截屏2026-10-22 上午5.41.40.png",
+  "sha256": "4ddfb50a3dd51f5710d3276d162c3ca988000d63664cd008eb64daafc341938a",
+  "status": "accepted_for_report_with_user_confirmed_activity_scope",
+  "observed": {
+    "actual_date_range": "2026-10-20 through 2026-10-22",
+    "displayed_net_amount": "$0.00",
+    "displayed_savings": "-$1.61",
+    "footer_subtotal": "$0.00",
+    "footer_tax": "—",
+    "footer_total": "$0.00",
+    "group_by": "Service",
+    "project_filter_visible": false,
+    "currency_code_visible": false,
+    "rows": [
+      {
+        "service": "Cloud SQL",
+        "usage_cost": "$0.35",
+        "negotiated_savings": "$0.00",
+        "savings_programs": "—",
+        "other_savings": "-$0.30",
+        "subtotal": "$0.05"
+      },
+      {
+        "service": "Cloud Storage",
+        "usage_cost": "$0.02",
+        "negotiated_savings": "$0.00",
+        "savings_programs": "—",
+        "other_savings": "-$0.02",
+        "subtotal": "$0.00"
+      },
+      {
+        "service": "Cloud Run Functions",
+        "usage_cost": "$0.01",
+        "negotiated_savings": "$0.00",
+        "savings_programs": "—",
+        "other_savings": "-$0.01",
+        "subtotal": "$0.00"
+      },
+      {
+        "service": "Networking",
+        "usage_cost": "$0.13",
+        "negotiated_savings": "$0.00",
+        "savings_programs": "—",
+        "other_savings": "-$0.13",
+        "subtotal": "$0.00"
+      },
+      {
+        "service": "Compute Engine",
+        "usage_cost": "$1.09",
+        "negotiated_savings": "$0.00",
+        "savings_programs": "—",
+        "other_savings": "-$1.15",
+        "subtotal": "-$0.05"
+      }
+    ]
+  },
+  "required_follow_up": [],
+  "limits": [
+    "Values are the displayed rounded amounts; do not derive exact gross totals from rounded service rows.",
+    "Credits and adjustments can make a service subtotal negative.",
+    "The screenshot records billing as displayed at capture time, not a final settled bill or proof of no usage.",
+    "The project filter and currency code are not visible in this screenshot.",
+    "Forecast values are excluded."
+  ],
+  "user_confirmation": {
+    "received_on": "2026-10-23",
+    "text": "目前这张截图就够用，我没有在10-20到10-22这个时间范围内使用gcloud操作其他project，另外当我们group by service的时候就无法group by project。",
+    "interpretation": "Use the service-grouped billing snapshot with the owner-confirmed activity scope. The project filter itself was not independently shown."
+  }
+}

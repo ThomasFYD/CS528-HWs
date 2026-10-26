@@ -1,0 +1,57 @@
+{
+  "status": "passed",
+  "reviewed_at": "2026-10-23T18:07:06.696Z",
+  "pdf_sha256": "ed37fe673966a32da161d828262aa68ae094b106c16587880833177df7582fc4",
+  "pages_reviewed": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18
+  ],
+  "render_dpi": 120,
+  "method": "Visual inspection of every rendered page, with comparison to verified experiment records and original user screenshots.",
+  "checks": {
+    "headings_and_footers": true,
+    "page_numbering": true,
+    "no_text_or_table_overlap": true,
+    "no_clipped_content": true,
+    "all_nine_curl_images_present": true,
+    "original_billing_image_present": true,
+    "replay_captions_present": true,
+    "statistics_and_timing_values_match": true,
+    "capture_time_billing_limits_present": true
+  },
+  "notes": [
+    "The full billing screenshot preserves its original resolution; its service rows are transcribed at readable text size on page 8.",
+    "The author confirmed CS528-HW5 as the final repository directory."
+  ],
+  "previous_pdf_sha256": "aee78e77c0ad95adbd03ecfe22bb6e5718df19f6beec43c69e890032543dcd41",
+  "revision_review": {
+    "changed_pages": [
+      1
+    ],
+    "visually_rechecked_pages": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "remaining_page_content_streams_unchanged": true,
+    "directory_text": "Directory: CS528-HW5",
+    "directory_font": "Helvetica-Bold"
+  }
+}

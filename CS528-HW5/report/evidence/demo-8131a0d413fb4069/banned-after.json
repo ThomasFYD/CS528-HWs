@@ -1,0 +1,132 @@
+{
+  "run_id": null,
+  "requests": [
+    {
+      "request_id": "53b3df6f-3f4c-49f4-8a81-91d12b8fcce5",
+      "request_time": "2026-10-21 04:58:30.389453",
+      "run_id": null,
+      "method": "GET",
+      "requested_file": "",
+      "country": null,
+      "client_ip": "45.198.224.125",
+      "peer_ip": "45.198.224.125",
+      "gender": null,
+      "age": null,
+      "income": null,
+      "is_banned": false,
+      "client_time": null,
+      "time_of_day": null,
+      "http_status": 404
+    },
+    {
+      "request_id": "b492792f-3474-42f3-9662-0da1f5e2e784",
+      "request_time": "2026-10-21 06:44:23.565363",
+      "run_id": "demo-8131a0d413fb4069",
+      "method": "GET",
+      "requested_file": "data/0.html",
+      "country": "United States",
+      "client_ip": "192.0.2.25",
+      "peer_ip": "52.124.36.217",
+      "gender": "Female",
+      "age": "26-35",
+      "income": "40k-60k",
+      "is_banned": false,
+      "client_time": "2026-10-20 13:00:00",
+      "time_of_day": "13:00:00",
+      "http_status": 200
+    },
+    {
+      "request_id": "73abace9-b36e-4934-bc39-71c94b8bf5df",
+      "request_time": "2026-10-21 06:44:24.943455",
+      "run_id": "demo-8131a0d413fb4069",
+      "method": "GET",
+      "requested_file": "data/hw5-file-that-does-not-exist.html",
+      "country": "United States",
+      "client_ip": "192.0.2.25",
+      "peer_ip": "52.124.36.217",
+      "gender": "Female",
+      "age": "26-35",
+      "income": "40k-60k",
+      "is_banned": false,
+      "client_time": "2026-10-20 13:00:00",
+      "time_of_day": "13:00:00",
+      "http_status": 404
+    },
+    {
+      "request_id": "1f0a52b6-c055-4648-84d9-f63fd9974c61",
+      "request_time": "2026-10-21 06:44:25.758649",
+      "run_id": "demo-8131a0d413fb4069",
+      "method": "GET",
+      "requested_file": "data/0.html",
+      "country": "Iran",
+      "client_ip": "192.0.2.25",
+      "peer_ip": "52.124.36.217",
+      "gender": "Female",
+      "age": "26-35",
+      "income": "40k-60k",
+      "is_banned": true,
+      "client_time": "2026-10-20 13:00:00",
+      "time_of_day": "13:00:00",
+      "http_status": 400
+    }
+  ],
+  "failed_requests": [
+    {
+      "request_time": "2026-10-21 04:58:30.389453",
+      "requested_file": "",
+      "error_code": 404
+    },
+    {
+      "request_time": "2026-10-21 06:44:24.943455",
+      "requested_file": "data/hw5-file-that-does-not-exist.html",
+      "error_code": 404
+    },
+    {
+      "request_time": "2026-10-21 06:44:25.758649",
+      "requested_file": "data/0.html",
+      "error_code": 400
+    }
+  ],
+  "request_timings": [
+    {
+      "request_id": "1f0a52b6-c055-4648-84d9-f63fd9974c61",
+      "extract_ns": 400477,
+      "storage_ns": 0,
+      "response_ns": 131171,
+      "database_ns": 7932849,
+      "total_ns": 221018002,
+      "storage_attempted": false,
+      "response_sent": true
+    },
+    {
+      "request_id": "53b3df6f-3f4c-49f4-8a81-91d12b8fcce5",
+      "extract_ns": 297426,
+      "storage_ns": 0,
+      "response_ns": 145478,
+      "database_ns": 13303201,
+      "total_ns": 160152325,
+      "storage_attempted": false,
+      "response_sent": true
+    },
+    {
+      "request_id": "73abace9-b36e-4934-bc39-71c94b8bf5df",
+      "extract_ns": 428557,
+      "storage_ns": 25591436,
+      "response_ns": 169544,
+      "database_ns": 8094483,
+      "total_ns": 172304879,
+      "storage_attempted": true,
+      "response_sent": true
+    },
+    {
+      "request_id": "b492792f-3474-42f3-9662-0da1f5e2e784",
+      "extract_ns": 53558739,
+      "storage_ns": 408447787,
+      "response_ns": 92660956,
+      "database_ns": 232732797,
+      "total_ns": 787647948,
+      "storage_attempted": true,
+      "response_sent": true
+    }
+  ]
+}

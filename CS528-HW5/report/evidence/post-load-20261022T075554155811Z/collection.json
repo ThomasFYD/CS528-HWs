@@ -1,0 +1,27 @@
+{
+  "run_id": "load-20261021T075735Z-5b3f60c2",
+  "project": "dazzling-seat-508219-j3",
+  "captured_at": "2026-10-22T07:55:54.155811Z",
+  "snapshot": "/Users/thomasfang/CS528/CS528-HWs/CS528-HW5/results/load-20261021T075735Z-5b3f60c2/database-snapshot.json.gz",
+  "snapshot_sha256": "acfcd6cfb1d3fed0d05483197f138d6cefa74ca34f05bd35c4e6e5aa897877bc",
+  "stop_requested": true,
+  "collected": {},
+  "errors": {
+    "resources-before": "RuntimeError: gcloud sql instances describe failed:\nERROR: (gcloud.sql.instances.describe) There was a problem refreshing your current auth tokens: Reauthentication failed. cannot prompt during non-interactive execution.\nPlease run:\n\n  $ gcloud auth login\n\nto obtain new credentials.\n\nIf you have already logged in with a different account, run:\n\n  $ gcloud config set account ACCOUNT\n\nto select an already authenticated account to use.",
+    "scheduler-executions": "RuntimeError: gcloud logging read resource.type=\"cloud_scheduler_job\" AND resource.labels.job_id=\"cs528-hw5-hourly-stop\" AND timestamp>=\"2026-10-19T07:57:43.556263Z\" failed:\nERROR: (gcloud.logging.read) There was a problem refreshing your current auth tokens: Reauthentication failed. cannot prompt during non-interactive execution.\nPlease run:\n\n  $ gcloud auth login\n\nto obtain new credentials.\n\nIf you have already logged in with a different account, run:\n\n  $ gcloud config set account ACCOUNT\n\nto select an already authenticated account to use.",
+    "guard-function": "RuntimeError: gcloud logging read resource.type=\"cloud_run_revision\" AND resource.labels.service_name=\"cs528-hw5-stop-sql\" AND timestamp>=\"2026-10-19T07:57:43.556263Z\" failed:\nERROR: (gcloud.logging.read) There was a problem refreshing your current auth tokens: Reauthentication failed. cannot prompt during non-interactive execution.\nPlease run:\n\n  $ gcloud auth login\n\nto obtain new credentials.\n\nIf you have already logged in with a different account, run:\n\n  $ gcloud config set account ACCOUNT\n\nto select an already authenticated account to use.",
+    "guard-sql-audit": "RuntimeError: gcloud logging read protoPayload.authenticationInfo.principalEmail=\"cs528-hw5-guard@dazzling-seat-508219-j3.iam.gserviceaccount.com\" AND (protoPayload.serviceName=\"cloudsql.googleapis.com\" OR protoPayload.serviceName=\"sqladmin.googleapis.com\") AND timestamp>=\"2026-10-19T07:57:43.556263Z\" failed:\nERROR: (gcloud.logging.read) There was a problem refreshing your current auth tokens: Reauthentication failed. cannot prompt during non-interactive execution.\nPlease run:\n\n  $ gcloud auth login\n\nto obtain new credentials.\n\nIf you have already logged in with a different account, run:\n\n  $ gcloud config set account ACCOUNT\n\nto select an already authenticated account to use.",
+    "subscription-policy": "RuntimeError: gcloud pubsub subscriptions get-iam-policy failed:\nERROR: (gcloud.pubsub.subscriptions.get-iam-policy) There was a problem refreshing your current auth tokens: Reauthentication failed. cannot prompt during non-interactive execution.\nPlease run:\n\n  $ gcloud auth login\n\nto obtain new credentials.\n\nIf you have already logged in with a different account, run:\n\n  $ gcloud config set account ACCOUNT\n\nto select an already authenticated account to use.",
+    "subscription": "RuntimeError: gcloud pubsub subscriptions describe failed:\nERROR: (gcloud.pubsub.subscriptions.describe) There was a problem refreshing your current auth tokens: Reauthentication failed. cannot prompt during non-interactive execution.\nPlease run:\n\n  $ gcloud auth login\n\nto obtain new credentials.\n\nIf you have already logged in with a different account, run:\n\n  $ gcloud config set account ACCOUNT\n\nto select an already authenticated account to use.",
+    "monitoring-access": "RuntimeError: Local access-token refresh failed (gcloud exit 1); check gcloud login and access to the homework project.",
+    "stop": "RuntimeError: gcloud sql instances describe failed:\nERROR: (gcloud.sql.instances.describe) There was a problem refreshing your current auth tokens: Reauthentication failed. cannot prompt during non-interactive execution.\nPlease run:\n\n  $ gcloud auth login\n\nto obtain new credentials.\n\nIf you have already logged in with a different account, run:\n\n  $ gcloud config set account ACCOUNT\n\nto select an already authenticated account to use.",
+    "resources-after": "RuntimeError: gcloud sql instances describe failed:\nERROR: (gcloud.sql.instances.describe) There was a problem refreshing your current auth tokens: Reauthentication failed. cannot prompt during non-interactive execution.\nPlease run:\n\n  $ gcloud auth login\n\nto obtain new credentials.\n\nIf you have already logged in with a different account, run:\n\n  $ gcloud config set account ACCOUNT\n\nto select an already authenticated account to use."
+  },
+  "limitations": [
+    "Metrics are sampled and can be delayed; absent points are not proof of zero activity.",
+    "Subscription metrics show delivery/acknowledgment activity, not individual reporter stdout records.",
+    "The query interval includes a one-minute margin before the experiment and extends to collection time.",
+    "Logs and metrics require review; collection alone does not verify scheduled shutdown."
+  ],
+  "stop_command_completed": false
+}

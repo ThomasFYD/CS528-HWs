@@ -1,0 +1,55 @@
+{
+  "buildConfig": {
+    "automaticUpdatePolicy": {},
+    "build": "projects/402897578975/locations/us-central1/builds/6382c400-9471-45d0-956f-12cd30ceaf86",
+    "dockerRegistry": "ARTIFACT_REGISTRY",
+    "dockerRepository": "projects/dazzling-seat-508219-j3/locations/us-central1/repositories/cs528-hw5-functions",
+    "entryPoint": "stop_database",
+    "runtime": "python312",
+    "serviceAccount": "projects/dazzling-seat-508219-j3/serviceAccounts/cs528-hw5-build@dazzling-seat-508219-j3.iam.gserviceaccount.com",
+    "source": {
+      "storageSource": {
+        "bucket": "gcf-v2-sources-402897578975-us-central1",
+        "generation": "1792553282054617",
+        "object": "cs528-hw5-stop-sql/function-source.zip"
+      }
+    },
+    "sourceProvenance": {
+      "resolvedStorageSource": {
+        "bucket": "gcf-v2-sources-402897578975-us-central1",
+        "generation": "1792553282054617",
+        "object": "cs528-hw5-stop-sql/function-source.zip"
+      }
+    }
+  },
+  "createTime": "2026-10-21T03:28:02.424279724Z",
+  "environment": "GEN_2",
+  "labels": {
+    "course": "cs528",
+    "deployment-tool": "cli-gcloud",
+    "homework": "hw5"
+  },
+  "name": "projects/dazzling-seat-508219-j3/locations/us-central1/functions/cs528-hw5-stop-sql",
+  "satisfiesPzi": true,
+  "serviceConfig": {
+    "allTrafficOnLatestRevision": true,
+    "availableCpu": "0.1666",
+    "availableMemory": "256Mi",
+    "environmentVariables": {
+      "LOG_EXECUTION_ID": "true",
+      "PROJECT_ID": "dazzling-seat-508219-j3",
+      "SQL_INSTANCE": "cs528-hw5-mysql"
+    },
+    "ingressSettings": "ALLOW_ALL",
+    "maxInstanceCount": 1,
+    "maxInstanceRequestConcurrency": 1,
+    "revision": "cs528-hw5-stop-sql-00001-hib",
+    "service": "projects/dazzling-seat-508219-j3/locations/us-central1/services/cs528-hw5-stop-sql",
+    "serviceAccountEmail": "cs528-hw5-guard@dazzling-seat-508219-j3.iam.gserviceaccount.com",
+    "timeoutSeconds": 60,
+    "uri": "https://cs528-hw5-stop-sql-sw2da6eioq-uc.a.run.app"
+  },
+  "state": "ACTIVE",
+  "updateTime": "2026-10-21T03:28:39.782571269Z",
+  "url": "https://us-central1-dazzling-seat-508219-j3.cloudfunctions.net/cs528-hw5-stop-sql"
+}

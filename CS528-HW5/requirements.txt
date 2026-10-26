@@ -1,0 +1,9 @@
+google-cloud-storage>=3,<4
+google-cloud-pubsub>=2,<3
+google-cloud-logging>=3,<4
+google-cloud-secret-manager>=2,<3
+cloud-sql-python-connector[pymysql]==1.23.0
+# 1.2.3 dereferences a None result after full caching_sha2 RSA authentication.
+# Keep this driver fixed until the real authentication regression tests pass.
+PyMySQL[rsa]==1.1.3
+SQLAlchemy==2.1.5

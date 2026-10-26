@@ -1,0 +1,2739 @@
+[
+  {
+    "insertId": "-p7c0s7dpjki",
+    "logName": "projects/dazzling-seat-508219-j3/logs/cloudaudit.googleapis.com%2Factivity",
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "service-402897578975@gcf-admin-robot.iam.gserviceaccount.com"
+      },
+      "authorizationInfo": [
+        {
+          "granted": true,
+          "permission": "run.services.create",
+          "permissionType": "ADMIN_WRITE",
+          "resource": "namespaces/dazzling-seat-508219-j3/services/cs528-hw5-stop-sql",
+          "resourceAttributes": {}
+        },
+        {
+          "granted": true,
+          "permission": "run.services.create",
+          "permissionType": "ADMIN_WRITE",
+          "resource": "namespaces/dazzling-seat-508219-j3/services/cs528-hw5-stop-sql",
+          "resourceAttributes": {
+            "name": "namespaces/dazzling-seat-508219-j3/services/cs528-hw5-stop-sql",
+            "service": "run.googleapis.com/",
+            "type": "run.googleapis.com/Service"
+          }
+        }
+      ],
+      "methodName": "google.cloud.serverless.internal.InternalServices.CreateInternalService",
+      "requestMetadata": {
+        "destinationAttributes": {},
+        "requestAttributes": {
+          "auth": {},
+          "time": "2026-10-21T03:28:02.408899Z"
+        }
+      },
+      "resourceLocation": {
+        "currentLocations": [
+          "us-central1"
+        ]
+      },
+      "resourceName": "namespaces/dazzling-seat-508219-j3/services/cs528-hw5-stop-sql",
+      "serviceName": "run.googleapis.com",
+      "status": {}
+    },
+    "receiveTimestamp": "2026-10-21T03:28:02.435124703Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3",
+        "revision_name": "",
+        "service_name": "cs528-hw5-stop-sql"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "NOTICE",
+    "timestamp": "2026-10-21T03:28:02.122059Z"
+  },
+  {
+    "insertId": "8vvte5d3dw8",
+    "logName": "projects/dazzling-seat-508219-j3/logs/cloudaudit.googleapis.com%2Factivity",
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "service-402897578975@gcf-admin-robot.iam.gserviceaccount.com"
+      },
+      "authorizationInfo": [
+        {
+          "granted": true,
+          "permission": "run.services.create",
+          "permissionType": "ADMIN_WRITE",
+          "resource": "namespaces/dazzling-seat-508219-j3/services/cs528-hw5-stop-sql",
+          "resourceAttributes": {}
+        },
+        {
+          "granted": true,
+          "permission": "run.services.create",
+          "permissionType": "ADMIN_WRITE",
+          "resource": "namespaces/dazzling-seat-508219-j3/services/cs528-hw5-stop-sql",
+          "resourceAttributes": {
+            "name": "namespaces/dazzling-seat-508219-j3/services/cs528-hw5-stop-sql",
+            "service": "run.googleapis.com/",
+            "type": "run.googleapis.com/Service"
+          }
+        }
+      ],
+      "methodName": "google.cloud.serverless.internal.InternalServices.CreateInternalService",
+      "requestMetadata": {
+        "destinationAttributes": {},
+        "requestAttributes": {
+          "auth": {},
+          "time": "2026-10-21T03:28:31.282692Z"
+        }
+      },
+      "resourceLocation": {
+        "currentLocations": [
+          "us-central1"
+        ]
+      },
+      "resourceName": "namespaces/dazzling-seat-508219-j3/services/cs528-hw5-stop-sql",
+      "serviceName": "run.googleapis.com",
+      "status": {}
+    },
+    "receiveTimestamp": "2026-10-21T03:28:31.829746793Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3",
+        "revision_name": "",
+        "service_name": "cs528-hw5-stop-sql"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "NOTICE",
+    "timestamp": "2026-10-21T03:28:31.052456Z"
+  },
+  {
+    "insertId": "6ad831640003d38a694c313e",
+    "labels": {
+      "course": "cs528",
+      "goog-managed-by": "cloudfunctions",
+      "homework": "hw5",
+      "instanceId": "0010dd860740d7403c80e25055283fb0485e376f9938fce6bc6b6ea912e0647c4307a47f9feb6176ad7be2e66a45a0e5cd5504c7c2198ff63a864433a12058f4530b3d89e6ad4655cb3732da93dcaf7009182d50ddc4566431",
+      "scaling_reason": "DEPLOYMENT_ROLLOUT"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/run.googleapis.com%2Fvarlog%2Fsystem",
+    "receiveTimestamp": "2026-10-21T03:28:36.258523503Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "cs528-hw5-stop-sql",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3",
+        "revision_name": "cs528-hw5-stop-sql-00001-hib",
+        "service_name": "cs528-hw5-stop-sql"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "textPayload": "Starting new instance. Reason: DEPLOYMENT_ROLLOUT - Instance started due to traffic shifting between revisions due to deployment, traffic split adjustment, or deployment health check.",
+    "timestamp": "2026-10-21T03:28:36.250762Z"
+  },
+  {
+    "insertId": "6ad83165000e36b60d2873c9",
+    "labels": {
+      "course": "cs528",
+      "goog-managed-by": "cloudfunctions",
+      "homework": "hw5",
+      "instanceId": "0010dd860740d7403c80e25055283fb0485e376f9938fce6bc6b6ea912e0647c4307a47f9feb6176ad7be2e66a45a0e5cd5504c7c2198ff63a864433a12058f4530b3d89e6ad4655cb3732da93dcaf7009182d50ddc4566431",
+      "run.googleapis.com/base_image_versions": "us-docker.pkg.dev/serverless-runtimes/google-22-full/runtimes/python312:python312_20260928_3_12_14_RC00"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/run.googleapis.com%2Fvarlog%2Fsystem",
+    "receiveTimestamp": "2026-10-21T03:28:38.261352600Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "cs528-hw5-stop-sql",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3",
+        "revision_name": "cs528-hw5-stop-sql-00001-hib",
+        "service_name": "cs528-hw5-stop-sql"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "textPayload": "Default STARTUP TCP probe succeeded after 1 attempt for container \"worker\" on port 8080.",
+    "timestamp": "2026-10-21T03:28:37.931510Z"
+  },
+  {
+    "insertId": "-b1invldcy26",
+    "logName": "projects/dazzling-seat-508219-j3/logs/cloudaudit.googleapis.com%2Fsystem_event",
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "methodName": "/InternalServices.CreateInternalService",
+      "resourceName": "namespaces/dazzling-seat-508219-j3/revisions/cs528-hw5-stop-sql-00001-hib",
+      "response": {
+        "@type": "type.googleapis.com/google.cloud.run.v1.Revision",
+        "apiVersion": "serving.knative.dev/v1",
+        "kind": "Revision",
+        "metadata": {
+          "annotations": {
+            "autoscaling.knative.dev/maxScale": "1",
+            "cloudfunctions.googleapis.com/trigger-type": "HTTP_TRIGGER",
+            "run.googleapis.com/base-images": "{\"worker\":\"us-central1-docker.pkg.dev/serverless-runtimes/google-22-full/runtimes/python312\"}",
+            "run.googleapis.com/build-function-target": "{\"worker\":\"stop_database\"}",
+            "run.googleapis.com/build-id": "{\"worker\":\"6382c400-9471-45d0-956f-12cd30ceaf86\"}",
+            "run.googleapis.com/build-source-location": "{\"worker\":\"gs://gcf-v2-sources-402897578975-us-central1/cs528-hw5-stop-sql/function-source.zip#1792553282054617\"}",
+            "run.googleapis.com/client-name": "gcloud",
+            "run.googleapis.com/operation-id": "ed72cca7-1c1f-499b-ae26-1de86af9fb48",
+            "run.googleapis.com/startup-cpu-boost": "true",
+            "serving.knative.dev/creator": "service-402897578975@gcf-admin-robot.iam.gserviceaccount.com"
+          },
+          "creationTimestamp": "2026-10-21T03:28:31.375757Z",
+          "generation": 1,
+          "labels": {
+            "cloud.googleapis.com/location": "us-central1",
+            "course": "cs528",
+            "goog-cloudfunctions-runtime": "python312",
+            "goog-managed-by": "cloudfunctions",
+            "homework": "hw5",
+            "run.googleapis.com/startupProbeType": "Default",
+            "serving.knative.dev/configuration": "cs528-hw5-stop-sql",
+            "serving.knative.dev/configurationGeneration": "1",
+            "serving.knative.dev/route": "cs528-hw5-stop-sql",
+            "serving.knative.dev/service": "cs528-hw5-stop-sql",
+            "serving.knative.dev/serviceUid": "ec6368ef-e4da-4681-bf3a-fcd781baf032"
+          },
+          "name": "cs528-hw5-stop-sql-00001-hib",
+          "namespace": "402897578975",
+          "ownerReferences": [
+            {
+              "apiVersion": "serving.knative.dev/v1",
+              "blockOwnerDeletion": true,
+              "controller": true,
+              "kind": "Configuration",
+              "name": "cs528-hw5-stop-sql",
+              "uid": "f744a2ab-3404-49b3-91c9-a3b4439d4375"
+            }
+          ],
+          "resourceVersion": "AAZeUVfCrE0",
+          "selfLink": "/apis/serving.knative.dev/v1/namespaces/402897578975/revisions/cs528-hw5-stop-sql-00001-hib",
+          "uid": "7eb10da7-4cd3-4a92-93a7-b60cbff9e462"
+        },
+        "spec": {
+          "containerConcurrency": 1,
+          "containers": [
+            {
+              "env": [
+                {
+                  "name": "PROJECT_ID",
+                  "value": "dazzling-seat-508219-j3"
+                },
+                {
+                  "name": "SQL_INSTANCE",
+                  "value": "cs528-hw5-mysql"
+                },
+                {
+                  "name": "LOG_EXECUTION_ID",
+                  "value": "true"
+                }
+              ],
+              "image": "us-central1-docker.pkg.dev/dazzling-seat-508219-j3/cs528-hw5-functions/dazzling--seat--508219--j3__us--central1__cs528--hw5--stop--sql@sha256:cb2a474b0d273488e54f0b7b1791bcdf8481611f05246b6ef6c23ae379acd94d",
+              "name": "worker",
+              "ports": [
+                {
+                  "containerPort": 8080,
+                  "name": "http1"
+                }
+              ],
+              "resources": {
+                "limits": {
+                  "cpu": "0.1666",
+                  "memory": "256Mi"
+                }
+              },
+              "startupProbe": {
+                "failureThreshold": 1,
+                "periodSeconds": 240,
+                "tcpSocket": {
+                  "port": 8080
+                },
+                "timeoutSeconds": 240
+              }
+            }
+          ],
+          "runtimeClassName": "run.googleapis.com/linux-base-image-update",
+          "serviceAccountName": "cs528-hw5-guard@dazzling-seat-508219-j3.iam.gserviceaccount.com",
+          "timeoutSeconds": 60
+        },
+        "status": {
+          "conditions": [
+            {
+              "lastTransitionTime": "2026-10-21T03:28:38.001741Z",
+              "message": "Deploying revision succeeded in 6.62s.",
+              "status": "True",
+              "type": "Ready"
+            },
+            {
+              "lastTransitionTime": "2026-10-21T03:28:37.949300Z",
+              "message": "Containers became healthy in 1.57s.",
+              "status": "True",
+              "type": "ContainerHealthy"
+            },
+            {
+              "lastTransitionTime": "2026-10-21T03:28:33.373732Z",
+              "message": "Container image import completed in 1.27s.",
+              "status": "True",
+              "type": "ContainerReady"
+            },
+            {
+              "lastTransitionTime": "2026-10-21T03:28:36.120643Z",
+              "message": "Provisioning imported containers completed in 2.75s. Checking container health. This will wait for up to 4m for the configured startup probe, including an initial delay of 0s.",
+              "status": "True",
+              "type": "ResourcesAvailable"
+            }
+          ],
+          "containerStatuses": [
+            {
+              "imageDigest": "us-central1-docker.pkg.dev/dazzling-seat-508219-j3/cs528-hw5-functions/dazzling--seat--508219--j3__us--central1__cs528--hw5--stop--sql@sha256:cb2a474b0d273488e54f0b7b1791bcdf8481611f05246b6ef6c23ae379acd94d",
+              "name": "worker"
+            }
+          ],
+          "imageDigest": "us-central1-docker.pkg.dev/dazzling-seat-508219-j3/cs528-hw5-functions/dazzling--seat--508219--j3__us--central1__cs528--hw5--stop--sql@sha256:cb2a474b0d273488e54f0b7b1791bcdf8481611f05246b6ef6c23ae379acd94d",
+          "logUrl": "https://console.cloud.google.com/logs/viewer?project=dazzling-seat-508219-j3&resource=cloud_run_revision/service_name/cs528-hw5-stop-sql/revision_name/cs528-hw5-stop-sql-00001-hib&advancedFilter=resource.type%3D%22cloud_run_revision%22%0Aresource.labels.service_name%3D%22cs528-hw5-stop-sql%22%0Aresource.labels.revision_name%3D%22cs528-hw5-stop-sql-00001-hib%22",
+          "observedGeneration": 1
+        }
+      },
+      "serviceName": "run.googleapis.com",
+      "status": {
+        "message": "Ready condition status changed to True for Revision cs528-hw5-stop-sql-00001-hib with message: Deploying revision succeeded in 6.62s."
+      }
+    },
+    "receiveTimestamp": "2026-10-21T03:28:38.931212137Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "cs528-hw5-stop-sql",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3",
+        "revision_name": "cs528-hw5-stop-sql-00001-hib",
+        "service_name": "cs528-hw5-stop-sql"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-10-21T03:28:38.013595Z"
+  },
+  {
+    "insertId": "-dt490xdw7sg",
+    "logName": "projects/dazzling-seat-508219-j3/logs/cloudaudit.googleapis.com%2Fsystem_event",
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "methodName": "/InternalServices.CreateInternalService",
+      "resourceName": "namespaces/dazzling-seat-508219-j3/services/cs528-hw5-stop-sql",
+      "response": {
+        "@type": "type.googleapis.com/google.cloud.run.v1.Service",
+        "apiVersion": "serving.knative.dev/v1",
+        "kind": "Service",
+        "metadata": {
+          "annotations": {
+            "cloudfunctions.googleapis.com/function-id": "cs528-hw5-stop-sql",
+            "run.googleapis.com/build-base-image": "us-central1-docker.pkg.dev/serverless-runtimes/google-22-full/runtimes/python312",
+            "run.googleapis.com/build-enable-automatic-updates": "true",
+            "run.googleapis.com/build-function-target": "stop_database",
+            "run.googleapis.com/build-image-uri": "us-central1-docker.pkg.dev/dazzling-seat-508219-j3/cs528-hw5-functions/dazzling--seat--508219--j3__us--central1__cs528--hw5--stop--sql:version_1",
+            "run.googleapis.com/build-name": "projects/402897578975/locations/us-central1/builds/6382c400-9471-45d0-956f-12cd30ceaf86",
+            "run.googleapis.com/build-service-account": "projects/dazzling-seat-508219-j3/serviceAccounts/cs528-hw5-build@dazzling-seat-508219-j3.iam.gserviceaccount.com",
+            "run.googleapis.com/build-source-location": "gs://gcf-v2-sources-402897578975-us-central1/cs528-hw5-stop-sql/function-source.zip#1792553282054617",
+            "run.googleapis.com/client-name": "gcloud",
+            "run.googleapis.com/custom-audiences": "[\"https://us-central1-dazzling-seat-508219-j3.cloudfunctions.net/cs528-hw5-stop-sql\"]",
+            "run.googleapis.com/ingress": "all",
+            "run.googleapis.com/ingress-status": "all",
+            "run.googleapis.com/maxScale": "100",
+            "run.googleapis.com/operation-id": "ed72cca7-1c1f-499b-ae26-1de86af9fb48",
+            "run.googleapis.com/urls": "[\"https://cs528-hw5-stop-sql-402897578975.us-central1.run.app\",\"https://us-central1-dazzling-seat-508219-j3.cloudfunctions.net/cs528-hw5-stop-sql\",\"https://cs528-hw5-stop-sql-sw2da6eioq-uc.a.run.app\"]",
+            "serving.knative.dev/creator": "service-402897578975@gcf-admin-robot.iam.gserviceaccount.com",
+            "serving.knative.dev/lastModifier": "service-402897578975@gcf-admin-robot.iam.gserviceaccount.com"
+          },
+          "creationTimestamp": "2026-10-21T03:28:31.215096Z",
+          "generation": 1,
+          "labels": {
+            "cloud.googleapis.com/location": "us-central1",
+            "course": "cs528",
+            "goog-cloudfunctions-runtime": "python312",
+            "goog-drz-cloudfunctions-id": "cs528-hw5-stop-sql",
+            "goog-drz-cloudfunctions-location": "us-central1",
+            "goog-managed-by": "cloudfunctions",
+            "homework": "hw5"
+          },
+          "name": "cs528-hw5-stop-sql",
+          "namespace": "402897578975",
+          "resourceVersion": "AAZeUVfYBl0",
+          "selfLink": "/apis/serving.knative.dev/v1/namespaces/402897578975/services/cs528-hw5-stop-sql",
+          "uid": "ec6368ef-e4da-4681-bf3a-fcd781baf032"
+        },
+        "spec": {
+          "template": {
+            "metadata": {
+              "annotations": {
+                "autoscaling.knative.dev/maxScale": "1",
+                "cloudfunctions.googleapis.com/trigger-type": "HTTP_TRIGGER",
+                "run.googleapis.com/base-images": "{\"worker\":\"us-central1-docker.pkg.dev/serverless-runtimes/google-22-full/runtimes/python312\"}",
+                "run.googleapis.com/client-name": "gcloud",
+                "run.googleapis.com/startup-cpu-boost": "true"
+              },
+              "labels": {
+                "course": "cs528",
+                "homework": "hw5",
+                "run.googleapis.com/startupProbeType": "Default"
+              },
+              "name": "cs528-hw5-stop-sql-00001-hib"
+            },
+            "spec": {
+              "containerConcurrency": 1,
+              "containers": [
+                {
+                  "env": [
+                    {
+                      "name": "PROJECT_ID",
+                      "value": "dazzling-seat-508219-j3"
+                    },
+                    {
+                      "name": "SQL_INSTANCE",
+                      "value": "cs528-hw5-mysql"
+                    },
+                    {
+                      "name": "LOG_EXECUTION_ID",
+                      "value": "true"
+                    }
+                  ],
+                  "image": "us-central1-docker.pkg.dev/dazzling-seat-508219-j3/cs528-hw5-functions/dazzling--seat--508219--j3__us--central1__cs528--hw5--stop--sql:version_1",
+                  "name": "worker",
+                  "ports": [
+                    {
+                      "containerPort": 8080,
+                      "name": "http1"
+                    }
+                  ],
+                  "resources": {
+                    "limits": {
+                      "cpu": "0.1666",
+                      "memory": "256Mi"
+                    }
+                  },
+                  "startupProbe": {
+                    "failureThreshold": 1,
+                    "periodSeconds": 240,
+                    "tcpSocket": {
+                      "port": 8080
+                    },
+                    "timeoutSeconds": 240
+                  }
+                }
+              ],
+              "runtimeClassName": "run.googleapis.com/linux-base-image-update",
+              "serviceAccountName": "cs528-hw5-guard@dazzling-seat-508219-j3.iam.gserviceaccount.com",
+              "timeoutSeconds": 60
+            }
+          },
+          "traffic": [
+            {
+              "latestRevision": true,
+              "percent": 100
+            }
+          ]
+        },
+        "status": {
+          "address": {
+            "url": "https://cs528-hw5-stop-sql-sw2da6eioq-uc.a.run.app"
+          },
+          "conditions": [
+            {
+              "lastTransitionTime": "2026-10-21T03:28:39.401053Z",
+              "status": "True",
+              "type": "Ready"
+            },
+            {
+              "lastTransitionTime": "2026-10-21T03:28:33.457544Z",
+              "status": "True",
+              "type": "ConfigurationsReady"
+            },
+            {
+              "lastTransitionTime": "2026-10-21T03:28:39.356394Z",
+              "status": "True",
+              "type": "RoutesReady"
+            }
+          ],
+          "latestCreatedRevisionName": "cs528-hw5-stop-sql-00001-hib",
+          "latestReadyRevisionName": "cs528-hw5-stop-sql-00001-hib",
+          "observedGeneration": 1,
+          "traffic": [
+            {
+              "latestRevision": true,
+              "percent": 100,
+              "revisionName": "cs528-hw5-stop-sql-00001-hib"
+            }
+          ],
+          "url": "https://cs528-hw5-stop-sql-sw2da6eioq-uc.a.run.app"
+        }
+      },
+      "serviceName": "run.googleapis.com",
+      "status": {
+        "message": "Ready condition status changed to True for Service cs528-hw5-stop-sql."
+      }
+    },
+    "receiveTimestamp": "2026-10-21T03:28:40.079850733Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3",
+        "revision_name": "",
+        "service_name": "cs528-hw5-stop-sql"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-10-21T03:28:39.417406Z"
+  },
+  {
+    "httpRequest": {
+      "latency": "4.176480358s",
+      "protocol": "HTTP/1.1",
+      "remoteIp": "107.178.194.142",
+      "requestMethod": "POST",
+      "requestSize": "1324",
+      "requestUrl": "https://cs528-hw5-stop-sql-sw2da6eioq-uc.a.run.app/",
+      "responseSize": "230",
+      "serverIp": "34.143.79.2",
+      "status": 200,
+      "userAgent": "Google-Cloud-Scheduler"
+    },
+    "insertId": "6ad839f1000450250832cc3a",
+    "labels": {
+      "course": "cs528",
+      "goog-managed-by": "cloudfunctions",
+      "homework": "hw5",
+      "instanceId": "0010dd8607a3ce33475e860154d43e06e66c5d164688b49305f6baeb8a980b11db04e0c18d8c80b6231972d74d9655e30908773812a9c2597c26fbb61214fe8ed5712b7b12d9e6013f8771da0a5792b17ed2da15ab212d0342"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/run.googleapis.com%2Frequests",
+    "receiveTimestamp": "2026-10-21T04:05:05.294772323Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "cs528-hw5-stop-sql",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3",
+        "revision_name": "cs528-hw5-stop-sql-00001-hib",
+        "service_name": "cs528-hw5-stop-sql"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "spanId": "9e6cf726d6f88405",
+    "timestamp": "2026-10-21T04:05:00.899377Z",
+    "trace": "projects/dazzling-seat-508219-j3/traces/80dd37efa28b244a780ba2d83d4c086d",
+    "traceSampled": true
+  },
+  {
+    "insertId": "6ad839ec000e52fceb9d65c8",
+    "labels": {
+      "course": "cs528",
+      "goog-managed-by": "cloudfunctions",
+      "homework": "hw5",
+      "instanceId": "0010dd8607a3ce33475e860154d43e06e66c5d164688b49305f6baeb8a980b11db04e0c18d8c80b6231972d74d9655e30908773812a9c2597c26fbb61214fe8ed5712b7b12d9e6013f8771da0a5792b17ed2da15ab212d0342",
+      "scaling_reason": "AUTOSCALING"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/run.googleapis.com%2Fvarlog%2Fsystem",
+    "receiveTimestamp": "2026-10-21T04:05:00.949550530Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "cs528-hw5-stop-sql",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3",
+        "revision_name": "cs528-hw5-stop-sql-00001-hib",
+        "service_name": "cs528-hw5-stop-sql"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "textPayload": "Starting new instance. Reason: AUTOSCALING - Instance started due to configured scaling factors (e.g. CPU utilization, request throughput, etc.) or no existing capacity for current traffic.",
+    "timestamp": "2026-10-21T04:05:00.938748Z"
+  },
+  {
+    "insertId": "6ad839ed000e41cf1c02a6db",
+    "labels": {
+      "course": "cs528",
+      "goog-managed-by": "cloudfunctions",
+      "homework": "hw5",
+      "instanceId": "0010dd8607a3ce33475e860154d43e06e66c5d164688b49305f6baeb8a980b11db04e0c18d8c80b6231972d74d9655e30908773812a9c2597c26fbb61214fe8ed5712b7b12d9e6013f8771da0a5792b17ed2da15ab212d0342",
+      "run.googleapis.com/base_image_versions": "us-docker.pkg.dev/serverless-runtimes/google-22-full/runtimes/python312:python312_20260928_3_12_14_RC00"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/run.googleapis.com%2Fvarlog%2Fsystem",
+    "receiveTimestamp": "2026-10-21T04:05:01.949420273Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "cs528-hw5-stop-sql",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3",
+        "revision_name": "cs528-hw5-stop-sql-00001-hib",
+        "service_name": "cs528-hw5-stop-sql"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "textPayload": "Default STARTUP TCP probe succeeded after 1 attempt for container \"worker\" on port 8080.",
+    "timestamp": "2026-10-21T04:05:01.934351Z"
+  },
+  {
+    "httpRequest": {
+      "latency": "1.621284964s",
+      "protocol": "HTTP/1.1",
+      "remoteIp": "35.243.23.68",
+      "requestMethod": "POST",
+      "requestSize": "1326",
+      "requestUrl": "https://cs528-hw5-stop-sql-sw2da6eioq-uc.a.run.app/",
+      "responseSize": "230",
+      "serverIp": "34.143.72.2",
+      "status": 200,
+      "userAgent": "Google-Cloud-Scheduler"
+    },
+    "insertId": "6ad847ff00071a463d7f0297",
+    "labels": {
+      "course": "cs528",
+      "goog-managed-by": "cloudfunctions",
+      "homework": "hw5",
+      "instanceId": "0010dd8607e70fb6960edaf5f8eebd8ddcd51554925a61b74bbcfb5da1454c58304b66eb1f3779ca068424015a962bd8743a4816cc2f65d58527768643a749c4bcb4d3e756086cebc43aa0283466ec8d7b75663e5f7bbe0000"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/run.googleapis.com%2Frequests",
+    "receiveTimestamp": "2026-10-21T05:05:03.472687727Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "cs528-hw5-stop-sql",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3",
+        "revision_name": "cs528-hw5-stop-sql-00001-hib",
+        "service_name": "cs528-hw5-stop-sql"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "spanId": "7d57934a52460562",
+    "timestamp": "2026-10-21T05:05:00.931792Z",
+    "trace": "projects/dazzling-seat-508219-j3/traces/42896de11012286c26bdcc3b842d7aa3",
+    "traceSampled": true
+  },
+  {
+    "insertId": "6ad847fc000ef2487235f567",
+    "labels": {
+      "course": "cs528",
+      "goog-managed-by": "cloudfunctions",
+      "homework": "hw5",
+      "instanceId": "0010dd8607e70fb6960edaf5f8eebd8ddcd51554925a61b74bbcfb5da1454c58304b66eb1f3779ca068424015a962bd8743a4816cc2f65d58527768643a749c4bcb4d3e756086cebc43aa0283466ec8d7b75663e5f7bbe0000",
+      "scaling_reason": "AUTOSCALING"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/run.googleapis.com%2Fvarlog%2Fsystem",
+    "receiveTimestamp": "2026-10-21T05:05:00.991179974Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "cs528-hw5-stop-sql",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3",
+        "revision_name": "cs528-hw5-stop-sql-00001-hib",
+        "service_name": "cs528-hw5-stop-sql"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "textPayload": "Starting new instance. Reason: AUTOSCALING - Instance started due to configured scaling factors (e.g. CPU utilization, request throughput, etc.) or no existing capacity for current traffic.",
+    "timestamp": "2026-10-21T05:05:00.979528Z"
+  },
+  {
+    "insertId": "6ad847fe00085de3868f0f9a",
+    "labels": {
+      "course": "cs528",
+      "goog-managed-by": "cloudfunctions",
+      "homework": "hw5",
+      "instanceId": "0010dd8607e70fb6960edaf5f8eebd8ddcd51554925a61b74bbcfb5da1454c58304b66eb1f3779ca068424015a962bd8743a4816cc2f65d58527768643a749c4bcb4d3e756086cebc43aa0283466ec8d7b75663e5f7bbe0000",
+      "run.googleapis.com/base_image_versions": "us-docker.pkg.dev/serverless-runtimes/google-22-full/runtimes/python312:python312_20260928_3_12_14_RC00"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/run.googleapis.com%2Fvarlog%2Fsystem",
+    "receiveTimestamp": "2026-10-21T05:05:02.655923014Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "cs528-hw5-stop-sql",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3",
+        "revision_name": "cs528-hw5-stop-sql-00001-hib",
+        "service_name": "cs528-hw5-stop-sql"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "textPayload": "Default STARTUP TCP probe succeeded after 1 attempt for container \"worker\" on port 8080.",
+    "timestamp": "2026-10-21T05:05:02.548323Z"
+  },
+  {
+    "httpRequest": {
+      "latency": "1.544095155s",
+      "protocol": "HTTP/1.1",
+      "remoteIp": "107.178.194.228",
+      "requestMethod": "POST",
+      "requestSize": "1332",
+      "requestUrl": "https://cs528-hw5-stop-sql-sw2da6eioq-uc.a.run.app/",
+      "responseSize": "179",
+      "serverIp": "34.143.77.2",
+      "status": 200,
+      "userAgent": "Google-Cloud-Scheduler"
+    },
+    "insertId": "6ad85610000c7c69bab246b3",
+    "labels": {
+      "course": "cs528",
+      "goog-managed-by": "cloudfunctions",
+      "homework": "hw5",
+      "instanceId": "0010dd860779b8027ae64e82e4ec44bc1a7d32dfb3bdc3bf63f2e7a527298c9d39ff9f319b1ffa1c3681478e07638e17a4c34f975c6625bc7195bb1f1a26992b5ddbc90182e1b3c7a7463ca1cb15e38e4f3e8a5ea4eafe4cd1"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/run.googleapis.com%2Frequests",
+    "receiveTimestamp": "2026-10-21T06:05:04.830181300Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "cs528-hw5-stop-sql",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3",
+        "revision_name": "cs528-hw5-stop-sql-00001-hib",
+        "service_name": "cs528-hw5-stop-sql"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "spanId": "6cd378411fb28db3",
+    "timestamp": "2026-10-21T06:05:03.101641Z",
+    "trace": "projects/dazzling-seat-508219-j3/traces/bf48bab0f4e45bf095c80aaf7a4824dd",
+    "traceSampled": true
+  },
+  {
+    "insertId": "6ad8560f00022b9f8239c928",
+    "labels": {
+      "course": "cs528",
+      "goog-managed-by": "cloudfunctions",
+      "homework": "hw5",
+      "instanceId": "0010dd860779b8027ae64e82e4ec44bc1a7d32dfb3bdc3bf63f2e7a527298c9d39ff9f319b1ffa1c3681478e07638e17a4c34f975c6625bc7195bb1f1a26992b5ddbc90182e1b3c7a7463ca1cb15e38e4f3e8a5ea4eafe4cd1",
+      "scaling_reason": "AUTOSCALING"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/run.googleapis.com%2Fvarlog%2Fsystem",
+    "receiveTimestamp": "2026-10-21T06:05:03.151535126Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "cs528-hw5-stop-sql",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3",
+        "revision_name": "cs528-hw5-stop-sql-00001-hib",
+        "service_name": "cs528-hw5-stop-sql"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "textPayload": "Starting new instance. Reason: AUTOSCALING - Instance started due to configured scaling factors (e.g. CPU utilization, request throughput, etc.) or no existing capacity for current traffic.",
+    "timestamp": "2026-10-21T06:05:03.142239Z"
+  },
+  {
+    "insertId": "6ad856100001db602319e91e",
+    "labels": {
+      "course": "cs528",
+      "goog-managed-by": "cloudfunctions",
+      "homework": "hw5",
+      "instanceId": "0010dd860779b8027ae64e82e4ec44bc1a7d32dfb3bdc3bf63f2e7a527298c9d39ff9f319b1ffa1c3681478e07638e17a4c34f975c6625bc7195bb1f1a26992b5ddbc90182e1b3c7a7463ca1cb15e38e4f3e8a5ea4eafe4cd1",
+      "run.googleapis.com/base_image_versions": "us-docker.pkg.dev/serverless-runtimes/google-22-full/runtimes/python312:python312_20260928_3_12_14_RC00"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/run.googleapis.com%2Fvarlog%2Fsystem",
+    "receiveTimestamp": "2026-10-21T06:05:04.157182548Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "cs528-hw5-stop-sql",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3",
+        "revision_name": "cs528-hw5-stop-sql-00001-hib",
+        "service_name": "cs528-hw5-stop-sql"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "textPayload": "Default STARTUP TCP probe succeeded after 1 attempt for container \"worker\" on port 8080.",
+    "timestamp": "2026-10-21T06:05:04.121696Z"
+  },
+  {
+    "httpRequest": {
+      "latency": "6.275028137s",
+      "protocol": "HTTP/1.1",
+      "remoteIp": "35.187.132.203",
+      "requestMethod": "POST",
+      "requestSize": "1326",
+      "requestUrl": "https://cs528-hw5-stop-sql-sw2da6eioq-uc.a.run.app/",
+      "responseSize": "230",
+      "serverIp": "34.143.72.2",
+      "status": 200,
+      "userAgent": "Google-Cloud-Scheduler"
+    },
+    "insertId": "6ad8642300066e847cb45ea0",
+    "labels": {
+      "course": "cs528",
+      "goog-managed-by": "cloudfunctions",
+      "homework": "hw5",
+      "instanceId": "0010dd8607db051785949436986d9f7eb6ee9305086165ea25b4db899315c68c8f4dadc0c096e723b736a2eb66cf68b49abd2ecb40642c7b712f5314f32acc65671a2f7a6a9c62796595b22eb129a215a9dd4e169d64c7"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/run.googleapis.com%2Frequests",
+    "receiveTimestamp": "2026-10-21T07:05:07.429151037Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "cs528-hw5-stop-sql",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3",
+        "revision_name": "cs528-hw5-stop-sql-00001-hib",
+        "service_name": "cs528-hw5-stop-sql"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "spanId": "95b57e239b26581f",
+    "timestamp": "2026-10-21T07:05:00.822694Z",
+    "trace": "projects/dazzling-seat-508219-j3/traces/9156d9ae539b80729dd9da2843c9744d",
+    "traceSampled": true
+  },
+  {
+    "insertId": "6ad8641c000d587de373d6ac",
+    "labels": {
+      "course": "cs528",
+      "goog-managed-by": "cloudfunctions",
+      "homework": "hw5",
+      "instanceId": "0010dd8607db051785949436986d9f7eb6ee9305086165ea25b4db899315c68c8f4dadc0c096e723b736a2eb66cf68b49abd2ecb40642c7b712f5314f32acc65671a2f7a6a9c62796595b22eb129a215a9dd4e169d64c7",
+      "scaling_reason": "AUTOSCALING"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/run.googleapis.com%2Fvarlog%2Fsystem",
+    "receiveTimestamp": "2026-10-21T07:05:00.891595017Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "cs528-hw5-stop-sql",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3",
+        "revision_name": "cs528-hw5-stop-sql-00001-hib",
+        "service_name": "cs528-hw5-stop-sql"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "textPayload": "Starting new instance. Reason: AUTOSCALING - Instance started due to configured scaling factors (e.g. CPU utilization, request throughput, etc.) or no existing capacity for current traffic.",
+    "timestamp": "2026-10-21T07:05:00.874621Z"
+  },
+  {
+    "insertId": "6ad864220002aaf9a9c5f8a6",
+    "labels": {
+      "course": "cs528",
+      "goog-managed-by": "cloudfunctions",
+      "homework": "hw5",
+      "instanceId": "0010dd8607db051785949436986d9f7eb6ee9305086165ea25b4db899315c68c8f4dadc0c096e723b736a2eb66cf68b49abd2ecb40642c7b712f5314f32acc65671a2f7a6a9c62796595b22eb129a215a9dd4e169d64c7",
+      "run.googleapis.com/base_image_versions": "us-docker.pkg.dev/serverless-runtimes/google-22-full/runtimes/python312:python312_20260928_3_12_14_RC00"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/run.googleapis.com%2Fvarlog%2Fsystem",
+    "receiveTimestamp": "2026-10-21T07:05:06.212177750Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "cs528-hw5-stop-sql",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3",
+        "revision_name": "cs528-hw5-stop-sql-00001-hib",
+        "service_name": "cs528-hw5-stop-sql"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "textPayload": "Default STARTUP TCP probe succeeded after 1 attempt for container \"worker\" on port 8080.",
+    "timestamp": "2026-10-21T07:05:06.174841Z"
+  },
+  {
+    "errorGroups": [
+      {
+        "id": "CKqF4cGSuODxngE"
+      }
+    ],
+    "httpRequest": {
+      "latency": "0s",
+      "protocol": "HTTP/1.1",
+      "remoteIp": "107.178.194.232",
+      "requestMethod": "POST",
+      "requestSize": "1325",
+      "requestUrl": "https://cs528-hw5-stop-sql-sw2da6eioq-uc.a.run.app/",
+      "serverIp": "34.143.73.2",
+      "status": 500,
+      "userAgent": "Google-Cloud-Scheduler"
+    },
+    "insertId": "6ad89c6c000326194bb00872",
+    "labels": {
+      "course": "cs528",
+      "goog-managed-by": "cloudfunctions",
+      "homework": "hw5"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/run.googleapis.com%2Frequests",
+    "receiveTimestamp": "2026-10-21T11:05:16.218516343Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "cs528-hw5-stop-sql",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3",
+        "revision_name": "cs528-hw5-stop-sql-00001-hib",
+        "service_name": "cs528-hw5-stop-sql"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "ERROR",
+    "spanId": "b2c0c11456053099",
+    "textPayload": "The request was aborted because there was no available instance. Additional troubleshooting documentation can be found at: https://cloud.google.com/run/docs/troubleshooting#abort-request",
+    "timestamp": "2026-10-21T11:05:00.964124Z",
+    "trace": "projects/dazzling-seat-508219-j3/traces/4f46d78dfe3c1973abb8b5ee8cac6d54"
+  },
+  {
+    "httpRequest": {
+      "latency": "1.570123966s",
+      "protocol": "HTTP/1.1",
+      "remoteIp": "35.243.23.137",
+      "requestMethod": "POST",
+      "requestSize": "1326",
+      "requestUrl": "https://cs528-hw5-stop-sql-sw2da6eioq-uc.a.run.app/",
+      "responseSize": "230",
+      "serverIp": "34.143.74.2",
+      "status": 200,
+      "userAgent": "Google-Cloud-Scheduler"
+    },
+    "insertId": "6ad89c7a00034a2ed97c290c",
+    "labels": {
+      "course": "cs528",
+      "goog-managed-by": "cloudfunctions",
+      "homework": "hw5",
+      "instanceId": "0010dd8607b10f4d779db5813104bd7ffb4da4f3d0aaa5b06b82c238c4652b87542f4e53900a5c5869250fa05ece92ddb9775ee7b30ecfc50f5c7519638604303b198536ebd36444fce047c3372ba0f07431f5b339b415"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/run.googleapis.com%2Frequests",
+    "receiveTimestamp": "2026-10-21T11:05:30.227471504Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "cs528-hw5-stop-sql",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3",
+        "revision_name": "cs528-hw5-stop-sql-00001-hib",
+        "service_name": "cs528-hw5-stop-sql"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "spanId": "4e8237fd4a3f6cf5",
+    "timestamp": "2026-10-21T11:05:21.761684Z",
+    "trace": "projects/dazzling-seat-508219-j3/traces/8a4e2c30dabac171e875f456755e916f"
+  },
+  {
+    "insertId": "6ad89c76000ca213832c9936",
+    "labels": {
+      "course": "cs528",
+      "goog-managed-by": "cloudfunctions",
+      "homework": "hw5",
+      "instanceId": "0010dd8607b10f4d779db5813104bd7ffb4da4f3d0aaa5b06b82c238c4652b87542f4e53900a5c5869250fa05ece92ddb9775ee7b30ecfc50f5c7519638604303b198536ebd36444fce047c3372ba0f07431f5b339b415",
+      "scaling_reason": "AUTOSCALING"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/run.googleapis.com%2Fvarlog%2Fsystem",
+    "receiveTimestamp": "2026-10-21T11:05:26.838579053Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "cs528-hw5-stop-sql",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3",
+        "revision_name": "cs528-hw5-stop-sql-00001-hib",
+        "service_name": "cs528-hw5-stop-sql"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "textPayload": "Starting new instance. Reason: AUTOSCALING - Instance started due to configured scaling factors (e.g. CPU utilization, request throughput, etc.) or no existing capacity for current traffic.",
+    "timestamp": "2026-10-21T11:05:26.827923Z"
+  },
+  {
+    "insertId": "6ad89c780009b8219b79f9e9",
+    "labels": {
+      "course": "cs528",
+      "goog-managed-by": "cloudfunctions",
+      "homework": "hw5",
+      "instanceId": "0010dd8607b10f4d779db5813104bd7ffb4da4f3d0aaa5b06b82c238c4652b87542f4e53900a5c5869250fa05ece92ddb9775ee7b30ecfc50f5c7519638604303b198536ebd36444fce047c3372ba0f07431f5b339b415",
+      "run.googleapis.com/base_image_versions": "us-docker.pkg.dev/serverless-runtimes/google-22-full/runtimes/python312:python312_20260928_3_12_14_RC00"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/run.googleapis.com%2Fvarlog%2Fsystem",
+    "receiveTimestamp": "2026-10-21T11:05:28.837012722Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "cs528-hw5-stop-sql",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3",
+        "revision_name": "cs528-hw5-stop-sql-00001-hib",
+        "service_name": "cs528-hw5-stop-sql"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "textPayload": "Default STARTUP TCP probe succeeded after 1 attempt for container \"worker\" on port 8080.",
+    "timestamp": "2026-10-21T11:05:28.636961Z"
+  },
+  {
+    "httpRequest": {
+      "latency": "2.237818408s",
+      "protocol": "HTTP/1.1",
+      "remoteIp": "35.187.132.44",
+      "requestMethod": "POST",
+      "requestSize": "1331",
+      "requestUrl": "https://cs528-hw5-stop-sql-sw2da6eioq-uc.a.run.app/",
+      "responseSize": "179",
+      "serverIp": "34.143.73.2",
+      "status": 200,
+      "userAgent": "Google-Cloud-Scheduler"
+    },
+    "insertId": "6ad8aa75000b56e150e76ca0",
+    "labels": {
+      "course": "cs528",
+      "goog-managed-by": "cloudfunctions",
+      "homework": "hw5",
+      "instanceId": "0010dd8607b87f8f74ed61e339a481b137440ea717823e235ca507c63daea50dfe1917b9e7383713de94c9a22afedc3159f93298bf53b76dfd72099277e819a9f76d472fba1b2e82d53cd15f36f4153ee1321375cf19f7"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/run.googleapis.com%2Frequests",
+    "receiveTimestamp": "2026-10-21T12:05:09.751189935Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "cs528-hw5-stop-sql",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3",
+        "revision_name": "cs528-hw5-stop-sql-00001-hib",
+        "service_name": "cs528-hw5-stop-sql"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "spanId": "e19bbcf9cd740c54",
+    "timestamp": "2026-10-21T12:05:07.299029Z",
+    "trace": "projects/dazzling-seat-508219-j3/traces/1090cfd976b8de556859c8f34dec2f2c",
+    "traceSampled": true
+  },
+  {
+    "insertId": "6ad8aa7300055690164267f9",
+    "labels": {
+      "course": "cs528",
+      "goog-managed-by": "cloudfunctions",
+      "homework": "hw5",
+      "instanceId": "0010dd8607b87f8f74ed61e339a481b137440ea717823e235ca507c63daea50dfe1917b9e7383713de94c9a22afedc3159f93298bf53b76dfd72099277e819a9f76d472fba1b2e82d53cd15f36f4153ee1321375cf19f7",
+      "scaling_reason": "AUTOSCALING"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/run.googleapis.com%2Fvarlog%2Fsystem",
+    "receiveTimestamp": "2026-10-21T12:05:07.362675627Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "cs528-hw5-stop-sql",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3",
+        "revision_name": "cs528-hw5-stop-sql-00001-hib",
+        "service_name": "cs528-hw5-stop-sql"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "textPayload": "Starting new instance. Reason: AUTOSCALING - Instance started due to configured scaling factors (e.g. CPU utilization, request throughput, etc.) or no existing capacity for current traffic.",
+    "timestamp": "2026-10-21T12:05:07.349840Z"
+  },
+  {
+    "insertId": "6ad8aa74000b8ee57a43ced4",
+    "labels": {
+      "course": "cs528",
+      "goog-managed-by": "cloudfunctions",
+      "homework": "hw5",
+      "instanceId": "0010dd8607b87f8f74ed61e339a481b137440ea717823e235ca507c63daea50dfe1917b9e7383713de94c9a22afedc3159f93298bf53b76dfd72099277e819a9f76d472fba1b2e82d53cd15f36f4153ee1321375cf19f7",
+      "run.googleapis.com/base_image_versions": "us-docker.pkg.dev/serverless-runtimes/google-22-full/runtimes/python312:python312_20260928_3_12_14_RC00"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/run.googleapis.com%2Fvarlog%2Fsystem",
+    "receiveTimestamp": "2026-10-21T12:05:09.024723202Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "cs528-hw5-stop-sql",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3",
+        "revision_name": "cs528-hw5-stop-sql-00001-hib",
+        "service_name": "cs528-hw5-stop-sql"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "textPayload": "Default STARTUP TCP probe succeeded after 1 attempt for container \"worker\" on port 8080.",
+    "timestamp": "2026-10-21T12:05:08.757477Z"
+  },
+  {
+    "httpRequest": {
+      "latency": "1.788080695s",
+      "protocol": "HTTP/1.1",
+      "remoteIp": "35.243.23.205",
+      "requestMethod": "POST",
+      "requestSize": "1332",
+      "requestUrl": "https://cs528-hw5-stop-sql-sw2da6eioq-uc.a.run.app/",
+      "responseSize": "179",
+      "serverIp": "34.143.72.2",
+      "status": 200,
+      "userAgent": "Google-Cloud-Scheduler"
+    },
+    "insertId": "6ad8b892000b4ecebcf5bb71",
+    "labels": {
+      "course": "cs528",
+      "goog-managed-by": "cloudfunctions",
+      "homework": "hw5",
+      "instanceId": "0010dd860728df3edb276bd6d937700ba3474fb76bbcf2ceb038acd4a4112c486fc910d7f691e6ae8c9ef453810b1e42e00ca99ddd68aec99090661e090b24939d2f5ba254548b029bea9305e5e829ca04264fc111cfee40"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/run.googleapis.com%2Frequests",
+    "receiveTimestamp": "2026-10-21T13:05:22.766117732Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "cs528-hw5-stop-sql",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3",
+        "revision_name": "cs528-hw5-stop-sql-00001-hib",
+        "service_name": "cs528-hw5-stop-sql"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "spanId": "f7efddba4144b025",
+    "timestamp": "2026-10-21T13:05:20.734597Z",
+    "trace": "projects/dazzling-seat-508219-j3/traces/d6ed08b551a02b33e1397dee6b573485",
+    "traceSampled": true
+  },
+  {
+    "insertId": "6ad8b890000bed66712a7077",
+    "labels": {
+      "course": "cs528",
+      "goog-managed-by": "cloudfunctions",
+      "homework": "hw5",
+      "instanceId": "0010dd860728df3edb276bd6d937700ba3474fb76bbcf2ceb038acd4a4112c486fc910d7f691e6ae8c9ef453810b1e42e00ca99ddd68aec99090661e090b24939d2f5ba254548b029bea9305e5e829ca04264fc111cfee40",
+      "scaling_reason": "AUTOSCALING"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/run.googleapis.com%2Fvarlog%2Fsystem",
+    "receiveTimestamp": "2026-10-21T13:05:20.792808599Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "cs528-hw5-stop-sql",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3",
+        "revision_name": "cs528-hw5-stop-sql-00001-hib",
+        "service_name": "cs528-hw5-stop-sql"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "textPayload": "Starting new instance. Reason: AUTOSCALING - Instance started due to configured scaling factors (e.g. CPU utilization, request throughput, etc.) or no existing capacity for current traffic.",
+    "timestamp": "2026-10-21T13:05:20.781670Z"
+  },
+  {
+    "insertId": "6ad8b891000d95db98f3106d",
+    "labels": {
+      "course": "cs528",
+      "goog-managed-by": "cloudfunctions",
+      "homework": "hw5",
+      "instanceId": "0010dd860728df3edb276bd6d937700ba3474fb76bbcf2ceb038acd4a4112c486fc910d7f691e6ae8c9ef453810b1e42e00ca99ddd68aec99090661e090b24939d2f5ba254548b029bea9305e5e829ca04264fc111cfee40",
+      "run.googleapis.com/base_image_versions": "us-docker.pkg.dev/serverless-runtimes/google-22-full/runtimes/python312:python312_20260928_3_12_14_RC00"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/run.googleapis.com%2Fvarlog%2Fsystem",
+    "receiveTimestamp": "2026-10-21T13:05:22.123889652Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "cs528-hw5-stop-sql",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3",
+        "revision_name": "cs528-hw5-stop-sql-00001-hib",
+        "service_name": "cs528-hw5-stop-sql"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "textPayload": "Default STARTUP TCP probe succeeded after 1 attempt for container \"worker\" on port 8080.",
+    "timestamp": "2026-10-21T13:05:21.890331Z"
+  },
+  {
+    "httpRequest": {
+      "latency": "1.785314215s",
+      "protocol": "HTTP/1.1",
+      "remoteIp": "107.178.194.36",
+      "requestMethod": "POST",
+      "requestSize": "1356",
+      "requestUrl": "https://cs528-hw5-stop-sql-sw2da6eioq-uc.a.run.app/",
+      "responseSize": "179",
+      "serverIp": "34.143.75.2",
+      "status": 200,
+      "userAgent": "Google-Cloud-Scheduler"
+    },
+    "insertId": "6ad8c6a4000692b87db6ee1d",
+    "labels": {
+      "course": "cs528",
+      "goog-managed-by": "cloudfunctions",
+      "homework": "hw5",
+      "instanceId": "0010dd8607a8f6687b3870a165b87f80f1e4737576b5d913088c6e9a6df9c7db38751864cdcb9e9f1d15618c0831f49606504e1a16e6d332ca3e318868f039a0ece38cb98b6c97aa3604baf5f86fe576d8d6c7ffdd498601"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/run.googleapis.com%2Frequests",
+    "receiveTimestamp": "2026-10-21T14:05:24.441058286Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "cs528-hw5-stop-sql",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3",
+        "revision_name": "cs528-hw5-stop-sql-00001-hib",
+        "service_name": "cs528-hw5-stop-sql"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "spanId": "db22cf7dd9ef0db7",
+    "timestamp": "2026-10-21T14:05:22.446901Z",
+    "trace": "projects/dazzling-seat-508219-j3/traces/cd203bcb02cb8f7f2391ecdbcf3b55e3",
+    "traceSampled": true
+  },
+  {
+    "insertId": "6ad8c6a20007dbff680003ec",
+    "labels": {
+      "course": "cs528",
+      "goog-managed-by": "cloudfunctions",
+      "homework": "hw5",
+      "instanceId": "0010dd8607a8f6687b3870a165b87f80f1e4737576b5d913088c6e9a6df9c7db38751864cdcb9e9f1d15618c0831f49606504e1a16e6d332ca3e318868f039a0ece38cb98b6c97aa3604baf5f86fe576d8d6c7ffdd498601",
+      "scaling_reason": "AUTOSCALING"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/run.googleapis.com%2Fvarlog%2Fsystem",
+    "receiveTimestamp": "2026-10-21T14:05:22.524506763Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "cs528-hw5-stop-sql",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3",
+        "revision_name": "cs528-hw5-stop-sql-00001-hib",
+        "service_name": "cs528-hw5-stop-sql"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "textPayload": "Starting new instance. Reason: AUTOSCALING - Instance started due to configured scaling factors (e.g. CPU utilization, request throughput, etc.) or no existing capacity for current traffic.",
+    "timestamp": "2026-10-21T14:05:22.515071Z"
+  },
+  {
+    "insertId": "6ad8c6a30009be265caed569",
+    "labels": {
+      "course": "cs528",
+      "goog-managed-by": "cloudfunctions",
+      "homework": "hw5",
+      "instanceId": "0010dd8607a8f6687b3870a165b87f80f1e4737576b5d913088c6e9a6df9c7db38751864cdcb9e9f1d15618c0831f49606504e1a16e6d332ca3e318868f039a0ece38cb98b6c97aa3604baf5f86fe576d8d6c7ffdd498601",
+      "run.googleapis.com/base_image_versions": "us-docker.pkg.dev/serverless-runtimes/google-22-full/runtimes/python312:python312_20260928_3_12_14_RC00"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/run.googleapis.com%2Fvarlog%2Fsystem",
+    "receiveTimestamp": "2026-10-21T14:05:23.855470290Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "cs528-hw5-stop-sql",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3",
+        "revision_name": "cs528-hw5-stop-sql-00001-hib",
+        "service_name": "cs528-hw5-stop-sql"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "textPayload": "Default STARTUP TCP probe succeeded after 1 attempt for container \"worker\" on port 8080.",
+    "timestamp": "2026-10-21T14:05:23.638502Z"
+  },
+  {
+    "httpRequest": {
+      "latency": "4.850966563s",
+      "protocol": "HTTP/1.1",
+      "remoteIp": "34.127.136.228",
+      "requestMethod": "POST",
+      "requestSize": "1332",
+      "requestUrl": "https://cs528-hw5-stop-sql-sw2da6eioq-uc.a.run.app/",
+      "responseSize": "179",
+      "serverIp": "34.143.79.2",
+      "status": 200,
+      "userAgent": "Google-Cloud-Scheduler"
+    },
+    "insertId": "6ad8d4b0000c29272aad9168",
+    "labels": {
+      "course": "cs528",
+      "goog-managed-by": "cloudfunctions",
+      "homework": "hw5",
+      "instanceId": "0010dd8607c858e0a0abfcd6b817cbb9ac72dc39849dc7894ff4548c6364d0dfefda21a5dc700204186896b633fe2b6ed2c6999e7fa0d65d5fa40d73acb38175db5158a6ca530478fd44d8831e95f39c39408cc69c2c1c70"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/run.googleapis.com%2Frequests",
+    "receiveTimestamp": "2026-10-21T15:05:20.807537059Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "cs528-hw5-stop-sql",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3",
+        "revision_name": "cs528-hw5-stop-sql-00001-hib",
+        "service_name": "cs528-hw5-stop-sql"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "spanId": "d8c067420f282ad3",
+    "timestamp": "2026-10-21T15:05:15.651451Z",
+    "trace": "projects/dazzling-seat-508219-j3/traces/ddb614a9ab811f7e69a3062157231194",
+    "traceSampled": true
+  },
+  {
+    "insertId": "6ad8d4ab000b1bdcf83778c2",
+    "labels": {
+      "course": "cs528",
+      "goog-managed-by": "cloudfunctions",
+      "homework": "hw5",
+      "instanceId": "0010dd8607c858e0a0abfcd6b817cbb9ac72dc39849dc7894ff4548c6364d0dfefda21a5dc700204186896b633fe2b6ed2c6999e7fa0d65d5fa40d73acb38175db5158a6ca530478fd44d8831e95f39c39408cc69c2c1c70",
+      "scaling_reason": "AUTOSCALING"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/run.googleapis.com%2Fvarlog%2Fsystem",
+    "receiveTimestamp": "2026-10-21T15:05:15.750595397Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "cs528-hw5-stop-sql",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3",
+        "revision_name": "cs528-hw5-stop-sql-00001-hib",
+        "service_name": "cs528-hw5-stop-sql"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "textPayload": "Starting new instance. Reason: AUTOSCALING - Instance started due to configured scaling factors (e.g. CPU utilization, request throughput, etc.) or no existing capacity for current traffic.",
+    "timestamp": "2026-10-21T15:05:15.728028Z"
+  },
+  {
+    "insertId": "6ad8d4ad00067bdf642f3d1d",
+    "labels": {
+      "course": "cs528",
+      "goog-managed-by": "cloudfunctions",
+      "homework": "hw5",
+      "instanceId": "0010dd8607c858e0a0abfcd6b817cbb9ac72dc39849dc7894ff4548c6364d0dfefda21a5dc700204186896b633fe2b6ed2c6999e7fa0d65d5fa40d73acb38175db5158a6ca530478fd44d8831e95f39c39408cc69c2c1c70",
+      "run.googleapis.com/base_image_versions": "us-docker.pkg.dev/serverless-runtimes/google-22-full/runtimes/python312:python312_20260928_3_12_14_RC00"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/run.googleapis.com%2Fvarlog%2Fsystem",
+    "receiveTimestamp": "2026-10-21T15:05:17.735292149Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "cs528-hw5-stop-sql",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3",
+        "revision_name": "cs528-hw5-stop-sql-00001-hib",
+        "service_name": "cs528-hw5-stop-sql"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "textPayload": "Default STARTUP TCP probe succeeded after 1 attempt for container \"worker\" on port 8080.",
+    "timestamp": "2026-10-21T15:05:17.424927Z"
+  },
+  {
+    "httpRequest": {
+      "latency": "1.426372279s",
+      "protocol": "HTTP/1.1",
+      "remoteIp": "34.116.39.137",
+      "requestMethod": "POST",
+      "requestSize": "1331",
+      "requestUrl": "https://cs528-hw5-stop-sql-sw2da6eioq-uc.a.run.app/",
+      "responseSize": "179",
+      "serverIp": "34.143.72.2",
+      "status": 200,
+      "userAgent": "Google-Cloud-Scheduler"
+    },
+    "insertId": "6ad8e2b4000d0a4582cb22aa",
+    "labels": {
+      "course": "cs528",
+      "goog-managed-by": "cloudfunctions",
+      "homework": "hw5",
+      "instanceId": "0010dd8607fa65d3928eff4d618929c930d105c7430a38c60e97f805557ea48f4addc907f5b9f0416e0bbe1e10433956add972c8936801c741d4e9ed7f92e4b17ce7c4b525202efa4040fc8a139f1f6e396ab6d9ddd6f32a"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/run.googleapis.com%2Frequests",
+    "receiveTimestamp": "2026-10-21T16:05:08.866080119Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "cs528-hw5-stop-sql",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3",
+        "revision_name": "cs528-hw5-stop-sql-00001-hib",
+        "service_name": "cs528-hw5-stop-sql"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "spanId": "8a65016cd8ee43d1",
+    "timestamp": "2026-10-21T16:05:07.216424Z",
+    "trace": "projects/dazzling-seat-508219-j3/traces/0963ff6d0920a463124cec637ce975ba",
+    "traceSampled": true
+  },
+  {
+    "insertId": "6ad8e2b30004174649a12dfe",
+    "labels": {
+      "course": "cs528",
+      "goog-managed-by": "cloudfunctions",
+      "homework": "hw5",
+      "instanceId": "0010dd8607fa65d3928eff4d618929c930d105c7430a38c60e97f805557ea48f4addc907f5b9f0416e0bbe1e10433956add972c8936801c741d4e9ed7f92e4b17ce7c4b525202efa4040fc8a139f1f6e396ab6d9ddd6f32a",
+      "scaling_reason": "AUTOSCALING"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/run.googleapis.com%2Fvarlog%2Fsystem",
+    "receiveTimestamp": "2026-10-21T16:05:07.279259436Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "cs528-hw5-stop-sql",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3",
+        "revision_name": "cs528-hw5-stop-sql-00001-hib",
+        "service_name": "cs528-hw5-stop-sql"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "textPayload": "Starting new instance. Reason: AUTOSCALING - Instance started due to configured scaling factors (e.g. CPU utilization, request throughput, etc.) or no existing capacity for current traffic.",
+    "timestamp": "2026-10-21T16:05:07.268102Z"
+  },
+  {
+    "insertId": "6ad8e2b400026f8bb97bcd54",
+    "labels": {
+      "course": "cs528",
+      "goog-managed-by": "cloudfunctions",
+      "homework": "hw5",
+      "instanceId": "0010dd8607fa65d3928eff4d618929c930d105c7430a38c60e97f805557ea48f4addc907f5b9f0416e0bbe1e10433956add972c8936801c741d4e9ed7f92e4b17ce7c4b525202efa4040fc8a139f1f6e396ab6d9ddd6f32a",
+      "run.googleapis.com/base_image_versions": "us-docker.pkg.dev/serverless-runtimes/google-22-full/runtimes/python312:python312_20260928_3_12_14_RC00"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/run.googleapis.com%2Fvarlog%2Fsystem",
+    "receiveTimestamp": "2026-10-21T16:05:08.288777124Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "cs528-hw5-stop-sql",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3",
+        "revision_name": "cs528-hw5-stop-sql-00001-hib",
+        "service_name": "cs528-hw5-stop-sql"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "textPayload": "Default STARTUP TCP probe succeeded after 1 attempt for container \"worker\" on port 8080.",
+    "timestamp": "2026-10-21T16:05:08.159627Z"
+  },
+  {
+    "httpRequest": {
+      "latency": "1.544545553s",
+      "protocol": "HTTP/1.1",
+      "remoteIp": "35.187.132.194",
+      "requestMethod": "POST",
+      "requestSize": "1332",
+      "requestUrl": "https://cs528-hw5-stop-sql-sw2da6eioq-uc.a.run.app/",
+      "responseSize": "179",
+      "serverIp": "34.143.75.2",
+      "status": 200,
+      "userAgent": "Google-Cloud-Scheduler"
+    },
+    "insertId": "6ad8f0c5000e419f71794d3b",
+    "labels": {
+      "course": "cs528",
+      "goog-managed-by": "cloudfunctions",
+      "homework": "hw5",
+      "instanceId": "0010dd8607cbd9ac6ad7cd09fb4343a392672a121b7ce0c931668d572071d3b510e7c76f78e8c13c6c00ac46962e92d400f94a562b564758eb1f803958f7af11d61ce7af8d314c968c30eca88debb5ee3134cb68115ccfc1"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/run.googleapis.com%2Frequests",
+    "receiveTimestamp": "2026-10-21T17:05:09.944666548Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "cs528-hw5-stop-sql",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3",
+        "revision_name": "cs528-hw5-stop-sql-00001-hib",
+        "service_name": "cs528-hw5-stop-sql"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "spanId": "22a5f16b6bc41a34",
+    "timestamp": "2026-10-21T17:05:08.110084Z",
+    "trace": "projects/dazzling-seat-508219-j3/traces/cc6f59b4b2a58e5e8ac4ab82594092eb",
+    "traceSampled": true
+  },
+  {
+    "insertId": "6ad8f0c40002ed772e47ef24",
+    "labels": {
+      "course": "cs528",
+      "goog-managed-by": "cloudfunctions",
+      "homework": "hw5",
+      "instanceId": "0010dd8607cbd9ac6ad7cd09fb4343a392672a121b7ce0c931668d572071d3b510e7c76f78e8c13c6c00ac46962e92d400f94a562b564758eb1f803958f7af11d61ce7af8d314c968c30eca88debb5ee3134cb68115ccfc1",
+      "scaling_reason": "AUTOSCALING"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/run.googleapis.com%2Fvarlog%2Fsystem",
+    "receiveTimestamp": "2026-10-21T17:05:08.210339933Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "cs528-hw5-stop-sql",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3",
+        "revision_name": "cs528-hw5-stop-sql-00001-hib",
+        "service_name": "cs528-hw5-stop-sql"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "textPayload": "Starting new instance. Reason: AUTOSCALING - Instance started due to configured scaling factors (e.g. CPU utilization, request throughput, etc.) or no existing capacity for current traffic.",
+    "timestamp": "2026-10-21T17:05:08.191863Z"
+  },
+  {
+    "insertId": "6ad8f0c500028b81f7e23c80",
+    "labels": {
+      "course": "cs528",
+      "goog-managed-by": "cloudfunctions",
+      "homework": "hw5",
+      "instanceId": "0010dd8607cbd9ac6ad7cd09fb4343a392672a121b7ce0c931668d572071d3b510e7c76f78e8c13c6c00ac46962e92d400f94a562b564758eb1f803958f7af11d61ce7af8d314c968c30eca88debb5ee3134cb68115ccfc1",
+      "run.googleapis.com/base_image_versions": "us-docker.pkg.dev/serverless-runtimes/google-22-full/runtimes/python312:python312_20260928_3_12_14_RC00"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/run.googleapis.com%2Fvarlog%2Fsystem",
+    "receiveTimestamp": "2026-10-21T17:05:09.202898572Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "cs528-hw5-stop-sql",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3",
+        "revision_name": "cs528-hw5-stop-sql-00001-hib",
+        "service_name": "cs528-hw5-stop-sql"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "textPayload": "Default STARTUP TCP probe succeeded after 1 attempt for container \"worker\" on port 8080.",
+    "timestamp": "2026-10-21T17:05:09.166785Z"
+  },
+  {
+    "httpRequest": {
+      "latency": "1.746424216s",
+      "protocol": "HTTP/1.1",
+      "remoteIp": "34.98.143.99",
+      "requestMethod": "POST",
+      "requestSize": "1332",
+      "requestUrl": "https://cs528-hw5-stop-sql-sw2da6eioq-uc.a.run.app/",
+      "responseSize": "179",
+      "serverIp": "34.143.75.2",
+      "status": 200,
+      "userAgent": "Google-Cloud-Scheduler"
+    },
+    "insertId": "6ad8fee8000e53c339b808e4",
+    "labels": {
+      "course": "cs528",
+      "goog-managed-by": "cloudfunctions",
+      "homework": "hw5",
+      "instanceId": "0010dd8607e6a78ba1d80dddc9d403ec5fa4c8afb6d62a2d8f225a8db3dcb275c237cc4f9f8a49c3dc2db06ecf690d2d77a1a0cb299731e17ece607ea806c3051ebd115674e26b8482786bbdafd7e20d473b46af2470333e"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/run.googleapis.com%2Frequests",
+    "receiveTimestamp": "2026-10-21T18:05:28.951136658Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "cs528-hw5-stop-sql",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3",
+        "revision_name": "cs528-hw5-stop-sql-00001-hib",
+        "service_name": "cs528-hw5-stop-sql"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "spanId": "a727db9d3b881ee8",
+    "timestamp": "2026-10-21T18:05:19.051471Z",
+    "trace": "projects/dazzling-seat-508219-j3/traces/bd04af361994dc8a3f0d58ab4fa49714"
+  },
+  {
+    "insertId": "6ad8fee40001826c43d804b7",
+    "labels": {
+      "course": "cs528",
+      "goog-managed-by": "cloudfunctions",
+      "homework": "hw5",
+      "instanceId": "0010dd8607e6a78ba1d80dddc9d403ec5fa4c8afb6d62a2d8f225a8db3dcb275c237cc4f9f8a49c3dc2db06ecf690d2d77a1a0cb299731e17ece607ea806c3051ebd115674e26b8482786bbdafd7e20d473b46af2470333e",
+      "scaling_reason": "AUTOSCALING"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/run.googleapis.com%2Fvarlog%2Fsystem",
+    "receiveTimestamp": "2026-10-21T18:05:24.108771828Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "cs528-hw5-stop-sql",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3",
+        "revision_name": "cs528-hw5-stop-sql-00001-hib",
+        "service_name": "cs528-hw5-stop-sql"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "textPayload": "Starting new instance. Reason: AUTOSCALING - Instance started due to configured scaling factors (e.g. CPU utilization, request throughput, etc.) or no existing capacity for current traffic.",
+    "timestamp": "2026-10-21T18:05:24.098924Z"
+  },
+  {
+    "insertId": "6ad8fee700026a446fd27c28",
+    "labels": {
+      "course": "cs528",
+      "goog-managed-by": "cloudfunctions",
+      "homework": "hw5",
+      "instanceId": "0010dd8607e6a78ba1d80dddc9d403ec5fa4c8afb6d62a2d8f225a8db3dcb275c237cc4f9f8a49c3dc2db06ecf690d2d77a1a0cb299731e17ece607ea806c3051ebd115674e26b8482786bbdafd7e20d473b46af2470333e",
+      "run.googleapis.com/base_image_versions": "us-docker.pkg.dev/serverless-runtimes/google-22-full/runtimes/python312:python312_20260928_3_12_14_RC00"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/run.googleapis.com%2Fvarlog%2Fsystem",
+    "receiveTimestamp": "2026-10-21T18:05:27.455608592Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "cs528-hw5-stop-sql",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3",
+        "revision_name": "cs528-hw5-stop-sql-00001-hib",
+        "service_name": "cs528-hw5-stop-sql"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "textPayload": "Default STARTUP TCP probe succeeded after 1 attempt for container \"worker\" on port 8080.",
+    "timestamp": "2026-10-21T18:05:27.158276Z"
+  },
+  {
+    "httpRequest": {
+      "latency": "2.297334703s",
+      "protocol": "HTTP/1.1",
+      "remoteIp": "34.116.39.96",
+      "requestMethod": "POST",
+      "requestSize": "1331",
+      "requestUrl": "https://cs528-hw5-stop-sql-sw2da6eioq-uc.a.run.app/",
+      "responseSize": "179",
+      "serverIp": "34.143.74.2",
+      "status": 200,
+      "userAgent": "Google-Cloud-Scheduler"
+    },
+    "insertId": "6ad90ce40004bf283a6f8281",
+    "labels": {
+      "course": "cs528",
+      "goog-managed-by": "cloudfunctions",
+      "homework": "hw5",
+      "instanceId": "0010dd8607f3574d06193d7fb6523ba1e746a66f8586db82a3db9ed30af113794a24cf54d67b6c3a29739c5801943af461f31f3f9300d55ad1c6e5357ae1cd8fe273d542a3c59f6f699deffed696ab8d20ff722c9b7b26ba"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/run.googleapis.com%2Frequests",
+    "receiveTimestamp": "2026-10-21T19:05:08.326242407Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "cs528-hw5-stop-sql",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3",
+        "revision_name": "cs528-hw5-stop-sql-00001-hib",
+        "service_name": "cs528-hw5-stop-sql"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "spanId": "c4de791b388245f5",
+    "timestamp": "2026-10-21T19:05:05.724687Z",
+    "trace": "projects/dazzling-seat-508219-j3/traces/4bf9aa72a10f61759a8f2b58b205538d",
+    "traceSampled": true
+  },
+  {
+    "insertId": "6ad90ce1000c0a60ca270e3a",
+    "labels": {
+      "course": "cs528",
+      "goog-managed-by": "cloudfunctions",
+      "homework": "hw5",
+      "instanceId": "0010dd8607f3574d06193d7fb6523ba1e746a66f8586db82a3db9ed30af113794a24cf54d67b6c3a29739c5801943af461f31f3f9300d55ad1c6e5357ae1cd8fe273d542a3c59f6f699deffed696ab8d20ff722c9b7b26ba",
+      "scaling_reason": "AUTOSCALING"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/run.googleapis.com%2Fvarlog%2Fsystem",
+    "receiveTimestamp": "2026-10-21T19:05:05.803388652Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "cs528-hw5-stop-sql",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3",
+        "revision_name": "cs528-hw5-stop-sql-00001-hib",
+        "service_name": "cs528-hw5-stop-sql"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "textPayload": "Starting new instance. Reason: AUTOSCALING - Instance started due to configured scaling factors (e.g. CPU utilization, request throughput, etc.) or no existing capacity for current traffic.",
+    "timestamp": "2026-10-21T19:05:05.789088Z"
+  },
+  {
+    "insertId": "6ad90ce30002c2e83b70474f",
+    "labels": {
+      "course": "cs528",
+      "goog-managed-by": "cloudfunctions",
+      "homework": "hw5",
+      "instanceId": "0010dd8607f3574d06193d7fb6523ba1e746a66f8586db82a3db9ed30af113794a24cf54d67b6c3a29739c5801943af461f31f3f9300d55ad1c6e5357ae1cd8fe273d542a3c59f6f699deffed696ab8d20ff722c9b7b26ba",
+      "run.googleapis.com/base_image_versions": "us-docker.pkg.dev/serverless-runtimes/google-22-full/runtimes/python312:python312_20260928_3_12_14_RC00"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/run.googleapis.com%2Fvarlog%2Fsystem",
+    "receiveTimestamp": "2026-10-21T19:05:07.468364973Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "cs528-hw5-stop-sql",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3",
+        "revision_name": "cs528-hw5-stop-sql-00001-hib",
+        "service_name": "cs528-hw5-stop-sql"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "textPayload": "Default STARTUP TCP probe succeeded after 1 attempt for container \"worker\" on port 8080.",
+    "timestamp": "2026-10-21T19:05:07.180968Z"
+  },
+  {
+    "httpRequest": {
+      "latency": "1.980962263s",
+      "protocol": "HTTP/1.1",
+      "remoteIp": "107.178.194.196",
+      "requestMethod": "POST",
+      "requestSize": "1331",
+      "requestUrl": "https://cs528-hw5-stop-sql-sw2da6eioq-uc.a.run.app/",
+      "responseSize": "179",
+      "serverIp": "34.143.75.2",
+      "status": 200,
+      "userAgent": "Google-Cloud-Scheduler"
+    },
+    "insertId": "6ad91af40003c9d303c17fba",
+    "labels": {
+      "course": "cs528",
+      "goog-managed-by": "cloudfunctions",
+      "homework": "hw5",
+      "instanceId": "0010dd860718318881cc8529342a43516d7f41e4821f0abd806088b7982be343173ccf10faffe3cdc80f86cd01620c32573a5036f046b4096d44abd4992cf9f085a3f6db6d8514c01c9787d95fe68f2fa8f28c775899888f"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/run.googleapis.com%2Frequests",
+    "receiveTimestamp": "2026-10-21T20:05:08.260975210Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "cs528-hw5-stop-sql",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3",
+        "revision_name": "cs528-hw5-stop-sql-00001-hib",
+        "service_name": "cs528-hw5-stop-sql"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "spanId": "9c518f3d7c010df4",
+    "timestamp": "2026-10-21T20:05:05.954138Z",
+    "trace": "projects/dazzling-seat-508219-j3/traces/82b5c7f3cb62c610d00ac6e49ebe20ed",
+    "traceSampled": true
+  },
+  {
+    "insertId": "6ad91af200007f322229c32a",
+    "labels": {
+      "course": "cs528",
+      "goog-managed-by": "cloudfunctions",
+      "homework": "hw5",
+      "instanceId": "0010dd860718318881cc8529342a43516d7f41e4821f0abd806088b7982be343173ccf10faffe3cdc80f86cd01620c32573a5036f046b4096d44abd4992cf9f085a3f6db6d8514c01c9787d95fe68f2fa8f28c775899888f",
+      "scaling_reason": "AUTOSCALING"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/run.googleapis.com%2Fvarlog%2Fsystem",
+    "receiveTimestamp": "2026-10-21T20:05:06.059687968Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "cs528-hw5-stop-sql",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3",
+        "revision_name": "cs528-hw5-stop-sql-00001-hib",
+        "service_name": "cs528-hw5-stop-sql"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "textPayload": "Starting new instance. Reason: AUTOSCALING - Instance started due to configured scaling factors (e.g. CPU utilization, request throughput, etc.) or no existing capacity for current traffic.",
+    "timestamp": "2026-10-21T20:05:06.032562Z"
+  },
+  {
+    "insertId": "6ad91af30006a89cabbc7568",
+    "labels": {
+      "course": "cs528",
+      "goog-managed-by": "cloudfunctions",
+      "homework": "hw5",
+      "instanceId": "0010dd860718318881cc8529342a43516d7f41e4821f0abd806088b7982be343173ccf10faffe3cdc80f86cd01620c32573a5036f046b4096d44abd4992cf9f085a3f6db6d8514c01c9787d95fe68f2fa8f28c775899888f",
+      "run.googleapis.com/base_image_versions": "us-docker.pkg.dev/serverless-runtimes/google-22-full/runtimes/python312:python312_20260928_3_12_14_RC00"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/run.googleapis.com%2Fvarlog%2Fsystem",
+    "receiveTimestamp": "2026-10-21T20:05:07.712230527Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "cs528-hw5-stop-sql",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3",
+        "revision_name": "cs528-hw5-stop-sql-00001-hib",
+        "service_name": "cs528-hw5-stop-sql"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "textPayload": "Default STARTUP TCP probe succeeded after 1 attempt for container \"worker\" on port 8080.",
+    "timestamp": "2026-10-21T20:05:07.436380Z"
+  },
+  {
+    "httpRequest": {
+      "latency": "1.439425001s",
+      "protocol": "HTTP/1.1",
+      "remoteIp": "34.127.136.164",
+      "requestMethod": "POST",
+      "requestSize": "1332",
+      "requestUrl": "https://cs528-hw5-stop-sql-sw2da6eioq-uc.a.run.app/",
+      "responseSize": "179",
+      "serverIp": "34.143.77.2",
+      "status": 200,
+      "userAgent": "Google-Cloud-Scheduler"
+    },
+    "insertId": "6ad929080007ee5307eb9bd0",
+    "labels": {
+      "course": "cs528",
+      "goog-managed-by": "cloudfunctions",
+      "homework": "hw5",
+      "instanceId": "0010dd86072a5ad9be9b4891b6b78e670f3f9769d84ce64c3721bf8407362653f175eceffdd97655f9a43d18382e6a6aa4d6a94e8a9f0971f670a7d8b20421c924da99f7aca340b41ebde2daf5e1614de00246cadccf8301"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/run.googleapis.com%2Frequests",
+    "receiveTimestamp": "2026-10-21T21:05:12.528292376Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "cs528-hw5-stop-sql",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3",
+        "revision_name": "cs528-hw5-stop-sql-00001-hib",
+        "service_name": "cs528-hw5-stop-sql"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "spanId": "f2ecb34843c38d62",
+    "timestamp": "2026-10-21T21:05:10.903010Z",
+    "trace": "projects/dazzling-seat-508219-j3/traces/2acb61ab74779720bb5b0a98a40b4fa9",
+    "traceSampled": true
+  },
+  {
+    "insertId": "6ad92906000e9a8d49c882ba",
+    "labels": {
+      "course": "cs528",
+      "goog-managed-by": "cloudfunctions",
+      "homework": "hw5",
+      "instanceId": "0010dd86072a5ad9be9b4891b6b78e670f3f9769d84ce64c3721bf8407362653f175eceffdd97655f9a43d18382e6a6aa4d6a94e8a9f0971f670a7d8b20421c924da99f7aca340b41ebde2daf5e1614de00246cadccf8301",
+      "scaling_reason": "AUTOSCALING"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/run.googleapis.com%2Fvarlog%2Fsystem",
+    "receiveTimestamp": "2026-10-21T21:05:10.966372936Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "cs528-hw5-stop-sql",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3",
+        "revision_name": "cs528-hw5-stop-sql-00001-hib",
+        "service_name": "cs528-hw5-stop-sql"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "textPayload": "Starting new instance. Reason: AUTOSCALING - Instance started due to configured scaling factors (e.g. CPU utilization, request throughput, etc.) or no existing capacity for current traffic.",
+    "timestamp": "2026-10-21T21:05:10.957069Z"
+  },
+  {
+    "insertId": "6ad92907000d3b861fba8aee",
+    "labels": {
+      "course": "cs528",
+      "goog-managed-by": "cloudfunctions",
+      "homework": "hw5",
+      "instanceId": "0010dd86072a5ad9be9b4891b6b78e670f3f9769d84ce64c3721bf8407362653f175eceffdd97655f9a43d18382e6a6aa4d6a94e8a9f0971f670a7d8b20421c924da99f7aca340b41ebde2daf5e1614de00246cadccf8301",
+      "run.googleapis.com/base_image_versions": "us-docker.pkg.dev/serverless-runtimes/google-22-full/runtimes/python312:python312_20260928_3_12_14_RC00"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/run.googleapis.com%2Fvarlog%2Fsystem",
+    "receiveTimestamp": "2026-10-21T21:05:11.979551443Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "cs528-hw5-stop-sql",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3",
+        "revision_name": "cs528-hw5-stop-sql-00001-hib",
+        "service_name": "cs528-hw5-stop-sql"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "textPayload": "Default STARTUP TCP probe succeeded after 1 attempt for container \"worker\" on port 8080.",
+    "timestamp": "2026-10-21T21:05:11.867206Z"
+  },
+  {
+    "httpRequest": {
+      "latency": "1.763664866s",
+      "protocol": "HTTP/1.1",
+      "remoteIp": "107.178.194.164",
+      "requestMethod": "POST",
+      "requestSize": "1332",
+      "requestUrl": "https://cs528-hw5-stop-sql-sw2da6eioq-uc.a.run.app/",
+      "responseSize": "179",
+      "serverIp": "34.143.73.2",
+      "status": 200,
+      "userAgent": "Google-Cloud-Scheduler"
+    },
+    "insertId": "6ad9371d000e854b0bff4682",
+    "labels": {
+      "course": "cs528",
+      "goog-managed-by": "cloudfunctions",
+      "homework": "hw5",
+      "instanceId": "0010dd8607d0075935be82421ecc7c0541737a60c1736ce59455abc4d1113bec46158374527c3f643ba6a8814bc47df37c02f0a94f10ba5f16bd9bfabe8d7b8fb2dc4da7af32777e022827ba5a42bd5dad394f54b20c263d"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/run.googleapis.com%2Frequests",
+    "receiveTimestamp": "2026-10-21T22:05:17.962960128Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "cs528-hw5-stop-sql",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3",
+        "revision_name": "cs528-hw5-stop-sql-00001-hib",
+        "service_name": "cs528-hw5-stop-sql"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "spanId": "e8f8ac12eaf3d911",
+    "timestamp": "2026-10-21T22:05:15.934590Z",
+    "trace": "projects/dazzling-seat-508219-j3/traces/0d72d5147e6cf3aa4cb9c9e63cdf7a70",
+    "traceSampled": true
+  },
+  {
+    "insertId": "6ad9371b000f200d31f0b261",
+    "labels": {
+      "course": "cs528",
+      "goog-managed-by": "cloudfunctions",
+      "homework": "hw5",
+      "instanceId": "0010dd8607d0075935be82421ecc7c0541737a60c1736ce59455abc4d1113bec46158374527c3f643ba6a8814bc47df37c02f0a94f10ba5f16bd9bfabe8d7b8fb2dc4da7af32777e022827ba5a42bd5dad394f54b20c263d",
+      "scaling_reason": "AUTOSCALING"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/run.googleapis.com%2Fvarlog%2Fsystem",
+    "receiveTimestamp": "2026-10-21T22:05:16.001068834Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "cs528-hw5-stop-sql",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3",
+        "revision_name": "cs528-hw5-stop-sql-00001-hib",
+        "service_name": "cs528-hw5-stop-sql"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "textPayload": "Starting new instance. Reason: AUTOSCALING - Instance started due to configured scaling factors (e.g. CPU utilization, request throughput, etc.) or no existing capacity for current traffic.",
+    "timestamp": "2026-10-21T22:05:15.991245Z"
+  },
+  {
+    "insertId": "6ad9371d00015536dc831952",
+    "labels": {
+      "course": "cs528",
+      "goog-managed-by": "cloudfunctions",
+      "homework": "hw5",
+      "instanceId": "0010dd8607d0075935be82421ecc7c0541737a60c1736ce59455abc4d1113bec46158374527c3f643ba6a8814bc47df37c02f0a94f10ba5f16bd9bfabe8d7b8fb2dc4da7af32777e022827ba5a42bd5dad394f54b20c263d",
+      "run.googleapis.com/base_image_versions": "us-docker.pkg.dev/serverless-runtimes/google-22-full/runtimes/python312:python312_20260928_3_12_14_RC00"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/run.googleapis.com%2Fvarlog%2Fsystem",
+    "receiveTimestamp": "2026-10-21T22:05:17.336506723Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "cs528-hw5-stop-sql",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3",
+        "revision_name": "cs528-hw5-stop-sql-00001-hib",
+        "service_name": "cs528-hw5-stop-sql"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "textPayload": "Default STARTUP TCP probe succeeded after 1 attempt for container \"worker\" on port 8080.",
+    "timestamp": "2026-10-21T22:05:17.087350Z"
+  },
+  {
+    "httpRequest": {
+      "latency": "1.336708805s",
+      "protocol": "HTTP/1.1",
+      "remoteIp": "34.98.143.165",
+      "requestMethod": "POST",
+      "requestSize": "1331",
+      "requestUrl": "https://cs528-hw5-stop-sql-sw2da6eioq-uc.a.run.app/",
+      "responseSize": "179",
+      "serverIp": "34.143.79.2",
+      "status": 200,
+      "userAgent": "Google-Cloud-Scheduler"
+    },
+    "insertId": "6ad9452f000a7d4c9679d339",
+    "labels": {
+      "course": "cs528",
+      "goog-managed-by": "cloudfunctions",
+      "homework": "hw5",
+      "instanceId": "0010dd8607a0bc81f4c9297babdfa63300bafae0c4f8d992bb813b2668c1436f76c3b5a5e6d4f95debda674c3178f513501134c29e122092e3b55568b8597a915a4ee27b5bd68a685d4359cfde5587ea12e722123fb7c7ce"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/run.googleapis.com%2Frequests",
+    "receiveTimestamp": "2026-10-21T23:05:19.698073303Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "cs528-hw5-stop-sql",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3",
+        "revision_name": "cs528-hw5-stop-sql-00001-hib",
+        "service_name": "cs528-hw5-stop-sql"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "spanId": "233f13f1238e5715",
+    "timestamp": "2026-10-21T23:05:18.153614Z",
+    "trace": "projects/dazzling-seat-508219-j3/traces/50e0c7ba53476b70c3d1b795fc7af86b",
+    "traceSampled": true
+  },
+  {
+    "insertId": "6ad9452e0002ee3ec8101c94",
+    "labels": {
+      "course": "cs528",
+      "goog-managed-by": "cloudfunctions",
+      "homework": "hw5",
+      "instanceId": "0010dd8607a0bc81f4c9297babdfa63300bafae0c4f8d992bb813b2668c1436f76c3b5a5e6d4f95debda674c3178f513501134c29e122092e3b55568b8597a915a4ee27b5bd68a685d4359cfde5587ea12e722123fb7c7ce",
+      "scaling_reason": "AUTOSCALING"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/run.googleapis.com%2Fvarlog%2Fsystem",
+    "receiveTimestamp": "2026-10-21T23:05:18.198981266Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "cs528-hw5-stop-sql",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3",
+        "revision_name": "cs528-hw5-stop-sql-00001-hib",
+        "service_name": "cs528-hw5-stop-sql"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "textPayload": "Starting new instance. Reason: AUTOSCALING - Instance started due to configured scaling factors (e.g. CPU utilization, request throughput, etc.) or no existing capacity for current traffic.",
+    "timestamp": "2026-10-21T23:05:18.192062Z"
+  },
+  {
+    "insertId": "6ad9452f000098775af524e1",
+    "labels": {
+      "course": "cs528",
+      "goog-managed-by": "cloudfunctions",
+      "homework": "hw5",
+      "instanceId": "0010dd8607a0bc81f4c9297babdfa63300bafae0c4f8d992bb813b2668c1436f76c3b5a5e6d4f95debda674c3178f513501134c29e122092e3b55568b8597a915a4ee27b5bd68a685d4359cfde5587ea12e722123fb7c7ce",
+      "run.googleapis.com/base_image_versions": "us-docker.pkg.dev/serverless-runtimes/google-22-full/runtimes/python312:python312_20260928_3_12_14_RC00"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/run.googleapis.com%2Fvarlog%2Fsystem",
+    "receiveTimestamp": "2026-10-21T23:05:19.198925785Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "cs528-hw5-stop-sql",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3",
+        "revision_name": "cs528-hw5-stop-sql-00001-hib",
+        "service_name": "cs528-hw5-stop-sql"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "textPayload": "Default STARTUP TCP probe succeeded after 1 attempt for container \"worker\" on port 8080.",
+    "timestamp": "2026-10-21T23:05:19.039031Z"
+  },
+  {
+    "httpRequest": {
+      "latency": "1.849968445s",
+      "protocol": "HTTP/1.1",
+      "remoteIp": "107.178.194.4",
+      "requestMethod": "POST",
+      "requestSize": "1330",
+      "requestUrl": "https://cs528-hw5-stop-sql-sw2da6eioq-uc.a.run.app/",
+      "responseSize": "179",
+      "serverIp": "34.143.77.2",
+      "status": 200,
+      "userAgent": "Google-Cloud-Scheduler"
+    },
+    "insertId": "6ad95339000272313bed845f",
+    "labels": {
+      "course": "cs528",
+      "goog-managed-by": "cloudfunctions",
+      "homework": "hw5",
+      "instanceId": "0010dd86078f661bf6b1af55a9dbd438ba437ec5886bf264cff2cee1f651ce9be85c82435bcf7c9b6883266f47b92268d93df46b418aacaa9820e7208d097f62bcc22f2c9c56ae1a8a3170caa71b5f4033008549a5c44ea5"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/run.googleapis.com%2Frequests",
+    "receiveTimestamp": "2026-10-22T00:05:13.175504594Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "cs528-hw5-stop-sql",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3",
+        "revision_name": "cs528-hw5-stop-sql-00001-hib",
+        "service_name": "cs528-hw5-stop-sql"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "spanId": "c2cda2dbaaa2748f",
+    "timestamp": "2026-10-22T00:05:11.102229Z",
+    "trace": "projects/dazzling-seat-508219-j3/traces/459799c031d985d8f4f48bdbe395b364",
+    "traceSampled": true
+  },
+  {
+    "insertId": "6ad9533700024e78565ecd1a",
+    "labels": {
+      "course": "cs528",
+      "goog-managed-by": "cloudfunctions",
+      "homework": "hw5",
+      "instanceId": "0010dd86078f661bf6b1af55a9dbd438ba437ec5886bf264cff2cee1f651ce9be85c82435bcf7c9b6883266f47b92268d93df46b418aacaa9820e7208d097f62bcc22f2c9c56ae1a8a3170caa71b5f4033008549a5c44ea5",
+      "scaling_reason": "AUTOSCALING"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/run.googleapis.com%2Fvarlog%2Fsystem",
+    "receiveTimestamp": "2026-10-22T00:05:11.163007714Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "cs528-hw5-stop-sql",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3",
+        "revision_name": "cs528-hw5-stop-sql-00001-hib",
+        "service_name": "cs528-hw5-stop-sql"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "textPayload": "Starting new instance. Reason: AUTOSCALING - Instance started due to configured scaling factors (e.g. CPU utilization, request throughput, etc.) or no existing capacity for current traffic.",
+    "timestamp": "2026-10-22T00:05:11.151160Z"
+  },
+  {
+    "insertId": "6ad953380005467dadddc45b",
+    "labels": {
+      "course": "cs528",
+      "goog-managed-by": "cloudfunctions",
+      "homework": "hw5",
+      "instanceId": "0010dd86078f661bf6b1af55a9dbd438ba437ec5886bf264cff2cee1f651ce9be85c82435bcf7c9b6883266f47b92268d93df46b418aacaa9820e7208d097f62bcc22f2c9c56ae1a8a3170caa71b5f4033008549a5c44ea5",
+      "run.googleapis.com/base_image_versions": "us-docker.pkg.dev/serverless-runtimes/google-22-full/runtimes/python312:python312_20260928_3_12_14_RC00"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/run.googleapis.com%2Fvarlog%2Fsystem",
+    "receiveTimestamp": "2026-10-22T00:05:12.493246936Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "cs528-hw5-stop-sql",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3",
+        "revision_name": "cs528-hw5-stop-sql-00001-hib",
+        "service_name": "cs528-hw5-stop-sql"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "textPayload": "Default STARTUP TCP probe succeeded after 1 attempt for container \"worker\" on port 8080.",
+    "timestamp": "2026-10-22T00:05:12.345725Z"
+  },
+  {
+    "httpRequest": {
+      "latency": "1.820062684s",
+      "protocol": "HTTP/1.1",
+      "remoteIp": "35.243.23.8",
+      "requestMethod": "POST",
+      "requestSize": "1331",
+      "requestUrl": "https://cs528-hw5-stop-sql-sw2da6eioq-uc.a.run.app/",
+      "responseSize": "179",
+      "serverIp": "34.143.78.2",
+      "status": 200,
+      "userAgent": "Google-Cloud-Scheduler"
+    },
+    "insertId": "6ad961410003d7dc54bdc9b7",
+    "labels": {
+      "course": "cs528",
+      "goog-managed-by": "cloudfunctions",
+      "homework": "hw5",
+      "instanceId": "0010dd86076fa3abd9249c619749312e2e589974ca0fabd2ee9b7dd04ad3e5305968be94c691432e66bc504bb5f4c9bfe58d120c0f17a49fd60b759be0cbd3d9593a1649743bfc63bd39982e409556164e3688db081194da"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/run.googleapis.com%2Frequests",
+    "receiveTimestamp": "2026-10-22T01:05:05.261933748Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "cs528-hw5-stop-sql",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3",
+        "revision_name": "cs528-hw5-stop-sql-00001-hib",
+        "service_name": "cs528-hw5-stop-sql"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "spanId": "b167a5baf1b0bf2e",
+    "timestamp": "2026-10-22T01:05:03.174129Z",
+    "trace": "projects/dazzling-seat-508219-j3/traces/18cd72e2552673cbb9de5ec04ab8f607",
+    "traceSampled": true
+  },
+  {
+    "insertId": "6ad9613f00038952dc94e889",
+    "labels": {
+      "course": "cs528",
+      "goog-managed-by": "cloudfunctions",
+      "homework": "hw5",
+      "instanceId": "0010dd86076fa3abd9249c619749312e2e589974ca0fabd2ee9b7dd04ad3e5305968be94c691432e66bc504bb5f4c9bfe58d120c0f17a49fd60b759be0cbd3d9593a1649743bfc63bd39982e409556164e3688db081194da",
+      "scaling_reason": "AUTOSCALING"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/run.googleapis.com%2Fvarlog%2Fsystem",
+    "receiveTimestamp": "2026-10-22T01:05:03.241730230Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "cs528-hw5-stop-sql",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3",
+        "revision_name": "cs528-hw5-stop-sql-00001-hib",
+        "service_name": "cs528-hw5-stop-sql"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "textPayload": "Starting new instance. Reason: AUTOSCALING - Instance started due to configured scaling factors (e.g. CPU utilization, request throughput, etc.) or no existing capacity for current traffic.",
+    "timestamp": "2026-10-22T01:05:03.231762Z"
+  },
+  {
+    "insertId": "6ad961400006807c451b4254",
+    "labels": {
+      "course": "cs528",
+      "goog-managed-by": "cloudfunctions",
+      "homework": "hw5",
+      "instanceId": "0010dd86076fa3abd9249c619749312e2e589974ca0fabd2ee9b7dd04ad3e5305968be94c691432e66bc504bb5f4c9bfe58d120c0f17a49fd60b759be0cbd3d9593a1649743bfc63bd39982e409556164e3688db081194da",
+      "run.googleapis.com/base_image_versions": "us-docker.pkg.dev/serverless-runtimes/google-22-full/runtimes/python312:python312_20260928_3_12_14_RC00"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/run.googleapis.com%2Fvarlog%2Fsystem",
+    "receiveTimestamp": "2026-10-22T01:05:04.573808696Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "cs528-hw5-stop-sql",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3",
+        "revision_name": "cs528-hw5-stop-sql-00001-hib",
+        "service_name": "cs528-hw5-stop-sql"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "textPayload": "Default STARTUP TCP probe succeeded after 1 attempt for container \"worker\" on port 8080.",
+    "timestamp": "2026-10-22T01:05:04.426108Z"
+  },
+  {
+    "httpRequest": {
+      "latency": "2.057831275s",
+      "protocol": "HTTP/1.1",
+      "remoteIp": "34.116.39.225",
+      "requestMethod": "POST",
+      "requestSize": "1332",
+      "requestUrl": "https://cs528-hw5-stop-sql-sw2da6eioq-uc.a.run.app/",
+      "responseSize": "179",
+      "serverIp": "34.143.75.2",
+      "status": 200,
+      "userAgent": "Google-Cloud-Scheduler"
+    },
+    "insertId": "6ad96f510009317237bcae69",
+    "labels": {
+      "course": "cs528",
+      "goog-managed-by": "cloudfunctions",
+      "homework": "hw5",
+      "instanceId": "0010dd86074b7e3788259f2eb1ff6b21788875a2a338d6a19f4481527c238bdd3f0f0bf1dfe665fbdbe2fe784347786d3353ec5db762351f5a75e31ec64cd0368ab91589beb33ca800d85651e45f46c8f8dd9354f6957897"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/run.googleapis.com%2Frequests",
+    "receiveTimestamp": "2026-10-22T02:05:05.613372667Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "cs528-hw5-stop-sql",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3",
+        "revision_name": "cs528-hw5-stop-sql-00001-hib",
+        "service_name": "cs528-hw5-stop-sql"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "spanId": "721177448025dde8",
+    "timestamp": "2026-10-22T02:05:03.266343Z",
+    "trace": "projects/dazzling-seat-508219-j3/traces/f9a7a030b1b7adeb8c98ae375ee40496",
+    "traceSampled": true
+  },
+  {
+    "insertId": "6ad96f4f0004ff7405962d4f",
+    "labels": {
+      "course": "cs528",
+      "goog-managed-by": "cloudfunctions",
+      "homework": "hw5",
+      "instanceId": "0010dd86074b7e3788259f2eb1ff6b21788875a2a338d6a19f4481527c238bdd3f0f0bf1dfe665fbdbe2fe784347786d3353ec5db762351f5a75e31ec64cd0368ab91589beb33ca800d85651e45f46c8f8dd9354f6957897",
+      "scaling_reason": "AUTOSCALING"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/run.googleapis.com%2Fvarlog%2Fsystem",
+    "receiveTimestamp": "2026-10-22T02:05:03.338214795Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "cs528-hw5-stop-sql",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3",
+        "revision_name": "cs528-hw5-stop-sql-00001-hib",
+        "service_name": "cs528-hw5-stop-sql"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "textPayload": "Starting new instance. Reason: AUTOSCALING - Instance started due to configured scaling factors (e.g. CPU utilization, request throughput, etc.) or no existing capacity for current traffic.",
+    "timestamp": "2026-10-22T02:05:03.327540Z"
+  },
+  {
+    "insertId": "6ad96f50000b59601f65edba",
+    "labels": {
+      "course": "cs528",
+      "goog-managed-by": "cloudfunctions",
+      "homework": "hw5",
+      "instanceId": "0010dd86074b7e3788259f2eb1ff6b21788875a2a338d6a19f4481527c238bdd3f0f0bf1dfe665fbdbe2fe784347786d3353ec5db762351f5a75e31ec64cd0368ab91589beb33ca800d85651e45f46c8f8dd9354f6957897",
+      "run.googleapis.com/base_image_versions": "us-docker.pkg.dev/serverless-runtimes/google-22-full/runtimes/python312:python312_20260928_3_12_14_RC00"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/run.googleapis.com%2Fvarlog%2Fsystem",
+    "receiveTimestamp": "2026-10-22T02:05:05.005756364Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "cs528-hw5-stop-sql",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3",
+        "revision_name": "cs528-hw5-stop-sql-00001-hib",
+        "service_name": "cs528-hw5-stop-sql"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "textPayload": "Default STARTUP TCP probe succeeded after 1 attempt for container \"worker\" on port 8080.",
+    "timestamp": "2026-10-22T02:05:04.743776Z"
+  },
+  {
+    "httpRequest": {
+      "latency": "2.253973414s",
+      "protocol": "HTTP/1.1",
+      "remoteIp": "107.178.194.195",
+      "requestMethod": "POST",
+      "requestSize": "1332",
+      "requestUrl": "https://cs528-hw5-stop-sql-sw2da6eioq-uc.a.run.app/",
+      "responseSize": "179",
+      "serverIp": "34.143.74.2",
+      "status": 200,
+      "userAgent": "Google-Cloud-Scheduler"
+    },
+    "insertId": "6ad97d6f0005a3a56b862215",
+    "labels": {
+      "course": "cs528",
+      "goog-managed-by": "cloudfunctions",
+      "homework": "hw5",
+      "instanceId": "0010dd86076dff21ff85f8705c6665a5b68716753a342581e83c49e8a14ab9725b17bd1391883f0699b3d7b1ce8052366bea680de0403016b7b3db607f02728282fb080c3c7596dfea89bb19c6c16e5eee5ba6f11bb6fb"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/run.googleapis.com%2Frequests",
+    "receiveTimestamp": "2026-10-22T03:05:19.379494507Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "cs528-hw5-stop-sql",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3",
+        "revision_name": "cs528-hw5-stop-sql-00001-hib",
+        "service_name": "cs528-hw5-stop-sql"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "spanId": "3bde1e64fefce964",
+    "timestamp": "2026-10-22T03:05:16.779422Z",
+    "trace": "projects/dazzling-seat-508219-j3/traces/8137511fa38a43e75c1c88b7094d0a54",
+    "traceSampled": true
+  },
+  {
+    "insertId": "6ad97d6c000d40ace0c6f186",
+    "labels": {
+      "course": "cs528",
+      "goog-managed-by": "cloudfunctions",
+      "homework": "hw5",
+      "instanceId": "0010dd86076dff21ff85f8705c6665a5b68716753a342581e83c49e8a14ab9725b17bd1391883f0699b3d7b1ce8052366bea680de0403016b7b3db607f02728282fb080c3c7596dfea89bb19c6c16e5eee5ba6f11bb6fb",
+      "scaling_reason": "AUTOSCALING"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/run.googleapis.com%2Fvarlog%2Fsystem",
+    "receiveTimestamp": "2026-10-22T03:05:16.876786691Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "cs528-hw5-stop-sql",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3",
+        "revision_name": "cs528-hw5-stop-sql-00001-hib",
+        "service_name": "cs528-hw5-stop-sql"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "textPayload": "Starting new instance. Reason: AUTOSCALING - Instance started due to configured scaling factors (e.g. CPU utilization, request throughput, etc.) or no existing capacity for current traffic.",
+    "timestamp": "2026-10-22T03:05:16.868524Z"
+  },
+  {
+    "insertId": "6ad97d6e00067604130f544c",
+    "labels": {
+      "course": "cs528",
+      "goog-managed-by": "cloudfunctions",
+      "homework": "hw5",
+      "instanceId": "0010dd86076dff21ff85f8705c6665a5b68716753a342581e83c49e8a14ab9725b17bd1391883f0699b3d7b1ce8052366bea680de0403016b7b3db607f02728282fb080c3c7596dfea89bb19c6c16e5eee5ba6f11bb6fb",
+      "run.googleapis.com/base_image_versions": "us-docker.pkg.dev/serverless-runtimes/google-22-full/runtimes/python312:python312_20260928_3_12_14_RC00"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/run.googleapis.com%2Fvarlog%2Fsystem",
+    "receiveTimestamp": "2026-10-22T03:05:18.545700818Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "cs528-hw5-stop-sql",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3",
+        "revision_name": "cs528-hw5-stop-sql-00001-hib",
+        "service_name": "cs528-hw5-stop-sql"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "textPayload": "Default STARTUP TCP probe succeeded after 1 attempt for container \"worker\" on port 8080.",
+    "timestamp": "2026-10-22T03:05:18.423428Z"
+  },
+  {
+    "httpRequest": {
+      "latency": "1.358315203s",
+      "protocol": "HTTP/1.1",
+      "remoteIp": "34.116.39.72",
+      "requestMethod": "POST",
+      "requestSize": "1331",
+      "requestUrl": "https://cs528-hw5-stop-sql-sw2da6eioq-uc.a.run.app/",
+      "responseSize": "179",
+      "serverIp": "34.143.74.2",
+      "status": 200,
+      "userAgent": "Google-Cloud-Scheduler"
+    },
+    "insertId": "6ad98b720004a666989552d1",
+    "labels": {
+      "course": "cs528",
+      "goog-managed-by": "cloudfunctions",
+      "homework": "hw5",
+      "instanceId": "0010dd860784c7be9711a202d804b6e60c46bb8db2b8de62b32becf92af4546d19dc9cf3823c5b793f374f990fd74cfaf510e4fbafd1ab61b9a9d19a4e935f3dbb8f528274a5654abd020511834fddbf8f4872cac9ce41"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/run.googleapis.com%2Frequests",
+    "receiveTimestamp": "2026-10-22T04:05:06.322723270Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "cs528-hw5-stop-sql",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3",
+        "revision_name": "cs528-hw5-stop-sql-00001-hib",
+        "service_name": "cs528-hw5-stop-sql"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "spanId": "79d58bc12e6370d8",
+    "timestamp": "2026-10-22T04:05:04.772134Z",
+    "trace": "projects/dazzling-seat-508219-j3/traces/b0cbed2491de08ff0f9cb417ae8d0013",
+    "traceSampled": true
+  },
+  {
+    "insertId": "6ad98b70000c6f8a63742fa0",
+    "labels": {
+      "course": "cs528",
+      "goog-managed-by": "cloudfunctions",
+      "homework": "hw5",
+      "instanceId": "0010dd860784c7be9711a202d804b6e60c46bb8db2b8de62b32becf92af4546d19dc9cf3823c5b793f374f990fd74cfaf510e4fbafd1ab61b9a9d19a4e935f3dbb8f528274a5654abd020511834fddbf8f4872cac9ce41",
+      "scaling_reason": "AUTOSCALING"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/run.googleapis.com%2Fvarlog%2Fsystem",
+    "receiveTimestamp": "2026-10-22T04:05:04.827229756Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "cs528-hw5-stop-sql",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3",
+        "revision_name": "cs528-hw5-stop-sql-00001-hib",
+        "service_name": "cs528-hw5-stop-sql"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "textPayload": "Starting new instance. Reason: AUTOSCALING - Instance started due to configured scaling factors (e.g. CPU utilization, request throughput, etc.) or no existing capacity for current traffic.",
+    "timestamp": "2026-10-22T04:05:04.814986Z"
+  },
+  {
+    "insertId": "6ad98b71000a1ce07cb13ac1",
+    "labels": {
+      "course": "cs528",
+      "goog-managed-by": "cloudfunctions",
+      "homework": "hw5",
+      "instanceId": "0010dd860784c7be9711a202d804b6e60c46bb8db2b8de62b32becf92af4546d19dc9cf3823c5b793f374f990fd74cfaf510e4fbafd1ab61b9a9d19a4e935f3dbb8f528274a5654abd020511834fddbf8f4872cac9ce41",
+      "run.googleapis.com/base_image_versions": "us-docker.pkg.dev/serverless-runtimes/google-22-full/runtimes/python312:python312_20260928_3_12_14_RC00"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/run.googleapis.com%2Fvarlog%2Fsystem",
+    "receiveTimestamp": "2026-10-22T04:05:05.823727635Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "cs528-hw5-stop-sql",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3",
+        "revision_name": "cs528-hw5-stop-sql-00001-hib",
+        "service_name": "cs528-hw5-stop-sql"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "textPayload": "Default STARTUP TCP probe succeeded after 1 attempt for container \"worker\" on port 8080.",
+    "timestamp": "2026-10-22T04:05:05.662752Z"
+  },
+  {
+    "httpRequest": {
+      "latency": "1.521364797s",
+      "protocol": "HTTP/1.1",
+      "remoteIp": "35.187.132.224",
+      "requestMethod": "POST",
+      "requestSize": "1332",
+      "requestUrl": "https://cs528-hw5-stop-sql-sw2da6eioq-uc.a.run.app/",
+      "responseSize": "179",
+      "serverIp": "34.143.75.2",
+      "status": 200,
+      "userAgent": "Google-Cloud-Scheduler"
+    },
+    "insertId": "6ad9998c0000e543fcaa5ac2",
+    "labels": {
+      "course": "cs528",
+      "goog-managed-by": "cloudfunctions",
+      "homework": "hw5",
+      "instanceId": "0010dd86078c5dbcb6a81492c1e30727a5d2753e610bf7d05a573934b71cad1b07732fc94cd30f7b02ba194ccdd0353537895c13c518937fcac98c219742894ece679dae41f9cfc1a076bc71ea3f55ed20d8ce92c8d688"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/run.googleapis.com%2Frequests",
+    "receiveTimestamp": "2026-10-22T05:05:16.069150699Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "cs528-hw5-stop-sql",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3",
+        "revision_name": "cs528-hw5-stop-sql-00001-hib",
+        "service_name": "cs528-hw5-stop-sql"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "spanId": "358cc9764af29b4f",
+    "timestamp": "2026-10-22T05:05:14.308439Z",
+    "trace": "projects/dazzling-seat-508219-j3/traces/aade5038bed0fccd8938cef96c787cce",
+    "traceSampled": true
+  },
+  {
+    "insertId": "6ad9998a00056cdeffd8f639",
+    "labels": {
+      "course": "cs528",
+      "goog-managed-by": "cloudfunctions",
+      "homework": "hw5",
+      "instanceId": "0010dd86078c5dbcb6a81492c1e30727a5d2753e610bf7d05a573934b71cad1b07732fc94cd30f7b02ba194ccdd0353537895c13c518937fcac98c219742894ece679dae41f9cfc1a076bc71ea3f55ed20d8ce92c8d688",
+      "scaling_reason": "AUTOSCALING"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/run.googleapis.com%2Fvarlog%2Fsystem",
+    "receiveTimestamp": "2026-10-22T05:05:14.367174541Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "cs528-hw5-stop-sql",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3",
+        "revision_name": "cs528-hw5-stop-sql-00001-hib",
+        "service_name": "cs528-hw5-stop-sql"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "textPayload": "Starting new instance. Reason: AUTOSCALING - Instance started due to configured scaling factors (e.g. CPU utilization, request throughput, etc.) or no existing capacity for current traffic.",
+    "timestamp": "2026-10-22T05:05:14.355550Z"
+  },
+  {
+    "insertId": "6ad9998b0005edcbd7c3fb57",
+    "labels": {
+      "course": "cs528",
+      "goog-managed-by": "cloudfunctions",
+      "homework": "hw5",
+      "instanceId": "0010dd86078c5dbcb6a81492c1e30727a5d2753e610bf7d05a573934b71cad1b07732fc94cd30f7b02ba194ccdd0353537895c13c518937fcac98c219742894ece679dae41f9cfc1a076bc71ea3f55ed20d8ce92c8d688",
+      "run.googleapis.com/base_image_versions": "us-docker.pkg.dev/serverless-runtimes/google-22-full/runtimes/python312:python312_20260928_3_12_14_RC00"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/run.googleapis.com%2Fvarlog%2Fsystem",
+    "receiveTimestamp": "2026-10-22T05:05:15.697476899Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "cs528-hw5-stop-sql",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3",
+        "revision_name": "cs528-hw5-stop-sql-00001-hib",
+        "service_name": "cs528-hw5-stop-sql"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "textPayload": "Default STARTUP TCP probe succeeded after 1 attempt for container \"worker\" on port 8080.",
+    "timestamp": "2026-10-22T05:05:15.388555Z"
+  },
+  {
+    "httpRequest": {
+      "latency": "1.753304564s",
+      "protocol": "HTTP/1.1",
+      "remoteIp": "35.243.23.2",
+      "requestMethod": "POST",
+      "requestSize": "1331",
+      "requestUrl": "https://cs528-hw5-stop-sql-sw2da6eioq-uc.a.run.app/",
+      "responseSize": "179",
+      "serverIp": "34.143.74.2",
+      "status": 200,
+      "userAgent": "Google-Cloud-Scheduler"
+    },
+    "insertId": "6ad9a7910003552e93f739c2",
+    "labels": {
+      "course": "cs528",
+      "goog-managed-by": "cloudfunctions",
+      "homework": "hw5",
+      "instanceId": "0010dd86070d4718baaf2db62acc38598c0ef30d7adcee742599be02bb7c5ce494b6379287828af30be7d3b3fb1e4a974e48fbdf41f859f2149ff1cbfba279591b26b61654756ebbe696477a33b406cba053b6520a3eccc6"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/run.googleapis.com%2Frequests",
+    "receiveTimestamp": "2026-10-22T06:05:05.229299540Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "cs528-hw5-stop-sql",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3",
+        "revision_name": "cs528-hw5-stop-sql-00001-hib",
+        "service_name": "cs528-hw5-stop-sql"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "spanId": "58bb3e450cb2dcd9",
+    "timestamp": "2026-10-22T06:05:03.234851Z",
+    "trace": "projects/dazzling-seat-508219-j3/traces/8a5cd5f922111d1650aff0e761bf93bc",
+    "traceSampled": true
+  },
+  {
+    "insertId": "6ad9a78f00044c5dc85bfd49",
+    "labels": {
+      "course": "cs528",
+      "goog-managed-by": "cloudfunctions",
+      "homework": "hw5",
+      "instanceId": "0010dd86070d4718baaf2db62acc38598c0ef30d7adcee742599be02bb7c5ce494b6379287828af30be7d3b3fb1e4a974e48fbdf41f859f2149ff1cbfba279591b26b61654756ebbe696477a33b406cba053b6520a3eccc6",
+      "scaling_reason": "AUTOSCALING"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/run.googleapis.com%2Fvarlog%2Fsystem",
+    "receiveTimestamp": "2026-10-22T06:05:03.296095787Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "cs528-hw5-stop-sql",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3",
+        "revision_name": "cs528-hw5-stop-sql-00001-hib",
+        "service_name": "cs528-hw5-stop-sql"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "textPayload": "Starting new instance. Reason: AUTOSCALING - Instance started due to configured scaling factors (e.g. CPU utilization, request throughput, etc.) or no existing capacity for current traffic.",
+    "timestamp": "2026-10-22T06:05:03.281693Z"
+  },
+  {
+    "insertId": "6ad9a7900006b2230024a7e0",
+    "labels": {
+      "course": "cs528",
+      "goog-managed-by": "cloudfunctions",
+      "homework": "hw5",
+      "instanceId": "0010dd86070d4718baaf2db62acc38598c0ef30d7adcee742599be02bb7c5ce494b6379287828af30be7d3b3fb1e4a974e48fbdf41f859f2149ff1cbfba279591b26b61654756ebbe696477a33b406cba053b6520a3eccc6",
+      "run.googleapis.com/base_image_versions": "us-docker.pkg.dev/serverless-runtimes/google-22-full/runtimes/python312:python312_20260928_3_12_14_RC00"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/run.googleapis.com%2Fvarlog%2Fsystem",
+    "receiveTimestamp": "2026-10-22T06:05:04.630365173Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "cs528-hw5-stop-sql",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3",
+        "revision_name": "cs528-hw5-stop-sql-00001-hib",
+        "service_name": "cs528-hw5-stop-sql"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "textPayload": "Default STARTUP TCP probe succeeded after 1 attempt for container \"worker\" on port 8080.",
+    "timestamp": "2026-10-22T06:05:04.438819Z"
+  },
+  {
+    "httpRequest": {
+      "latency": "1.869099480s",
+      "protocol": "HTTP/1.1",
+      "remoteIp": "107.178.194.195",
+      "requestMethod": "POST",
+      "requestSize": "1331",
+      "requestUrl": "https://cs528-hw5-stop-sql-sw2da6eioq-uc.a.run.app/",
+      "responseSize": "179",
+      "serverIp": "34.143.77.2",
+      "status": 200,
+      "userAgent": "Google-Cloud-Scheduler"
+    },
+    "insertId": "6ad9b5a6000f131e2aecd7f5",
+    "labels": {
+      "course": "cs528",
+      "goog-managed-by": "cloudfunctions",
+      "homework": "hw5",
+      "instanceId": "0010dd860785f2ce45bc7f7cedb1572d6aac50e5bf1f1b495e48a51485819c50dbdf71af0ba9cf7f8882daf284d158808a4c51d1a5856f006884ea5f062746c030d73fa39befcff83675e23c69eee2a68bd5d207a4b7a12f"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/run.googleapis.com%2Frequests",
+    "receiveTimestamp": "2026-10-22T07:05:10.999126384Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "cs528-hw5-stop-sql",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3",
+        "revision_name": "cs528-hw5-stop-sql-00001-hib",
+        "service_name": "cs528-hw5-stop-sql"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "spanId": "7e46ca4e02023cd1",
+    "timestamp": "2026-10-22T07:05:08.854213Z",
+    "trace": "projects/dazzling-seat-508219-j3/traces/0894fa2bd318ec4dd1c094ff287feb6b",
+    "traceSampled": true
+  },
+  {
+    "insertId": "6ad9b5a4000dd2a3c0953645",
+    "labels": {
+      "course": "cs528",
+      "goog-managed-by": "cloudfunctions",
+      "homework": "hw5",
+      "instanceId": "0010dd860785f2ce45bc7f7cedb1572d6aac50e5bf1f1b495e48a51485819c50dbdf71af0ba9cf7f8882daf284d158808a4c51d1a5856f006884ea5f062746c030d73fa39befcff83675e23c69eee2a68bd5d207a4b7a12f",
+      "scaling_reason": "AUTOSCALING"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/run.googleapis.com%2Fvarlog%2Fsystem",
+    "receiveTimestamp": "2026-10-22T07:05:08.916574142Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "cs528-hw5-stop-sql",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3",
+        "revision_name": "cs528-hw5-stop-sql-00001-hib",
+        "service_name": "cs528-hw5-stop-sql"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "textPayload": "Starting new instance. Reason: AUTOSCALING - Instance started due to configured scaling factors (e.g. CPU utilization, request throughput, etc.) or no existing capacity for current traffic.",
+    "timestamp": "2026-10-22T07:05:08.905891Z"
+  },
+  {
+    "insertId": "6ad9b5a6000212c8603c6aa2",
+    "labels": {
+      "course": "cs528",
+      "goog-managed-by": "cloudfunctions",
+      "homework": "hw5",
+      "instanceId": "0010dd860785f2ce45bc7f7cedb1572d6aac50e5bf1f1b495e48a51485819c50dbdf71af0ba9cf7f8882daf284d158808a4c51d1a5856f006884ea5f062746c030d73fa39befcff83675e23c69eee2a68bd5d207a4b7a12f",
+      "run.googleapis.com/base_image_versions": "us-docker.pkg.dev/serverless-runtimes/google-22-full/runtimes/python312:python312_20260928_3_12_14_RC00"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/run.googleapis.com%2Fvarlog%2Fsystem",
+    "receiveTimestamp": "2026-10-22T07:05:10.251389479Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "cs528-hw5-stop-sql",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3",
+        "revision_name": "cs528-hw5-stop-sql-00001-hib",
+        "service_name": "cs528-hw5-stop-sql"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "textPayload": "Default STARTUP TCP probe succeeded after 1 attempt for container \"worker\" on port 8080.",
+    "timestamp": "2026-10-22T07:05:10.135880Z"
+  }
+]

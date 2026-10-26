@@ -1,0 +1,234 @@
+{
+  "run_id": "load-20261021T074356Z-c17a9e06",
+  "reviewed_at": "2026-10-21T07:47:24.246Z",
+  "local_tests": {
+    "count": 57,
+    "seconds": 11.165,
+    "source": "User-provided terminal output"
+  },
+  "experiment": {
+    "run_id": "load-20261021T074356Z-c17a9e06",
+    "expected_requests": 200,
+    "client_sha256": "10cb8c9f0fe29811c5201a25ba512e528d6e789ff576a94fd849d697ccb3a12a",
+    "commands": [
+      [
+        "/Users/thomasfang/CS528/CS528-HWs/CS528-HW5/client/http-client-mac",
+        "-d",
+        "35.193.157.51",
+        "-p",
+        "8080",
+        "-b",
+        "none",
+        "-w",
+        "__runs/load-20261021T074356Z-c17a9e06/data",
+        "-n",
+        "100",
+        "-i",
+        "11999",
+        "-r",
+        "528",
+        "-t",
+        "30"
+      ],
+      [
+        "/Users/thomasfang/CS528/CS528-HWs/CS528-HW5/client/http-client-mac",
+        "-d",
+        "35.193.157.51",
+        "-p",
+        "8080",
+        "-b",
+        "none",
+        "-w",
+        "__runs/load-20261021T074356Z-c17a9e06/data",
+        "-n",
+        "100",
+        "-i",
+        "11999",
+        "-r",
+        "528",
+        "-t",
+        "30"
+      ]
+    ],
+    "seed": 528,
+    "started_at": "2026-10-21T07:43:56.096728+00:00",
+    "complete": true,
+    "phase": "complete",
+    "load_started_at": "2026-10-21T07:44:03.925589+00:00",
+    "load_finished_at": "2026-10-21T07:44:35.048516+00:00",
+    "load_elapsed_seconds": 31.12280983303208,
+    "finished_at": "2026-10-21T07:44:35.530196+00:00",
+    "elapsed_seconds": 39.43271941691637,
+    "exit_codes": [
+      0,
+      0
+    ],
+    "guard_resumed": true
+  },
+  "summary": {
+    "run_id": "load-20261021T074356Z-c17a9e06",
+    "total_requests": 200,
+    "successful_http_200": 187,
+    "unsuccessful_http_non_200": 13,
+    "http_status_counts": {
+      "200": 187,
+      "400": 13
+    },
+    "banned_country_requests": 13,
+    "gender_counts": {
+      "Female": 96,
+      "Male": 104
+    },
+    "top_5_countries": [
+      {
+        "country": "Azerbaijan",
+        "requests": 5
+      },
+      {
+        "country": "Guinea-Bissau",
+        "requests": 5
+      },
+      {
+        "country": "Congo, Republic of the",
+        "requests": 4
+      },
+      {
+        "country": "Cuba",
+        "requests": 4
+      },
+      {
+        "country": "Iraq",
+        "requests": 4
+      }
+    ],
+    "age_counts": {
+      "0-16": 33,
+      "17-25": 30,
+      "26-35": 18,
+      "36-45": 19,
+      "46-55": 33,
+      "56-65": 15,
+      "66-75": 29,
+      "76+": 23
+    },
+    "most_frequent_age_groups": [
+      {
+        "group": "0-16",
+        "requests": 33
+      },
+      {
+        "group": "46-55",
+        "requests": 33
+      }
+    ],
+    "income_counts": {
+      "0-10k": 30,
+      "100k-150k": 30,
+      "10k-20k": 27,
+      "150k-250k": 20,
+      "20k-40k": 23,
+      "250k+": 30,
+      "40k-60k": 19,
+      "60k-100k": 21
+    },
+    "most_frequent_income_groups": [
+      {
+        "group": "0-10k",
+        "requests": 30
+      },
+      {
+        "group": "100k-150k",
+        "requests": 30
+      },
+      {
+        "group": "250k+",
+        "requests": 30
+      }
+    ],
+    "timing": {
+      "extract_ns": {
+        "count": 200,
+        "mean_ms": 0.32122541,
+        "p50_ms": 0.313458,
+        "p95_ms": 0.370485,
+        "max_ms": 0.56905
+      },
+      "storage_ns": {
+        "count": 200,
+        "mean_ms": 84.399597405,
+        "p50_ms": 82.262745,
+        "p95_ms": 138.412678,
+        "max_ms": 259.983294
+      },
+      "response_ns": {
+        "count": 200,
+        "mean_ms": 34.945271340000005,
+        "p50_ms": 66.041396,
+        "p95_ms": 70.906154,
+        "max_ms": 73.863366
+      },
+      "database_ns": {
+        "count": 200,
+        "mean_ms": 6.90127012,
+        "p50_ms": 6.710145,
+        "p95_ms": 8.469919,
+        "max_ms": 12.006841
+      },
+      "total_ns": {
+        "count": 200,
+        "mean_ms": 136.17900773,
+        "p50_ms": 141.103786,
+        "p95_ms": 209.618834,
+        "max_ms": 335.212234
+      },
+      "storage_when_attempted_ns": {
+        "count": 187,
+        "mean_ms": 90.26694909625668,
+        "p50_ms": 84.283448,
+        "p95_ms": 142.939308,
+        "max_ms": 259.983294
+      }
+    },
+    "integrity": {
+      "expected_requests": 200,
+      "observed_requests": 200,
+      "expected_count_matches": true,
+      "unique_request_ids": true,
+      "error_rows_match_exactly": true,
+      "timing_rows_complete": true,
+      "response_send_failures": 0,
+      "requests_with_missing_metadata": 0,
+      "odd_metadata_multiplicities": 200,
+      "complete": true
+    },
+    "notes": [
+      "Age/income groups are the original instructor-client labels, not inferred numeric bins.",
+      "X-time is client-simulated and has no supplied time zone. Receipt timestamps are UTC.",
+      "HTTP status counts and response-send failures are separate; a completed write is not proof of client receipt.",
+      "database_ns includes the metadata/error transaction; the later timing insert is excluded.",
+      "Storage averages over all requests include zero for denied/unsupported requests. The attempted-read subset is also reported.",
+      "Total time also includes policy checks, Cloud Logging and Pub/Sub waits; it need not equal the four reported stages."
+    ]
+  },
+  "independent_review": {
+    "source_snapshot": "/Users/thomasfang/CS528/CS528-HWs/CS528-HW5/results/load-20261021T074356Z-c17a9e06/database-snapshot.json.gz",
+    "request_rows": 200,
+    "error_rows": 13,
+    "timing_rows": 200,
+    "commands_identical": true,
+    "same_seed": true,
+    "client_exits": [
+      0,
+      0
+    ],
+    "metadata_pairing": "200 distinct metadata tuples observed despite identical seed arguments. Pairing is diagnostic, not a completeness criterion. Identical generated sequences are not claimed.",
+    "formal_load_linear_estimate_hours": 4.322612476810011
+  },
+  "pending": [
+    "Two clients with 50,000 requests each",
+    "Reporter delivery evidence",
+    "Hourly guard execution evidence",
+    "Terminal screenshots",
+    "Final report, billing and submission"
+  ]
+}

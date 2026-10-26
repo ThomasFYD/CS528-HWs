@@ -1,0 +1,28 @@
+{
+  "source": "/Users/thomasfang/.codex/attachments/ddb6ca35-d013-438e-bd08-90d93f69c6dc/已粘贴的文本.txt",
+  "observations": {
+    "reporter": "startup completed; subscription listener started",
+    "web": "setup_schema.py failed before schema setup completed",
+    "error": "AttributeError: 'NoneType' object has no attribute 'is_auth_switch_request'",
+    "installed_versions": {
+      "PyMySQL": "1.2.3",
+      "cloud_sql_python_connector": "1.23.0",
+      "SQLAlchemy": "2.1.5"
+    }
+  },
+  "diagnosis": {
+    "basis": "VM stack trace plus installed PyMySQL source and upstream versioned sources",
+    "finding": "The full caching_sha2 RSA path in 1.2.3 consumes the terminal packet but returns None; the caller continues its packet-dispatch loop and dereferences None",
+    "sources": [
+      "https://github.com/PyMySQL/PyMySQL/blob/v1.2.3/pymysql/connections.py",
+      "https://github.com/PyMySQL/PyMySQL/blob/v1.2.3/pymysql/_auth.py",
+      "https://github.com/PyMySQL/PyMySQL/blob/v1.1.3/pymysql/connections.py"
+    ]
+  },
+  "prepared_changes": [
+    "Pin PyMySQL 1.1.3 and observed connector/SQLAlchemy versions",
+    "Four real-driver authentication tests using simulated packet transport",
+    "Explicit in-place VM refresh through startup metadata with guard restoration and restart-specific readiness evidence"
+  ],
+  "verification": "Prepared and source-reviewed; tests and cloud refresh have not been executed by assistant and await user execution"
+}

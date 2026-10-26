@@ -1,0 +1,135 @@
+{
+  "run_id": "load-20261021T075735Z-5b3f60c2",
+  "source_sha256": "acfcd6cfb1d3fed0d05483197f138d6cefa74ca34f05bd35c4e6e5aa897877bc",
+  "snapshot_bytes": 10514300,
+  "counts": {
+    "requests": 100000,
+    "failed_requests": 4347,
+    "request_timings": 100000
+  },
+  "same_run_only": true,
+  "unique_request_ids": true,
+  "unique_request_times": true,
+  "errors_match": true,
+  "timings_match": true,
+  "response_send_failures": 0,
+  "missing_metadata": 0,
+  "statuses": {
+    "200": 95653,
+    "400": 4347
+  },
+  "banned": 4347,
+  "all_failures_are_banned_400": true,
+  "gender": {
+    "Female": 50081,
+    "Male": 49919
+  },
+  "age": {
+    "56-65": 12608,
+    "36-45": 12638,
+    "76+": 12489,
+    "66-75": 12428,
+    "26-35": 12472,
+    "46-55": 12496,
+    "0-16": 12437,
+    "17-25": 12432
+  },
+  "income": {
+    "60k-100k": 12380,
+    "0-10k": 12210,
+    "100k-150k": 12554,
+    "40k-60k": 12357,
+    "20k-40k": 12784,
+    "250k+": 12582,
+    "10k-20k": 12440,
+    "150k-250k": 12693
+  },
+  "top_countries": [
+    [
+      "Micronesia",
+      579
+    ],
+    [
+      "Somalia",
+      572
+    ],
+    [
+      "Philippines",
+      566
+    ],
+    [
+      "Togo",
+      566
+    ],
+    [
+      "South Korea",
+      563
+    ],
+    [
+      "Mexico",
+      562
+    ],
+    [
+      "Barbados",
+      552
+    ]
+  ],
+  "timing": {
+    "extract_ns": {
+      "count": 100000,
+      "mean_ms": 0.33555705438,
+      "p50_ms": 0.323775,
+      "p95_ms": 0.419734,
+      "max_ms": 3.07933
+    },
+    "storage_ns": {
+      "count": 100000,
+      "mean_ms": 48.96756344158,
+      "p50_ms": 37.029859,
+      "p95_ms": 103.702136,
+      "max_ms": 4821.151238
+    },
+    "response_ns": {
+      "count": 100000,
+      "mean_ms": 39.487487098399995,
+      "p50_ms": 66.870686,
+      "p95_ms": 72.105763,
+      "max_ms": 2134.559141
+    },
+    "database_ns": {
+      "count": 100000,
+      "mean_ms": 7.33561077608,
+      "p50_ms": 7.135867,
+      "p95_ms": 9.073666,
+      "max_ms": 247.941632
+    },
+    "total_ns": {
+      "count": 100000,
+      "mean_ms": 102.36957069334001,
+      "p50_ms": 106.444684,
+      "p95_ms": 174.890668,
+      "max_ms": 4828.32465
+    },
+    "storage_when_attempted_ns": {
+      "count": 95653,
+      "mean_ms": 51.192919659163856,
+      "p50_ms": 37.859784,
+      "p95_ms": 104.974253,
+      "max_ms": 4821.151238
+    }
+  },
+  "timing_matches_summary": true,
+  "commands_identical": true,
+  "client_exit_codes": [
+    0,
+    0
+  ],
+  "load_seconds": 10866.021389917005,
+  "throughput_per_second": 9.203000473825112,
+  "guard_resumed": true,
+  "reviewed_at": "2026-10-21T20:48:34.060Z",
+  "verification_method": "Independent JavaScript recomputation directly from gzip JSON snapshot; no cloud calls or terminal commands executed by assistant.",
+  "source_file": "/Users/thomasfang/CS528/CS528-HWs/CS528-HW5/results/load-20261021T075735Z-5b3f60c2/database-snapshot.json.gz",
+  "experiment_file": "/Users/thomasfang/CS528/CS528-HWs/CS528-HW5/report/evidence/load-20261021T075735Z-5b3f60c2/experiment.json",
+  "summary_file": "/Users/thomasfang/CS528/CS528-HWs/CS528-HW5/report/evidence/load-20261021T075735Z-5b3f60c2/summary.json"
+}

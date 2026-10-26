@@ -1,0 +1,25 @@
+{
+  "observed_on": "2026-10-20",
+  "source": "Read-only inspection of local gcloud logs; no terminal commands executed by assistant",
+  "events": [
+    {
+      "local_time": "21:02:58-21:02:59",
+      "log": "/Users/thomasfang/.config/gcloud/logs/2026.10.20/21.02.58.747869.log",
+      "finding": "SQL instance describe returned HTTP 404 instanceDoesNotExist"
+    },
+    {
+      "local_time": "21:02:59-21:03:00",
+      "log": "/Users/thomasfang/.config/gcloud/logs/2026.10.20/21.02.59.573838.log",
+      "finding": "gcloud requested missing beta component installation, displayed release notes, and logged no Cloud SQL create API request"
+    },
+    {
+      "local_time": "22:14:35-22:14:36",
+      "log": "/Users/thomasfang/.config/gcloud/logs/2026.10.20/22.14.35.716664.log",
+      "finding": "OAuth refresh succeeded; operations list for the named instance returned HTTP 403 notAuthorized"
+    }
+  ],
+  "local_component_state": "No beta installation manifest observed",
+  "diagnosis": "Local beta component bootstrap was blocked before Cloud SQL create; captured output hid its confirmation prompt",
+  "fix": "Explicit user-run beta installation, local component preflight, closed stdin and disabled prompts for scripted gcloud calls",
+  "validation": "Three regression tests added; user execution pending; earlier 38 tests passed per user output"
+}

@@ -1,0 +1,11 @@
+{
+  "reported_at": "2026-10-23T18:07:06.712Z",
+  "source": "User-provided terminal output",
+  "command": "bash verify_local.sh",
+  "tests": 61,
+  "elapsed_seconds": 11.943,
+  "result": "OK",
+  "resource_plan_changes_made": false,
+  "cloud_resources_created": false,
+  "code_matches_reviewed_stage": true
+}

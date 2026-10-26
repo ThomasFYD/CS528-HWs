@@ -1,0 +1,15 @@
+{
+  "ackDeadlineSeconds": 60,
+  "expirationPolicy": {
+    "ttl": "2678400s"
+  },
+  "labels": {
+    "course": "cs528",
+    "homework": "hw5"
+  },
+  "messageRetentionDuration": "604800s",
+  "name": "projects/dazzling-seat-508219-j3/subscriptions/cs528-hw5-forbidden-sub",
+  "pushConfig": {},
+  "state": "ACTIVE",
+  "topic": "projects/dazzling-seat-508219-j3/topics/cs528-hw5-forbidden"
+}

@@ -1,0 +1,59 @@
+{
+  "run_id": "load-20261021T075735Z-5b3f60c2",
+  "expected_requests": 100000,
+  "client_sha256": "10cb8c9f0fe29811c5201a25ba512e528d6e789ff576a94fd849d697ccb3a12a",
+  "commands": [
+    [
+      "/Users/thomasfang/CS528/CS528-HWs/CS528-HW5/client/http-client-mac",
+      "-d",
+      "35.193.157.51",
+      "-p",
+      "8080",
+      "-b",
+      "none",
+      "-w",
+      "__runs/load-20261021T075735Z-5b3f60c2/data",
+      "-n",
+      "50000",
+      "-i",
+      "11999",
+      "-r",
+      "528",
+      "-t",
+      "30"
+    ],
+    [
+      "/Users/thomasfang/CS528/CS528-HWs/CS528-HW5/client/http-client-mac",
+      "-d",
+      "35.193.157.51",
+      "-p",
+      "8080",
+      "-b",
+      "none",
+      "-w",
+      "__runs/load-20261021T075735Z-5b3f60c2/data",
+      "-n",
+      "50000",
+      "-i",
+      "11999",
+      "-r",
+      "528",
+      "-t",
+      "30"
+    ]
+  ],
+  "seed": 528,
+  "started_at": "2026-10-21T07:57:35.666368+00:00",
+  "complete": true,
+  "phase": "complete",
+  "load_started_at": "2026-10-21T07:57:43.556263+00:00",
+  "load_finished_at": "2026-10-21T10:58:49.526978+00:00",
+  "load_elapsed_seconds": 10866.021389917005,
+  "finished_at": "2026-10-21T10:58:58.583270+00:00",
+  "elapsed_seconds": 10882.965440207976,
+  "exit_codes": [
+    0,
+    0
+  ],
+  "guard_resumed": true
+}

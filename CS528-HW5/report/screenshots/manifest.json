@@ -1,0 +1,89 @@
+{
+  "run_id": "demo-8131a0d413fb4069",
+  "provenance": "User screenshots of local replay of saved real curl evidence; not contemporaneous live-run screenshots.",
+  "images": [
+    {
+      "file": "success-before.png",
+      "page": 1,
+      "case": "success",
+      "phase": "before",
+      "sha256": "bb80ad06572fc943359500f99c356cb52f925faa543e8eb3eb31784605e49a95",
+      "source": "/var/folders/kb/v31qm6v96zx6h6xtz18vxxfw0000gn/T/TemporaryItems/NSIRD_screencaptureui_b8Wkld/截屏2026-10-22 上午4.55.26.png",
+      "review": "All 15 request columns and all 3 failure columns visible; one preexisting row in each table; long lines wrap without omission."
+    },
+    {
+      "file": "success-response.png",
+      "page": 2,
+      "case": "success",
+      "phase": "response",
+      "sha256": "bc977ad28aa8bcd3e970b67b5f735dd5fe5df0504833e6643e5f42cdf5da51d4",
+      "source": "/var/folders/kb/v31qm6v96zx6h6xtz18vxxfw0000gn/T/TemporaryItems/NSIRD_screencaptureui_wKNwtb/截屏2026-10-22 上午4.56.54.png",
+      "review": "Full saved curl command and replay label visible; HTTP/1.1 200 OK, Content-Length 97586, matching saved body byte count and hash, +1 request and +0 error rows."
+    },
+    {
+      "file": "success-after.png",
+      "page": 3,
+      "case": "success",
+      "phase": "after",
+      "sha256": "98aa82d10f10518ba067d6023a821a45a6a0a25affcd362fde710e40d18fbcf8",
+      "source": "/var/folders/kb/v31qm6v96zx6h6xtz18vxxfw0000gn/T/TemporaryItems/NSIRD_screencaptureui_5crmB2/截屏2026-10-22 上午5.01.09.png",
+      "review": "Replay header and full after tables visible: 2 request rows with all 15 columns, including the new United States data/0.html HTTP 200 request; 1 preexisting failed-request row with all 3 columns. Wrapped lines retain complete values."
+    },
+    {
+      "file": "missing-before.png",
+      "page": 4,
+      "case": "missing",
+      "phase": "before",
+      "sha256": "1fb49bce455db91e03b921783fdff1f56aebd90558eea227fa774c105ad7aa10",
+      "source": "/var/folders/kb/v31qm6v96zx6h6xtz18vxxfw0000gn/T/TemporaryItems/NSIRD_screencaptureui_k1yu3b/截屏2026-10-22 上午5.08.02.png",
+      "review": "Replay header and complete before tables visible: 2 request rows with all 15 columns and 1 failed-request row with all 3 columns. Contents match the success-after snapshot; wrapped lines retain complete values."
+    },
+    {
+      "file": "missing-response.png",
+      "page": 5,
+      "case": "missing",
+      "phase": "response",
+      "sha256": "d359760176b67f12cc540a3546f95238815793e93dbdda99c848cda1a6327869",
+      "source": "/var/folders/kb/v31qm6v96zx6h6xtz18vxxfw0000gn/T/TemporaryItems/NSIRD_screencaptureui_OPJ63D/截屏2026-10-22 上午5.12.39.png",
+      "review": "Replay label and full saved curl command visible, including missing object path. HTTP/1.1 404 Not Found, Content-Length 16, saved body hash, File not found error body, and +1 request/+1 error row are complete."
+    },
+    {
+      "file": "missing-after.png",
+      "page": 6,
+      "case": "missing",
+      "phase": "after",
+      "sha256": "f22af014f23699542034328ff179b2981abab39d50ff7b25f7123cb86056c0da",
+      "source": "/var/folders/kb/v31qm6v96zx6h6xtz18vxxfw0000gn/T/TemporaryItems/NSIRD_screencaptureui_gSssmY/截屏2026-10-22 上午5.27.17.png",
+      "review": "Replay header and full after tables visible: 3 request rows with all 15 columns and 2 failed-request rows with all 3 columns. New missing-object request has HTTP 404 and matches the new error row by receipt timestamp and path. Wrapped lines retain complete values."
+    },
+    {
+      "file": "banned-before.png",
+      "page": 7,
+      "case": "banned",
+      "phase": "before",
+      "sha256": "1ff31c6ad4a6d864a11206758ccb244c64439bc08dec7b8e7983bfbc213a6b7f",
+      "source": "/var/folders/kb/v31qm6v96zx6h6xtz18vxxfw0000gn/T/TemporaryItems/NSIRD_screencaptureui_WN31zS/截屏2026-10-22 上午5.28.15.png",
+      "review": "Replay header and complete before tables visible: 3 request rows with all 15 columns and 2 failed-request rows with all 3 columns. Contents match the missing-after snapshot; wrapped lines retain complete values."
+    },
+    {
+      "file": "banned-response.png",
+      "page": 8,
+      "case": "banned",
+      "phase": "response",
+      "sha256": "6f4401bf4e0a2ec64c807af8e58195ab530f0ff491623935173a04b8d863e934",
+      "source": "/var/folders/kb/v31qm6v96zx6h6xtz18vxxfw0000gn/T/TemporaryItems/NSIRD_screencaptureui_v6USZz/截屏2026-10-22 上午5.29.51.png",
+      "review": "Replay label and complete saved curl command visible, including X-country: Iran. HTTP/1.1 400 Bad Request, Content-Length 38, saved body hash, Permission denied: request from Iran error body, and +1 request/+1 error row are complete."
+    },
+    {
+      "file": "banned-after.png",
+      "page": 9,
+      "case": "banned",
+      "phase": "after",
+      "sha256": "9d37e45ccd90c85c9076751d6616cbc099fb4652b447ebf1f17b083fcc02a81e",
+      "source": "/var/folders/kb/v31qm6v96zx6h6xtz18vxxfw0000gn/T/TemporaryItems/NSIRD_screencaptureui_bVltTm/截屏2026-10-22 上午5.31.14.png",
+      "review": "Replay header and complete after tables visible: 4 request rows with all 15 columns and 3 failed-request rows with all 3 columns. The new Iran request is_banned=true and HTTP 400, with a matching error row at 2026-10-21 06:44:25.758649. No fields are clipped."
+    }
+  ],
+  "complete": true,
+  "expected_count": 9
+}

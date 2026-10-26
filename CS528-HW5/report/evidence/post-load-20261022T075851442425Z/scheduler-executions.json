@@ -1,0 +1,1203 @@
+[
+  {
+    "insertId": "1xylt96fobrgke",
+    "jsonPayload": {
+      "@type": "type.googleapis.com/google.cloud.scheduler.logging.AttemptStarted",
+      "jobName": "projects/dazzling-seat-508219-j3/locations/us-central1/jobs/cs528-hw5-hourly-stop",
+      "scheduledTime": "2026-10-21T04:05:00.872238Z",
+      "targetType": "HTTP",
+      "url": "https://cs528-hw5-stop-sql-sw2da6eioq-uc.a.run.app/"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/cloudscheduler.googleapis.com%2Fexecutions",
+    "receiveTimestamp": "2026-10-21T04:05:02.734388833Z",
+    "resource": {
+      "labels": {
+        "job_id": "cs528-hw5-hourly-stop",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3"
+      },
+      "type": "cloud_scheduler_job"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-10-21T04:05:02.734388833Z"
+  },
+  {
+    "httpRequest": {
+      "status": 200
+    },
+    "insertId": "1h0ofltfds6w8q",
+    "jsonPayload": {
+      "@type": "type.googleapis.com/google.cloud.scheduler.logging.AttemptFinished",
+      "debugInfo": "URL_CRAWLED. Original HTTP response code number = 200",
+      "jobName": "projects/dazzling-seat-508219-j3/locations/us-central1/jobs/cs528-hw5-hourly-stop",
+      "targetType": "HTTP",
+      "url": "https://cs528-hw5-stop-sql-sw2da6eioq-uc.a.run.app/"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/cloudscheduler.googleapis.com%2Fexecutions",
+    "receiveTimestamp": "2026-10-21T04:05:11.764122638Z",
+    "resource": {
+      "labels": {
+        "job_id": "cs528-hw5-hourly-stop",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3"
+      },
+      "type": "cloud_scheduler_job"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-10-21T04:05:11.764122638Z"
+  },
+  {
+    "insertId": "15wddaceli5b2",
+    "jsonPayload": {
+      "@type": "type.googleapis.com/google.cloud.scheduler.logging.AttemptStarted",
+      "jobName": "projects/dazzling-seat-508219-j3/locations/us-central1/jobs/cs528-hw5-hourly-stop",
+      "scheduledTime": "2026-10-21T05:05:00.890252Z",
+      "targetType": "HTTP",
+      "url": "https://cs528-hw5-stop-sql-sw2da6eioq-uc.a.run.app/"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/cloudscheduler.googleapis.com%2Fexecutions",
+    "receiveTimestamp": "2026-10-21T05:05:02.909275944Z",
+    "resource": {
+      "labels": {
+        "job_id": "cs528-hw5-hourly-stop",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3"
+      },
+      "type": "cloud_scheduler_job"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-10-21T05:05:02.909275944Z"
+  },
+  {
+    "httpRequest": {
+      "status": 200
+    },
+    "insertId": "dw4z75f17qm0w",
+    "jsonPayload": {
+      "@type": "type.googleapis.com/google.cloud.scheduler.logging.AttemptFinished",
+      "debugInfo": "URL_CRAWLED. Original HTTP response code number = 200",
+      "jobName": "projects/dazzling-seat-508219-j3/locations/us-central1/jobs/cs528-hw5-hourly-stop",
+      "targetType": "HTTP",
+      "url": "https://cs528-hw5-stop-sql-sw2da6eioq-uc.a.run.app/"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/cloudscheduler.googleapis.com%2Fexecutions",
+    "receiveTimestamp": "2026-10-21T05:05:13.092654162Z",
+    "resource": {
+      "labels": {
+        "job_id": "cs528-hw5-hourly-stop",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3"
+      },
+      "type": "cloud_scheduler_job"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-10-21T05:05:13.092654162Z"
+  },
+  {
+    "httpRequest": {
+      "status": 200
+    },
+    "insertId": "1kctaujfqzs5ho",
+    "jsonPayload": {
+      "@type": "type.googleapis.com/google.cloud.scheduler.logging.AttemptFinished",
+      "debugInfo": "URL_CRAWLED. Original HTTP response code number = 200",
+      "jobName": "projects/dazzling-seat-508219-j3/locations/us-central1/jobs/cs528-hw5-hourly-stop",
+      "targetType": "HTTP",
+      "url": "https://cs528-hw5-stop-sql-sw2da6eioq-uc.a.run.app/"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/cloudscheduler.googleapis.com%2Fexecutions",
+    "receiveTimestamp": "2026-10-21T06:05:06.044194073Z",
+    "resource": {
+      "labels": {
+        "job_id": "cs528-hw5-hourly-stop",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3"
+      },
+      "type": "cloud_scheduler_job"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-10-21T06:05:06.044194073Z"
+  },
+  {
+    "insertId": "1kxicclfgb6kh7",
+    "jsonPayload": {
+      "@type": "type.googleapis.com/google.cloud.scheduler.logging.AttemptStarted",
+      "jobName": "projects/dazzling-seat-508219-j3/locations/us-central1/jobs/cs528-hw5-hourly-stop",
+      "scheduledTime": "2026-10-21T06:05:03.073057Z",
+      "targetType": "HTTP",
+      "url": "https://cs528-hw5-stop-sql-sw2da6eioq-uc.a.run.app/"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/cloudscheduler.googleapis.com%2Fexecutions",
+    "receiveTimestamp": "2026-10-21T06:05:06.129998669Z",
+    "resource": {
+      "labels": {
+        "job_id": "cs528-hw5-hourly-stop",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3"
+      },
+      "type": "cloud_scheduler_job"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-10-21T06:05:06.129998669Z"
+  },
+  {
+    "insertId": "1p3qltofkdcuon",
+    "jsonPayload": {
+      "@type": "type.googleapis.com/google.cloud.scheduler.logging.AttemptStarted",
+      "jobName": "projects/dazzling-seat-508219-j3/locations/us-central1/jobs/cs528-hw5-hourly-stop",
+      "scheduledTime": "2026-10-21T07:05:00.788596Z",
+      "targetType": "HTTP",
+      "url": "https://cs528-hw5-stop-sql-sw2da6eioq-uc.a.run.app/"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/cloudscheduler.googleapis.com%2Fexecutions",
+    "receiveTimestamp": "2026-10-21T07:05:07.301088318Z",
+    "resource": {
+      "labels": {
+        "job_id": "cs528-hw5-hourly-stop",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3"
+      },
+      "type": "cloud_scheduler_job"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-10-21T07:05:07.301088318Z"
+  },
+  {
+    "httpRequest": {
+      "status": 200
+    },
+    "insertId": "mig89mf17z62p",
+    "jsonPayload": {
+      "@type": "type.googleapis.com/google.cloud.scheduler.logging.AttemptFinished",
+      "debugInfo": "URL_CRAWLED. Original HTTP response code number = 200",
+      "jobName": "projects/dazzling-seat-508219-j3/locations/us-central1/jobs/cs528-hw5-hourly-stop",
+      "targetType": "HTTP",
+      "url": "https://cs528-hw5-stop-sql-sw2da6eioq-uc.a.run.app/"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/cloudscheduler.googleapis.com%2Fexecutions",
+    "receiveTimestamp": "2026-10-21T07:05:16.855862999Z",
+    "resource": {
+      "labels": {
+        "job_id": "cs528-hw5-hourly-stop",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3"
+      },
+      "type": "cloud_scheduler_job"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-10-21T07:05:16.855862999Z"
+  },
+  {
+    "insertId": "o6ou1yf82lvfb",
+    "jsonPayload": {
+      "@type": "type.googleapis.com/google.cloud.scheduler.logging.AttemptStarted",
+      "jobName": "projects/dazzling-seat-508219-j3/locations/us-central1/jobs/cs528-hw5-hourly-stop",
+      "scheduledTime": "2026-10-21T11:05:00.927992Z",
+      "targetType": "HTTP",
+      "url": "https://cs528-hw5-stop-sql-sw2da6eioq-uc.a.run.app/"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/cloudscheduler.googleapis.com%2Fexecutions",
+    "receiveTimestamp": "2026-10-21T11:05:03.775437765Z",
+    "resource": {
+      "labels": {
+        "job_id": "cs528-hw5-hourly-stop",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3"
+      },
+      "type": "cloud_scheduler_job"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-10-21T11:05:03.775437765Z"
+  },
+  {
+    "httpRequest": {
+      "status": 500
+    },
+    "insertId": "1vfxouxfrmfkc5",
+    "jsonPayload": {
+      "@type": "type.googleapis.com/google.cloud.scheduler.logging.AttemptFinished",
+      "debugInfo": "URL_UNREACHABLE-UNREACHABLE_5xx. Original HTTP response code number = 500",
+      "jobName": "projects/dazzling-seat-508219-j3/locations/us-central1/jobs/cs528-hw5-hourly-stop",
+      "status": "INTERNAL",
+      "targetType": "HTTP",
+      "url": "https://cs528-hw5-stop-sql-sw2da6eioq-uc.a.run.app/"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/cloudscheduler.googleapis.com%2Fexecutions",
+    "receiveTimestamp": "2026-10-21T11:05:23.818304408Z",
+    "resource": {
+      "labels": {
+        "job_id": "cs528-hw5-hourly-stop",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3"
+      },
+      "type": "cloud_scheduler_job"
+    },
+    "severity": "ERROR",
+    "timestamp": "2026-10-21T11:05:23.818304408Z"
+  },
+  {
+    "httpRequest": {
+      "status": 200
+    },
+    "insertId": "dchakbf8d9x6p",
+    "jsonPayload": {
+      "@type": "type.googleapis.com/google.cloud.scheduler.logging.AttemptFinished",
+      "debugInfo": "URL_CRAWLED. Original HTTP response code number = 200",
+      "jobName": "projects/dazzling-seat-508219-j3/locations/us-central1/jobs/cs528-hw5-hourly-stop",
+      "targetType": "HTTP",
+      "url": "https://cs528-hw5-stop-sql-sw2da6eioq-uc.a.run.app/"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/cloudscheduler.googleapis.com%2Fexecutions",
+    "receiveTimestamp": "2026-10-21T11:05:32.670792347Z",
+    "resource": {
+      "labels": {
+        "job_id": "cs528-hw5-hourly-stop",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3"
+      },
+      "type": "cloud_scheduler_job"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-10-21T11:05:32.670792347Z"
+  },
+  {
+    "insertId": "yqfrijfpoyfgu",
+    "jsonPayload": {
+      "@type": "type.googleapis.com/google.cloud.scheduler.logging.AttemptStarted",
+      "jobName": "projects/dazzling-seat-508219-j3/locations/us-central1/jobs/cs528-hw5-hourly-stop",
+      "scheduledTime": "2026-10-21T12:05:07.271343Z",
+      "targetType": "HTTP",
+      "url": "https://cs528-hw5-stop-sql-sw2da6eioq-uc.a.run.app/"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/cloudscheduler.googleapis.com%2Fexecutions",
+    "receiveTimestamp": "2026-10-21T12:05:11.282007117Z",
+    "resource": {
+      "labels": {
+        "job_id": "cs528-hw5-hourly-stop",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3"
+      },
+      "type": "cloud_scheduler_job"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-10-21T12:05:11.282007117Z"
+  },
+  {
+    "httpRequest": {
+      "status": 200
+    },
+    "insertId": "jhfj0ff3vlc4l",
+    "jsonPayload": {
+      "@type": "type.googleapis.com/google.cloud.scheduler.logging.AttemptFinished",
+      "debugInfo": "URL_CRAWLED. Original HTTP response code number = 200",
+      "jobName": "projects/dazzling-seat-508219-j3/locations/us-central1/jobs/cs528-hw5-hourly-stop",
+      "targetType": "HTTP",
+      "url": "https://cs528-hw5-stop-sql-sw2da6eioq-uc.a.run.app/"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/cloudscheduler.googleapis.com%2Fexecutions",
+    "receiveTimestamp": "2026-10-21T12:05:14.033583528Z",
+    "resource": {
+      "labels": {
+        "job_id": "cs528-hw5-hourly-stop",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3"
+      },
+      "type": "cloud_scheduler_job"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-10-21T12:05:14.033583528Z"
+  },
+  {
+    "insertId": "x22437f1yiqaf",
+    "jsonPayload": {
+      "@type": "type.googleapis.com/google.cloud.scheduler.logging.AttemptStarted",
+      "jobName": "projects/dazzling-seat-508219-j3/locations/us-central1/jobs/cs528-hw5-hourly-stop",
+      "scheduledTime": "2026-10-21T13:05:20.699561Z",
+      "targetType": "HTTP",
+      "url": "https://cs528-hw5-stop-sql-sw2da6eioq-uc.a.run.app/"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/cloudscheduler.googleapis.com%2Fexecutions",
+    "receiveTimestamp": "2026-10-21T13:05:29.753274396Z",
+    "resource": {
+      "labels": {
+        "job_id": "cs528-hw5-hourly-stop",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3"
+      },
+      "type": "cloud_scheduler_job"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-10-21T13:05:29.753274396Z"
+  },
+  {
+    "httpRequest": {
+      "status": 200
+    },
+    "insertId": "gpga6xf20i6nt",
+    "jsonPayload": {
+      "@type": "type.googleapis.com/google.cloud.scheduler.logging.AttemptFinished",
+      "debugInfo": "URL_CRAWLED. Original HTTP response code number = 200",
+      "jobName": "projects/dazzling-seat-508219-j3/locations/us-central1/jobs/cs528-hw5-hourly-stop",
+      "targetType": "HTTP",
+      "url": "https://cs528-hw5-stop-sql-sw2da6eioq-uc.a.run.app/"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/cloudscheduler.googleapis.com%2Fexecutions",
+    "receiveTimestamp": "2026-10-21T13:05:30.702088556Z",
+    "resource": {
+      "labels": {
+        "job_id": "cs528-hw5-hourly-stop",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3"
+      },
+      "type": "cloud_scheduler_job"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-10-21T13:05:30.702088556Z"
+  },
+  {
+    "insertId": "18z38o5fa9xnqa",
+    "jsonPayload": {
+      "@type": "type.googleapis.com/google.cloud.scheduler.logging.AttemptStarted",
+      "jobName": "projects/dazzling-seat-508219-j3/locations/us-central1/jobs/cs528-hw5-hourly-stop",
+      "scheduledTime": "2026-10-21T14:05:22.418092Z",
+      "targetType": "HTTP",
+      "url": "https://cs528-hw5-stop-sql-sw2da6eioq-uc.a.run.app/"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/cloudscheduler.googleapis.com%2Fexecutions",
+    "receiveTimestamp": "2026-10-21T14:05:31.318645197Z",
+    "resource": {
+      "labels": {
+        "job_id": "cs528-hw5-hourly-stop",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3"
+      },
+      "type": "cloud_scheduler_job"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-10-21T14:05:31.318645197Z"
+  },
+  {
+    "httpRequest": {
+      "status": 200
+    },
+    "insertId": "50aieofr9crk5",
+    "jsonPayload": {
+      "@type": "type.googleapis.com/google.cloud.scheduler.logging.AttemptFinished",
+      "debugInfo": "URL_CRAWLED. Original HTTP response code number = 200",
+      "jobName": "projects/dazzling-seat-508219-j3/locations/us-central1/jobs/cs528-hw5-hourly-stop",
+      "targetType": "HTTP",
+      "url": "https://cs528-hw5-stop-sql-sw2da6eioq-uc.a.run.app/"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/cloudscheduler.googleapis.com%2Fexecutions",
+    "receiveTimestamp": "2026-10-21T14:05:31.339862742Z",
+    "resource": {
+      "labels": {
+        "job_id": "cs528-hw5-hourly-stop",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3"
+      },
+      "type": "cloud_scheduler_job"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-10-21T14:05:31.339862742Z"
+  },
+  {
+    "insertId": "2s6rixetwp6c",
+    "jsonPayload": {
+      "@type": "type.googleapis.com/google.cloud.scheduler.logging.AttemptStarted",
+      "jobName": "projects/dazzling-seat-508219-j3/locations/us-central1/jobs/cs528-hw5-hourly-stop",
+      "scheduledTime": "2026-10-21T15:05:15.620305Z",
+      "targetType": "HTTP",
+      "url": "https://cs528-hw5-stop-sql-sw2da6eioq-uc.a.run.app/"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/cloudscheduler.googleapis.com%2Fexecutions",
+    "receiveTimestamp": "2026-10-21T15:05:19.453839298Z",
+    "resource": {
+      "labels": {
+        "job_id": "cs528-hw5-hourly-stop",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3"
+      },
+      "type": "cloud_scheduler_job"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-10-21T15:05:19.453839298Z"
+  },
+  {
+    "httpRequest": {
+      "status": 200
+    },
+    "insertId": "1doeq0gfef4x7o",
+    "jsonPayload": {
+      "@type": "type.googleapis.com/google.cloud.scheduler.logging.AttemptFinished",
+      "debugInfo": "URL_CRAWLED. Original HTTP response code number = 200",
+      "jobName": "projects/dazzling-seat-508219-j3/locations/us-central1/jobs/cs528-hw5-hourly-stop",
+      "targetType": "HTTP",
+      "url": "https://cs528-hw5-stop-sql-sw2da6eioq-uc.a.run.app/"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/cloudscheduler.googleapis.com%2Fexecutions",
+    "receiveTimestamp": "2026-10-21T15:05:30.393779537Z",
+    "resource": {
+      "labels": {
+        "job_id": "cs528-hw5-hourly-stop",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3"
+      },
+      "type": "cloud_scheduler_job"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-10-21T15:05:30.393779537Z"
+  },
+  {
+    "httpRequest": {
+      "status": 200
+    },
+    "insertId": "d38t95f67ef5r",
+    "jsonPayload": {
+      "@type": "type.googleapis.com/google.cloud.scheduler.logging.AttemptFinished",
+      "debugInfo": "URL_CRAWLED. Original HTTP response code number = 200",
+      "jobName": "projects/dazzling-seat-508219-j3/locations/us-central1/jobs/cs528-hw5-hourly-stop",
+      "targetType": "HTTP",
+      "url": "https://cs528-hw5-stop-sql-sw2da6eioq-uc.a.run.app/"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/cloudscheduler.googleapis.com%2Fexecutions",
+    "receiveTimestamp": "2026-10-21T16:05:16.431229660Z",
+    "resource": {
+      "labels": {
+        "job_id": "cs528-hw5-hourly-stop",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3"
+      },
+      "type": "cloud_scheduler_job"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-10-21T16:05:16.431229660Z"
+  },
+  {
+    "insertId": "jzm6xrfbq8ai8",
+    "jsonPayload": {
+      "@type": "type.googleapis.com/google.cloud.scheduler.logging.AttemptStarted",
+      "jobName": "projects/dazzling-seat-508219-j3/locations/us-central1/jobs/cs528-hw5-hourly-stop",
+      "scheduledTime": "2026-10-21T16:05:07.191742Z",
+      "targetType": "HTTP",
+      "url": "https://cs528-hw5-stop-sql-sw2da6eioq-uc.a.run.app/"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/cloudscheduler.googleapis.com%2Fexecutions",
+    "receiveTimestamp": "2026-10-21T16:05:16.515240076Z",
+    "resource": {
+      "labels": {
+        "job_id": "cs528-hw5-hourly-stop",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3"
+      },
+      "type": "cloud_scheduler_job"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-10-21T16:05:16.515240076Z"
+  },
+  {
+    "insertId": "kk8anfqfupu1",
+    "jsonPayload": {
+      "@type": "type.googleapis.com/google.cloud.scheduler.logging.AttemptStarted",
+      "jobName": "projects/dazzling-seat-508219-j3/locations/us-central1/jobs/cs528-hw5-hourly-stop",
+      "scheduledTime": "2026-10-21T17:05:08.067895Z",
+      "targetType": "HTTP",
+      "url": "https://cs528-hw5-stop-sql-sw2da6eioq-uc.a.run.app/"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/cloudscheduler.googleapis.com%2Fexecutions",
+    "receiveTimestamp": "2026-10-21T17:05:10.511303049Z",
+    "resource": {
+      "labels": {
+        "job_id": "cs528-hw5-hourly-stop",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3"
+      },
+      "type": "cloud_scheduler_job"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-10-21T17:05:10.511303049Z"
+  },
+  {
+    "httpRequest": {
+      "status": 200
+    },
+    "insertId": "pui32mfrp23xv",
+    "jsonPayload": {
+      "@type": "type.googleapis.com/google.cloud.scheduler.logging.AttemptFinished",
+      "debugInfo": "URL_CRAWLED. Original HTTP response code number = 200",
+      "jobName": "projects/dazzling-seat-508219-j3/locations/us-central1/jobs/cs528-hw5-hourly-stop",
+      "targetType": "HTTP",
+      "url": "https://cs528-hw5-stop-sql-sw2da6eioq-uc.a.run.app/"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/cloudscheduler.googleapis.com%2Fexecutions",
+    "receiveTimestamp": "2026-10-21T17:05:20.563071894Z",
+    "resource": {
+      "labels": {
+        "job_id": "cs528-hw5-hourly-stop",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3"
+      },
+      "type": "cloud_scheduler_job"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-10-21T17:05:20.563071894Z"
+  },
+  {
+    "insertId": "121fn7qect6sc",
+    "jsonPayload": {
+      "@type": "type.googleapis.com/google.cloud.scheduler.logging.AttemptStarted",
+      "jobName": "projects/dazzling-seat-508219-j3/locations/us-central1/jobs/cs528-hw5-hourly-stop",
+      "scheduledTime": "2026-10-21T18:05:19.00272Z",
+      "targetType": "HTTP",
+      "url": "https://cs528-hw5-stop-sql-sw2da6eioq-uc.a.run.app/"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/cloudscheduler.googleapis.com%2Fexecutions",
+    "receiveTimestamp": "2026-10-21T18:05:20.113718100Z",
+    "resource": {
+      "labels": {
+        "job_id": "cs528-hw5-hourly-stop",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3"
+      },
+      "type": "cloud_scheduler_job"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-10-21T18:05:20.113718100Z"
+  },
+  {
+    "httpRequest": {
+      "status": 200
+    },
+    "insertId": "1f453tvfg5j74b",
+    "jsonPayload": {
+      "@type": "type.googleapis.com/google.cloud.scheduler.logging.AttemptFinished",
+      "debugInfo": "URL_CRAWLED. Original HTTP response code number = 200",
+      "jobName": "projects/dazzling-seat-508219-j3/locations/us-central1/jobs/cs528-hw5-hourly-stop",
+      "targetType": "HTTP",
+      "url": "https://cs528-hw5-stop-sql-sw2da6eioq-uc.a.run.app/"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/cloudscheduler.googleapis.com%2Fexecutions",
+    "receiveTimestamp": "2026-10-21T18:05:30.684337755Z",
+    "resource": {
+      "labels": {
+        "job_id": "cs528-hw5-hourly-stop",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3"
+      },
+      "type": "cloud_scheduler_job"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-10-21T18:05:30.684337755Z"
+  },
+  {
+    "httpRequest": {
+      "status": 200
+    },
+    "insertId": "tyxdqsfs5fw8j",
+    "jsonPayload": {
+      "@type": "type.googleapis.com/google.cloud.scheduler.logging.AttemptFinished",
+      "debugInfo": "URL_CRAWLED. Original HTTP response code number = 200",
+      "jobName": "projects/dazzling-seat-508219-j3/locations/us-central1/jobs/cs528-hw5-hourly-stop",
+      "targetType": "HTTP",
+      "url": "https://cs528-hw5-stop-sql-sw2da6eioq-uc.a.run.app/"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/cloudscheduler.googleapis.com%2Fexecutions",
+    "receiveTimestamp": "2026-10-21T19:05:13.984484387Z",
+    "resource": {
+      "labels": {
+        "job_id": "cs528-hw5-hourly-stop",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3"
+      },
+      "type": "cloud_scheduler_job"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-10-21T19:05:13.984484387Z"
+  },
+  {
+    "insertId": "nndt5of4eqmk1",
+    "jsonPayload": {
+      "@type": "type.googleapis.com/google.cloud.scheduler.logging.AttemptStarted",
+      "jobName": "projects/dazzling-seat-508219-j3/locations/us-central1/jobs/cs528-hw5-hourly-stop",
+      "scheduledTime": "2026-10-21T19:05:05.686756Z",
+      "targetType": "HTTP",
+      "url": "https://cs528-hw5-stop-sql-sw2da6eioq-uc.a.run.app/"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/cloudscheduler.googleapis.com%2Fexecutions",
+    "receiveTimestamp": "2026-10-21T19:05:14.168271660Z",
+    "resource": {
+      "labels": {
+        "job_id": "cs528-hw5-hourly-stop",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3"
+      },
+      "type": "cloud_scheduler_job"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-10-21T19:05:14.168271660Z"
+  },
+  {
+    "insertId": "l5adycfqjcryy",
+    "jsonPayload": {
+      "@type": "type.googleapis.com/google.cloud.scheduler.logging.AttemptStarted",
+      "jobName": "projects/dazzling-seat-508219-j3/locations/us-central1/jobs/cs528-hw5-hourly-stop",
+      "scheduledTime": "2026-10-21T20:05:05.92967Z",
+      "targetType": "HTTP",
+      "url": "https://cs528-hw5-stop-sql-sw2da6eioq-uc.a.run.app/"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/cloudscheduler.googleapis.com%2Fexecutions",
+    "receiveTimestamp": "2026-10-21T20:05:08.330179902Z",
+    "resource": {
+      "labels": {
+        "job_id": "cs528-hw5-hourly-stop",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3"
+      },
+      "type": "cloud_scheduler_job"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-10-21T20:05:08.330179902Z"
+  },
+  {
+    "httpRequest": {
+      "status": 200
+    },
+    "insertId": "1xo398zfay6odp",
+    "jsonPayload": {
+      "@type": "type.googleapis.com/google.cloud.scheduler.logging.AttemptFinished",
+      "debugInfo": "URL_CRAWLED. Original HTTP response code number = 200",
+      "jobName": "projects/dazzling-seat-508219-j3/locations/us-central1/jobs/cs528-hw5-hourly-stop",
+      "targetType": "HTTP",
+      "url": "https://cs528-hw5-stop-sql-sw2da6eioq-uc.a.run.app/"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/cloudscheduler.googleapis.com%2Fexecutions",
+    "receiveTimestamp": "2026-10-21T20:05:19.003143706Z",
+    "resource": {
+      "labels": {
+        "job_id": "cs528-hw5-hourly-stop",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3"
+      },
+      "type": "cloud_scheduler_job"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-10-21T20:05:19.003143706Z"
+  },
+  {
+    "insertId": "efucqgfgw322p",
+    "jsonPayload": {
+      "@type": "type.googleapis.com/google.cloud.scheduler.logging.AttemptStarted",
+      "jobName": "projects/dazzling-seat-508219-j3/locations/us-central1/jobs/cs528-hw5-hourly-stop",
+      "scheduledTime": "2026-10-21T21:05:10.863645Z",
+      "targetType": "HTTP",
+      "url": "https://cs528-hw5-stop-sql-sw2da6eioq-uc.a.run.app/"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/cloudscheduler.googleapis.com%2Fexecutions",
+    "receiveTimestamp": "2026-10-21T21:05:18.205622414Z",
+    "resource": {
+      "labels": {
+        "job_id": "cs528-hw5-hourly-stop",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3"
+      },
+      "type": "cloud_scheduler_job"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-10-21T21:05:18.205622414Z"
+  },
+  {
+    "httpRequest": {
+      "status": 200
+    },
+    "insertId": "11i772xf8k7rgb",
+    "jsonPayload": {
+      "@type": "type.googleapis.com/google.cloud.scheduler.logging.AttemptFinished",
+      "debugInfo": "URL_CRAWLED. Original HTTP response code number = 200",
+      "jobName": "projects/dazzling-seat-508219-j3/locations/us-central1/jobs/cs528-hw5-hourly-stop",
+      "targetType": "HTTP",
+      "url": "https://cs528-hw5-stop-sql-sw2da6eioq-uc.a.run.app/"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/cloudscheduler.googleapis.com%2Fexecutions",
+    "receiveTimestamp": "2026-10-21T21:05:18.250274758Z",
+    "resource": {
+      "labels": {
+        "job_id": "cs528-hw5-hourly-stop",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3"
+      },
+      "type": "cloud_scheduler_job"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-10-21T21:05:18.250274758Z"
+  },
+  {
+    "insertId": "sl89g6fah1px8",
+    "jsonPayload": {
+      "@type": "type.googleapis.com/google.cloud.scheduler.logging.AttemptStarted",
+      "jobName": "projects/dazzling-seat-508219-j3/locations/us-central1/jobs/cs528-hw5-hourly-stop",
+      "scheduledTime": "2026-10-21T22:05:15.903936Z",
+      "targetType": "HTTP",
+      "url": "https://cs528-hw5-stop-sql-sw2da6eioq-uc.a.run.app/"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/cloudscheduler.googleapis.com%2Fexecutions",
+    "receiveTimestamp": "2026-10-21T22:05:22.437648761Z",
+    "resource": {
+      "labels": {
+        "job_id": "cs528-hw5-hourly-stop",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3"
+      },
+      "type": "cloud_scheduler_job"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-10-21T22:05:22.437648761Z"
+  },
+  {
+    "httpRequest": {
+      "status": 200
+    },
+    "insertId": "121gpsxe3pssr",
+    "jsonPayload": {
+      "@type": "type.googleapis.com/google.cloud.scheduler.logging.AttemptFinished",
+      "debugInfo": "URL_CRAWLED. Original HTTP response code number = 200",
+      "jobName": "projects/dazzling-seat-508219-j3/locations/us-central1/jobs/cs528-hw5-hourly-stop",
+      "targetType": "HTTP",
+      "url": "https://cs528-hw5-stop-sql-sw2da6eioq-uc.a.run.app/"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/cloudscheduler.googleapis.com%2Fexecutions",
+    "receiveTimestamp": "2026-10-21T22:05:23.023281835Z",
+    "resource": {
+      "labels": {
+        "job_id": "cs528-hw5-hourly-stop",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3"
+      },
+      "type": "cloud_scheduler_job"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-10-21T22:05:23.023281835Z"
+  },
+  {
+    "httpRequest": {
+      "status": 200
+    },
+    "insertId": "by0un9f3zmz84",
+    "jsonPayload": {
+      "@type": "type.googleapis.com/google.cloud.scheduler.logging.AttemptFinished",
+      "debugInfo": "URL_CRAWLED. Original HTTP response code number = 200",
+      "jobName": "projects/dazzling-seat-508219-j3/locations/us-central1/jobs/cs528-hw5-hourly-stop",
+      "targetType": "HTTP",
+      "url": "https://cs528-hw5-stop-sql-sw2da6eioq-uc.a.run.app/"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/cloudscheduler.googleapis.com%2Fexecutions",
+    "receiveTimestamp": "2026-10-21T23:05:26.679074610Z",
+    "resource": {
+      "labels": {
+        "job_id": "cs528-hw5-hourly-stop",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3"
+      },
+      "type": "cloud_scheduler_job"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-10-21T23:05:26.679074610Z"
+  },
+  {
+    "insertId": "l43d7sej7a50",
+    "jsonPayload": {
+      "@type": "type.googleapis.com/google.cloud.scheduler.logging.AttemptStarted",
+      "jobName": "projects/dazzling-seat-508219-j3/locations/us-central1/jobs/cs528-hw5-hourly-stop",
+      "scheduledTime": "2026-10-21T23:05:18.122186Z",
+      "targetType": "HTTP",
+      "url": "https://cs528-hw5-stop-sql-sw2da6eioq-uc.a.run.app/"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/cloudscheduler.googleapis.com%2Fexecutions",
+    "receiveTimestamp": "2026-10-21T23:05:27.338171519Z",
+    "resource": {
+      "labels": {
+        "job_id": "cs528-hw5-hourly-stop",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3"
+      },
+      "type": "cloud_scheduler_job"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-10-21T23:05:27.338171519Z"
+  },
+  {
+    "httpRequest": {
+      "status": 200
+    },
+    "insertId": "2u0cwnfa20j5h",
+    "jsonPayload": {
+      "@type": "type.googleapis.com/google.cloud.scheduler.logging.AttemptFinished",
+      "debugInfo": "URL_CRAWLED. Original HTTP response code number = 200",
+      "jobName": "projects/dazzling-seat-508219-j3/locations/us-central1/jobs/cs528-hw5-hourly-stop",
+      "targetType": "HTTP",
+      "url": "https://cs528-hw5-stop-sql-sw2da6eioq-uc.a.run.app/"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/cloudscheduler.googleapis.com%2Fexecutions",
+    "receiveTimestamp": "2026-10-22T00:05:14.255120381Z",
+    "resource": {
+      "labels": {
+        "job_id": "cs528-hw5-hourly-stop",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3"
+      },
+      "type": "cloud_scheduler_job"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-10-22T00:05:14.255120381Z"
+  },
+  {
+    "insertId": "11ruv6gemhary",
+    "jsonPayload": {
+      "@type": "type.googleapis.com/google.cloud.scheduler.logging.AttemptStarted",
+      "jobName": "projects/dazzling-seat-508219-j3/locations/us-central1/jobs/cs528-hw5-hourly-stop",
+      "scheduledTime": "2026-10-22T00:05:11.075527Z",
+      "targetType": "HTTP",
+      "url": "https://cs528-hw5-stop-sql-sw2da6eioq-uc.a.run.app/"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/cloudscheduler.googleapis.com%2Fexecutions",
+    "receiveTimestamp": "2026-10-22T00:05:14.344189567Z",
+    "resource": {
+      "labels": {
+        "job_id": "cs528-hw5-hourly-stop",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3"
+      },
+      "type": "cloud_scheduler_job"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-10-22T00:05:14.344189567Z"
+  },
+  {
+    "insertId": "1s3rkj0ecri6g",
+    "jsonPayload": {
+      "@type": "type.googleapis.com/google.cloud.scheduler.logging.AttemptStarted",
+      "jobName": "projects/dazzling-seat-508219-j3/locations/us-central1/jobs/cs528-hw5-hourly-stop",
+      "scheduledTime": "2026-10-22T01:05:03.150995Z",
+      "targetType": "HTTP",
+      "url": "https://cs528-hw5-stop-sql-sw2da6eioq-uc.a.run.app/"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/cloudscheduler.googleapis.com%2Fexecutions",
+    "receiveTimestamp": "2026-10-22T01:05:12.138872278Z",
+    "resource": {
+      "labels": {
+        "job_id": "cs528-hw5-hourly-stop",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3"
+      },
+      "type": "cloud_scheduler_job"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-10-22T01:05:12.138872278Z"
+  },
+  {
+    "httpRequest": {
+      "status": 200
+    },
+    "insertId": "m78j2wf2pzko6",
+    "jsonPayload": {
+      "@type": "type.googleapis.com/google.cloud.scheduler.logging.AttemptFinished",
+      "debugInfo": "URL_CRAWLED. Original HTTP response code number = 200",
+      "jobName": "projects/dazzling-seat-508219-j3/locations/us-central1/jobs/cs528-hw5-hourly-stop",
+      "targetType": "HTTP",
+      "url": "https://cs528-hw5-stop-sql-sw2da6eioq-uc.a.run.app/"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/cloudscheduler.googleapis.com%2Fexecutions",
+    "receiveTimestamp": "2026-10-22T01:05:12.160784785Z",
+    "resource": {
+      "labels": {
+        "job_id": "cs528-hw5-hourly-stop",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3"
+      },
+      "type": "cloud_scheduler_job"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-10-22T01:05:12.160784785Z"
+  },
+  {
+    "httpRequest": {
+      "status": 200
+    },
+    "insertId": "1rllbedf13fqqr",
+    "jsonPayload": {
+      "@type": "type.googleapis.com/google.cloud.scheduler.logging.AttemptFinished",
+      "debugInfo": "URL_CRAWLED. Original HTTP response code number = 200",
+      "jobName": "projects/dazzling-seat-508219-j3/locations/us-central1/jobs/cs528-hw5-hourly-stop",
+      "targetType": "HTTP",
+      "url": "https://cs528-hw5-stop-sql-sw2da6eioq-uc.a.run.app/"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/cloudscheduler.googleapis.com%2Fexecutions",
+    "receiveTimestamp": "2026-10-22T02:05:07.124494562Z",
+    "resource": {
+      "labels": {
+        "job_id": "cs528-hw5-hourly-stop",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3"
+      },
+      "type": "cloud_scheduler_job"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-10-22T02:05:07.124494562Z"
+  },
+  {
+    "insertId": "1etpqlsfj4tzko",
+    "jsonPayload": {
+      "@type": "type.googleapis.com/google.cloud.scheduler.logging.AttemptStarted",
+      "jobName": "projects/dazzling-seat-508219-j3/locations/us-central1/jobs/cs528-hw5-hourly-stop",
+      "scheduledTime": "2026-10-22T02:05:03.242844Z",
+      "targetType": "HTTP",
+      "url": "https://cs528-hw5-stop-sql-sw2da6eioq-uc.a.run.app/"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/cloudscheduler.googleapis.com%2Fexecutions",
+    "receiveTimestamp": "2026-10-22T02:05:07.483018848Z",
+    "resource": {
+      "labels": {
+        "job_id": "cs528-hw5-hourly-stop",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3"
+      },
+      "type": "cloud_scheduler_job"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-10-22T02:05:07.483018848Z"
+  },
+  {
+    "insertId": "tf8fsrf9qv05a",
+    "jsonPayload": {
+      "@type": "type.googleapis.com/google.cloud.scheduler.logging.AttemptStarted",
+      "jobName": "projects/dazzling-seat-508219-j3/locations/us-central1/jobs/cs528-hw5-hourly-stop",
+      "scheduledTime": "2026-10-22T03:05:16.749581Z",
+      "targetType": "HTTP",
+      "url": "https://cs528-hw5-stop-sql-sw2da6eioq-uc.a.run.app/"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/cloudscheduler.googleapis.com%2Fexecutions",
+    "receiveTimestamp": "2026-10-22T03:05:18.497957632Z",
+    "resource": {
+      "labels": {
+        "job_id": "cs528-hw5-hourly-stop",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3"
+      },
+      "type": "cloud_scheduler_job"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-10-22T03:05:18.497957632Z"
+  },
+  {
+    "httpRequest": {
+      "status": 200
+    },
+    "insertId": "g55cbeeykuqw",
+    "jsonPayload": {
+      "@type": "type.googleapis.com/google.cloud.scheduler.logging.AttemptFinished",
+      "debugInfo": "URL_CRAWLED. Original HTTP response code number = 200",
+      "jobName": "projects/dazzling-seat-508219-j3/locations/us-central1/jobs/cs528-hw5-hourly-stop",
+      "targetType": "HTTP",
+      "url": "https://cs528-hw5-stop-sql-sw2da6eioq-uc.a.run.app/"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/cloudscheduler.googleapis.com%2Fexecutions",
+    "receiveTimestamp": "2026-10-22T03:05:29.857556753Z",
+    "resource": {
+      "labels": {
+        "job_id": "cs528-hw5-hourly-stop",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3"
+      },
+      "type": "cloud_scheduler_job"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-10-22T03:05:29.857556753Z"
+  },
+  {
+    "insertId": "3m6r58f8f6p36",
+    "jsonPayload": {
+      "@type": "type.googleapis.com/google.cloud.scheduler.logging.AttemptStarted",
+      "jobName": "projects/dazzling-seat-508219-j3/locations/us-central1/jobs/cs528-hw5-hourly-stop",
+      "scheduledTime": "2026-10-22T04:05:04.731954Z",
+      "targetType": "HTTP",
+      "url": "https://cs528-hw5-stop-sql-sw2da6eioq-uc.a.run.app/"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/cloudscheduler.googleapis.com%2Fexecutions",
+    "receiveTimestamp": "2026-10-22T04:05:06.501711307Z",
+    "resource": {
+      "labels": {
+        "job_id": "cs528-hw5-hourly-stop",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3"
+      },
+      "type": "cloud_scheduler_job"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-10-22T04:05:06.501711307Z"
+  },
+  {
+    "httpRequest": {
+      "status": 200
+    },
+    "insertId": "11729yjeum6b3",
+    "jsonPayload": {
+      "@type": "type.googleapis.com/google.cloud.scheduler.logging.AttemptFinished",
+      "debugInfo": "URL_CRAWLED. Original HTTP response code number = 200",
+      "jobName": "projects/dazzling-seat-508219-j3/locations/us-central1/jobs/cs528-hw5-hourly-stop",
+      "targetType": "HTTP",
+      "url": "https://cs528-hw5-stop-sql-sw2da6eioq-uc.a.run.app/"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/cloudscheduler.googleapis.com%2Fexecutions",
+    "receiveTimestamp": "2026-10-22T04:05:12.727849647Z",
+    "resource": {
+      "labels": {
+        "job_id": "cs528-hw5-hourly-stop",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3"
+      },
+      "type": "cloud_scheduler_job"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-10-22T04:05:12.727849647Z"
+  },
+  {
+    "insertId": "1kmg2glf1rca4a",
+    "jsonPayload": {
+      "@type": "type.googleapis.com/google.cloud.scheduler.logging.AttemptStarted",
+      "jobName": "projects/dazzling-seat-508219-j3/locations/us-central1/jobs/cs528-hw5-hourly-stop",
+      "scheduledTime": "2026-10-22T05:05:14.283299Z",
+      "targetType": "HTTP",
+      "url": "https://cs528-hw5-stop-sql-sw2da6eioq-uc.a.run.app/"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/cloudscheduler.googleapis.com%2Fexecutions",
+    "receiveTimestamp": "2026-10-22T05:05:20.512044782Z",
+    "resource": {
+      "labels": {
+        "job_id": "cs528-hw5-hourly-stop",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3"
+      },
+      "type": "cloud_scheduler_job"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-10-22T05:05:20.512044782Z"
+  },
+  {
+    "httpRequest": {
+      "status": 200
+    },
+    "insertId": "184eodpf111av3",
+    "jsonPayload": {
+      "@type": "type.googleapis.com/google.cloud.scheduler.logging.AttemptFinished",
+      "debugInfo": "URL_CRAWLED. Original HTTP response code number = 200",
+      "jobName": "projects/dazzling-seat-508219-j3/locations/us-central1/jobs/cs528-hw5-hourly-stop",
+      "targetType": "HTTP",
+      "url": "https://cs528-hw5-stop-sql-sw2da6eioq-uc.a.run.app/"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/cloudscheduler.googleapis.com%2Fexecutions",
+    "receiveTimestamp": "2026-10-22T05:05:21.017562297Z",
+    "resource": {
+      "labels": {
+        "job_id": "cs528-hw5-hourly-stop",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3"
+      },
+      "type": "cloud_scheduler_job"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-10-22T05:05:21.017562297Z"
+  },
+  {
+    "insertId": "lxl1ypfgxo19s",
+    "jsonPayload": {
+      "@type": "type.googleapis.com/google.cloud.scheduler.logging.AttemptStarted",
+      "jobName": "projects/dazzling-seat-508219-j3/locations/us-central1/jobs/cs528-hw5-hourly-stop",
+      "scheduledTime": "2026-10-22T06:05:03.207293Z",
+      "targetType": "HTTP",
+      "url": "https://cs528-hw5-stop-sql-sw2da6eioq-uc.a.run.app/"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/cloudscheduler.googleapis.com%2Fexecutions",
+    "receiveTimestamp": "2026-10-22T06:05:10.705906247Z",
+    "resource": {
+      "labels": {
+        "job_id": "cs528-hw5-hourly-stop",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3"
+      },
+      "type": "cloud_scheduler_job"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-10-22T06:05:10.705906247Z"
+  },
+  {
+    "httpRequest": {
+      "status": 200
+    },
+    "insertId": "1ip2kmsf7pxwzr",
+    "jsonPayload": {
+      "@type": "type.googleapis.com/google.cloud.scheduler.logging.AttemptFinished",
+      "debugInfo": "URL_CRAWLED. Original HTTP response code number = 200",
+      "jobName": "projects/dazzling-seat-508219-j3/locations/us-central1/jobs/cs528-hw5-hourly-stop",
+      "targetType": "HTTP",
+      "url": "https://cs528-hw5-stop-sql-sw2da6eioq-uc.a.run.app/"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/cloudscheduler.googleapis.com%2Fexecutions",
+    "receiveTimestamp": "2026-10-22T06:05:10.800217185Z",
+    "resource": {
+      "labels": {
+        "job_id": "cs528-hw5-hourly-stop",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3"
+      },
+      "type": "cloud_scheduler_job"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-10-22T06:05:10.800217185Z"
+  },
+  {
+    "insertId": "k9xncpfdwsxno",
+    "jsonPayload": {
+      "@type": "type.googleapis.com/google.cloud.scheduler.logging.AttemptStarted",
+      "jobName": "projects/dazzling-seat-508219-j3/locations/us-central1/jobs/cs528-hw5-hourly-stop",
+      "scheduledTime": "2026-10-22T07:05:08.82352Z",
+      "targetType": "HTTP",
+      "url": "https://cs528-hw5-stop-sql-sw2da6eioq-uc.a.run.app/"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/cloudscheduler.googleapis.com%2Fexecutions",
+    "receiveTimestamp": "2026-10-22T07:05:14.880932621Z",
+    "resource": {
+      "labels": {
+        "job_id": "cs528-hw5-hourly-stop",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3"
+      },
+      "type": "cloud_scheduler_job"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-10-22T07:05:14.880932621Z"
+  },
+  {
+    "httpRequest": {
+      "status": 200
+    },
+    "insertId": "15xpzf4f35v75e",
+    "jsonPayload": {
+      "@type": "type.googleapis.com/google.cloud.scheduler.logging.AttemptFinished",
+      "debugInfo": "URL_CRAWLED. Original HTTP response code number = 200",
+      "jobName": "projects/dazzling-seat-508219-j3/locations/us-central1/jobs/cs528-hw5-hourly-stop",
+      "targetType": "HTTP",
+      "url": "https://cs528-hw5-stop-sql-sw2da6eioq-uc.a.run.app/"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/cloudscheduler.googleapis.com%2Fexecutions",
+    "receiveTimestamp": "2026-10-22T07:05:14.986236485Z",
+    "resource": {
+      "labels": {
+        "job_id": "cs528-hw5-hourly-stop",
+        "location": "us-central1",
+        "project_id": "dazzling-seat-508219-j3"
+      },
+      "type": "cloud_scheduler_job"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-10-22T07:05:14.986236485Z"
+  }
+]

@@ -1,0 +1,96 @@
+Ran 51 tests in 10.566s
+
+OK
+{
+  "action": "setup",
+  "project": "dazzling-seat-508219-j3",
+  "region": "us-central1",
+  "zone": "us-central1-a",
+  "web_vm": "e2-small",
+  "reporter_vm": "e2-micro",
+  "sql": {
+    "name": "cs528-hw5-mysql",
+    "version": "MYSQL_8_4",
+    "edition": "ENTERPRISE",
+    "tier": "db-g1-small",
+    "storage_gb": 10,
+    "cleanup": "STOP, never DELETE"
+  },
+  "existing_hw2_bucket": "cs528-hw2-yf-2026",
+  "release_static_ip_on_cleanup": true,
+  "guard": "Authenticated gen2 function, hourly at minute 5 UTC; runner pauses/resumes it",
+  "data_retained_after_cleanup": [
+    "Cloud SQL instance and data",
+    "DB password secret",
+    "local evidence",
+    "HW2 bucket"
+  ],
+  "billing": "No fixed quote. VM, SQL, network egress, storage and build usage are billable; stopped SQL retains storage charges.",
+  "changes_made": false
+}
+Local checks passed. No cloud resources were created by this verification.
+Running: gcloud scheduler jobs pause cs528-hw5-hourly-stop
+Job has been paused.
+Running: gcloud sql instances patch cs528-hw5-mysql
+The following message will be used for the patch API method.
+{"name": "cs528-hw5-mysql", "project": "dazzling-seat-508219-j3", "settings": {"activationPolicy": "ALWAYS"}}
+Patching Cloud SQL instance...
+...................done.
+Updated [https://sqladmin.googleapis.com/sql/v1beta4/projects/dazzling-seat-508219-j3/instances/cs528-hw5-mysql].
+Cloud SQL ready. startup.sh calls setup_schema.py to create only missing tables.
+Running: gcloud storage cp /Users/thomasfang/CS528/CS528-HWs/CS528-HW5/build/source-cf096d7e90fa8bd031a8cd40ad768cbdfd6fe5a48f1eda20e6636535441290a3.tar.gz gs://dazzling-seat-508219-j3-hw5-deployment/source-cf096d7e90fa8bd031a8cd40ad768cbdfd6fe5a48f1eda20e6636535441290a3.tar.gz
+Copying file:///Users/thomasfang/CS528/CS528-HWs/CS528-HW5/build/source-cf096d7e90fa8bd031a8cd40ad768cbdfd6fe5a48f1eda20e6636535441290a3.tar.gz to gs://dazzling-seat-508219-j3-hw5-deployment/source-cf096d7e90fa8bd031a8cd40ad768cbdfd6fe5a48f1eda20e6636535441290a3.tar.gz
+  
+.......
+Running: gcloud compute instances stop cs528-hw5-web
+Stopping instance(s) cs528-hw5-web...
+....................................................................................done.
+Updated [https://compute.googleapis.com/compute/v1/projects/dazzling-seat-508219-j3/zones/us-central1-a/instances/cs528-hw5-web].
+Running: gcloud compute instances add-metadata cs528-hw5-web
+Updated [https://www.googleapis.com/compute/v1/projects/dazzling-seat-508219-j3/zones/us-central1-a/instances/cs528-hw5-web].
+WARNING: Some requests generated warnings:
+ - Your VM is using global DNS. VM instances using global DNS are vulnerable to cross-regional outages. To reduce the risk of widespread service disruption, use zonal DNS instead. Learn more at https://cloud.google.com/compute/docs/networking/zonal-dns?utm_id=vm-using
+Running: gcloud compute instances add-labels cs528-hw5-web
+Updating labels of instance [cs528-hw5-web]...
+.....done.
+Running: gcloud compute instances start cs528-hw5-web
+Starting instance(s) cs528-hw5-web...
+............................................done.
+Updated [https://compute.googleapis.com/compute/v1/projects/dazzling-seat-508219-j3/zones/us-central1-a/instances/cs528-hw5-web].
+Instance internal IP is 10.85.0.2
+Instance external IP is 35.193.157.51
+Waiting for web startup (up to 600s); log: /Users/thomasfang/CS528/CS528-HWs/CS528-HW5/report/evidence/web-startup-after-refresh.log
+web startup completed for the new source.
+Running: gcloud compute instances stop cs528-hw5-reporter
+Stopping instance(s) cs528-hw5-reporter...
+......................................................................................done.
+Updated [https://compute.googleapis.com/compute/v1/projects/dazzling-seat-508219-j3/zones/us-central1-a/instances/cs528-hw5-reporter].
+Running: gcloud compute instances add-metadata cs528-hw5-reporter
+Updated [https://www.googleapis.com/compute/v1/projects/dazzling-seat-508219-j3/zones/us-central1-a/instances/cs528-hw5-reporter].
+WARNING: Some requests generated warnings:
+ - Your VM is using global DNS. VM instances using global DNS are vulnerable to cross-regional outages. To reduce the risk of widespread service disruption, use zonal DNS instead. Learn more at https://cloud.google.com/compute/docs/networking/zonal-dns?utm_id=vm-using
+Running: gcloud compute instances add-labels cs528-hw5-reporter
+Updating labels of instance [cs528-hw5-reporter]...
+.....done.
+Running: gcloud compute instances start cs528-hw5-reporter
+Starting instance(s) cs528-hw5-reporter...
+.........................................................................................done.
+Updated [https://compute.googleapis.com/compute/v1/projects/dazzling-seat-508219-j3/zones/us-central1-a/instances/cs528-hw5-reporter].
+Instance internal IP is 10.85.0.3
+Instance external IP is 34.72.164.222
+Waiting for reporter startup (up to 600s); log: /Users/thomasfang/CS528/CS528-HWs/CS528-HW5/report/evidence/reporter-startup-after-refresh.log
+reporter startup completed for the new source.
+Running: gcloud scheduler jobs resume cs528-hw5-hourly-stop
+Job has been resumed.
+{
+  "project": "dazzling-seat-508219-j3",
+  "sql_policy": "ALWAYS",
+  "vms": {
+    "web": "RUNNING",
+    "reporter": "RUNNING"
+  },
+  "web_ip": "35.193.157.51",
+  "guard": "ENABLED",
+  "evidence": "/Users/thomasfang/CS528/CS528-HWs/CS528-HW5/report/evidence/refresh-status.json"
+}
+VM startup completed. SQL, disks and static IP were retained. Verify real HTTP/SQL behavior next.

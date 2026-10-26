@@ -1,0 +1,22 @@
+{
+  "source": "report/evidence/cleanup-verification.json",
+  "source_sha256": "b122d13e86f297d2fb5e5bdee2c32334c3f797c35ac27adadd6d0e09f78fe1d5",
+  "reviewed_on": "2026-10-22",
+  "project": "dazzling-seat-508219-j3",
+  "verified": {
+    "sql_name": "cs528-hw5-mysql",
+    "sql_state": "STOPPED",
+    "sql_activation_policy": "NEVER",
+    "sql_deletion_protection": true,
+    "web_vm_absent": true,
+    "reporter_vm_absent": true,
+    "static_address_absent": true,
+    "scheduler_job_absent": true
+  },
+  "user_reported": "HW5 teardown complete. SQL stopped (not deleted); its storage and password secret are retained",
+  "limits": [
+    "The post-cleanup JSON independently checks SQL, the two VMs, the static address and the scheduler job.",
+    "Other cleanup actions are supported by the successful cleanup completion, not a separate complete inventory.",
+    "Retained SQL storage and the password secret may continue to incur charges. No final billing amount has been verified."
+  ]
+}

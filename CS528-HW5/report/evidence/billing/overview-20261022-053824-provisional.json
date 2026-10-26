@@ -1,0 +1,27 @@
+{
+  "file": "overview-20261022-053824-provisional.png",
+  "source": "/var/folders/kb/v31qm6v96zx6h6xtz18vxxfw0000gn/T/TemporaryItems/NSIRD_screencaptureui_LQGNac/截屏2026-10-22 上午5.38.24.png",
+  "sha256": "40527e386da74dc49643189b6eda661ddf38fd0ac947c489ba988782a0295936",
+  "status": "provisional_scope_unverified",
+  "observed": {
+    "actual_date_range": "2026-10-17 through 2026-10-22",
+    "displayed_net_amount": "$0.00",
+    "displayed_savings": "-$1.62",
+    "forecast_date_range": "2026-10-17 through 2026-10-23",
+    "forecast_amount": "$0.00",
+    "forecast_savings": "-$0.06",
+    "project_filter_visible": false,
+    "service_table_visible": false,
+    "currency_code_visible": false
+  },
+  "required_follow_up": [
+    "Confirm project filter dazzling-seat-508219-j3.",
+    "Set and capture actual usage range 2026-10-20 through 2026-10-22.",
+    "Capture service cost and savings table with total and currency."
+  ],
+  "limits": [
+    "Displayed net cost is a snapshot, not proof of no resource usage or a final settled bill.",
+    "Forecast values are excluded from actual cost reporting.",
+    "Gemini summary is not used instead of the billing table."
+  ]
+}

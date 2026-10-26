@@ -1,0 +1,12 @@
+{
+  "bindings": [
+    {
+      "members": [
+        "serviceAccount:cs528-hw5-reporter@dazzling-seat-508219-j3.iam.gserviceaccount.com"
+      ],
+      "role": "roles/pubsub.subscriber"
+    }
+  ],
+  "etag": "BwZeUT-MQkQ=",
+  "version": 1
+}

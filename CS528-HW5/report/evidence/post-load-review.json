@@ -1,0 +1,75 @@
+{
+  "reviewed_at": "2026-10-22T08:07:04.749Z",
+  "source_directory": "/Users/thomasfang/CS528/CS528-HWs/CS528-HW5/report/evidence/post-load-20261022T075851442425Z",
+  "resources": {
+    "sql_policy": "NEVER",
+    "sql_state": "STOPPED",
+    "web_vm": "TERMINATED",
+    "reporter_vm": "TERMINATED",
+    "guard": "ENABLED",
+    "retained_static_ip": "35.193.157.51"
+  },
+  "scheduler": {
+    "completed_attempts": 26,
+    "http_200": 25,
+    "http_500": 1,
+    "active_run_had_no_scheduled_calls": true,
+    "verified_stop_operations": [
+      {
+        "utc": "2026-10-21T04:05:49.016893Z",
+        "operation_id": "9cfd1b0c-6f9e-4db5-b3a7-186300000032",
+        "principal": "cs528-hw5-guard@dazzling-seat-508219-j3.iam.gserviceaccount.com",
+        "status": {
+          "message": "OK"
+        }
+      },
+      {
+        "utc": "2026-10-21T05:05:47.481829Z",
+        "operation_id": "1115e7e8-417b-4ab2-8b88-e95600000032",
+        "principal": "cs528-hw5-guard@dazzling-seat-508219-j3.iam.gserviceaccount.com",
+        "status": {
+          "message": "OK"
+        }
+      },
+      {
+        "utc": "2026-10-21T07:05:51.396693Z",
+        "operation_id": "c47d21c6-bd2c-412f-965a-09ed00000032",
+        "principal": "cs528-hw5-guard@dazzling-seat-508219-j3.iam.gserviceaccount.com",
+        "status": {
+          "message": "OK"
+        }
+      },
+      {
+        "utc": "2026-10-21T11:06:13.728159Z",
+        "operation_id": "2c4be193-7882-407b-b333-130e00000032",
+        "principal": "cs528-hw5-guard@dazzling-seat-508219-j3.iam.gserviceaccount.com",
+        "status": {
+          "message": "OK"
+        }
+      }
+    ],
+    "last_stop_new_york": "2026-10-21 07:06:13 EDT",
+    "retry_note": "The 11:05 UTC Cloud Run invocation returned HTTP 500 because no instance was available. Scheduler retried; the patch was accepted at 11:05:30 and STOP_INSTANCE completed at 11:06:13 UTC."
+  },
+  "pubsub": {
+    "sent": 4347,
+    "acknowledged_metric": 4343,
+    "latest_backlog": 0,
+    "latest_backlog_utc": "2026-10-22T07:58:00Z",
+    "delivery_type": "pull",
+    "unreconciled_metric_difference": 4,
+    "conclusion": "Subscription activity and empty backlog observed. Exact per-message acknowledgment completeness and reporter stdout were not established. No cause is assigned to the four-count difference.",
+    "monitoring_caveat_source": "https://docs.cloud.google.com/pubsub/docs/monitoring"
+  },
+  "cleanup_change": {
+    "prepared": true,
+    "tests": "4 additional tests prepared, not yet executed; previous 57 passed.",
+    "scope": "Exact generation(s) of the owned function source object only; shared bucket is retained."
+  },
+  "pending": [
+    "Run cleanup and verify release of static IP and VM disks",
+    "Confirm curl screenshots or replay saved evidence with an explicit label",
+    "Actual billing",
+    "Final report PDF and lowercase hw5 submission"
+  ]
+}
