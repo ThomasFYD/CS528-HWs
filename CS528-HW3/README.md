@@ -15,10 +15,15 @@ Client -> Cloud Function -> Cloud Storage: data/*.html
                     +-> Pub/Sub -> Mac subscriber -> Cloud Storage: hw3-logs/forbidden-requests.jsonl
 ```
 
+## Report
+
+[Read the HW3 report (PDF)](report/CS528_HW3_Report.pdf)
+
 ## Files
 
 | File | Purpose |
 | --- | --- |
+| [report/CS528_HW3_Report.pdf](report/CS528_HW3_Report.pdf) | Homework report with screenshots and recorded experiment results. |
 | [cloud_function/main.py](cloud_function/main.py) | HTTP entry point `get_file`, file retrieval, country filtering, Pub/Sub publication, and error logging. |
 | [cloud_function/requirements.txt](cloud_function/requirements.txt) | Cloud function dependencies. |
 | [local_service/subscriber.py](local_service/subscriber.py) | Pull, print, persist, and acknowledge messages; retry transient pull failures. |
@@ -28,7 +33,7 @@ Client -> Cloud Function -> Cloud Storage: data/*.html
 | [scripts/verify_http_methods.py](scripts/verify_http_methods.py) | Save curl responses for GET, POST, missing files, and seven other HTTP methods. |
 | [scripts/verify_country_flow.py](scripts/verify_country_flow.py) | Verify forbidden-country responses and their persisted events; recheck saved runs. |
 
-Test suites are under `cloud_function/tests/`, `local_service/tests/`, and `scripts/tests/`. Verification scripts create a local `results/` directory. The original experiment captures are not included in this code upload; relevant screenshots and log contents are included in the PDF report submitted separately through Gradescope.
+Test suites are under `cloud_function/tests/`, `local_service/tests/`, and `scripts/tests/`. Verification scripts create a local `results/` directory. The original experiment captures are not included as standalone files in this repository; relevant screenshots and log contents are included in the [PDF report](report/CS528_HW3_Report.pdf).
 
 ## Google Cloud resources
 
@@ -270,4 +275,4 @@ Recorded results: 17 HTTP-handler tests, 18 local-service tests, and 4 verificat
 
 The HW2 bucket retained public object-read access, so direct public bucket URLs bypass the function's country filter and log objects inherit public read access. The application only exposes `data/` through its file endpoint. Rewriting and scanning a single JSONL object is suitable for this small homework log, not a high-volume logging service.
 
-The PDF report, submitted separately through Gradescope, includes browser screenshots and selected experiment logs. This repository contains the Python implementation, dependencies, verification scripts, and tests.
+The [PDF report](report/CS528_HW3_Report.pdf) includes browser screenshots and selected experiment logs. This repository contains the report, Python implementation, dependencies, verification scripts, and tests.
