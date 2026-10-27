@@ -2,6 +2,10 @@
 
 This project reads 12,000 generated HTML files from a public Google Cloud Storage bucket, constructs a directed web graph, and computes degree statistics, PageRank, and closeness centrality without using graph-processing libraries.
 
+## Report
+
+[Read the HW2 report (PDF)](report/CS528_HW2_Report.pdf)
+
 ## Google Cloud Resources
 
 - Project name: `CS-528-YF`
@@ -173,6 +177,8 @@ CS528-HW2/
 ├── generate-content.py
 ├── README.md
 ├── requirements.txt
+├── report/
+│   └── CS528_HW2_Report.pdf
 ├── src/
 │   ├── __init__.py
 │   ├── closeness.py
