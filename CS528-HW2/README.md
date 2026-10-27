@@ -1,12 +1,34 @@
 # CS528 Homework 2: Web Graph Analysis
 
+Author: Yide Fang | Boston University
+
+## Overview
+
 This project reads 12,000 generated HTML files from a public Google Cloud Storage bucket, constructs a directed web graph, and computes degree statistics, PageRank, and closeness centrality without using graph-processing libraries.
 
 ## Report
 
 [Read the HW2 report (PDF)](report/CS528_HW2_Report.pdf)
 
-## Google Cloud Resources
+## Project structure
+
+| Path | Purpose |
+| --- | --- |
+| [README.md](README.md) | Homework overview, setup, algorithms, and results. |
+| [report/CS528_HW2_Report.pdf](report/CS528_HW2_Report.pdf) | Homework report. |
+| [generate-content.py](generate-content.py) | Instructor-provided HTML dataset generator. |
+| [requirements.txt](requirements.txt) | Python dependencies. |
+| [src/__init__.py](src/__init__.py), [src/main.py](src/main.py) | Package initialization and analysis entry point. |
+| [src/graph.py](src/graph.py) | Graph construction from the HTML dataset. |
+| [src/degree_stats.py](src/degree_stats.py) | Incoming-link and outgoing-link statistics. |
+| [src/pagerank.py](src/pagerank.py) | Iterative PageRank. |
+| [src/closeness.py](src/closeness.py) | Directed closeness centrality. |
+| [tests/](tests/) | Independent correctness tests, including test_closeness.py and test_pagerank.py. |
+| `results/` | Execution outputs and the local development cache. |
+
+## Resources and requirements
+
+### Google Cloud resources
 
 - Project name: `CS-528-YF`
 - Project ID: `dazzling-seat-508219-j3`
@@ -24,84 +46,16 @@ Example public object:
 https://storage.googleapis.com/cs528-hw2-yf-2026/data/0.html
 ```
 
-## Requirements
+### Local requirements
 
 - Python 3.12 or later
 - Internet access
 - Approximately 100 MB of available memory
 - No graph libraries are required or used
 
-## Installation
+## Implementation details
 
-Create and activate a virtual environment:
-
-```bash
-python3 -m venv .venv
-source .venv/bin/activate
-```
-
-Install the dependencies:
-
-```bash
-python -m pip install -r requirements.txt
-```
-
-## Running the Program
-
-Run the complete analysis directly against Google Cloud Storage:
-
-```bash
-python -u -m src.main
-```
-
-This command:
-
-1. Lists the HTML objects under `data/`.
-2. Reads all 12,000 files from the public bucket.
-3. Parses the hyperlinks.
-4. Constructs outgoing and incoming adjacency lists.
-5. Calculates incoming-link and outgoing-link statistics.
-6. Calculates PageRank and prints the top five pages.
-7. Calculates the node with the highest closeness centrality.
-8. Saves a local development cache in `results/graph_cache.pkl`.
-
-The program is single-threaded.
-
-### Development Cache
-
-After completing one full bucket run, use the local cache for development:
-
-```bash
-python -u -m src.main --use-cache
-```
-
-The `--use-cache` option skips Cloud Storage downloads. It must not be used when collecting the official local, Cloud Shell, or VM timing results.
-
-## Running the Tests
-
-Run all independent correctness tests:
-
-```bash
-python -m pytest -v
-```
-
-The tests use small deterministic graphs and do not depend on the randomly generated 12,000-file dataset.
-
-## Dataset Generation
-
-Generate the original dataset with:
-
-```bash
-python generate-content.py -n 12000 -m 325
-```
-
-The supplied generator uses `random.seed(0)`, making the generated dataset reproducible.
-
-Because of the exclusive upper bounds in `random.randrange()` and `range()`, passing `-m 325` produces between 0 and 323 hyperlinks per file.
-
-## Algorithm Details
-
-### Graph Representation
+### Graph representation
 
 The program uses Python dictionaries containing adjacency lists:
 
@@ -110,7 +64,7 @@ The program uses Python dictionaries containing adjacency lists:
 
 Repeated hyperlinks are preserved for degree statistics and PageRank. Closeness centrality treats repeated links as a single graph connection because repeated edges do not change shortest-path distances.
 
-### Degree Statistics
+### Degree statistics
 
 The program calculates the following values for incoming and outgoing links:
 
@@ -136,7 +90,7 @@ PR(A) = 0.15/N + 0.85 * sum(PR(T) / C(T))
 
 PageRank from dangling nodes is distributed equally among all nodes. Iteration stops when the sum of the absolute PageRank changes is at most `0.005`.
 
-### Closeness Centrality
+### Closeness centrality
 
 Closeness uses directed shortest-path distances. For a node that can reach every other node:
 
@@ -146,7 +100,77 @@ CC(v) = (N - 1) / sum(distance(v, u))
 
 For disconnected graphs, the score is normalized by the fraction of reachable nodes. The implementation uses custom integer bitsets to accelerate exact single-threaded breadth-first search.
 
-## Current Results
+## Setup and execution
+
+### Installation
+
+Create and activate a virtual environment:
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+```
+
+Install the dependencies:
+
+```bash
+python -m pip install -r requirements.txt
+```
+
+### Local verification
+
+Run all independent correctness tests:
+
+```bash
+python -m pytest -v
+```
+
+The tests use small deterministic graphs and do not depend on the randomly generated 12,000-file dataset.
+
+### Run the analysis
+
+Run the complete analysis directly against Google Cloud Storage:
+
+```bash
+python -u -m src.main
+```
+
+This command:
+
+1. Lists the HTML objects under `data/`.
+2. Reads all 12,000 files from the public bucket.
+3. Parses the hyperlinks.
+4. Constructs outgoing and incoming adjacency lists.
+5. Calculates incoming-link and outgoing-link statistics.
+6. Calculates PageRank and prints the top five pages.
+7. Calculates the node with the highest closeness centrality.
+8. Saves a local development cache in `results/graph_cache.pkl`.
+
+The program is single-threaded.
+
+#### Development cache
+
+After completing one full bucket run, use the local cache for development:
+
+```bash
+python -u -m src.main --use-cache
+```
+
+The `--use-cache` option skips Cloud Storage downloads. It must not be used when collecting the official local, Cloud Shell, or VM timing results.
+
+### Dataset generation
+
+Generate the original dataset with:
+
+```bash
+python generate-content.py -n 12000 -m 325
+```
+
+The supplied generator uses `random.seed(0)`, making the generated dataset reproducible.
+
+Because of the exclusive upper bounds in `random.randrange()` and `range()`, passing `-m 325` produces between 0 and 323 hyperlinks per file.
+
+## Results and evidence
 
 ```text
 Nodes: 12000
@@ -168,26 +192,4 @@ Best closeness-centrality node:
 ```text
 Node: 10376.html
 Score: 0.5046473483
-```
-
-## Project Structure
-
-```text
-CS528-HW2/
-├── generate-content.py
-├── README.md
-├── requirements.txt
-├── report/
-│   └── CS528_HW2_Report.pdf
-├── src/
-│   ├── __init__.py
-│   ├── closeness.py
-│   ├── degree_stats.py
-│   ├── graph.py
-│   ├── main.py
-│   └── pagerank.py
-├── tests/
-│   ├── test_closeness.py
-│   └── test_pagerank.py
-└── results/
 ```

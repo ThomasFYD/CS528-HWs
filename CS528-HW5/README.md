@@ -1,32 +1,49 @@
-# CS528 Homework 5 — Cloud SQL request logging
+# CS528 Homework 5: Cloud SQL Request Logging and Operation Timing
 
-Author: Yide Fang. Directory: **CS528-HW5**.
+Author: Yide Fang | Boston University
 
-**Current status:** 61 offline tests passed, curl 200/404/400 passed, and the formal
-100,000-request run `load-20261021T075735Z-5b3f60c2` passed. Both clients used seed
-528 and exited 0. The raw snapshot was independently checked: 95,653 HTTP 200,
-4,347 expected banned-country HTTP 400, 100,000 timing rows, no missing metadata
-and no recorded response-send failures. Load duration was 3 h 1 m 6.021 s.
-The guard was resumed by the runner. See `report/EXPERIMENT_RESULTS.md` and
-`report/evidence/formal-run-review.json` for verified results and timing boundaries.
+## Overview
 
-Cloud audit evidence now confirms scheduled SQL shutdown and a successful retry
-after one platform HTTP 500. SQL and both VMs were verified stopped. Pub/Sub
-metrics show 4,347 sends, 4,343 acknowledgments and latest backlog 0; the four-count
-difference is retained without asserting a cause or exact per-message completion.
-See `report/CLOUD_EVIDENCE.md`. Teardown is complete: SQL is retained and
-STOPPED/NEVER, the VMs and static address are absent, and the scheduler is removed.
-All nine curl replay screenshots and the accepted October 20-22 billing snapshot
-are included in `report/CS528_HW5_Report.pdf`. All 18 PDF pages passed visual review.
-The screenshot displays $0.00 at capture time; it is not a final settled bill.
-The reviewed submission uses directory **CS528-HW5**.
+This project extends the HW4 file service with Cloud SQL request logging and operation timing. Two instructor clients send requests to the web service, while the unchanged HW4 reporter handles forbidden-country events.
 
-Cleanup also targets the exact function source object generation in the
-Google-managed bucket, without deleting the shared bucket. All 61 offline tests,
-including the four cleanup regression tests, passed in the final local check.
-Post-load collection and teardown are complete; reproduction commands below
-describe a new experiment, not additional work required for the completed run.
-Metric activity does not establish individual reporter stdout contents.
+## Report
+
+[Read the HW5 report (PDF)](report/CS528_HW5_Report.pdf)
+
+See `report/REPORT_CHECKLIST.md`. The final PDF is `report/CS528_HW5_Report.pdf`;
+its visual review is recorded in `report/evidence/report-visual-review.json`.
+The updated binary is kept locally, excluded from Git; the code's dependencies
+are recorded by the VM at `/opt/cs528-hw5/installed-requirements.txt`.
+
+The project and report use the repository directory **CS528-HW5**, as confirmed
+by the author. Source, scripts, reviewed evidence and the final PDF are kept together.
+
+## Project structure
+
+| Path | Purpose |
+| --- | --- |
+| [README.md](README.md) | Homework overview, reproduction steps, and recorded results. |
+| [report/](report/) | Final PDF, reviewed experiment evidence, screenshots, and report sources. |
+| [web_server.py](web_server.py), [hw4_service.py](hw4_service.py) | HTTP service and retained HW4 application behavior. |
+| [reporter.py](reporter.py) | Unchanged HW4 forbidden-country reporter. |
+| [database.py](database.py), [setup_schema.py](setup_schema.py), [request_data.py](request_data.py) | Database access, schema setup, and request metadata handling. |
+| [analysis.py](analysis.py), [queries.sql](queries.sql) | Experiment analysis and equivalent SQL queries. |
+| [config.py](config.py) | Homework resource and application configuration. |
+| [setup.sh](setup.sh), [infra.py](infra.py), [startup.sh](startup.sh) | Deployment, resource management, and VM initialization. |
+| [cleanup.sh](cleanup.sh), [guard/](guard/) | Cleanup entry point and scheduled SQL shutdown function. |
+| [verify_local.sh](verify_local.sh), [tests/](tests/) | Local verification and offline tests. |
+| [tools/](tools/) | Client probing, curl demonstrations, experiments, evidence export, and report generation. |
+| `client/http-client-mac` | Instructor-provided macOS executable; kept locally and excluded from Git. |
+
+## Resources and requirements
+
+### Authentication and project
+
+Authentication: `gcloud auth login fangyd@bu.edu`. The grader may authenticate
+with their authorized identity; all scripts still use the fixed project
+`dazzling-seat-508219-j3`, never the grader's current default project.
+
+### CLI prerequisite
 
 Before deployment, install the required local CLI component explicitly:
 
@@ -38,10 +55,9 @@ The deployment preflight checks installed components using local state only and
 stops with this instruction if beta is missing. Cloud commands cannot wait for
 hidden terminal input. This component is required for labels on SQL creation.
 
-The project and report use the repository directory **CS528-HW5**, as confirmed
-by the author. Source, scripts, reviewed evidence and the final PDF are kept together.
+## Implementation details
 
-## 1. Design and HW4 continuity
+### Design and HW4 continuity
 
 `hw4_service.py` is the original HW4 first application, retained as an imported
 module. `web_server.py` adds a bounded, single-process threaded HTTP server, a
@@ -56,13 +72,13 @@ serving a banned request. Country filtering is a homework simulation based on
 the supplied header, not verified geolocation. The existing HW2 bucket may still
 be public, as documented in HW4; this submission does not change its public ACL.
 
-## 2. Instructor client fields and schema
+### Instructor client fields and schema
 
 The supplied updated macOS ARM64 client was successfully observed sending 20
 requests to localhost. Its evidence is `report/evidence/client-probe.json`.
 
 | Observed header | Database field | Meaning |
-|---|---|---|
+| --- | --- | --- |
 | `X-country` | `country` | Original country label |
 | `X-client-IP` | `client_ip` | Simulated client IP; actual peer is separately stored |
 | `X-gender` | `gender` | Original Male/Female label |
@@ -77,17 +93,17 @@ time zone and is not interpreted as UTC. It repeats and must not be a request ID
 
 Tables in the MySQL 8.4 `hw5` database:
 
-* `requests`: every application-handled request, including failures. UUID
+- `requests`: every application-handled request, including failures. UUID
   `request_id` is its primary key. It also contains a unique UTC `request_time`
   (`DATETIME(6)`), the metadata above, method, requested file, peer IP, run ID and
   HTTP status.
-* `failed_requests`: exactly `request_time`, `requested_file`, `error_code`.
+- `failed_requests`: exactly `request_time`, `requested_file`, `error_code`.
   `request_time` is both the primary key and a foreign key to the main table.
   The main and failure records commit in one transaction. UTC receipt timestamps
   are serialized across threads, with a one-microsecond tie adjustment. The
   clock is seeded from the database on restart. This design assumes one server
   process; do not add multiple independent server processes without revising it.
-* `request_timings`: one row per request ID, linked to `requests`, with integer
+- `request_timings`: one row per request ID, linked to `requests`, with integer
   nanosecond measurements and flags for attempted storage reads and completed
   server writes.
 
@@ -99,7 +115,7 @@ web VM receives Cloud SQL Client and access to this one secret. The MySQL user
 created by Cloud SQL is a database owner account for this homework; it is not
 presented as a fully restricted production DML account.
 
-## 3. Timing definitions
+### Timing definitions
 
 `time.perf_counter_ns()` measures four separate operations:
 
@@ -122,7 +138,9 @@ returns 503 and writes explicit journal/Cloud Logging evidence; the program does
 not falsely return 200 for an unlogged request. Timing insert failures are also
 logged. The experiment is rejected as incomplete if SQL counts do not reconcile.
 
-## 4. Local verification — no cloud resources
+## Setup and execution
+
+### Local verification
 
 Run this one-line command from the development directory:
 
@@ -137,11 +155,7 @@ HTTP behavior, group parsing, guard behavior and cleanup ownership checks. These
 checks do not establish Cloud SQL compatibility or cloud deployment success;
 those require the live steps below.
 
-## 5. Deployment
-
-Authentication: `gcloud auth login fangyd@bu.edu`. The grader may authenticate
-with their authorized identity; all scripts still use the fixed project
-`dazzling-seat-508219-j3`, never the grader's current default project.
+### Deployment
 
 Review the resource plan, then deploy when ready:
 
@@ -158,7 +172,7 @@ It uses the official `gcloud beta sql instances create` command because SQL
 instance creation labels are exposed on the beta command, not the stable one.
 
 | Resource | Configuration |
-|---|---|
+| --- | --- |
 | Web VM | `e2-small`, Debian 12, 10 GB standard disk, up to 8 request workers |
 | Reporter VM | `e2-micro`, Debian 12, unchanged reporter code |
 | SQL | MySQL 8.4 Enterprise, `db-g1-small`, zonal, 10 GB SSD |
@@ -216,7 +230,7 @@ gcloud compute instances get-serial-port-output cs528-hw5-reporter --zone=us-cen
 Look for completed startup and both services running. Resolve errors before
 proceeding. `report/evidence/deployment-status.json` preserves the actual resources.
 
-## 6. Curl demonstration and experiment
+### Curl demonstration and experiment
 
 Do the curl demonstration **before** the load run, while the tables remain small:
 
@@ -271,11 +285,11 @@ does not delete the instance or grant the function general project administratio
 
 Outputs:
 
-* `report/evidence/<run>/experiment.json`: execution record and guard state.
-* `report/evidence/<run>/summary.json`: all six requested statistical answers,
+- `report/evidence/<run>/experiment.json`: execution record and guard state.
+- `report/evidence/<run>/summary.json`: all six requested statistical answers,
   timing distributions and integrity checks.
-* `report/evidence/<run>/client-{1,2}.log`: actual client stdout/stderr.
-* `results/<run>/database-snapshot.json.gz`: full SQL export, excluded from Git.
+- `report/evidence/<run>/client-{1,2}.log`: actual client stdout/stderr.
+- `results/<run>/database-snapshot.json.gz`: full SQL export, excluded from Git.
 
 The accepted full run must contain exactly 100,000 request and timing rows, with
 one matching failure row for every non-200 response, no missing metadata, and no
@@ -288,7 +302,35 @@ it is not described as two identical request sequences.
 income groups are all reported. Statistics include successful and failed requests
 and retain the client's original group definitions.
 
-## 7. Stop, cleanup and billing
+## Results and evidence
+
+61 offline tests passed, curl 200/404/400 passed, and the formal
+100,000-request run `load-20261021T075735Z-5b3f60c2` passed. Both clients used seed
+528 and exited 0. The raw snapshot was independently checked: 95,653 HTTP 200,
+4,347 expected banned-country HTTP 400, 100,000 timing rows, no missing metadata
+and no recorded response-send failures. Load duration was 3 h 1 m 6.021 s.
+The guard was resumed by the runner. See `report/EXPERIMENT_RESULTS.md` and
+`report/evidence/formal-run-review.json` for verified results and timing boundaries.
+
+Cloud audit evidence now confirms scheduled SQL shutdown and a successful retry
+after one platform HTTP 500. SQL and both VMs were verified stopped. Pub/Sub
+metrics show 4,347 sends, 4,343 acknowledgments and latest backlog 0; the four-count
+difference is retained without asserting a cause or exact per-message completion.
+See `report/CLOUD_EVIDENCE.md`. Teardown is complete: SQL is retained and
+STOPPED/NEVER, the VMs and static address are absent, and the scheduler is removed.
+All nine curl replay screenshots and the accepted October 20-22 billing snapshot
+are included in `report/CS528_HW5_Report.pdf`. All 18 PDF pages passed visual review.
+The screenshot displays $0.00 at capture time; it is not a final settled bill.
+The reviewed submission uses directory **CS528-HW5**.
+
+Cleanup also targets the exact function source object generation in the
+Google-managed bucket, without deleting the shared bucket. All 61 offline tests,
+including the four cleanup regression tests, passed in the final local check.
+Post-load collection and teardown are complete; reproduction commands below
+describe a new experiment, not additional work required for the completed run.
+Metric activity does not establish individual reporter stdout contents.
+
+## Cleanup
 
 After exporting evidence, temporarily stop the SQL and VMs while preserving the
 guard and deployment for later work:
@@ -322,17 +364,10 @@ assignment permits its separate billing PDF the next day. Save a dated screensho
 and state its reporting interval and any delayed charges. Never claim a zero
 total merely because the billing console has not updated.
 
-## 8. Remaining submission evidence
+## References
 
-See `report/REPORT_CHECKLIST.md`. The final PDF is `report/CS528_HW5_Report.pdf`;
-its visual review is recorded in `report/evidence/report-visual-review.json`.
-The updated binary is kept locally, excluded from Git; the code's dependencies
-are recorded by the VM at `/opt/cs528-hw5/installed-requirements.txt`.
-
-## Primary implementation references
-
-* [Google Cloud SQL Python connector example](https://docs.cloud.google.com/sql/docs/mysql/samples/cloud-sql-mysql-sqlalchemy-connect-connector)
-* [MySQL instance creation](https://docs.cloud.google.com/sql/docs/mysql/create-instance)
-* [Starting and stopping Cloud SQL](https://docs.cloud.google.com/sql/docs/mysql/start-stop-restart-instance)
-* [Authenticated Cloud Scheduler HTTP targets](https://docs.cloud.google.com/scheduler/docs/http-target-auth)
-* [Cloud Functions deployment options](https://docs.cloud.google.com/sdk/gcloud/reference/functions/deploy)
+- [Google Cloud SQL Python connector example](https://docs.cloud.google.com/sql/docs/mysql/samples/cloud-sql-mysql-sqlalchemy-connect-connector)
+- [MySQL instance creation](https://docs.cloud.google.com/sql/docs/mysql/create-instance)
+- [Starting and stopping Cloud SQL](https://docs.cloud.google.com/sql/docs/mysql/start-stop-restart-instance)
+- [Authenticated Cloud Scheduler HTTP targets](https://docs.cloud.google.com/scheduler/docs/http-target-auth)
+- [Cloud Functions deployment options](https://docs.cloud.google.com/sdk/gcloud/reference/functions/deploy)

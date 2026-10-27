@@ -1,74 +1,38 @@
-# CS528 Homework 4
+# CS528 Homework 4: Compute Engine Services and Performance
+
+Author: Yide Fang | Boston University
+
+## Overview
 
 Python file service and forbidden-country reporter on Google Compute Engine.
-Author: Yide Fang.
 
-## Verified results
+## Report
+
+[Read the HW4 report (PDF)](report/CS528_HW4_Report.pdf)
 
 The [submission report](report/CS528_HW4_Report.pdf) contains implementation and
 reproduction steps, browser screenshots, Cloud Logging evidence, billing and
 cleanup records, and five performance figure pages. Its supporting files are
 documented in the [evidence guide](report/evidence/README.md).
 
-53 local tests pass using simulated Google Cloud dependencies and HTTP request
-bytes. Initial live deployment confirmed that both services start automatically,
-GET and POST return 200, and missing-file, PUT, and Iran requests return 404, 501,
-and 400 respectively. The corresponding WARNING, ERROR, and CRITICAL cloud logs
-were retrieved, and the Iran event ID matches the reporter's stdout.
+## Project structure
 
-The instructor client's first launch failed on Debian 12 with `GLIBC_2.38 not
-found`. It now runs on Ubuntu 24.04 LTS (glibc 2.39). A live 100-request run
-completed with 97 HTTP 200 responses and 3 expected forbidden-country HTTP 400
-responses. All seven unsupported methods returned 501; all nine forbidden
-countries returned 400 and the United States returned 200. Browser screenshots
-retain GET 200, GET 404, and PUT 501 evidence. A five-request quiet probe exited
-with code 0 and no output. GET, POST, and the GCS source object were subsequently
-compared byte for byte: all three contain 97,586 bytes with SHA-256
-`c3be7cacaad7e54bac9e5050419002b0545418e31094933b4239813e2a6f2b88`.
+| Path | Purpose |
+| --- | --- |
+| [README.md](README.md) | Homework overview, setup, behavior, and recorded results. |
+| [report/](report/) | Final PDF and reviewed evidence retained in Git. |
+| [web_server.py](web_server.py) | Python `HTTPServer` with one request worker and an explicit connection queue size of 5. Downloads objects from the existing HW2 bucket. |
+| [reporter.py](reporter.py) | Pub/Sub pull subscriber using the VM's attached service account. |
+| [startup.py](startup.py) | Embeds the submitted code and configuration into Linux startup scripts and installs systemd services that start at creation and reboot. |
+| [manage.py](manage.py) | Builds startup scripts, creates three VMs, shows their status, or deletes the VMs and their dedicated networking resources. |
+| [requirements.txt](requirements.txt), [requirements-reporter.txt](requirements-reporter.txt) | VM Python dependencies. |
+| [tests/](tests/) | Offline behavior and lifecycle safety checks; standard library only. |
+| [scripts/](scripts/) | Bounded performance sweep, Linux resource sampler, evidence export and analysis. Deployment, measurement and evidence collection use the standard library; optional PDF tools use `requirements-report.txt`. |
+| `client/http-client` | Instructor-provided Linux x86-64 executable, supplied separately. The executable is excluded from Git by default. |
+| `build/` | Generated startup scripts; excluded from Git and regenerated from submitted source. |
+| `results/` | Local raw captures, including full VM metadata and verbose response bodies; excluded from Git. Selected submission evidence is copied to `report/`. |
 
-Run `20261014T032504Z-48ab4d` measured all four concurrency levels for at least
-180 seconds each with complete web resource coverage and no client timeouts.
-At four clients the peaks were CPU busy 7.84%, whole-VM memory 363.30 MiB,
-RX 13.82 Mbps, and TX 13.81 Mbps. The two-client group includes additional
-traffic: four 404s for paths outside the configured workload, plus a connection
-reset from an IP other than the load VM. These records are retained and discussed
-in the performance review, not attributed to overload.
-
-The billing snapshot captured on October 13 at 23:58 Eastern shows a net cost of
-$0.00 for October 1-13, including $0.04 of savings. The user confirmed that this
-month's activity was HW4 only. The screenshot's month-end forecast is excluded.
-This is the amount displayed at capture time, before cleanup; delayed usage
-charges and the final total must not be inferred from this snapshot.
-
-Final evidence export completed before deletion. At **2026-10-14 04:08:16 UTC**
-(00:08:16 Eastern), verification confirmed that all 11 HW4 compute/network
-resources were absent: three VMs, three boot disks, one static IP, two firewall
-rules, one subnet and one VPC. The old web endpoint is no longer live. The HW2
-bucket, runtime service accounts and Pub/Sub setup remain for recreation.
-
-## Files
-
-- `web_server.py`: Python `HTTPServer` with one request worker and an explicit
-  connection queue size of 5. Downloads objects from the existing HW2 bucket.
-- `reporter.py`: Pub/Sub pull subscriber using the VM's attached service account.
-- `startup.py`: embeds the submitted code and configuration into Linux startup
-  scripts and installs systemd services that start at creation and reboot.
-- `manage.py`: builds startup scripts, creates three VMs, shows their status, or
-  deletes the VMs and their dedicated networking resources.
-- `requirements.txt`, `requirements-reporter.txt`: VM Python dependencies.
-- `tests/`: offline behavior and lifecycle safety checks; standard library only.
-- `scripts/`: bounded performance sweep, Linux resource sampler, evidence
-  export and analysis. Deployment, measurement and evidence collection use the
-  standard library; optional PDF tools use `requirements-report.txt`.
-- `report/`: final PDF and reviewed evidence retained in Git.
-- `client/http-client`: instructor-provided Linux x86-64 executable, supplied
-  separately. The executable is excluded from Git by default.
-- `build/`: generated startup scripts; excluded from Git and regenerated from
-  submitted source.
-- `results/`: local raw captures, including full VM metadata and verbose response
-  bodies; excluded from Git. Selected submission evidence is copied to `report/`.
-
-## Resources and configuration
+## Resources and requirements
 
 Run these settings in the Mac terminal used for deployment. These identifiers
 are not passwords. A TA can replace them with identifiers from their own project.
@@ -138,7 +102,42 @@ accepted for this existing bucket. The bucket still has a pre-existing
 not revoke that public access. Direct public object URLs bypass country checks;
 `X-country` is an assignment simulation, not verified geographic location.
 
-## Local checks and startup generation
+## Implementation details
+
+### HTTP and logging behavior
+
+GET `/data/0.html` and GET `/cs528-hw2-yf-2026/data/0.html` read the same object.
+POST accepts JSON such as `{"filename":"data/0.html"}`. Responses carry the
+original bytes, Content-Type, Content-Length, and `Cache-Control: no-store`.
+
+| Case | Status | Cloud log severity |
+| --- | --- | --- |
+| Existing object, allowed country | 200 | No per-success application log |
+| Missing object or path outside `data/` | 404 | WARNING |
+| PUT, DELETE, HEAD, CONNECT, OPTIONS, TRACE, PATCH | 501 | ERROR |
+| Assignment's forbidden country | 400 | CRITICAL |
+| Malformed POST | 400 | WARNING |
+| Storage authentication/service failure | 500 | ERROR |
+| Forbidden notification publication unconfirmed | 503 | CRITICAL denial and ERROR delivery failure |
+
+Unsupported methods are checked first. Forbidden GET/POST requests are denied
+before reading an object. All nine assignment countries are recognized, including
+the HW3 aliases and case/whitespace normalization. Pub/Sub publication is awaited;
+a timeout never results in file delivery. HEAD returns headers without a body.
+CONNECT is rejected, never used to establish a proxy tunnel.
+
+Cloud logs are sent using `google-cloud-logging`'s `log_struct` API; JSON stdout on
+a plain VM is not automatically evidence of a Cloud Logging entry. The web log
+is named `cs528-hw4-web`. Logging failures are printed explicitly to the VM journal
+and must be resolved during live acceptance. The reporter prints and flushes each
+event before acknowledging it. Pub/Sub delivery is at least once; duplicate
+event IDs can appear after a retry. Unlike HW3's Mac service, HW4's reporter uses
+the VM identity and prints to stdout as requested in HW4; it does not append a
+GCS log object and does not receive Storage write privileges.
+
+## Setup and execution
+
+### Local verification and startup generation
 
 Run from this homework directory, using Python 3.9 or later and Bash:
 
@@ -151,7 +150,7 @@ These commands do not call Google Cloud. Google client libraries are installed
 inside the VM by the generated startup scripts. Each service records its exact
 installed dependency versions at `/opt/cs528-hw4/installed-requirements.txt`.
 
-## Create the VMs
+### Create the VMs
 
 Before deployment, check that the selected machine definitions exist in the
 chosen zone. The web default is the small N1 shared-core `f1-micro`; use a different
@@ -190,7 +189,7 @@ export HW4_URL="http://${HW4_IP}:8080"
 SSH firewall rules, reserves a regional static external IP, and creates:
 
 | VM | Identity | Application |
-|---|---|---|
+| --- | --- | --- |
 | `cs528-hw4-web` | `cs528-hw4-web-sa` | HTTP server on port 8080, static external IP |
 | `cs528-hw4-reporter` | `cs528-hw4-reporter-sa` | Forbidden-country subscriber |
 | `cs528-hw4-client` | No attached service account | Instructor client, uploaded after creation |
@@ -250,38 +249,7 @@ gcloud compute firewall-rules update cs528-hw4-ssh \
   --project="$HW4_PROJECT" --account="$HW4_ACCOUNT"
 ```
 
-## HTTP and logging behavior
-
-GET `/data/0.html` and GET `/cs528-hw2-yf-2026/data/0.html` read the same object.
-POST accepts JSON such as `{"filename":"data/0.html"}`. Responses carry the
-original bytes, Content-Type, Content-Length, and `Cache-Control: no-store`.
-
-| Case | Status | Cloud log severity |
-|---|---|---|
-| Existing object, allowed country | 200 | No per-success application log |
-| Missing object or path outside `data/` | 404 | WARNING |
-| PUT, DELETE, HEAD, CONNECT, OPTIONS, TRACE, PATCH | 501 | ERROR |
-| Assignment's forbidden country | 400 | CRITICAL |
-| Malformed POST | 400 | WARNING |
-| Storage authentication/service failure | 500 | ERROR |
-| Forbidden notification publication unconfirmed | 503 | CRITICAL denial and ERROR delivery failure |
-
-Unsupported methods are checked first. Forbidden GET/POST requests are denied
-before reading an object. All nine assignment countries are recognized, including
-the HW3 aliases and case/whitespace normalization. Pub/Sub publication is awaited;
-a timeout never results in file delivery. HEAD returns headers without a body.
-CONNECT is rejected, never used to establish a proxy tunnel.
-
-Cloud logs are sent using `google-cloud-logging`'s `log_struct` API; JSON stdout on
-a plain VM is not automatically evidence of a Cloud Logging entry. The web log
-is named `cs528-hw4-web`. Logging failures are printed explicitly to the VM journal
-and must be resolved during live acceptance. The reporter prints and flushes each
-event before acknowledging it. Pub/Sub delivery is at least once; duplicate
-event IDs can appear after a retry. Unlike HW3's Mac service, HW4's reporter uses
-the VM identity and prints to stdout as requested in HW4; it does not append a
-GCS log object and does not receive Storage write privileges.
-
-## Performance experiment
+### Performance experiment
 
 Place the instructor's Linux x86-64 executable at `client/http-client` locally,
 then upload it and verify its compatibility on the Ubuntu client VM:
@@ -362,7 +330,47 @@ Review the four measurements, graph the retained samples, and report the observe
 CPU, memory, and bandwidth peaks if no capacity failure is observed at four clients.
 No synthetic measurements are substituted for live results.
 
-## Report and evidence
+## Results and evidence
+
+### Verified results
+
+53 local tests pass using simulated Google Cloud dependencies and HTTP request
+bytes. Initial live deployment confirmed that both services start automatically,
+GET and POST return 200, and missing-file, PUT, and Iran requests return 404, 501,
+and 400 respectively. The corresponding WARNING, ERROR, and CRITICAL cloud logs
+were retrieved, and the Iran event ID matches the reporter's stdout.
+
+The instructor client's first launch failed on Debian 12 with `GLIBC_2.38 not
+found`. It now runs on Ubuntu 24.04 LTS (glibc 2.39). A live 100-request run
+completed with 97 HTTP 200 responses and 3 expected forbidden-country HTTP 400
+responses. All seven unsupported methods returned 501; all nine forbidden
+countries returned 400 and the United States returned 200. Browser screenshots
+retain GET 200, GET 404, and PUT 501 evidence. A five-request quiet probe exited
+with code 0 and no output. GET, POST, and the GCS source object were subsequently
+compared byte for byte: all three contain 97,586 bytes with SHA-256
+`c3be7cacaad7e54bac9e5050419002b0545418e31094933b4239813e2a6f2b88`.
+
+Run `20261014T032504Z-48ab4d` measured all four concurrency levels for at least
+180 seconds each with complete web resource coverage and no client timeouts.
+At four clients the peaks were CPU busy 7.84%, whole-VM memory 363.30 MiB,
+RX 13.82 Mbps, and TX 13.81 Mbps. The two-client group includes additional
+traffic: four 404s for paths outside the configured workload, plus a connection
+reset from an IP other than the load VM. These records are retained and discussed
+in the performance review, not attributed to overload.
+
+The billing snapshot captured on October 13 at 23:58 Eastern shows a net cost of
+$0.00 for October 1-13, including $0.04 of savings. The user confirmed that this
+month's activity was HW4 only. The screenshot's month-end forecast is excluded.
+This is the amount displayed at capture time, before cleanup; delayed usage
+charges and the final total must not be inferred from this snapshot.
+
+Final evidence export completed before deletion. At **2026-10-14 04:08:16 UTC**
+(00:08:16 Eastern), verification confirmed that all 11 HW4 compute/network
+resources were absent: three VMs, three boot disks, one static IP, two firewall
+rules, one subnet and one VPC. The old web endpoint is no longer live. The HW2
+bucket, runtime service accounts and Pub/Sub setup remain for recreation.
+
+### Report reproduction
 
 The PDF and evidence under `report/` describe the completed run, not a currently
 running deployment. Exact installed package versions and service-start records
@@ -385,7 +393,7 @@ retained one-second samples and measured windows; it does not generate load.
 Raw capture files copied into `report/evidence/` are not rewritten. The evidence
 guide identifies the derived summaries and preserves the two-client error caveat.
 
-## Delete after saving evidence
+## Cleanup
 
 The instructor's Piazza clarification asks students to delete the VMs after the
 report is completed and to provide automatic deletion. Before deletion, export
