@@ -4,7 +4,7 @@ Author: Yide Fang | Boston University
 
 ## Overview
 
-This project extends the HW4 file service with Cloud SQL request logging and operation timing. Two instructor clients send requests to the web service, while the unchanged HW4 reporter handles forbidden-country events.
+This project extends the [HW4](https://github.com/ThomasFYD/CS528-HWs/blob/main/CS528-HW4/README.md) file service with Cloud SQL request logging and operation timing. Two instructor clients send requests to the web service, while the unchanged [HW4](https://github.com/ThomasFYD/CS528-HWs/blob/main/CS528-HW4/README.md) reporter handles forbidden-country events.
 
 ## Report
 
@@ -24,8 +24,8 @@ by the author. Source, scripts, reviewed evidence and the final PDF are kept tog
 | --- | --- |
 | [README.md](README.md) | Homework overview, reproduction steps, and recorded results. |
 | [report/](report/) | Final PDF, reviewed experiment evidence, screenshots, and report sources. |
-| [web_server.py](web_server.py), [hw4_service.py](hw4_service.py) | HTTP service and retained HW4 application behavior. |
-| [reporter.py](reporter.py) | Unchanged HW4 forbidden-country reporter. |
+| [web_server.py](web_server.py), [hw4_service.py](hw4_service.py) | HTTP service and retained [HW4](https://github.com/ThomasFYD/CS528-HWs/blob/main/CS528-HW4/README.md) application behavior. |
+| [reporter.py](reporter.py) | Unchanged [HW4](https://github.com/ThomasFYD/CS528-HWs/blob/main/CS528-HW4/README.md) forbidden-country reporter. |
 | [database.py](database.py), [setup_schema.py](setup_schema.py), [request_data.py](request_data.py) | Database access, schema setup, and request metadata handling. |
 | [analysis.py](analysis.py), [queries.sql](queries.sql) | Experiment analysis and equivalent SQL queries. |
 | [config.py](config.py) | Homework resource and application configuration. |
@@ -57,20 +57,20 @@ hidden terminal input. This component is required for labels on SQL creation.
 
 ## Implementation details
 
-### Design and HW4 continuity
+### Design and [HW4](https://github.com/ThomasFYD/CS528-HWs/blob/main/CS528-HW4/README.md) continuity
 
-`hw4_service.py` is the original HW4 first application, retained as an imported
+`hw4_service.py` is the original [HW4](https://github.com/ThomasFYD/CS528-HWs/blob/main/CS528-HW4/README.md) first application, retained as an imported
 module. `web_server.py` adds a bounded, single-process threaded HTTP server, a
 database transaction per request and operation timing. `reporter.py` is byte for
-byte identical to HW4 (SHA-256
+byte identical to [HW4](https://github.com/ThomasFYD/CS528-HWs/blob/main/CS528-HW4/README.md) (SHA-256
 `095e77c433957dd45185d4c0fce3efa3a948866308839bdabb9c22dbb93c87b0`).
 
 GET and POST serve original Cloud Storage bytes. Unsupported methods return 501;
 missing files return 404; the nine assignment countries return 400 and publish
 the original forbidden-country event. A Pub/Sub failure returns 503 without
 serving a banned request. Country filtering is a homework simulation based on
-the supplied header, not verified geolocation. The existing HW2 bucket may still
-be public, as documented in HW4; this submission does not change its public ACL.
+the supplied header, not verified geolocation. The existing [HW2](https://github.com/ThomasFYD/CS528-HWs/blob/main/CS528-HW2/README.md) bucket may still
+be public, as documented in [HW4](https://github.com/ThomasFYD/CS528-HWs/blob/main/CS528-HW4/README.md); this submission does not change its public ACL.
 
 ### Instructor client fields and schema
 
@@ -87,7 +87,7 @@ requests to localhost. Its evidence is `report/evidence/client-probe.json`.
 | `X-time` | `client_time`, `time_of_day` | Original simulated datetime plus extracted `HH:MM:SS` |
 
 The client does not provide an `is_banned` field. The application derives it
-from the same HW4 country policy. Missing metadata remains SQL NULL; it is not
+from the same [HW4](https://github.com/ThomasFYD/CS528-HWs/blob/main/CS528-HW4/README.md) country policy. Missing metadata remains SQL NULL; it is not
 silently converted to a fabricated age, gender, or income. X-time has no supplied
 time zone and is not interpreted as UTC. It repeats and must not be a request ID.
 
@@ -167,7 +167,7 @@ bash setup.sh --plan
 bash setup.sh
 ```
 
-The setup uses the existing HW2 bucket and creates dedicated HW5 resources.
+The setup uses the existing [HW2](https://github.com/ThomasFYD/CS528-HWs/blob/main/CS528-HW2/README.md) bucket and creates dedicated HW5 resources.
 It uses the official `gcloud beta sql instances create` command because SQL
 instance creation labels are exposed on the beta command, not the stable one.
 
@@ -261,13 +261,13 @@ caffeinate -i .venv/bin/python tools/run_experiment.py --requests 50000
 ```
 
 Both processes are launched before waiting on either; both use seed `528`. The
-maximum file index is `11999` for HW2's 12,000 files indexed 0–11999. The runner
+maximum file index is `11999` for [HW2](https://github.com/ThomasFYD/CS528-HWs/blob/main/CS528-HW2/README.md)'s 12,000 files indexed 0–11999. The runner
 defaults to a six-hour safety timeout. Keep the Mac connected to power/network;
 `caffeinate` inhibits idle sleep while the command runs. Closing the laptop or
 forcibly terminating the runner can still interrupt it.
 
 The client `-w` parameter includes a unique `/__runs/<id>/data` path. The server
-records the run ID, strips this routing prefix, and serves the same HW2 objects.
+records the run ID, strips this routing prefix, and serves the same [HW2](https://github.com/ThomasFYD/CS528-HWs/blob/main/CS528-HW2/README.md) objects.
 This separates the experiment from curl tests, smoke tests and unrelated scans.
 All actual command arguments, binary SHA-256, timestamps and exit codes are saved.
 
@@ -359,7 +359,7 @@ revocation is needed.
 
 Stopping SQL removes running-instance charges but does **not** eliminate stored
 data charges. Record actual GCP billing for HW5 development/execution rather than
-reporting an estimated or preexisting HW4 amount. Billing may arrive later; the
+reporting an estimated or preexisting [HW4](https://github.com/ThomasFYD/CS528-HWs/blob/main/CS528-HW4/README.md) amount. Billing may arrive later; the
 assignment permits its separate billing PDF the next day. Save a dated screenshot
 and state its reporting interval and any delayed charges. Never claim a zero
 total merely because the billing console has not updated.

@@ -21,7 +21,7 @@ documented in the [evidence guide](report/evidence/README.md).
 | --- | --- |
 | [README.md](README.md) | Homework overview, setup, behavior, and recorded results. |
 | [report/](report/) | Final PDF and reviewed evidence retained in Git. |
-| [web_server.py](web_server.py) | Python `HTTPServer` with one request worker and an explicit connection queue size of 5. Downloads objects from the existing HW2 bucket. |
+| [web_server.py](web_server.py) | Python `HTTPServer` with one request worker and an explicit connection queue size of 5. Downloads objects from the existing [HW2](https://github.com/ThomasFYD/CS528-HWs/blob/main/CS528-HW2/README.md) bucket. |
 | [reporter.py](reporter.py) | Pub/Sub pull subscriber using the VM's attached service account. |
 | [startup.py](startup.py) | Embeds the submitted code and configuration into Linux startup scripts and installs systemd services that start at creation and reboot. |
 | [manage.py](manage.py) | Builds startup scripts, creates three VMs, shows their status, or deletes the VMs and their dedicated networking resources. |
@@ -98,7 +98,7 @@ done
 
 The conditional Storage grant requires uniform bucket-level access. It was
 accepted for this existing bucket. The bucket still has a pre-existing
-`allUsers` Object Viewer binding from HW2: the added conditional binding does
+`allUsers` Object Viewer binding from [HW2](https://github.com/ThomasFYD/CS528-HWs/blob/main/CS528-HW2/README.md): the added conditional binding does
 not revoke that public access. Direct public object URLs bypass country checks;
 `X-country` is an assignment simulation, not verified geographic location.
 
@@ -122,7 +122,7 @@ original bytes, Content-Type, Content-Length, and `Cache-Control: no-store`.
 
 Unsupported methods are checked first. Forbidden GET/POST requests are denied
 before reading an object. All nine assignment countries are recognized, including
-the HW3 aliases and case/whitespace normalization. Pub/Sub publication is awaited;
+the [HW3](https://github.com/ThomasFYD/CS528-HWs/blob/main/CS528-HW3/README.md) aliases and case/whitespace normalization. Pub/Sub publication is awaited;
 a timeout never results in file delivery. HEAD returns headers without a body.
 CONNECT is rejected, never used to establish a proxy tunnel.
 
@@ -131,7 +131,7 @@ a plain VM is not automatically evidence of a Cloud Logging entry. The web log
 is named `cs528-hw4-web`. Logging failures are printed explicitly to the VM journal
 and must be resolved during live acceptance. The reporter prints and flushes each
 event before acknowledging it. Pub/Sub delivery is at least once; duplicate
-event IDs can appear after a retry. Unlike HW3's Mac service, HW4's reporter uses
+event IDs can appear after a retry. Unlike [HW3](https://github.com/ThomasFYD/CS528-HWs/blob/main/CS528-HW3/README.md)'s Mac service, HW4's reporter uses
 the VM identity and prints to stdout as requested in HW4; it does not append a
 GCS log object and does not receive Storage write privileges.
 
@@ -367,7 +367,7 @@ charges and the final total must not be inferred from this snapshot.
 Final evidence export completed before deletion. At **2026-10-14 04:08:16 UTC**
 (00:08:16 Eastern), verification confirmed that all 11 HW4 compute/network
 resources were absent: three VMs, three boot disks, one static IP, two firewall
-rules, one subnet and one VPC. The old web endpoint is no longer live. The HW2
+rules, one subnet and one VPC. The old web endpoint is no longer live. The [HW2](https://github.com/ThomasFYD/CS528-HWs/blob/main/CS528-HW2/README.md)
 bucket, runtime service accounts and Pub/Sub setup remain for recreation.
 
 ### Report reproduction
@@ -427,7 +427,7 @@ python3 manage.py delete
 
 This deletes the three recognized HW4 VMs and their boot disks, releases the
 static external IP, and removes the two firewall rules, subnet, and VPC created
-by this script. It preserves the HW2 bucket, HW3 resources, service accounts,
+by this script. It preserves the [HW2](https://github.com/ThomasFYD/CS528-HWs/blob/main/CS528-HW2/README.md) bucket, [HW3](https://github.com/ThomasFYD/CS528-HWs/blob/main/CS528-HW3/README.md) resources, service accounts,
 Pub/Sub topic/subscription, and local repository files. Keeping the identity
 and messaging setup allows the TA to recreate the VMs using `create`.
 If a command fails, the script stops with an error; inspect the remaining

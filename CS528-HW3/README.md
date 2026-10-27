@@ -4,7 +4,7 @@ Author: Yide Fang | Boston University
 
 ## Overview
 
-This project uses two Python services to serve the HTML dataset from [Homework 2](../CS528-HW2/README.md) and record requests from the countries specified in the assignment.
+This project uses two Python services to serve the HTML dataset from [Homework 2](https://github.com/ThomasFYD/CS528-HWs/blob/main/CS528-HW2/README.md) and record requests from the countries specified in the assignment.
 
 1. A Google Cloud Function accepts HTTP GET and POST requests, reads files from Cloud Storage, returns HTTP status codes, and publishes forbidden-country events to Pub/Sub.
 2. A subscriber running on a Mac receives those events, prints them, and appends them to one JSONL object in the same bucket.
@@ -282,6 +282,6 @@ Recorded results: 17 HTTP-handler tests, 18 local-service tests, and 4 verificat
 
 ## Scope
 
-The HW2 bucket retained public object-read access, so direct public bucket URLs bypass the function's country filter and log objects inherit public read access. The application only exposes `data/` through its file endpoint. Rewriting and scanning a single JSONL object is suitable for this small homework log, not a high-volume logging service.
+The [HW2](https://github.com/ThomasFYD/CS528-HWs/blob/main/CS528-HW2/README.md) bucket retained public object-read access, so direct public bucket URLs bypass the function's country filter and log objects inherit public read access. The application only exposes `data/` through its file endpoint. Rewriting and scanning a single JSONL object is suitable for this small homework log, not a high-volume logging service.
 
 The [PDF report](report/CS528_HW3_Report.pdf) includes browser screenshots and selected experiment logs. This repository contains the report, Python implementation, dependencies, verification scripts, and tests.
