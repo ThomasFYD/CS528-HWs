@@ -37,6 +37,28 @@ by the author. Source, scripts, reviewed evidence and the final PDF are kept tog
 
 ## Resources and requirements
 
+### Submission layout and direct execution
+
+All homework files live under `CS528-HW5/`. Deployment entry points are at that
+directory's top level; auxiliary command-line programs are in `tools/` and the
+report is in `report/`. From the repository root, verify and inspect the layout
+without creating cloud resources:
+
+```bash
+./CS528-HW5/check_submission.py
+./CS528-HW5/setup.sh --plan
+./CS528-HW5/cleanup.sh --plan
+```
+
+The shell entry points and Python files with a shebang are executable (Git mode
+`100755`) and use Unix line endings. The shell wrappers locate their own directory,
+so callers do not need to `cd` first. Activate `CS528-HW5/.venv` before invoking
+Python tools directly, or use the documented `.venv/bin/python tools/...` form.
+`verify_local.sh` checks permissions before installing dependencies; it no longer
+silently repairs missing execute bits. Source archives and VM extraction retain
+executable script permissions. These checks address portability and layout; the
+grader's brief feedback did not identify a required alternative directory name.
+
 ### Authentication and project
 
 Authentication: `gcloud auth login fangyd@bu.edu`. The grader may authenticate

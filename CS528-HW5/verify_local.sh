@@ -1,9 +1,9 @@
 #!/bin/bash
 set -euo pipefail
 cd -- "$(dirname -- "$0")"
+python3 check_submission.py
 if [ ! -x .venv/bin/python ]; then python3 -m venv .venv; fi
 .venv/bin/python -m pip install --disable-pip-version-check -r requirements.txt
-chmod u+x setup.sh cleanup.sh startup.sh verify_local.sh
 for script in setup.sh cleanup.sh startup.sh verify_local.sh; do
   bash -n "$script"
 done

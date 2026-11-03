@@ -188,7 +188,8 @@ def archive_source():
             for name in names:
                 data = (ROOT / name).read_bytes()
                 info = tarfile.TarInfo(name)
-                info.size, info.mtime, info.mode = len(data), 0, 0o644
+                info.size, info.mtime = len(data), 0
+                info.mode = 0o755 if os.access(ROOT / name, os.X_OK) else 0o644
                 archive.addfile(info, io.BytesIO(data))
     payload = buffer.getvalue()
     digest = hashlib.sha256(payload).hexdigest()

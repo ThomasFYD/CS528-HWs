@@ -55,7 +55,7 @@ with tarfile.open(fileobj=io.BytesIO(payload), mode='r:gz') as archive:
         target = base / member.name
         target.parent.mkdir(parents=True, exist_ok=True)
         target.write_bytes(archive.extractfile(member).read())
-        target.chmod(0o644)
+        target.chmod(0o755 if member.mode & 0o111 else 0o644)
 PY
 REQ=requirements.txt
 if [ "$ROLE" = reporter ]; then REQ=requirements-reporter.txt; fi
