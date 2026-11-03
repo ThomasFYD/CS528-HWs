@@ -1,0 +1,41 @@
+{
+  "frozen_at_utc": "2026-11-03T20:24:03.428955+00:00",
+  "selected_by": "highest accuracy on original 20000-row validation partition among 27 development trials",
+  "selected_trial": {
+    "name": "catboost_demographics_4",
+    "validation_accuracy": 0.3459,
+    "iterations": 99,
+    "seconds": 66.2,
+    "feature_importance": {
+      "age": 96.36190442681499,
+      "gender": 0.006249899997869845,
+      "country": 1.1936455044144174,
+      "hour": 2.4382001687727537
+    }
+  },
+  "features": [
+    "age",
+    "gender",
+    "country",
+    "hour"
+  ],
+  "parameters": {
+    "iterations": 99,
+    "depth": 4,
+    "learning_rate": 0.05,
+    "l2_leaf_reg": 10,
+    "loss_function": "MultiClass",
+    "eval_metric": "Accuracy",
+    "random_seed": 528,
+    "thread_count": 2,
+    "verbose": false,
+    "allow_writing_files": false,
+    "cat_features": [
+      "age",
+      "gender",
+      "country",
+      "hour"
+    ]
+  },
+  "evaluation_policy": "Refit on original 80000 train+validation rows; evaluate once on original 20000 test rows. Original test previously used for published baseline; no test labels used in this follow-up model selection."
+}

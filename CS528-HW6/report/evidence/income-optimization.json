@@ -1,0 +1,1106 @@
+{
+  "scope": "Local follow-up after published cloud evaluation; original fixed seed and partition retained",
+  "baseline_output_uri": "gs://cs528-hw2-yf-2026/cs528-hw6/runs/20261103-015057-b504/",
+  "baseline_cloud_test_accuracy": 0.3427,
+  "seed": 528,
+  "selection_train_rows": 60000,
+  "validation_rows": 20000,
+  "test_rows": 20000,
+  "test_membership_sha256": "bb5ea12795741c03dadfed60928c6d8d73bc43515db816d896fe357913d7bb16",
+  "trial_count": 27,
+  "trials": [
+    {
+      "name": "smoothed_age_country_0",
+      "validation_accuracy": 0.33825,
+      "seconds": 0.17,
+      "configuration": {
+        "features": [
+          "age",
+          "country"
+        ],
+        "strength": 0,
+        "rule": "group label counts + strength * training age-group label proportions; back off to age mode if zero; lexicographic tie break"
+      }
+    },
+    {
+      "name": "smoothed_age_country_30",
+      "validation_accuracy": 0.33635,
+      "seconds": 0.25,
+      "configuration": {
+        "features": [
+          "age",
+          "country"
+        ],
+        "strength": 30,
+        "rule": "group label counts + strength * training age-group label proportions; back off to age mode if zero; lexicographic tie break"
+      }
+    },
+    {
+      "name": "smoothed_age_country_300",
+      "validation_accuracy": 0.3346,
+      "seconds": 0.34,
+      "configuration": {
+        "features": [
+          "age",
+          "country"
+        ],
+        "strength": 300,
+        "rule": "group label counts + strength * training age-group label proportions; back off to age mode if zero; lexicographic tie break"
+      }
+    },
+    {
+      "name": "smoothed_age_gender_country_0",
+      "validation_accuracy": 0.33435,
+      "seconds": 0.18,
+      "configuration": {
+        "features": [
+          "age",
+          "gender",
+          "country"
+        ],
+        "strength": 0,
+        "rule": "group label counts + strength * training age-group label proportions; back off to age mode if zero; lexicographic tie break"
+      }
+    },
+    {
+      "name": "smoothed_age_gender_country_30",
+      "validation_accuracy": 0.3329,
+      "seconds": 0.26,
+      "configuration": {
+        "features": [
+          "age",
+          "gender",
+          "country"
+        ],
+        "strength": 30,
+        "rule": "group label counts + strength * training age-group label proportions; back off to age mode if zero; lexicographic tie break"
+      }
+    },
+    {
+      "name": "smoothed_age_gender_country_300",
+      "validation_accuracy": 0.3332,
+      "seconds": 0.35,
+      "configuration": {
+        "features": [
+          "age",
+          "gender",
+          "country"
+        ],
+        "strength": 300,
+        "rule": "group label counts + strength * training age-group label proportions; back off to age mode if zero; lexicographic tie break"
+      }
+    },
+    {
+      "name": "smoothed_age_country_hour_0",
+      "validation_accuracy": 0.3358,
+      "seconds": 0.24,
+      "configuration": {
+        "features": [
+          "age",
+          "country",
+          "hour"
+        ],
+        "strength": 0,
+        "rule": "group label counts + strength * training age-group label proportions; back off to age mode if zero; lexicographic tie break"
+      }
+    },
+    {
+      "name": "smoothed_age_country_hour_30",
+      "validation_accuracy": 0.3339,
+      "seconds": 0.34,
+      "configuration": {
+        "features": [
+          "age",
+          "country",
+          "hour"
+        ],
+        "strength": 30,
+        "rule": "group label counts + strength * training age-group label proportions; back off to age mode if zero; lexicographic tie break"
+      }
+    },
+    {
+      "name": "smoothed_age_country_hour_300",
+      "validation_accuracy": 0.3328,
+      "seconds": 0.43,
+      "configuration": {
+        "features": [
+          "age",
+          "country",
+          "hour"
+        ],
+        "strength": 300,
+        "rule": "group label counts + strength * training age-group label proportions; back off to age mode if zero; lexicographic tie break"
+      }
+    },
+    {
+      "name": "hgb_demographics_7",
+      "validation_accuracy": 0.3351,
+      "seconds": 2.47,
+      "iterations": 119,
+      "configuration": {
+        "categorical_features": [
+          "age",
+          "gender",
+          "country",
+          "hour"
+        ],
+        "numeric_features": [],
+        "encoding": "OrdinalEncoder fitted on training only; unknown_value=-1",
+        "parameters": {
+          "max_iter": 350,
+          "max_leaf_nodes": 7,
+          "learning_rate": 0.06,
+          "l2_regularization": 20,
+          "min_samples_leaf": 50,
+          "early_stopping": true,
+          "validation_fraction": 0.15,
+          "n_iter_no_change": 30,
+          "random_state": 528
+        }
+      }
+    },
+    {
+      "name": "hgb_demographics_31",
+      "validation_accuracy": 0.33375,
+      "seconds": 3.29,
+      "iterations": 100,
+      "configuration": {
+        "categorical_features": [
+          "age",
+          "gender",
+          "country",
+          "hour"
+        ],
+        "numeric_features": [],
+        "encoding": "OrdinalEncoder fitted on training only; unknown_value=-1",
+        "parameters": {
+          "max_iter": 350,
+          "max_leaf_nodes": 31,
+          "learning_rate": 0.06,
+          "l2_regularization": 20,
+          "min_samples_leaf": 50,
+          "early_stopping": true,
+          "validation_fraction": 0.15,
+          "n_iter_no_change": 30,
+          "random_state": 528
+        }
+      }
+    },
+    {
+      "name": "hgb_demographics_63",
+      "validation_accuracy": 0.3298,
+      "seconds": 4.13,
+      "iterations": 93,
+      "configuration": {
+        "categorical_features": [
+          "age",
+          "gender",
+          "country",
+          "hour"
+        ],
+        "numeric_features": [],
+        "encoding": "OrdinalEncoder fitted on training only; unknown_value=-1",
+        "parameters": {
+          "max_iter": 350,
+          "max_leaf_nodes": 63,
+          "learning_rate": 0.06,
+          "l2_regularization": 20,
+          "min_samples_leaf": 50,
+          "early_stopping": true,
+          "validation_fraction": 0.15,
+          "n_iter_no_change": 30,
+          "random_state": 528
+        }
+      }
+    },
+    {
+      "name": "hgb_extended_7",
+      "validation_accuracy": 0.3311,
+      "seconds": 3.61,
+      "iterations": 119,
+      "configuration": {
+        "categorical_features": [
+          "age",
+          "gender",
+          "country",
+          "hour",
+          "peer_ip",
+          "method"
+        ],
+        "numeric_features": [
+          "file_number",
+          "ip0",
+          "ip1",
+          "ip2",
+          "ip3"
+        ],
+        "encoding": "OrdinalEncoder fitted on training only; unknown_value=-1",
+        "parameters": {
+          "max_iter": 350,
+          "max_leaf_nodes": 7,
+          "learning_rate": 0.06,
+          "l2_regularization": 20,
+          "min_samples_leaf": 50,
+          "early_stopping": true,
+          "validation_fraction": 0.15,
+          "n_iter_no_change": 30,
+          "random_state": 528
+        }
+      }
+    },
+    {
+      "name": "hgb_extended_31",
+      "validation_accuracy": 0.32785,
+      "seconds": 5.18,
+      "iterations": 110,
+      "configuration": {
+        "categorical_features": [
+          "age",
+          "gender",
+          "country",
+          "hour",
+          "peer_ip",
+          "method"
+        ],
+        "numeric_features": [
+          "file_number",
+          "ip0",
+          "ip1",
+          "ip2",
+          "ip3"
+        ],
+        "encoding": "OrdinalEncoder fitted on training only; unknown_value=-1",
+        "parameters": {
+          "max_iter": 350,
+          "max_leaf_nodes": 31,
+          "learning_rate": 0.06,
+          "l2_regularization": 20,
+          "min_samples_leaf": 50,
+          "early_stopping": true,
+          "validation_fraction": 0.15,
+          "n_iter_no_change": 30,
+          "random_state": 528
+        }
+      }
+    },
+    {
+      "name": "hgb_extended_63",
+      "validation_accuracy": 0.32895,
+      "seconds": 5.74,
+      "iterations": 92,
+      "configuration": {
+        "categorical_features": [
+          "age",
+          "gender",
+          "country",
+          "hour",
+          "peer_ip",
+          "method"
+        ],
+        "numeric_features": [
+          "file_number",
+          "ip0",
+          "ip1",
+          "ip2",
+          "ip3"
+        ],
+        "encoding": "OrdinalEncoder fitted on training only; unknown_value=-1",
+        "parameters": {
+          "max_iter": 350,
+          "max_leaf_nodes": 63,
+          "learning_rate": 0.06,
+          "l2_regularization": 20,
+          "min_samples_leaf": 50,
+          "early_stopping": true,
+          "validation_fraction": 0.15,
+          "n_iter_no_change": 30,
+          "random_state": 528
+        }
+      }
+    },
+    {
+      "name": "extra_trees_leaf_10",
+      "validation_accuracy": 0.33555,
+      "seconds": 70.04,
+      "configuration": {
+        "features": [
+          "age",
+          "gender",
+          "country",
+          "hour"
+        ],
+        "encoding": "OneHotEncoder(handle_unknown=ignore)",
+        "parameters": {
+          "n_estimators": 250,
+          "max_features": 0.8,
+          "min_samples_leaf": 10,
+          "n_jobs": 2,
+          "random_state": 528
+        }
+      }
+    },
+    {
+      "name": "extra_trees_leaf_100",
+      "validation_accuracy": 0.3364,
+      "seconds": 14.95,
+      "configuration": {
+        "features": [
+          "age",
+          "gender",
+          "country",
+          "hour"
+        ],
+        "encoding": "OneHotEncoder(handle_unknown=ignore)",
+        "parameters": {
+          "n_estimators": 250,
+          "max_features": 0.8,
+          "min_samples_leaf": 100,
+          "n_jobs": 2,
+          "random_state": 528
+        }
+      }
+    },
+    {
+      "name": "catboost_demographics_4",
+      "validation_accuracy": 0.3459,
+      "iterations": 99,
+      "seconds": 66.2,
+      "feature_importance": {
+        "age": 96.36190442681499,
+        "gender": 0.006249899997869845,
+        "country": 1.1936455044144174,
+        "hour": 2.4382001687727537
+      },
+      "configuration": {
+        "categorical_features": [
+          "age",
+          "gender",
+          "country",
+          "hour"
+        ],
+        "numeric_features": [],
+        "parameters": {
+          "iterations": 600,
+          "depth": 4,
+          "learning_rate": 0.05,
+          "l2_leaf_reg": 10,
+          "loss_function": "MultiClass",
+          "eval_metric": "Accuracy",
+          "random_seed": 528,
+          "thread_count": 2,
+          "verbose": false,
+          "allow_writing_files": false
+        },
+        "fit": {
+          "early_stopping_rounds": 100,
+          "use_best_model": true,
+          "eval_set": "original validation partition"
+        }
+      }
+    },
+    {
+      "name": "catboost_demographics_6",
+      "validation_accuracy": 0.34325,
+      "iterations": 1,
+      "seconds": 40.37,
+      "feature_importance": {
+        "age": 99.99999999999999,
+        "gender": 0.0,
+        "country": 0.0,
+        "hour": 0.0
+      },
+      "configuration": {
+        "categorical_features": [
+          "age",
+          "gender",
+          "country",
+          "hour"
+        ],
+        "numeric_features": [],
+        "parameters": {
+          "iterations": 600,
+          "depth": 6,
+          "learning_rate": 0.05,
+          "l2_leaf_reg": 10,
+          "loss_function": "MultiClass",
+          "eval_metric": "Accuracy",
+          "random_seed": 528,
+          "thread_count": 2,
+          "verbose": false,
+          "allow_writing_files": false
+        },
+        "fit": {
+          "early_stopping_rounds": 100,
+          "use_best_model": true,
+          "eval_set": "original validation partition"
+        }
+      }
+    },
+    {
+      "name": "catboost_demographics_8",
+      "validation_accuracy": 0.3394,
+      "iterations": 1,
+      "seconds": 57.92,
+      "feature_importance": {
+        "age": 100.00000000000001,
+        "gender": 0.0,
+        "country": 0.0,
+        "hour": 0.0
+      },
+      "configuration": {
+        "categorical_features": [
+          "age",
+          "gender",
+          "country",
+          "hour"
+        ],
+        "numeric_features": [],
+        "parameters": {
+          "iterations": 600,
+          "depth": 8,
+          "learning_rate": 0.05,
+          "l2_leaf_reg": 10,
+          "loss_function": "MultiClass",
+          "eval_metric": "Accuracy",
+          "random_seed": 528,
+          "thread_count": 2,
+          "verbose": false,
+          "allow_writing_files": false
+        },
+        "fit": {
+          "early_stopping_rounds": 100,
+          "use_best_model": true,
+          "eval_set": "original validation partition"
+        }
+      }
+    },
+    {
+      "name": "catboost_extended_4",
+      "validation_accuracy": 0.34345,
+      "iterations": 83,
+      "seconds": 94.48,
+      "feature_importance": {
+        "age": 91.0900898735504,
+        "gender": 0.0,
+        "country": 0.5495385095190262,
+        "hour": 8.360371616930578,
+        "file_number": 0.0,
+        "client_ip": 0.0,
+        "ip0": 0.0,
+        "ip1": 0.0,
+        "ip2": 0.0,
+        "ip3": 0.0
+      },
+      "configuration": {
+        "categorical_features": [
+          "age",
+          "gender",
+          "country",
+          "hour",
+          "client_ip"
+        ],
+        "numeric_features": [
+          "file_number",
+          "ip0",
+          "ip1",
+          "ip2",
+          "ip3"
+        ],
+        "parameters": {
+          "iterations": 600,
+          "depth": 4,
+          "learning_rate": 0.05,
+          "l2_leaf_reg": 10,
+          "loss_function": "MultiClass",
+          "eval_metric": "Accuracy",
+          "random_seed": 528,
+          "thread_count": 2,
+          "verbose": false,
+          "allow_writing_files": false
+        },
+        "fit": {
+          "early_stopping_rounds": 100,
+          "use_best_model": true,
+          "eval_set": "original validation partition"
+        }
+      }
+    },
+    {
+      "name": "catboost_extended_6",
+      "validation_accuracy": 0.34325,
+      "iterations": 1,
+      "seconds": 72.13,
+      "feature_importance": {
+        "age": 93.62928087274194,
+        "gender": 0.0,
+        "country": 0.0,
+        "hour": 6.370719127258051,
+        "file_number": 0.0,
+        "client_ip": 0.0,
+        "ip0": 0.0,
+        "ip1": 0.0,
+        "ip2": 0.0,
+        "ip3": 0.0
+      },
+      "configuration": {
+        "categorical_features": [
+          "age",
+          "gender",
+          "country",
+          "hour",
+          "client_ip"
+        ],
+        "numeric_features": [
+          "file_number",
+          "ip0",
+          "ip1",
+          "ip2",
+          "ip3"
+        ],
+        "parameters": {
+          "iterations": 600,
+          "depth": 6,
+          "learning_rate": 0.05,
+          "l2_leaf_reg": 10,
+          "loss_function": "MultiClass",
+          "eval_metric": "Accuracy",
+          "random_seed": 528,
+          "thread_count": 2,
+          "verbose": false,
+          "allow_writing_files": false
+        },
+        "fit": {
+          "early_stopping_rounds": 100,
+          "use_best_model": true,
+          "eval_set": "original validation partition"
+        }
+      }
+    },
+    {
+      "name": "offset_categorical_nb_1",
+      "validation_accuracy": 0.33645,
+      "seconds": 0.01,
+      "configuration": {
+        "features": [
+          "age",
+          "gender",
+          "country",
+          "hour"
+        ],
+        "alpha": 1,
+        "encoding": "OrdinalEncoder fitted on training only; unknown_value=-1; add 1 to integer codes",
+        "target_transform": "(income range index - age range index) % 8; range indices ordered numerically using training labels only; exact-offset accuracy equals exact-income accuracy for known age"
+      }
+    },
+    {
+      "name": "offset_categorical_nb_30",
+      "validation_accuracy": 0.33725,
+      "seconds": 0.01,
+      "configuration": {
+        "features": [
+          "age",
+          "gender",
+          "country",
+          "hour"
+        ],
+        "alpha": 30,
+        "encoding": "OrdinalEncoder fitted on training only; unknown_value=-1; add 1 to integer codes",
+        "target_transform": "(income range index - age range index) % 8; range indices ordered numerically using training labels only; exact-offset accuracy equals exact-income accuracy for known age"
+      }
+    },
+    {
+      "name": "offset_catboost_4",
+      "validation_accuracy": 0.33785,
+      "seconds": 7.1,
+      "iterations": 8,
+      "configuration": {
+        "categorical_features": [
+          "age",
+          "gender",
+          "country",
+          "hour"
+        ],
+        "numeric_features": [],
+        "parameters": {
+          "iterations": 600,
+          "depth": 4,
+          "learning_rate": 0.05,
+          "l2_leaf_reg": 10,
+          "loss_function": "MultiClass",
+          "eval_metric": "Accuracy",
+          "random_seed": 528,
+          "thread_count": 2,
+          "verbose": false,
+          "allow_writing_files": false
+        },
+        "fit": {
+          "early_stopping_rounds": 100,
+          "use_best_model": true,
+          "eval_set": "original validation partition"
+        },
+        "target_transform": "(income range index - age range index) % 8; range indices ordered numerically using training labels only; exact-offset accuracy equals exact-income accuracy for known age"
+      }
+    },
+    {
+      "name": "offset_catboost_6",
+      "validation_accuracy": 0.34205,
+      "seconds": 10.89,
+      "iterations": 18,
+      "configuration": {
+        "categorical_features": [
+          "age",
+          "gender",
+          "country",
+          "hour"
+        ],
+        "numeric_features": [],
+        "parameters": {
+          "iterations": 600,
+          "depth": 6,
+          "learning_rate": 0.05,
+          "l2_leaf_reg": 10,
+          "loss_function": "MultiClass",
+          "eval_metric": "Accuracy",
+          "random_seed": 528,
+          "thread_count": 2,
+          "verbose": false,
+          "allow_writing_files": false
+        },
+        "fit": {
+          "early_stopping_rounds": 100,
+          "use_best_model": true,
+          "eval_set": "original validation partition"
+        },
+        "target_transform": "(income range index - age range index) % 8; range indices ordered numerically using training labels only; exact-offset accuracy equals exact-income accuracy for known age"
+      }
+    },
+    {
+      "name": "catboost_extended_8",
+      "validation_accuracy": 0.34325,
+      "iterations": 1,
+      "seconds": 111.21,
+      "feature_importance": {
+        "age": 93.57300219231932,
+        "gender": 0.0,
+        "country": 0.055146751253393154,
+        "hour": 6.3718510564272535,
+        "file_number": 0.0,
+        "client_ip": 0.0,
+        "ip0": 0.0,
+        "ip1": 0.0,
+        "ip2": 0.0,
+        "ip3": 0.0
+      },
+      "configuration": {
+        "categorical_features": [
+          "age",
+          "gender",
+          "country",
+          "hour",
+          "client_ip"
+        ],
+        "numeric_features": [
+          "file_number",
+          "ip0",
+          "ip1",
+          "ip2",
+          "ip3"
+        ],
+        "parameters": {
+          "iterations": 600,
+          "depth": 8,
+          "learning_rate": 0.05,
+          "l2_leaf_reg": 10,
+          "loss_function": "MultiClass",
+          "eval_metric": "Accuracy",
+          "random_seed": 528,
+          "thread_count": 2,
+          "verbose": false,
+          "allow_writing_files": false
+        },
+        "fit": {
+          "early_stopping_rounds": 100,
+          "use_best_model": true,
+          "eval_set": "original validation partition"
+        }
+      }
+    }
+  ],
+  "final_evaluation": {
+    "accuracy": 0.33295,
+    "correct": 6659,
+    "test_rows": 20000,
+    "wilson_95_interval": [
+      0.3264511766296834,
+      0.3395129849741559
+    ],
+    "labels": [
+      "0-10k",
+      "100k-150k",
+      "10k-20k",
+      "150k-250k",
+      "20k-40k",
+      "250k+",
+      "40k-60k",
+      "60k-100k"
+    ],
+    "confusion_matrix": [
+      [
+        830,
+        0,
+        830,
+        0,
+        0,
+        828,
+        0,
+        0
+      ],
+      [
+        0,
+        844,
+        0,
+        1720,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        819,
+        0,
+        1617,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1696,
+        0,
+        810,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1683,
+        0,
+        852,
+        0,
+        0,
+        0
+      ],
+      [
+        850,
+        0,
+        0,
+        848,
+        0,
+        820,
+        0,
+        0
+      ],
+      [
+        0,
+        869,
+        781,
+        0,
+        810,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        802,
+        0,
+        817,
+        874,
+        0,
+        0,
+        0
+      ]
+    ],
+    "classification_report": {
+      "0-10k": {
+        "precision": 0.3321328531412565,
+        "recall": 0.33360128617363344,
+        "f1-score": 0.33286545017044317,
+        "support": 2488.0
+      },
+      "100k-150k": {
+        "precision": 0.33558648111332007,
+        "recall": 0.3291731669266771,
+        "f1-score": 0.33234888757629455,
+        "support": 2564.0
+      },
+      "10k-20k": {
+        "precision": 0.32926084300549785,
+        "recall": 0.6637931034482759,
+        "f1-score": 0.44017966516945695,
+        "support": 2436.0
+      },
+      "150k-250k": {
+        "precision": 0.3337925605195828,
+        "recall": 0.6767757382282522,
+        "f1-score": 0.44708053248978513,
+        "support": 2506.0
+      },
+      "20k-40k": {
+        "precision": 0.3359621451104101,
+        "recall": 0.336094674556213,
+        "f1-score": 0.3360283967659239,
+        "support": 2535.0
+      },
+      "250k+": {
+        "precision": 0.3336045565500407,
+        "recall": 0.3256552819698173,
+        "f1-score": 0.3295819935691318,
+        "support": 2518.0
+      },
+      "40k-60k": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 2460.0
+      },
+      "60k-100k": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 2493.0
+      },
+      "accuracy": 0.33295,
+      "macro avg": {
+        "precision": 0.25004242993001347,
+        "recall": 0.3331366564128586,
+        "f1-score": 0.2772606157176294,
+        "support": 20000.0
+      },
+      "weighted avg": {
+        "precision": 0.25085170788306793,
+        "recall": 0.33295,
+        "f1-score": 0.27773463560752853,
+        "support": 20000.0
+      }
+    },
+    "mode": "LOCAL_SNAPSHOT_FOLLOWUP",
+    "model": "catboost_demographics_4",
+    "evaluated_at_utc": "2026-11-03T20:24:45.248282+00:00",
+    "selection_sha256": "9a6a538079862bd03229712c01c3c2c9687ffcf4f20f0a6cc3b0422fe5fd47be",
+    "source_snapshot_sha256": "acfcd6cfb1d3fed0d05483197f138d6cefa74ca34f05bd35c4e6e5aa897877bc",
+    "predictions_sha256": "516ec31bf4408ed16a9bfcebf6a945f461eb20444c50fba6f5fda76c008fabe9",
+    "original_test_membership_and_order_verified": true,
+    "final_train_rows": 80000,
+    "target_accuracy": 0.35,
+    "target_met": false,
+    "selection": {
+      "frozen_at_utc": "2026-11-03T20:24:03.428955+00:00",
+      "selected_by": "highest accuracy on original 20000-row validation partition among 27 development trials",
+      "selected_trial": {
+        "name": "catboost_demographics_4",
+        "validation_accuracy": 0.3459,
+        "iterations": 99,
+        "seconds": 66.2,
+        "feature_importance": {
+          "age": 96.36190442681499,
+          "gender": 0.006249899997869845,
+          "country": 1.1936455044144174,
+          "hour": 2.4382001687727537
+        }
+      },
+      "features": [
+        "age",
+        "gender",
+        "country",
+        "hour"
+      ],
+      "parameters": {
+        "iterations": 99,
+        "depth": 4,
+        "learning_rate": 0.05,
+        "l2_leaf_reg": 10,
+        "loss_function": "MultiClass",
+        "eval_metric": "Accuracy",
+        "random_seed": 528,
+        "thread_count": 2,
+        "verbose": false,
+        "allow_writing_files": false,
+        "cat_features": [
+          "age",
+          "gender",
+          "country",
+          "hour"
+        ]
+      },
+      "evaluation_policy": "Refit on original 80000 train+validation rows; evaluate once on original 20000 test rows. Original test previously used for published baseline; no test labels used in this follow-up model selection."
+    },
+    "versions": {
+      "catboost": "1.2.8",
+      "numpy": "2.2.6",
+      "pandas": "2.3.3",
+      "scikit-learn": "1.7.2"
+    },
+    "seconds": 34.49
+  },
+  "training_diagnostics": {
+    "data_scope": "Original training and validation partitions only; no final-test labels used in optimization.",
+    "training_rows": 60000,
+    "validation_rows": 20000,
+    "training_age_income": {
+      "0-16": {
+        "counts": {
+          "10k-20k": 2416,
+          "250k+": 2557,
+          "0-10k": 2443
+        },
+        "proportions": {
+          "10k-20k": 0.325782092772384,
+          "250k+": 0.3447950377562028,
+          "0-10k": 0.32942286947141314
+        },
+        "entropy_bits": 1.584523851588153
+      },
+      "17-25": {
+        "counts": {
+          "10k-20k": 2525,
+          "20k-40k": 2584,
+          "0-10k": 2380
+        },
+        "proportions": {
+          "10k-20k": 0.33716116971558285,
+          "20k-40k": 0.34503939110695686,
+          "0-10k": 0.3177994391774603
+        },
+        "entropy_bits": 1.5841072885788663
+      },
+      "26-35": {
+        "counts": {
+          "10k-20k": 2518,
+          "20k-40k": 2546,
+          "40k-60k": 2440
+        },
+        "proportions": {
+          "10k-20k": 0.3355543710021322,
+          "20k-40k": 0.3392857142857143,
+          "40k-60k": 0.3251599147121535
+        },
+        "entropy_bits": 1.5847298629380915
+      },
+      "36-45": {
+        "counts": {
+          "40k-60k": 2534,
+          "20k-40k": 2613,
+          "60k-100k": 2484
+        },
+        "proportions": {
+          "40k-60k": 0.33206657056742234,
+          "20k-40k": 0.3424190800681431,
+          "60k-100k": 0.3255143493644345
+        },
+        "entropy_bits": 1.5846486328294827
+      },
+      "46-55": {
+        "counts": {
+          "60k-100k": 2438,
+          "100k-150k": 2567,
+          "40k-60k": 2435
+        },
+        "proportions": {
+          "60k-100k": 0.32768817204301076,
+          "100k-150k": 0.3450268817204301,
+          "40k-60k": 0.3272849462365591
+        },
+        "entropy_bits": 1.584520985948296
+      },
+      "56-65": {
+        "counts": {
+          "150k-250k": 2579,
+          "60k-100k": 2525,
+          "100k-150k": 2450
+        },
+        "proportions": {
+          "150k-250k": 0.3414085252846174,
+          "60k-100k": 0.3342599947047922,
+          "100k-150k": 0.3243314800105904
+        },
+        "entropy_bits": 1.584643695763686
+      },
+      "66-75": {
+        "counts": {
+          "250k+": 2528,
+          "100k-150k": 2456,
+          "150k-250k": 2492
+        },
+        "proportions": {
+          "250k+": 0.33814874264312467,
+          "100k-150k": 0.328517924023542,
+          "150k-250k": 0.3333333333333333
+        },
+        "entropy_bits": 1.5848621368702664
+      },
+      "76+": {
+        "counts": {
+          "250k+": 2545,
+          "150k-250k": 2552,
+          "0-10k": 2393
+        },
+        "proportions": {
+          "250k+": 0.33978638184245663,
+          "150k-250k": 0.3407209612817089,
+          "0-10k": 0.31949265687583445
+        },
+        "entropy_bits": 1.5843353046811526
+      }
+    },
+    "age_country_validation_gain_vs_age": 0.0045,
+    "approximate_paired_gain_95_interval": [
+      -0.0045712345766624985,
+      0.013571234576662497
+    ],
+    "training_only_three_fold_check": [
+      {
+        "age": 0.33795,
+        "age_country": 0.3307
+      },
+      {
+        "age": 0.3362,
+        "age_country": 0.33185
+      },
+      {
+        "age": 0.3414,
+        "age_country": 0.3299
+      }
+    ],
+    "interpretation": "Every training age group has exactly three observed income labels with approximately equal proportions. This is evidence of weak additional signal, not a proof of an achievable-accuracy ceiling."
+  },
+  "selected_model_training_folds": {
+    "model": "catboost_demographics_depth4_99trees",
+    "scope": "Original 60000-row training partition only",
+    "folds": [
+      {
+        "fold": 0,
+        "accuracy": 0.3381,
+        "seconds": 21.04
+      },
+      {
+        "fold": 1,
+        "accuracy": 0.3316,
+        "seconds": 20.62
+      },
+      {
+        "fold": 2,
+        "accuracy": 0.3331,
+        "seconds": 22.45
+      }
+    ],
+    "mean_accuracy": 0.3342666666666667
+  },
+  "conclusion": "35% target not reached; submitted random forest and cloud outputs retained. Validation selection did not generalize to the original test set. No additional follow-up candidate was tested.",
+  "limitations": "Original test already used for baseline; this is not a new independent test. Validation selection over 27 configurations may be optimistic. Three nearly uniform income labels per training age group do not prove an upper bound."
+}

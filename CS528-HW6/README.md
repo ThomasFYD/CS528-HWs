@@ -196,6 +196,29 @@ while adding other available fields did not reliably push accuracy above the
 target. This is an observed limitation of this data/model evaluation, not proof
 of a theoretical accuracy ceiling or a claim that all remaining signal is random.
 
+### Additional local optimization
+
+A follow-up compared 27 configurations using the original training and
+validation partitions: smoothed categorical combinations, histogram gradient
+boosting, Extra Trees, CatBoost, and age-relative income classifiers. Adding
+IP components and requested-file numbers did not establish a reliable gain.
+The highest validation score was **34.590%** for CatBoost (depth 4, 99 trees).
+Its configuration was frozen before refitting on the original 80,000 rows.
+One follow-up test on the original 20,000 rows yielded **33.295%
+(6,659 / 20,000)**, below both 35% and the original cloud result.
+
+The submitted random forest and its 34.27% cloud outputs are therefore retained.
+The original test was already used for the published baseline; this follow-up
+is not a fresh independent holdout. No test labels guided the new search, no
+partition or seed was changed, and no further candidate was tested afterward.
+Each training age group had three nearly equally frequent income categories;
+this observation suggests a difficult prediction task but does not prove an
+accuracy ceiling. The selected model's training-only three-fold mean was 33.427%.
+
+See [the experiment record](report/evidence/income-optimization.json) for all
+scores, configurations and diagnostics, and [reproduction instructions](experiments/README.md)
+for the frozen candidate. These are local measurements, not an additional VM run.
+
 ## Local verification without cloud charges
 
 Fifteen local tests passed, including data integrity, partition isolation,

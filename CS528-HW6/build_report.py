@@ -48,6 +48,10 @@ def main():
     cleanup=json.loads((result/'cleanup.json').read_text()) if (result/'cleanup.json').exists() else {}
     cloud=metrics['mode']=='CLOUD_SQL_ON_VM' and bool(cleanup.get('verified')) and bool(audit.get('lossless'))
     country,income=metrics['country'],metrics['income']
+    optimization_path=ROOT/'report'/'evidence'/'income-optimization.json'
+    optimization=json.loads(optimization_path.read_text()) if optimization_path.exists() else None
+    if optimization and optimization['baseline_output_uri'] != metrics.get('output_uri'):
+        optimization=None
     output=ROOT/'report'/'CS528_HW6_Report.pdf';output.parent.mkdir(exist_ok=True)
     story=[]
     story += [para('CS528 Homework 6','TitleHW'),
@@ -99,7 +103,14 @@ def main():
         table([['Candidate','Validation accuracy']]+[[name,f'{score:.3%}'] for name,score in income['validation_scores'].items()],[WIDTH-125,125]),
         Spacer(1,10),para('Random forest uses age, gender, country and simulated hour, one-hot encoding fitted only on training data, 120 trees, maximum depth 18, minimum 20 examples per leaf, max_features=0.8 and random seed 528. The alternatives are a training age-group mode and histogram gradient boosting with 150 iterations, 15 leaves, learning rate 0.08 and L2 penalty 10.'),
         para(f"The selected model is <b>{escape(income['model'])}</b>. Its test accuracy is <b>{income['accuracy']:.2%}</b>, versus a training-majority baseline of <b>{income['majority_baseline_accuracy']:.3%}</b>. Exact category matching is used. The approximate 95% Wilson interval is {income['wilson_95_interval'][0]:.2%} to {income['wilson_95_interval'][1]:.2%}; repeated demographic patterns mean the usual independent-trial interval should be interpreted cautiously."),
-        sub('Income target and limitations'),para(f"The measured result is {max(0,.35-income['accuracy'])*100:.2f} percentage points below the 35% aim. Age contains useful signal; the compared combinations of other fields did not reliably reach the target. The assignment warns that the generated data and random seed can affect fitting. This observation does not prove that a better model cannot exist. The seed and test partition were not changed after evaluation to improve the displayed score."),PageBreak()]
+        sub('Income target and limitations'),para(f"The measured result is {max(0,.35-income['accuracy'])*100:.2f} percentage points below the 35% aim. The assignment warns that generated data and the random seed can affect fitting. The seed and test partition were kept fixed. The compared models do not establish a theoretical accuracy ceiling.")]
+    if optimization:
+        followup=optimization['final_evaluation']
+        best=followup['selection']['selected_trial']
+        story += [sub('Additional local optimization'),
+            para(f"A follow-up compared {optimization['trial_count']} configurations on the original training and validation partitions, including additional field combinations, Extra Trees and CatBoost. The best validation score was <b>{best['validation_accuracy']:.3%}</b> (CatBoost, depth 4, {best['iterations']} trees). Its settings were frozen, then refitted on 80,000 rows. One follow-up evaluation on the original test set scored <b>{followup['accuracy']:.3%} ({followup['correct']:,}/{followup['test_rows']:,})</b>. This local result did not improve the published cloud model; the original model and bucket outputs are retained.",'SmallHW'),
+            para('The test set had already been used for the original model; it is not a new independent holdout. Only training/validation data guided this search. Each training age group had three nearly equally frequent income labels; added fields did not show reliable improvement. All 27 scores, settings, diagnostics and final-test checksums are in report/evidence/income-optimization.json.','SmallHW')]
+    story.append(PageBreak())
 
     story += [title('6. Configuration, execution and cleanup'),
         para('Required local tools: Google Cloud CLI and Python 3.11 or 3.12. Authenticate with an authorized project identity; the owner uses fangyd@bu.edu. Every cloud command pins project dazzling-seat-508219-j3.'),
