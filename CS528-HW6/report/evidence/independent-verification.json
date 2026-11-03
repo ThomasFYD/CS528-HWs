@@ -1,0 +1,27 @@
+{
+  "country": {
+    "partitions": {
+      "train": 80025,
+      "test": 19975
+    },
+    "correct": 19975,
+    "test_rows": 19975,
+    "accuracy": 1.0
+  },
+  "income": {
+    "partitions": {
+      "train": 60000,
+      "validation": 20000,
+      "test": 20000
+    },
+    "correct": 6854,
+    "test_rows": 20000,
+    "accuracy": 0.3427
+  },
+  "files_sha256_verified": true,
+  "country_shared_ips": 0,
+  "all_prediction_labels_match_hw5_backup": true,
+  "submitted_runtime_files_match_archive_except_terminal_newlines": true,
+  "runtime_changes_after_cloud_run": "Removed extra terminal blank lines only; algorithms, SQL and dependency versions are unchanged.",
+  "controller_changes_after_cloud_run": "Added resume and boot-disk absence verification; recovery completed successfully with this controller."
+}

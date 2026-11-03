@@ -1,0 +1,51 @@
+{
+  "name": "cs528-hw6-20261103-015057-b504",
+  "id": "4678237836783419843",
+  "creationTimestamp": "2026-11-02T17:55:57.079-08:00",
+  "zone": "https://www.googleapis.com/compute/v1/projects/dazzling-seat-508219-j3/zones/us-central1-a",
+  "machineType": "https://www.googleapis.com/compute/v1/projects/dazzling-seat-508219-j3/zones/us-central1-a/machineTypes/e2-standard-2",
+  "status": "RUNNING",
+  "disks": [
+    {
+      "architecture": "X86_64",
+      "autoDelete": true,
+      "boot": true,
+      "deviceName": "persistent-disk-0",
+      "diskSizeGb": "10",
+      "guestOsFeatures": [
+        {
+          "type": "UEFI_COMPATIBLE"
+        },
+        {
+          "type": "VIRTIO_SCSI_MULTIQUEUE"
+        },
+        {
+          "type": "GVNIC"
+        },
+        {
+          "type": "SEV_CAPABLE"
+        },
+        {
+          "type": "SEV_LIVE_MIGRATABLE_V2"
+        },
+        {
+          "type": "SUSPEND_SAFE_FPR"
+        }
+      ],
+      "index": 0,
+      "interface": "SCSI",
+      "kind": "compute#attachedDisk",
+      "licenses": [
+        "https://www.googleapis.com/compute/v1/projects/debian-cloud/global/licenses/debian-12-bookworm"
+      ],
+      "mode": "READ_WRITE",
+      "source": "https://www.googleapis.com/compute/v1/projects/dazzling-seat-508219-j3/zones/us-central1-a/disks/cs528-hw6-20261103-015057-b504",
+      "type": "PERSISTENT"
+    }
+  ],
+  "labels": {
+    "course": "cs528",
+    "homework": "hw6"
+  },
+  "note": "VM metadata captured after creation; final absence is verified in cleanup.json."
+}

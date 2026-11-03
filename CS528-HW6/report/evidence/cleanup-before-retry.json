@@ -1,0 +1,13 @@
+{
+  "checked_at": "2026-11-03T06:28:35.925164+00:00",
+  "errors": [
+    "delete VM: gcloud compute instances delete failed: ERROR: gcloud crashed (ReadTimeout): HTTPSConnectionPool(host='compute.googleapis.com', port=443): Read timed out. (read timeout=300)\n\nIf you would like to report this issue, please run the following command:\n  gcloud feedback\n\nTo check gcloud for common problems, please run the following command:\n  gcloud info --run-diagnostics"
+  ],
+  "vm_name": "cs528-hw6-20261103-015057-b504",
+  "sql_state": "STOPPED",
+  "sql_activation_policy": "NEVER",
+  "vm_absent": true,
+  "subnet_absent": true,
+  "network_absent": true,
+  "verified": false
+}

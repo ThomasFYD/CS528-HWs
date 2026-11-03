@@ -1,0 +1,14 @@
+{
+  "status": "success",
+  "mode": "CLOUD_SQL_ON_VM",
+  "files": {
+    "country_predictions.csv": "a719a74719776b6902e10a4ac1f257a8dc80f622c073832f9058b5f96ec7f95a",
+    "income_predictions.csv": "8b52a6f2d4707e592c74edbf1c253101c5ab3f3164304a0eed223780af6c3b56",
+    "migration.json": "97654f7ad178acb4c24d2137f16e71837f557b30c8fafd90885e67d6fa6538ad",
+    "splits.csv": "a7cfb75df3e00440be6be8825352ed25e6731807bd0e325fb5f686d77e138e21",
+    "metrics.json": "b0de86041fdb22ab5f411a5037ee0f8717a73b79502ddbe691a5de36bd1d31a0",
+    "summary.txt": "fd645523f30f814a5215a5051c2a14b6d44cb6363c5681c720f9688753456f13"
+  },
+  "source_sha256": "be28748d2b310f5b75678c0e80655a12d97d1bdacb8057daee8882b69bd5dd69",
+  "cloud_run": "20261103-015057-b504"
+}

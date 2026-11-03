@@ -1,0 +1,12 @@
+{
+  "checked_at": "2026-11-03T06:34:35.646139+00:00",
+  "errors": [],
+  "vm_name": "cs528-hw6-20261103-015057-b504",
+  "sql_state": "STOPPED",
+  "sql_activation_policy": "NEVER",
+  "vm_absent": true,
+  "boot_disk_absent": true,
+  "subnet_absent": true,
+  "network_absent": true,
+  "verified": true
+}

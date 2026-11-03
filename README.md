@@ -13,4 +13,6 @@ Author: Yide Fang
 
 - [Homework 5: Cloud SQL Request Logging and Operation Timing](CS528-HW5/README.md) — Persist request metadata and failures in MySQL, measure four server operations, and analyze a verified 100,000-request experiment. [Report](CS528-HW5/report/CS528_HW5_Report.pdf).
 
-HW1 contains a screenshot-based Cloud Console report. The HW2-HW5 READMEs describe implementation, dependencies, configuration, and tests. The HW2 and HW3 folders include their PDF reports. The HW4 and HW5 folders include their PDF reports and reviewed experiment evidence.
+- [Homework 6: Database Normalization and Predictive Models](CS528-HW6/README.md) — Migrate the formal HW5 experiment to 3NF, train country and income classifiers on a new VM, and verify cloud cleanup. [Report](CS528-HW6/report/CS528_HW6_Report.pdf).
+
+HW1 contains a screenshot-based Cloud Console report. The HW2-HW6 READMEs describe implementation, dependencies, configuration, and tests. The HW2 and HW3 folders include their PDF reports. The HW4, HW5 and HW6 folders include their PDF reports and reviewed experiment evidence.

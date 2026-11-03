@@ -1,0 +1,18 @@
+CS528 HW6 - Yide Fang
+Execution: CLOUD_SQL_ON_VM
+Source run: load-20261021T075735Z-5b3f60c2
+Seed: 528
+Input requests: 100000
+Country model: training-only IP prefix majority with backoff
+Country train/test: 80025/19975 requests
+Country accuracy: 100.0000% (19975/19975); goal >=99%
+Country train/test shared IPs: 0
+Income model: random_forest
+Income selection train/validation/test: 60000/20000/20000
+Income final train: 80000
+Income validation scores: {"age_mode": 0.33375, "hist_gradient_boosting": 0.33205, "random_forest": 0.33655}
+Income test accuracy: 34.2700% (6854/20000); aim >=35%
+Income majority baseline: 12.6750%
+Income goal met: False
+Output bucket: gs://cs528-hw2-yf-2026/cs528-hw6/runs/20261103-015057-b504/
+Income accuracy is below the 35% aim. Report this result; do not change the test set or seed to chase the target.

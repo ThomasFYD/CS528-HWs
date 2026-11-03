@@ -1,0 +1,18 @@
+"""Fixed homework resources; no cloud action happens on import."""
+PROJECT = "dazzling-seat-508219-j3"
+REGION = "us-central1"
+ZONE = "us-central1-a"
+SQL_INSTANCE = "cs528-hw5-mysql"
+SOURCE_DB = "hw5"
+TARGET_DB = "hw6"
+DB_USER = "hw5"
+PASSWORD_SECRET = "cs528-hw5-db-password"
+CONNECTION_NAME = f"{PROJECT}:{REGION}:{SQL_INSTANCE}"
+BUCKET = "cs528-hw2-yf-2026"
+SOURCE_BUCKET = PROJECT + "-hw6-artifacts"
+RUN_ID = "load-20261021T075735Z-5b3f60c2"
+EXPECTED_ROWS = 100000
+SEED = 528
+SERVICE_ACCOUNT_NAME = "cs528-hw6-worker"
+SERVICE_ACCOUNT = f"{SERVICE_ACCOUNT_NAME}@{PROJECT}.iam.gserviceaccount.com"
+MARKER = "CS528 HW6 - Yide Fang"

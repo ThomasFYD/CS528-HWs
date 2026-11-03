@@ -1,0 +1,9 @@
+{
+  "project": "dazzling-seat-508219-j3",
+  "run": "20261103-015057-b504",
+  "vm": "cs528-hw6-20261103-015057-b504",
+  "output_uri": "gs://cs528-hw2-yf-2026/cs528-hw6/runs/20261103-015057-b504/",
+  "sql_start_intent": true,
+  "source_uri": "gs://dazzling-seat-508219-j3-hw6-artifacts/source/source-be28748d2b310f5b75678c0e80655a12d97d1bdacb8057daee8882b69bd5dd69.tar.gz",
+  "source_sha256": "be28748d2b310f5b75678c0e80655a12d97d1bdacb8057daee8882b69bd5dd69"
+}

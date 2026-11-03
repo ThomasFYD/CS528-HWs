@@ -1,0 +1,25 @@
+{
+  "requests": 100000,
+  "clients": 76603,
+  "countries": 197,
+  "failed_requests": 4347,
+  "request_timings": 100000,
+  "ip_country_conflicts": 0,
+  "country_policy_conflicts": 0,
+  "missing_required_fields": 0,
+  "run_id": "load-20261021T075735Z-5b3f60c2",
+  "source_hashes": {
+    "requests": "26855e26a915cc8f7a56ed851b141ce89a513483ea282c36500cd1b01f52af8a",
+    "failed_requests": "059bfdcd2f5a56ba4f917282a48e4c88947ae542f9ee9b549915671c886f47cb",
+    "request_timings": "3d32c7fbb3b3a53f649f9ec721f3d92b50b9cf787bd0b5dcef7488e4f5d7db1b"
+  },
+  "reconstructed_hashes": {
+    "requests": "26855e26a915cc8f7a56ed851b141ce89a513483ea282c36500cd1b01f52af8a",
+    "failed_requests": "059bfdcd2f5a56ba4f917282a48e4c88947ae542f9ee9b549915671c886f47cb",
+    "request_timings": "3d32c7fbb3b3a53f649f9ec721f3d92b50b9cf787bd0b5dcef7488e4f5d7db1b"
+  },
+  "lossless": true,
+  "source_database": "hw5",
+  "target_database": "hw6",
+  "scope": "Complete formal HW5 run; other HW5 experiments remain in hw5"
+}
