@@ -1,0 +1,7 @@
+{
+  "command": ".venv/bin/python -m pytest -q",
+  "passed": 12,
+  "failed": 0,
+  "elapsed_seconds": 3.34,
+  "local_test_runner": "apache_beam.runners.portability.fn_api_runner.FnApiRunner"
+}

@@ -1,0 +1,368 @@
+2026-11-09 18:08:12,011 INFO starting control server on port 64963
+2026-11-09 18:08:12,011 INFO starting data server on port 64964
+2026-11-09 18:08:12,011 INFO starting state server on port 64965
+2026-11-09 18:08:12,011 INFO starting logging server on port 64966
+I1109 18:08:12.024906 37986760 fork_posix.cc:71] Other threads are currently calling into gRPC, skipping fork() handlers
+I1109 18:08:12.028006 37986786 ev_poll_posix.cc:588] FD from fork parent still in poll list: fd(32, generation: 1)
+I1109 18:08:12.030548 37986762 fork_posix.cc:71] Other threads are currently calling into gRPC, skipping fork() handlers
+I1109 18:08:12.032298 37986813 ev_poll_posix.cc:588] FD from fork parent still in poll list: fd(32, generation: 1)
+I1109 18:08:12.033960 37986764 fork_posix.cc:71] Other threads are currently calling into gRPC, skipping fork() handlers
+I1109 18:08:12.035504 37986835 ev_poll_posix.cc:588] FD from fork parent still in poll list: fd(32, generation: 1)
+I1109 18:08:12.036919 37986766 fork_posix.cc:71] Other threads are currently calling into gRPC, skipping fork() handlers
+I1109 18:08:12.038314 37986856 ev_poll_posix.cc:588] FD from fork parent still in poll list: fd(32, generation: 1)
+2026-11-09 18:08:12,975 INFO Worker: severity: INFO timestamp {   seconds: 1794265692   nanos: 967653036 } message: "Logging handler created." log_location: "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/sdk_worker_main.py:97" thread: "MainThread" 
+2026-11-09 18:08:12,976 INFO Worker: severity: INFO timestamp {   seconds: 1794265692   nanos: 967655897 } message: "Logging handler created." log_location: "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/sdk_worker_main.py:97" thread: "MainThread" 
+2026-11-09 18:08:12,976 INFO Worker: severity: INFO timestamp {   seconds: 1794265692   nanos: 967637062 } message: "Logging handler created." log_location: "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/sdk_worker_main.py:97" thread: "MainThread" 
+2026-11-09 18:08:12,976 INFO Worker: severity: INFO timestamp {   seconds: 1794265692   nanos: 968748092 } message: "semi_persistent_directory: None" log_location: "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/sdk_worker_main.py:139" thread: "MainThread" 
+2026-11-09 18:08:12,976 INFO Worker: severity: INFO timestamp {   seconds: 1794265692   nanos: 967648029 } message: "Logging handler created." log_location: "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/sdk_worker_main.py:97" thread: "MainThread" 
+2026-11-09 18:08:12,976 INFO Worker: severity: INFO timestamp {   seconds: 1794265692   nanos: 968669891 } message: "semi_persistent_directory: None" log_location: "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/sdk_worker_main.py:139" thread: "MainThread" 
+2026-11-09 18:08:12,976 WARNING Worker: severity: WARN timestamp {   seconds: 1794265692   nanos: 969058990 } message: "No semi_persistent_directory found:  User registered objects (e.g. schema, logical type) throughregisteries may not be effective" log_location: "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/sdk_worker_main.py:421" thread: "MainThread" 
+2026-11-09 18:08:12,976 INFO Worker: severity: INFO timestamp {   seconds: 1794265692   nanos: 968636989 } message: "semi_persistent_directory: None" log_location: "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/sdk_worker_main.py:139" thread: "MainThread" 
+2026-11-09 18:08:12,977 WARNING Worker: severity: WARN timestamp {   seconds: 1794265692   nanos: 968959093 } message: "No semi_persistent_directory found:  User registered objects (e.g. schema, logical type) throughregisteries may not be effective" log_location: "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/sdk_worker_main.py:421" thread: "MainThread" 
+2026-11-09 18:08:12,977 WARNING Worker: severity: WARN timestamp {   seconds: 1794265692   nanos: 968982934 } message: "No semi_persistent_directory found:  User registered objects (e.g. schema, logical type) throughregisteries may not be effective" log_location: "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/sdk_worker_main.py:421" thread: "MainThread" 
+2026-11-09 18:08:12,977 INFO Worker: severity: INFO timestamp {   seconds: 1794265692   nanos: 972324132 } message: "Pipeline_options: {}" log_location: "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/sdk_worker_main.py:168" thread: "MainThread" 
+2026-11-09 18:08:12,976 INFO Worker: severity: INFO timestamp {   seconds: 1794265692   nanos: 968698024 } message: "semi_persistent_directory: None" log_location: "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/sdk_worker_main.py:139" thread: "MainThread" 
+2026-11-09 18:08:12,977 INFO Worker: severity: INFO timestamp {   seconds: 1794265692   nanos: 972230911 } message: "Pipeline_options: {}" log_location: "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/sdk_worker_main.py:168" thread: "MainThread" 
+2026-11-09 18:08:12,977 INFO Worker: severity: INFO timestamp {   seconds: 1794265692   nanos: 972271203 } message: "Pipeline_options: {}" log_location: "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/sdk_worker_main.py:168" thread: "MainThread" 
+2026-11-09 18:08:12,977 INFO Worker: severity: INFO timestamp {   seconds: 1794265692   nanos: 974328041 } message: "Creating state cache with size 0" log_location: "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/statecache.py:212" thread: "MainThread" 
+2026-11-09 18:08:12,977 WARNING Worker: severity: WARN timestamp {   seconds: 1794265692   nanos: 969022035 } message: "No semi_persistent_directory found:  User registered objects (e.g. schema, logical type) throughregisteries may not be effective" log_location: "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/sdk_worker_main.py:421" thread: "MainThread" 
+2026-11-09 18:08:12,977 INFO Worker: severity: INFO timestamp {   seconds: 1794265692   nanos: 974226951 } message: "Creating state cache with size 0" log_location: "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/statecache.py:212" thread: "MainThread" 
+2026-11-09 18:08:12,977 INFO Worker: severity: INFO timestamp {   seconds: 1794265692   nanos: 974279880 } message: "Creating state cache with size 0" log_location: "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/statecache.py:212" thread: "MainThread" 
+2026-11-09 18:08:12,977 INFO Worker: severity: INFO timestamp {   seconds: 1794265692   nanos: 974399089 } message: "Creating insecure control channel for localhost:64963." log_location: "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/sdk_worker.py:184" thread: "MainThread" 
+2026-11-09 18:08:12,977 INFO Worker: severity: INFO timestamp {   seconds: 1794265692   nanos: 972300052 } message: "Pipeline_options: {}" log_location: "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/sdk_worker_main.py:168" thread: "MainThread" 
+2026-11-09 18:08:12,978 INFO Worker: severity: INFO timestamp {   seconds: 1794265692   nanos: 974309206 } message: "Creating state cache with size 0" log_location: "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/statecache.py:212" thread: "MainThread" 
+2026-11-09 18:08:12,977 INFO Worker: severity: INFO timestamp {   seconds: 1794265692   nanos: 974295139 } message: "Creating insecure control channel for localhost:64963." log_location: "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/sdk_worker.py:184" thread: "MainThread" 
+2026-11-09 18:08:12,978 INFO Worker: severity: INFO timestamp {   seconds: 1794265692   nanos: 974379062 } message: "Creating insecure control channel for localhost:64963." log_location: "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/sdk_worker.py:184" thread: "MainThread" 
+2026-11-09 18:08:12,978 INFO Worker: severity: INFO timestamp {   seconds: 1794265692   nanos: 974345922 } message: "Creating insecure control channel for localhost:64963." log_location: "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/sdk_worker.py:184" thread: "MainThread" 
+2026-11-09 18:08:12,978 INFO Worker: severity: INFO timestamp {   seconds: 1794265692   nanos: 976789951 } message: "Control channel established." log_location: "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/sdk_worker.py:192" thread: "MainThread" 
+2026-11-09 18:08:12,979 INFO Worker: severity: INFO timestamp {   seconds: 1794265692   nanos: 976710796 } message: "Control channel established." log_location: "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/sdk_worker.py:192" thread: "MainThread" 
+2026-11-09 18:08:12,979 INFO Worker: severity: INFO timestamp {   seconds: 1794265692   nanos: 976925849 } message: "Control channel established." log_location: "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/sdk_worker.py:192" thread: "MainThread" 
+2026-11-09 18:08:12,979 INFO Worker: severity: INFO timestamp {   seconds: 1794265692   nanos: 976751089 } message: "Control channel established." log_location: "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/sdk_worker.py:192" thread: "MainThread" 
+2026-11-09 18:08:12,980 INFO Worker: severity: INFO timestamp {   seconds: 1794265692   nanos: 977028131 } message: "Initializing SDKHarness with unbounded number of workers." log_location: "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/sdk_worker.py:246" thread: "MainThread" 
+2026-11-09 18:08:12,980 INFO Worker: severity: INFO timestamp {   seconds: 1794265692   nanos: 977093219 } message: "Initializing SDKHarness with unbounded number of workers." log_location: "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/sdk_worker.py:246" thread: "MainThread" 
+2026-11-09 18:08:12,980 INFO Worker: severity: INFO timestamp {   seconds: 1794265692   nanos: 977059125 } message: "Initializing SDKHarness with unbounded number of workers." log_location: "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/sdk_worker.py:246" thread: "MainThread" 
+2026-11-09 18:08:12,980 INFO Worker: severity: INFO timestamp {   seconds: 1794265692   nanos: 977260112 } message: "Initializing SDKHarness with unbounded number of workers." log_location: "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/sdk_worker.py:246" thread: "MainThread" 
+2026-11-09 18:08:12,980 INFO Worker: severity: INFO timestamp {   seconds: 1794265692   nanos: 977796077 } message: "Python sdk harness starting." log_location: "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/sdk_worker_main.py:249" thread: "MainThread" 
+2026-11-09 18:08:12,981 INFO Worker: severity: INFO timestamp {   seconds: 1794265692   nanos: 977865934 } message: "Python sdk harness starting." log_location: "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/sdk_worker_main.py:249" thread: "MainThread" 
+2026-11-09 18:08:12,981 INFO Worker: severity: INFO timestamp {   seconds: 1794265692   nanos: 977833032 } message: "Python sdk harness starting." log_location: "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/sdk_worker_main.py:249" thread: "MainThread" 
+2026-11-09 18:08:12,981 INFO Worker: severity: INFO timestamp {   seconds: 1794265692   nanos: 978118896 } message: "Python sdk harness starting." log_location: "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/sdk_worker_main.py:249" thread: "MainThread" 
+2026-11-09 18:08:12,982 INFO Worker: severity: INFO timestamp {   seconds: 1794265692   nanos: 981967210 } message: "Creating insecure state channel for localhost:64965." instruction_id: "bundle_2" log_location: "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/sdk_worker.py:936" thread: "Thread-14" 
+2026-11-09 18:08:12,982 INFO Worker: severity: INFO timestamp {   seconds: 1794265692   nanos: 982103109 } message: "State channel established." instruction_id: "bundle_2" log_location: "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/sdk_worker.py:943" thread: "Thread-14" 
+2026-11-09 18:08:12,982 INFO Worker: severity: INFO timestamp {   seconds: 1794265692   nanos: 981724977 } message: "Creating insecure state channel for localhost:64965." instruction_id: "bundle_1" log_location: "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/sdk_worker.py:936" thread: "Thread-14" 
+2026-11-09 18:08:12,982 INFO Worker: severity: INFO timestamp {   seconds: 1794265692   nanos: 982076883 } message: "State channel established." instruction_id: "bundle_1" log_location: "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/sdk_worker.py:943" thread: "Thread-14" 
+2026-11-09 18:08:12,983 INFO Worker: severity: INFO timestamp {   seconds: 1794265692   nanos: 982610940 } message: "Creating insecure state channel for localhost:64965." instruction_id: "bundle_3" log_location: "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/sdk_worker.py:936" thread: "Thread-14" 
+2026-11-09 18:08:12,983 INFO Worker: severity: INFO timestamp {   seconds: 1794265692   nanos: 982752084 } message: "State channel established." instruction_id: "bundle_3" log_location: "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/sdk_worker.py:943" thread: "Thread-14" 
+2026-11-09 18:08:12,983 INFO Worker: severity: INFO timestamp {   seconds: 1794265692   nanos: 982877969 } message: "Creating insecure state channel for localhost:64965." instruction_id: "bundle_4" log_location: "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/sdk_worker.py:936" thread: "Thread-14" 
+2026-11-09 18:08:12,983 INFO Worker: severity: INFO timestamp {   seconds: 1794265692   nanos: 983017921 } message: "State channel established." instruction_id: "bundle_4" log_location: "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/sdk_worker.py:943" thread: "Thread-14" 
+2026-11-09 18:08:12,984 INFO Worker: severity: INFO timestamp {   seconds: 1794265692   nanos: 983034849 } message: "Creating client data channel for localhost:64964 (data_stream_id: )" instruction_id: "bundle_1" log_location: "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/data_plane.py:897" thread: "Thread-14" 
+2026-11-09 18:08:12,984 INFO Worker: severity: INFO timestamp {   seconds: 1794265692   nanos: 983169078 } message: "Data channel established." instruction_id: "bundle_1" log_location: "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/data_plane.py:914" thread: "Thread-14" 
+2026-11-09 18:08:12,985 INFO Worker: severity: INFO timestamp {   seconds: 1794265692   nanos: 983002185 } message: "Creating client data channel for localhost:64964 (data_stream_id: )" instruction_id: "bundle_2" log_location: "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/data_plane.py:897" thread: "Thread-14" 
+2026-11-09 18:08:12,985 INFO Worker: severity: INFO timestamp {   seconds: 1794265692   nanos: 983120918 } message: "Data channel established." instruction_id: "bundle_2" log_location: "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/data_plane.py:914" thread: "Thread-14" 
+2026-11-09 18:08:12,985 INFO Worker: severity: INFO timestamp {   seconds: 1794265692   nanos: 983968973 } message: "Creating client data channel for localhost:64964 (data_stream_id: )" instruction_id: "bundle_3" log_location: "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/data_plane.py:897" thread: "Thread-14" 
+2026-11-09 18:08:12,985 INFO Worker: severity: INFO timestamp {   seconds: 1794265692   nanos: 984086036 } message: "Data channel established." instruction_id: "bundle_3" log_location: "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/data_plane.py:914" thread: "Thread-14" 
+2026-11-09 18:08:12,986 INFO Worker: severity: INFO timestamp {   seconds: 1794265692   nanos: 984267950 } message: "Creating client data channel for localhost:64964 (data_stream_id: )" instruction_id: "bundle_4" log_location: "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/data_plane.py:897" thread: "Thread-14" 
+2026-11-09 18:08:12,986 INFO Worker: severity: INFO timestamp {   seconds: 1794265692   nanos: 984397172 } message: "Data channel established." instruction_id: "bundle_4" log_location: "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/data_plane.py:914" thread: "Thread-14" 
+I1109 18:08:13.039943 37986997 fork_posix.cc:71] Other threads are currently calling into gRPC, skipping fork() handlers
+2026-11-09 18:08:17,193 INFO Worker: severity: INFO timestamp {   seconds: 1794265697   nanos: 192581892 } message: "Finished computing file information of: 10000 files" instruction_id: "bundle_5" transform_id: "List HTML objects/MatchAll/ParDo(_MatchAllFn)" log_location: "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/io/gcp/gcsio.py:651" thread: "Thread-14" 
+2026-11-09 18:08:17,726 INFO Worker: severity: INFO timestamp {   seconds: 1794265697   nanos: 719729900 } message: "Finished listing 12000 files in 3.9239349365234375 seconds." instruction_id: "bundle_5" transform_id: "List HTML objects/MatchAll/ParDo(_MatchAllFn)" log_location: "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/io/gcp/gcsio.py:662" thread: "Thread-14" 
+I1109 18:08:18.368116 37987002 fork_posix.cc:71] Other threads are currently calling into gRPC, skipping fork() handlers
+I1109 18:08:18.368105 37987000 fork_posix.cc:71] Other threads are currently calling into gRPC, skipping fork() handlers
+I1109 18:08:18.368134 37987005 fork_posix.cc:71] Other threads are currently calling into gRPC, skipping fork() handlers
+2026-11-09 18:13:18,391 INFO Detected input queue delay longer than 300 seconds. Waiting to receive elements in input queue for instruction: bundle_52 for 300.09 seconds.
+2026-11-09 18:13:18,392 INFO Detected input queue delay longer than 300 seconds. Waiting to receive elements in input queue for instruction: bundle_51 for 300.09 seconds.
+2026-11-09 18:13:18,399 INFO Detected input queue delay longer than 300 seconds. Waiting to receive elements in input queue for instruction: bundle_49 for 300.10 seconds.
+2026-11-09 18:13:18,415 INFO Detected input queue delay longer than 300 seconds. Waiting to receive elements in input queue for instruction: bundle_50 for 300.11 seconds.
+2026-11-09 18:18:18,505 INFO Detected input queue delay longer than 300 seconds. Waiting to receive elements in input queue for instruction: bundle_51 for 600.20 seconds.
+2026-11-09 18:18:18,509 INFO Detected input queue delay longer than 300 seconds. Waiting to receive elements in input queue for instruction: bundle_52 for 600.20 seconds.
+2026-11-09 18:18:18,523 INFO Detected input queue delay longer than 300 seconds. Waiting to receive elements in input queue for instruction: bundle_49 for 600.22 seconds.
+2026-11-09 18:18:18,542 INFO Detected input queue delay longer than 300 seconds. Waiting to receive elements in input queue for instruction: bundle_50 for 600.24 seconds.
+2026-11-09 18:23:18,611 INFO Detected input queue delay longer than 300 seconds. Waiting to receive elements in input queue for instruction: bundle_52 for 900.31 seconds.
+2026-11-09 18:23:18,615 INFO Detected input queue delay longer than 300 seconds. Waiting to receive elements in input queue for instruction: bundle_51 for 900.31 seconds.
+2026-11-09 18:23:18,669 INFO Detected input queue delay longer than 300 seconds. Waiting to receive elements in input queue for instruction: bundle_49 for 900.37 seconds.
+2026-11-09 18:23:18,699 INFO Detected input queue delay longer than 300 seconds. Waiting to receive elements in input queue for instruction: bundle_50 for 900.39 seconds.
+I1109 18:29:15.116108 37986844 chttp2_transport.cc:1403] ipv6:%5B::1%5D:64992: Got goaway [11] err=UNAVAILABLE:GOAWAY received; Error code: 11; Debug Text: ping_timeout {http2_error:11}
+2026-11-09 18:29:15,118 ERROR Failed to read inputs in the data plane.
+Traceback (most recent call last):
+  File "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/data_plane.py", line 764, in _read_inputs
+    for elements in elements_iterator:
+  File "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/grpc/_server.py", line 542, in __next__
+    return self._next()
+           ^^^^^^^^^^^^
+  File "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/grpc/_server.py", line 534, in _next
+    request = self._look_for_request()
+              ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/grpc/_server.py", line 516, in _look_for_request
+    _raise_rpc_error(self._state)
+  File "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/grpc/_server.py", line 220, in _raise_rpc_error
+    raise rpc_error
+grpc.RpcError
+Exception in thread read_grpc_client_inputs:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/threading.py", line 1052, in _bootstrap_inner
+Exception in thread read_grpc_client_inputs:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/threading.py", line 1052, in _bootstrap_inner
+        self.run()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/threading.py", line 989, in run
+2026-11-09 18:29:15,128 ERROR Worker: severity: ERROR timestamp {   seconds: 1794266955   nanos: 119571924 } message: "Failed to read inputs in the data plane.\nTraceback (most recent call last):\n  File \"/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/data_plane.py\", line 764, in _read_inputs\n    for elements in elements_iterator:\n  File \"/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/grpc/_channel.py\", line 547, in __next__\n    return self._next()\n           ^^^^^^^^^^^^\n  File \"/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/grpc/_channel.py\", line 965, in _next\n    raise self\ngrpc._channel._MultiThreadedRendezvous: <_MultiThreadedRendezvous of RPC that terminated with:\n\tstatus = StatusCode.UNAVAILABLE\n\tdetails = \"Stream removed (ping timeout)\"\n\tdebug_error_string = \"UNAVAILABLE:Stream removed (ping timeout)\"\n>" trace: "Traceback (most recent call last):\n  File \"/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/data_plane.py\", line 764, in _read_inputs\n    for elements in elements_iterator:\n  File \"/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/grpc/_channel.py\", line 547, in __next__\n    return self._next()\n           ^^^^^^^^^^^^\n  File \"/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/grpc/_channel.py\", line 965, in _next\n    raise self\ngrpc._channel._MultiThreadedRendezvous: <_MultiThreadedRendezvous of RPC that terminated with:\n\tstatus = StatusCode.UNAVAILABLE\n\tdetails = \"Stream removed (ping timeout)\"\n\tdebug_error_string = \"UNAVAILABLE:Stream removed (ping timeout)\"\n>\n" log_location: "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/data_plane.py:771" thread: "read_grpc_client_inputs" 
+self.run()    self._target(*self._args, **self._kwargs)
+
+  File "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/data_plane.py", line 781, in <lambda>
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/threading.py", line 989, in run
+    target=lambda: self._read_inputs(elements_iterator),
+    self._target(*self._args, **self._kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/data_plane.py", line 764, in _read_inputs
+  File "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/data_plane.py", line 781, in <lambda>
+    for elements in elements_iterator:
+  File "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/grpc/_channel.py", line 547, in __next__
+    target=lambda: self._read_inputs(elements_iterator),
+                       return self._next()
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^           ^^^^^^^^^^^^
+^^^^
+  File "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/grpc/_channel.py", line 965, in _next
+  File "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/data_plane.py", line 764, in _read_inputs
+    for elements in elements_iterator:
+  File "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/grpc/_server.py", line 542, in __next__
+    raise self
+grpc._channel._MultiThreadedRendezvous: <_MultiThreadedRendezvous of RPC that terminated with:
+	status = StatusCode.UNAVAILABLE
+	details = "Stream removed (ping timeout)"
+	debug_error_string = "UNAVAILABLE:Stream removed (ping timeout)"
+>
+    return self._next()
+           ^^^^^^^^^^^^
+  File "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/grpc/_server.py", line 534, in _next
+    request = self._look_for_request()
+              ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/grpc/_server.py", line 516, in _look_for_request
+    _raise_rpc_error(self._state)
+  File "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/grpc/_server.py", line 220, in _raise_rpc_error
+    raise rpc_error
+grpc.RpcError
+Traceback (most recent call last):
+  File "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/data_plane.py", line 591, in input_elements
+    element = received.get(timeout=1)
+              ^^^^^^^^^^^^^^^^^^^^^^^
+  File "apache_beam/utils/byte_limited_queue.py", line 154, in apache_beam.utils.byte_limited_queue.ByteLimitedQueue.get
+  File "apache_beam/utils/byte_limited_queue.py", line 166, in apache_beam.utils.byte_limited_queue.ByteLimitedQueue.get
+_queue.Empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/sdk_worker.py", line 310, in _execute
+    response = task()
+               ^^^^^^
+  File "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/sdk_worker.py", line 384, in <lambda>
+    lambda: self.create_worker().do_instruction(request), request)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/sdk_worker.py", line 671, in do_instruction
+    return getattr(self, request_type)(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/sdk_worker.py", line 709, in process_bundle
+    bundle_processor.process_bundle(
+  File "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/bundle_processor.py", line 1337, in process_bundle
+    for element in data_channel.input_elements(instruction_id,
+  File "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/data_plane.py", line 594, in input_elements
+    raise RuntimeError('Channel closed prematurely.')
+RuntimeError: Channel closed prematurely.
+
+2026-11-09 18:29:15,202 ERROR Worker: severity: ERROR timestamp {   seconds: 1794266955   nanos: 201542854 } message: "Error processing instruction bundle_53. Original traceback is\nTraceback (most recent call last):\n  File \"/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/data_plane.py\", line 591, in input_elements\n    element = received.get(timeout=1)\n              ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"apache_beam/utils/byte_limited_queue.py\", line 154, in apache_beam.utils.byte_limited_queue.ByteLimitedQueue.get\n  File \"apache_beam/utils/byte_limited_queue.py\", line 166, in apache_beam.utils.byte_limited_queue.ByteLimitedQueue.get\n_queue.Empty\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/sdk_worker.py\", line 310, in _execute\n    response = task()\n               ^^^^^^\n  File \"/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/sdk_worker.py\", line 384, in <lambda>\n    lambda: self.create_worker().do_instruction(request), request)\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/sdk_worker.py\", line 671, in do_instruction\n    return getattr(self, request_type)(\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/sdk_worker.py\", line 709, in process_bundle\n    bundle_processor.process_bundle(\n  File \"/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/bundle_processor.py\", line 1337, in process_bundle\n    for element in data_channel.input_elements(instruction_id,\n  File \"/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/data_plane.py\", line 594, in input_elements\n    raise RuntimeError(\'Channel closed prematurely.\')\nRuntimeError: Channel closed prematurely.\n\n" instruction_id: "bundle_53" log_location: "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/sdk_worker.py:314" thread: "Thread-14" 
+2026-11-09 18:29:16,095 ERROR Error closing worker_handler <apache_beam.runners.portability.fn_api_runner.worker_handlers.SubprocessSdkWorkerHandler object at 0x124b9b980>
+Traceback (most recent call last):
+  File "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/data_plane.py", line 591, in input_elements
+    element = received.get(timeout=1)
+              ^^^^^^^^^^^^^^^^^^^^^^^
+  File "apache_beam/utils/byte_limited_queue.py", line 154, in apache_beam.utils.byte_limited_queue.ByteLimitedQueue.get
+  File "apache_beam/utils/byte_limited_queue.py", line 166, in apache_beam.utils.byte_limited_queue.ByteLimitedQueue.get
+_queue.Empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/portability/fn_api_runner/fn_runner.py", line 465, in run_stages
+    bundle_results = self._execute_bundle(
+                     ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/portability/fn_api_runner/fn_runner.py", line 790, in _execute_bundle
+    self._run_bundle(
+  File "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/portability/fn_api_runner/fn_runner.py", line 1029, in _run_bundle
+    result, splits = bundle_manager.process_bundle(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/portability/fn_api_runner/fn_runner.py", line 1460, in process_bundle
+    for result, split_result in executor.map(execute, zip(part_inputs,  # pylint: disable=bad-option-value
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/concurrent/futures/_base.py", line 619, in result_iterator
+    yield _result_or_cancel(fs.pop())
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/concurrent/futures/_base.py", line 317, in _result_or_cancel
+    return fut.result(timeout)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/concurrent/futures/_base.py", line 456, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/utils/thread_pool_executor.py", line 37, in run
+    self._future.set_result(self._fn(*self._fn_args, **self._fn_kwargs))
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/portability/fn_api_runner/fn_runner.py", line 1452, in execute
+    return bundle_manager.process_bundle(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/portability/fn_api_runner/fn_runner.py", line 1372, in process_bundle
+    for output in self._worker_handler.data_conn.input_elements(
+  File "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/data_plane.py", line 594, in input_elements
+    raise RuntimeError('Channel closed prematurely.')
+RuntimeError: Channel closed prematurely.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/portability/fn_api_runner/worker_handlers.py", line 954, in close_all
+    worker_handler.close()
+  File "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/portability/fn_api_runner/worker_handlers.py", line 599, in close
+    self.data_conn.close()
+  File "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/data_plane.py", line 499, in close
+    raise self._exception
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/threading.py", line 1052, in _bootstrap_inner
+    self.run()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/threading.py", line 989, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/data_plane.py", line 781, in <lambda>
+    target=lambda: self._read_inputs(elements_iterator),
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/data_plane.py", line 764, in _read_inputs
+    for elements in elements_iterator:
+  File "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/grpc/_server.py", line 542, in __next__
+    return self._next()
+           ^^^^^^^^^^^^
+  File "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/grpc/_server.py", line 534, in _next
+    request = self._look_for_request()
+              ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/grpc/_server.py", line 516, in _look_for_request
+    _raise_rpc_error(self._state)
+  File "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/grpc/_server.py", line 220, in _raise_rpc_error
+    raise rpc_error
+grpc.RpcError
+2026-11-09 18:29:16,096 INFO Worker: severity: INFO timestamp {   seconds: 1794266956   nanos: 95252037 } message: "No more requests from control plane" log_location: "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/sdk_worker.py:287" thread: "MainThread" 
+2026-11-09 18:29:16,105 INFO Worker: severity: INFO timestamp {   seconds: 1794266956   nanos: 95512151 } message: "SDK Harness waiting for in-flight requests to complete" log_location: "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/sdk_worker.py:288" thread: "MainThread" 
+2026-11-09 18:29:16,105 INFO Worker: severity: INFO timestamp {   seconds: 1794266956   nanos: 95634937 } message: "Closing all cached grpc data channels." log_location: "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/data_plane.py:938" thread: "MainThread" 
+2026-11-09 18:29:16,106 CRITICAL Worker: severity: CRITICAL timestamp {   seconds: 1794266956   nanos: 96325874 } message: "Python sdk harness failed: \nTraceback (most recent call last):\n  File \"/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/sdk_worker_main.py\", line 250, in main\n    sdk_harness.run()\n  File \"/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/sdk_worker.py\", line 295, in run\n    self._data_channel_factory.close()\n  File \"/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/data_plane.py\", line 940, in close\n    channel.close()\n  File \"/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/data_plane.py\", line 499, in close\n    raise self._exception\n  File \"/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/threading.py\", line 1052, in _bootstrap_inner\n    self.run()\n  File \"/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/threading.py\", line 989, in run\n    self._target(*self._args, **self._kwargs)\n  File \"/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/data_plane.py\", line 781, in <lambda>\n    target=lambda: self._read_inputs(elements_iterator),\n                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/data_plane.py\", line 764, in _read_inputs\n    for elements in elements_iterator:\n  File \"/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/grpc/_channel.py\", line 547, in __next__\n    return self._next()\n           ^^^^^^^^^^^^\n  File \"/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/grpc/_channel.py\", line 965, in _next\n    raise self\ngrpc._channel._MultiThreadedRendezvous: <_MultiThreadedRendezvous of RPC that terminated with:\n\tstatus = StatusCode.UNAVAILABLE\n\tdetails = \"Stream removed (ping timeout)\"\n\tdebug_error_string = \"UNAVAILABLE:Stream removed (ping timeout)\"\n>" trace: "Traceback (most recent call last):\n  File \"/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/sdk_worker_main.py\", line 250, in main\n    sdk_harness.run()\n  File \"/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/sdk_worker.py\", line 295, in run\n    self._data_channel_factory.close()\n  File \"/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/data_plane.py\", line 940, in close\n    channel.close()\n  File \"/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/data_plane.py\", line 499, in close\n    raise self._exception\n  File \"/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/threading.py\", line 1052, in _bootstrap_inner\n    self.run()\n  File \"/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/threading.py\", line 989, in run\n    self._target(*self._args, **self._kwargs)\n  File \"/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/data_plane.py\", line 781, in <lambda>\n    target=lambda: self._read_inputs(elements_iterator),\n                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/data_plane.py\", line 764, in _read_inputs\n    for elements in elements_iterator:\n  File \"/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/grpc/_channel.py\", line 547, in __next__\n    return self._next()\n           ^^^^^^^^^^^^\n  File \"/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/grpc/_channel.py\", line 965, in _next\n    raise self\ngrpc._channel._MultiThreadedRendezvous: <_MultiThreadedRendezvous of RPC that terminated with:\n\tstatus = StatusCode.UNAVAILABLE\n\tdetails = \"Stream removed (ping timeout)\"\n\tdebug_error_string = \"UNAVAILABLE:Stream removed (ping timeout)\"\n>\n" log_location: "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/sdk_worker_main.py:253" thread: "MainThread" 
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/sdk_worker_main.py", line 425, in <module>
+    main(sys.argv)
+  File "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/sdk_worker_main.py", line 250, in main
+    sdk_harness.run()
+  File "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/sdk_worker.py", line 295, in run
+    self._data_channel_factory.close()
+  File "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/data_plane.py", line 940, in close
+    channel.close()
+  File "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/data_plane.py", line 499, in close
+    raise self._exception
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/threading.py", line 1052, in _bootstrap_inner
+    self.run()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/threading.py", line 989, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/data_plane.py", line 781, in <lambda>
+    target=lambda: self._read_inputs(elements_iterator),
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/data_plane.py", line 764, in _read_inputs
+    for elements in elements_iterator:
+  File "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/grpc/_channel.py", line 547, in __next__
+    return self._next()
+           ^^^^^^^^^^^^
+  File "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/grpc/_channel.py", line 965, in _next
+    raise self
+grpc._channel._MultiThreadedRendezvous: <_MultiThreadedRendezvous of RPC that terminated with:
+	status = StatusCode.UNAVAILABLE
+	details = "Stream removed (ping timeout)"
+	debug_error_string = "UNAVAILABLE:Stream removed (ping timeout)"
+>
+2026-11-09 18:29:16,112 INFO Worker: severity: INFO timestamp {   seconds: 1794266956   nanos: 108421087 } message: "No more requests from control plane" log_location: "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/sdk_worker.py:287" thread: "MainThread" 
+2026-11-09 18:29:16,112 INFO Worker: severity: INFO timestamp {   seconds: 1794266956   nanos: 110543966 } message: "SDK Harness waiting for in-flight requests to complete" log_location: "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/sdk_worker.py:288" thread: "MainThread" 
+2026-11-09 18:29:16,112 INFO Worker: severity: INFO timestamp {   seconds: 1794266956   nanos: 110731124 } message: "Closing all cached grpc data channels." log_location: "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/data_plane.py:938" thread: "MainThread" 
+2026-11-09 18:29:16,115 INFO Worker: severity: INFO timestamp {   seconds: 1794266956   nanos: 112463951 } message: "Closing all cached gRPC state handlers." log_location: "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/sdk_worker.py:955" thread: "MainThread" 
+2026-11-09 18:29:16,115 INFO Worker: severity: INFO timestamp {   seconds: 1794266956   nanos: 114704847 } message: "Done consuming work." log_location: "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/sdk_worker.py:300" thread: "MainThread" 
+2026-11-09 18:29:16,115 INFO Worker: severity: INFO timestamp {   seconds: 1794266956   nanos: 114794969 } message: "Python sdk harness exiting." log_location: "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/sdk_worker_main.py:251" thread: "MainThread" 
+2026-11-09 18:29:16,330 INFO Worker: severity: INFO timestamp {   seconds: 1794266956   nanos: 328667879 } message: "No more requests from control plane" log_location: "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/sdk_worker.py:287" thread: "MainThread" 
+2026-11-09 18:29:16,330 INFO Worker: severity: INFO timestamp {   seconds: 1794266956   nanos: 329293966 } message: "SDK Harness waiting for in-flight requests to complete" log_location: "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/sdk_worker.py:288" thread: "MainThread" 
+2026-11-09 18:29:16,330 INFO Worker: severity: INFO timestamp {   seconds: 1794266956   nanos: 329378128 } message: "Closing all cached grpc data channels." log_location: "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/data_plane.py:938" thread: "MainThread" 
+2026-11-09 18:29:16,331 INFO Worker: severity: INFO timestamp {   seconds: 1794266956   nanos: 330034017 } message: "Closing all cached gRPC state handlers." log_location: "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/sdk_worker.py:955" thread: "MainThread" 
+2026-11-09 18:29:16,331 INFO Worker: severity: INFO timestamp {   seconds: 1794266956   nanos: 330643892 } message: "Done consuming work." log_location: "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/sdk_worker.py:300" thread: "MainThread" 
+2026-11-09 18:29:16,331 INFO Worker: severity: INFO timestamp {   seconds: 1794266956   nanos: 330704927 } message: "Python sdk harness exiting." log_location: "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/sdk_worker_main.py:251" thread: "MainThread" 
+Exception in thread run_worker:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/threading.py", line 1052, in _bootstrap_inner
+    self.run()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/threading.py", line 989, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/portability/local_job_service.py", line 224, in run
+    raise RuntimeError(
+RuntimeError: Worker subprocess exited with return code 1
+2026-11-09 18:29:16,492 INFO Worker: severity: INFO timestamp {   seconds: 1794266956   nanos: 490550994 } message: "No more requests from control plane" log_location: "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/sdk_worker.py:287" thread: "MainThread" 
+2026-11-09 18:29:16,492 INFO Worker: severity: INFO timestamp {   seconds: 1794266956   nanos: 491318941 } message: "SDK Harness waiting for in-flight requests to complete" log_location: "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/sdk_worker.py:288" thread: "MainThread" 
+2026-11-09 18:29:16,492 INFO Worker: severity: INFO timestamp {   seconds: 1794266956   nanos: 491522073 } message: "Closing all cached grpc data channels." log_location: "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/data_plane.py:938" thread: "MainThread" 
+2026-11-09 18:29:16,492 INFO Worker: severity: INFO timestamp {   seconds: 1794266956   nanos: 492453098 } message: "Closing all cached gRPC state handlers." log_location: "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/sdk_worker.py:955" thread: "MainThread" 
+2026-11-09 18:29:16,496 INFO Worker: severity: INFO timestamp {   seconds: 1794266956   nanos: 495534181 } message: "Done consuming work." log_location: "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/sdk_worker.py:300" thread: "MainThread" 
+2026-11-09 18:29:16,496 INFO Worker: severity: INFO timestamp {   seconds: 1794266956   nanos: 495625972 } message: "Python sdk harness exiting." log_location: "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/sdk_worker_main.py:251" thread: "MainThread" 
+Traceback (most recent call last):
+  File "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/data_plane.py", line 591, in input_elements
+    element = received.get(timeout=1)
+              ^^^^^^^^^^^^^^^^^^^^^^^
+  File "apache_beam/utils/byte_limited_queue.py", line 154, in apache_beam.utils.byte_limited_queue.ByteLimitedQueue.get
+  File "apache_beam/utils/byte_limited_queue.py", line 166, in apache_beam.utils.byte_limited_queue.ByteLimitedQueue.get
+_queue.Empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/run_hw7.py", line 103, in <module>
+    main()
+  File "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/run_hw7.py", line 69, in main
+    result = pipeline.run()
+             ^^^^^^^^^^^^^^
+  File "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/pipeline.py", line 563, in run
+    return self._run_internal(test_runner_api)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/pipeline.py", line 629, in _run_internal
+    return self.runner.run_pipeline(self, self._options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/portability/fn_api_runner/fn_runner.py", line 191, in run_pipeline
+    self._latest_run_result = self.run_via_runner_api(
+                              ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/portability/fn_api_runner/fn_runner.py", line 218, in run_via_runner_api
+    return self.run_stages(stage_context, stages)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/portability/fn_api_runner/fn_runner.py", line 465, in run_stages
+    bundle_results = self._execute_bundle(
+                     ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/portability/fn_api_runner/fn_runner.py", line 790, in _execute_bundle
+    self._run_bundle(
+  File "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/portability/fn_api_runner/fn_runner.py", line 1029, in _run_bundle
+    result, splits = bundle_manager.process_bundle(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/portability/fn_api_runner/fn_runner.py", line 1460, in process_bundle
+    for result, split_result in executor.map(execute, zip(part_inputs,  # pylint: disable=bad-option-value
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/concurrent/futures/_base.py", line 619, in result_iterator
+    yield _result_or_cancel(fs.pop())
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/concurrent/futures/_base.py", line 317, in _result_or_cancel
+    return fut.result(timeout)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/concurrent/futures/_base.py", line 456, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/utils/thread_pool_executor.py", line 37, in run
+    self._future.set_result(self._fn(*self._fn_args, **self._fn_kwargs))
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/portability/fn_api_runner/fn_runner.py", line 1452, in execute
+    return bundle_manager.process_bundle(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/portability/fn_api_runner/fn_runner.py", line 1372, in process_bundle
+    for output in self._worker_handler.data_conn.input_elements(
+  File "/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/lib/python3.12/site-packages/apache_beam/runners/worker/data_plane.py", line 594, in input_elements
+    raise RuntimeError('Channel closed prematurely.')
+RuntimeError: Channel closed prematurely.

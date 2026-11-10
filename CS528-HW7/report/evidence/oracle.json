@@ -1,0 +1,15 @@
+{
+  "verified": true,
+  "all_12000_file_hashes_match_generator": true,
+  "all_incoming_counts_match": true,
+  "all_outgoing_counts_match": true,
+  "all_trigram_counts_match": true,
+  "generator_seed": 0,
+  "generator_arguments": "-n 12000 -m 325",
+  "template_words": 73,
+  "links": 1946934,
+  "words": 142126182,
+  "trigrams": 142102240,
+  "generator_sha256": "a77342930ecff8a04b80a23f3f54bb4e9afc6e729728da9263fcff8d27d7b819",
+  "method": "Independently replay random draws and exact HTML bytes; compute trigrams algebraically from fixed template and two boundary triples."
+}

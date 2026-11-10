@@ -15,4 +15,6 @@ Author: Yide Fang
 
 - [Homework 6: Database Normalization and Predictive Models](CS528-HW6/README.md) — Migrate the formal HW5 experiment to 3NF, train country and income classifiers on a new VM, and verify cloud cleanup. [Report](CS528-HW6/report/CS528_HW6_Report.pdf).
 
-HW1 contains a screenshot-based Cloud Console report. The HW2-HW6 READMEs describe implementation, dependencies, configuration, and tests. The HW2 and HW3 folders include their PDF reports. The HW4, HW5 and HW6 folders include their PDF reports and reviewed experiment evidence.
+- [Homework 7: Apache Beam and Cloud Dataflow](CS528-HW7/README.md) — Analyze HW2 hyperlinks and word trigrams, compare local and Dataflow runtimes, and verify complete results. [Report](CS528-HW7/report/CS528_HW7_Report.pdf).
+
+HW1 contains a screenshot-based Cloud Console report. The HW2-HW7 READMEs describe implementation, dependencies, configuration, and tests. The HW2 and HW3 folders include their PDF reports. The HW4-HW7 folders include their PDF reports and reviewed experiment evidence.

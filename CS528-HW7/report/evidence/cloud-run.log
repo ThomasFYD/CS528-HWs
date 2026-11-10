@@ -1,0 +1,326 @@
+2026-11-09 18:09:33,916 INFO Runner defaulting to pickling library: cloudpickle.
+2026-11-09 18:09:36,598 INFO Executing command: ['/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/bin/python', '-m', 'build', '--no-isolation', '--sdist', '--outdir', '/var/folders/kb/v31qm6v96zx6h6xtz18vxxfw0000gn/T/tmpz9m6fhma', '.']
+/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/bin/python: No module named build
+2026-11-09 18:09:36,629 INFO Executing command: ['/Users/thomasfang/CS528/CS528-HWs/CS528-HW7/.venv/bin/python', 'setup.py', 'sdist', '--dist-dir', '/var/folders/kb/v31qm6v96zx6h6xtz18vxxfw0000gn/T/tmpz9m6fhma']
+warning: sdist: standard file not found: should have one of README, README.rst, README.txt, README.md
+
+2026-11-09 18:09:37,407 INFO Pipeline has additional dependencies to be installed in SDK worker container, consider using the SDK container image pre-building workflow to avoid repetitive installations. Learn more on https://cloud.google.com/dataflow/docs/guides/using-custom-containers#prebuild
+2026-11-09 18:09:37,739 INFO Starting GCS upload to gs://cs528-hw7-yf-2026/staging/run1/cs528-hw7-20261109-01.1794265777.720037/pickled_main_session...
+2026-11-09 18:09:38,911 INFO Completed GCS upload to gs://cs528-hw7-yf-2026/staging/run1/cs528-hw7-20261109-01.1794265777.720037/pickled_main_session in 1 seconds.
+2026-11-09 18:09:38,911 INFO Starting GCS upload to gs://cs528-hw7-yf-2026/staging/run1/cs528-hw7-20261109-01.1794265777.720037/workflow.tar.gz...
+2026-11-09 18:09:39,263 INFO Completed GCS upload to gs://cs528-hw7-yf-2026/staging/run1/cs528-hw7-20261109-01.1794265777.720037/workflow.tar.gz in 0 seconds.
+2026-11-09 18:09:39,263 INFO Starting GCS upload to gs://cs528-hw7-yf-2026/staging/run1/cs528-hw7-20261109-01.1794265777.720037/submission_environment_dependencies.txt...
+2026-11-09 18:09:39,605 INFO Completed GCS upload to gs://cs528-hw7-yf-2026/staging/run1/cs528-hw7-20261109-01.1794265777.720037/submission_environment_dependencies.txt in 0 seconds.
+2026-11-09 18:09:39,606 INFO Starting GCS upload to gs://cs528-hw7-yf-2026/staging/run1/cs528-hw7-20261109-01.1794265777.720037/pipeline.pb...
+2026-11-09 18:09:40,014 INFO Completed GCS upload to gs://cs528-hw7-yf-2026/staging/run1/cs528-hw7-20261109-01.1794265777.720037/pipeline.pb in 0 seconds.
+2026-11-09 18:09:40,022 INFO sdk_pipeline_options: {'runner': 'DataflowRunner', 'streaming': False, 'resource_hints': [], 'auto_unique_labels': False, 'no_wait_until_finish': False, 'beam_services': {}, 'use_transform_service': False, 'type_check_strictness': 'DEFAULT_TO_ANY', 'type_check_additional': '', 'pipeline_type_check': True, 'disable_beartype': False, 'exclude_infer_dataclass_field_type': False, 'runtime_type_check': False, 'performance_runtime_type_check': False, 'allow_non_deterministic_key_coders': False, 'allow_unsafe_triggers': False, 'force_cloudpickle_deterministic_coders': False, 'direct_runner_use_stacked_bundle': True, 'direct_runner_bundle_repeat': 0, 'direct_num_workers': 1, 'direct_running_mode': 'in_memory', 'direct_embed_docker_python': False, 'direct_test_splits': {}, 'dataflow_endpoint': 'https://dataflow.googleapis.com', 'project': 'dazzling-seat-508219-j3', 'job_name': 'cs528-hw7-20261109-01', 'staging_location': 'gs://cs528-hw7-yf-2026/staging/run1/cs528-hw7-20261109-01.1794265777.720037', 'temp_location': 'gs://cs528-hw7-yf-2026/tmp/run1/cs528-hw7-20261109-01.1794265777.720037', 'region': 'us-central1', 'service_account_email': 'cs528-hw7-worker@dazzling-seat-508219-j3.iam.gserviceaccount.com', 'no_auth': False, 'labels': ['assignment=cs528-hw7'], 'update': False, 'enable_streaming_engine': True, 'dataflow_service_options': [], 'enable_hot_key_logging': False, 'enable_artifact_caching': False, 'gcp_oauth_scopes': ['https://www.googleapis.com/auth/bigquery', 'https://www.googleapis.com/auth/cloud-platform', 'https://www.googleapis.com/auth/devstorage.full_control', 'https://www.googleapis.com/auth/userinfo.email', 'https://www.googleapis.com/auth/datastore', 'https://www.googleapis.com/auth/spanner.admin', 'https://www.googleapis.com/auth/spanner.data'], 'enable_bucket_read_metric_counter': False, 'enable_bucket_write_metric_counter': False, 'no_gcsio_throttling_counter': False, 'enable_gcsio_blob_generation': False, 'hdfs_full_urls': False, 'num_workers': 2, 'max_num_workers': 2, 'autoscaling_algorithm': 'NONE', 'machine_type': 'e2-standard-2', 'disk_size_gb': 30, 'network': 'default', 'max_cache_memory_usage_mb': 0, 'experiments': ['beam_fn_api', 'use_unified_worker', 'use_runner_v2', 'use_portable_job_submission', 'use_multiple_sdk_containers'], 'profile_cpu': False, 'profile_memory': False, 'profile_sample_rate': 1.0, 'profile_upload_interval_sec': 300, 'profiler_stop_after_sec': 0, 'profiler_stop_after_crash': False, 'profile_postprocess_interval_sec': 600, 'requirements_cache_only_sources': False, 'setup_file': './setup.py', 'beam_plugins': ['apache_beam.io.filesystem.FileSystem', 'apache_beam.io.hadoopfilesystem.HadoopFileSystem', 'apache_beam.io.localfilesystem.LocalFileSystem', 'apache_beam.io.gcp.gcsfilesystem.GCSFileSystem', 'apache_beam.io.aws.s3filesystem.S3FileSystem', 'apache_beam.io.azure.blobstoragefilesystem.BlobStorageFileSystem'], 'pickle_library': 'cloudpickle', 'save_main_session': True, 'sdk_location': 'default', 'job_server_timeout': 300, 'sdk_worker_parallelism': '1', 'environment_cache_millis': 0, 'job_port': 0, 'artifact_port': 0, 'expansion_port': 0, 'job_server_java_launcher': 'java', 'job_server_jvm_properties': [], 'flink_master': '[auto]', 'flink_version': '2.2', 'flink_submit_uber_jar': False, 'parallelism': -1, 'max_parallelism': -1, 'bootstrap_servers': 'localhost:9092', 'spark_master_url': 'local[4]', 'spark_submit_uber_jar': False, 'spark_version': '3', 'prism_log_level': 'info', 'prism_log_kind': 'console', 'dry_run': False, 's3_disable_ssl': False, 'pipelineUrl': 'gs://cs528-hw7-yf-2026/staging/run1/cs528-hw7-20261109-01.1794265777.720037/pipeline.pb', 'pipelineProtoHash': '663bceba15624407ec36650bcfd329f01393f6bf6d80b163589bf2af8bcccf2c'}
+2026-11-09 18:09:41,470 INFO Create job: id: "2026-11-09_15_09_40-1204750077456012981"
+project_id: "dazzling-seat-508219-j3"
+name: "cs528-hw7-20261109-01"
+type_: JOB_TYPE_BATCH
+current_state_time {
+}
+create_time {
+  seconds: 1794265781
+  nanos: 554017000
+}
+client_request_id: "20261109230937720679-6841"
+location: "us-central1"
+start_time {
+  seconds: 1794265781
+  nanos: 554017000
+}
+
+2026-11-09 18:09:41,470 INFO Created job with id: [2026-11-09_15_09_40-1204750077456012981]
+2026-11-09 18:09:41,470 INFO Submitted job: 2026-11-09_15_09_40-1204750077456012981
+2026-11-09 18:09:41,470 INFO To access the Dataflow monitoring console, please navigate to https://console.cloud.google.com/dataflow/jobs/us-central1/2026-11-09_15_09_40-1204750077456012981?project=dazzling-seat-508219-j3
+2026-11-09 18:09:41,844 INFO Job 2026-11-09_15_09_40-1204750077456012981 is in state JOB_STATE_PENDING
+2026-11-09 18:09:47,138 INFO 2026-11-09 23:09:42.401000+00:00: JOB_MESSAGE_BASIC: The pipeline is using shuffle service with a (boot) persistent disk size / type other than the default. If that configuration was intended solely to speed up the non-service shuffle, consider removing it to reduce costs as those disks are unused by the shuffle service.
+2026-11-09 18:09:47,138 WARNING 2026-11-09 23:09:42.820000+00:00: JOB_MESSAGE_WARNING: The requested max number of workers (2) is ignored as autoscaling is explicitly disabled (autoscalingAlgorithm=NONE).
+2026-11-09 18:09:47,138 INFO 2026-11-09 23:09:45.535000+00:00: JOB_MESSAGE_BASIC: Worker configuration: e2-standard-2 in us-central1-f.
+2026-11-09 18:09:52,436 INFO 2026-11-09 23:09:50.807000+00:00: JOB_MESSAGE_BASIC: Executing operation trigrams ranking/Write/Write/WriteImpl/DoOnce/Impulse+trigrams ranking/Write/Write/WriteImpl/DoOnce/FlatMap(<lambda at core.py:4094>)+trigrams ranking/Write/Write/WriteImpl/DoOnce/Map(decode)+trigrams ranking/Write/Write/WriteImpl/InitializeWrite
+2026-11-09 18:09:52,437 INFO 2026-11-09 23:09:50.822000+00:00: JOB_MESSAGE_BASIC: Executing operation trigrams counts/Write/Write/WriteImpl/DoOnce/Impulse+trigrams counts/Write/Write/WriteImpl/DoOnce/FlatMap(<lambda at core.py:4094>)+trigrams counts/Write/Write/WriteImpl/DoOnce/Map(decode)+trigrams counts/Write/Write/WriteImpl/InitializeWrite
+2026-11-09 18:09:52,437 INFO 2026-11-09 23:09:50.832000+00:00: JOB_MESSAGE_BASIC: Executing operation outgoing ranking/Write/Write/WriteImpl/DoOnce/Impulse+outgoing ranking/Write/Write/WriteImpl/DoOnce/FlatMap(<lambda at core.py:4094>)+outgoing ranking/Write/Write/WriteImpl/DoOnce/Map(decode)+outgoing ranking/Write/Write/WriteImpl/InitializeWrite
+2026-11-09 18:09:52,437 INFO 2026-11-09 23:09:50.846000+00:00: JOB_MESSAGE_BASIC: Executing operation Totals/Write/Write/WriteImpl/DoOnce/Impulse+Totals/Write/Write/WriteImpl/DoOnce/FlatMap(<lambda at core.py:4094>)+Totals/Write/Write/WriteImpl/DoOnce/Map(decode)+Totals/Write/Write/WriteImpl/InitializeWrite
+2026-11-09 18:09:52,437 INFO 2026-11-09 23:09:50.846000+00:00: JOB_MESSAGE_BASIC: Executing operation incoming counts/Write/Write/WriteImpl/DoOnce/Impulse+incoming counts/Write/Write/WriteImpl/DoOnce/FlatMap(<lambda at core.py:4094>)+incoming counts/Write/Write/WriteImpl/DoOnce/Map(decode)+incoming counts/Write/Write/WriteImpl/InitializeWrite
+2026-11-09 18:09:52,437 INFO 2026-11-09 23:09:50.847000+00:00: JOB_MESSAGE_BASIC: Executing operation incoming ranking/Write/Write/WriteImpl/DoOnce/Impulse+incoming ranking/Write/Write/WriteImpl/DoOnce/FlatMap(<lambda at core.py:4094>)+incoming ranking/Write/Write/WriteImpl/DoOnce/Map(decode)+incoming ranking/Write/Write/WriteImpl/InitializeWrite
+2026-11-09 18:09:52,437 INFO 2026-11-09 23:09:50.847000+00:00: JOB_MESSAGE_BASIC: Executing operation Distribute files/ReshufflePerKey/GroupByKey/Create
+2026-11-09 18:09:52,437 INFO 2026-11-09 23:09:50.851000+00:00: JOB_MESSAGE_BASIC: Executing operation outgoing counts/Write/Write/WriteImpl/DoOnce/Impulse+outgoing counts/Write/Write/WriteImpl/DoOnce/FlatMap(<lambda at core.py:4094>)+outgoing counts/Write/Write/WriteImpl/DoOnce/Map(decode)+outgoing counts/Write/Write/WriteImpl/InitializeWrite
+2026-11-09 18:09:52,437 INFO 2026-11-09 23:09:50.852000+00:00: JOB_MESSAGE_BASIC: Executing operation Audit/Write/Write/WriteImpl/DoOnce/Impulse+Audit/Write/Write/WriteImpl/DoOnce/FlatMap(<lambda at core.py:4094>)+Audit/Write/Write/WriteImpl/DoOnce/Map(decode)+Audit/Write/Write/WriteImpl/InitializeWrite
+2026-11-09 18:09:52,437 INFO 2026-11-09 23:09:50.909000+00:00: JOB_MESSAGE_BASIC: Starting 2 workers in us-central1...
+2026-11-09 18:09:52,437 INFO 2026-11-09 23:09:51.292000+00:00: JOB_MESSAGE_BASIC: Finished operation Distribute files/ReshufflePerKey/GroupByKey/Create
+2026-11-09 18:09:52,437 INFO 2026-11-09 23:09:51.419000+00:00: JOB_MESSAGE_BASIC: Executing operation Sum incoming counts/GroupByKey/Create
+2026-11-09 18:09:52,438 INFO 2026-11-09 23:09:51.542000+00:00: JOB_MESSAGE_BASIC: Finished operation Sum incoming counts/GroupByKey/Create
+2026-11-09 18:09:52,438 INFO 2026-11-09 23:09:51.638000+00:00: JOB_MESSAGE_BASIC: Executing operation List HTML objects/Create/Impulse+List HTML objects/Create/FlatMap(<lambda at core.py:4094>)+List HTML objects/Create/Map(decode)+List HTML objects/MatchAll/ParDo(_MatchAllFn)+Distribute files/AddRandomKeys+File membership+Include zero indegree files+Distribute files/ReshufflePerKey/Map(reify_metadata_default_window)+Distribute files/ReshufflePerKey/GroupByKey/Reify+Distribute files/ReshufflePerKey/GroupByKey/Write+All incoming contributions/InputIdentity+Sum incoming counts/GroupByKey+Sum incoming counts/Combine/Partial+Sum incoming counts/GroupByKey/Write
+2026-11-09 18:09:52,599 INFO Job 2026-11-09_15_09_40-1204750077456012981 is in state JOB_STATE_RUNNING
+2026-11-09 18:12:34,604 INFO 2026-11-09 23:12:31.480000+00:00: JOB_MESSAGE_BASIC: All workers have finished the startup processes and began to receive work requests.
+2026-11-09 18:12:34,605 INFO 2026-11-09 23:12:32.538000+00:00: JOB_MESSAGE_BASIC: Finished operation outgoing ranking/Write/Write/WriteImpl/DoOnce/Impulse+outgoing ranking/Write/Write/WriteImpl/DoOnce/FlatMap(<lambda at core.py:4094>)+outgoing ranking/Write/Write/WriteImpl/DoOnce/Map(decode)+outgoing ranking/Write/Write/WriteImpl/InitializeWrite
+2026-11-09 18:12:34,605 INFO 2026-11-09 23:12:32.551000+00:00: JOB_MESSAGE_BASIC: Finished operation outgoing counts/Write/Write/WriteImpl/DoOnce/Impulse+outgoing counts/Write/Write/WriteImpl/DoOnce/FlatMap(<lambda at core.py:4094>)+outgoing counts/Write/Write/WriteImpl/DoOnce/Map(decode)+outgoing counts/Write/Write/WriteImpl/InitializeWrite
+2026-11-09 18:12:34,605 INFO 2026-11-09 23:12:32.682000+00:00: JOB_MESSAGE_BASIC: Executing operation outgoing ranking/Write/Write/WriteImpl/WriteBundles/View-python_side_input0
+2026-11-09 18:12:34,606 INFO 2026-11-09 23:12:32.686000+00:00: JOB_MESSAGE_BASIC: Executing operation outgoing ranking/Write/Write/WriteImpl/FinalizeWrite/View-python_side_input0
+2026-11-09 18:12:34,606 INFO 2026-11-09 23:12:32.697000+00:00: JOB_MESSAGE_BASIC: Executing operation outgoing ranking/Write/Write/WriteImpl/PreFinalize/View-python_side_input0
+2026-11-09 18:12:34,606 INFO 2026-11-09 23:12:32.709000+00:00: JOB_MESSAGE_BASIC: Executing operation outgoing counts/Write/Write/WriteImpl/FinalizeWrite/View-python_side_input0
+2026-11-09 18:12:34,606 INFO 2026-11-09 23:12:32.709000+00:00: JOB_MESSAGE_BASIC: Executing operation outgoing counts/Write/Write/WriteImpl/WriteBundles/View-python_side_input0
+2026-11-09 18:12:34,606 INFO 2026-11-09 23:12:32.709000+00:00: JOB_MESSAGE_BASIC: Executing operation outgoing counts/Write/Write/WriteImpl/PreFinalize/View-python_side_input0
+2026-11-09 18:12:34,606 INFO 2026-11-09 23:12:32.748000+00:00: JOB_MESSAGE_BASIC: Finished operation outgoing ranking/Write/Write/WriteImpl/PreFinalize/View-python_side_input0
+2026-11-09 18:12:34,606 INFO 2026-11-09 23:12:32.753000+00:00: JOB_MESSAGE_BASIC: Finished operation outgoing ranking/Write/Write/WriteImpl/WriteBundles/View-python_side_input0
+2026-11-09 18:12:34,606 INFO 2026-11-09 23:12:32.756000+00:00: JOB_MESSAGE_BASIC: Finished operation outgoing ranking/Write/Write/WriteImpl/FinalizeWrite/View-python_side_input0
+2026-11-09 18:12:34,606 INFO 2026-11-09 23:12:32.768000+00:00: JOB_MESSAGE_BASIC: Finished operation outgoing counts/Write/Write/WriteImpl/PreFinalize/View-python_side_input0
+2026-11-09 18:12:34,606 INFO 2026-11-09 23:12:32.769000+00:00: JOB_MESSAGE_BASIC: Finished operation outgoing counts/Write/Write/WriteImpl/WriteBundles/View-python_side_input0
+2026-11-09 18:12:34,606 INFO 2026-11-09 23:12:32.999000+00:00: JOB_MESSAGE_BASIC: Finished operation outgoing counts/Write/Write/WriteImpl/FinalizeWrite/View-python_side_input0
+2026-11-09 18:12:34,606 INFO 2026-11-09 23:12:33.083000+00:00: JOB_MESSAGE_BASIC: Finished operation Audit/Write/Write/WriteImpl/DoOnce/Impulse+Audit/Write/Write/WriteImpl/DoOnce/FlatMap(<lambda at core.py:4094>)+Audit/Write/Write/WriteImpl/DoOnce/Map(decode)+Audit/Write/Write/WriteImpl/InitializeWrite
+2026-11-09 18:12:34,606 INFO 2026-11-09 23:12:33.188000+00:00: JOB_MESSAGE_BASIC: Executing operation Audit/Write/Write/WriteImpl/PreFinalize/View-python_side_input0
+2026-11-09 18:12:34,606 INFO 2026-11-09 23:12:33.188000+00:00: JOB_MESSAGE_BASIC: Executing operation Audit/Write/Write/WriteImpl/WriteBundles/View-python_side_input0
+2026-11-09 18:12:34,606 INFO 2026-11-09 23:12:33.188000+00:00: JOB_MESSAGE_BASIC: Executing operation Audit/Write/Write/WriteImpl/FinalizeWrite/View-python_side_input0
+2026-11-09 18:12:34,606 INFO 2026-11-09 23:12:33.244000+00:00: JOB_MESSAGE_BASIC: Finished operation Audit/Write/Write/WriteImpl/WriteBundles/View-python_side_input0
+2026-11-09 18:12:34,606 INFO 2026-11-09 23:12:33.257000+00:00: JOB_MESSAGE_BASIC: Finished operation Audit/Write/Write/WriteImpl/PreFinalize/View-python_side_input0
+2026-11-09 18:12:34,606 INFO 2026-11-09 23:12:33.275000+00:00: JOB_MESSAGE_BASIC: Finished operation Audit/Write/Write/WriteImpl/FinalizeWrite/View-python_side_input0
+2026-11-09 18:12:34,607 INFO 2026-11-09 23:12:33.678000+00:00: JOB_MESSAGE_BASIC: Finished operation trigrams counts/Write/Write/WriteImpl/DoOnce/Impulse+trigrams counts/Write/Write/WriteImpl/DoOnce/FlatMap(<lambda at core.py:4094>)+trigrams counts/Write/Write/WriteImpl/DoOnce/Map(decode)+trigrams counts/Write/Write/WriteImpl/InitializeWrite
+2026-11-09 18:12:34,607 INFO 2026-11-09 23:12:33.800000+00:00: JOB_MESSAGE_BASIC: Executing operation trigrams counts/Write/Write/WriteImpl/WriteBundles/View-python_side_input0
+2026-11-09 18:12:34,607 INFO 2026-11-09 23:12:33.807000+00:00: JOB_MESSAGE_BASIC: Executing operation trigrams counts/Write/Write/WriteImpl/FinalizeWrite/View-python_side_input0
+2026-11-09 18:12:34,607 INFO 2026-11-09 23:12:33.815000+00:00: JOB_MESSAGE_BASIC: Executing operation trigrams counts/Write/Write/WriteImpl/PreFinalize/View-python_side_input0
+2026-11-09 18:12:34,607 INFO 2026-11-09 23:12:33.848000+00:00: JOB_MESSAGE_BASIC: Finished operation trigrams counts/Write/Write/WriteImpl/WriteBundles/View-python_side_input0
+2026-11-09 18:12:34,607 INFO 2026-11-09 23:12:33.870000+00:00: JOB_MESSAGE_BASIC: Finished operation trigrams counts/Write/Write/WriteImpl/FinalizeWrite/View-python_side_input0
+2026-11-09 18:12:34,607 INFO 2026-11-09 23:12:33.877000+00:00: JOB_MESSAGE_BASIC: Finished operation trigrams counts/Write/Write/WriteImpl/PreFinalize/View-python_side_input0
+2026-11-09 18:12:34,607 INFO 2026-11-09 23:12:34.263000+00:00: JOB_MESSAGE_BASIC: Finished operation incoming ranking/Write/Write/WriteImpl/DoOnce/Impulse+incoming ranking/Write/Write/WriteImpl/DoOnce/FlatMap(<lambda at core.py:4094>)+incoming ranking/Write/Write/WriteImpl/DoOnce/Map(decode)+incoming ranking/Write/Write/WriteImpl/InitializeWrite
+2026-11-09 18:12:34,607 INFO 2026-11-09 23:12:34.377000+00:00: JOB_MESSAGE_BASIC: Executing operation incoming ranking/Write/Write/WriteImpl/FinalizeWrite/View-python_side_input0
+2026-11-09 18:12:34,607 INFO 2026-11-09 23:12:34.378000+00:00: JOB_MESSAGE_BASIC: Executing operation incoming ranking/Write/Write/WriteImpl/PreFinalize/View-python_side_input0
+2026-11-09 18:12:34,607 INFO 2026-11-09 23:12:34.383000+00:00: JOB_MESSAGE_BASIC: Executing operation incoming ranking/Write/Write/WriteImpl/WriteBundles/View-python_side_input0
+2026-11-09 18:12:34,607 INFO 2026-11-09 23:12:34.436000+00:00: JOB_MESSAGE_BASIC: Finished operation incoming ranking/Write/Write/WriteImpl/WriteBundles/View-python_side_input0
+2026-11-09 18:12:34,607 INFO 2026-11-09 23:12:34.445000+00:00: JOB_MESSAGE_BASIC: Finished operation incoming ranking/Write/Write/WriteImpl/PreFinalize/View-python_side_input0
+2026-11-09 18:12:34,607 INFO 2026-11-09 23:12:34.446000+00:00: JOB_MESSAGE_BASIC: Finished operation incoming ranking/Write/Write/WriteImpl/FinalizeWrite/View-python_side_input0
+2026-11-09 18:12:39,853 INFO 2026-11-09 23:12:34.903000+00:00: JOB_MESSAGE_BASIC: Finished operation Totals/Write/Write/WriteImpl/DoOnce/Impulse+Totals/Write/Write/WriteImpl/DoOnce/FlatMap(<lambda at core.py:4094>)+Totals/Write/Write/WriteImpl/DoOnce/Map(decode)+Totals/Write/Write/WriteImpl/InitializeWrite
+2026-11-09 18:12:39,853 INFO 2026-11-09 23:12:35.035000+00:00: JOB_MESSAGE_BASIC: Executing operation Totals/Write/Write/WriteImpl/PreFinalize/View-python_side_input0
+2026-11-09 18:12:39,853 INFO 2026-11-09 23:12:35.036000+00:00: JOB_MESSAGE_BASIC: Executing operation Totals/Write/Write/WriteImpl/WriteBundles/View-python_side_input0
+2026-11-09 18:12:39,853 INFO 2026-11-09 23:12:35.036000+00:00: JOB_MESSAGE_BASIC: Executing operation Totals/Write/Write/WriteImpl/FinalizeWrite/View-python_side_input0
+2026-11-09 18:12:39,853 INFO 2026-11-09 23:12:35.094000+00:00: JOB_MESSAGE_BASIC: Finished operation Totals/Write/Write/WriteImpl/FinalizeWrite/View-python_side_input0
+2026-11-09 18:12:39,853 INFO 2026-11-09 23:12:35.095000+00:00: JOB_MESSAGE_BASIC: Finished operation Totals/Write/Write/WriteImpl/PreFinalize/View-python_side_input0
+2026-11-09 18:12:39,853 INFO 2026-11-09 23:12:35.108000+00:00: JOB_MESSAGE_BASIC: Finished operation Totals/Write/Write/WriteImpl/WriteBundles/View-python_side_input0
+2026-11-09 18:12:39,854 INFO 2026-11-09 23:12:35.422000+00:00: JOB_MESSAGE_BASIC: Finished operation List HTML objects/Create/Impulse+List HTML objects/Create/FlatMap(<lambda at core.py:4094>)+List HTML objects/Create/Map(decode)+List HTML objects/MatchAll/ParDo(_MatchAllFn)+Distribute files/AddRandomKeys+File membership+Include zero indegree files+Distribute files/ReshufflePerKey/Map(reify_metadata_default_window)+Distribute files/ReshufflePerKey/GroupByKey/Reify+Distribute files/ReshufflePerKey/GroupByKey/Write+All incoming contributions/InputIdentity+Sum incoming counts/GroupByKey+Sum incoming counts/Combine/Partial+Sum incoming counts/GroupByKey/Write
+2026-11-09 18:12:39,854 INFO 2026-11-09 23:12:35.476000+00:00: JOB_MESSAGE_BASIC: Executing operation Distribute files/ReshufflePerKey/GroupByKey/Close
+2026-11-09 18:12:39,854 INFO 2026-11-09 23:12:35.536000+00:00: JOB_MESSAGE_BASIC: Finished operation trigrams ranking/Write/Write/WriteImpl/DoOnce/Impulse+trigrams ranking/Write/Write/WriteImpl/DoOnce/FlatMap(<lambda at core.py:4094>)+trigrams ranking/Write/Write/WriteImpl/DoOnce/Map(decode)+trigrams ranking/Write/Write/WriteImpl/InitializeWrite
+2026-11-09 18:12:39,854 INFO 2026-11-09 23:12:35.545000+00:00: JOB_MESSAGE_BASIC: Finished operation Distribute files/ReshufflePerKey/GroupByKey/Close
+2026-11-09 18:12:39,854 INFO 2026-11-09 23:12:35.545000+00:00: JOB_MESSAGE_BASIC: Executing operation Parse HTML and combine within file/View-python_side_input0
+2026-11-09 18:12:39,854 INFO 2026-11-09 23:12:35.603000+00:00: JOB_MESSAGE_BASIC: Finished operation Parse HTML and combine within file/View-python_side_input0
+2026-11-09 18:12:39,854 INFO 2026-11-09 23:12:35.657000+00:00: JOB_MESSAGE_BASIC: Executing operation trigrams ranking/Write/Write/WriteImpl/WriteBundles/View-python_side_input0
+2026-11-09 18:12:39,854 INFO 2026-11-09 23:12:35.657000+00:00: JOB_MESSAGE_BASIC: Executing operation trigrams ranking/Write/Write/WriteImpl/PreFinalize/View-python_side_input0
+2026-11-09 18:12:39,854 INFO 2026-11-09 23:12:35.657000+00:00: JOB_MESSAGE_BASIC: Executing operation trigrams ranking/Write/Write/WriteImpl/FinalizeWrite/View-python_side_input0
+2026-11-09 18:12:39,854 INFO 2026-11-09 23:12:35.717000+00:00: JOB_MESSAGE_BASIC: Finished operation trigrams ranking/Write/Write/WriteImpl/PreFinalize/View-python_side_input0
+2026-11-09 18:12:39,854 INFO 2026-11-09 23:12:35.720000+00:00: JOB_MESSAGE_BASIC: Finished operation trigrams ranking/Write/Write/WriteImpl/FinalizeWrite/View-python_side_input0
+2026-11-09 18:12:39,854 INFO 2026-11-09 23:12:35.720000+00:00: JOB_MESSAGE_BASIC: Executing operation Sum trigram counts/GroupByKey/Create
+2026-11-09 18:12:39,854 INFO 2026-11-09 23:12:35.721000+00:00: JOB_MESSAGE_BASIC: Executing operation outgoing counts/Write/Write/WriteImpl/GroupByKey/Create
+2026-11-09 18:12:39,854 INFO 2026-11-09 23:12:35.722000+00:00: JOB_MESSAGE_BASIC: Executing operation outgoing top 5/Top(5)/GroupByKey/Create
+2026-11-09 18:12:39,854 INFO 2026-11-09 23:12:35.726000+00:00: JOB_MESSAGE_BASIC: Executing operation Audit/Write/Write/WriteImpl/GroupByKey/Create
+2026-11-09 18:12:39,854 INFO 2026-11-09 23:12:35.726000+00:00: JOB_MESSAGE_BASIC: Executing operation Sum totals/GroupByKey/Create
+2026-11-09 18:12:39,854 INFO 2026-11-09 23:12:35.727000+00:00: JOB_MESSAGE_BASIC: Finished operation trigrams ranking/Write/Write/WriteImpl/WriteBundles/View-python_side_input0
+2026-11-09 18:12:39,854 INFO 2026-11-09 23:12:35.856000+00:00: JOB_MESSAGE_BASIC: Finished operation outgoing counts/Write/Write/WriteImpl/GroupByKey/Create
+2026-11-09 18:12:39,855 INFO 2026-11-09 23:12:35.856000+00:00: JOB_MESSAGE_BASIC: Finished operation Audit/Write/Write/WriteImpl/GroupByKey/Create
+2026-11-09 18:12:39,855 INFO 2026-11-09 23:12:35.858000+00:00: JOB_MESSAGE_BASIC: Finished operation Sum trigram counts/GroupByKey/Create
+2026-11-09 18:12:39,855 INFO 2026-11-09 23:12:35.859000+00:00: JOB_MESSAGE_BASIC: Finished operation Sum totals/GroupByKey/Create
+2026-11-09 18:12:39,855 INFO 2026-11-09 23:12:35.863000+00:00: JOB_MESSAGE_BASIC: Finished operation outgoing top 5/Top(5)/GroupByKey/Create
+2026-11-09 18:12:39,855 INFO 2026-11-09 23:12:35.988000+00:00: JOB_MESSAGE_BASIC: Executing operation Distribute files/ReshufflePerKey/GroupByKey/Read+Distribute files/ReshufflePerKey/GroupByKey/GroupByWindow+Distribute files/ReshufflePerKey/FlatMap(restore_metadata_default_window)+Distribute files/RemoveRandomKeys+Open files/ParDo(_ReadMatchesFn)+Parse HTML and combine within file+Audit records+Incoming contributions+Trigram contributions+Audit/JSON+Document totals+Outgoing counts+outgoing counts/JSON+outgoing top 5/Top(5)/ParDo(_TopPerBundle)+outgoing top 5/Top(5)/Flatten/OutputIdentity+outgoing top 5/Top(5)/GroupByKey/Write+Audit/Write/Write/WriteImpl/Map(<lambda at iobase.py:1189>)+Audit/Write/Write/WriteImpl/WindowInto(WindowIntoFn)+Audit/Write/Write/WriteImpl/GroupByKey/Write+Sum totals/GroupByKey+Sum totals/Combine/Partial+Sum totals/GroupByKey/Write+All incoming contributions/InputIdentity+Sum incoming counts/GroupByKey+Sum incoming counts/Combine/Partial+Sum incoming counts/GroupByKey/Write+outgoing counts/Write/Write/WriteImpl/Map(<lambda at iobase.py:1189>)+outgoing counts/Write/Write/WriteImpl/WindowInto(WindowIntoFn)+outgoing counts/Write/Write/WriteImpl/GroupByKey/Write+Sum trigram counts/GroupByKey+Sum trigram counts/Combine/Partial+Sum trigram counts/GroupByKey/Write
+2026-11-09 18:12:39,855 INFO 2026-11-09 23:12:35.989000+00:00: JOB_MESSAGE_BASIC: Executing operation outgoing top 5/Top(5)/Create/Impulse+outgoing top 5/Top(5)/Create/FlatMap(<lambda at core.py:4094>)+outgoing top 5/Top(5)/Create/Map(decode)+outgoing top 5/Top(5)/Flatten/OutputIdentity+outgoing top 5/Top(5)/GroupByKey/Write
+2026-11-09 18:12:39,855 INFO 2026-11-09 23:12:36.139000+00:00: JOB_MESSAGE_BASIC: Finished operation incoming counts/Write/Write/WriteImpl/DoOnce/Impulse+incoming counts/Write/Write/WriteImpl/DoOnce/FlatMap(<lambda at core.py:4094>)+incoming counts/Write/Write/WriteImpl/DoOnce/Map(decode)+incoming counts/Write/Write/WriteImpl/InitializeWrite
+2026-11-09 18:12:39,855 INFO 2026-11-09 23:12:36.266000+00:00: JOB_MESSAGE_BASIC: Executing operation incoming counts/Write/Write/WriteImpl/FinalizeWrite/View-python_side_input0
+2026-11-09 18:12:39,855 INFO 2026-11-09 23:12:36.266000+00:00: JOB_MESSAGE_BASIC: Executing operation incoming counts/Write/Write/WriteImpl/PreFinalize/View-python_side_input0
+2026-11-09 18:12:39,855 INFO 2026-11-09 23:12:36.267000+00:00: JOB_MESSAGE_BASIC: Executing operation incoming counts/Write/Write/WriteImpl/WriteBundles/View-python_side_input0
+2026-11-09 18:12:39,855 INFO 2026-11-09 23:12:36.328000+00:00: JOB_MESSAGE_BASIC: Finished operation incoming counts/Write/Write/WriteImpl/WriteBundles/View-python_side_input0
+2026-11-09 18:12:39,855 INFO 2026-11-09 23:12:36.329000+00:00: JOB_MESSAGE_BASIC: Finished operation incoming counts/Write/Write/WriteImpl/FinalizeWrite/View-python_side_input0
+2026-11-09 18:12:39,855 INFO 2026-11-09 23:12:36.336000+00:00: JOB_MESSAGE_BASIC: Finished operation outgoing top 5/Top(5)/Create/Impulse+outgoing top 5/Top(5)/Create/FlatMap(<lambda at core.py:4094>)+outgoing top 5/Top(5)/Create/Map(decode)+outgoing top 5/Top(5)/Flatten/OutputIdentity+outgoing top 5/Top(5)/GroupByKey/Write
+2026-11-09 18:12:39,855 INFO 2026-11-09 23:12:36.337000+00:00: JOB_MESSAGE_BASIC: Finished operation incoming counts/Write/Write/WriteImpl/PreFinalize/View-python_side_input0
+2026-11-09 18:25:36,071 INFO 2026-11-09 23:25:35.965000+00:00: JOB_MESSAGE_BASIC: Finished operation Distribute files/ReshufflePerKey/GroupByKey/Read+Distribute files/ReshufflePerKey/GroupByKey/GroupByWindow+Distribute files/ReshufflePerKey/FlatMap(restore_metadata_default_window)+Distribute files/RemoveRandomKeys+Open files/ParDo(_ReadMatchesFn)+Parse HTML and combine within file+Audit records+Incoming contributions+Trigram contributions+Audit/JSON+Document totals+Outgoing counts+outgoing counts/JSON+outgoing top 5/Top(5)/ParDo(_TopPerBundle)+outgoing top 5/Top(5)/Flatten/OutputIdentity+outgoing top 5/Top(5)/GroupByKey/Write+Audit/Write/Write/WriteImpl/Map(<lambda at iobase.py:1189>)+Audit/Write/Write/WriteImpl/WindowInto(WindowIntoFn)+Audit/Write/Write/WriteImpl/GroupByKey/Write+Sum totals/GroupByKey+Sum totals/Combine/Partial+Sum totals/GroupByKey/Write+All incoming contributions/InputIdentity+Sum incoming counts/GroupByKey+Sum incoming counts/Combine/Partial+Sum incoming counts/GroupByKey/Write+outgoing counts/Write/Write/WriteImpl/Map(<lambda at iobase.py:1189>)+outgoing counts/Write/Write/WriteImpl/WindowInto(WindowIntoFn)+outgoing counts/Write/Write/WriteImpl/GroupByKey/Write+Sum trigram counts/GroupByKey+Sum trigram counts/Combine/Partial+Sum trigram counts/GroupByKey/Write
+2026-11-09 18:25:41,295 INFO 2026-11-09 23:25:36.152000+00:00: JOB_MESSAGE_BASIC: Executing operation Sum trigram counts/GroupByKey/Close
+2026-11-09 18:25:41,295 INFO 2026-11-09 23:25:36.173000+00:00: JOB_MESSAGE_BASIC: Executing operation Audit/Write/Write/WriteImpl/GroupByKey/Close
+2026-11-09 18:25:41,295 INFO 2026-11-09 23:25:36.173000+00:00: JOB_MESSAGE_BASIC: Executing operation outgoing counts/Write/Write/WriteImpl/GroupByKey/Close
+2026-11-09 18:25:41,295 INFO 2026-11-09 23:25:36.173000+00:00: JOB_MESSAGE_BASIC: Executing operation Sum totals/GroupByKey/Close
+2026-11-09 18:25:41,295 INFO 2026-11-09 23:25:36.173000+00:00: JOB_MESSAGE_BASIC: Executing operation Sum incoming counts/GroupByKey/Close
+2026-11-09 18:25:41,295 INFO 2026-11-09 23:25:36.174000+00:00: JOB_MESSAGE_BASIC: Executing operation outgoing top 5/Top(5)/GroupByKey/Close
+2026-11-09 18:25:41,295 INFO 2026-11-09 23:25:36.198000+00:00: JOB_MESSAGE_BASIC: Finished operation Sum trigram counts/GroupByKey/Close
+2026-11-09 18:25:41,295 INFO 2026-11-09 23:25:36.234000+00:00: JOB_MESSAGE_BASIC: Finished operation Audit/Write/Write/WriteImpl/GroupByKey/Close
+2026-11-09 18:25:41,295 INFO 2026-11-09 23:25:36.234000+00:00: JOB_MESSAGE_BASIC: Finished operation Sum totals/GroupByKey/Close
+2026-11-09 18:25:41,295 INFO 2026-11-09 23:25:36.234000+00:00: JOB_MESSAGE_BASIC: Finished operation outgoing top 5/Top(5)/GroupByKey/Close
+2026-11-09 18:25:41,295 INFO 2026-11-09 23:25:36.234000+00:00: JOB_MESSAGE_BASIC: Finished operation outgoing counts/Write/Write/WriteImpl/GroupByKey/Close
+2026-11-09 18:25:41,295 INFO 2026-11-09 23:25:36.236000+00:00: JOB_MESSAGE_BASIC: Finished operation Sum incoming counts/GroupByKey/Close
+2026-11-09 18:25:41,295 INFO 2026-11-09 23:25:36.247000+00:00: JOB_MESSAGE_BASIC: Executing operation trigrams counts/Write/Write/WriteImpl/GroupByKey/Create
+2026-11-09 18:25:41,295 INFO 2026-11-09 23:25:36.253000+00:00: JOB_MESSAGE_BASIC: Executing operation trigrams top 5/Top(5)/GroupByKey/Create
+2026-11-09 18:25:41,295 INFO 2026-11-09 23:25:36.284000+00:00: JOB_MESSAGE_BASIC: Executing operation outgoing counts/Write/Write/WriteImpl/GroupByKey/Read+outgoing counts/Write/Write/WriteImpl/WriteBundles
+2026-11-09 18:25:41,295 INFO 2026-11-09 23:25:36.297000+00:00: JOB_MESSAGE_BASIC: Executing operation incoming counts/Write/Write/WriteImpl/GroupByKey/Create
+2026-11-09 18:25:41,295 INFO 2026-11-09 23:25:36.297000+00:00: JOB_MESSAGE_BASIC: Executing operation incoming top 5/Top(5)/GroupByKey/Create
+2026-11-09 18:25:41,295 INFO 2026-11-09 23:25:36.304000+00:00: JOB_MESSAGE_BASIC: Executing operation outgoing ranking/Write/Write/WriteImpl/GroupByKey/Create
+2026-11-09 18:25:41,295 INFO 2026-11-09 23:25:36.309000+00:00: JOB_MESSAGE_BASIC: Executing operation Totals/Write/Write/WriteImpl/GroupByKey/Create
+2026-11-09 18:25:41,296 INFO 2026-11-09 23:25:36.310000+00:00: JOB_MESSAGE_BASIC: Executing operation Audit/Write/Write/WriteImpl/GroupByKey/Read+Audit/Write/Write/WriteImpl/WriteBundles
+2026-11-09 18:25:41,296 INFO 2026-11-09 23:25:36.379000+00:00: JOB_MESSAGE_BASIC: Finished operation trigrams counts/Write/Write/WriteImpl/GroupByKey/Create
+2026-11-09 18:25:41,296 INFO 2026-11-09 23:25:36.379000+00:00: JOB_MESSAGE_BASIC: Finished operation trigrams top 5/Top(5)/GroupByKey/Create
+2026-11-09 18:25:41,296 INFO 2026-11-09 23:25:36.417000+00:00: JOB_MESSAGE_BASIC: Finished operation incoming top 5/Top(5)/GroupByKey/Create
+2026-11-09 18:25:41,296 INFO 2026-11-09 23:25:36.419000+00:00: JOB_MESSAGE_BASIC: Finished operation incoming counts/Write/Write/WriteImpl/GroupByKey/Create
+2026-11-09 18:25:41,296 INFO 2026-11-09 23:25:36.460000+00:00: JOB_MESSAGE_BASIC: Finished operation outgoing ranking/Write/Write/WriteImpl/GroupByKey/Create
+2026-11-09 18:25:41,296 INFO 2026-11-09 23:25:36.473000+00:00: JOB_MESSAGE_BASIC: Finished operation Totals/Write/Write/WriteImpl/GroupByKey/Create
+2026-11-09 18:25:41,296 INFO 2026-11-09 23:25:36.478000+00:00: JOB_MESSAGE_BASIC: Executing operation trigrams top 5/Top(5)/Create/Impulse+trigrams top 5/Top(5)/Create/FlatMap(<lambda at core.py:4094>)+trigrams top 5/Top(5)/Create/Map(decode)+trigrams top 5/Top(5)/Flatten/OutputIdentity+trigrams top 5/Top(5)/GroupByKey/Write
+2026-11-09 18:25:41,296 INFO 2026-11-09 23:25:36.498000+00:00: JOB_MESSAGE_BASIC: Executing operation Sum trigram counts/GroupByKey/Read+Sum trigram counts/Combine+Sum trigram counts/Combine/Extract+trigrams counts/JSON+trigrams top 5/Top(5)/ParDo(_TopPerBundle)+trigrams top 5/Top(5)/Flatten/OutputIdentity+trigrams top 5/Top(5)/GroupByKey/Write+trigrams counts/Write/Write/WriteImpl/Map(<lambda at iobase.py:1189>)+trigrams counts/Write/Write/WriteImpl/WindowInto(WindowIntoFn)+trigrams counts/Write/Write/WriteImpl/GroupByKey/Write
+2026-11-09 18:25:41,296 INFO 2026-11-09 23:25:36.524000+00:00: JOB_MESSAGE_BASIC: Executing operation incoming top 5/Top(5)/Create/Impulse+incoming top 5/Top(5)/Create/FlatMap(<lambda at core.py:4094>)+incoming top 5/Top(5)/Create/Map(decode)+incoming top 5/Top(5)/Flatten/OutputIdentity+incoming top 5/Top(5)/GroupByKey/Write
+2026-11-09 18:25:41,296 INFO 2026-11-09 23:25:36.535000+00:00: JOB_MESSAGE_BASIC: Executing operation Sum incoming counts/GroupByKey/Read+Sum incoming counts/Combine+Sum incoming counts/Combine/Extract+incoming counts/JSON+incoming top 5/Top(5)/ParDo(_TopPerBundle)+incoming top 5/Top(5)/Flatten/OutputIdentity+incoming top 5/Top(5)/GroupByKey/Write+incoming counts/Write/Write/WriteImpl/Map(<lambda at iobase.py:1189>)+incoming counts/Write/Write/WriteImpl/WindowInto(WindowIntoFn)+incoming counts/Write/Write/WriteImpl/GroupByKey/Write
+2026-11-09 18:25:41,296 INFO 2026-11-09 23:25:36.559000+00:00: JOB_MESSAGE_BASIC: Executing operation outgoing top 5/Top(5)/GroupByKey/Read+outgoing top 5/Top(5)/ParDo(_MergeTopPerBundle)+outgoing ranked rows+outgoing ranking/JSON+outgoing ranking/Write/Write/WriteImpl/Map(<lambda at iobase.py:1189>)+outgoing ranking/Write/Write/WriteImpl/WindowInto(WindowIntoFn)+outgoing ranking/Write/Write/WriteImpl/GroupByKey/Write
+2026-11-09 18:25:41,296 INFO 2026-11-09 23:25:36.574000+00:00: JOB_MESSAGE_BASIC: Executing operation Sum totals/GroupByKey/Read+Sum totals/Combine+Sum totals/Combine/Extract+Totals/JSON+Totals/Write/Write/WriteImpl/Map(<lambda at iobase.py:1189>)+Totals/Write/Write/WriteImpl/WindowInto(WindowIntoFn)+Totals/Write/Write/WriteImpl/GroupByKey/Write
+2026-11-09 18:25:41,296 INFO 2026-11-09 23:25:36.629000+00:00: JOB_MESSAGE_BASIC: Finished operation trigrams top 5/Top(5)/Create/Impulse+trigrams top 5/Top(5)/Create/FlatMap(<lambda at core.py:4094>)+trigrams top 5/Top(5)/Create/Map(decode)+trigrams top 5/Top(5)/Flatten/OutputIdentity+trigrams top 5/Top(5)/GroupByKey/Write
+2026-11-09 18:25:41,296 INFO 2026-11-09 23:25:36.721000+00:00: JOB_MESSAGE_BASIC: Finished operation incoming top 5/Top(5)/Create/Impulse+incoming top 5/Top(5)/Create/FlatMap(<lambda at core.py:4094>)+incoming top 5/Top(5)/Create/Map(decode)+incoming top 5/Top(5)/Flatten/OutputIdentity+incoming top 5/Top(5)/GroupByKey/Write
+2026-11-09 18:25:41,296 INFO 2026-11-09 23:25:36.888000+00:00: JOB_MESSAGE_BASIC: Finished operation Sum trigram counts/GroupByKey/Read+Sum trigram counts/Combine+Sum trigram counts/Combine/Extract+trigrams counts/JSON+trigrams top 5/Top(5)/ParDo(_TopPerBundle)+trigrams top 5/Top(5)/Flatten/OutputIdentity+trigrams top 5/Top(5)/GroupByKey/Write+trigrams counts/Write/Write/WriteImpl/Map(<lambda at iobase.py:1189>)+trigrams counts/Write/Write/WriteImpl/WindowInto(WindowIntoFn)+trigrams counts/Write/Write/WriteImpl/GroupByKey/Write
+2026-11-09 18:25:41,297 INFO 2026-11-09 23:25:36.931000+00:00: JOB_MESSAGE_BASIC: Executing operation trigrams counts/Write/Write/WriteImpl/GroupByKey/Close
+2026-11-09 18:25:41,297 INFO 2026-11-09 23:25:36.932000+00:00: JOB_MESSAGE_BASIC: Executing operation trigrams top 5/Top(5)/GroupByKey/Close
+2026-11-09 18:25:41,297 INFO 2026-11-09 23:25:36.982000+00:00: JOB_MESSAGE_BASIC: Finished operation Sum totals/GroupByKey/Read+Sum totals/Combine+Sum totals/Combine/Extract+Totals/JSON+Totals/Write/Write/WriteImpl/Map(<lambda at iobase.py:1189>)+Totals/Write/Write/WriteImpl/WindowInto(WindowIntoFn)+Totals/Write/Write/WriteImpl/GroupByKey/Write
+2026-11-09 18:25:41,297 INFO 2026-11-09 23:25:36.988000+00:00: JOB_MESSAGE_BASIC: Finished operation trigrams top 5/Top(5)/GroupByKey/Close
+2026-11-09 18:25:41,297 INFO 2026-11-09 23:25:36.990000+00:00: JOB_MESSAGE_BASIC: Finished operation trigrams counts/Write/Write/WriteImpl/GroupByKey/Close
+2026-11-09 18:25:41,297 INFO 2026-11-09 23:25:37.034000+00:00: JOB_MESSAGE_BASIC: Executing operation trigrams ranking/Write/Write/WriteImpl/GroupByKey/Create
+2026-11-09 18:25:41,297 INFO 2026-11-09 23:25:37.053000+00:00: JOB_MESSAGE_BASIC: Executing operation trigrams counts/Write/Write/WriteImpl/GroupByKey/Read+trigrams counts/Write/Write/WriteImpl/WriteBundles
+2026-11-09 18:25:41,297 INFO 2026-11-09 23:25:37.053000+00:00: JOB_MESSAGE_BASIC: Executing operation Totals/Write/Write/WriteImpl/GroupByKey/Close
+2026-11-09 18:25:41,297 INFO 2026-11-09 23:25:37.158000+00:00: JOB_MESSAGE_BASIC: Finished operation Totals/Write/Write/WriteImpl/GroupByKey/Close
+2026-11-09 18:25:41,297 INFO 2026-11-09 23:25:37.185000+00:00: JOB_MESSAGE_BASIC: Finished operation trigrams ranking/Write/Write/WriteImpl/GroupByKey/Create
+2026-11-09 18:25:41,297 INFO 2026-11-09 23:25:37.205000+00:00: JOB_MESSAGE_BASIC: Executing operation Totals/Write/Write/WriteImpl/GroupByKey/Read+Totals/Write/Write/WriteImpl/WriteBundles
+2026-11-09 18:25:41,297 INFO 2026-11-09 23:25:37.292000+00:00: JOB_MESSAGE_BASIC: Executing operation trigrams top 5/Top(5)/GroupByKey/Read+trigrams top 5/Top(5)/ParDo(_MergeTopPerBundle)+trigrams ranked rows+trigrams ranking/JSON+trigrams ranking/Write/Write/WriteImpl/Map(<lambda at iobase.py:1189>)+trigrams ranking/Write/Write/WriteImpl/WindowInto(WindowIntoFn)+trigrams ranking/Write/Write/WriteImpl/GroupByKey/Write
+2026-11-09 18:25:41,297 INFO 2026-11-09 23:25:37.679000+00:00: JOB_MESSAGE_BASIC: Finished operation Sum incoming counts/GroupByKey/Read+Sum incoming counts/Combine+Sum incoming counts/Combine/Extract+incoming counts/JSON+incoming top 5/Top(5)/ParDo(_TopPerBundle)+incoming top 5/Top(5)/Flatten/OutputIdentity+incoming top 5/Top(5)/GroupByKey/Write+incoming counts/Write/Write/WriteImpl/Map(<lambda at iobase.py:1189>)+incoming counts/Write/Write/WriteImpl/WindowInto(WindowIntoFn)+incoming counts/Write/Write/WriteImpl/GroupByKey/Write
+2026-11-09 18:25:41,297 INFO 2026-11-09 23:25:37.736000+00:00: JOB_MESSAGE_BASIC: Finished operation trigrams top 5/Top(5)/GroupByKey/Read+trigrams top 5/Top(5)/ParDo(_MergeTopPerBundle)+trigrams ranked rows+trigrams ranking/JSON+trigrams ranking/Write/Write/WriteImpl/Map(<lambda at iobase.py:1189>)+trigrams ranking/Write/Write/WriteImpl/WindowInto(WindowIntoFn)+trigrams ranking/Write/Write/WriteImpl/GroupByKey/Write
+2026-11-09 18:25:41,297 INFO 2026-11-09 23:25:37.741000+00:00: JOB_MESSAGE_BASIC: Executing operation incoming counts/Write/Write/WriteImpl/GroupByKey/Close
+2026-11-09 18:25:41,297 INFO 2026-11-09 23:25:37.741000+00:00: JOB_MESSAGE_BASIC: Executing operation incoming top 5/Top(5)/GroupByKey/Close
+2026-11-09 18:25:41,297 INFO 2026-11-09 23:25:37.791000+00:00: JOB_MESSAGE_BASIC: Executing operation trigrams ranking/Write/Write/WriteImpl/GroupByKey/Close
+2026-11-09 18:25:41,297 INFO 2026-11-09 23:25:37.796000+00:00: JOB_MESSAGE_BASIC: Finished operation incoming counts/Write/Write/WriteImpl/GroupByKey/Close
+2026-11-09 18:25:41,297 INFO 2026-11-09 23:25:37.796000+00:00: JOB_MESSAGE_BASIC: Finished operation incoming top 5/Top(5)/GroupByKey/Close
+2026-11-09 18:25:41,297 INFO 2026-11-09 23:25:37.841000+00:00: JOB_MESSAGE_BASIC: Executing operation incoming counts/Write/Write/WriteImpl/GroupByKey/Read+incoming counts/Write/Write/WriteImpl/WriteBundles
+2026-11-09 18:25:41,297 INFO 2026-11-09 23:25:37.841000+00:00: JOB_MESSAGE_BASIC: Executing operation incoming ranking/Write/Write/WriteImpl/GroupByKey/Create
+2026-11-09 18:25:41,298 INFO 2026-11-09 23:25:37.844000+00:00: JOB_MESSAGE_BASIC: Finished operation trigrams ranking/Write/Write/WriteImpl/GroupByKey/Close
+2026-11-09 18:25:41,298 INFO 2026-11-09 23:25:37.892000+00:00: JOB_MESSAGE_BASIC: Executing operation trigrams ranking/Write/Write/WriteImpl/GroupByKey/Read+trigrams ranking/Write/Write/WriteImpl/WriteBundles
+2026-11-09 18:25:41,298 INFO 2026-11-09 23:25:37.948000+00:00: JOB_MESSAGE_BASIC: Finished operation incoming ranking/Write/Write/WriteImpl/GroupByKey/Create
+2026-11-09 18:25:41,298 INFO 2026-11-09 23:25:38.047000+00:00: JOB_MESSAGE_BASIC: Executing operation incoming top 5/Top(5)/GroupByKey/Read+incoming top 5/Top(5)/ParDo(_MergeTopPerBundle)+incoming ranked rows+incoming ranking/JSON+incoming ranking/Write/Write/WriteImpl/Map(<lambda at iobase.py:1189>)+incoming ranking/Write/Write/WriteImpl/WindowInto(WindowIntoFn)+incoming ranking/Write/Write/WriteImpl/GroupByKey/Write
+2026-11-09 18:25:41,298 INFO 2026-11-09 23:25:38.568000+00:00: JOB_MESSAGE_BASIC: Finished operation outgoing top 5/Top(5)/GroupByKey/Read+outgoing top 5/Top(5)/ParDo(_MergeTopPerBundle)+outgoing ranked rows+outgoing ranking/JSON+outgoing ranking/Write/Write/WriteImpl/Map(<lambda at iobase.py:1189>)+outgoing ranking/Write/Write/WriteImpl/WindowInto(WindowIntoFn)+outgoing ranking/Write/Write/WriteImpl/GroupByKey/Write
+2026-11-09 18:25:41,298 INFO 2026-11-09 23:25:38.632000+00:00: JOB_MESSAGE_BASIC: Executing operation outgoing ranking/Write/Write/WriteImpl/GroupByKey/Close
+2026-11-09 18:25:41,298 INFO 2026-11-09 23:25:38.699000+00:00: JOB_MESSAGE_BASIC: Finished operation outgoing ranking/Write/Write/WriteImpl/GroupByKey/Close
+2026-11-09 18:25:41,298 INFO 2026-11-09 23:25:38.744000+00:00: JOB_MESSAGE_BASIC: Executing operation outgoing ranking/Write/Write/WriteImpl/GroupByKey/Read+outgoing ranking/Write/Write/WriteImpl/WriteBundles
+2026-11-09 18:25:41,298 INFO 2026-11-09 23:25:38.818000+00:00: JOB_MESSAGE_BASIC: Finished operation trigrams counts/Write/Write/WriteImpl/GroupByKey/Read+trigrams counts/Write/Write/WriteImpl/WriteBundles
+2026-11-09 18:25:41,298 INFO 2026-11-09 23:25:38.887000+00:00: JOB_MESSAGE_BASIC: Finished operation incoming top 5/Top(5)/GroupByKey/Read+incoming top 5/Top(5)/ParDo(_MergeTopPerBundle)+incoming ranked rows+incoming ranking/JSON+incoming ranking/Write/Write/WriteImpl/Map(<lambda at iobase.py:1189>)+incoming ranking/Write/Write/WriteImpl/WindowInto(WindowIntoFn)+incoming ranking/Write/Write/WriteImpl/GroupByKey/Write
+2026-11-09 18:25:41,298 INFO 2026-11-09 23:25:38.933000+00:00: JOB_MESSAGE_BASIC: Executing operation trigrams counts/Write/Write/WriteImpl/FinalizeWrite/View-python_side_input1
+2026-11-09 18:25:41,298 INFO 2026-11-09 23:25:38.933000+00:00: JOB_MESSAGE_BASIC: Executing operation trigrams counts/Write/Write/WriteImpl/PreFinalize/View-python_side_input1
+2026-11-09 18:25:41,298 INFO 2026-11-09 23:25:38.938000+00:00: JOB_MESSAGE_BASIC: Executing operation incoming ranking/Write/Write/WriteImpl/GroupByKey/Close
+2026-11-09 18:25:41,298 INFO 2026-11-09 23:25:38.974000+00:00: JOB_MESSAGE_BASIC: Finished operation trigrams counts/Write/Write/WriteImpl/FinalizeWrite/View-python_side_input1
+2026-11-09 18:25:41,298 INFO 2026-11-09 23:25:38.978000+00:00: JOB_MESSAGE_BASIC: Finished operation trigrams counts/Write/Write/WriteImpl/PreFinalize/View-python_side_input1
+2026-11-09 18:25:41,298 INFO 2026-11-09 23:25:38.987000+00:00: JOB_MESSAGE_BASIC: Finished operation incoming ranking/Write/Write/WriteImpl/GroupByKey/Close
+2026-11-09 18:25:41,298 INFO 2026-11-09 23:25:39.026000+00:00: JOB_MESSAGE_BASIC: Finished operation Totals/Write/Write/WriteImpl/GroupByKey/Read+Totals/Write/Write/WriteImpl/WriteBundles
+2026-11-09 18:25:41,298 INFO 2026-11-09 23:25:39.033000+00:00: JOB_MESSAGE_BASIC: Executing operation incoming ranking/Write/Write/WriteImpl/GroupByKey/Read+incoming ranking/Write/Write/WriteImpl/WriteBundles
+2026-11-09 18:25:41,298 INFO 2026-11-09 23:25:39.069000+00:00: JOB_MESSAGE_BASIC: Executing operation trigrams counts/Write/Write/WriteImpl/PreFinalize
+2026-11-09 18:25:41,299 INFO 2026-11-09 23:25:39.152000+00:00: JOB_MESSAGE_BASIC: Executing operation Totals/Write/Write/WriteImpl/FinalizeWrite/View-python_side_input1
+2026-11-09 18:25:41,299 INFO 2026-11-09 23:25:39.152000+00:00: JOB_MESSAGE_BASIC: Executing operation Totals/Write/Write/WriteImpl/PreFinalize/View-python_side_input1
+2026-11-09 18:25:41,299 INFO 2026-11-09 23:25:39.203000+00:00: JOB_MESSAGE_BASIC: Finished operation Totals/Write/Write/WriteImpl/PreFinalize/View-python_side_input1
+2026-11-09 18:25:41,299 INFO 2026-11-09 23:25:39.206000+00:00: JOB_MESSAGE_BASIC: Finished operation Totals/Write/Write/WriteImpl/FinalizeWrite/View-python_side_input1
+2026-11-09 18:25:41,299 INFO 2026-11-09 23:25:39.314000+00:00: JOB_MESSAGE_BASIC: Executing operation Totals/Write/Write/WriteImpl/PreFinalize
+2026-11-09 18:25:41,299 INFO 2026-11-09 23:25:39.512000+00:00: JOB_MESSAGE_BASIC: Finished operation outgoing counts/Write/Write/WriteImpl/GroupByKey/Read+outgoing counts/Write/Write/WriteImpl/WriteBundles
+2026-11-09 18:25:41,299 INFO 2026-11-09 23:25:39.575000+00:00: JOB_MESSAGE_BASIC: Finished operation Audit/Write/Write/WriteImpl/GroupByKey/Read+Audit/Write/Write/WriteImpl/WriteBundles
+2026-11-09 18:25:41,299 INFO 2026-11-09 23:25:39.604000+00:00: JOB_MESSAGE_BASIC: Executing operation outgoing counts/Write/Write/WriteImpl/FinalizeWrite/View-python_side_input1
+2026-11-09 18:25:41,299 INFO 2026-11-09 23:25:39.604000+00:00: JOB_MESSAGE_BASIC: Executing operation outgoing counts/Write/Write/WriteImpl/PreFinalize/View-python_side_input1
+2026-11-09 18:25:41,299 INFO 2026-11-09 23:25:39.661000+00:00: JOB_MESSAGE_BASIC: Finished operation outgoing counts/Write/Write/WriteImpl/PreFinalize/View-python_side_input1
+2026-11-09 18:25:41,299 INFO 2026-11-09 23:25:39.661000+00:00: JOB_MESSAGE_BASIC: Finished operation outgoing counts/Write/Write/WriteImpl/FinalizeWrite/View-python_side_input1
+2026-11-09 18:25:41,299 INFO 2026-11-09 23:25:39.684000+00:00: JOB_MESSAGE_BASIC: Executing operation Audit/Write/Write/WriteImpl/PreFinalize/View-python_side_input1
+2026-11-09 18:25:41,299 INFO 2026-11-09 23:25:39.685000+00:00: JOB_MESSAGE_BASIC: Executing operation Audit/Write/Write/WriteImpl/FinalizeWrite/View-python_side_input1
+2026-11-09 18:25:41,299 INFO 2026-11-09 23:25:39.746000+00:00: JOB_MESSAGE_BASIC: Finished operation Audit/Write/Write/WriteImpl/FinalizeWrite/View-python_side_input1
+2026-11-09 18:25:41,299 INFO 2026-11-09 23:25:39.747000+00:00: JOB_MESSAGE_BASIC: Finished operation Audit/Write/Write/WriteImpl/PreFinalize/View-python_side_input1
+2026-11-09 18:25:41,299 INFO 2026-11-09 23:25:39.783000+00:00: JOB_MESSAGE_BASIC: Executing operation outgoing counts/Write/Write/WriteImpl/PreFinalize
+2026-11-09 18:25:41,299 INFO 2026-11-09 23:25:39.849000+00:00: JOB_MESSAGE_BASIC: Executing operation Audit/Write/Write/WriteImpl/PreFinalize
+2026-11-09 18:25:41,299 INFO 2026-11-09 23:25:39.941000+00:00: JOB_MESSAGE_BASIC: Finished operation trigrams ranking/Write/Write/WriteImpl/GroupByKey/Read+trigrams ranking/Write/Write/WriteImpl/WriteBundles
+2026-11-09 18:25:41,300 INFO 2026-11-09 23:25:40.091000+00:00: JOB_MESSAGE_BASIC: Executing operation trigrams ranking/Write/Write/WriteImpl/FinalizeWrite/View-python_side_input1
+2026-11-09 18:25:41,300 INFO 2026-11-09 23:25:40.103000+00:00: JOB_MESSAGE_BASIC: Executing operation trigrams ranking/Write/Write/WriteImpl/PreFinalize/View-python_side_input1
+2026-11-09 18:25:41,300 INFO 2026-11-09 23:25:40.149000+00:00: JOB_MESSAGE_BASIC: Finished operation trigrams ranking/Write/Write/WriteImpl/FinalizeWrite/View-python_side_input1
+2026-11-09 18:25:41,300 INFO 2026-11-09 23:25:40.167000+00:00: JOB_MESSAGE_BASIC: Finished operation trigrams ranking/Write/Write/WriteImpl/PreFinalize/View-python_side_input1
+2026-11-09 18:25:41,300 INFO 2026-11-09 23:25:40.223000+00:00: JOB_MESSAGE_BASIC: Finished operation incoming counts/Write/Write/WriteImpl/GroupByKey/Read+incoming counts/Write/Write/WriteImpl/WriteBundles
+2026-11-09 18:25:41,300 INFO 2026-11-09 23:25:40.293000+00:00: JOB_MESSAGE_BASIC: Executing operation trigrams ranking/Write/Write/WriteImpl/PreFinalize
+2026-11-09 18:25:41,300 INFO 2026-11-09 23:25:40.309000+00:00: JOB_MESSAGE_BASIC: Finished operation outgoing ranking/Write/Write/WriteImpl/GroupByKey/Read+outgoing ranking/Write/Write/WriteImpl/WriteBundles
+2026-11-09 18:25:41,300 INFO 2026-11-09 23:25:40.346000+00:00: JOB_MESSAGE_BASIC: Executing operation incoming counts/Write/Write/WriteImpl/FinalizeWrite/View-python_side_input1
+2026-11-09 18:25:41,300 INFO 2026-11-09 23:25:40.347000+00:00: JOB_MESSAGE_BASIC: Executing operation incoming counts/Write/Write/WriteImpl/PreFinalize/View-python_side_input1
+2026-11-09 18:25:41,300 INFO 2026-11-09 23:25:40.388000+00:00: JOB_MESSAGE_BASIC: Finished operation incoming counts/Write/Write/WriteImpl/FinalizeWrite/View-python_side_input1
+2026-11-09 18:25:41,300 INFO 2026-11-09 23:25:40.404000+00:00: JOB_MESSAGE_BASIC: Finished operation incoming counts/Write/Write/WriteImpl/PreFinalize/View-python_side_input1
+2026-11-09 18:25:41,300 INFO 2026-11-09 23:25:40.426000+00:00: JOB_MESSAGE_BASIC: Executing operation outgoing ranking/Write/Write/WriteImpl/FinalizeWrite/View-python_side_input1
+2026-11-09 18:25:41,300 INFO 2026-11-09 23:25:40.430000+00:00: JOB_MESSAGE_BASIC: Executing operation outgoing ranking/Write/Write/WriteImpl/PreFinalize/View-python_side_input1
+2026-11-09 18:25:41,300 INFO 2026-11-09 23:25:40.479000+00:00: JOB_MESSAGE_BASIC: Finished operation outgoing ranking/Write/Write/WriteImpl/FinalizeWrite/View-python_side_input1
+2026-11-09 18:25:41,300 INFO 2026-11-09 23:25:40.485000+00:00: JOB_MESSAGE_BASIC: Finished operation outgoing ranking/Write/Write/WriteImpl/PreFinalize/View-python_side_input1
+2026-11-09 18:25:41,300 INFO 2026-11-09 23:25:40.497000+00:00: JOB_MESSAGE_BASIC: Executing operation incoming counts/Write/Write/WriteImpl/PreFinalize
+2026-11-09 18:25:41,301 INFO 2026-11-09 23:25:40.580000+00:00: JOB_MESSAGE_BASIC: Executing operation outgoing ranking/Write/Write/WriteImpl/PreFinalize
+2026-11-09 18:25:41,301 INFO 2026-11-09 23:25:40.669000+00:00: JOB_MESSAGE_BASIC: Finished operation incoming ranking/Write/Write/WriteImpl/GroupByKey/Read+incoming ranking/Write/Write/WriteImpl/WriteBundles
+2026-11-09 18:25:41,301 INFO 2026-11-09 23:25:40.763000+00:00: JOB_MESSAGE_BASIC: Executing operation incoming ranking/Write/Write/WriteImpl/PreFinalize/View-python_side_input1
+2026-11-09 18:25:41,301 INFO 2026-11-09 23:25:40.763000+00:00: JOB_MESSAGE_BASIC: Executing operation incoming ranking/Write/Write/WriteImpl/FinalizeWrite/View-python_side_input1
+2026-11-09 18:25:41,301 INFO 2026-11-09 23:25:40.808000+00:00: JOB_MESSAGE_BASIC: Finished operation incoming ranking/Write/Write/WriteImpl/FinalizeWrite/View-python_side_input1
+2026-11-09 18:25:41,301 INFO 2026-11-09 23:25:40.813000+00:00: JOB_MESSAGE_BASIC: Finished operation incoming ranking/Write/Write/WriteImpl/PreFinalize/View-python_side_input1
+2026-11-09 18:25:41,301 INFO 2026-11-09 23:25:40.858000+00:00: JOB_MESSAGE_BASIC: Finished operation trigrams counts/Write/Write/WriteImpl/PreFinalize
+2026-11-09 18:25:41,301 INFO 2026-11-09 23:25:40.915000+00:00: JOB_MESSAGE_BASIC: Executing operation incoming ranking/Write/Write/WriteImpl/PreFinalize
+2026-11-09 18:25:41,301 INFO 2026-11-09 23:25:40.974000+00:00: JOB_MESSAGE_BASIC: Executing operation trigrams counts/Write/Write/WriteImpl/FinalizeWrite/View-python_side_input2
+2026-11-09 18:25:41,301 INFO 2026-11-09 23:25:41.039000+00:00: JOB_MESSAGE_BASIC: Finished operation trigrams counts/Write/Write/WriteImpl/FinalizeWrite/View-python_side_input2
+2026-11-09 18:25:41,301 INFO 2026-11-09 23:25:41.145000+00:00: JOB_MESSAGE_BASIC: Executing operation trigrams counts/Write/Write/WriteImpl/FinalizeWrite
+2026-11-09 18:25:41,301 INFO 2026-11-09 23:25:41.309000+00:00: JOB_MESSAGE_BASIC: Finished operation Totals/Write/Write/WriteImpl/PreFinalize
+2026-11-09 18:25:46,519 INFO 2026-11-09 23:25:41.417000+00:00: JOB_MESSAGE_BASIC: Executing operation Totals/Write/Write/WriteImpl/FinalizeWrite/View-python_side_input2
+2026-11-09 18:25:46,519 INFO 2026-11-09 23:25:41.476000+00:00: JOB_MESSAGE_BASIC: Finished operation Totals/Write/Write/WriteImpl/FinalizeWrite/View-python_side_input2
+2026-11-09 18:25:46,519 INFO 2026-11-09 23:25:41.629000+00:00: JOB_MESSAGE_BASIC: Executing operation Totals/Write/Write/WriteImpl/FinalizeWrite
+2026-11-09 18:25:46,519 INFO 2026-11-09 23:25:41.819000+00:00: JOB_MESSAGE_BASIC: Finished operation Audit/Write/Write/WriteImpl/PreFinalize
+2026-11-09 18:25:46,519 INFO 2026-11-09 23:25:41.931000+00:00: JOB_MESSAGE_BASIC: Executing operation Audit/Write/Write/WriteImpl/FinalizeWrite/View-python_side_input2
+2026-11-09 18:25:46,519 INFO 2026-11-09 23:25:41.937000+00:00: JOB_MESSAGE_BASIC: Finished operation outgoing counts/Write/Write/WriteImpl/PreFinalize
+2026-11-09 18:25:46,519 INFO 2026-11-09 23:25:41.981000+00:00: JOB_MESSAGE_BASIC: Finished operation Audit/Write/Write/WriteImpl/FinalizeWrite/View-python_side_input2
+2026-11-09 18:25:46,520 INFO 2026-11-09 23:25:42.046000+00:00: JOB_MESSAGE_BASIC: Executing operation outgoing counts/Write/Write/WriteImpl/FinalizeWrite/View-python_side_input2
+2026-11-09 18:25:46,520 INFO 2026-11-09 23:25:42.105000+00:00: JOB_MESSAGE_BASIC: Executing operation Audit/Write/Write/WriteImpl/FinalizeWrite
+2026-11-09 18:25:46,520 INFO 2026-11-09 23:25:42.107000+00:00: JOB_MESSAGE_BASIC: Finished operation outgoing counts/Write/Write/WriteImpl/FinalizeWrite/View-python_side_input2
+2026-11-09 18:25:46,520 INFO 2026-11-09 23:25:42.178000+00:00: JOB_MESSAGE_BASIC: Finished operation trigrams ranking/Write/Write/WriteImpl/PreFinalize
+2026-11-09 18:25:46,520 INFO 2026-11-09 23:25:42.230000+00:00: JOB_MESSAGE_BASIC: Executing operation outgoing counts/Write/Write/WriteImpl/FinalizeWrite
+2026-11-09 18:25:46,520 INFO 2026-11-09 23:25:42.302000+00:00: JOB_MESSAGE_BASIC: Executing operation trigrams ranking/Write/Write/WriteImpl/FinalizeWrite/View-python_side_input2
+2026-11-09 18:25:46,520 INFO 2026-11-09 23:25:42.357000+00:00: JOB_MESSAGE_BASIC: Finished operation trigrams ranking/Write/Write/WriteImpl/FinalizeWrite/View-python_side_input2
+2026-11-09 18:25:46,520 INFO 2026-11-09 23:25:42.367000+00:00: JOB_MESSAGE_BASIC: Finished operation incoming counts/Write/Write/WriteImpl/PreFinalize
+2026-11-09 18:25:46,520 INFO 2026-11-09 23:25:42.449000+00:00: JOB_MESSAGE_BASIC: Executing operation trigrams ranking/Write/Write/WriteImpl/FinalizeWrite
+2026-11-09 18:25:46,520 INFO 2026-11-09 23:25:42.458000+00:00: JOB_MESSAGE_BASIC: Executing operation incoming counts/Write/Write/WriteImpl/FinalizeWrite/View-python_side_input2
+2026-11-09 18:25:46,520 INFO 2026-11-09 23:25:42.498000+00:00: JOB_MESSAGE_BASIC: Finished operation incoming counts/Write/Write/WriteImpl/FinalizeWrite/View-python_side_input2
+2026-11-09 18:25:46,520 INFO 2026-11-09 23:25:42.570000+00:00: JOB_MESSAGE_BASIC: Finished operation outgoing ranking/Write/Write/WriteImpl/PreFinalize
+2026-11-09 18:25:46,520 INFO 2026-11-09 23:25:42.593000+00:00: JOB_MESSAGE_BASIC: Executing operation incoming counts/Write/Write/WriteImpl/FinalizeWrite
+2026-11-09 18:25:46,520 INFO 2026-11-09 23:25:42.666000+00:00: JOB_MESSAGE_BASIC: Executing operation outgoing ranking/Write/Write/WriteImpl/FinalizeWrite/View-python_side_input2
+2026-11-09 18:25:46,520 INFO 2026-11-09 23:25:42.716000+00:00: JOB_MESSAGE_BASIC: Finished operation outgoing ranking/Write/Write/WriteImpl/FinalizeWrite/View-python_side_input2
+2026-11-09 18:25:46,520 INFO 2026-11-09 23:25:42.807000+00:00: JOB_MESSAGE_BASIC: Executing operation outgoing ranking/Write/Write/WriteImpl/FinalizeWrite
+2026-11-09 18:25:46,520 INFO 2026-11-09 23:25:42.942000+00:00: JOB_MESSAGE_BASIC: Finished operation trigrams counts/Write/Write/WriteImpl/FinalizeWrite
+2026-11-09 18:25:46,520 INFO 2026-11-09 23:25:42.999000+00:00: JOB_MESSAGE_BASIC: Finished operation incoming ranking/Write/Write/WriteImpl/PreFinalize
+2026-11-09 18:25:46,521 INFO 2026-11-09 23:25:43.099000+00:00: JOB_MESSAGE_BASIC: Executing operation incoming ranking/Write/Write/WriteImpl/FinalizeWrite/View-python_side_input2
+2026-11-09 18:25:46,521 INFO 2026-11-09 23:25:43.155000+00:00: JOB_MESSAGE_BASIC: Finished operation incoming ranking/Write/Write/WriteImpl/FinalizeWrite/View-python_side_input2
+2026-11-09 18:25:46,521 INFO 2026-11-09 23:25:43.261000+00:00: JOB_MESSAGE_BASIC: Executing operation incoming ranking/Write/Write/WriteImpl/FinalizeWrite
+2026-11-09 18:25:46,521 INFO 2026-11-09 23:25:43.299000+00:00: JOB_MESSAGE_BASIC: Finished operation Totals/Write/Write/WriteImpl/FinalizeWrite
+2026-11-09 18:25:46,521 INFO 2026-11-09 23:25:44.134000+00:00: JOB_MESSAGE_BASIC: Finished operation Audit/Write/Write/WriteImpl/FinalizeWrite
+2026-11-09 18:25:46,521 INFO 2026-11-09 23:25:44.141000+00:00: JOB_MESSAGE_BASIC: Finished operation outgoing counts/Write/Write/WriteImpl/FinalizeWrite
+2026-11-09 18:25:46,521 INFO 2026-11-09 23:25:44.559000+00:00: JOB_MESSAGE_BASIC: Finished operation incoming counts/Write/Write/WriteImpl/FinalizeWrite
+2026-11-09 18:25:46,521 INFO 2026-11-09 23:25:44.821000+00:00: JOB_MESSAGE_BASIC: Finished operation outgoing ranking/Write/Write/WriteImpl/FinalizeWrite
+2026-11-09 18:25:46,521 INFO 2026-11-09 23:25:45.624000+00:00: JOB_MESSAGE_BASIC: Finished operation trigrams ranking/Write/Write/WriteImpl/FinalizeWrite
+2026-11-09 18:25:46,521 INFO 2026-11-09 23:25:45.767000+00:00: JOB_MESSAGE_BASIC: Finished operation incoming ranking/Write/Write/WriteImpl/FinalizeWrite
+2026-11-09 18:25:46,521 INFO 2026-11-09 23:25:46.018000+00:00: JOB_MESSAGE_BASIC: Stopping worker pool...
+2026-11-09 18:26:38,585 INFO 2026-11-09 23:26:37.632000+00:00: JOB_MESSAGE_BASIC: Worker pool stopped.
+2026-11-09 18:26:43,919 INFO Job 2026-11-09_15_09_40-1204750077456012981 is in state JOB_STATE_DONE
+{
+  "runner": "DataflowRunner",
+  "input": "gs://cs528-hw2-yf-2026/data/*.html",
+  "output": "gs://cs528-hw7-yf-2026/runs/run1/output",
+  "beam_version": "2.77.0",
+  "python_version": "3.12.0",
+  "platform": "macOS-15.7.2-arm64-arm-64bit",
+  "machine": "arm64",
+  "logical_cpus": 8,
+  "beam_args": [
+    "--runner=DataflowRunner",
+    "--project=dazzling-seat-508219-j3",
+    "--region=us-central1",
+    "--job_name=cs528-hw7-20261109-01",
+    "--service_account_email=cs528-hw7-worker@dazzling-seat-508219-j3.iam.gserviceaccount.com",
+    "--temp_location=gs://cs528-hw7-yf-2026/tmp/run1",
+    "--staging_location=gs://cs528-hw7-yf-2026/staging/run1",
+    "--setup_file=./setup.py",
+    "--num_workers=2",
+    "--max_num_workers=2",
+    "--autoscaling_algorithm=NONE",
+    "--machine_type=e2-standard-2",
+    "--disk_size_gb=30",
+    "--sdk_worker_parallelism=1",
+    "--network=default",
+    "--labels=assignment=cs528-hw7"
+  ],
+  "source_sha256": "60654e735557e7888544013faf5c08917fea853882aa7dff268b536c215bc34b",
+  "started_at": "2026-11-09T23:09:33.913572+00:00",
+  "state": "DONE",
+  "timing_definition": "perf_counter before pipeline construction through wait_until_finish; includes GCS input, output writes and runner startup, excludes environment installation and post-run verification",
+  "run_returned_seconds": 7.557906209025532,
+  "job_id": "2026-11-09_15_09_40-1204750077456012981",
+  "elapsed_seconds": 1033.4722938749474,
+  "finished_at": "2026-11-09T23:26:47.385474+00:00"
+}

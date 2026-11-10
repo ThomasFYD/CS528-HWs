@@ -1,0 +1,144 @@
+2026-11-09 18:37:19,485 INFO starting control server on port 56487
+2026-11-09 18:37:19,485 INFO starting data server on port 56488
+2026-11-09 18:37:19,485 INFO starting state server on port 56489
+2026-11-09 18:37:19,485 INFO starting logging server on port 56490
+2026-11-09 18:37:19,491 INFO Creating state cache with size 104857600
+2026-11-09 18:37:19,491 INFO Creating insecure control channel for localhost:56487.
+2026-11-09 18:37:19,494 INFO Control channel established.
+2026-11-09 18:37:19,494 INFO Initializing SDKHarness with unbounded number of workers.
+2026-11-09 18:37:19,495 INFO Creating state cache with size 104857600
+2026-11-09 18:37:19,495 INFO Creating insecure control channel for localhost:56487.
+2026-11-09 18:37:19,496 INFO Control channel established.
+2026-11-09 18:37:19,496 INFO Initializing SDKHarness with unbounded number of workers.
+2026-11-09 18:37:19,497 INFO Creating state cache with size 104857600
+2026-11-09 18:37:19,497 INFO Creating insecure control channel for localhost:56487.
+2026-11-09 18:37:19,498 INFO Control channel established.
+2026-11-09 18:37:19,498 INFO Initializing SDKHarness with unbounded number of workers.
+2026-11-09 18:37:19,498 INFO Creating state cache with size 104857600
+2026-11-09 18:37:19,498 INFO Creating insecure control channel for localhost:56487.
+2026-11-09 18:37:19,499 INFO Control channel established.
+2026-11-09 18:37:19,499 INFO Initializing SDKHarness with unbounded number of workers.
+2026-11-09 18:37:19,499 INFO Creating state cache with size 104857600
+2026-11-09 18:37:19,499 INFO Creating insecure control channel for localhost:56487.
+2026-11-09 18:37:19,500 INFO Control channel established.
+2026-11-09 18:37:19,500 INFO Initializing SDKHarness with unbounded number of workers.
+2026-11-09 18:37:19,500 INFO Creating state cache with size 104857600
+2026-11-09 18:37:19,500 INFO Creating insecure control channel for localhost:56487.
+2026-11-09 18:37:19,501 INFO Control channel established.
+2026-11-09 18:37:19,501 INFO Initializing SDKHarness with unbounded number of workers.
+2026-11-09 18:37:19,501 INFO Creating state cache with size 104857600
+2026-11-09 18:37:19,502 INFO Creating insecure control channel for localhost:56487.
+2026-11-09 18:37:19,502 INFO Control channel established.
+2026-11-09 18:37:19,502 INFO Initializing SDKHarness with unbounded number of workers.
+2026-11-09 18:37:19,503 INFO Creating state cache with size 104857600
+2026-11-09 18:37:19,503 INFO Creating insecure control channel for localhost:56487.
+2026-11-09 18:37:19,503 INFO Control channel established.
+2026-11-09 18:37:19,503 INFO Initializing SDKHarness with unbounded number of workers.
+2026-11-09 18:37:19,508 INFO Creating insecure state channel for localhost:56489.
+2026-11-09 18:37:19,508 INFO State channel established.
+2026-11-09 18:37:19,509 INFO Creating client data channel for localhost:56488 (data_stream_id: )
+2026-11-09 18:37:19,509 INFO Data channel established.
+2026-11-09 18:37:19,514 INFO Creating insecure state channel for localhost:56489.
+2026-11-09 18:37:19,514 INFO State channel established.
+2026-11-09 18:37:19,516 INFO Creating client data channel for localhost:56488 (data_stream_id: )
+2026-11-09 18:37:19,516 INFO Data channel established.
+2026-11-09 18:37:19,518 INFO Creating insecure state channel for localhost:56489.
+2026-11-09 18:37:19,518 INFO State channel established.
+2026-11-09 18:37:19,520 INFO Creating insecure state channel for localhost:56489.
+2026-11-09 18:37:19,520 INFO State channel established.
+2026-11-09 18:37:19,524 INFO Creating client data channel for localhost:56488 (data_stream_id: )
+2026-11-09 18:37:19,524 INFO Data channel established.
+2026-11-09 18:37:19,528 INFO Creating insecure state channel for localhost:56489.
+2026-11-09 18:37:19,528 INFO Creating client data channel for localhost:56488 (data_stream_id: )
+2026-11-09 18:37:19,528 INFO State channel established.
+2026-11-09 18:37:19,529 INFO Data channel established.
+2026-11-09 18:37:19,533 INFO Creating insecure state channel for localhost:56489.
+2026-11-09 18:37:19,533 INFO Creating insecure state channel for localhost:56489.
+2026-11-09 18:37:19,533 INFO State channel established.
+2026-11-09 18:37:19,534 INFO Creating insecure state channel for localhost:56489.
+2026-11-09 18:37:19,535 INFO State channel established.
+2026-11-09 18:37:19,537 INFO State channel established.
+2026-11-09 18:37:19,539 INFO Creating client data channel for localhost:56488 (data_stream_id: )
+2026-11-09 18:37:19,540 INFO Creating client data channel for localhost:56488 (data_stream_id: )
+2026-11-09 18:37:19,542 INFO Data channel established.
+2026-11-09 18:37:19,542 INFO Data channel established.
+2026-11-09 18:37:19,547 INFO Creating client data channel for localhost:56488 (data_stream_id: )
+2026-11-09 18:37:19,547 INFO Creating client data channel for localhost:56488 (data_stream_id: )
+2026-11-09 18:37:19,551 INFO Data channel established.
+2026-11-09 18:37:19,554 INFO Data channel established.
+I1109 18:37:19.717848 38021093 fork_posix.cc:71] Other threads are currently calling into gRPC, skipping fork() handlers
+2026-11-09 18:37:23,810 INFO Finished computing file information of: 10000 files
+2026-11-09 18:37:24,364 INFO Finished listing 12000 files in 3.8035101890563965 seconds.
+I1109 18:49:20.747856 38043980 fork_posix.cc:71] Other threads are currently calling into gRPC, skipping fork() handlers
+I1109 18:49:20.762541 38044309 ev_poll_posix.cc:588] FD from fork parent still in poll list: fd(72, generation: 1)
+2026-11-09 18:49:20,770 INFO Renamed 1 shards in 0.04 seconds.
+2026-11-09 18:49:20,829 INFO Renamed 1 shards in 0.00 seconds.
+2026-11-09 18:49:21,172 INFO Renamed 1 shards in 0.00 seconds.
+2026-11-09 18:49:21,217 INFO Renamed 1 shards in 0.00 seconds.
+2026-11-09 18:49:21,454 INFO Renamed 1 shards in 0.00 seconds.
+2026-11-09 18:49:21,499 INFO Renamed 1 shards in 0.00 seconds.
+2026-11-09 18:49:21,581 INFO Renamed 1 shards in 0.00 seconds.
+2026-11-09 18:49:21,740 INFO Renamed 1 shards in 0.00 seconds.
+2026-11-09 18:49:21,749 INFO No more requests from control plane
+2026-11-09 18:49:21,749 INFO SDK Harness waiting for in-flight requests to complete
+2026-11-09 18:49:21,749 INFO Closing all cached grpc data channels.
+2026-11-09 18:49:21,750 INFO Closing all cached gRPC state handlers.
+2026-11-09 18:49:21,752 INFO Done consuming work.
+2026-11-09 18:49:21,753 INFO No more requests from control plane
+2026-11-09 18:49:21,753 INFO SDK Harness waiting for in-flight requests to complete
+2026-11-09 18:49:21,753 INFO Closing all cached grpc data channels.
+2026-11-09 18:49:21,753 INFO Closing all cached gRPC state handlers.
+2026-11-09 18:49:21,756 INFO Done consuming work.
+2026-11-09 18:49:21,756 INFO No more requests from control plane
+2026-11-09 18:49:21,756 INFO SDK Harness waiting for in-flight requests to complete
+2026-11-09 18:49:21,757 INFO Closing all cached grpc data channels.
+2026-11-09 18:49:21,757 INFO Closing all cached gRPC state handlers.
+2026-11-09 18:49:21,759 INFO Done consuming work.
+2026-11-09 18:49:21,759 INFO No more requests from control plane
+2026-11-09 18:49:21,759 INFO SDK Harness waiting for in-flight requests to complete
+2026-11-09 18:49:21,759 INFO Closing all cached grpc data channels.
+2026-11-09 18:49:21,759 INFO Closing all cached gRPC state handlers.
+2026-11-09 18:49:21,761 INFO Done consuming work.
+2026-11-09 18:49:21,761 INFO No more requests from control plane
+2026-11-09 18:49:21,762 INFO SDK Harness waiting for in-flight requests to complete
+2026-11-09 18:49:21,762 INFO Closing all cached grpc data channels.
+2026-11-09 18:49:21,762 INFO Closing all cached gRPC state handlers.
+2026-11-09 18:49:21,764 INFO Done consuming work.
+2026-11-09 18:49:21,764 INFO No more requests from control plane
+2026-11-09 18:49:21,764 INFO SDK Harness waiting for in-flight requests to complete
+2026-11-09 18:49:21,764 INFO Closing all cached grpc data channels.
+2026-11-09 18:49:21,765 INFO Closing all cached gRPC state handlers.
+2026-11-09 18:49:21,766 INFO Done consuming work.
+2026-11-09 18:49:21,767 INFO No more requests from control plane
+2026-11-09 18:49:21,767 INFO SDK Harness waiting for in-flight requests to complete
+2026-11-09 18:49:21,767 INFO Closing all cached grpc data channels.
+2026-11-09 18:49:21,767 INFO Closing all cached gRPC state handlers.
+2026-11-09 18:49:21,769 INFO Done consuming work.
+2026-11-09 18:49:21,769 INFO No more requests from control plane
+2026-11-09 18:49:21,769 INFO SDK Harness waiting for in-flight requests to complete
+2026-11-09 18:49:21,769 INFO Closing all cached grpc data channels.
+2026-11-09 18:49:21,770 INFO Closing all cached gRPC state handlers.
+2026-11-09 18:49:21,773 INFO Done consuming work.
+{
+  "runner": "apache_beam.runners.portability.fn_api_runner.FnApiRunner",
+  "input": "gs://cs528-hw2-yf-2026/data/*.html",
+  "output": "results/local-run2/output",
+  "beam_version": "2.77.0",
+  "python_version": "3.12.0",
+  "platform": "macOS-15.7.2-arm64-arm-64bit",
+  "machine": "arm64",
+  "logical_cpus": 8,
+  "beam_args": [
+    "--runner=apache_beam.runners.portability.fn_api_runner.FnApiRunner",
+    "--direct_running_mode=multi_threading",
+    "--direct_num_workers=8",
+    "--project=dazzling-seat-508219-j3"
+  ],
+  "source_sha256": "60654e735557e7888544013faf5c08917fea853882aa7dff268b536c215bc34b",
+  "started_at": "2026-11-09T23:37:18.718977+00:00",
+  "state": "DONE",
+  "timing_definition": "perf_counter before pipeline construction through wait_until_finish; includes GCS input, output writes and runner startup, excludes environment installation and post-run verification",
+  "run_returned_seconds": 722.9819618340116,
+  "elapsed_seconds": 722.9825654998422,
+  "finished_at": "2026-11-09T23:49:21.781249+00:00"
+}

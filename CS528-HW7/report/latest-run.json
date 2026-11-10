@@ -1,0 +1,15 @@
+{
+  "local_run": "local-run2",
+  "cloud_run": "cloud-run1",
+  "local_metadata": "evidence/local-metadata.json",
+  "cloud_metadata": "evidence/cloud-metadata.json",
+  "verification": "evidence/verification.json",
+  "oracle": "evidence/oracle.json",
+  "cleanup": "evidence/cleanup.json",
+  "report": "CS528_HW7_Report.pdf",
+  "dataflow_job_id": "2026-11-09_15_09_40-1204750077456012981",
+  "source_sha256": "60654e735557e7888544013faf5c08917fea853882aa7dff268b536c215bc34b",
+  "local_seconds": 722.9825654998422,
+  "cloud_seconds": 1033.4722938749474,
+  "runners_match": true
+}

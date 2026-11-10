@@ -1,0 +1,23 @@
+{
+  "beam_args": [
+    "--runner=apache_beam.runners.portability.fn_api_runner.FnApiRunner",
+    "--direct_running_mode=multi_processing",
+    "--direct_num_workers=4",
+    "--project=dazzling-seat-508219-j3"
+  ],
+  "beam_version": "2.77.0",
+  "elapsed_seconds": 1265.4435476248618,
+  "error": "RuntimeError: Channel closed prematurely.",
+  "finished_at": "2026-11-09T23:29:16.691076+00:00",
+  "input": "gs://cs528-hw2-yf-2026/data/*.html",
+  "logical_cpus": 8,
+  "machine": "arm64",
+  "output": "results/local-run1/output",
+  "platform": "macOS-15.7.2-arm64-arm-64bit",
+  "python_version": "3.12.0",
+  "runner": "apache_beam.runners.portability.fn_api_runner.FnApiRunner",
+  "source_sha256": "60654e735557e7888544013faf5c08917fea853882aa7dff268b536c215bc34b",
+  "started_at": "2026-11-09T23:08:11.248384+00:00",
+  "state": "BUILDING",
+  "timing_definition": "perf_counter before pipeline construction through wait_until_finish; includes GCS input, output writes and runner startup, excludes environment installation and post-run verification"
+}

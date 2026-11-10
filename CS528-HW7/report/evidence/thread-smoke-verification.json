@@ -1,0 +1,127 @@
+{
+  "local": {
+    "beam_args": [
+      "--runner=apache_beam.runners.portability.fn_api_runner.FnApiRunner",
+      "--direct_running_mode=multi_threading",
+      "--direct_num_workers=8",
+      "--project=dazzling-seat-508219-j3"
+    ],
+    "beam_version": "2.77.0",
+    "elapsed_seconds": 7.629230542108417,
+    "finished_at": "2026-11-09T23:35:34.419701+00:00",
+    "input": "gs://cs528-hw2-yf-2026/data/1[0-9].html",
+    "logical_cpus": 8,
+    "machine": "arm64",
+    "output": "results/thread-smoke/output",
+    "platform": "macOS-15.7.2-arm64-arm-64bit",
+    "python_version": "3.12.0",
+    "run_returned_seconds": 7.628788709174842,
+    "runner": "apache_beam.runners.portability.fn_api_runner.FnApiRunner",
+    "source_sha256": "60654e735557e7888544013faf5c08917fea853882aa7dff268b536c215bc34b",
+    "started_at": "2026-11-09T23:35:26.790074+00:00",
+    "state": "DONE",
+    "timing_definition": "perf_counter before pipeline construction through wait_until_finish; includes GCS input, output writes and runner startup, excludes environment installation and post-run verification"
+  },
+  "results": {
+    "count_sha256": {
+      "incoming": "6ed11b52153a48870b184ddcefc55c637d9ca7615a90dd278754ed8f6d1c5ced",
+      "outgoing": "b2118bd1630ff68fe92f46b11be363adfc013d6eb315581ff48f66d91008164d",
+      "trigrams": "d195fc2941a023cffaba216b1817959822102d7650eb6ad939d34633d66cb317"
+    },
+    "cutoff_ties": {
+      "incoming": {
+        "cutoff_count": 0,
+        "items_at_cutoff": 9
+      },
+      "outgoing": {
+        "cutoff_count": 0,
+        "items_at_cutoff": 9
+      },
+      "trigrams": {
+        "cutoff_count": 1259,
+        "items_at_cutoff": 71
+      }
+    },
+    "distinct_trigrams": 73,
+    "file_audit_sha256": "e6ce826abc0b3cf07c90f78d33a305994321457e823608d513a1aa1ecca89e4f",
+    "input_sha256": "8961be44caf8b32a251c53f0c6f13e7757c4299213324560d0167ddfa74fbf91",
+    "top5": {
+      "incoming": [
+        {
+          "count": 1,
+          "item": "11.html"
+        },
+        {
+          "count": 0,
+          "item": "10.html"
+        },
+        {
+          "count": 0,
+          "item": "12.html"
+        },
+        {
+          "count": 0,
+          "item": "13.html"
+        },
+        {
+          "count": 0,
+          "item": "14.html"
+        }
+      ],
+      "outgoing": [
+        {
+          "count": 1,
+          "item": "12.html"
+        },
+        {
+          "count": 0,
+          "item": "10.html"
+        },
+        {
+          "count": 0,
+          "item": "11.html"
+        },
+        {
+          "count": 0,
+          "item": "13.html"
+        },
+        {
+          "count": 0,
+          "item": "14.html"
+        }
+      ],
+      "trigrams": [
+        {
+          "count": 1259,
+          "item": "ad minim veniam"
+        },
+        {
+          "count": 1259,
+          "item": "adipiscing elit sed"
+        },
+        {
+          "count": 1259,
+          "item": "aliqua ut enim"
+        },
+        {
+          "count": 1259,
+          "item": "aliquip ex ea"
+        },
+        {
+          "count": 1259,
+          "item": "amet consectetur adipiscing"
+        }
+      ]
+    },
+    "totals": {
+      "bytes": 623738,
+      "files": 10,
+      "ignored_links": 1258,
+      "nonempty_word_files": 10,
+      "outgoing": 1,
+      "trigrams": 91887,
+      "words": 91907
+    },
+    "verified": true
+  }
+}

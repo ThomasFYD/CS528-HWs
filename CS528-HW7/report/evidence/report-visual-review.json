@@ -1,0 +1,15 @@
+{
+  "review_date": "2026-11-09",
+  "pages": 6,
+  "reference_format": "CS528-HW6/report/CS528_HW6_Report.pdf",
+  "report_sha256": "8c465e82a117673d569474dea1abddae1c6eb649682c640122344b6dff9f4a08",
+  "all_pages_rendered_and_visually_reviewed": true,
+  "black_text_only": true,
+  "matching_hw6_font_sizes_and_margins": true,
+  "no_table_borders_or_shading": true,
+  "numbered_sections": true,
+  "footer_page_numbers_only": true,
+  "no_clipped_or_overlapping_content": true,
+  "measured_results_preserved": true,
+  "github_link_present": true
+}

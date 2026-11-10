@@ -1,0 +1,34 @@
+Runner: apache_beam.runners.portability.fn_api_runner.FnApiRunner
+Runtime: 722.983 seconds
+
+Top 5 incoming:
+1. 5984.html: 233
+2. 6710.html: 210
+3. 9835.html: 209
+4. 1912.html: 208
+5. 10186.html: 207
+
+Top 5 outgoing:
+1. 10190.html: 323
+2. 10602.html: 323
+3. 10817.html: 323
+4. 10838.html: 323
+5. 10889.html: 323
+
+Top 5 trigrams:
+1. ad minim veniam: 1,946,934
+2. adipiscing elit sed: 1,946,934
+3. aliqua ut enim: 1,946,934
+4. aliquip ex ea: 1,946,934
+5. amet consectetur adipiscing: 1,946,934
+
+Totals:
+{
+  "words": 142126182,
+  "files": 12000,
+  "nonempty_word_files": 11971,
+  "bytes": 964428549,
+  "trigrams": 142102240,
+  "ignored_links": 0,
+  "outgoing": 1946934
+}

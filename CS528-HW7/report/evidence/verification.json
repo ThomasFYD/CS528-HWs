@@ -1,0 +1,165 @@
+{
+  "cloud": {
+    "beam_args": [
+      "--runner=DataflowRunner",
+      "--project=dazzling-seat-508219-j3",
+      "--region=us-central1",
+      "--job_name=cs528-hw7-20261109-01",
+      "--service_account_email=cs528-hw7-worker@dazzling-seat-508219-j3.iam.gserviceaccount.com",
+      "--temp_location=gs://cs528-hw7-yf-2026/tmp/run1",
+      "--staging_location=gs://cs528-hw7-yf-2026/staging/run1",
+      "--setup_file=./setup.py",
+      "--num_workers=2",
+      "--max_num_workers=2",
+      "--autoscaling_algorithm=NONE",
+      "--machine_type=e2-standard-2",
+      "--disk_size_gb=30",
+      "--sdk_worker_parallelism=1",
+      "--network=default",
+      "--labels=assignment=cs528-hw7"
+    ],
+    "beam_version": "2.77.0",
+    "elapsed_seconds": 1033.4722938749474,
+    "finished_at": "2026-11-09T23:26:47.385474+00:00",
+    "input": "gs://cs528-hw2-yf-2026/data/*.html",
+    "job_id": "2026-11-09_15_09_40-1204750077456012981",
+    "logical_cpus": 8,
+    "machine": "arm64",
+    "output": "gs://cs528-hw7-yf-2026/runs/run1/output",
+    "platform": "macOS-15.7.2-arm64-arm-64bit",
+    "python_version": "3.12.0",
+    "run_returned_seconds": 7.557906209025532,
+    "runner": "DataflowRunner",
+    "source_sha256": "60654e735557e7888544013faf5c08917fea853882aa7dff268b536c215bc34b",
+    "started_at": "2026-11-09T23:09:33.913572+00:00",
+    "state": "DONE",
+    "timing_definition": "perf_counter before pipeline construction through wait_until_finish; includes GCS input, output writes and runner startup, excludes environment installation and post-run verification"
+  },
+  "cloud_over_local_ratio": 1.4294567299288117,
+  "local": {
+    "beam_args": [
+      "--runner=apache_beam.runners.portability.fn_api_runner.FnApiRunner",
+      "--direct_running_mode=multi_threading",
+      "--direct_num_workers=8",
+      "--project=dazzling-seat-508219-j3"
+    ],
+    "beam_version": "2.77.0",
+    "elapsed_seconds": 722.9825654998422,
+    "finished_at": "2026-11-09T23:49:21.781249+00:00",
+    "input": "gs://cs528-hw2-yf-2026/data/*.html",
+    "logical_cpus": 8,
+    "machine": "arm64",
+    "output": "results/local-run2/output",
+    "platform": "macOS-15.7.2-arm64-arm-64bit",
+    "python_version": "3.12.0",
+    "run_returned_seconds": 722.9819618340116,
+    "runner": "apache_beam.runners.portability.fn_api_runner.FnApiRunner",
+    "source_sha256": "60654e735557e7888544013faf5c08917fea853882aa7dff268b536c215bc34b",
+    "started_at": "2026-11-09T23:37:18.718977+00:00",
+    "state": "DONE",
+    "timing_definition": "perf_counter before pipeline construction through wait_until_finish; includes GCS input, output writes and runner startup, excludes environment installation and post-run verification"
+  },
+  "results": {
+    "count_sha256": {
+      "incoming": "4391792a8037addec7889a3ef173481d1474ec57610d39a7127016a9c50a6dba",
+      "outgoing": "96cae3d86151fd6d5c3a291ec0d6ad1c9bb284b432f9eca5b648f7c62c89ef25",
+      "trigrams": "8cdba1a68e52a7a85dd8e446aac20cae6bc75646cb7cc317f953d283256f71c7"
+    },
+    "cutoff_ties": {
+      "incoming": {
+        "cutoff_count": 207,
+        "items_at_cutoff": 4
+      },
+      "outgoing": {
+        "cutoff_count": 323,
+        "items_at_cutoff": 34
+      },
+      "trigrams": {
+        "cutoff_count": 1946934,
+        "items_at_cutoff": 71
+      }
+    },
+    "distinct_trigrams": 73,
+    "file_audit_sha256": "091cc9e0faf0cd29fe865c14eed57bd480d45f2218b8da1ae003e34e758db4f7",
+    "input_sha256": "68a74d44e6b4fe3387206bf61abcdce770b6f2d109163bc4bca3529aa50a3ee5",
+    "top5": {
+      "incoming": [
+        {
+          "count": 233,
+          "item": "5984.html"
+        },
+        {
+          "count": 210,
+          "item": "6710.html"
+        },
+        {
+          "count": 209,
+          "item": "9835.html"
+        },
+        {
+          "count": 208,
+          "item": "1912.html"
+        },
+        {
+          "count": 207,
+          "item": "10186.html"
+        }
+      ],
+      "outgoing": [
+        {
+          "count": 323,
+          "item": "10190.html"
+        },
+        {
+          "count": 323,
+          "item": "10602.html"
+        },
+        {
+          "count": 323,
+          "item": "10817.html"
+        },
+        {
+          "count": 323,
+          "item": "10838.html"
+        },
+        {
+          "count": 323,
+          "item": "10889.html"
+        }
+      ],
+      "trigrams": [
+        {
+          "count": 1946934,
+          "item": "ad minim veniam"
+        },
+        {
+          "count": 1946934,
+          "item": "adipiscing elit sed"
+        },
+        {
+          "count": 1946934,
+          "item": "aliqua ut enim"
+        },
+        {
+          "count": 1946934,
+          "item": "aliquip ex ea"
+        },
+        {
+          "count": 1946934,
+          "item": "amet consectetur adipiscing"
+        }
+      ]
+    },
+    "totals": {
+      "bytes": 964428549,
+      "files": 12000,
+      "ignored_links": 0,
+      "nonempty_word_files": 11971,
+      "outgoing": 1946934,
+      "trigrams": 142102240,
+      "words": 142126182
+    },
+    "verified": true
+  },
+  "runners_match": true
+}

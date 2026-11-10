@@ -1,0 +1,13 @@
+{
+  "checked_at": "2026-11-09T23:27:47.188921+00:00",
+  "job_id": "2026-11-09_15_09_40-1204750077456012981",
+  "job_state": "JOB_STATE_DONE",
+  "remaining_worker_disks": [],
+  "remaining_worker_instances": [],
+  "retained": [
+    "private results bucket and output evidence",
+    "HW7 worker identity",
+    "original HW2 data"
+  ],
+  "verified": true
+}
