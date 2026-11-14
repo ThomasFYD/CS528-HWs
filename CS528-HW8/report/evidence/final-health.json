@@ -1,0 +1,34 @@
+[
+  {
+    "backend": "https://www.googleapis.com/compute/v1/projects/dazzling-seat-508219-j3/zones/us-central1-a/instanceGroups/cs528-hw8-web-a-group",
+    "status": {
+      "healthStatus": [
+        {
+          "forwardingRule": "https://www.googleapis.com/compute/v1/projects/dazzling-seat-508219-j3/regions/us-central1/forwardingRules/cs528-hw8-forwarding",
+          "forwardingRuleIp": "136.111.10.182",
+          "healthState": "HEALTHY",
+          "instance": "https://www.googleapis.com/compute/v1/projects/dazzling-seat-508219-j3/zones/us-central1-a/instances/cs528-hw8-web-a",
+          "ipAddress": "10.88.0.2",
+          "port": 80
+        }
+      ],
+      "kind": "compute#backendServiceGroupHealth"
+    }
+  },
+  {
+    "backend": "https://www.googleapis.com/compute/v1/projects/dazzling-seat-508219-j3/zones/us-central1-c/instanceGroups/cs528-hw8-web-b-group",
+    "status": {
+      "healthStatus": [
+        {
+          "forwardingRule": "https://www.googleapis.com/compute/v1/projects/dazzling-seat-508219-j3/regions/us-central1/forwardingRules/cs528-hw8-forwarding",
+          "forwardingRuleIp": "136.111.10.182",
+          "healthState": "HEALTHY",
+          "instance": "https://www.googleapis.com/compute/v1/projects/dazzling-seat-508219-j3/zones/us-central1-c/instances/cs528-hw8-web-b",
+          "ipAddress": "10.88.0.3",
+          "port": 80
+        }
+      ],
+      "kind": "compute#backendServiceGroupHealth"
+    }
+  }
+]

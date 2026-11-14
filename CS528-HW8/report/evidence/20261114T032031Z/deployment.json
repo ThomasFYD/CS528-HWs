@@ -1,0 +1,474 @@
+{
+  "forwarding": {
+    "IPAddress": "136.111.10.182",
+    "IPProtocol": "TCP",
+    "backendService": "https://www.googleapis.com/compute/v1/projects/dazzling-seat-508219-j3/regions/us-central1/backendServices/cs528-hw8-backend",
+    "creationTimestamp": "2026-11-13T16:12:53.114-08:00",
+    "description": "Managed by CS528 HW8 manage.py",
+    "fingerprint": "K1B4BMFJ1w0=",
+    "id": "3971901035841722730",
+    "kind": "compute#forwardingRule",
+    "labelFingerprint": "42WmSpB8rSM=",
+    "loadBalancingScheme": "EXTERNAL",
+    "name": "cs528-hw8-forwarding",
+    "networkTier": "PREMIUM",
+    "portRange": "8080-8080",
+    "region": "https://www.googleapis.com/compute/v1/projects/dazzling-seat-508219-j3/regions/us-central1",
+    "selfLink": "https://www.googleapis.com/compute/v1/projects/dazzling-seat-508219-j3/regions/us-central1/forwardingRules/cs528-hw8-forwarding",
+    "selfLinkWithId": "https://www.googleapis.com/compute/v1/projects/dazzling-seat-508219-j3/regions/us-central1/forwardingRules/3971901035841722730"
+  },
+  "backend": {
+    "affinityCookieTtlSec": 0,
+    "backends": [
+      {
+        "balancingMode": "CONNECTION",
+        "group": "https://www.googleapis.com/compute/v1/projects/dazzling-seat-508219-j3/zones/us-central1-a/instanceGroups/cs528-hw8-web-a-group"
+      },
+      {
+        "balancingMode": "CONNECTION",
+        "group": "https://www.googleapis.com/compute/v1/projects/dazzling-seat-508219-j3/zones/us-central1-c/instanceGroups/cs528-hw8-web-b-group"
+      }
+    ],
+    "connectionDraining": {
+      "drainingTimeoutSec": 0
+    },
+    "connectionTrackingPolicy": {
+      "connectionPersistenceOnUnhealthyBackends": "NEVER_PERSIST",
+      "idleTimeoutSec": 60,
+      "trackingMode": "PER_CONNECTION"
+    },
+    "creationTimestamp": "2026-11-13T16:11:58.960-08:00",
+    "description": "Managed by CS528 HW8 manage.py",
+    "enableCDN": false,
+    "fingerprint": "E6IzxZXfjtU=",
+    "healthChecks": [
+      "https://www.googleapis.com/compute/v1/projects/dazzling-seat-508219-j3/regions/us-central1/healthChecks/cs528-hw8-health"
+    ],
+    "id": "1814839958663993761",
+    "kind": "compute#backendService",
+    "loadBalancingScheme": "EXTERNAL",
+    "name": "cs528-hw8-backend",
+    "port": 80,
+    "portName": "http",
+    "protocol": "TCP",
+    "region": "https://www.googleapis.com/compute/v1/projects/dazzling-seat-508219-j3/regions/us-central1",
+    "selfLink": "https://www.googleapis.com/compute/v1/projects/dazzling-seat-508219-j3/regions/us-central1/backendServices/cs528-hw8-backend",
+    "sessionAffinity": "NONE",
+    "timeoutSec": 30
+  },
+  "health_check": {
+    "checkIntervalSec": 2,
+    "creationTimestamp": "2026-11-13T16:11:56.100-08:00",
+    "description": "Managed by CS528 HW8 manage.py",
+    "healthyThreshold": 2,
+    "httpHealthCheck": {
+      "port": 8080,
+      "portSpecification": "USE_FIXED_PORT",
+      "proxyHeader": "NONE",
+      "requestPath": "/healthz"
+    },
+    "id": "1996469469867284899",
+    "kind": "compute#healthCheck",
+    "name": "cs528-hw8-health",
+    "region": "https://www.googleapis.com/compute/v1/projects/dazzling-seat-508219-j3/regions/us-central1",
+    "selfLink": "https://www.googleapis.com/compute/v1/projects/dazzling-seat-508219-j3/regions/us-central1/healthChecks/cs528-hw8-health",
+    "timeoutSec": 1,
+    "type": "HTTP",
+    "unhealthyThreshold": 2
+  },
+  "address": {
+    "address": "136.111.10.182",
+    "addressType": "EXTERNAL",
+    "creationTimestamp": "2026-11-13T16:12:49.795-08:00",
+    "description": "Managed by CS528 HW8 manage.py",
+    "id": "8704675569756412270",
+    "kind": "compute#address",
+    "labelFingerprint": "42WmSpB8rSM=",
+    "name": "cs528-hw8-ip",
+    "networkTier": "PREMIUM",
+    "region": "https://www.googleapis.com/compute/v1/projects/dazzling-seat-508219-j3/regions/us-central1",
+    "selfLink": "https://www.googleapis.com/compute/v1/projects/dazzling-seat-508219-j3/regions/us-central1/addresses/cs528-hw8-ip",
+    "status": "IN_USE",
+    "users": [
+      "https://www.googleapis.com/compute/v1/projects/dazzling-seat-508219-j3/regions/us-central1/forwardingRules/cs528-hw8-forwarding"
+    ]
+  },
+  "cs528-hw8-web-a": {
+    "canIpForward": false,
+    "cpuPlatform": "Intel Haswell",
+    "creationTimestamp": "2026-11-13T16:11:04.786-08:00",
+    "deletionProtection": false,
+    "description": "Managed by CS528 HW8 manage.py",
+    "disks": [
+      {
+        "architecture": "X86_64",
+        "autoDelete": true,
+        "boot": true,
+        "deviceName": "persistent-disk-0",
+        "diskSizeGb": "10",
+        "guestOsFeatures": [
+          {
+            "type": "UEFI_COMPATIBLE"
+          },
+          {
+            "type": "VIRTIO_SCSI_MULTIQUEUE"
+          },
+          {
+            "type": "GVNIC"
+          },
+          {
+            "type": "SEV_CAPABLE"
+          },
+          {
+            "type": "SEV_LIVE_MIGRATABLE_V2"
+          },
+          {
+            "type": "SUSPEND_SAFE_FPR"
+          }
+        ],
+        "index": 0,
+        "interface": "SCSI",
+        "kind": "compute#attachedDisk",
+        "licenses": [
+          "https://www.googleapis.com/compute/v1/projects/debian-cloud/global/licenses/debian-12-bookworm"
+        ],
+        "mode": "READ_WRITE",
+        "source": "https://www.googleapis.com/compute/v1/projects/dazzling-seat-508219-j3/zones/us-central1-a/disks/cs528-hw8-web-a-boot",
+        "type": "PERSISTENT"
+      }
+    ],
+    "fingerprint": "S5VwgpJrbuU=",
+    "id": "9210291291778849271",
+    "kind": "compute#instance",
+    "labelFingerprint": "MxwVLkd40-A=",
+    "labels": {
+      "course": "cs528",
+      "homework": "hw8",
+      "source": "b4486bcb8c6d5fca23447e66264585f5"
+    },
+    "lastStartTimestamp": "2026-11-13T16:11:11.732-08:00",
+    "machineType": "https://www.googleapis.com/compute/v1/projects/dazzling-seat-508219-j3/zones/us-central1-a/machineTypes/f1-micro",
+    "metadata": {
+      "fingerprint": "4qTl9ipVYZM=",
+      "items": [
+        {
+          "key": "startup-script",
+          "value": "#!/bin/bash\nset -euo pipefail\nexport DEBIAN_FRONTEND=noninteractive\ninstall -d -m 755 /opt/cs528-hw8\nif ! id hw8 >/dev/null 2>&1; then\n  useradd --system --home-dir /opt/cs528-hw8 --shell /usr/sbin/nologin hw8\nfi\nif [ ! -f /opt/cs528-hw8/.dependencies-573863460936a61b894e0f8fd09b0ddd681f2377428e2b6725e2dde96ad3f9f4 ]; then\n  apt-get -o Acquire::Retries=3 update\n  apt-get -o DPkg::Lock::Timeout=180 install -y python3 python3-venv ca-certificates\n  python3 -m venv /opt/cs528-hw8/venv\ncat > /opt/cs528-hw8/requirements.txt <<'HW8_573863460936a61b894e0f8fd09b0ddd681f2377428e2b6725e2dde96ad3f9f4'\ngoogle-cloud-storage>=3,<4\ngoogle-cloud-pubsub>=2,<3\ngoogle-cloud-logging>=3,<4\n\nHW8_573863460936a61b894e0f8fd09b0ddd681f2377428e2b6725e2dde96ad3f9f4\n  /opt/cs528-hw8/venv/bin/python -m pip install --no-cache-dir --only-binary=:all: -r /opt/cs528-hw8/requirements.txt\n  /opt/cs528-hw8/venv/bin/python -m pip freeze > /opt/cs528-hw8/installed-requirements.txt\n  touch /opt/cs528-hw8/.dependencies-573863460936a61b894e0f8fd09b0ddd681f2377428e2b6725e2dde96ad3f9f4\nfi\ncat > /opt/cs528-hw8/web_server.py <<'HW8_d9463349669d30fe14908c2d16a7f7a88e3779c79059d47d5a64d0b459198995'\n\"\"\"HW8 file service: HW4 behavior plus zone headers and application health checks.\"\"\"\n\nimport argparse\nimport json\nimport mimetypes\nimport os\nimport re\nimport socket\nimport time\nimport uuid\nfrom datetime import datetime, timezone\nfrom http.server import BaseHTTPRequestHandler, ThreadingHTTPServer\nfrom urllib.parse import unquote, urlsplit\nfrom urllib.request import Request, ProxyHandler, build_opener\n\n\n# Assignment simulation, not a current legal sanctions list.\nCOUNTRIES = {name.casefold(): name for name in (\n    \"North Korea\", \"Iran\", \"Cuba\", \"Myanmar\", \"Iraq\", \"Libya\", \"Sudan\",\n    \"Zimbabwe\", \"Syria\",\n)}\nCOUNTRIES.update({\n    \"korea, democratic people's republic of\": \"North Korea\",\n    \"democratic people's republic of korea\": \"North Korea\",\n    \"iran, islamic republic of\": \"Iran\",\n    \"syrian arab republic\": \"Syria\",\n})\nMAX_BODY = 65536\n\n\nclass MissingObject(Exception):\n    pass\n\n\nclass CloudBackend:\n    def __init__(self, project, bucket, topic):\n        from google.cloud import logging as cloud_logging, pubsub_v1, storage\n        from google.api_core.exceptions import NotFound\n\n        self.not_found = NotFound\n        self.bucket = storage.Client(project=project).bucket(bucket)\n        self.publisher = pubsub_v1.PublisherClient()\n        self.topic = self.publisher.topic_path(project, topic)\n        # VM attached-service-account credentials are discovered automatically.\n        # log_struct writes to the API; VM stdout alone is not Cloud Logging.\n        self.logger = cloud_logging.Client(project=project).logger(\"cs528-hw8-web\")\n\n    def read(self, name):\n        blob = self.bucket.blob(name)\n        try:\n            contents = blob.download_as_bytes(timeout=20, retry=None)\n        except self.not_found as exc:\n            raise MissingObject(name) from exc\n        return contents, blob.content_type or mimetypes.guess_type(name)[0] or \"application/octet-stream\"\n\n    def log(self, entry, severity):\n        self.logger.log_struct(entry, severity=severity)\n\n    def publish(self, event):\n        return self.publisher.publish(\n            self.topic, json.dumps(event).encode(), event_id=event[\"event_id\"]\n        ).result(timeout=15)\n\n\nclass Application:\n    def __init__(self, bucket, backend):\n        self.bucket, self.backend = bucket, backend\n\n    def log(self, severity, entry):\n        print(json.dumps({\"severity\": severity, **entry}), flush=True)\n        try:\n            self.backend.log(entry, severity)\n        except Exception as exc:\n            # Preserve an HTTP error even during a logging outage, but make the\n            # delivery failure explicit in journalctl; live acceptance must check\n            # that the corresponding Cloud Logging entries actually exist.\n            print(json.dumps({\"severity\": \"ERROR\", \"event\": \"cloud_logging_failed\",\n                              \"error_type\": type(exc).__name__, \"original\": entry}), flush=True)\n\n    def error(self, method, path, status, severity, event, message, **details):\n        self.log(severity, {\"timestamp\": datetime.now(timezone.utc).isoformat(),\n                            \"method\": method, \"path\": path, \"status\": status,\n                            \"event\": event, \"message\": message, **details})\n        return status, (message + \"\\n\").encode(), \"text/plain; charset=utf-8\"\n\n    def handle(self, method, path, country=\"\", body=b\"\"):\n        if method not in (\"GET\", \"POST\"):\n            return self.error(method, path, 501, \"ERROR\", \"unsupported_method\",\n                              \"HTTP method not implemented.\")\n        canonical = COUNTRIES.get(\" \".join(country.split()).casefold())\n        if canonical:\n            event = {\"event_id\": str(uuid.uuid4()), \"event\": \"forbidden_country\",\n                     \"timestamp\": datetime.now(timezone.utc).isoformat(),\n                     \"method\": method, \"path\": path, \"country\": canonical,\n                     \"country_header\": country, \"status\": 400,\n                     \"message\": f\"Permission denied: request from {canonical}.\"}\n            # Log CRITICAL even if Pub/Sub is unavailable. Never read the object.\n            self.log(\"CRITICAL\", event)\n            try:\n                self.backend.publish(event)\n            except Exception as exc:\n                return self.error(method, path, 503, \"ERROR\", \"pubsub_publish_failed\",\n                                  \"Permission denied; notification delivery unconfirmed.\",\n                                  event_id=event[\"event_id\"], error_type=type(exc).__name__)\n            # Keep HW3's assignment-specific 400 instead of silently changing to 403.\n            return 400, (event[\"message\"] + \"\\n\").encode(), \"text/plain; charset=utf-8\"\n\n        if method == \"GET\":\n            try:\n                filename = unquote(urlsplit(path).path)\n            except ValueError:\n                return self.error(method, path, 400, \"WARNING\", \"invalid_path\",\n                                  \"Invalid request path.\")\n        else:\n            try:\n                payload = json.loads(body)\n                filename = payload.get(\"filename\") if isinstance(payload, dict) else None\n                if not isinstance(filename, str) or not filename.strip():\n                    raise ValueError(\"missing filename\")\n            except (ValueError, UnicodeError):\n                return self.error(method, path, 400, \"WARNING\", \"invalid_payload\",\n                                  \"POST requires JSON with a nonempty filename string.\")\n        name = filename.lstrip(\"/\")\n        if name.startswith(self.bucket + \"/\"):\n            name = name[len(self.bucket) + 1:]\n        if not name.startswith(\"data/\") or name == \"data/\":\n            return self.error(method, path, 404, \"WARNING\", \"file_not_found\",\n                              \"File not found.\", object_name=name)\n        try:\n            contents, content_type = self.backend.read(name)\n        except MissingObject:\n            return self.error(method, path, 404, \"WARNING\", \"file_not_found\",\n                              \"File not found.\", object_name=name)\n        except Exception as exc:\n            return self.error(method, path, 500, \"ERROR\", \"storage_error\",\n                              \"Unable to read the storage object.\", object_name=name,\n                              error_type=type(exc).__name__)\n        return 200, contents, content_type\n\n\ndef validate_zone(zone):\n    if not re.fullmatch(r\"[a-z]+-[a-z]+[0-9]+-[a-z]\", zone):\n        raise ValueError(\"Invalid GCE zone: \" + repr(zone))\n    return zone\n\n\ndef metadata_zone():\n    \"\"\"Read actual VM location once at startup; do not silently invent a zone.\"\"\"\n    request = Request(\"http://metadata.google.internal/computeMetadata/v1/instance/zone\",\n                      headers={\"Metadata-Flavor\": \"Google\"})\n    opener = build_opener(ProxyHandler({}))\n    for attempt in range(5):\n        try:\n            with opener.open(request, timeout=2) as response:\n                if response.headers.get(\"Metadata-Flavor\") != \"Google\":\n                    raise ValueError(\"Unexpected metadata response\")\n                return validate_zone(response.read(1024).decode().strip().rsplit(\"/\", 1)[-1])\n        except (OSError, ValueError):\n            if attempt == 4:\n                raise\n            time.sleep(1)\n\n\nclass FileServer(ThreadingHTTPServer):\n    # Health probes must not queue behind a slow file download or idle socket.\n    request_queue_size = 64\n    daemon_threads = True\n\n    def __init__(self, address, application, zone):\n        self.application = application\n        self.zone = validate_zone(zone)\n        super().__init__(address, FileHandler)\n\n    def get_request(self):\n        connection, address = super().get_request()\n        connection.settimeout(10)\n        return connection, address\n\n\nclass FileHandler(BaseHTTPRequestHandler):\n    protocol_version = \"HTTP/1.1\"\n\n    def end_headers(self):\n        # Also covers BaseHTTPRequestHandler's generated error responses.\n        self.send_header(\"X-Server-Zone\", self.server.zone)\n        super().end_headers()\n\n    def log_message(self, *_):\n        # Per-success stdout would distort the stress test. Errors use Application.log.\n        pass\n\n    def reply(self, result):\n        status, data, content_type = result\n        self.send_response(status)\n        self.send_header(\"Content-Type\", content_type)\n        self.send_header(\"Content-Length\", str(len(data)))\n        self.send_header(\"Cache-Control\", \"no-store\")\n        self.send_header(\"Connection\", \"close\")\n        self.end_headers()\n        self.close_connection = True\n        if self.command != \"HEAD\":\n            try:\n                self.wfile.write(data)\n            except (BrokenPipeError, ConnectionResetError, socket.timeout):\n                pass\n\n    def dispatch(self):\n        app = self.server.application\n        if self.command == \"GET\" and self.path == \"/healthz\":\n            self.reply((200, b\"ok\\n\", \"text/plain; charset=utf-8\"))\n            return\n        body = b\"\"\n        if self.command == \"POST\":\n            try:\n                lengths = self.headers.get_all(\"Content-Length\", [])\n                if self.headers.get(\"Transfer-Encoding\") or len(lengths) != 1:\n                    raise ValueError(\"ambiguous or missing request length\")\n                length = int(lengths[0])\n                if not 0 <= length <= MAX_BODY:\n                    raise ValueError(\"invalid body size\")\n                body = self.rfile.read(length)\n                if len(body) != length:\n                    raise ValueError(\"incomplete body\")\n            except (ValueError, socket.timeout):\n                self.reply(app.error(self.command, self.path, 400, \"WARNING\",\n                                     \"invalid_payload\", \"Invalid POST body or Content-Length.\"))\n                return\n        self.reply(app.handle(self.command, self.path,\n                              self.headers.get(\"X-country\", \"\"), body))\n\n    do_GET = do_POST = dispatch\n    do_PUT = do_DELETE = do_HEAD = do_CONNECT = do_OPTIONS = do_TRACE = do_PATCH = dispatch\n\n    def __getattr__(self, name):\n        if name.startswith(\"do_\"):\n            return self.dispatch\n        raise AttributeError(name)\n\n\ndef main():\n    parser = argparse.ArgumentParser(description=__doc__)\n    parser.add_argument(\"--port\", type=int, default=int(os.environ.get(\"PORT\", \"8080\")))\n    parser.add_argument(\"--zone\", help=\"Explicit zone for local testing only; GCE uses metadata by default\")\n    args = parser.parse_args()\n    zone = validate_zone(args.zone) if args.zone else metadata_zone()\n    project, bucket = os.environ[\"PROJECT_ID\"], os.environ[\"BUCKET_NAME\"]\n    app = Application(bucket, CloudBackend(project, bucket, os.environ[\"TOPIC_ID\"]))\n    with FileServer((\"0.0.0.0\", args.port), app, zone) as server:\n        print(f\"Listening on port {args.port}; zone={zone}; threaded requests\", flush=True)\n        server.serve_forever()\n\n\nif __name__ == \"__main__\":\n    main()\n\nHW8_d9463349669d30fe14908c2d16a7f7a88e3779c79059d47d5a64d0b459198995\ncat > /etc/cs528-hw8.env <<'HW8_ae11c6347292f72faa8b183f672a98d47123772681740d458eae3ead03fd2733'\nPROJECT_ID=\"dazzling-seat-508219-j3\"\nBUCKET_NAME=\"cs528-hw2-yf-2026\"\nTOPIC_ID=\"cs528-hw8-forbidden\"\nSUBSCRIPTION_ID=\"cs528-hw8-forbidden-sub\"\nPORT=\"8080\"\nHW8_ae11c6347292f72faa8b183f672a98d47123772681740d458eae3ead03fd2733\ncat > /etc/systemd/system/cs528-hw8-web.service <<'HW8_aca0bf64d7227b74a395036275c8a94ae1207b5ca6c9a850198f48d054b77f6d'\n[Unit]\nDescription=CS528 HW8 web service\nWants=network-online.target\nAfter=network-online.target\nStartLimitIntervalSec=0\n\n[Service]\nType=simple\nUser=hw8\nGroup=hw8\nWorkingDirectory=/opt/cs528-hw8\nEnvironmentFile=/etc/cs528-hw8.env\nEnvironment=PYTHONUNBUFFERED=1\nExecStart=/opt/cs528-hw8/venv/bin/python -u /opt/cs528-hw8/web_server.py\nRestart=no\nRestartSec=5\nNoNewPrivileges=true\nPrivateTmp=true\nProtectHome=true\nProtectSystem=full\nStandardOutput=journal\nStandardError=journal\n\n[Install]\nWantedBy=multi-user.target\n\nHW8_aca0bf64d7227b74a395036275c8a94ae1207b5ca6c9a850198f48d054b77f6d\nchmod 644 /etc/cs528-hw8.env /opt/cs528-hw8/web_server.py\nsystemctl daemon-reload\nsystemctl enable cs528-hw8-web.service\nsystemctl restart cs528-hw8-web.service\nsystemctl --no-pager status cs528-hw8-web.service\n"
+        }
+      ],
+      "kind": "compute#metadata"
+    },
+    "name": "cs528-hw8-web-a",
+    "networkInterfaces": [
+      {
+        "accessConfigs": [
+          {
+            "kind": "compute#accessConfig",
+            "name": "external-nat",
+            "natIP": "34.56.116.149",
+            "networkTier": "PREMIUM",
+            "type": "ONE_TO_ONE_NAT"
+          }
+        ],
+        "fingerprint": "vyAxP9cW9Lw=",
+        "kind": "compute#networkInterface",
+        "name": "nic0",
+        "network": "https://www.googleapis.com/compute/v1/projects/dazzling-seat-508219-j3/global/networks/cs528-hw8-network",
+        "networkIP": "10.88.0.2",
+        "stackType": "IPV4_ONLY",
+        "subnetwork": "https://www.googleapis.com/compute/v1/projects/dazzling-seat-508219-j3/regions/us-central1/subnetworks/cs528-hw8-subnet"
+      }
+    ],
+    "resourceStatus": {
+      "effectiveInstanceMetadata": {
+        "vmDnsSettingMetadataValue": "GlobalDefault"
+      }
+    },
+    "satisfiesPzi": false,
+    "scheduling": {
+      "automaticRestart": true,
+      "onHostMaintenance": "MIGRATE",
+      "preemptible": false,
+      "provisioningModel": "STANDARD"
+    },
+    "selfLink": "https://www.googleapis.com/compute/v1/projects/dazzling-seat-508219-j3/zones/us-central1-a/instances/cs528-hw8-web-a",
+    "serviceAccounts": [
+      {
+        "email": "cs528-hw4-web-sa@dazzling-seat-508219-j3.iam.gserviceaccount.com",
+        "scopes": [
+          "https://www.googleapis.com/auth/cloud-platform"
+        ]
+      }
+    ],
+    "shieldedInstanceConfig": {
+      "enableIntegrityMonitoring": true,
+      "enableSecureBoot": false,
+      "enableVtpm": true
+    },
+    "shieldedInstanceIntegrityPolicy": {
+      "updateAutoLearnPolicy": true
+    },
+    "startRestricted": false,
+    "status": "RUNNING",
+    "tags": {
+      "fingerprint": "lPrjVRzgZKc=",
+      "items": [
+        "cs528-hw8",
+        "cs528-hw8-web"
+      ]
+    },
+    "zone": "https://www.googleapis.com/compute/v1/projects/dazzling-seat-508219-j3/zones/us-central1-a"
+  },
+  "cs528-hw8-web-b": {
+    "canIpForward": false,
+    "cpuPlatform": "Intel Haswell",
+    "creationTimestamp": "2026-11-13T16:11:22.756-08:00",
+    "deletionProtection": false,
+    "description": "Managed by CS528 HW8 manage.py",
+    "disks": [
+      {
+        "architecture": "X86_64",
+        "autoDelete": true,
+        "boot": true,
+        "deviceName": "persistent-disk-0",
+        "diskSizeGb": "10",
+        "guestOsFeatures": [
+          {
+            "type": "UEFI_COMPATIBLE"
+          },
+          {
+            "type": "VIRTIO_SCSI_MULTIQUEUE"
+          },
+          {
+            "type": "GVNIC"
+          },
+          {
+            "type": "SEV_CAPABLE"
+          },
+          {
+            "type": "SEV_LIVE_MIGRATABLE_V2"
+          },
+          {
+            "type": "SUSPEND_SAFE_FPR"
+          }
+        ],
+        "index": 0,
+        "interface": "SCSI",
+        "kind": "compute#attachedDisk",
+        "licenses": [
+          "https://www.googleapis.com/compute/v1/projects/debian-cloud/global/licenses/debian-12-bookworm"
+        ],
+        "mode": "READ_WRITE",
+        "source": "https://www.googleapis.com/compute/v1/projects/dazzling-seat-508219-j3/zones/us-central1-c/disks/cs528-hw8-web-b-boot",
+        "type": "PERSISTENT"
+      }
+    ],
+    "fingerprint": "bOLSUuzsP_U=",
+    "id": "6538105907431741893",
+    "kind": "compute#instance",
+    "labelFingerprint": "MxwVLkd40-A=",
+    "labels": {
+      "course": "cs528",
+      "homework": "hw8",
+      "source": "b4486bcb8c6d5fca23447e66264585f5"
+    },
+    "lastStartTimestamp": "2026-11-13T16:11:30.557-08:00",
+    "machineType": "https://www.googleapis.com/compute/v1/projects/dazzling-seat-508219-j3/zones/us-central1-c/machineTypes/f1-micro",
+    "metadata": {
+      "fingerprint": "4qTl9ipVYZM=",
+      "items": [
+        {
+          "key": "startup-script",
+          "value": "#!/bin/bash\nset -euo pipefail\nexport DEBIAN_FRONTEND=noninteractive\ninstall -d -m 755 /opt/cs528-hw8\nif ! id hw8 >/dev/null 2>&1; then\n  useradd --system --home-dir /opt/cs528-hw8 --shell /usr/sbin/nologin hw8\nfi\nif [ ! -f /opt/cs528-hw8/.dependencies-573863460936a61b894e0f8fd09b0ddd681f2377428e2b6725e2dde96ad3f9f4 ]; then\n  apt-get -o Acquire::Retries=3 update\n  apt-get -o DPkg::Lock::Timeout=180 install -y python3 python3-venv ca-certificates\n  python3 -m venv /opt/cs528-hw8/venv\ncat > /opt/cs528-hw8/requirements.txt <<'HW8_573863460936a61b894e0f8fd09b0ddd681f2377428e2b6725e2dde96ad3f9f4'\ngoogle-cloud-storage>=3,<4\ngoogle-cloud-pubsub>=2,<3\ngoogle-cloud-logging>=3,<4\n\nHW8_573863460936a61b894e0f8fd09b0ddd681f2377428e2b6725e2dde96ad3f9f4\n  /opt/cs528-hw8/venv/bin/python -m pip install --no-cache-dir --only-binary=:all: -r /opt/cs528-hw8/requirements.txt\n  /opt/cs528-hw8/venv/bin/python -m pip freeze > /opt/cs528-hw8/installed-requirements.txt\n  touch /opt/cs528-hw8/.dependencies-573863460936a61b894e0f8fd09b0ddd681f2377428e2b6725e2dde96ad3f9f4\nfi\ncat > /opt/cs528-hw8/web_server.py <<'HW8_d9463349669d30fe14908c2d16a7f7a88e3779c79059d47d5a64d0b459198995'\n\"\"\"HW8 file service: HW4 behavior plus zone headers and application health checks.\"\"\"\n\nimport argparse\nimport json\nimport mimetypes\nimport os\nimport re\nimport socket\nimport time\nimport uuid\nfrom datetime import datetime, timezone\nfrom http.server import BaseHTTPRequestHandler, ThreadingHTTPServer\nfrom urllib.parse import unquote, urlsplit\nfrom urllib.request import Request, ProxyHandler, build_opener\n\n\n# Assignment simulation, not a current legal sanctions list.\nCOUNTRIES = {name.casefold(): name for name in (\n    \"North Korea\", \"Iran\", \"Cuba\", \"Myanmar\", \"Iraq\", \"Libya\", \"Sudan\",\n    \"Zimbabwe\", \"Syria\",\n)}\nCOUNTRIES.update({\n    \"korea, democratic people's republic of\": \"North Korea\",\n    \"democratic people's republic of korea\": \"North Korea\",\n    \"iran, islamic republic of\": \"Iran\",\n    \"syrian arab republic\": \"Syria\",\n})\nMAX_BODY = 65536\n\n\nclass MissingObject(Exception):\n    pass\n\n\nclass CloudBackend:\n    def __init__(self, project, bucket, topic):\n        from google.cloud import logging as cloud_logging, pubsub_v1, storage\n        from google.api_core.exceptions import NotFound\n\n        self.not_found = NotFound\n        self.bucket = storage.Client(project=project).bucket(bucket)\n        self.publisher = pubsub_v1.PublisherClient()\n        self.topic = self.publisher.topic_path(project, topic)\n        # VM attached-service-account credentials are discovered automatically.\n        # log_struct writes to the API; VM stdout alone is not Cloud Logging.\n        self.logger = cloud_logging.Client(project=project).logger(\"cs528-hw8-web\")\n\n    def read(self, name):\n        blob = self.bucket.blob(name)\n        try:\n            contents = blob.download_as_bytes(timeout=20, retry=None)\n        except self.not_found as exc:\n            raise MissingObject(name) from exc\n        return contents, blob.content_type or mimetypes.guess_type(name)[0] or \"application/octet-stream\"\n\n    def log(self, entry, severity):\n        self.logger.log_struct(entry, severity=severity)\n\n    def publish(self, event):\n        return self.publisher.publish(\n            self.topic, json.dumps(event).encode(), event_id=event[\"event_id\"]\n        ).result(timeout=15)\n\n\nclass Application:\n    def __init__(self, bucket, backend):\n        self.bucket, self.backend = bucket, backend\n\n    def log(self, severity, entry):\n        print(json.dumps({\"severity\": severity, **entry}), flush=True)\n        try:\n            self.backend.log(entry, severity)\n        except Exception as exc:\n            # Preserve an HTTP error even during a logging outage, but make the\n            # delivery failure explicit in journalctl; live acceptance must check\n            # that the corresponding Cloud Logging entries actually exist.\n            print(json.dumps({\"severity\": \"ERROR\", \"event\": \"cloud_logging_failed\",\n                              \"error_type\": type(exc).__name__, \"original\": entry}), flush=True)\n\n    def error(self, method, path, status, severity, event, message, **details):\n        self.log(severity, {\"timestamp\": datetime.now(timezone.utc).isoformat(),\n                            \"method\": method, \"path\": path, \"status\": status,\n                            \"event\": event, \"message\": message, **details})\n        return status, (message + \"\\n\").encode(), \"text/plain; charset=utf-8\"\n\n    def handle(self, method, path, country=\"\", body=b\"\"):\n        if method not in (\"GET\", \"POST\"):\n            return self.error(method, path, 501, \"ERROR\", \"unsupported_method\",\n                              \"HTTP method not implemented.\")\n        canonical = COUNTRIES.get(\" \".join(country.split()).casefold())\n        if canonical:\n            event = {\"event_id\": str(uuid.uuid4()), \"event\": \"forbidden_country\",\n                     \"timestamp\": datetime.now(timezone.utc).isoformat(),\n                     \"method\": method, \"path\": path, \"country\": canonical,\n                     \"country_header\": country, \"status\": 400,\n                     \"message\": f\"Permission denied: request from {canonical}.\"}\n            # Log CRITICAL even if Pub/Sub is unavailable. Never read the object.\n            self.log(\"CRITICAL\", event)\n            try:\n                self.backend.publish(event)\n            except Exception as exc:\n                return self.error(method, path, 503, \"ERROR\", \"pubsub_publish_failed\",\n                                  \"Permission denied; notification delivery unconfirmed.\",\n                                  event_id=event[\"event_id\"], error_type=type(exc).__name__)\n            # Keep HW3's assignment-specific 400 instead of silently changing to 403.\n            return 400, (event[\"message\"] + \"\\n\").encode(), \"text/plain; charset=utf-8\"\n\n        if method == \"GET\":\n            try:\n                filename = unquote(urlsplit(path).path)\n            except ValueError:\n                return self.error(method, path, 400, \"WARNING\", \"invalid_path\",\n                                  \"Invalid request path.\")\n        else:\n            try:\n                payload = json.loads(body)\n                filename = payload.get(\"filename\") if isinstance(payload, dict) else None\n                if not isinstance(filename, str) or not filename.strip():\n                    raise ValueError(\"missing filename\")\n            except (ValueError, UnicodeError):\n                return self.error(method, path, 400, \"WARNING\", \"invalid_payload\",\n                                  \"POST requires JSON with a nonempty filename string.\")\n        name = filename.lstrip(\"/\")\n        if name.startswith(self.bucket + \"/\"):\n            name = name[len(self.bucket) + 1:]\n        if not name.startswith(\"data/\") or name == \"data/\":\n            return self.error(method, path, 404, \"WARNING\", \"file_not_found\",\n                              \"File not found.\", object_name=name)\n        try:\n            contents, content_type = self.backend.read(name)\n        except MissingObject:\n            return self.error(method, path, 404, \"WARNING\", \"file_not_found\",\n                              \"File not found.\", object_name=name)\n        except Exception as exc:\n            return self.error(method, path, 500, \"ERROR\", \"storage_error\",\n                              \"Unable to read the storage object.\", object_name=name,\n                              error_type=type(exc).__name__)\n        return 200, contents, content_type\n\n\ndef validate_zone(zone):\n    if not re.fullmatch(r\"[a-z]+-[a-z]+[0-9]+-[a-z]\", zone):\n        raise ValueError(\"Invalid GCE zone: \" + repr(zone))\n    return zone\n\n\ndef metadata_zone():\n    \"\"\"Read actual VM location once at startup; do not silently invent a zone.\"\"\"\n    request = Request(\"http://metadata.google.internal/computeMetadata/v1/instance/zone\",\n                      headers={\"Metadata-Flavor\": \"Google\"})\n    opener = build_opener(ProxyHandler({}))\n    for attempt in range(5):\n        try:\n            with opener.open(request, timeout=2) as response:\n                if response.headers.get(\"Metadata-Flavor\") != \"Google\":\n                    raise ValueError(\"Unexpected metadata response\")\n                return validate_zone(response.read(1024).decode().strip().rsplit(\"/\", 1)[-1])\n        except (OSError, ValueError):\n            if attempt == 4:\n                raise\n            time.sleep(1)\n\n\nclass FileServer(ThreadingHTTPServer):\n    # Health probes must not queue behind a slow file download or idle socket.\n    request_queue_size = 64\n    daemon_threads = True\n\n    def __init__(self, address, application, zone):\n        self.application = application\n        self.zone = validate_zone(zone)\n        super().__init__(address, FileHandler)\n\n    def get_request(self):\n        connection, address = super().get_request()\n        connection.settimeout(10)\n        return connection, address\n\n\nclass FileHandler(BaseHTTPRequestHandler):\n    protocol_version = \"HTTP/1.1\"\n\n    def end_headers(self):\n        # Also covers BaseHTTPRequestHandler's generated error responses.\n        self.send_header(\"X-Server-Zone\", self.server.zone)\n        super().end_headers()\n\n    def log_message(self, *_):\n        # Per-success stdout would distort the stress test. Errors use Application.log.\n        pass\n\n    def reply(self, result):\n        status, data, content_type = result\n        self.send_response(status)\n        self.send_header(\"Content-Type\", content_type)\n        self.send_header(\"Content-Length\", str(len(data)))\n        self.send_header(\"Cache-Control\", \"no-store\")\n        self.send_header(\"Connection\", \"close\")\n        self.end_headers()\n        self.close_connection = True\n        if self.command != \"HEAD\":\n            try:\n                self.wfile.write(data)\n            except (BrokenPipeError, ConnectionResetError, socket.timeout):\n                pass\n\n    def dispatch(self):\n        app = self.server.application\n        if self.command == \"GET\" and self.path == \"/healthz\":\n            self.reply((200, b\"ok\\n\", \"text/plain; charset=utf-8\"))\n            return\n        body = b\"\"\n        if self.command == \"POST\":\n            try:\n                lengths = self.headers.get_all(\"Content-Length\", [])\n                if self.headers.get(\"Transfer-Encoding\") or len(lengths) != 1:\n                    raise ValueError(\"ambiguous or missing request length\")\n                length = int(lengths[0])\n                if not 0 <= length <= MAX_BODY:\n                    raise ValueError(\"invalid body size\")\n                body = self.rfile.read(length)\n                if len(body) != length:\n                    raise ValueError(\"incomplete body\")\n            except (ValueError, socket.timeout):\n                self.reply(app.error(self.command, self.path, 400, \"WARNING\",\n                                     \"invalid_payload\", \"Invalid POST body or Content-Length.\"))\n                return\n        self.reply(app.handle(self.command, self.path,\n                              self.headers.get(\"X-country\", \"\"), body))\n\n    do_GET = do_POST = dispatch\n    do_PUT = do_DELETE = do_HEAD = do_CONNECT = do_OPTIONS = do_TRACE = do_PATCH = dispatch\n\n    def __getattr__(self, name):\n        if name.startswith(\"do_\"):\n            return self.dispatch\n        raise AttributeError(name)\n\n\ndef main():\n    parser = argparse.ArgumentParser(description=__doc__)\n    parser.add_argument(\"--port\", type=int, default=int(os.environ.get(\"PORT\", \"8080\")))\n    parser.add_argument(\"--zone\", help=\"Explicit zone for local testing only; GCE uses metadata by default\")\n    args = parser.parse_args()\n    zone = validate_zone(args.zone) if args.zone else metadata_zone()\n    project, bucket = os.environ[\"PROJECT_ID\"], os.environ[\"BUCKET_NAME\"]\n    app = Application(bucket, CloudBackend(project, bucket, os.environ[\"TOPIC_ID\"]))\n    with FileServer((\"0.0.0.0\", args.port), app, zone) as server:\n        print(f\"Listening on port {args.port}; zone={zone}; threaded requests\", flush=True)\n        server.serve_forever()\n\n\nif __name__ == \"__main__\":\n    main()\n\nHW8_d9463349669d30fe14908c2d16a7f7a88e3779c79059d47d5a64d0b459198995\ncat > /etc/cs528-hw8.env <<'HW8_ae11c6347292f72faa8b183f672a98d47123772681740d458eae3ead03fd2733'\nPROJECT_ID=\"dazzling-seat-508219-j3\"\nBUCKET_NAME=\"cs528-hw2-yf-2026\"\nTOPIC_ID=\"cs528-hw8-forbidden\"\nSUBSCRIPTION_ID=\"cs528-hw8-forbidden-sub\"\nPORT=\"8080\"\nHW8_ae11c6347292f72faa8b183f672a98d47123772681740d458eae3ead03fd2733\ncat > /etc/systemd/system/cs528-hw8-web.service <<'HW8_aca0bf64d7227b74a395036275c8a94ae1207b5ca6c9a850198f48d054b77f6d'\n[Unit]\nDescription=CS528 HW8 web service\nWants=network-online.target\nAfter=network-online.target\nStartLimitIntervalSec=0\n\n[Service]\nType=simple\nUser=hw8\nGroup=hw8\nWorkingDirectory=/opt/cs528-hw8\nEnvironmentFile=/etc/cs528-hw8.env\nEnvironment=PYTHONUNBUFFERED=1\nExecStart=/opt/cs528-hw8/venv/bin/python -u /opt/cs528-hw8/web_server.py\nRestart=no\nRestartSec=5\nNoNewPrivileges=true\nPrivateTmp=true\nProtectHome=true\nProtectSystem=full\nStandardOutput=journal\nStandardError=journal\n\n[Install]\nWantedBy=multi-user.target\n\nHW8_aca0bf64d7227b74a395036275c8a94ae1207b5ca6c9a850198f48d054b77f6d\nchmod 644 /etc/cs528-hw8.env /opt/cs528-hw8/web_server.py\nsystemctl daemon-reload\nsystemctl enable cs528-hw8-web.service\nsystemctl restart cs528-hw8-web.service\nsystemctl --no-pager status cs528-hw8-web.service\n"
+        }
+      ],
+      "kind": "compute#metadata"
+    },
+    "name": "cs528-hw8-web-b",
+    "networkInterfaces": [
+      {
+        "accessConfigs": [
+          {
+            "kind": "compute#accessConfig",
+            "name": "external-nat",
+            "natIP": "34.70.184.225",
+            "networkTier": "PREMIUM",
+            "type": "ONE_TO_ONE_NAT"
+          }
+        ],
+        "fingerprint": "l20lveCjAHE=",
+        "kind": "compute#networkInterface",
+        "name": "nic0",
+        "network": "https://www.googleapis.com/compute/v1/projects/dazzling-seat-508219-j3/global/networks/cs528-hw8-network",
+        "networkIP": "10.88.0.3",
+        "stackType": "IPV4_ONLY",
+        "subnetwork": "https://www.googleapis.com/compute/v1/projects/dazzling-seat-508219-j3/regions/us-central1/subnetworks/cs528-hw8-subnet"
+      }
+    ],
+    "resourceStatus": {
+      "effectiveInstanceMetadata": {
+        "vmDnsSettingMetadataValue": "GlobalDefault"
+      }
+    },
+    "satisfiesPzi": true,
+    "scheduling": {
+      "automaticRestart": true,
+      "onHostMaintenance": "MIGRATE",
+      "preemptible": false,
+      "provisioningModel": "STANDARD"
+    },
+    "selfLink": "https://www.googleapis.com/compute/v1/projects/dazzling-seat-508219-j3/zones/us-central1-c/instances/cs528-hw8-web-b",
+    "serviceAccounts": [
+      {
+        "email": "cs528-hw4-web-sa@dazzling-seat-508219-j3.iam.gserviceaccount.com",
+        "scopes": [
+          "https://www.googleapis.com/auth/cloud-platform"
+        ]
+      }
+    ],
+    "shieldedInstanceConfig": {
+      "enableIntegrityMonitoring": true,
+      "enableSecureBoot": false,
+      "enableVtpm": true
+    },
+    "shieldedInstanceIntegrityPolicy": {
+      "updateAutoLearnPolicy": true
+    },
+    "startRestricted": false,
+    "status": "RUNNING",
+    "tags": {
+      "fingerprint": "lPrjVRzgZKc=",
+      "items": [
+        "cs528-hw8",
+        "cs528-hw8-web"
+      ]
+    },
+    "zone": "https://www.googleapis.com/compute/v1/projects/dazzling-seat-508219-j3/zones/us-central1-c"
+  },
+  "cs528-hw8-reporter": {
+    "canIpForward": false,
+    "cpuPlatform": "AMD Rome",
+    "creationTimestamp": "2026-11-13T16:11:41.103-08:00",
+    "deletionProtection": false,
+    "description": "Managed by CS528 HW8 manage.py",
+    "disks": [
+      {
+        "architecture": "X86_64",
+        "autoDelete": true,
+        "boot": true,
+        "deviceName": "persistent-disk-0",
+        "diskSizeGb": "10",
+        "guestOsFeatures": [
+          {
+            "type": "UEFI_COMPATIBLE"
+          },
+          {
+            "type": "VIRTIO_SCSI_MULTIQUEUE"
+          },
+          {
+            "type": "GVNIC"
+          },
+          {
+            "type": "SEV_CAPABLE"
+          },
+          {
+            "type": "SEV_LIVE_MIGRATABLE_V2"
+          },
+          {
+            "type": "SUSPEND_SAFE_FPR"
+          }
+        ],
+        "index": 0,
+        "interface": "SCSI",
+        "kind": "compute#attachedDisk",
+        "licenses": [
+          "https://www.googleapis.com/compute/v1/projects/debian-cloud/global/licenses/debian-12-bookworm"
+        ],
+        "mode": "READ_WRITE",
+        "source": "https://www.googleapis.com/compute/v1/projects/dazzling-seat-508219-j3/zones/us-central1-a/disks/cs528-hw8-reporter-boot",
+        "type": "PERSISTENT"
+      }
+    ],
+    "fingerprint": "SoPseMLtOjo=",
+    "id": "8649355892767726035",
+    "kind": "compute#instance",
+    "labelFingerprint": "sTQ1YFuQuQs=",
+    "labels": {
+      "course": "cs528",
+      "homework": "hw8",
+      "source": "8d2e61e9eba57acf2c43eed5633441ce"
+    },
+    "lastStartTimestamp": "2026-11-13T16:11:53.010-08:00",
+    "machineType": "https://www.googleapis.com/compute/v1/projects/dazzling-seat-508219-j3/zones/us-central1-a/machineTypes/e2-micro",
+    "metadata": {
+      "fingerprint": "XLay-nknzgc=",
+      "items": [
+        {
+          "key": "startup-script",
+          "value": "#!/bin/bash\nset -euo pipefail\nexport DEBIAN_FRONTEND=noninteractive\ninstall -d -m 755 /opt/cs528-hw8\nif ! id hw8 >/dev/null 2>&1; then\n  useradd --system --home-dir /opt/cs528-hw8 --shell /usr/sbin/nologin hw8\nfi\nif [ ! -f /opt/cs528-hw8/.dependencies-7d31d1e69e5b234419f1267afc5a7d29e6e108635730cd6a350a00ea0b8ad405 ]; then\n  apt-get -o Acquire::Retries=3 update\n  apt-get -o DPkg::Lock::Timeout=180 install -y python3 python3-venv ca-certificates\n  python3 -m venv /opt/cs528-hw8/venv\ncat > /opt/cs528-hw8/requirements.txt <<'HW8_7d31d1e69e5b234419f1267afc5a7d29e6e108635730cd6a350a00ea0b8ad405'\ngoogle-cloud-pubsub>=2,<3\n\nHW8_7d31d1e69e5b234419f1267afc5a7d29e6e108635730cd6a350a00ea0b8ad405\n  /opt/cs528-hw8/venv/bin/python -m pip install --no-cache-dir --only-binary=:all: -r /opt/cs528-hw8/requirements.txt\n  /opt/cs528-hw8/venv/bin/python -m pip freeze > /opt/cs528-hw8/installed-requirements.txt\n  touch /opt/cs528-hw8/.dependencies-7d31d1e69e5b234419f1267afc5a7d29e6e108635730cd6a350a00ea0b8ad405\nfi\ncat > /opt/cs528-hw8/reporter.py <<'HW8_095e77c433957dd45185d4c0fce3efa3a948866308839bdabb9c22dbb93c87b0'\n\"\"\"HW3 Pub/Sub receive/print/ack loop, adapted to a VM's attached identity.\"\"\"\n\nimport json\nimport os\nimport time\nfrom datetime import datetime, timezone\n\n\ndef process_message(client, subscription, received):\n    try:\n        event = json.loads(received.message.data.decode())\n        if (not isinstance(event, dict) or event.get(\"event\") != \"forbidden_country\"\n                or not isinstance(event.get(\"event_id\"), str)):\n            raise ValueError(\"invalid forbidden-country event\")\n        event[\"pubsub_message_id\"] = received.message.message_id\n        event[\"received_at\"] = datetime.now(timezone.utc).isoformat()\n        print(\"FORBIDDEN \" + json.dumps(event), flush=True)\n        # HW4 asks for stdout. journald retains it locally; no bucket write grant.\n        # At-least-once delivery means a repeated event_id may appear after failure.\n        client.acknowledge(request={\"subscription\": subscription,\n                                    \"ack_ids\": [received.ack_id]}, timeout=20)\n        return True\n    except Exception as exc:\n        print(f\"RETRY message_id={received.message.message_id} \"\n              f\"error_type={type(exc).__name__}\", flush=True)\n        return False  # Ack deadline expires; do not discard a failed event.\n\n\ndef main():\n    from google.api_core.exceptions import (\n        DeadlineExceeded, InternalServerError, ServiceUnavailable, TooManyRequests,\n    )\n    from google.cloud import pubsub_v1\n\n    with pubsub_v1.SubscriberClient() as client:\n        subscription = client.subscription_path(os.environ[\"PROJECT_ID\"], os.environ[\"SUBSCRIPTION_ID\"])\n        print(f\"Listening on {subscription} using VM service-account credentials\", flush=True)\n        delay = 2\n        while True:\n            try:\n                response = client.pull(request={\"subscription\": subscription, \"max_messages\": 10},\n                                       retry=None, timeout=30)\n            except DeadlineExceeded:\n                time.sleep(1)\n                continue\n            except (InternalServerError, ServiceUnavailable, TooManyRequests) as exc:\n                print(f\"PULL_RETRY {type(exc).__name__}; delay={delay}\", flush=True)\n                time.sleep(delay)\n                delay = min(30, delay * 2)\n                continue\n            delay = 2\n            if not response.received_messages:\n                time.sleep(1)\n            for received in response.received_messages:\n                if not process_message(client, subscription, received):\n                    time.sleep(1)\n\n\nif __name__ == \"__main__\":\n    main()\n\nHW8_095e77c433957dd45185d4c0fce3efa3a948866308839bdabb9c22dbb93c87b0\ncat > /etc/cs528-hw8.env <<'HW8_ae11c6347292f72faa8b183f672a98d47123772681740d458eae3ead03fd2733'\nPROJECT_ID=\"dazzling-seat-508219-j3\"\nBUCKET_NAME=\"cs528-hw2-yf-2026\"\nTOPIC_ID=\"cs528-hw8-forbidden\"\nSUBSCRIPTION_ID=\"cs528-hw8-forbidden-sub\"\nPORT=\"8080\"\nHW8_ae11c6347292f72faa8b183f672a98d47123772681740d458eae3ead03fd2733\ncat > /etc/systemd/system/cs528-hw8-reporter.service <<'HW8_7017443cc1433198abe1b01e877e64da0dead39f618919d22df8749071a0221f'\n[Unit]\nDescription=CS528 HW8 reporter service\nWants=network-online.target\nAfter=network-online.target\nStartLimitIntervalSec=0\n\n[Service]\nType=simple\nUser=hw8\nGroup=hw8\nWorkingDirectory=/opt/cs528-hw8\nEnvironmentFile=/etc/cs528-hw8.env\nEnvironment=PYTHONUNBUFFERED=1\nExecStart=/opt/cs528-hw8/venv/bin/python -u /opt/cs528-hw8/reporter.py\nRestart=on-failure\nRestartSec=5\nNoNewPrivileges=true\nPrivateTmp=true\nProtectHome=true\nProtectSystem=full\nStandardOutput=journal\nStandardError=journal\n\n[Install]\nWantedBy=multi-user.target\n\nHW8_7017443cc1433198abe1b01e877e64da0dead39f618919d22df8749071a0221f\nchmod 644 /etc/cs528-hw8.env /opt/cs528-hw8/reporter.py\nsystemctl daemon-reload\nsystemctl enable cs528-hw8-reporter.service\nsystemctl restart cs528-hw8-reporter.service\nsystemctl --no-pager status cs528-hw8-reporter.service\n"
+        }
+      ],
+      "kind": "compute#metadata"
+    },
+    "name": "cs528-hw8-reporter",
+    "networkInterfaces": [
+      {
+        "accessConfigs": [
+          {
+            "kind": "compute#accessConfig",
+            "name": "external-nat",
+            "natIP": "34.66.225.16",
+            "networkTier": "PREMIUM",
+            "type": "ONE_TO_ONE_NAT"
+          }
+        ],
+        "fingerprint": "8HQ_6ZU5LPA=",
+        "kind": "compute#networkInterface",
+        "name": "nic0",
+        "network": "https://www.googleapis.com/compute/v1/projects/dazzling-seat-508219-j3/global/networks/cs528-hw8-network",
+        "networkIP": "10.88.0.4",
+        "stackType": "IPV4_ONLY",
+        "subnetwork": "https://www.googleapis.com/compute/v1/projects/dazzling-seat-508219-j3/regions/us-central1/subnetworks/cs528-hw8-subnet"
+      }
+    ],
+    "resourceStatus": {
+      "effectiveInstanceMetadata": {
+        "vmDnsSettingMetadataValue": "GlobalDefault"
+      }
+    },
+    "satisfiesPzi": true,
+    "scheduling": {
+      "automaticRestart": true,
+      "onHostMaintenance": "MIGRATE",
+      "preemptible": false,
+      "provisioningModel": "STANDARD"
+    },
+    "selfLink": "https://www.googleapis.com/compute/v1/projects/dazzling-seat-508219-j3/zones/us-central1-a/instances/cs528-hw8-reporter",
+    "serviceAccounts": [
+      {
+        "email": "cs528-hw4-reporter-sa@dazzling-seat-508219-j3.iam.gserviceaccount.com",
+        "scopes": [
+          "https://www.googleapis.com/auth/cloud-platform"
+        ]
+      }
+    ],
+    "shieldedInstanceConfig": {
+      "enableIntegrityMonitoring": true,
+      "enableSecureBoot": false,
+      "enableVtpm": true
+    },
+    "shieldedInstanceIntegrityPolicy": {
+      "updateAutoLearnPolicy": true
+    },
+    "startRestricted": false,
+    "status": "RUNNING",
+    "tags": {
+      "fingerprint": "enswjntWpLI=",
+      "items": [
+        "cs528-hw8",
+        "cs528-hw8-reporter"
+      ]
+    },
+    "zone": "https://www.googleapis.com/compute/v1/projects/dazzling-seat-508219-j3/zones/us-central1-a"
+  }
+}

@@ -1,0 +1,5 @@
+Started cs528-hw8-web.service - CS528 HW8 web service.
+Listening on port 8080; zone=us-central1-a; threaded requests
+{"severity": "WARNING", "timestamp": "2026-11-14T00:15:12.284568+00:00", "method": "GET", "path": "/data/does-not-exist.html", "status": 404, "event": "file_not_found", "message": "File not found.", "object_name": "data/does-not-exist.html"}
+{"severity": "ERROR", "timestamp": "2026-11-14T00:15:12.751543+00:00", "method": "PUT", "path": "/data/0.html", "status": 501, "event": "unsupported_method", "message": "HTTP method not implemented."}
+{"severity": "CRITICAL", "event_id": "09963b81-ee47-46e3-81f1-e86ec932a1ca", "event": "forbidden_country", "timestamp": "2026-11-14T00:15:12.890462+00:00", "method": "GET", "path": "/data/0.html", "country": "Iran", "country_header": "Iran", "status": 400, "message": "Permission denied: request from Iran."}

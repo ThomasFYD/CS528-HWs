@@ -1,0 +1,17 @@
+{
+  "project": "dazzling-seat-508219-j3",
+  "account": "fangyd@bu.edu",
+  "bucket": "cs528-hw2-yf-2026",
+  "region": "us-central1",
+  "zone_a": "us-central1-a",
+  "zone_b": "us-central1-c",
+  "web_sa": null,
+  "reporter_sa": null,
+  "web_machine": "f1-micro",
+  "dry_run": false,
+  "output": "/Users/thomasfang/CS528/CS528-HWs/CS528-HW8/results/20261114T032031Z",
+  "trials": 3,
+  "baseline": 60,
+  "recovered": 45,
+  "seed": 528
+}

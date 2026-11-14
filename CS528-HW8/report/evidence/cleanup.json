@@ -1,0 +1,20 @@
+{
+  "compute forwarding-rules describe cs528-hw8-forwarding --region=us-central1": null,
+  "compute backend-services describe cs528-hw8-backend --region=us-central1": null,
+  "compute health-checks describe cs528-hw8-health --region=us-central1": null,
+  "compute addresses describe cs528-hw8-ip --region=us-central1": null,
+  "compute instance-groups unmanaged describe cs528-hw8-web-a-group --zone=us-central1-a": null,
+  "compute instances describe cs528-hw8-web-a --zone=us-central1-a": null,
+  "compute instance-groups unmanaged describe cs528-hw8-web-b-group --zone=us-central1-c": null,
+  "compute instances describe cs528-hw8-web-b --zone=us-central1-c": null,
+  "compute instances describe cs528-hw8-reporter --zone=us-central1-a": null,
+  "compute firewall-rules describe cs528-hw8-http": null,
+  "compute firewall-rules describe cs528-hw8-iap-ssh": null,
+  "compute networks subnets describe cs528-hw8-subnet --region=us-central1": null,
+  "compute networks describe cs528-hw8-network": null,
+  "pubsub subscriptions describe cs528-hw8-forbidden-sub": null,
+  "pubsub topics describe cs528-hw8-forbidden": null,
+  "cs528-hw8-web-a-boot": null,
+  "cs528-hw8-web-b-boot": null,
+  "cs528-hw8-reporter-boot": null
+}

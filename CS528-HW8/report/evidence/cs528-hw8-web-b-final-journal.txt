@@ -1,0 +1,78 @@
+Started cs528-hw8-web.service - CS528 HW8 web service.
+Listening on port 8080; zone=us-central1-c; threaded requests
+{"severity": "WARNING", "timestamp": "2026-11-14T00:15:14.371899+00:00", "method": "GET", "path": "/data/does-not-exist.html", "status": 404, "event": "file_not_found", "message": "File not found.", "object_name": "data/does-not-exist.html"}
+{"severity": "ERROR", "timestamp": "2026-11-14T00:15:14.881350+00:00", "method": "PUT", "path": "/data/0.html", "status": 501, "event": "unsupported_method", "message": "HTTP method not implemented."}
+{"severity": "CRITICAL", "event_id": "eff536b6-c88a-4b18-90d3-90f83b758785", "event": "forbidden_country", "timestamp": "2026-11-14T00:15:15.047342+00:00", "method": "GET", "path": "/data/0.html", "country": "Iran", "country_header": "Iran", "status": 400, "message": "Permission denied: request from Iran."}
+{"severity": "WARNING", "timestamp": "2026-11-14T00:25:31.310774+00:00", "method": "GET", "path": "/", "status": 404, "event": "file_not_found", "message": "File not found.", "object_name": ""}
+{"severity": "WARNING", "timestamp": "2026-11-14T00:27:05.504811+00:00", "method": "GET", "path": "/login", "status": 404, "event": "file_not_found", "message": "File not found.", "object_name": "login"}
+{"severity": "WARNING", "timestamp": "2026-11-14T00:27:35.115718+00:00", "method": "GET", "path": "/favicon.ico", "status": 404, "event": "file_not_found", "message": "File not found.", "object_name": "favicon.ico"}
+{"severity": "WARNING", "timestamp": "2026-11-14T00:29:03.137029+00:00", "method": "GET", "path": "http://api.ipify.org/?format=json", "status": 404, "event": "file_not_found", "message": "File not found.", "object_name": ""}
+{"severity": "ERROR", "timestamp": "2026-11-14T00:29:22.357896+00:00", "method": "CONNECT", "path": "www.shadowserver.org:443", "status": 501, "event": "unsupported_method", "message": "HTTP method not implemented."}
+{"severity": "WARNING", "timestamp": "2026-11-14T00:29:47.145067+00:00", "method": "GET", "path": "/geoserver/web/", "status": 404, "event": "file_not_found", "message": "File not found.", "object_name": "geoserver/web/"}
+{"severity": "WARNING", "timestamp": "2026-11-14T00:35:45.919530+00:00", "method": "GET", "path": "/", "status": 404, "event": "file_not_found", "message": "File not found.", "object_name": ""}
+{"severity": "WARNING", "timestamp": "2026-11-14T00:35:46.552334+00:00", "method": "GET", "path": "/", "status": 404, "event": "file_not_found", "message": "File not found.", "object_name": ""}
+{"severity": "WARNING", "timestamp": "2026-11-14T00:35:47.138750+00:00", "method": "GET", "path": "/raw", "status": 404, "event": "file_not_found", "message": "File not found.", "object_name": "raw"}
+{"severity": "WARNING", "timestamp": "2026-11-14T00:35:47.809458+00:00", "method": "GET", "path": "/ws", "status": 404, "event": "file_not_found", "message": "File not found.", "object_name": "ws"}
+{"severity": "WARNING", "timestamp": "2026-11-14T00:35:48.392493+00:00", "method": "GET", "path": "/socket.io/?EIO=4&transport=websocket", "status": 404, "event": "file_not_found", "message": "File not found.", "object_name": "socket.io/"}
+{"severity": "WARNING", "timestamp": "2026-11-14T00:35:51.918745+00:00", "method": "GET", "path": "/v1/vector/collections/describe", "status": 404, "event": "file_not_found", "message": "File not found.", "object_name": "v1/vector/collections/describe"}
+{"severity": "WARNING", "timestamp": "2026-11-14T00:35:52.481487+00:00", "method": "GET", "path": "/", "status": 404, "event": "file_not_found", "message": "File not found.", "object_name": ""}
+{"severity": "WARNING", "timestamp": "2026-11-14T00:35:52.487181+00:00", "method": "GET", "path": "/v1", "status": 404, "event": "file_not_found", "message": "File not found.", "object_name": "v1"}
+{"severity": "WARNING", "timestamp": "2026-11-14T00:35:53.151220+00:00", "method": "GET", "path": "/", "status": 404, "event": "file_not_found", "message": "File not found.", "object_name": ""}
+{"severity": "WARNING", "timestamp": "2026-11-14T00:35:53.832070+00:00", "method": "GET", "path": "/", "status": 404, "event": "file_not_found", "message": "File not found.", "object_name": ""}
+{"severity": "WARNING", "timestamp": "2026-11-14T00:35:54.747908+00:00", "method": "GET", "path": "/favicon.ico", "status": 404, "event": "file_not_found", "message": "File not found.", "object_name": "favicon.ico"}
+{"severity": "ERROR", "timestamp": "2026-11-14T01:01:13.970101+00:00", "method": "CONNECT", "path": "185.65.245.140:7227", "status": 501, "event": "unsupported_method", "message": "HTTP method not implemented."}
+{"severity": "WARNING", "timestamp": "2026-11-14T01:17:08.145417+00:00", "method": "GET", "path": "/", "status": 404, "event": "file_not_found", "message": "File not found.", "object_name": ""}
+{"severity": "WARNING", "timestamp": "2026-11-14T01:17:08.522829+00:00", "method": "GET", "path": "/", "status": 404, "event": "file_not_found", "message": "File not found.", "object_name": ""}
+----------------------------------------
+Exception occurred during processing of request from ('66.132.159.83', 17692)
+Traceback (most recent call last):
+  File "/usr/lib/python3.11/socketserver.py", line 691, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib/python3.11/http/server.py", line 432, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.11/http/server.py", line 400, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/socket.py", line 706, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [Errno 104] Connection reset by peer
+----------------------------------------
+{"severity": "WARNING", "timestamp": "2026-11-14T01:23:30.056601+00:00", "method": "GET", "path": "/", "status": 404, "event": "file_not_found", "message": "File not found.", "object_name": ""}
+{"severity": "WARNING", "timestamp": "2026-11-14T01:23:40.160665+00:00", "method": "GET", "path": "/", "status": 404, "event": "file_not_found", "message": "File not found.", "object_name": ""}
+{"severity": "WARNING", "timestamp": "2026-11-14T01:23:51.285767+00:00", "method": "GET", "path": "/security.txt", "status": 404, "event": "file_not_found", "message": "File not found.", "object_name": "security.txt"}
+{"severity": "WARNING", "timestamp": "2026-11-14T01:49:47.080399+00:00", "method": "GET", "path": "/", "status": 404, "event": "file_not_found", "message": "File not found.", "object_name": ""}
+{"severity": "WARNING", "timestamp": "2026-11-14T01:51:31.725091+00:00", "method": "GET", "path": "/", "status": 404, "event": "file_not_found", "message": "File not found.", "object_name": ""}
+{"severity": "WARNING", "timestamp": "2026-11-14T02:08:05.418289+00:00", "method": "GET", "path": "http://a7x.overflow.biz/hachk.php", "status": 404, "event": "file_not_found", "message": "File not found.", "object_name": "hachk.php"}
+{"severity": "WARNING", "timestamp": "2026-11-14T02:36:50.074266+00:00", "method": "GET", "path": "/", "status": 404, "event": "file_not_found", "message": "File not found.", "object_name": ""}
+{"severity": "WARNING", "timestamp": "2026-11-14T02:57:16.419932+00:00", "method": "GET", "path": "/", "status": 404, "event": "file_not_found", "message": "File not found.", "object_name": ""}
+{"severity": "WARNING", "timestamp": "2026-11-14T03:05:58.755849+00:00", "method": "GET", "path": "/", "status": 404, "event": "file_not_found", "message": "File not found.", "object_name": ""}
+{"severity": "WARNING", "timestamp": "2026-11-14T03:05:59.569529+00:00", "method": "GET", "path": "/favicon.ico", "status": 404, "event": "file_not_found", "message": "File not found.", "object_name": "favicon.ico"}
+{"severity": "WARNING", "timestamp": "2026-11-14T03:12:08.145626+00:00", "method": "GET", "path": "/favicon.ico", "status": 404, "event": "file_not_found", "message": "File not found.", "object_name": "favicon.ico"}
+{"severity": "WARNING", "timestamp": "2026-11-14T03:14:33.899578+00:00", "method": "GET", "path": "/geoserver/web/", "status": 404, "event": "file_not_found", "message": "File not found.", "object_name": "geoserver/web/"}
+{"severity": "WARNING", "timestamp": "2026-11-14T03:25:39.943922+00:00", "method": "GET", "path": "/", "status": 404, "event": "file_not_found", "message": "File not found.", "object_name": ""}
+{"severity": "WARNING", "timestamp": "2026-11-14T03:26:27.957638+00:00", "method": "GET", "path": "/", "status": 404, "event": "file_not_found", "message": "File not found.", "object_name": ""}
+{"severity": "WARNING", "timestamp": "2026-11-14T03:26:28.351895+00:00", "method": "GET", "path": "/favicon.ico", "status": 404, "event": "file_not_found", "message": "File not found.", "object_name": "favicon.ico"}
+{"severity": "WARNING", "timestamp": "2026-11-14T03:48:22.146270+00:00", "method": "GET", "path": "/", "status": 404, "event": "file_not_found", "message": "File not found.", "object_name": ""}
+{"severity": "WARNING", "timestamp": "2026-11-14T03:48:30.369129+00:00", "method": "GET", "path": "/", "status": 404, "event": "file_not_found", "message": "File not found.", "object_name": ""}
+{"severity": "WARNING", "timestamp": "2026-11-14T04:04:41.044590+00:00", "method": "GET", "path": "/", "status": 404, "event": "file_not_found", "message": "File not found.", "object_name": ""}
+{"severity": "WARNING", "timestamp": "2026-11-14T04:24:13.732903+00:00", "method": "GET", "path": "/", "status": 404, "event": "file_not_found", "message": "File not found.", "object_name": ""}
+{"severity": "WARNING", "timestamp": "2026-11-14T04:32:34.668014+00:00", "method": "GET", "path": "/", "status": 404, "event": "file_not_found", "message": "File not found.", "object_name": ""}
+{"severity": "WARNING", "timestamp": "2026-11-14T04:33:11.136566+00:00", "method": "GET", "path": "/", "status": 404, "event": "file_not_found", "message": "File not found.", "object_name": ""}
+{"severity": "WARNING", "timestamp": "2026-11-14T04:33:11.545697+00:00", "method": "GET", "path": "/favicon.ico", "status": 404, "event": "file_not_found", "message": "File not found.", "object_name": "favicon.ico"}
+{"severity": "WARNING", "timestamp": "2026-11-14T04:47:24.237538+00:00", "method": "GET", "path": "/", "status": 404, "event": "file_not_found", "message": "File not found.", "object_name": ""}
+{"severity": "WARNING", "timestamp": "2026-11-14T05:02:46.095909+00:00", "method": "GET", "path": "/", "status": 404, "event": "file_not_found", "message": "File not found.", "object_name": ""}
+{"severity": "WARNING", "timestamp": "2026-11-14T05:02:46.901949+00:00", "method": "GET", "path": "/pub/", "status": 404, "event": "file_not_found", "message": "File not found.", "object_name": "pub/"}
+{"severity": "WARNING", "timestamp": "2026-11-14T05:02:47.705287+00:00", "method": "GET", "path": "/favicon.ico", "status": 404, "event": "file_not_found", "message": "File not found.", "object_name": "favicon.ico"}
+{"severity": "WARNING", "timestamp": "2026-11-14T05:02:48.512332+00:00", "method": "GET", "path": "/downloads/", "status": 404, "event": "file_not_found", "message": "File not found.", "object_name": "downloads/"}
+{"severity": "ERROR", "timestamp": "2026-11-14T05:02:49.261927+00:00", "method": "NAYO", "path": "/", "status": 501, "event": "unsupported_method", "message": "HTTP method not implemented."}
+{"severity": "WARNING", "timestamp": "2026-11-14T05:02:49.660837+00:00", "method": "GET", "path": "/", "status": 404, "event": "file_not_found", "message": "File not found.", "object_name": ""}
+{"severity": "ERROR", "timestamp": "2026-11-14T05:02:50.008840+00:00", "method": "HEAD", "path": "/", "status": 501, "event": "unsupported_method", "message": "HTTP method not implemented."}
+{"severity": "WARNING", "timestamp": "2026-11-14T05:02:50.459341+00:00", "method": "POST", "path": "/", "status": 400, "event": "invalid_payload", "message": "POST requires JSON with a nonempty filename string."}
+{"severity": "ERROR", "timestamp": "2026-11-14T05:02:50.857226+00:00", "method": "OPTIONS", "path": "/", "status": 501, "event": "unsupported_method", "message": "HTTP method not implemented."}
+{"severity": "WARNING", "timestamp": "2026-11-14T05:10:56.474660+00:00", "method": "GET", "path": "/", "status": 404, "event": "file_not_found", "message": "File not found.", "object_name": ""}
+{"severity": "WARNING", "timestamp": "2026-11-14T05:16:17.360168+00:00", "method": "GET", "path": "/", "status": 404, "event": "file_not_found", "message": "File not found.", "object_name": ""}

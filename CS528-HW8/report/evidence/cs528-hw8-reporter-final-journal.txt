@@ -1,0 +1,4 @@
+Started cs528-hw8-reporter.service - CS528 HW8 reporter service.
+Listening on projects/dazzling-seat-508219-j3/subscriptions/cs528-hw8-forbidden-sub using VM service-account credentials
+FORBIDDEN {"event_id": "09963b81-ee47-46e3-81f1-e86ec932a1ca", "event": "forbidden_country", "timestamp": "2026-11-14T00:15:12.890462+00:00", "method": "GET", "path": "/data/0.html", "country": "Iran", "country_header": "Iran", "status": 400, "message": "Permission denied: request from Iran.", "pubsub_message_id": "23376679752232691", "received_at": "2026-11-14T00:15:13.735442+00:00"}
+FORBIDDEN {"event_id": "eff536b6-c88a-4b18-90d3-90f83b758785", "event": "forbidden_country", "timestamp": "2026-11-14T00:15:15.047342+00:00", "method": "GET", "path": "/data/0.html", "country": "Iran", "country_header": "Iran", "status": 400, "message": "Permission denied: request from Iran.", "pubsub_message_id": "23376052113612254", "received_at": "2026-11-14T00:15:15.846983+00:00"}

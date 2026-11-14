@@ -1,0 +1,508 @@
+{
+  "complete": true,
+  "run": "20261114T032031Z",
+  "started_at": "2026-11-14T03:20:41.793877+00:00",
+  "finished_at": "2026-11-14T03:28:25.055386+00:00",
+  "zones": [
+    "us-central1-a",
+    "us-central1-c"
+  ],
+  "total": {
+    "attempts": 464,
+    "successful_200": 432,
+    "other": 32,
+    "counts": {
+      "us-central1-a": 109,
+      "us-central1-c": 323
+    },
+    "percent": {
+      "us-central1-a": 25.23148148148148,
+      "us-central1-c": 74.76851851851852
+    },
+    "status_counts": {
+      "200": 432,
+      "None": 32
+    },
+    "transport_errors": 32
+  },
+  "both_healthy_windows": {
+    "attempts": 196,
+    "successful_200": 196,
+    "other": 0,
+    "counts": {
+      "us-central1-a": 100,
+      "us-central1-c": 96
+    },
+    "percent": {
+      "us-central1-a": 51.02040816326531,
+      "us-central1-c": 48.97959183673469
+    },
+    "status_counts": {
+      "200": 196
+    },
+    "transport_errors": 0
+  },
+  "phases": {
+    "baseline": {
+      "attempts": 61,
+      "successful_200": 61,
+      "other": 0,
+      "counts": {
+        "us-central1-a": 33,
+        "us-central1-c": 28
+      },
+      "percent": {
+        "us-central1-a": 54.09836065573771,
+        "us-central1-c": 45.90163934426229
+      },
+      "status_counts": {
+        "200": 61
+      },
+      "transport_errors": 0
+    },
+    "trial-1-stop": {
+      "attempts": 43,
+      "successful_200": 29,
+      "other": 14,
+      "counts": {
+        "us-central1-a": 1,
+        "us-central1-c": 28
+      },
+      "percent": {
+        "us-central1-a": 3.4482758620689653,
+        "us-central1-c": 96.55172413793103
+      },
+      "status_counts": {
+        "200": 29,
+        "None": 14
+      },
+      "transport_errors": 14
+    },
+    "trial-1-survivor": {
+      "attempts": 15,
+      "successful_200": 15,
+      "other": 0,
+      "counts": {
+        "us-central1-a": 0,
+        "us-central1-c": 15
+      },
+      "percent": {
+        "us-central1-a": 0.0,
+        "us-central1-c": 100.0
+      },
+      "status_counts": {
+        "200": 15
+      },
+      "transport_errors": 0
+    },
+    "trial-1-restart": {
+      "attempts": 24,
+      "successful_200": 24,
+      "other": 0,
+      "counts": {
+        "us-central1-a": 1,
+        "us-central1-c": 23
+      },
+      "percent": {
+        "us-central1-a": 4.166666666666667,
+        "us-central1-c": 95.83333333333333
+      },
+      "status_counts": {
+        "200": 24
+      },
+      "transport_errors": 0
+    },
+    "trial-1-recovered": {
+      "attempts": 45,
+      "successful_200": 45,
+      "other": 0,
+      "counts": {
+        "us-central1-a": 18,
+        "us-central1-c": 27
+      },
+      "percent": {
+        "us-central1-a": 40.0,
+        "us-central1-c": 60.0
+      },
+      "status_counts": {
+        "200": 45
+      },
+      "transport_errors": 0
+    },
+    "trial-2-stop": {
+      "attempts": 41,
+      "successful_200": 32,
+      "other": 9,
+      "counts": {
+        "us-central1-a": 3,
+        "us-central1-c": 29
+      },
+      "percent": {
+        "us-central1-a": 9.375,
+        "us-central1-c": 90.625
+      },
+      "status_counts": {
+        "200": 32,
+        "None": 9
+      },
+      "transport_errors": 9
+    },
+    "trial-2-survivor": {
+      "attempts": 15,
+      "successful_200": 15,
+      "other": 0,
+      "counts": {
+        "us-central1-a": 0,
+        "us-central1-c": 15
+      },
+      "percent": {
+        "us-central1-a": 0.0,
+        "us-central1-c": 100.0
+      },
+      "status_counts": {
+        "200": 15
+      },
+      "transport_errors": 0
+    },
+    "trial-2-restart": {
+      "attempts": 40,
+      "successful_200": 40,
+      "other": 0,
+      "counts": {
+        "us-central1-a": 1,
+        "us-central1-c": 39
+      },
+      "percent": {
+        "us-central1-a": 2.5,
+        "us-central1-c": 97.5
+      },
+      "status_counts": {
+        "200": 40
+      },
+      "transport_errors": 0
+    },
+    "trial-2-recovered": {
+      "attempts": 45,
+      "successful_200": 45,
+      "other": 0,
+      "counts": {
+        "us-central1-a": 25,
+        "us-central1-c": 20
+      },
+      "percent": {
+        "us-central1-a": 55.55555555555556,
+        "us-central1-c": 44.44444444444444
+      },
+      "status_counts": {
+        "200": 45
+      },
+      "transport_errors": 0
+    },
+    "trial-3-stop": {
+      "attempts": 45,
+      "successful_200": 36,
+      "other": 9,
+      "counts": {
+        "us-central1-a": 2,
+        "us-central1-c": 34
+      },
+      "percent": {
+        "us-central1-a": 5.555555555555555,
+        "us-central1-c": 94.44444444444444
+      },
+      "status_counts": {
+        "200": 36,
+        "None": 9
+      },
+      "transport_errors": 9
+    },
+    "trial-3-survivor": {
+      "attempts": 15,
+      "successful_200": 15,
+      "other": 0,
+      "counts": {
+        "us-central1-a": 0,
+        "us-central1-c": 15
+      },
+      "percent": {
+        "us-central1-a": 0.0,
+        "us-central1-c": 100.0
+      },
+      "status_counts": {
+        "200": 15
+      },
+      "transport_errors": 0
+    },
+    "trial-3-restart": {
+      "attempts": 30,
+      "successful_200": 30,
+      "other": 0,
+      "counts": {
+        "us-central1-a": 1,
+        "us-central1-c": 29
+      },
+      "percent": {
+        "us-central1-a": 3.3333333333333335,
+        "us-central1-c": 96.66666666666667
+      },
+      "status_counts": {
+        "200": 30
+      },
+      "transport_errors": 0
+    },
+    "trial-3-recovered": {
+      "attempts": 45,
+      "successful_200": 45,
+      "other": 0,
+      "counts": {
+        "us-central1-a": 24,
+        "us-central1-c": 21
+      },
+      "percent": {
+        "us-central1-a": 53.333333333333336,
+        "us-central1-c": 46.666666666666664
+      },
+      "status_counts": {
+        "200": 45
+      },
+      "transport_errors": 0
+    }
+  },
+  "timing": {
+    "request_spacing_min_s": 0.9950393750004878,
+    "request_spacing_median_s": 1.000018041999283,
+    "request_spacing_max_s": 1.0050698340000963,
+    "wall_monotonic_max_drift_s": 0.0011610695037234109,
+    "distinct_local_ports": 432,
+    "health_query_count": 130,
+    "health_query_errors": 0
+  },
+  "trials": [
+    {
+      "trial": "1",
+      "stop": {
+        "action": "stop",
+        "ntp_synchronized": "yes",
+        "before_epoch": 1794626505.6229053,
+        "old_pid": "1508",
+        "after_epoch": 1794626505.6649234,
+        "active_state": "failed",
+        "pid": "0",
+        "client_command_sent": 1794626501.799126,
+        "client_command_finished": 1794626505.833188,
+        "phase": "trial-1-stop"
+      },
+      "restart": {
+        "action": "start",
+        "ntp_synchronized": "yes",
+        "before_epoch": 1794626563.441604,
+        "old_pid": "0",
+        "after_epoch": 1794626563.4738317,
+        "ready_epoch": 1794626565.0861545,
+        "active_state": "active",
+        "pid": "34108",
+        "client_command_sent": 1794626559.945556,
+        "client_command_finished": 1794626565.220598,
+        "phase": "trial-1-restart"
+      },
+      "down_window": {
+        "attempts": 58,
+        "successful_200": 44,
+        "other": 14,
+        "counts": {
+          "us-central1-a": 0,
+          "us-central1-c": 44
+        },
+        "percent": {
+          "us-central1-a": 0.0,
+          "us-central1-c": 100.0
+        },
+        "status_counts": {
+          "200": 44,
+          "None": 14
+        },
+        "transport_errors": 14
+      },
+      "post_stop_client_failure_count": 14,
+      "post_stop_transport_error_count": 14,
+      "inflight_at_kill_errors": 0,
+      "last_failed_request_start_delay_s": 24.12891149520874,
+      "last_failed_request_completion_delay_s": 24.16830563545227,
+      "client_sustained_success_completion_delay_s": 25.31129741668701,
+      "client_sustained_success_start_delay_s": 25.13203239440918,
+      "client_tail_observation_s": 32.00156211853027,
+      "api_unhealthy_observed_delay_s": 6.907562494277954,
+      "api_unhealthy_query_started_delay_s": 5.466698408126831,
+      "recovery_first_zone_a_response_delay_s": 20.722857236862183,
+      "recovery_after_app_ready_delay_s": 19.078306674957275,
+      "app_restart_ready_delay_s": 1.6445505619049072,
+      "api_healthy_observed_delay_s": 10.248194932937622,
+      "failure_request_sequences": [
+        65,
+        66,
+        67,
+        69,
+        70,
+        71,
+        72,
+        74,
+        75,
+        80,
+        83,
+        84,
+        87,
+        88
+      ],
+      "client_recovery_note": "First response after the last failed probe, followed by sustained survivor-only success; sampled client observation, not exact health detection."
+    },
+    {
+      "trial": "2",
+      "stop": {
+        "action": "stop",
+        "ntp_synchronized": "yes",
+        "before_epoch": 1794626632.5959785,
+        "old_pid": "34108",
+        "after_epoch": 1794626632.6360383,
+        "active_state": "failed",
+        "pid": "0",
+        "client_command_sent": 1794626629.3043258,
+        "client_command_finished": 1794626632.804248,
+        "phase": "trial-2-stop"
+      },
+      "restart": {
+        "action": "start",
+        "ntp_synchronized": "yes",
+        "before_epoch": 1794626688.7318873,
+        "old_pid": "0",
+        "after_epoch": 1794626688.7655203,
+        "ready_epoch": 1794626689.4739711,
+        "active_state": "active",
+        "pid": "34396",
+        "client_command_sent": 1794626685.160398,
+        "client_command_finished": 1794626689.607861,
+        "phase": "trial-2-restart"
+      },
+      "down_window": {
+        "attempts": 56,
+        "successful_200": 47,
+        "other": 9,
+        "counts": {
+          "us-central1-a": 0,
+          "us-central1-c": 47
+        },
+        "percent": {
+          "us-central1-a": 0.0,
+          "us-central1-c": 100.0
+        },
+        "status_counts": {
+          "None": 9,
+          "200": 47
+        },
+        "transport_errors": 9
+      },
+      "post_stop_client_failure_count": 9,
+      "post_stop_transport_error_count": 9,
+      "inflight_at_kill_errors": 0,
+      "last_failed_request_start_delay_s": 22.1623055934906,
+      "last_failed_request_completion_delay_s": 22.198384761810303,
+      "client_sustained_success_completion_delay_s": 23.4057137966156,
+      "client_sustained_success_start_delay_s": 23.160910606384277,
+      "client_tail_observation_s": 31.99988317489624,
+      "api_unhealthy_observed_delay_s": 8.782632827758789,
+      "api_unhealthy_query_started_delay_s": 7.218181610107422,
+      "recovery_first_zone_a_response_delay_s": 36.471529722213745,
+      "recovery_after_app_ready_delay_s": 35.729445934295654,
+      "app_restart_ready_delay_s": 0.7420837879180908,
+      "api_healthy_observed_delay_s": 17.073795557022095,
+      "failure_request_sequences": [
+        191,
+        192,
+        194,
+        195,
+        200,
+        204,
+        208,
+        212,
+        213
+      ],
+      "client_recovery_note": "First response after the last failed probe, followed by sustained survivor-only success; sampled client observation, not exact health detection."
+    },
+    {
+      "trial": "3",
+      "stop": {
+        "action": "stop",
+        "ntp_synchronized": "yes",
+        "before_epoch": 1794626773.8229957,
+        "old_pid": "34396",
+        "after_epoch": 1794626773.865417,
+        "active_state": "failed",
+        "pid": "0",
+        "client_command_sent": 1794626770.443268,
+        "client_command_finished": 1794626774.043346,
+        "phase": "trial-3-stop"
+      },
+      "restart": {
+        "action": "start",
+        "ntp_synchronized": "yes",
+        "before_epoch": 1794626833.524507,
+        "old_pid": "0",
+        "after_epoch": 1794626833.5575523,
+        "ready_epoch": 1794626834.3667138,
+        "active_state": "active",
+        "pid": "34739",
+        "client_command_sent": 1794626829.951283,
+        "client_command_finished": 1794626834.6337311,
+        "phase": "trial-3-restart"
+      },
+      "down_window": {
+        "attempts": 59,
+        "successful_200": 50,
+        "other": 9,
+        "counts": {
+          "us-central1-a": 0,
+          "us-central1-c": 50
+        },
+        "percent": {
+          "us-central1-a": 0.0,
+          "us-central1-c": 100.0
+        },
+        "status_counts": {
+          "200": 50,
+          "None": 9
+        },
+        "transport_errors": 9
+      },
+      "post_stop_client_failure_count": 9,
+      "post_stop_transport_error_count": 9,
+      "inflight_at_kill_errors": 0,
+      "last_failed_request_start_delay_s": 25.928573846817017,
+      "last_failed_request_completion_delay_s": 25.962757110595703,
+      "client_sustained_success_completion_delay_s": 27.223886013031006,
+      "client_sustained_success_start_delay_s": 26.93252992630005,
+      "client_tail_observation_s": 31.99886417388916,
+      "api_unhealthy_observed_delay_s": 6.168909072875977,
+      "api_unhealthy_query_started_delay_s": 4.647984027862549,
+      "recovery_first_zone_a_response_delay_s": 26.599880933761597,
+      "recovery_after_app_ready_delay_s": 25.75767421722412,
+      "app_restart_ready_delay_s": 0.8422067165374756,
+      "api_healthy_observed_delay_s": 6.156458854675293,
+      "failure_request_sequences": [
+        336,
+        337,
+        338,
+        340,
+        341,
+        342,
+        344,
+        349,
+        358
+      ],
+      "client_recovery_note": "First response after the last failed probe, followed by sustained survivor-only success; sampled client observation, not exact health detection."
+    }
+  ],
+  "definitions": {
+    "ratio_denominator": "Complete successful HTTP 200 file responses with a recognized zone; failures excluded and counted separately.",
+    "both_healthy": "Baseline plus stable recovered phases; excludes deliberate single-backend and transition phases.",
+    "sampling": "One request launch per second with fresh TCP connections. API polls are separate observations and have command/API latency."
+  }
+}

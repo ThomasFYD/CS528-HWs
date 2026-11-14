@@ -1,0 +1,196 @@
+[
+  {
+    "insertId": "15ejrbgfcpyd1a",
+    "jsonPayload": {
+      "logging.googleapis.com/diagnostic": {
+        "instrumentation_source": [
+          {
+            "name": "python",
+            "version": "3.17.0"
+          }
+        ]
+      }
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/cs528-hw8-web",
+    "receiveTimestamp": "2026-11-14T00:15:12.582918092Z",
+    "resource": {
+      "labels": {
+        "instance_id": "9210291291778849271",
+        "project_id": "dazzling-seat-508219-j3",
+        "zone": "projects/402897578975/zones/us-central1-a"
+      },
+      "type": "gce_instance"
+    },
+    "timestamp": "2026-11-14T00:15:12.582918092Z"
+  },
+  {
+    "insertId": "15ejrbgfcpyd1b",
+    "jsonPayload": {
+      "event": "file_not_found",
+      "message": "File not found.",
+      "method": "GET",
+      "object_name": "data/does-not-exist.html",
+      "path": "/data/does-not-exist.html",
+      "status": 404,
+      "timestamp": "2026-11-14T00:15:12.284568+00:00"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/cs528-hw8-web",
+    "receiveTimestamp": "2026-11-14T00:15:12.582918092Z",
+    "resource": {
+      "labels": {
+        "instance_id": "9210291291778849271",
+        "project_id": "dazzling-seat-508219-j3",
+        "zone": "projects/402897578975/zones/us-central1-a"
+      },
+      "type": "gce_instance"
+    },
+    "severity": "WARNING",
+    "timestamp": "2026-11-14T00:15:12.582918092Z"
+  },
+  {
+    "insertId": "bdl7z7fcy17x6",
+    "jsonPayload": {
+      "event": "unsupported_method",
+      "message": "HTTP method not implemented.",
+      "method": "PUT",
+      "path": "/data/0.html",
+      "status": 501,
+      "timestamp": "2026-11-14T00:15:12.751543+00:00"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/cs528-hw8-web",
+    "receiveTimestamp": "2026-11-14T00:15:12.779804435Z",
+    "resource": {
+      "labels": {
+        "instance_id": "9210291291778849271",
+        "project_id": "dazzling-seat-508219-j3",
+        "zone": "projects/402897578975/zones/us-central1-a"
+      },
+      "type": "gce_instance"
+    },
+    "severity": "ERROR",
+    "timestamp": "2026-11-14T00:15:12.779804435Z"
+  },
+  {
+    "insertId": "sbbmekfa6f7zc",
+    "jsonPayload": {
+      "country": "Iran",
+      "country_header": "Iran",
+      "event": "forbidden_country",
+      "event_id": "09963b81-ee47-46e3-81f1-e86ec932a1ca",
+      "message": "Permission denied: request from Iran.",
+      "method": "GET",
+      "path": "/data/0.html",
+      "status": 400,
+      "timestamp": "2026-11-14T00:15:12.890462+00:00"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/cs528-hw8-web",
+    "receiveTimestamp": "2026-11-14T00:15:12.921035314Z",
+    "resource": {
+      "labels": {
+        "instance_id": "9210291291778849271",
+        "project_id": "dazzling-seat-508219-j3",
+        "zone": "projects/402897578975/zones/us-central1-a"
+      },
+      "type": "gce_instance"
+    },
+    "severity": "CRITICAL",
+    "timestamp": "2026-11-14T00:15:12.921035314Z"
+  },
+  {
+    "insertId": "nvbn8nfba7f8c",
+    "jsonPayload": {
+      "logging.googleapis.com/diagnostic": {
+        "instrumentation_source": [
+          {
+            "name": "python",
+            "version": "3.17.0"
+          }
+        ]
+      }
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/cs528-hw8-web",
+    "receiveTimestamp": "2026-11-14T00:15:14.605347509Z",
+    "resource": {
+      "labels": {
+        "instance_id": "6538105907431741893",
+        "project_id": "dazzling-seat-508219-j3",
+        "zone": "projects/402897578975/zones/us-central1-c"
+      },
+      "type": "gce_instance"
+    },
+    "timestamp": "2026-11-14T00:15:14.605347509Z"
+  },
+  {
+    "insertId": "nvbn8nfba7f8d",
+    "jsonPayload": {
+      "event": "file_not_found",
+      "message": "File not found.",
+      "method": "GET",
+      "object_name": "data/does-not-exist.html",
+      "path": "/data/does-not-exist.html",
+      "status": 404,
+      "timestamp": "2026-11-14T00:15:14.371899+00:00"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/cs528-hw8-web",
+    "receiveTimestamp": "2026-11-14T00:15:14.605347509Z",
+    "resource": {
+      "labels": {
+        "instance_id": "6538105907431741893",
+        "project_id": "dazzling-seat-508219-j3",
+        "zone": "projects/402897578975/zones/us-central1-c"
+      },
+      "type": "gce_instance"
+    },
+    "severity": "WARNING",
+    "timestamp": "2026-11-14T00:15:14.605347509Z"
+  },
+  {
+    "insertId": "1nywajbfcyn3qd",
+    "jsonPayload": {
+      "event": "unsupported_method",
+      "message": "HTTP method not implemented.",
+      "method": "PUT",
+      "path": "/data/0.html",
+      "status": 501,
+      "timestamp": "2026-11-14T00:15:14.881350+00:00"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/cs528-hw8-web",
+    "receiveTimestamp": "2026-11-14T00:15:14.916738202Z",
+    "resource": {
+      "labels": {
+        "instance_id": "6538105907431741893",
+        "project_id": "dazzling-seat-508219-j3",
+        "zone": "projects/402897578975/zones/us-central1-c"
+      },
+      "type": "gce_instance"
+    },
+    "severity": "ERROR",
+    "timestamp": "2026-11-14T00:15:14.916738202Z"
+  },
+  {
+    "insertId": "gp9qstfcrljx7",
+    "jsonPayload": {
+      "country": "Iran",
+      "country_header": "Iran",
+      "event": "forbidden_country",
+      "event_id": "eff536b6-c88a-4b18-90d3-90f83b758785",
+      "message": "Permission denied: request from Iran.",
+      "method": "GET",
+      "path": "/data/0.html",
+      "status": 400,
+      "timestamp": "2026-11-14T00:15:15.047342+00:00"
+    },
+    "logName": "projects/dazzling-seat-508219-j3/logs/cs528-hw8-web",
+    "receiveTimestamp": "2026-11-14T00:15:15.081700717Z",
+    "resource": {
+      "labels": {
+        "instance_id": "6538105907431741893",
+        "project_id": "dazzling-seat-508219-j3",
+        "zone": "projects/402897578975/zones/us-central1-c"
+      },
+      "type": "gce_instance"
+    },
+    "severity": "CRITICAL",
+    "timestamp": "2026-11-14T00:15:15.081700717Z"
+  }
+]

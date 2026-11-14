@@ -1,0 +1,82 @@
+Started cs528-hw8-web.service - CS528 HW8 web service.
+Listening on port 8080; zone=us-central1-a; threaded requests
+{"severity": "WARNING", "timestamp": "2026-11-14T00:15:12.284568+00:00", "method": "GET", "path": "/data/does-not-exist.html", "status": 404, "event": "file_not_found", "message": "File not found.", "object_name": "data/does-not-exist.html"}
+{"severity": "ERROR", "timestamp": "2026-11-14T00:15:12.751543+00:00", "method": "PUT", "path": "/data/0.html", "status": 501, "event": "unsupported_method", "message": "HTTP method not implemented."}
+{"severity": "CRITICAL", "event_id": "09963b81-ee47-46e3-81f1-e86ec932a1ca", "event": "forbidden_country", "timestamp": "2026-11-14T00:15:12.890462+00:00", "method": "GET", "path": "/data/0.html", "country": "Iran", "country_header": "Iran", "status": 400, "message": "Permission denied: request from Iran."}
+{"severity": "WARNING", "timestamp": "2026-11-14T00:35:54.201441+00:00", "method": "GET", "path": "/favicon.ico", "status": 404, "event": "file_not_found", "message": "File not found.", "object_name": "favicon.ico"}
+{"severity": "WARNING", "timestamp": "2026-11-14T00:44:12.910260+00:00", "method": "GET", "path": "/", "status": 404, "event": "file_not_found", "message": "File not found.", "object_name": ""}
+{"severity": "WARNING", "timestamp": "2026-11-14T01:51:52.123195+00:00", "method": "GET", "path": "/", "status": 404, "event": "file_not_found", "message": "File not found.", "object_name": ""}
+{"severity": "WARNING", "timestamp": "2026-11-14T01:55:56.751328+00:00", "method": "GET", "path": "/", "status": 404, "event": "file_not_found", "message": "File not found.", "object_name": ""}
+{"severity": "WARNING", "timestamp": "2026-11-14T02:03:02.572092+00:00", "method": "GET", "path": "/", "status": 404, "event": "file_not_found", "message": "File not found.", "object_name": ""}
+{"severity": "WARNING", "timestamp": "2026-11-14T02:09:51.451903+00:00", "method": "GET", "path": "/", "status": 404, "event": "file_not_found", "message": "File not found.", "object_name": ""}
+{"severity": "WARNING", "timestamp": "2026-11-14T02:09:52.940732+00:00", "method": "GET", "path": "/@vite/client", "status": 404, "event": "file_not_found", "message": "File not found.", "object_name": "@vite/client"}
+{"severity": "WARNING", "timestamp": "2026-11-14T02:09:53.994841+00:00", "method": "GET", "path": "/backup.tar.gz", "status": 404, "event": "file_not_found", "message": "File not found.", "object_name": "backup.tar.gz"}
+{"severity": "WARNING", "timestamp": "2026-11-14T02:09:54.018689+00:00", "method": "GET", "path": "/site.zip", "status": 404, "event": "file_not_found", "message": "File not found.", "object_name": "site.zip"}
+{"severity": "WARNING", "timestamp": "2026-11-14T02:09:54.019880+00:00", "method": "GET", "path": "/.env.production", "status": 404, "event": "file_not_found", "message": "File not found.", "object_name": ".env.production"}
+{"severity": "WARNING", "timestamp": "2026-11-14T02:09:54.020723+00:00", "method": "GET", "path": "/.env.production.local", "status": 404, "event": "file_not_found", "message": "File not found.", "object_name": ".env.production.local"}
+{"severity": "WARNING", "timestamp": "2026-11-14T02:09:54.021155+00:00", "method": "GET", "path": "/.env", "status": 404, "event": "file_not_found", "message": "File not found.", "object_name": ".env"}
+{"severity": "WARNING", "timestamp": "2026-11-14T02:09:54.021676+00:00", "method": "GET", "path": "/.env.bak", "status": 404, "event": "file_not_found", "message": "File not found.", "object_name": ".env.bak"}
+{"severity": "WARNING", "timestamp": "2026-11-14T02:09:54.022083+00:00", "method": "GET", "path": "/.env~", "status": 404, "event": "file_not_found", "message": "File not found.", "object_name": ".env~"}
+{"severity": "WARNING", "timestamp": "2026-11-14T02:09:54.022489+00:00", "method": "GET", "path": "/.env.save", "status": 404, "event": "file_not_found", "message": "File not found.", "object_name": ".env.save"}
+{"severity": "WARNING", "timestamp": "2026-11-14T02:09:54.022996+00:00", "method": "GET", "path": "/backup.zip", "status": 404, "event": "file_not_found", "message": "File not found.", "object_name": "backup.zip"}
+{"severity": "WARNING", "timestamp": "2026-11-14T02:09:54.023403+00:00", "method": "GET", "path": "/.env.gz", "status": 404, "event": "file_not_found", "message": "File not found.", "object_name": ".env.gz"}
+{"severity": "WARNING", "timestamp": "2026-11-14T02:09:54.046361+00:00", "method": "GET", "path": "/.env.prod", "status": 404, "event": "file_not_found", "message": "File not found.", "object_name": ".env.prod"}
+{"severity": "WARNING", "timestamp": "2026-11-14T02:09:54.248344+00:00", "method": "GET", "path": "/.env.zip", "status": 404, "event": "file_not_found", "message": "File not found.", "object_name": ".env.zip"}
+{"severity": "WARNING", "timestamp": "2026-11-14T02:09:54.249288+00:00", "method": "GET", "path": "/www.zip", "status": 404, "event": "file_not_found", "message": "File not found.", "object_name": "www.zip"}
+{"severity": "WARNING", "timestamp": "2026-11-14T02:09:54.391506+00:00", "method": "GET", "path": "/.git/HEAD", "status": 404, "event": "file_not_found", "message": "File not found.", "object_name": ".git/HEAD"}
+{"severity": "WARNING", "timestamp": "2026-11-14T02:09:54.392849+00:00", "method": "GET", "path": "/.env.old", "status": 404, "event": "file_not_found", "message": "File not found.", "object_name": ".env.old"}
+{"severity": "WARNING", "timestamp": "2026-11-14T02:09:55.829532+00:00", "method": "GET", "path": "/.env.local", "status": 404, "event": "file_not_found", "message": "File not found.", "object_name": ".env.local"}
+{"severity": "WARNING", "timestamp": "2026-11-14T02:09:55.873701+00:00", "method": "GET", "path": "/phpinfo.php", "status": 404, "event": "file_not_found", "message": "File not found.", "object_name": "phpinfo.php"}
+{"severity": "WARNING", "timestamp": "2026-11-14T02:09:55.875570+00:00", "method": "GET", "path": "/.git-credentials", "status": 404, "event": "file_not_found", "message": "File not found.", "object_name": ".git-credentials"}
+{"severity": "WARNING", "timestamp": "2026-11-14T02:09:55.876475+00:00", "method": "GET", "path": "/actuator/env", "status": 404, "event": "file_not_found", "message": "File not found.", "object_name": "actuator/env"}
+{"severity": "WARNING", "timestamp": "2026-11-14T02:09:55.955361+00:00", "method": "GET", "path": "/info.php", "status": 404, "event": "file_not_found", "message": "File not found.", "object_name": "info.php"}
+{"severity": "WARNING", "timestamp": "2026-11-14T02:09:55.969341+00:00", "method": "GET", "path": "/config.js", "status": 404, "event": "file_not_found", "message": "File not found.", "object_name": "config.js"}
+{"severity": "WARNING", "timestamp": "2026-11-14T02:09:55.970517+00:00", "method": "GET", "path": "/config.json", "status": 404, "event": "file_not_found", "message": "File not found.", "object_name": "config.json"}
+{"severity": "WARNING", "timestamp": "2026-11-14T02:09:56.191286+00:00", "method": "GET", "path": "/config.yaml", "status": 404, "event": "file_not_found", "message": "File not found.", "object_name": "config.yaml"}
+{"severity": "WARNING", "timestamp": "2026-11-14T02:09:56.202865+00:00", "method": "GET", "path": "/wp-config.php.bak", "status": 404, "event": "file_not_found", "message": "File not found.", "object_name": "wp-config.php.bak"}
+{"severity": "WARNING", "timestamp": "2026-11-14T02:09:56.203922+00:00", "method": "GET", "path": "/.docker/config.json", "status": 404, "event": "file_not_found", "message": "File not found.", "object_name": ".docker/config.json"}
+{"severity": "WARNING", "timestamp": "2026-11-14T02:09:56.205250+00:00", "method": "GET", "path": "/wp-config.php", "status": 404, "event": "file_not_found", "message": "File not found.", "object_name": "wp-config.php"}
+{"severity": "WARNING", "timestamp": "2026-11-14T02:09:56.262907+00:00", "method": "GET", "path": "/application.yml", "status": 404, "event": "file_not_found", "message": "File not found.", "object_name": "application.yml"}
+{"severity": "WARNING", "timestamp": "2026-11-14T02:09:56.312148+00:00", "method": "GET", "path": "/secrets.json", "status": 404, "event": "file_not_found", "message": "File not found.", "object_name": "secrets.json"}
+{"severity": "WARNING", "timestamp": "2026-11-14T02:09:56.556612+00:00", "method": "GET", "path": "/terraform.tfvars", "status": 404, "event": "file_not_found", "message": "File not found.", "object_name": "terraform.tfvars"}
+{"severity": "WARNING", "timestamp": "2026-11-14T02:09:56.755675+00:00", "method": "GET", "path": "/credentials.json", "status": 404, "event": "file_not_found", "message": "File not found.", "object_name": "credentials.json"}
+{"severity": "WARNING", "timestamp": "2026-11-14T02:09:57.926530+00:00", "method": "GET", "path": "/docker-compose.yaml", "status": 404, "event": "file_not_found", "message": "File not found.", "object_name": "docker-compose.yaml"}
+{"severity": "WARNING", "timestamp": "2026-11-14T02:09:58.010070+00:00", "method": "GET", "path": "/server.js", "status": 404, "event": "file_not_found", "message": "File not found.", "object_name": "server.js"}
+{"severity": "WARNING", "timestamp": "2026-11-14T02:09:58.121563+00:00", "method": "GET", "path": "/app.js", "status": 404, "event": "file_not_found", "message": "File not found.", "object_name": "app.js"}
+{"severity": "WARNING", "timestamp": "2026-11-14T02:09:58.223491+00:00", "method": "GET", "path": "/.aws/credentials", "status": 404, "event": "file_not_found", "message": "File not found.", "object_name": ".aws/credentials"}
+{"severity": "WARNING", "timestamp": "2026-11-14T02:09:59.613054+00:00", "method": "GET", "path": "/docker-compose.yml", "status": 404, "event": "file_not_found", "message": "File not found.", "object_name": "docker-compose.yml"}
+{"severity": "WARNING", "timestamp": "2026-11-14T02:12:24.213147+00:00", "method": "GET", "path": "/", "status": 404, "event": "file_not_found", "message": "File not found.", "object_name": ""}
+{"severity": "WARNING", "timestamp": "2026-11-14T02:12:24.503358+00:00", "method": "POST", "path": "/", "status": 400, "event": "invalid_payload", "message": "POST requires JSON with a nonempty filename string."}
+{"severity": "WARNING", "timestamp": "2026-11-14T02:25:14.097540+00:00", "method": "GET", "path": "/", "status": 404, "event": "file_not_found", "message": "File not found.", "object_name": ""}
+{"severity": "WARNING", "timestamp": "2026-11-14T02:32:44.748020+00:00", "method": "GET", "path": "/", "status": 404, "event": "file_not_found", "message": "File not found.", "object_name": ""}
+{"severity": "WARNING", "timestamp": "2026-11-14T02:46:54.664880+00:00", "method": "GET", "path": "/", "status": 404, "event": "file_not_found", "message": "File not found.", "object_name": ""}
+{"severity": "WARNING", "timestamp": "2026-11-14T02:57:16.685093+00:00", "method": "POST", "path": "/", "status": 400, "event": "invalid_payload", "message": "POST requires JSON with a nonempty filename string."}
+{"severity": "WARNING", "timestamp": "2026-11-14T03:10:25.692537+00:00", "method": "GET", "path": "/", "status": 404, "event": "file_not_found", "message": "File not found.", "object_name": ""}
+{"severity": "WARNING", "timestamp": "2026-11-14T03:13:52.217342+00:00", "method": "GET", "path": "http://api.ipify.org/?format=json", "status": 404, "event": "file_not_found", "message": "File not found.", "object_name": ""}
+{"severity": "ERROR", "timestamp": "2026-11-14T03:14:10.707678+00:00", "method": "CONNECT", "path": "www.shadowserver.org:443", "status": 501, "event": "unsupported_method", "message": "HTTP method not implemented."}
+cs528-hw8-web.service: Sent signal SIGKILL to main process 1508 (python) on client request.
+cs528-hw8-web.service: Sending signal SIGKILL to process 1518 (lifeguard) on client request.
+cs528-hw8-web.service: Main process exited, code=killed, status=9/KILL
+cs528-hw8-web.service: Failed with result 'signal'.
+cs528-hw8-web.service: Consumed 25.705s CPU time.
+Started cs528-hw8-web.service - CS528 HW8 web service.
+Listening on port 8080; zone=us-central1-a; threaded requests
+cs528-hw8-web.service: Sent signal SIGKILL to main process 34108 (python) on client request.
+cs528-hw8-web.service: Sending signal SIGKILL to process 34116 (lifeguard) on client request.
+cs528-hw8-web.service: Main process exited, code=killed, status=9/KILL
+cs528-hw8-web.service: Failed with result 'signal'.
+Started cs528-hw8-web.service - CS528 HW8 web service.
+Listening on port 8080; zone=us-central1-a; threaded requests
+cs528-hw8-web.service: Sent signal SIGKILL to main process 34396 (python) on client request.
+cs528-hw8-web.service: Sending signal SIGKILL to process 34402 (lifeguard) on client request.
+cs528-hw8-web.service: Main process exited, code=killed, status=9/KILL
+cs528-hw8-web.service: Failed with result 'signal'.
+Started cs528-hw8-web.service - CS528 HW8 web service.
+Listening on port 8080; zone=us-central1-a; threaded requests
+{"severity": "WARNING", "timestamp": "2026-11-14T03:32:42.917770+00:00", "method": "GET", "path": "/login", "status": 404, "event": "file_not_found", "message": "File not found.", "object_name": "login"}
+{"severity": "WARNING", "timestamp": "2026-11-14T03:45:29.241708+00:00", "method": "GET", "path": "/", "status": 404, "event": "file_not_found", "message": "File not found.", "object_name": ""}
+{"severity": "WARNING", "timestamp": "2026-11-14T03:49:51.759346+00:00", "method": "GET", "path": "/", "status": 404, "event": "file_not_found", "message": "File not found.", "object_name": ""}
+{"severity": "WARNING", "timestamp": "2026-11-14T04:21:41.422171+00:00", "method": "GET", "path": "/", "status": 404, "event": "file_not_found", "message": "File not found.", "object_name": ""}
+{"severity": "WARNING", "timestamp": "2026-11-14T05:02:37.685880+00:00", "method": "GET", "path": "/", "status": 404, "event": "file_not_found", "message": "File not found.", "object_name": ""}
+{"severity": "WARNING", "timestamp": "2026-11-14T05:02:47.705714+00:00", "method": "GET", "path": "/files/", "status": 404, "event": "file_not_found", "message": "File not found.", "object_name": "files/"}
+{"severity": "ERROR", "timestamp": "2026-11-14T05:02:48.912552+00:00", "method": "OPTIONS", "path": "/", "status": 501, "event": "unsupported_method", "message": "HTTP method not implemented."}
