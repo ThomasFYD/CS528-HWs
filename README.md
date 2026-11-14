@@ -17,4 +17,6 @@ Author: Yide Fang
 
 - [Homework 7: Apache Beam and Cloud Dataflow](CS528-HW7/README.md) — Analyze HW2 hyperlinks and word trigrams, compare local and Dataflow runtimes, and verify complete results. [Report](CS528-HW7/report/CS528_HW7_Report.pdf).
 
-HW1 contains a screenshot-based Cloud Console report. The HW2-HW7 READMEs describe implementation, dependencies, configuration, and tests. The HW2 and HW3 folders include their PDF reports. The HW4-HW7 folders include their PDF reports and reviewed experiment evidence.
+- [Homework 8: Network Load Balancing and Failover](CS528-HW8/README.md) — Deploy web servers in two zones behind a Network Load Balancer, measure failover and recovery in three live trials, and verify request distribution and cloud cleanup. [Report](CS528-HW8/report/CS528_HW8_Report.pdf).
+
+HW1 contains a screenshot-based Cloud Console report. The HW2-HW8 READMEs describe implementation, dependencies, configuration, and tests. The HW2 and HW3 folders include their PDF reports. The HW4-HW8 folders include their PDF reports and reviewed experiment evidence.
