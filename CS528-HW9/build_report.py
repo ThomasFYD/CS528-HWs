@@ -71,11 +71,6 @@ def figure(file, box, display_width, caption):
     add(caption, small)
 
 
-def link(path, label):
-    url = f"{REPO}/" + ("blob/main/CS528-HW9/" + path if path else "tree/main/CS528-HW9")
-    return f'<link href="{url}"><u>{label}</u></link>'
-
-
 r = load("summary.json")
 cluster = load("cluster.json")
 build = load("build.json")
@@ -93,7 +88,7 @@ event = next(json.loads(line[10:]) for line in (EVIDENCE / "reporter.txt").read_
 add("CS528 Homework 9", title)
 add("Serving Cloud Storage files with Google Kubernetes Engine", heading)
 add("<b>Yide Fang</b> | Boston University | November 23, 2026")
-add("Code and deployment script &nbsp; " + link("", "github.com/ThomasFYD/CS528-HWs/tree/main/CS528-HW9"))
+add(f'Repository &nbsp; <link href="{REPO}"><u>{REPO}</u></link><br/>Directory &nbsp; CS528-HW9')
 add("1. Deployment and measured results", subhead)
 add(f"The instructor's HTTP client sent {r['requests']} requests from an Ubuntu VM to a public GKE LoadBalancer Service. "
     f"The server returned {counts['200']} successful file responses and denied {counts['400']} requests from countries on the assignment list. "
@@ -107,8 +102,8 @@ table([["Component", "Configuration used in the experiment"],
 add("Request handling", subhead)
 add("A GET names the object in the URL. A JSON POST supplies its filename. For these two methods, the server checks the X-country header before reading storage. A match on the HW4 list returns HTTP 400 after Pub/Sub confirms publication. The reporter prints the event and then acknowledges the message. Other methods return 501 before object access.")
 add("Submitted source", subhead)
-add("Python web server &nbsp; " + link("web_server.py","web_server.py") + " &nbsp;&nbsp; Monitoring app &nbsp; " + link("reporter.py","reporter.py") +
-    "<br/>GKE creation and startup &nbsp; " + link("deploy.sh","deploy.sh") + " &nbsp;&nbsp; Build recipe &nbsp; " + link("Dockerfile","Dockerfile"))
+add("Python web server &nbsp; web_server.py &nbsp;&nbsp; Monitoring app &nbsp; reporter.py"
+    "<br/>GKE creation and startup &nbsp; deploy.sh &nbsp;&nbsp; Build recipe &nbsp; Dockerfile")
 
 page("2. Configure and start the applications")
 add("Prerequisites", subhead)
@@ -156,8 +151,7 @@ add("The application generated the event ID below, logged it at CRITICAL severit
 code(f"Country: {event['country']}       HTTP status: {event['status']}\nEvent ID: {event['event_id']}\nPub/Sub message ID: {event['pubsub_message_id']}\nReporter received (UTC): {event['received_at']}")
 add("Cleanup and evidence", subhead)
 add("After the screenshots and logs were saved, ./cleanup.sh deleted the Service, cluster, VM and dedicated resources. Post-cleanup inventory checks covered the compute instances, disks, forwarding rule and target pool. The original HW2 sample object remained readable.")
-add("Supporting records &nbsp; " + link("report/evidence/summary.json","run summary") + " &nbsp; " + link("report/evidence/cloud-errors.json","Cloud Logging") +
-    " &nbsp; " + link("report/evidence/reporter.txt","reporter stdout") + " &nbsp; " + link("report/evidence/cleanup.json","cleanup checks"), small)
+add("The report/evidence directory contains the run summary, Cloud Logging entries, reporter output and cleanup checks.", small)
 add("Course references &nbsp; Lecture 2, <i>Cloud Tools and Console</i>, slide 19 (GKE cluster commands). Lecture 6, <i>Computing Services</i>, slide 4 (Kubernetes Engine containers).", small)
 
 
