@@ -2,7 +2,8 @@
 
 Yide Fang | Boston University
 
-Repository &nbsp; [https://github.com/ThomasFYD/CS528-HWs](https://github.com/ThomasFYD/CS528-HWs) · Directory `CS528-HW9`
+Code: [https://github.com/ThomasFYD/CS528-HWs](https://github.com/ThomasFYD/CS528-HWs)<br/>
+Directory: **CS528-HW9**
 
 [Read the HW9 report (PDF)](report/CS528_HW9_Report.pdf) · [Experiment evidence](report/evidence)
 

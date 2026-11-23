@@ -88,7 +88,7 @@ event = next(json.loads(line[10:]) for line in (EVIDENCE / "reporter.txt").read_
 add("CS528 Homework 9", title)
 add("Serving Cloud Storage files with Google Kubernetes Engine", heading)
 add("<b>Yide Fang</b> | Boston University | November 23, 2026")
-add(f'Repository &nbsp; <link href="{REPO}"><u>{REPO}</u></link><br/>Directory &nbsp; CS528-HW9')
+add(f'Code: <link href="{REPO}">{REPO}</link><br/>Directory: <b>CS528-HW9</b>')
 add("1. Deployment and measured results", subhead)
 add(f"The instructor's HTTP client sent {r['requests']} requests from an Ubuntu VM to a public GKE LoadBalancer Service. "
     f"The server returned {counts['200']} successful file responses and denied {counts['400']} requests from countries on the assignment list. "
