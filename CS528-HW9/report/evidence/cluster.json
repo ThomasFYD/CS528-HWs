@@ -1,0 +1,14 @@
+{
+  "currentMasterVersion": "1.36.4-gke.2377000",
+  "currentNodeCount": 1,
+  "location": "us-central1-a",
+  "name": "hw9-11541b13c3",
+  "nodeConfig": {
+    "machineType": "e2-standard-2",
+    "serviceAccount": "hw9-11541b13c3-node@dazzling-seat-508219-j3.iam.gserviceaccount.com"
+  },
+  "status": "RUNNING",
+  "workloadIdentityConfig": {
+    "workloadPool": "dazzling-seat-508219-j3.svc.id.goog"
+  }
+}

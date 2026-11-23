@@ -1,0 +1,18 @@
+{
+  "run": "20261123T231039Z",
+  "external_ip": "34.29.244.126",
+  "requests": 300,
+  "responses": 300,
+  "unique_paths": 295,
+  "status_counts": {
+    "200": 289,
+    "400": 11
+  },
+  "source_bytes": 97586,
+  "source_sha256": "c3be7cacaad7e54bac9e5050419002b0545418e31094933b4239813e2a6f2b88",
+  "confirmed_error_methods": 7,
+  "client_denials_delivered": 11,
+  "denial_event_id": "1d4af312-a232-4adc-9547-0ab8e22b7692",
+  "pubsub_message_id": "23431952129821945",
+  "reporter_distinct_events": 12
+}

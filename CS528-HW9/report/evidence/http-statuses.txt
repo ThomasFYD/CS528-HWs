@@ -1,0 +1,9 @@
+missing    404
+PUT        501
+DELETE     501
+OPTIONS    501
+TRACE      501
+PATCH      501
+HEAD       501
+CONNECT    501
+forbidden  400

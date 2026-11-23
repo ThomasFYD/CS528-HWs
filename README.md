@@ -19,4 +19,6 @@ Author: Yide Fang
 
 - [Homework 8: Network Load Balancing and Failover](CS528-HW8/README.md) — Deploy web servers in two zones behind a Network Load Balancer, measure failover and recovery in three live trials, and verify request distribution and cloud cleanup. [Report](CS528-HW8/report/CS528_HW8_Report.pdf).
 
-HW1 contains a screenshot-based Cloud Console report. The HW2-HW8 READMEs describe implementation, dependencies, configuration, and tests. The HW2 and HW3 folders include their PDF reports. The HW4-HW8 folders include their PDF reports and reviewed experiment evidence.
+- [Homework 9: Containerized File Service on GKE](CS528-HW9/README.md) — Deploy the HW4 Python server on GKE, verify HTTP responses with 300 VM client requests, and match country denials with reporter output. [Report](CS528-HW9/report/CS528_HW9_Report.pdf).
+
+HW1 contains a screenshot-based Cloud Console report. The HW2-HW9 READMEs describe implementation, dependencies, configuration, and tests. The HW2 and HW3 folders include their PDF reports. The HW4-HW9 folders include their PDF reports and reviewed experiment evidence.

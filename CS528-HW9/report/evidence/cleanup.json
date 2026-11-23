@@ -1,0 +1,26 @@
+{
+  "checked_at_utc": "2026-11-23T23:30:51.332991+00:00",
+  "project": "dazzling-seat-508219-j3",
+  "run": "hw9-11541b13c3",
+  "load_balancer_rule": "a6373108353094a9789755a6c1a61017",
+  "remaining_matches": {
+    "gke_clusters": [],
+    "compute_instances": [],
+    "compute_disks": [],
+    "subnets": [],
+    "networks": [],
+    "firewall_rules": [],
+    "forwarding_rules_by_name": [],
+    "forwarding_rules_by_ip": [],
+    "target_pools": [],
+    "dedicated_service_accounts": [],
+    "artifact_repositories": [],
+    "staging_buckets": [],
+    "pubsub_topics": [],
+    "pubsub_subscriptions": [],
+    "workload_identity_binding": [],
+    "node_project_binding": []
+  },
+  "original_hw2_sample_bytes": 97586,
+  "verified": true
+}

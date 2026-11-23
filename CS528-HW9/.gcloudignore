@@ -1,0 +1,5 @@
+*
+!Dockerfile
+!requirements.txt
+!web_server.py
+!browser-demo.html

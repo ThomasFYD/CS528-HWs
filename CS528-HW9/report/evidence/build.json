@@ -1,0 +1,19 @@
+{
+  "createTime": "2026-11-23T23:10:04.397564985Z",
+  "finishTime": "2026-11-23T23:10:29.244649Z",
+  "id": "8f69adec-b935-4dcc-888d-f0ba43db5c27",
+  "results": {
+    "images": [
+      {
+        "artifactRegistryPackage": "projects/dazzling-seat-508219-j3/locations/us-central1/repositories/hw9-11541b13c3/packages/web/versions/sha256:ae42e3141d22353e16c6e56374974b2876c98b3c0cee02d45ed2cf1bdfd0eb71",
+        "digest": "sha256:ae42e3141d22353e16c6e56374974b2876c98b3c0cee02d45ed2cf1bdfd0eb71",
+        "name": "us-central1-docker.pkg.dev/dazzling-seat-508219-j3/hw9-11541b13c3/web:028ebacbec0bf34514bf3af3",
+        "pushTiming": {
+          "endTime": "2026-11-23T23:10:29.289380296Z",
+          "startTime": "2026-11-23T23:10:23.725649347Z"
+        }
+      }
+    ]
+  },
+  "status": "SUCCESS"
+}

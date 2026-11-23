@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><title>HW9 HTTP demonstration</title>
+<style>
+body{max-width:62em;margin:3em auto;padding:0 1.5em;font:16px/1.55 system-ui,sans-serif;color:#171717}
+h1{font-size:1.7em}button{font:inherit;padding:.35em .8em}table{border-collapse:collapse;width:100%;margin-top:1.5em}
+td,th{text-align:left;border-bottom:1px solid #bbb;padding:.6em .35em}code,output{font-family:monospace}
+</style>
+<h1>HW9 HTTP demonstration</h1>
+<p>Send four requests from this browser to <code id="host"></code>.</p>
+<button id="run">Run requests</button>
+<table><thead><tr><th>Method</th><th>Path</th><th>Country header</th><th>Response</th></tr></thead><tbody id="results"></tbody></table>
+<script>
+document.querySelector('#host').textContent = location.origin;
+const cases = [
+  ['GET', '/data/0.html', ''],
+  ['GET', '/data/hw9-browser-missing.html', ''],
+  ['HEAD', '/data/0.html', ''],
+  ['GET', '/data/0.html', 'Iran']
+];
+document.querySelector('#run').onclick = async function () {
+  this.disabled = true;
+  const rows = document.querySelector('#results');
+  rows.replaceChildren();
+  try {
+    for (const [method, path, country] of cases) {
+      let status;
+      try {
+        const response = await fetch(path, {method, cache:'no-store', headers:country ? {'X-country':country} : {}});
+        await response.arrayBuffer();
+        status = response.status + ' ' + response.statusText;
+      } catch (err) { status = err.message; }
+      const row = rows.insertRow();
+      for (const value of [method, path, country || '—', status]) row.insertCell().textContent = value;
+    }
+  } finally { this.disabled = false; }
+};
+</script></html>

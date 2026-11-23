@@ -1,0 +1,8 @@
+NAME                  READY   UP-TO-DATE   AVAILABLE   AGE   CONTAINERS   IMAGES                                                                                                                                          SELECTOR
+deployment.apps/web   1/1     1            1           12m   web          us-central1-docker.pkg.dev/dazzling-seat-508219-j3/hw9-11541b13c3/web@sha256:ae42e3141d22353e16c6e56374974b2876c98b3c0cee02d45ed2cf1bdfd0eb71   app=web
+
+NAME                      READY   STATUS    RESTARTS   AGE     IP           NODE                                            NOMINATED NODE   READINESS GATES
+pod/web-78dbdf479-xnkdc   1/1     Running   0          3m48s   10.6.48.17   gke-hw9-11541b13c3-default-pool-2f9fe4d4-8jmf   <none>           <none>
+
+NAME          TYPE           CLUSTER-IP       EXTERNAL-IP     PORT(S)        AGE   SELECTOR
+service/web   LoadBalancer   34.118.224.208   34.29.244.126   80:32478/TCP   12m   app=web

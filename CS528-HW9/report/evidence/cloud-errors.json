@@ -1,0 +1,299 @@
+[
+  {
+    "insertId": "qex8z5f7rqw1c",
+    "jsonPayload": {
+      "country": "Libya",
+      "country_header": "Libya",
+      "event": "forbidden_country",
+      "event_id": "68491f9b-3eef-42ef-8458-61fe4f57f351",
+      "message": "Permission denied: request from Libya.",
+      "method": "GET",
+      "path": "/cs528-hw2-yf-2026/data/2675.html",
+      "status": 400,
+      "timestamp": "2026-11-23T23:11:19.918229+00:00"
+    },
+    "severity": "CRITICAL",
+    "timestamp": "2026-11-23T23:11:19.943130875Z"
+  },
+  {
+    "insertId": "1rjfbubdsy2r",
+    "jsonPayload": {
+      "country": "Iran",
+      "country_header": "Iran",
+      "event": "forbidden_country",
+      "event_id": "47e59d2d-eb4d-49f1-a4f1-ea4565c9a96c",
+      "message": "Permission denied: request from Iran.",
+      "method": "GET",
+      "path": "/cs528-hw2-yf-2026/data/689.html",
+      "status": 400,
+      "timestamp": "2026-11-23T23:11:14.867000+00:00"
+    },
+    "severity": "CRITICAL",
+    "timestamp": "2026-11-23T23:11:14.891881898Z"
+  },
+  {
+    "insertId": "2sgrazf88zeta",
+    "jsonPayload": {
+      "country": "Myanmar",
+      "country_header": "Myanmar",
+      "event": "forbidden_country",
+      "event_id": "04052ea1-e3ed-410f-b560-73fb01776ef5",
+      "message": "Permission denied: request from Myanmar.",
+      "method": "GET",
+      "path": "/cs528-hw2-yf-2026/data/7976.html",
+      "status": 400,
+      "timestamp": "2026-11-23T23:11:12.696427+00:00"
+    },
+    "severity": "CRITICAL",
+    "timestamp": "2026-11-23T23:11:12.719353801Z"
+  },
+  {
+    "insertId": "pj592wfbp3c32",
+    "jsonPayload": {
+      "country": "Zimbabwe",
+      "country_header": "Zimbabwe",
+      "event": "forbidden_country",
+      "event_id": "c9a5bb2f-194b-4e5e-87a1-b4c65d8f1256",
+      "message": "Permission denied: request from Zimbabwe.",
+      "method": "GET",
+      "path": "/cs528-hw2-yf-2026/data/66.html",
+      "status": 400,
+      "timestamp": "2026-11-23T23:11:10.106502+00:00"
+    },
+    "severity": "CRITICAL",
+    "timestamp": "2026-11-23T23:11:10.131011577Z"
+  },
+  {
+    "insertId": "xmsl3kf9oda8c",
+    "jsonPayload": {
+      "country": "Libya",
+      "country_header": "Libya",
+      "event": "forbidden_country",
+      "event_id": "457d8615-3577-45d8-886a-38e0e704a919",
+      "message": "Permission denied: request from Libya.",
+      "method": "GET",
+      "path": "/cs528-hw2-yf-2026/data/6243.html",
+      "status": 400,
+      "timestamp": "2026-11-23T23:11:07.358357+00:00"
+    },
+    "severity": "CRITICAL",
+    "timestamp": "2026-11-23T23:11:07.376200585Z"
+  },
+  {
+    "insertId": "gdg4m3f848frd",
+    "jsonPayload": {
+      "country": "North Korea",
+      "country_header": "North Korea",
+      "event": "forbidden_country",
+      "event_id": "e86954a7-53fc-4303-93b9-2cca25df3423",
+      "message": "Permission denied: request from North Korea.",
+      "method": "GET",
+      "path": "/cs528-hw2-yf-2026/data/1384.html",
+      "status": 400,
+      "timestamp": "2026-11-23T23:11:03.242182+00:00"
+    },
+    "severity": "CRITICAL",
+    "timestamp": "2026-11-23T23:11:03.273839706Z"
+  },
+  {
+    "insertId": "nn8k98f3mj78v",
+    "jsonPayload": {
+      "country": "Syria",
+      "country_header": "Syria",
+      "event": "forbidden_country",
+      "event_id": "267ff39c-c59b-44be-9ec7-f42e63965e10",
+      "message": "Permission denied: request from Syria.",
+      "method": "GET",
+      "path": "/cs528-hw2-yf-2026/data/2074.html",
+      "status": 400,
+      "timestamp": "2026-11-23T23:11:02.497689+00:00"
+    },
+    "severity": "CRITICAL",
+    "timestamp": "2026-11-23T23:11:02.536683575Z"
+  },
+  {
+    "insertId": "xmq0hrf99kgn0",
+    "jsonPayload": {
+      "country": "North Korea",
+      "country_header": "North Korea",
+      "event": "forbidden_country",
+      "event_id": "772e9e84-5287-4ade-b3db-38fa713ccf4d",
+      "message": "Permission denied: request from North Korea.",
+      "method": "GET",
+      "path": "/cs528-hw2-yf-2026/data/922.html",
+      "status": 400,
+      "timestamp": "2026-11-23T23:11:02.216360+00:00"
+    },
+    "severity": "CRITICAL",
+    "timestamp": "2026-11-23T23:11:02.236903077Z"
+  },
+  {
+    "insertId": "1wjoxpyf7txt22",
+    "jsonPayload": {
+      "country": "Iraq",
+      "country_header": "Iraq",
+      "event": "forbidden_country",
+      "event_id": "2379028a-68eb-4375-ada7-a9c19cd89b9e",
+      "message": "Permission denied: request from Iraq.",
+      "method": "GET",
+      "path": "/cs528-hw2-yf-2026/data/7417.html",
+      "status": 400,
+      "timestamp": "2026-11-23T23:11:00.201812+00:00"
+    },
+    "severity": "CRITICAL",
+    "timestamp": "2026-11-23T23:11:00.223756682Z"
+  },
+  {
+    "insertId": "cs5uucf8ac01p",
+    "jsonPayload": {
+      "country": "Zimbabwe",
+      "country_header": "Zimbabwe",
+      "event": "forbidden_country",
+      "event_id": "fedb1e3e-3bc6-4d53-900d-dc71d31511c6",
+      "message": "Permission denied: request from Zimbabwe.",
+      "method": "GET",
+      "path": "/cs528-hw2-yf-2026/data/9405.html",
+      "status": 400,
+      "timestamp": "2026-11-23T23:10:59.596197+00:00"
+    },
+    "severity": "CRITICAL",
+    "timestamp": "2026-11-23T23:10:59.620915322Z"
+  },
+  {
+    "insertId": "16ry180f85v4ln",
+    "jsonPayload": {
+      "country": "Libya",
+      "country_header": "Libya",
+      "event": "forbidden_country",
+      "event_id": "9d141e54-bc97-4559-b1c3-c3ae14220b67",
+      "message": "Permission denied: request from Libya.",
+      "method": "GET",
+      "path": "/cs528-hw2-yf-2026/data/9901.html",
+      "status": 400,
+      "timestamp": "2026-11-23T23:10:57.948421+00:00"
+    },
+    "severity": "CRITICAL",
+    "timestamp": "2026-11-23T23:10:57.969873923Z"
+  },
+  {
+    "insertId": "b5plpsf8chrsm",
+    "jsonPayload": {
+      "country": "Iran",
+      "country_header": "Iran",
+      "event": "forbidden_country",
+      "event_id": "1d4af312-a232-4adc-9547-0ab8e22b7692",
+      "message": "Permission denied: request from Iran.",
+      "method": "GET",
+      "path": "/data/0.html?proof=20261123T231039Z",
+      "status": 400,
+      "timestamp": "2026-11-23T23:10:50.110400+00:00"
+    },
+    "severity": "CRITICAL",
+    "timestamp": "2026-11-23T23:10:50.143007356Z"
+  },
+  {
+    "insertId": "dx28i6f8do3ie",
+    "jsonPayload": {
+      "event": "unsupported_method",
+      "message": "HTTP method not implemented.",
+      "method": "CONNECT",
+      "path": "34.29.244.126:80",
+      "status": 501,
+      "timestamp": "2026-11-23T23:10:49.892135+00:00"
+    },
+    "severity": "ERROR",
+    "timestamp": "2026-11-23T23:10:49.919942714Z"
+  },
+  {
+    "insertId": "8m1uq6fbhksfv",
+    "jsonPayload": {
+      "event": "unsupported_method",
+      "message": "HTTP method not implemented.",
+      "method": "HEAD",
+      "path": "/data/0.html?proof=20261123T231039Z",
+      "status": 501,
+      "timestamp": "2026-11-23T23:10:49.663894+00:00"
+    },
+    "severity": "ERROR",
+    "timestamp": "2026-11-23T23:10:49.695169213Z"
+  },
+  {
+    "insertId": "xlnnv7f9z32jc",
+    "jsonPayload": {
+      "event": "unsupported_method",
+      "message": "HTTP method not implemented.",
+      "method": "PATCH",
+      "path": "/data/0.html?proof=20261123T231039Z",
+      "status": 501,
+      "timestamp": "2026-11-23T23:10:49.430554+00:00"
+    },
+    "severity": "ERROR",
+    "timestamp": "2026-11-23T23:10:49.451660194Z"
+  },
+  {
+    "insertId": "tzo0ief7xu8vb",
+    "jsonPayload": {
+      "event": "unsupported_method",
+      "message": "HTTP method not implemented.",
+      "method": "TRACE",
+      "path": "/data/0.html?proof=20261123T231039Z",
+      "status": 501,
+      "timestamp": "2026-11-23T23:10:49.222271+00:00"
+    },
+    "severity": "ERROR",
+    "timestamp": "2026-11-23T23:10:49.242385860Z"
+  },
+  {
+    "insertId": "gdywayf85akx4",
+    "jsonPayload": {
+      "event": "unsupported_method",
+      "message": "HTTP method not implemented.",
+      "method": "OPTIONS",
+      "path": "/data/0.html?proof=20261123T231039Z",
+      "status": 501,
+      "timestamp": "2026-11-23T23:10:48.997537+00:00"
+    },
+    "severity": "ERROR",
+    "timestamp": "2026-11-23T23:10:49.017497131Z"
+  },
+  {
+    "insertId": "zsl4dyft5p2hj",
+    "jsonPayload": {
+      "event": "unsupported_method",
+      "message": "HTTP method not implemented.",
+      "method": "DELETE",
+      "path": "/data/0.html?proof=20261123T231039Z",
+      "status": 501,
+      "timestamp": "2026-11-23T23:10:48.792072+00:00"
+    },
+    "severity": "ERROR",
+    "timestamp": "2026-11-23T23:10:48.821449727Z"
+  },
+  {
+    "insertId": "1t7qxjzepgdv8",
+    "jsonPayload": {
+      "event": "unsupported_method",
+      "message": "HTTP method not implemented.",
+      "method": "PUT",
+      "path": "/data/0.html?proof=20261123T231039Z",
+      "status": 501,
+      "timestamp": "2026-11-23T23:10:48.599988+00:00"
+    },
+    "severity": "ERROR",
+    "timestamp": "2026-11-23T23:10:48.619590634Z"
+  },
+  {
+    "insertId": "15clieif7u8s04",
+    "jsonPayload": {
+      "event": "file_not_found",
+      "message": "File not found.",
+      "method": "GET",
+      "object_name": "data/hw9-missing-20261123T231039Z.html",
+      "path": "/data/hw9-missing-20261123T231039Z.html",
+      "status": 404,
+      "timestamp": "2026-11-23T23:10:48.317563+00:00"
+    },
+    "severity": "WARNING",
+    "timestamp": "2026-11-23T23:10:48.423409093Z"
+  }
+]

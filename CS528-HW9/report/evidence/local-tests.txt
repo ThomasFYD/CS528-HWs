@@ -1,0 +1,27 @@
+test_demo_renders_with_idle_connection_open (test_browser.BrowserConnectionTest.test_demo_renders_with_idle_connection_open) ... ok
+test_all_nine_banned_countries_and_aliases (test_services.HTTPTests.test_all_nine_banned_countries_and_aliases) ... ok
+test_all_seven_unsupported_methods (test_services.HTTPTests.test_all_seven_unsupported_methods) ... ok
+test_allowed_country_not_matched_by_substring (test_services.HTTPTests.test_allowed_country_not_matched_by_substring) ... ok
+test_country_whitespace_and_post (test_services.HTTPTests.test_country_whitespace_and_post) ... ok
+test_extension_method_is_logged_501 (test_services.HTTPTests.test_extension_method_is_logged_501) ... ok
+test_get_bucket_prefix_and_query (test_services.HTTPTests.test_get_bucket_prefix_and_query) ... ok
+test_get_returns_exact_bytes_and_content_length (test_services.HTTPTests.test_get_returns_exact_bytes_and_content_length) ... ok
+test_invalid_json_and_filename (test_services.HTTPTests.test_invalid_json_and_filename) ... ok
+test_logging_failure_is_visible_locally (test_services.HTTPTests.test_logging_failure_is_visible_locally) ... ok
+test_method_check_precedes_country (test_services.HTTPTests.test_method_check_precedes_country) ... ok
+test_missing_object_logs_warning (test_services.HTTPTests.test_missing_object_logs_warning) ... ok
+test_other_prefix_does_not_read_storage (test_services.HTTPTests.test_other_prefix_does_not_read_storage) ... ok
+test_percent_encoded_get (test_services.HTTPTests.test_percent_encoded_get) ... ok
+test_post_returns_file_from_payload_not_url (test_services.HTTPTests.test_post_returns_file_from_payload_not_url) ... ok
+test_publish_failure_fails_closed_and_still_logs_critical (test_services.HTTPTests.test_publish_failure_fails_closed_and_still_logs_critical) ... ok
+test_rejects_ambiguous_oversized_or_incomplete_post (test_services.HTTPTests.test_rejects_ambiguous_oversized_or_incomplete_post) ... ok
+test_storage_permission_failure_is_not_a_404 (test_services.HTTPTests.test_storage_permission_failure_is_not_a_404) ... ok
+test_ack_failure_returns_retry (test_services.ReporterTests.test_ack_failure_returns_retry) ... ok
+test_bad_message_is_not_acknowledged (test_services.ReporterTests.test_bad_message_is_not_acknowledged) ... ok
+test_output_failure_is_not_acknowledged (test_services.ReporterTests.test_output_failure_is_not_acknowledged) ... ok
+test_prints_and_flushes_before_acknowledging (test_services.ReporterTests.test_prints_and_flushes_before_acknowledging) ... ok
+
+----------------------------------------------------------------------
+Ran 22 tests in 0.531s
+
+OK

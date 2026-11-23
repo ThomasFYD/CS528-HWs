@@ -1,0 +1,58 @@
+{
+    "apiVersion": "v1",
+    "kind": "Service",
+    "metadata": {
+        "annotations": {
+            "cloud.google.com/neg": "{\"ingress\":true}",
+            "networking.gke.io/target-pool": "a6373108353094a9789755a6c1a61017"
+        },
+        "creationTimestamp": "2026-11-23T23:02:16Z",
+        "finalizers": [
+            "gke.networking.io/l4-netlb-v1",
+            "service.kubernetes.io/load-balancer-cleanup"
+        ],
+        "labels": {
+            "app": "web"
+        },
+        "name": "web",
+        "namespace": "hw9-11541b13c3",
+        "resourceVersion": "1795474975976527024",
+        "uid": "63731083-5309-4a97-8975-5a6c1a610171"
+    },
+    "spec": {
+        "allocateLoadBalancerNodePorts": true,
+        "clusterIP": "34.118.224.208",
+        "clusterIPs": [
+            "34.118.224.208"
+        ],
+        "externalTrafficPolicy": "Cluster",
+        "internalTrafficPolicy": "Cluster",
+        "ipFamilies": [
+            "IPv4"
+        ],
+        "ipFamilyPolicy": "SingleStack",
+        "ports": [
+            {
+                "nodePort": 32478,
+                "port": 80,
+                "protocol": "TCP",
+                "targetPort": 8080
+            }
+        ],
+        "selector": {
+            "app": "web"
+        },
+        "sessionAffinity": "None",
+        "type": "LoadBalancer"
+    },
+    "status": {
+        "loadBalancer": {
+            "ingress": [
+                {
+                    "ip": "34.29.244.126",
+                    "ipMode": "VIP"
+                }
+            ]
+        }
+    }
+}

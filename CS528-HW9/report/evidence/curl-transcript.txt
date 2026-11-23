@@ -1,0 +1,22 @@
+2026-11-23T23:13:02+00:00
+$ curl -si --max-time 30 http://34.29.244.126/data/hw9-missing.html
+HTTP/1.1 404 Not Found
+Server: BaseHTTP/0.6 Python/3.12.16
+Date: Mon, 23 Nov 2026 23:13:03 GMT
+Content-Type: text/plain; charset=utf-8
+Content-Length: 16
+Cache-Control: no-store
+Connection: close
+
+File not found.
+
+$ curl -si --max-time 30 -X PUT http://34.29.244.126/data/0.html
+HTTP/1.1 501 Not Implemented
+Server: BaseHTTP/0.6 Python/3.12.16
+Date: Mon, 23 Nov 2026 23:13:03 GMT
+Content-Type: text/plain; charset=utf-8
+Content-Length: 29
+Cache-Control: no-store
+Connection: close
+
+HTTP method not implemented.

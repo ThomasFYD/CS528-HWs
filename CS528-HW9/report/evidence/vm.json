@@ -1,0 +1,7 @@
+{
+  "cpuPlatform": "Intel Broadwell",
+  "machineType": "https://www.googleapis.com/compute/v1/projects/dazzling-seat-508219-j3/zones/us-central1-a/machineTypes/e2-small",
+  "name": "hw9-11541b13c3-vm",
+  "status": "RUNNING",
+  "zone": "https://www.googleapis.com/compute/v1/projects/dazzling-seat-508219-j3/zones/us-central1-a"
+}
